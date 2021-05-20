@@ -25,30 +25,30 @@ ms.locfileid: "33431667"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-レポートで使用するためのメッセージ受信者の ASN. 1 証明書が保存されています。
+レポートで使用するメッセージ受信者の ASN.1 証明書が含まれる。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RECIPIENT_CERTIFICATE  <br/> |
-|識別子:  <br/> |0x0c13  <br/> |
+|識別子:  <br/> |0x0C13  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |MAPI 受信者  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このプロパティは、レポートで使用する受信者の**PR_USER_CERTIFICATE** ([PidTagUserCertificate](pidtagusercertificate-canonical-property.md)) プロパティのコピーです。 このメソッドを使用すると、受信者が実際にメッセージを受信したことを証明することができます。これは、配信レポートが必ずしも示しているわけではありません。
+このプロパティは、レポートで使用する受信者PR_USER_CERTIFICATE **(** [PidTagUserCertificate](pidtagusercertificate-canonical-property.md)) プロパティのコピーです。 これは、受信者がメッセージを実際に受信したと発信者に証明するために使用できます。配信レポートは必ずしも示すとは限りません。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -58,7 +58,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

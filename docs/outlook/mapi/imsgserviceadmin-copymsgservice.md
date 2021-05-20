@@ -25,7 +25,7 @@ ms.locfileid: "33432122"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージサービスをプロファイルにコピーします。 
+メッセージ サービスをプロファイルにコピーします。 
   
 ```cpp
 HRESULT CopyMsgService(
@@ -41,57 +41,57 @@ HRESULT CopyMsgService(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpuid_
+ _lpUID_
   
-> 順番コピーするメッセージサービスの一意の識別子を含む[MAPIUID](mapiuid.md)構造体へのポインター。 
+> [in]コピーするメッセージ サービスの一意の識別子を含む [MAPIUID](mapiuid.md) 構造体へのポインター。 
     
- _lpszdisplayname_
+ _lpszDisplayName_
   
-> 順番このパラメーターは推奨されていません。 
+> [in]このパラメーターは廃止されました。 
     
  _lpInterfaceToCopy_
   
-> 順番コピーするメッセージサービスのプロファイルセクションへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 標準プロファイルセクションインターフェイス[IProfSect](iprofsectimapiprop.md)で NULL 結果を渡すことができます。
+> [in]コピーするメッセージ サービスのプロファイル セクションにアクセスするために使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 NULL を渡す場合、標準のプロファイル セクション インターフェイス [IProfSect](iprofsectimapiprop.md)が使用されます。
     
  _lpInterfaceDst_
   
-> 順番_lpObjectDst_パラメーターによって参照されるオブジェクトへのアクセスに使用されるインターフェイスを表す IID へのポインター。 session インターフェイスの[imapisession](imapisessioniunknown.md)で NULL 結果が渡されています。 _lpInterfaceDst_パラメーターを IID_IMsgServiceAdmin に設定することもできます。 
+> [in]  _lpObjectDst_ パラメーターが指すオブジェクトにアクセスするために使用するインターフェイスを表す IID へのポインター。 NULL を渡す場合、セッション インターフェイス [IMAPISession](imapisessioniunknown.md)が使用されます。 _lpInterfaceDst_ パラメーターは、このパラメーターにIID_IMsgServiceAdmin。 
     
  _lpObjectDst_
   
-> 順番session または message service administration オブジェクトへのポインターへのポインター。 オブジェクトの種類は、 _lpInterfaceDst_で渡されるインターフェイス識別子に対応している必要があります。 有効なオブジェクトポインターは、LPMAPISESSION および lpserviceadmin です。
+> [in]セッションまたはメッセージ サービス管理オブジェクトへのポインター。 オブジェクトの種類は、lpInterfaceDst で渡されるインターフェイス識別子  _に対応する必要があります_。 有効なオブジェクト ポインターは、LPMAPISESSION と LPSERVICEADMIN です。
     
- _uluiparam_
+ _ulUIParam_
   
-> 順番このメソッドが表示する任意のダイアログボックスまたはウィンドウの親ウィンドウへのハンドル。
+> [in]このメソッドが表示するダイアログ ボックスまたはウィンドウの親ウィンドウへのハンドル。
     
  _ulFlags_
   
-> 順番メッセージサービスのコピー方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]メッセージ サービスのコピー方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 SERVICE_UI_ALWAYS 
   
-> メッセージサービスに常に構成プロパティシートが表示されるように要求します。
+> メッセージ サービスが常に構成プロパティ シートを表示する要求。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メッセージサービスが正常にコピーされました。
+> メッセージ サービスが正常にコピーされました。
     
 MAPI_E_NO_ACCESS 
   
-> メッセージサービスはプロファイルに既に存在し、それ自体の複数のインスタンスを許可しません。
+> メッセージ サービスは既にプロファイル内に存在し、それ自体の複数のインスタンスを許可しません。
     
 MAPI_E_NOT_FOUND 
   
-> _lpuid_が指す**MAPIUID**は、既存のメッセージサービスを参照していません。 
+> **lpUID が** 指す _MAPIUID は_、既存のメッセージ サービスを参照していない。 
     
 ## <a name="remarks"></a>注釈
 
-**IMsgServiceAdmin:: copymsgservice**メソッドは、メッセージサービスをアクティブなプロファイルまたは別のプロファイルのいずれかのプロファイルにコピーします。 コピーするメッセージサービスを含むプロファイルで、宛先は同じプロファイルである必要はありませんが、これを行うことができます。 
+**IMsgServiceAdmin::CopyMsgService** メソッドは、メッセージ サービスをアクティブ なプロファイルまたは別のプロファイルのどちらかのプロファイルにコピーします。 コピーするメッセージ サービスとコピー先を含むプロファイルは、同じプロファイルである必要は一方で、同じプロファイルである必要は生じ得る。 
   
-メッセージサービスのエントリポイント関数は、コピー操作では呼び出されません。 コピーされたメッセージサービスの構成設定は、元のものと同じです。 これらの設定を変更するには、クライアントは[IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)メソッドを呼び出す必要があります。 
+コピー操作では、メッセージ サービスのエントリ ポイント関数は呼び出されません。 コピーされたメッセージ サービスの構成設定は、元のメッセージ サービスと同じです。 これらの設定を変更するには、クライアントが [IMsgServiceAdmin::ConfigureMsgService メソッドを呼び出す必要](imsgserviceadmin-configuremsgservice.md) があります。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 232fa528-2375-90be-8e18-7a064ce1345e
-description: エラーとして評価されない場合、プライマリ式の評価結果を返します。 エラーの場合は、代替式の評価結果を返します。
+description: エラーと評価されない場合は、プライマリ式の評価結果を返します。 エラーの場合は、代替式の評価結果を返します。
 ms.openlocfilehash: 7b9b42b5c7e7053bae862ddadf17e65015d8ecc3
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33431177"
 ---
 # <a name="iferror-function"></a>IFERROR 関数
 
-エラーとして評価されない場合、プライマリ式の評価結果を返します。 エラーの場合は、代替式の評価結果を返します。
+エラーと評価されない場合は、プライマリ式の評価結果を返します。 エラーの場合は、代替式の評価結果を返します。
   
 ## <a name="version-information"></a>バージョン情報
 
@@ -25,7 +25,7 @@ ms.locfileid: "33431177"
   
 ## <a name="syntax"></a>構文
 
-IFERROR (* **主式** *、* **代替式** *) 
+IFERROR(** *プライマリ式* **, ** *代替式* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 

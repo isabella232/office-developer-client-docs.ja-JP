@@ -25,11 +25,11 @@ ms.locfileid: "33430505"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定した数のフォーム情報オブジェクトを含む既存の[smapiforminfoarray](smapiforminfoarray.md)構造体のバイト数を計算します。 
+指定した数のフォーム情報オブジェクトを含む既存の [SMAPIFormInfoArray](smapiforminfoarray.md) 構造体のバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
 |関連する構造:  <br/> |**SMAPIFormInfoArray** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbMAPIFormInfoArray (_c)
 
 ## <a name="parameters"></a>パラメーター
 
- __c_
+ _ _c_
   
-> 既存の**smapiforminfoarray**構造内のフォーム情報オブジェクトの数。 
+> 既存の **SMAPIFormInfoArray** 構造内のフォーム情報オブジェクトの数。 
     
 ## <a name="see-also"></a>関連項目
 

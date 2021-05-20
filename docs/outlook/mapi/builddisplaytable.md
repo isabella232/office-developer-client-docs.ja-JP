@@ -25,11 +25,11 @@ ms.locfileid: "33431597"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-1つ以上の[dtpage](dtpage.md)構造に含まれるプロパティページデータから、表示テーブルを作成します。 
+1 つ以上の DTPAGE 構造に含まれるプロパティ ページ データから表示テーブル [を作成](dtpage.md) します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
 |呼び出し元:  <br/> |サービス プロバイダー  <br/> |
    
@@ -52,47 +52,47 @@ STDAPI BuildDisplayTable(
 
  _lpAllocateBuffer_
   
-> 順番メモリの割り当てに使用される[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
+> [in]メモリの割 [り当てに使用する MAPIAllocateBuffer](mapiallocatebuffer.md) 関数へのポインター。 
     
  _lpAllocateMore_
   
-> 順番追加のメモリを割り当てるために使用される[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。 
+> [in]追加のメモリ [の割り当てに使用する MAPIAllocateMore](mapiallocatemore.md) 関数へのポインター。 
     
- _lpfreebuffer_
+ _lpFreeBuffer_
   
-> 順番メモリを解放するために使用される[MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
+> [in]メモリを解放するために使用する [MAPIFreeBuffer](mapifreebuffer.md) 関数へのポインター。 
     
- _lpmalloc_
+ _lpMalloc_
   
-> 使用NULL に設定する必要があります。 
+> 未使用。は NULL に設定する必要があります。 
     
  _hInstance_
   
-> 順番**builddisplaytable**がリソースを取得する MAPI オブジェクトのインスタンス。 
+> [in] **BuildDisplayTable** がリソースを取得する MAPI オブジェクトのインスタンス。 
     
- _cpages_
+ _cPages_
   
-> 順番_lppage_パラメーターで指定された配列内の[dtpage](dtpage.md)構造体の数。 
+> [in]lpPage [パラメーターが指](dtpage.md) す配列内の  _DTPAGE 構造体の_ 数。 
     
- _lppage_
+ _lpPage_
   
-> 順番作成するテーブルの表示ページに関する情報を含む**dtpage**構造体の配列へのポインター。 
+> [in]作成する表示テーブル ページに関する情報を含む **DTPAGE** 構造体の配列へのポインター。 
     
  _ulFlags_
   
-> 順番フラグのビットマスク。 次のフラグを設定できます。
+> [in]フラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 渡された文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。 
+> 渡された文字列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。 
     
- _lpptable_
+ _lppTable_
   
-> 読み上げ表示テーブルへのポインターへのポインター。これには[IMAPITable](imapitableiunknown.md)インターフェイスが公開されます。 
+> [out] [IMAPITable](imapitableiunknown.md) インターフェイスを公開する表示テーブルへのポインターへのポインター。 
     
  _lppTblData_
   
-> [入力]_lpptable_パラメーターで返されるテーブルの[itabledata](itabledataiunknown.md)インターフェイスを公開するテーブルデータオブジェクトへのポインターへのポインター。 テーブルデータオブジェクトが必要ない場合は、ポインター値ではなく、 _lppTblData_を NULL に設定する必要があります。 
+> [in, out]_lppTable_ パラメーターで返されるテーブルの [ITableData](itabledataiunknown.md)インターフェイスを公開するテーブル データ オブジェクトへのポインター。 テーブル データ オブジェクトが必要ない場合は、ポインター値の代わりに  _lppTblData_ を NULL に設定する必要があります。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -100,18 +100,18 @@ MAPI_UNICODE
   
 ## <a name="remarks"></a>注釈
 
-MAPI では、特に、 _lpAllocateBuffer_、 _lpAllocateMore_、および_lpfreebuffer_が指す関数を使用して、オブジェクトインターフェイスを呼び出すときに使用するメモリをクライアントアプリケーションに割り当てます。[imapiprop:: GetProps](imapiprop-getprops.md) and [IMAPITable:: QueryRows](imapitable-queryrows.md)など。 
+MAPI では、ほとんどのメモリ割り当ておよび割り当て解除に _lpAllocateBuffer_ _、lpAllocateMore、lpFreeBuffer_ が指す関数を使用して、特に [IMAPIProp::GetProps](imapiprop-getprops.md)や [IMAPITable::QueryRows](imapitable-queryrows.md)などのオブジェクト インターフェイスを呼び出す際にクライアント アプリケーションで使用するメモリを割り当てる。  
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-考えられるすべての情報は、ダイアログリソースから読み取られます。次のようになります。
+可能な限り、次のダイアログ リソースから読み取り可能です。
   
-- ページのタイトル。これは、リソースのダイアログタイトルから読み取る[dtblpage](dtblpage.md)構造の_ulblpszlabel_メンバーです。 
+- [DTBLPAGE](dtblpage.md)構造の _ulbLpszLabel_ メンバーであるページ タイトルは、リソースのダイアログ タイトルから読み取ります。 
     
-- すべてのコントロールのタイトル。他のコントロール構造の_ulblpszlabel_メンバーは、リソースのコントロールテキストから読み取ります。 
+- リソース内のコントロール テキストから読み取った他のコントロール構造の  _ulbLpszLabel_ メンバーであるすべてのコントロール タイトル。 
     
- **builddisplaytable**は、入力制御構造で渡されたものをダイアログリソースからの情報で上書きします。これは、 **builddisplaytable**の呼び出し元がページまたはコントロールのタイトルを動的に指定できないことを意味します。 **builddisplaytable**を持つことができるようにする必要がある呼び出し元は、 _lppTableData_でテーブルデータオブジェクトを返し、その中の行を変更することができます。または、代わりにテーブルデータオブジェクトに手動で表示テーブルを作成することもできます。 
+ **BuildDisplayTable** は、ダイアログ リソースからの情報を使用して、入力コントロール構造で渡された内容を上書きします。 **つまり、BuildDisplayTable** の呼び出し元はページまたはコントロールのタイトルを動的に指定できません。 これを行う必要がある呼び出し元は **、BuildDisplayTable** が  _lppTableData_ のテーブル データ オブジェクトを返し、その中の行を変更できます。または、代わりにテーブル データ オブジェクトで表示テーブルを手で作成することもできます。 
   
-_lppTableData_が NULL に設定されていない場合、プロバイダーは、表示テーブルの操作が完了したときに、テーブルデータオブジェクトを解放することを担当します。 
+_lppTableData が_ NULL に設定されていない場合、プロバイダーは、表示テーブルの終了時にテーブル データ オブジェクトを解放します。 
   
 

@@ -25,7 +25,7 @@ ms.locfileid: "33436245"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI table オブジェクトのインターフェイスへのポインターを返します。
+MAPI テーブル オブジェクトのインターフェイスへのポインターを返します。
   
 ```cpp
 HRESULT GetTable( 
@@ -39,7 +39,7 @@ HRESULT GetTable(
 
  _ulFlags_
   
-> 順番予約語0 (ゼロ) である必要があります。
+> [in]予約済み。0 (ゼロ) である必要があります。
     
 ACLTABLE_FREEBUSY
   
@@ -47,15 +47,15 @@ ACLTABLE_FREEBUSY
     
 frightsFreeBusyDetailed
   
-> ACLTABLE_FREEBUSY が渡されると、新しい空き時間情報の詳細が表示されます。
+> このACLTABLE_FREEBUSY、新しい空き時間情報の権限の詳細な表示を提供します。
     
 frightsFreeBusySimple
   
-> ACLTABLE_FREEBUSY が渡されると、新しい空き時間情報が簡単に表示されます。
+> このACLTABLE_FREEBUSY、新しい空き時間情報の権限を簡単に表示します。
     
- _lpptable_
+ _lppTable_
   
-> 読み上げtable オブジェクトを含む[IMAPITable: IUnknown](imapitableiunknown.md)インターフェイスを指します。 
+> [out] [IMAPITable : テーブル オブジェクトを含む IUnknown](imapitableiunknown.md) インターフェイスをポイントします。 
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -63,7 +63,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ルール  <br/> |crulesdlg:: onrefreshview  <br/> |mfcmapi は、 **IExchangeModifyTable:: GetTable**メソッドを使用してルールのテーブルを取得します。  <br/> |
+|RulesDlg.cpp  <br/> |CRulesDlg::OnRefreshView  <br/> |MFCMAPI は **、IExchangeModifyTable::GetTable** メソッドを使用してルールのテーブルを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

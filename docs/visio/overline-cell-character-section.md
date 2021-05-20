@@ -33,14 +33,14 @@ ms.locfileid: "33431646"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |文字の上線 [ *i* ] ** = <1>、2。 3...  <br/> |
+|セル名:  <br/> |Char.Overline[ *i*  ]  *ここで、i*  = <1>、2. 3...  <br/> |
    
 プログラムから、インデックスによって [Overline] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-|行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2...  <br/> |
+|行インデックス:  <br/> |**visRowCharacter**  +  *i* *=* 0, 1, 2...  <br/> |
 |セル インデックス:  <br/> |**visCharacterOverline** <br/> |
    
 

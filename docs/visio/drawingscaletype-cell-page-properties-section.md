@@ -22,12 +22,12 @@ ms.locfileid: "33428740"
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | 等倍  <br/> |**visNoScale** <br/> |
-| 1   <br/> | 建築系縮尺  <br/> |**visArchitectural** <br/> |
-| 2   <br/> | 土木系縮尺  <br/> |**visEngineering** <br/> |
-| 3   <br/> | ユーザー設定の縮尺  <br/> |**visScaleCustom** <br/> |
-| 4   <br/> | 測定基準  <br/> |**visScaleMetric** <br/> |
-| 5   <br/> | 機械系縮尺  <br/> |**visScaleMechanical** <br/> |
+| 0  <br/> | 等倍  <br/> |**visNoScale** <br/> |
+| 1  <br/> | 建築系縮尺  <br/> |**visArchitectural** <br/> |
+| 2  <br/> | 土木系縮尺  <br/> |**visEngineering** <br/> |
+| 3  <br/> | ユーザー設定の縮尺  <br/> |**visScaleCustom** <br/> |
+| 4  <br/> | 測定基準  <br/> |**visScaleMetric** <br/> |
+| 5  <br/> | 機械系縮尺  <br/> |**visScaleMechanical** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -35,7 +35,7 @@ ms.locfileid: "33428740"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [drawingscaletype]  <br/> |
+| セル名 :  <br/> | DrawingScaleType  <br/> |
    
 プログラムから、インデックスによって [DrawingScaleType] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -43,6 +43,6 @@ ms.locfileid: "33428740"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowPage** <br/> |
-| セル インデックス:  <br/> |**vispagedrawetype etype** <br/> |
+| セル インデックス:  <br/> |**visPageDrawScaleType** <br/> |
    
 

@@ -99,12 +99,12 @@ Microsoft SharePoint Server 2010 上、または Microsoft SharePoint Foundation
   
 ### <a name="to-publish-an-administrator-deployed-solution"></a>管理者展開用のソリューションを発行するには
 
-1. **発行ウィザード**の 1 ページ目で、SharePoint Server 2010 または SharePoint Foundation 2010 サイトの場所を指定し、[ **次へ**] をクリックします。
+1. **発行ウィザード** の 1 ページ目で、SharePoint Server 2010 または SharePoint Foundation 2010 サイトの場所を指定し、[ **次へ**] をクリックします。
     
 2. InfoPath によって、ウィザードの 2 ページ目の [ **管理者承認用フォーム テンプレート**] チェック ボックスが自動的にオンになります。[ **次へ**] をクリックします。
     
 3. 3 ページ目の内容は、管理者が展開するシナリオに固有のものになります。SharePoint Server を選択する代わりに、フォームをローカル ストアに発行します。SharePoint 管理者は、管理者の展開プロセス時にこの場所からファイルをアップロードすることになります。
     
-4. **発行ウィザード**の残りのページを実行します。
+4. **発行ウィザード** の残りのページを実行します。
     
 

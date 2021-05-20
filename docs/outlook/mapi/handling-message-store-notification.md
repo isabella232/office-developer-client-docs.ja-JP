@@ -19,41 +19,41 @@ ms.locfileid: "33428026"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージストア通知を登録するには、 [imapisession:: advise](imapisession-advise.md)または[IMsgStore:: advise](imsgstore-advise.md)メソッドを呼び出し、メッセージストア、フォルダー、またはメッセージエントリ識別子を_l tryid_パラメーターの内容に指定します。 メッセージストアプロバイダーは、オブジェクトとテーブルの両方の通知をサポートしています。 特定のメッセージストアオブジェクトを使用して登録するかどうか、これらのオブジェクトを記述するフォルダー階層とコンテンツテーブル、またはオブジェクトとテーブルの両方を使用するかどうかは、表示すると予想される通知、操作を実行するために行う呼び出し、およびメッセージストアプロバイダーが通知をサポートしている。 
+メッセージ ストア通知に登録するには [、IMAPISession:::Advise](imapisession-advise.md) メソッドまたは [IMsgStore::Advise](imsgstore-advise.md) メソッドを呼び出し  _、lpEntryID_ パラメーターの内容にメッセージ ストア、フォルダー、またはメッセージ エントリ識別子を指定します。 メッセージ ストア プロバイダーは、オブジェクト通知とテーブル通知の両方をサポートします。 特定のメッセージ ストア オブジェクトに登録するか、これらのオブジェクトを記述するフォルダー階層テーブルとコンテンツ テーブルを使用するか、オブジェクトとテーブルの両方に登録するかは、表示される通知、操作を実行するために行う呼び出し、およびメッセージ ストア プロバイダーが通知をサポートする方法によって異なります。 
   
-MAPI では、プロバイダーが通知をサポートする方法に柔軟性があるため、すべてのメッセージストアプロバイダーからの特定のイベントに対する応答で同じ種類の通知を受信することはないことに注意してください。 一部のメッセージストアプロバイダーは、通知をまったくサポートしていません。 使用しているメッセージストアが通知をサポートしているかどうかを確認するには、 **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティで STORE_NOTIFY_OK ビットを検索します。
+MAPI を使用すると、プロバイダーが通知をサポートする方法が柔軟に行えるので、すべてのメッセージ ストア プロバイダーから特定のイベントに応答して、常に同じ種類の通知を受け取るとは限りないので注意してください。 一部のメッセージ ストア プロバイダーは、通知を全くサポートしていない。 使用しているメッセージ ストアが通知をサポートしているかどうかを確認するには、STORE_NOTIFY_OK **(** [PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティで PR_STORE_SUPPORT_MASK ビットを探します。
   
-通知をサポートするメッセージストアプロバイダーの一方の端部には、"リッチ" 通知が生成されるプロバイダーがあります。これらのプロバイダーは、登録されているすべてのアドバイズソースの説明通知を送信します。 もう一方の端には、制限付きの通知をサポートするメッセージストアプロバイダーがあります。これらのプロバイダーは、制限された数のアドバイズソースに関する一般的な通知を送信します。 
+通知をサポートするメッセージ ストア プロバイダーの一端には、"リッチ" 通知を生成するプロバイダーがあります。これらのプロバイダーは、登録済みのすべてのアドバイス ソースに対して説明的な通知を送信します。 もう一方の端には、制限付き通知をサポートするメッセージ ストア プロバイダーがあります。これらのプロバイダーは、制限された数のアドバイス ソースに対して一般的な通知を送信します。 
   
-たとえば、オブジェクトのコピーされた通知とオブジェクトの移動通知の両方を受信するように登録したフォルダーにメッセージをコピーすると、そのオブジェクトのコピーされた通知を受信する場合としない場合があります。 受信したかどうかは、以下によって決まります。
+たとえば、コピーされたオブジェクトと移動したオブジェクトの両方の通知を受信するために登録したフォルダーにメッセージをコピーする場合、オブジェクトコピーされた通知を受信する場合と受信しない場合があります。 受け取るかどうかは、次に依存します。
   
-- コピーを実行するために呼び出したメソッド。 [imapifolder:: copymessages](imapifolder-copymessages.md)、 [imapifolder:: CopyTo](imapiprop-copyto.md)、 [imapifolder:: copymessages](imapiprop-copyprops.md)の場合があります。
+- コピーを実行するために呼び出したメソッド。 これは[IMAPIFolder::CopyMessages](imapifolder-copymessages.md) [、IMAPIProp::CopyTo、](imapiprop-copyto.md)[または IMAPIProp::CopyProps です](imapiprop-copyprops.md)。
     
-- メッセージストアプロバイダーが copy メソッドを実装する方法。
+- メッセージ ストア プロバイダーが copy メソッドを実装する方法。
     
-- メッセージストアプロバイダーがフォルダーにコピーされたオブジェクトの通知をサポートしているかどうか。
+- メッセージ ストア プロバイダーがフォルダー上のオブジェクト コピーされた通知をサポートするかどうか。
     
-メッセージストアプロバイダーのイベント通知を実装する方法を説明する厳密なガイドラインはないため、クライアントは一貫した動作を期待できません。 MAPI では、メッセージストアプロバイダーがイベント通知を実装する方法について、次の表で推奨事項の概要を説明します。 表を次のように読み取ります。最初の列で操作を実行すると、3番目の列にリストされているオブジェクトでその型に対して登録されている場合は、2番目の列にリストされている型の通知を受信することを期待します。 たとえば、フォルダーを作成した後、メッセージストアで_fnevObjectCreated_通知を登録している場合にのみ、 _fnevObjectCreated_通知が表示されます。 
+メッセージ ストア プロバイダーのイベント通知を実装する方法を説明する厳密なガイドラインはないので、クライアントは一貫した動作を期待できません。 MAPI では、メッセージ ストア プロバイダーがイベント通知を実装する方法について推奨事項を示し、次の表でこれらの推奨事項の概要を示します。 次のように表を読み取ります。最初の列で操作を実行した後、3 番目の列にリストされているオブジェクトをその型に登録している場合は、2 番目の列にリストされている型の通知を受け取る必要があります。 たとえば、フォルダーを作成した後、メッセージ ストアで  _fnevObjectCreated_ 通知に登録している場合にのみ  _、fnevObjectCreated_ 通知を受け取ります。 
   
-|**操作**|**イベントの種類**|**アドバイズソース**|
+|**操作**|**イベントの種類**|**ソースのアドバイス**|
 |:-----|:-----|:-----|
-|フォルダーを作成する  <br/> | _fnevObjectCreated_ <br/> |メッセージストア  <br/> |
-|フォルダーを削除する  <br/> | _fnevObjectDeleted_ <br/> |メッセージストアの削除されたフォルダー  <br/> |
-|フォルダーをあるフォルダーから別のフォルダーに移動する  <br/> | _fnevObjectMoved_ <br/> |移動されたメッセージストアフォルダー  <br/> |
-|フォルダーをあるフォルダーから別のフォルダーにコピーする  <br/> | _fnevObjectCopied_ <br/> |メッセージストアとコピーフォルダー (フォルダーの新しいコピーに対して_fnevObjectCreated_通知は送信されません)  <br/> |
-|計算されたフォルダーのプロパティを変更する (**PR_SUBFOLDERS** ([PidTagSubfolders](pidtagsubfolders-canonical-property.md))、 **PR_CONTENT_UNREAD** ([PidTagContentUnreadCount](pidtagcontentunreadcount-canonical-property.md))、 **PR_CONTENT_COUNT** ([PidTagContentCount](pidtagcontentcount-canonical-property.md))  <br/> | _fnevObjectModified_ <br/> |メッセージストアの変更されたフォルダー (親フォルダーへの通知なし)  <br/> |
-|メッセージを作成する  <br/> | _fnevObjectCreated_ <br/> |メッセージストア  <br/> |
-|メッセージを削除して、親フォルダーの**PR_CONTENT_COUNT**プロパティの変更を発生させる  <br/> | _fnevObjectDeleted_ <br/> |メッセージストアが削除されたメッセージ  <br/> |
-|あるフォルダーから別のフォルダーにメッセージを移動する  <br/> | _fnevObjectMoved_ <br/> |メッセージストアの移動メッセージ  <br/> |
-|あるフォルダーから別のフォルダーにメッセージをコピーする  <br/> | _fnevObjectCopied_ <br/> |メッセージストアでコピーされたメッセージ (メッセージの新しいコピーに対する_fnevObjectCreated_通知なし)  <br/> |
-|メッセージを保存し、親フォルダーの**PR_CONTENT_COUNT**プロパティが変更されたことを引き起こします。  <br/> | _fnevObjectCreated_ <br/> |最初に保存するときのみメッセージストア  <br/> |
-|メッセージを保存する  <br/> | _fnevObjectModified_ <br/> |最初の保存変更メッセージの後に保存されるメッセージストア (親フォルダーへの通知なし)  <br/> |
-|検索操作を完了する  <br/> | _fnevSearchComplete_ <br/> |メッセージストアの検索フォルダー  <br/> |
-|新しいメッセージ  <br/> | _fnevNewMail_ <br/> |メッセージストア  <br/> |
+|フォルダーの作成  <br/> | _fnevObjectCreated_ <br/> |メッセージ ストア  <br/> |
+|フォルダーの削除  <br/> | _fnevObjectDeleted_ <br/> |メッセージ ストア 削除済みフォルダー  <br/> |
+|フォルダーをあるフォルダーから別のフォルダーに移動する  <br/> | _fnevObjectMoved_ <br/> |メッセージ ストア移動フォルダー  <br/> |
+|フォルダーを 1 つのフォルダーから別のフォルダーにコピーする  <br/> | _fnevObjectCopied_ <br/> |メッセージ ストアとコピーされたフォルダー (フォルダーの新しいコピーに対して送信された  _fnevObjectCreated_ 通知なし)  <br/> |
+|計算フォルダー プロパティの変更 (**PR_SUBFOLDERS** ([PidTagSubfolders](pidtagsubfolders-canonical-property.md)) 、 **PR_CONTENT_UNREAD** ([PidTagContentUnreadCount](pidtagcontentunreadcount-canonical-property.md)) 、 **PR_CONTENT_COUNT** ([PidTagContentCount](pidtagcontentcount-canonical-property.md))  <br/> | _fnevObjectModified_ <br/> |メッセージ ストア 変更されたフォルダー (親フォルダーへの通知なし)  <br/> |
+|メッセージを作成する  <br/> | _fnevObjectCreated_ <br/> |メッセージ ストア  <br/> |
+|メッセージを削除し、親フォルダーのプロパティ **を変更PR_CONTENT_COUNT** する  <br/> | _fnevObjectDeleted_ <br/> |メッセージ ストア 削除済みメッセージ  <br/> |
+|あるフォルダーから別のフォルダーにメッセージを移動する  <br/> | _fnevObjectMoved_ <br/> |メッセージ ストア 移動されたメッセージ  <br/> |
+|あるフォルダーから別のフォルダーにメッセージをコピーする  <br/> | _fnevObjectCopied_ <br/> |メッセージ ストア コピーされたメッセージ (メッセージの新しいコピーに対する  _fnevObjectCreated_ 通知なし)  <br/> |
+|メッセージを保存し、親フォルダーのプロパティ **に変更を** PR_CONTENT_COUNTする  <br/> | _fnevObjectCreated_ <br/> |最初の保存時のメッセージ ストアのみ  <br/> |
+|メッセージを保存する  <br/> | _fnevObjectModified_ <br/> |最初の保存後の保存時のメッセージ ストア変更メッセージ (親フォルダーへの通知なし)  <br/> |
+|検索操作を完了する  <br/> | _fnevSearchComplete_ <br/> |メッセージ ストアの検索フォルダー  <br/> |
+|新しいメッセージ  <br/> | _fnevNewMail_ <br/> |メッセージ ストア  <br/> |
    
 > [!NOTE]
-> オブジェクトが変更された通知を受信した場合は、 **onnotify**呼び出しの lpnotifications パラメーターが指す__ [OBJECT_NOTIFICATION](object_notification.md)構造のプロパティタグ配列部分が NULL であるか、または NULL でないことに注意してください。 メッセージストアプロバイダーは、この配列にプロパティ情報を挿入する必要はありません。 **onnotify**メソッドで、 _lpPropTagArray_ポインターが NULL の場合を処理できることを確認してください。 
+> オブジェクト変更通知を受け取った場合は **、OnNotify** 呼び出しの _lpNotifications_ パラメーターが指す [OBJECT_NOTIFICATION](object_notification.md)構造体のプロパティ タグ配列部分が NULL の場合としない場合があります。 メッセージ ストア プロバイダーは、この配列にプロパティ情報を挿入する必要はありません。 **OnNotify メソッドが** _lpPropTagArray_ ポインターが NULL の場合に対応することを確認します。 
   
-多くの場合、すべてのオブジェクト通知ではない場合、影響を受けるフォルダーの表示を更新します。
+ほとんどの場合、すべてのオブジェクト通知ではない場合は、影響を受けるフォルダーまたはフォルダーのビューを更新します。
   
 

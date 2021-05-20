@@ -17,23 +17,23 @@ ms.locfileid: "33428166"
  
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ユーザー定義フィールドを Microsoft Outlook アイテムに追加するときは、対応する[propertydefinition](propertydefinition-stream-structure.md) stream 構造にフィールド定義を追加します。 次の手順を使用して、新しいフィールド定義を propertydefinition stream 構造に追加します。 
+ユーザー定義フィールドを Microsoft Outlookアイテムに追加すると、対応する[PropertyDefinition](propertydefinition-stream-structure.md)ストリーム構造にフィールド定義が追加されます。 PropertyDefinition ストリーム構造に新しいフィールド定義を追加するには、次の手順を実行します。 
   
 ### <a name="to-add-a-definition-for-a-new-user-defined-field"></a>新しいユーザー定義フィールドの定義を追加するには
 
-1. propertydefinition stream 構造の既存のフィールド定義を新しいフィールド定義配列にコピーします。 
+1. PropertyDefinition ストリーム構造の既存のフィールド定義を新しいフィールド定義配列にコピーします。 
     
-2. 既存のフィールド定義が PropDefV1 形式に設定されている場合は、それらを PropDefV2 形式に変換します。 フィールド定義の形式の詳細については、「 [propertydefinition stream 構造](propertydefinition-stream-structure.md)と[fielddefinition stream 構造](fielddefinition-stream-structure.md)」を参照してください。
+2. 既存のフィールド定義が PropDefV1 形式の場合は、PropDefV2 形式に変換します。 フィールド定義形式の詳細については [、「PropertyDefinition Stream Structure」](propertydefinition-stream-structure.md) および [「FieldDefinition Stream Structure」を参照してください](fielddefinition-stream-structure.md)。
     
-3. PropDefV2 形式で新しいユーザー定義フィールドの定義を作成し、それを配列に追加します。
+3. PropDefV2 形式の新しいユーザー定義フィールドの定義を作成し、それを配列に追加します。
     
-4. version 要素がこの値に設定されていない場合は、propertydefinition stream 構造の version 要素を0x0103 として設定します。
+4. Version 要素が値に設定されていない場合は、PropertyDefinition ストリーム構造の Version 要素を 0x0103として設定します。
     
-5. fielddefinitioncount 要素を1つずつインクリメントします。
+5. FieldDefinitionCount 要素を 1 ずつインクリメントします。
     
-6. 配列を fielddefinitions 要素の値として格納します。
+6. 配列を FieldDefinitions 要素の値として格納します。
     
 ## <a name="see-also"></a>関連項目
 
-- [propertydefinition ストリームの構造](propertydefinition-stream-structure.md)
+- [PropertyDefinition ストリーム構造](propertydefinition-stream-structure.md)
 

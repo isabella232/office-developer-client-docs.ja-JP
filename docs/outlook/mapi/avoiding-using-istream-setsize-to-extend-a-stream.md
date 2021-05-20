@@ -1,5 +1,5 @@
 ---
-title: istreamsetsize を使用してストリームを拡張するのを避ける
+title: IStreamSetSize を使用してストリームを拡張しないようにする
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,12 +15,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428915"
 ---
-# <a name="avoiding-using-istreamsetsize-to-extend-a-stream"></a>IStream:: SetSize を使用してストリームを拡張することを回避する
+# <a name="avoiding-using-istreamsetsize-to-extend-a-stream"></a>IStream::SetSize を使用したストリームの拡張の回避
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ストリームに書き込む場合、初期サイズが十分ではなくなったので、ストリームを拡大する必要があります。 **istream:: SetSize**ではなく、OLE メソッド**istream:: Write**を使用して、これを実行します。 **IStream:: Write**は自動的に stream を拡張するため、* * IStream:: SetSize * * は不要です。 istream の呼び出し: **:** istream なしで Write **:: setsize**は、**作成**前に**setsize**呼び出しを行うより最大3倍高速です。
+ストリームに書き込む場合、初期サイズが十分ではなくなったため、ストリームを拡大する必要がある場合があります。 OLE メソッド **IStream::Write** を使用して **、IStream::SetSize ではなく、これを実行します**。 **IStream::Write** によってストリームが自動的に拡張され、** IStream::SetSize ** が不要になります。 **IStream::Write** を **IStream::SetSize** なしで呼び出す場合、書き込み前に **SetSize** 呼び出しを行うよりも最大 3 倍速 **くなります**。
   
 

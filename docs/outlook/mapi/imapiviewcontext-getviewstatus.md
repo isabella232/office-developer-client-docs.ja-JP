@@ -1,5 +1,5 @@
 ---
-title: imapiviewcontextgetviewstatus
+title: IMAPIViewContextGetViewStatus
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -35,21 +35,21 @@ ULONG FAR * lpulStatus
 
 ## <a name="parameters"></a>パラメーター
 
- _lアウト状態_
+ _lpulStatus_
   
-> 読み上げビューアーの状態を提供するフラグのビットマスクへのポインター。 次のフラグを設定できます。
+> [out]ビューアーの状態を提供するフラグのビットマスクへのポインター。 次のフラグを設定できます。
     
 VCSTATUS_CATEGORY 
   
-> 別のカテゴリに、次または前のメッセージがあります。 
+> 別のカテゴリに次または前のメッセージがあります。 
     
 VCSTATUS_DELETE 
   
-> フォームでは、メッセージを削除できます。 
+> フォームを使用すると、メッセージを削除できます。 
     
 VCSTATUS_INTERACTIVE 
   
-> フォームにユーザーインターフェイスが表示されます。 このフラグが設定されていない場合、通常はユーザーインターフェイスが表示される原因となる動詞に応答しても、フォームはユーザーインターフェイスを表示しません。 
+> フォームにユーザー インターフェイスが表示されます。 このフラグを設定しない場合、フォームは、通常はユーザー インターフェイスが表示される動詞に応答しても、ユーザー インターフェイスの表示を抑制する必要があります。 
     
 VCSTATUS_MODAL 
   
@@ -65,7 +65,7 @@ VCSTATUS_PREV
     
 VCSTATUS_READONLY 
   
-> メッセージは読み取り専用モードで開かれます。 Delete、submit、および move 操作を無効にする必要があります。 
+> メッセージは読み取り専用モードで開きます。 削除、送信、および移動操作は無効にする必要があります。 
     
 VCSTATUS_UNREAD 
   
@@ -75,15 +75,15 @@ VCSTATUS_UNREAD
 
 S_OK 
   
-> 閲覧者の状態が正常に返されました。
+> ビューアーの状態が正常に返されました。
     
 ## <a name="remarks"></a>注釈
 
-form オブジェクトは、 **imapiviewcontext:: getviewstatus**メソッドを呼び出して、**次**のコマンドがメッセージをアクティブ化する方向で、またはその両方の方向に、フォームビューでアクティブ化するメッセージがまだあるかどうかを判断します。**前**のコマンドがメッセージをアクティブにする方向、または両方の方向。 _lVCSTATUS_NEXT status_パラメーターで指定された値は、VCSTATUS_PREV フラグが[imapiviewcontext:: ActivateNext](imapiviewcontext-activatenext.md)に対して有効かどうかを判断するために使用されます。 VCSTATUS_DELETE フラグが設定されていても、VCSTATUS_READONLY フラグが設定されていない場合は、 [IMAPIMessageSite::D eletemessage](imapimessagesite-deletemessage.md)メソッドを使用してメッセージを削除できます。 
+フォーム オブジェクトは **IMAPIViewContext::GetViewStatus** メソッドを呼び出して、次のコマンドがメッセージをアクティブ化する方向、前のコマンドがメッセージをアクティブ化する方向、または両方向で、フォーム ビューでアクティブ化するメッセージが増えるかどうかを判断します。 _lpulStatus_ パラメーターが示す値を使用して [、imapIViewContext::ActivateNext](imapiviewcontext-activatenext.md)に対して VCSTATUS_NEXT フラグと VCSTATUS_PREV フラグが有効かどうかを判断します。 VCSTATUS_DELETE フラグが設定されているが、VCSTATUS_READONLY フラグが設定されていない場合は [、IMAPIMessageSite::D eleteMessage](imapimessagesite-deletemessage.md) メソッドを使用してメッセージを削除できます。 
   
-通常、フォームはメニューコマンドとボタンが閲覧者のコンテキストに対して有効でない場合は無効にします。 ビューアーは、 [IMAPIFormAdviseSink:: OnChange](imapiformadvisesink-onchange.md)メソッドを呼び出すことによって、状態を変化させるようにフォームに通知できます。 
+通常、フォームは、ビューアーのコンテキストに対して無効な場合、メニュー コマンドとボタンを無効にします。 閲覧者は [、IMAPIFormAdviseSink::OnChange](imapiformadvisesink-onchange.md) メソッドを呼び出すことによって、フォームに状態の変更を通知できます。 
   
-VCSTATUS_MODAL フラグが設定されているのは、以前の imapiform でハンドルが渡されているウィンドウに対してフォームがモーダルである必要がある場合です[。:D overb](imapiform-doverb.md)呼び出し。 VCSTATUS_MODAL が設定されている場合、フォームが閉じるまで、 **DoVerb**呼び出しが行われたスレッドをフォームで使用できます。 VCSTATUS_MODAL が設定されていない場合、このウィンドウではフォームがモーダルではないので、スレッドを使用してはなりません。 
+フォームVCSTATUS_MODAL前の [IMAPIForm::D oVerb](imapiform-doverb.md) 呼び出しでハンドルが渡されるウィンドウにモーダルである必要がある場合、このフラグが設定されます。 このVCSTATUS_MODAL設定されている場合、フォームは、フォームが閉じるまで **DoVerb** 呼び出しが行われたスレッドを使用できます。 このVCSTATUS_MODAL設定されていない場合、フォームはこのウィンドウにモーダルではなく、スレッドを使用する必要があります。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -91,7 +91,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer  <br/> |cmymapiformviewer:: getviewstatus  <br/> |mfcmapi は、この関数の**imapiviewcontext:: getviewstatus**メソッドを実装します。  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetViewStatus  <br/> |MFCMAPI は、 **この関数に IMAPIViewContext::GetViewStatus** メソッドを実装します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

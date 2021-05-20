@@ -1,5 +1,5 @@
 ---
-title: メッセージサービスの削除
+title: メッセージ サービスの削除
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,18 +15,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428124"
 ---
-# <a name="deleting-a-message-service"></a>メッセージサービスの削除
+# <a name="deleting-a-message-service"></a>メッセージ サービスの削除
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
- **メッセージサービスをプロファイルから削除するには**
+ **プロファイルからメッセージ サービスを削除するには**
   
-1. メッセージサービステーブルにアクセスするには、 **imapisession:: getmsgservicetable**を呼び出します。 
+1. **IMAPISession::GetMsgServiceTable** を呼び出して、メッセージ サービス テーブルにアクセスします。 
     
-2. メッセージサービスの行を探し、 _lpuid_パラメーターの**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) 列を[IMsgServiceAdmin::D eletemsgservice](imsgserviceadmin-deletemsgservice.md)に渡します。 
+2. メッセージ サービスの行を見つけて _、lpuid_ パラメーター **の PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) 列を [IMsgServiceAdmin::D eleteMsgService に渡します](imsgserviceadmin-deletemsgservice.md)。 
     
- **DeleteMsgService**は、 _ulcontext_パラメーターを MSG_SERVICE_DELETE に設定して、メッセージサービスのエントリポイント関数を呼び出します。 メッセージサービスプロファイルから削除される前に、この時点でクリーンアップタスクを実行します。 
+ **DeleteMsgService は**_、ulContext_ パラメーターを指定してメッセージ サービスのエントリ ポイント関数を呼び出MSG_SERVICE_DELETE。 メッセージ サービスは、プロファイルから削除される前に、この時点でクリーンアップ タスクを実行します。 
   
 

@@ -1,5 +1,5 @@
 ---
-title: オフライン状態アドインを使用した接続状態変更の監視
+title: オフライン状態アドインを使用した接続状態の変更の監視
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,26 +13,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431303"
 ---
-# <a name="monitoring-connection-state-changes-using-an-offline-state-add-in"></a>オフライン状態アドインを使用した接続状態変更の監視
+# <a name="monitoring-connection-state-changes-using-an-offline-state-add-in"></a>オフライン状態アドインを使用した接続状態の変更の監視
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-オフライン状態アドインを使用して接続状態の変更を監視するには、アドインをセットアップして初期化するための関数を実装する必要があります。 詳細については、「[オフライン状態アドインの設定](setting-up-an-offline-state-add-in.md)」を参照してください。
+オフライン状態アドインを使用して接続状態の変更を監視する前に、アドインをセットアップして初期化する関数を実装する必要があります。 詳細については、「オフライン状態 [アドインのセットアップ」を参照してください](setting-up-an-offline-state-add-in.md)。
   
-オフライン状態アドインをセットアップした後、 **[hro・ offlineobj](hropenofflineobj.md)** 関数を使用してオフラインオブジェクトを取得する必要があります。 このオフラインオブジェクトを使用すると、状態監視を初期化して、現在の状態を取得および設定できます。 
+オフライン状態アドインをセットアップした後 **[、HrOpenOfflineObj](hropenofflineobj.md)** 関数を使用してオフライン オブジェクトを取得する必要があります。 このオフライン オブジェクトを使用して、状態モニターを初期化し、現在の状態を取得して設定できます。 
   
-このトピックでは、サンプルのオフライン状態アドインのコード例を使用して、これらの状態監視機能について説明します。 サンプルのオフライン状態アドインは、オフライン状態のメニューを Outlook に追加し**** 、オフライン状態 API を利用する COM アドインです。 **オフライン状態**メニューを使用して、状態監視を有効または無効にしたり、現在の状態を確認したり、現在の状態を変更したりすることができます。 サンプルのオフライン状態アドインのダウンロードやインストールの詳細については、[サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)を参照してください。 オフライン状態 API の詳細については、[オフライン状態 API について](about-the-offline-state-api.md)を参照してください。
+このトピックでは、これらの状態監視機能について、サンプル オフライン状態アドインのコード例を使用して説明します。 サンプル オフライン状態アドインは、オフライン状態メニューを追加し、オフライン状態API を使用Outlook COM アドインです。 [オフライン状態 **] メニュー** を使用すると、状態の監視を有効または無効にし、現在の状態を確認し、現在の状態を変更できます。 サンプルのオフライン状態アドインのダウンロードやインストールの詳細については、[サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)を参照してください。 オフライン状態 API の詳細については、[オフライン状態 API について](about-the-offline-state-api.md)を参照してください。
   
-オフライン状態アドインが切断された場合は、アドインを適切に終了してクリーンアップするための関数を実装する必要があります。 詳細については、「[オフライン状態アドインの切断](disconnecting-an-offline-state-add-in.md)」を参照してください。
+オフライン状態アドインが切断された場合は、アドインを適切に終了してクリーンアップするための関数を実装する必要があります。 詳細については、「オフライン状態 [アドインの切断」を参照してください](disconnecting-an-offline-state-add-in.md)。
   
-## <a name="open-offline-object-routine"></a>オフラインオブジェクトルーチンを開く
+## <a name="open-offline-object-routine"></a>オフライン オブジェクト ルーチンを開く
 
-接続状態の変更が発生したときにクライアントに通知されるようにするには、 **[hroな offlineobj](hropenofflineobj.md)** 関数を呼び出す必要があります。 この関数は、 **[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)** をサポートするオフラインオブジェクトを開きます。 **hroな offlineobj**関数は、connectionstate. .h ヘッダーファイルで定義されています。 
+接続状態の変更が発生したときにクライアントに通知するには **[、HrOpenOfflineObj 関数を呼び出す必要](hropenofflineobj.md)** があります。 この関数は **[、IMAPIOfflineMgr をサポートするオフライン オブジェクトを開きます](imapiofflinemgrimapioffline.md)**。 **HrOpenOfflineObj** 関数は ConnectionState.h ヘッダー ファイルで定義されます。 
   
 > [!NOTE]
-> **hropenofflineobj**関数は、次のように、importprocs .h ヘッダーファイルで宣言`extern HROPENOFFLINEOBJ* pfnHrOpenOfflineObj;`されています。 
+> **HrOpenOfflineObj** 関数は、ImportProcs.h ヘッダー ファイルで次のように宣言されています `extern HROPENOFFLINEOBJ* pfnHrOpenOfflineObj;` 。 
   
-### <a name="hropenofflineobj-example"></a>hro・ offlineofflineobj の例
+### <a name="hropenofflineobj-example"></a>HrOpenOfflineObj の例
 
 ```cpp
 typedef HRESULT (STDMETHODCALLTYPE HROPENOFFLINEOBJ)( 
@@ -44,11 +44,11 @@ typedef HRESULT (STDMETHODCALLTYPE HROPENOFFLINEOBJ)(
 );
 ```
 
-## <a name="initialize-monitor-routine"></a>モニタールーチンの初期化
+## <a name="initialize-monitor-routine"></a>モニター ルーチンの初期化
 
-関数`InitMonitor`は、 **hropenofflineobj**関数を呼び出します。 この`InitMonitor`関数は**CMyOfflineNotify**を呼び出して、Outlook がコールバック通知をクライアントに送信し、コールバック**[](mapioffline_adviseinfo.md)** を MAPIOFFLINE_ADVISEINFO `AdviseInfo`変数で登録できるようにします。
+関数  `InitMonitor` は **、HrOpenOfflineObj 関数を呼び出** します。 この `InitMonitor` 関数は **CMyOfflineNotify** を呼び出して、Outlookにコールバック通知を送信し、コールバックを MAPIOFFLINE_ADVISEINFO 変数を **[使用して登録](mapioffline_adviseinfo.md)** します `AdviseInfo` 。
   
-### <a name="initmonitor-example"></a>initmonitor () の例
+### <a name="initmonitor-example"></a>InitMonitor() の例
 
 ```cpp
 void InitMonitor(LPCWSTR szProfile) 
@@ -115,11 +115,11 @@ void InitMonitor(LPCWSTR szProfile)
 }
 ```
 
-## <a name="get-current-state-routine"></a>現在の状態ルーチンを取得する
+## <a name="get-current-state-routine"></a>現在の状態の取得ルーチン
 
-関数`GetCurrentState`は**hropenofflineobj**関数を呼び出し、オフラインオブジェクトを使用して現在の接続状態を取得します。 現在の状態は`ulCurState`変数で返され、 `CButtonEventHandler::Click`関数でユーザーに現在の状態を表示するために使用されます。 
+関数  `GetCurrentState` は **HrOpenOfflineObj** 関数を呼び出し、オフライン オブジェクトを使用して現在の接続状態を取得します。 現在の状態は変数に返され、現在の状態をユーザーに表示するために関数  `ulCurState`  `CButtonEventHandler::Click` で使用されます。 
   
-### <a name="getcurrentstate-example"></a>getselected() の例
+### <a name="getcurrentstate-example"></a>GetCurrentState() の例
 
 ```cpp
 ULONG (LPCWSTR szProfile) 
@@ -172,11 +172,11 @@ ULONG (LPCWSTR szProfile)
 }
 ```
 
-## <a name="set-current-state-routine"></a>現在の状態ルーチンを設定する
+## <a name="set-current-state-routine"></a>現在の状態ルーチンの設定
 
-関数`SetCurrentState`は**hropenofflineobj**関数を呼び出し、オフラインオブジェクトを使用して現在の接続状態を設定します。 `CButtonEventHandler::Click`関数は`SetCurrentState`関数を呼び出し、新しい状態は`ulState`変数を介して渡されます。 
+関数  `SetCurrentState` は **HrOpenOfflineObj** 関数を呼び出し、オフライン オブジェクトを使用して現在の接続状態を設定します。 関数  `CButtonEventHandler::Click` は関数を呼  `SetCurrentState` び出し、新しい状態は変数を介して渡  `ulState` されます。 
   
-### <a name="setcurrentstate-example"></a>setlevel() の例
+### <a name="setcurrentstate-example"></a>SetCurrentState() の例
 
 ```cpp
 HRESULT SetCurrentState(LPCWSTR szProfile, ULONG ulFlags, ULONG ulState) 
@@ -241,9 +241,9 @@ HRESULT SetCurrentState(LPCWSTR szProfile, ULONG ulFlags, ULONG ulState)
 
 ## <a name="notification-routine"></a>通知ルーチン
 
-**[IMAPIOfflineNotify:: Notify](imapiofflinenotify-notify.md)** 関数は、接続状態が変更されたときに、クライアントに通知を送信するために Outlook によって使用されます。 
+**[IMAPIOfflineNotify::Notify](imapiofflinenotify-notify.md)** 関数は、Outlook状態に変更がある場合にクライアントに通知を送信するために使用されます。 
   
-### <a name="cmyofflinenotifynotify-example"></a>CMyOfflineNotify:: Notify () の例
+### <a name="cmyofflinenotifynotify-example"></a>CMyOfflineNotify::Notify() の例
 
 ```cpp
 void CMyOfflineNotify::Notify(const MAPIOFFLINE_NOTIFY *pNotifyInfo) 

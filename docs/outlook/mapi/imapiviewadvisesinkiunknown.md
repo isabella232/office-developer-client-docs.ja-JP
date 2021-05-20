@@ -25,26 +25,26 @@ ms.locfileid: "33429419"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームから通知を受信します。 
+フォームから通知を受け取ります。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
-|公開者:  <br/> |アドバイズシンクオブジェクトの表示  <br/> |
-|実装元:  <br/> |フォームビューアー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |シンク オブジェクトの表示  <br/> |
+|実装元:  <br/> |フォーム ビューアー  <br/> |
 |呼び出し元:  <br/> |フォーム オブジェクト  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIViewAdviseSink  <br/> |
 |ポインターの種類:  <br/> |LPMAPIVIEWADVISESINK  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[onshutdown](imapiviewadvisesink-onshutdown.md) <br/> |フォームが閉じられていることをフォームビューアーに通知します。  <br/> |
-|[onnewmessage](imapiviewadvisesink-onnewmessage.md) <br/> |フォームビューアーに、新規または既存のメッセージがフォームにロードされたことを通知します。  <br/> |
-|[OnPrint](imapiviewadvisesink-onprint.md) <br/> |フォームの印刷状態をフォームビューアーに通知します。  <br/> |
-|[onsubmitted](imapiviewadvisesink-onsubmitted.md) <br/> |現在のメッセージが MAPI スプーラーに送信されたことをフォームビューアーに通知します。  <br/> |
-|[onsaved](imapiviewadvisesink-onsaved.md) <br/> |フォームの現在のメッセージが保存されたことをフォームビューアーに通知します。  <br/> |
+|[OnShutdown](imapiviewadvisesink-onshutdown.md) <br/> |フォームが閉じているとフォーム ビューアーに通知します。  <br/> |
+|[OnNewMessage](imapiviewadvisesink-onnewmessage.md) <br/> |新しいメッセージまたは既存のメッセージがフォームに読み込まれたとフォーム ビューアーに通知します。  <br/> |
+|[OnPrint](imapiviewadvisesink-onprint.md) <br/> |フォームの印刷状態をフォーム ビューアーに通知します。  <br/> |
+|[OnSubmitted](imapiviewadvisesink-onsubmitted.md) <br/> |現在のメッセージが MAPI スプーラーに送信されたとフォーム ビューアーに通知します。  <br/> |
+|[OnSaved](imapiviewadvisesink-onsaved.md) <br/> |フォームの現在のメッセージが保存されたとフォーム ビューアーに通知します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

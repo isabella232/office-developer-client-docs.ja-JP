@@ -19,31 +19,31 @@ ms.locfileid: "33429160"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-通知は、あるオブジェクトが変更を行ったことを別のオブジェクトに通知することを可能にします。 変更の種類はイベントと呼ばれます。 MAPI は、通知が生成されるいくつかのイベントを定義します。 
+通知を使用すると、あるオブジェクトが変更を受けたことを別のオブジェクトに通知できます。 変更の種類はイベントと呼ばれます。 MAPI は、通知が生成されるいくつかのイベントを定義します。 
   
-通常、クライアントは1つまたは複数のオブジェクトを使用して1つ以上のイベントを登録します。 これらのオブジェクトは、アドバイズソースと呼ばれます。 アドバイズソースとして機能するオブジェクトには、MAPI のコントロールの下にある session オブジェクト、またはメッセージなどのサービスプロバイダーによって作成されたオブジェクトがあります。 通知されたオブジェクトは、アドバイズシンクと呼ばれ、 [IMAPIAdviseSink: iunknown](imapiadvisesinkiunknown.md)インターフェイスまたは[IMAPIViewAdviseSink: iunknown](imapiviewadvisesinkiunknown.md)インターフェイスのいずれかの実装を含み、クライアントアプリケーション内にあります。 
+クライアントは通常、1 つ以上のオブジェクトを持つ 1 つ以上のイベントに登録します。 これらのオブジェクトは、アドバイス ソースと呼ばれます。 アドバイス ソースとして機能できるオブジェクトには、セッション オブジェクト、MAPI のコントロールの下、またはメッセージなどのサービス プロバイダーによって作成されたオブジェクトが含まれます。 通知シンクと呼ばれる情報に基づいたオブジェクトには [、IMAPIAdviseSink : IUnknown](imapiadvisesinkiunknown.md) インターフェイスまたは [IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md) インターフェイスの実装が含まれているので、クライアント アプリケーション内に格納されます。 
   
-アドバイズソースオブジェクト通知を登録するためにクライアントによって呼び出される**アドバイズ**メソッドと、登録をキャンセルするために呼び出される**アドバイズ**中止メソッドを実装します。 **アドバイズ**するパラメーターの1つは、 **IMAPIAdviseSink**または * * IMAPIViewAdviseSink * * の実装へのポインターです。 アドバイズソースは、変更が発生した場合に、 [IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)または**IMAPIViewAdviseSink**のいずれかのメソッドを呼び出せるように、このポインターをキャッシュします。 
+アドバイス ソース オブジェクトは **、通知** を登録するためにクライアントによって呼び出される Advise メソッドと、登録をキャンセルするために呼び出される **Unadvise** メソッドを実装します。 Advise のパラメーターの **1** つは **、IMAPIAdviseSink** または ** IMAPIViewAdviseSink **の実装へのポインターです。 変更が発生すると、このポインターは [、IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) または **IMAPIViewAdviseSink** のいずれかのメソッドを呼び出す際に、このポインターをキャッシュします。 
   
-通知を受信すると、ユーザーは最新の情報を表示できるため、すべてのクライアントが通知を登録して処理することをお勧めします。 ただし、これは省略可能です。
+通知を受信すると、ユーザーは最新の情報を表示することができますので、すべてのクライアントが通知に登録して処理を行う必要があります。 ただし、省略可能です。
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [通知の登録](registering-for-a-notification.md): 初期化プロセスの一部として、通知のクライアントを登録する方法について説明します。
+- [通知の登録](registering-for-a-notification.md): クライアントを初期化プロセスの一部として通知に登録する方法について説明します。
     
-- [通知のキャンセル](canceling-a-notification.md): 通知のサブスクリプションを取り消す方法について説明します。
+- [通知のキャンセル](canceling-a-notification.md): 通知へのサブスクリプションをキャンセルする方法について説明します。
     
-- [メッセージストア通知の処理](handling-message-store-notification.md): メッセージストア通知の登録方法について説明します。
+- [メッセージ ストア通知の処理](handling-message-store-notification.md): メッセージ ストア通知に登録する方法について説明します。
     
-- [アドレス帳通知](handing-address-book-notification.md)の処理: アドレス帳の通知を登録して処理する方法について説明します。
+- [[アドレス帳の通知を渡す](handing-address-book-notification.md)]: アドレス帳の通知を登録して処理する方法について説明します。
     
-- [テーブル通知の処理](handling-table-notification.md): 階層テーブルから通知を登録する方法について説明します。
+- [テーブル通知の処理](handling-table-notification.md): 階層テーブルからの通知を登録する方法について説明します。
     
-- [アドバイズシンクオブジェクトの実装](implementing-an-advise-sink-object.md): アドバイズシンクオブジェクトを実装する方法について説明します。
+- [Advise Sink オブジェクトの実装](implementing-an-advise-sink-object.md): アアドバイス シンク オブジェクトを実装する方法について説明します。
     
-- [通知のタイミング](timing-a-notification.md): サービスプロバイダーによるクライアント通知のタイミングについて説明します。
+- [通知のタイミング](timing-a-notification.md): サービス プロバイダーによるクライアント通知のタイミングについて説明します。
     
-- [スレッドセーフ通知の確認](ensuring-a-thread-safe-notification.md): MAPI を使用してスレッドセーフな通知を行う方法について説明します。
+- [[通知のThread-Safeする](ensuring-a-thread-safe-notification.md): MAPI を使用してスレッド セーフ通知を確認する方法について説明します。
     
 - [通知の強制](forcing-a-notification.md): MAPI で通知を強制する方法について説明します。
     

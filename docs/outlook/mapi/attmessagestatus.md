@@ -21,16 +21,16 @@ ms.locfileid: "33430316"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI メッセージフラグは、下位互換性を維持するために、TNEF フラグにマップされます。 すべてのフラグがまとめられ、1バイトでエンコードされます。 マッピングは次のとおりです。
+MAPI メッセージ フラグは、下位互換性を維持するために TNEF フラグにマップされます。 すべてのフラグがグループ化され、1 バイトでエンコードされます。 マッピングは次のとおりです。
   
-|**MAPI メッセージフラグ**|**TNEF フラグ**|
+|**MAPI メッセージ フラグ**|**TNEF フラグ**|
 |:-----|:-----|
-|MSGFLAG_READ  <br/> |fmsread  <br/> |
-|MSGFLAG_UNMODIFED  <br/> |~ fmsmodified  <br/> |
-|MSGFLAG_SUBMIT  <br/> |fmssubmitted  <br/> |
+|MSGFLAG_READ  <br/> |fmsRead  <br/> |
+|MSGFLAG_UNMODIFED  <br/> |~fmsModified  <br/> |
+|MSGFLAG_SUBMIT  <br/> |fmsSubmitted  <br/> |
 |MSGFLAG_HASATTACH  <br/> |fmsHasAttach  <br/> |
-|MSGFLAG_UNSENT  <br/> |fmslocal  <br/> |
+|MSGFLAG_UNSENT  <br/> |fmsLocal  <br/> |
    
-これらのフラグは TNEF で定義されています。H ヘッダーファイル。
+これらのフラグは TNEF で定義されます。H ヘッダー ファイル。
   
 

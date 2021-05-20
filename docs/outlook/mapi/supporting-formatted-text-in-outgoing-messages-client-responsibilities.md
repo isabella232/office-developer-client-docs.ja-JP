@@ -1,5 +1,5 @@
 ---
-title: 送信メッセージの書式付きテキストのサポートクライアントの責任
+title: 送信メッセージの書式設定されたテキストのサポート クライアントの責任
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,28 +15,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431604"
 ---
-# <a name="supporting-formatted-text-in-outgoing-messages-client-responsibilities"></a>送信メッセージでの書式付きテキストのサポート: クライアントの責任
+# <a name="supporting-formatted-text-in-outgoing-messages-client-responsibilities"></a>送信メッセージでの書式設定されたテキストのサポート: クライアントの責任
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントアプリケーションは、送信メッセージの**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティ、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティ、または**PR_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md)) プロパティを設定します。 プレーンテキストのみをサポートするクライアントは、 **PR_BODY**プロパティのみを設定します。 リッチテキスト形式 (RTF) 対応クライアントは、使用されているメッセージストアプロバイダーに応じて、 **PR_BODY**と**PR_RTF_COMPRESSED**の両方のプロパティを設定するか、または**PR_RTF_COMPRESSED**のみを設定できます。 HTML 対応クライアントは、 **PR_HTML**プロパティを設定します。 
+クライアント アプリケーションは **、PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティ **、PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティ、または送信メッセージの **PR_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md)) プロパティを設定します。 プレーン テキスト セットのみをサポートするクライアントは、PR_BODY **プロパティのみです** 。 リッチ テキスト形式 (RTF) 対応のクライアントは、使用するメッセージ ストア プロバイダーに応じて、PR_BODY プロパティと **PR_RTF_COMPRESSED** プロパティの両方を設定するか、PR_RTF_COMPRESSED のみを設定できます。  HTML 対応のクライアントは、PR_HTMLプロパティ **を設定** します。 
   
-クライアントがメッセージストアの**PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティをチェックして、ストアが RTF をサポートしているかどうかを判断することは重要です。 メッセージストアが rtf 対応ではない場合、rtf 対応クライアントは、各送信メッセージの**PR_BODY**プロパティと**PR_RTF_COMPRESSED**プロパティの両方を設定します。 
+クライアントは、メッセージ ストアの PR_STORE_SUPPORT_MASK **(** [PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティをチェックして、ストアが RTF をサポートするかどうかを判断することが重要です。 メッセージ ストアが RTF 対応ではない場合、RTF 対応クライアントは、送信メッセージごとに PR_BODYプロパティ **PR_RTF_COMPRESSEDプロパティの** 両方を設定します。 
   
-メッセージストアが RTF 対応の場合は、 **PR_RTF_COMPRESSED**プロパティのみを設定する必要があります。 
+メッセージ ストアが RTF 対応の場合は **、PR_RTF_COMPRESSEDプロパティのみを** 設定する必要があります。 
   
- **PR_RTF_COMPRESSED を設定し、必要に応じて同期プロセスが実行されるようにするには、RTF 対応クライアントである必要があります。**
+ **必要にPR_RTF_COMPRESSED同期プロセスが実行されるのを確認するには、RTF 対応のクライアント**
   
-1. [imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **PR_RTF_COMPRESSED**プロパティを開き、MAPI_CREATE と MAPI_MODIFY の両方のフラグを設定します。 MAPI_CREATE では、既存のデータがすべて新しいデータに置き換えられるようにすることができます。これにより、これらの置換を行うことができます。 
+1. [IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出して **、PR_RTF_COMPRESSED** プロパティを開き、MAPI_CREATEフラグMAPI_MODIFYします。 MAPI_CREATE、新しいデータが古いデータに置き換わり、MAPI_MODIFY置き換えできます。 
     
-2. [WrapCompressedRTFStream](wrapcompressedrtfstream.md)関数を呼び出して、メッセージストアが**PR_STORE_SUPPORT_MASK**プロパティに STORE_UNCOMPRESSED_RTF ビットを設定している場合は STORE_UNCOMPRESSED_RTF を渡し、圧縮されていないバージョンの PR_RTF_COMPRESSED を取得します。 **** **openproperty**から返されたストリーム。
+2. メッセージ ストアが PR_STORE_SUPPORT_MASK プロパティに STORE_UNCOMPRESSED_RTF ビットを設定する場合は、WrapCompressedRTFStream 関数を呼び出し **、STORE_UNCOMPRESSED_RTF** を渡して **、OpenProperty** から返される PR_RTF_COMPRESSED ストリームの非圧縮バージョンを取得します。 [](wrapcompressedrtfstream.md) 
     
-3. **WrapCompressedRTFStream**から返される非圧縮ストリームに、メッセージテキストデータを書き込みます。
+3. **WrapCompressedRTFStream** から返される非圧縮ストリームにメッセージ テキスト データを書き込みます。
     
 4. 圧縮されていないストリームと圧縮されたストリームの両方をコミットして解放します。
     
-この時点で、メッセージストアプロバイダーが RTF をサポートしている場合は、必要なすべての処理が完了しています。 必要に応じて、メッセージストアプロバイダーが同期プロセスを処理し、 **PR_BODY**プロパティの作成を行うことができます。 ただし、メッセージストアプロバイダーが RTF をサポートしていない場合は、 [rtfsync](rtfsync.md)関数を呼び出してテキストと書式設定を同期させ、RTF_SYNC_RTF_CHANGED フラグを設定する必要があります。 
+この時点で、メッセージ ストア プロバイダーが RTF をサポートしている場合は、必要なすべての処理を行いました。 必要に応じて、メッセージ ストア プロバイダーに依存して、同期プロセスと PR_BODY プロパティ **の** 作成を処理できます。 ただし、メッセージ ストア プロバイダーが RTF をサポートしていない場合は [、RTFSync](rtfsync.md) 関数を呼び出してテキストを書式設定と同期し、RTF_SYNC_RTF_CHANGEDする必要があります。 
   
 

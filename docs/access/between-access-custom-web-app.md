@@ -1,5 +1,5 @@
 ---
-title: 間 (Access カスタム web アプリ)
+title: BETWEEN (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429300"
 ---
-# <a name="between-access-custom-web-app"></a>間 (Access カスタム web アプリ)
+# <a name="between-access-custom-web-app"></a>BETWEEN (Access カスタム Web アプリ)
 
 テストする範囲を指定します。
   
@@ -28,15 +28,15 @@ ms.locfileid: "33429300"
   
 |**引数**|**必須**|**説明**|
 |:-----|:-----|:-----|
-| *test_expression*  <br/> |はい  <br/> |*begin_expression*および*end_expression*で定義されている範囲内でテストする式を指定します。 *begin_expression*と*end_expression*の両方と同じデータ型である必要があります。  <br/> |
+| *test_expression*  <br/> |はい  <br/> |ユーザーとユーザーが定義する範囲内でテスト *begin_expression**式* end_expression。 データ型とデータ型の両方と *同じbegin_expression* 必要 *end_expression。*  <br/> |
 | *NOT*  <br/> |いいえ  <br/> |述部の結果を否定することを指定します。  <br/> |
-| *begin_expression*  <br/> |はい  <br/> |有効な式。 *test_expression*と*end_expression*の両方と同じデータ型である必要があります。  <br/> |
-| *end_expression*  <br/> |はい  <br/> |有効な式。 *test_expression*と*begin_expression*の両方と同じデータ型である必要があります。  <br/> |
-| *AND*  <br/> |はい  <br/> |*test_expression*が*begin_expression*と*end_expression*で示される範囲内にあることを示します。  <br/> |
+| *begin_expression*  <br/> |はい  <br/> |有効な式。 データ型とデータ型の両方と *同じtest_expression* 必要 *end_expression。*  <br/> |
+| *end_expression*  <br/> |はい  <br/> |有効な式。 データ型とデータ型の両方と *同じtest_expression* 必要 *begin_expression。*  <br/> |
+| *AND*  <br/> |はい  <br/> |指定した *test_expression* および指定した範囲内にある必要がある *begin_expressionを**end_expression。*  <br/> |
    
 ## <a name="result-type"></a>結果の型
 
- **Boolean**
+ **ブール型 (Boolean)**
   
 ## <a name="remarks"></a>注釈
 

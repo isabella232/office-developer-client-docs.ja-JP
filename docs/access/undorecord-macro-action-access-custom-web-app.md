@@ -1,5 +1,5 @@
 ---
-title: UndoRecord マクロアクション (Access カスタム web アプリ)
+title: UndoRecord マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435692"
 ---
-# <a name="undorecord-macro-action-access-custom-web-app"></a>UndoRecord マクロアクション (Access カスタム web アプリ)
+# <a name="undorecord-macro-action-access-custom-web-app"></a>UndoRecord マクロ アクション (Access カスタム Web アプリ)
 
 カレント レコードに対する変更を破棄します。
   

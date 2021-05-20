@@ -25,7 +25,7 @@ ms.locfileid: "33430449"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージストアの内部エントリ識別子を MAPI 標準形式のエントリ id に変換します。
+メッセージ ストアの内部エントリ識別子を MAPI 標準形式のエントリ識別子に変換します。
   
 ```cpp
 HRESULT WrapStoreEntryID(
@@ -40,19 +40,19 @@ LPENTRYID FAR * lppWrappedEntry
 
  _cbOrigEntry_
   
-> 順番_lporigentry_パラメーターによって指摘されたエントリ識別子のバイト数。 
+> [in]  _lpOrigEntry_ パラメーターが指すエントリ識別子のバイト数。 
     
- _lporigentry_
+ _lpOrigEntry_
   
-> 順番メッセージストアのプライベートエントリ識別子へのポインター。
+> [in]メッセージ ストアのプライベート エントリ識別子へのポインター。
     
  _lpcbWrappedEntry_
   
-> 読み上げ_lppWrappedEntry_パラメーターによって示されるエントリ識別子のバイト数へのポインター。 
+> [out]  _lppWrappedEntry_ パラメーターが指すエントリ識別子内のバイト 数へのポインター。 
     
  _lppWrappedEntry_
   
-> 読み上げラップされたエントリ識別子へのポインターへのポインター。
+> [out]ラップされたエントリ識別子へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -62,15 +62,15 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport:: WrapStoreEntryID**メソッドは、すべてのサービスプロバイダーサポートオブジェクトに実装されています。 サービスプロバイダーは**WrapStoreEntryID**を使用して、ストアの内部エントリ識別子をラップするメッセージストアのエントリ識別子を MAPI で生成します。 
+**IMAPISupport::WrapStoreEntryID** メソッドは、すべてのサービス プロバイダー サポート オブジェクトに実装されます。 サービス プロバイダーは **WrapStoreEntryID** を使用して、MAPI がストアの内部エントリ識別子をラップするメッセージ ストアのエントリ識別子を生成します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-クライアントがメッセージストアの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、 **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md)) プロパティを取得し、メッセージストアがプライベート形式のエントリ識別子を使用する場合は、WrapStoreEntryID を呼び出します。 **** を指定し、 _lppWrappedEntry_パラメーターで指定されたエントリ識別子を返します。 
+クライアントがメッセージ ストアの [IMAPIProp::GetProps](imapiprop-getprops.md) メソッドを呼び出して **PR_STORE_ENTRYID** ([PidTagStoreEntryId)](pidtagstoreentryid-canonical-property.md)プロパティを取得し、メッセージ ストアでプライベート形式のエントリ識別子を使用する場合は **、WrapStoreEntryID** を呼び出し  _、lppWrappedEntry_ パラメーターが指すエントリ識別子を返します。 
   
-[IMSProvider:: Logon](imsprovider-logon.md)および[IMSLogon:: compareentryids](imslogon-compareentryids.md)メソッドの呼び出しは、常にストアの秘密エントリ識別子を取得します。ラップされたバージョンは、クライアントアプリケーションと MAPI 間でのみ使用されます。 
+[IMSProvider::Logon](imsprovider-logon.md)メソッドと[IMSLogon::CompareEntryIDs](imslogon-compareentryids.md)メソッドの呼び出しは、常にストアのプライベート エントリ識別子を取得します。ラップされたバージョンは、クライアント アプリケーションと MAPI の間でのみ使用されます。 
   
-エントリ識別子の使用が終了したら、 [MAPIFreeBuffer](mapifreebuffer.md)関数を使用して、 _lppWrappedEntry_パラメーターで指定されたエントリ識別子のメモリを解放します。 
+エントリ識別子の使用が完了したら [、MAPIFreeBuffer](mapifreebuffer.md)関数を使用して _、lppWrappedEntry_ パラメーターが指すエントリ識別子のメモリを解放します。 
   
 ## <a name="see-also"></a>関連項目
 

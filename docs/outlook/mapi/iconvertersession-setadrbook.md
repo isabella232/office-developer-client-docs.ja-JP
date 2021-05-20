@@ -1,5 +1,5 @@
 ---
-title: iconvertersessionsetadrbook
+title: IConverterSessionSetAdrBook
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33429195"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapi メッセージを mime ストリームに変換するときに、あいまいなアドレスを解決するために mapi から mime コンバータが使用するオプションの mapi アドレス帳を指定します。
+MAPI から MIME への変換時に、MAPI から MIME への変換であいまいなアドレスを解決するために使用するオプションの MAPI アドレス帳を指定します。
   
 ```cpp
 HRESULT IConverterSession::SetAdrBook( 
@@ -34,9 +34,9 @@ LPADRBOOK pab);
 
 ## <a name="parameters"></a>パラメーター
 
- _個人_
+ _pab_
   
-> 順番MAPI から MIME への変換で使用される[IAddrBook: imapiprop](iaddrbookimapiprop.md)インターフェイスへのポインター。 アドレス帳を必要としなくなった場合は、このパラメーターを**null**に設定します。これにより、インターフェイスが解放され、すべてのアドレス帳を使用しないようにコンバータがリセットされます。 
+> [in]MAPI から MIME への変換で使用する [IAddrBook : IMAPIProp](iaddrbookimapiprop.md) インターフェイスへのポインター。 アドレス帳が不要 **になった** 場合は、このパラメーターを null に設定します。これにより、インターフェイスが解放され、コンバータがアドレス帳を使用しなかにリセットされます。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -46,7 +46,7 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-mapi メッセージを MIME ストリームに変換する必要はありません。通常、mapi プロファイルにログオンする必要はありません。 ただし、変換に MAPI アドレス帳を指定するには、アドレス帳を取得するためにプロファイルにログオンする必要があります。
+MAPI メッセージを MIME ストリームに変換する場合、通常は MAPI プロファイルにログオンする必要があります。 ただし、変換用に MAPI アドレス帳を指定するには、プロファイルにログオンしてアドレス帳を取得する必要があります。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -54,8 +54,8 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|mapimime .cpp  <br/> |ImportEMLToIMessage  <br/> |mfcmapi は MimeToMAPI を使用して、EML ファイルを MAPI メッセージに変換します。  <br/> |
-|mapimime .cpp  <br/> |ExportIMessageToEML  <br/> |mfcmapi は、MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
+|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI は MimeToMAPI を使用して EML ファイルを MAPI メッセージに変換します。  <br/> |
+|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI は MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

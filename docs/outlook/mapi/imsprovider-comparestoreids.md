@@ -25,7 +25,7 @@ ms.locfileid: "33431709"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-2つのメッセージストアエントリ識別子を比較して、同じ store オブジェクトを参照しているかどうかを判断します。
+2 つのメッセージ ストア エントリ識別子を比較して、同じストア オブジェクトを参照するかどうかを判断します。
   
 ```cpp
 HRESULT CompareStoreIDs(
@@ -42,27 +42,27 @@ HRESULT CompareStoreIDs(
 
  _cbEntryID1_
   
-> 順番_lpEntryID1_パラメーターによって示されるエントリ識別子のバイト単位のサイズ _。_
+> [in]  _lpEntryID1_ パラメーターが指すエントリ識別子のサイズ (バイト  _単位)。_
     
  _lpEntryID1_
   
-> 順番比較する最初のエントリ識別子へのポインター。
+> [in]比較する最初のエントリ識別子へのポインター。
     
  _cbEntryID2_
   
-> 順番_lpEntryID2_パラメーターによって示されるエントリ識別子のバイト単位のサイズ _。_
+> [in]  _lpEntryID2_ パラメーターが指すエントリ識別子のサイズ (バイト  _単位)。_
     
  _lpEntryID2_
   
-> 順番比較する2番目のエントリ id へのポインター。
+> [in]比較する 2 番目のエントリ識別子へのポインター。
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lルー result_
+ _lpulResult_
   
-> 読み上げ返された比較結果へのポインター。 2つのエントリ識別子が同じオブジェクトを参照している場合は TRUE。それ以外の場合は FALSE。
+> [out]比較の返される結果へのポインター。 2 つのエントリ識別子が同じオブジェクトを参照する場合は TRUE。それ以外の場合は FALSE。
     
 ## <a name="return-value"></a>戻り値
 
@@ -72,11 +72,11 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-MAPI は、 [imapisession:: openmsgstore](imapisession-openmsgstore.md)メソッドへの呼び出しを処理するときに、 **IMSProvider:: comparestoreids**メソッドを呼び出します。 **comparestoreids**はこの時点で呼び出され、開いているメッセージストアに関連付けられているプロファイルセクションがある場合は、それを判断します。 **comparestoreids**呼び出しは、特定のストアプロバイダーに対してメッセージストアが開かれていない場合に行うことができます。 さらに、MAPI は、 [imapisupport::](imapisupport-openprofilesection.md) openprofileupdatemethod へのストアプロバイダー呼び出しを処理するときに、 **comparestoreids**も呼び出します。 
+MAPI は [、IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)メソッドへの呼び出しを処理するときに **、IMSProvider::CompareStoreIDs** メソッドを呼び出します。 **この時点で CompareStoreIDs** が呼び出され、開いているメッセージ ストアに関連付けられているプロファイル セクション (ある場合) が特定されます。 **CompareStoreIDs 呼** び出しは、特定のストア プロバイダーに対して開いているメッセージ ストアがない場合に行います。 さらに、MAPI は[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)メソッドへのストア プロバイダー呼び出しを処理するときに CompareStoreIDs も呼び出します。  
   
-**comparestoreids**によって比較されるエントリ識別子は、現在のストアプロバイダーのダイナミックリンクライブラリ (DLL) と共に、かつ非ラップストアエントリ識別子の両方になります。 ストアエントリ識別子のラッピングの詳細については、「 [imapisupport:: WrapStoreEntryID](imapisupport-wrapstoreentryid.md)」を参照してください。
+**CompareStoreIDs** で比較されるエントリ識別子は、現在のストア プロバイダーのダイナミック リンク ライブラリ (DLL) の両方のエントリ識別子であり、両方ともラップされていないストア エントリ識別子です。 ストア エントリ識別子の折り返しの詳細については [、「IMAPISupport::WrapStoreEntryID」を参照してください](imapisupport-wrapstoreentryid.md)。
   
-エントリ識別子の比較は、1つのオブジェクトが複数の有効なエントリ識別子を持つことができるので便利です。 これは、たとえば、新しいバージョンのメッセージストアプロバイダーがインストールされた後に発生する可能性があります。 
+エントリ識別子の比較は、オブジェクトが複数の有効なエントリ識別子を持つ可能性がある場合に便利です。 これは、たとえば、メッセージ ストア プロバイダーの新しいバージョンがインストールされた後に発生する可能性があります。 
   
 ## <a name="see-also"></a>関連項目
 

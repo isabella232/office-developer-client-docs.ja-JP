@@ -1,5 +1,5 @@
 ---
-title: ストアのハッシュ番号を計算するアルゴリズム
+title: ストア ハッシュ番号を計算するアルゴリズム
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,22 +13,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436308"
 ---
-# <a name="algorithm-to-calculate-the-store-hash-number"></a>ストアのハッシュ番号を計算するアルゴリズム
+# <a name="algorithm-to-calculate-the-store-hash-number"></a>ストア ハッシュ番号を計算するアルゴリズム
  
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapi の Uniform resource Locator (URL) の一部として、ストアプロバイダーは、インデックス作成の準備ができているオブジェクトを識別するために、ストアのハッシュ番号を mapi プロトコルハンドラーに送信します。 MAPI プロトコルハンドラーは、ストアを識別するために、このストアハッシュ番号を使用します。 一般に、ストアプロバイダーは、ストアのマッピング署名に基づいて、store ハッシュ番号を計算します。このプロパティは、ストアの [グローバルプロファイル] セクションで定義されている**[PR_MAPPING_SIGNATURE](pidtagmappingsignature-canonical-property.md)** プロパティです。 それ以外の場合、ストアプロバイダーはストアエントリ ID を使用します。 ストアのハッシュ値を計算するアルゴリズムでは、あいまいさを識別するストアを最小限に抑える必要があります。 
+MAPI Uniform Resource Locator (URL) の一部として、ストア プロバイダーは MAPI プロトコル ハンドラーにストア ハッシュ番号を送信して、インデックス作成の準備ができているオブジェクトを識別します。 MAPI プロトコル ハンドラーは、このストア ハッシュ番号を使用してストアを識別します。 一般に、ストア プロバイダーは、ストアにグローバル プロファイル セクションで定義されている PR_MAPPING_SIGNATURE プロパティがある場合、ストア マッピング署名に基 **[づいて](pidtagmappingsignature-canonical-property.md)** ストア ハッシュ番号を計算します。 それ以外の場合、ストア プロバイダーはストア エントリ ID を使用します。 ストア ハッシュ番号を計算するアルゴリズムでは、ストアを識別するあいまいさを最小限に抑える必要があります。 
   
-このトピックでは、Microsoft Office Outlook がストアのマッピングシグネチャまたはエントリ ID とストアファイル名に基づいてストアハッシュ番号を計算するために使用するアルゴリズムについて説明します。 
+このトピックでは、ストア マッピングMicrosoft Office Outlook署名またはエントリ ID とストア ファイル名に基づいてストア ハッシュ番号を計算するために使用するアルゴリズムについて説明します。 
   
-エンコードされるバイナリ blob は、ほとんどの場合ストアの PR_ENTRYID ですが、キャッシュされた Exchange ストア (パブリックとプライベートの両方) については、バイナリ blob がプロファイルにある PR_MAPPING_SIGNATURE である必要があります。
+エンコードするバイナリ BLOB は、ほとんどの場合、ストアの PR_ENTRYID ですが、パブリックとプライベートの両方のキャッシュされた Exchange ストアの場合、バイナリ BLOB はプロファイルにある PR_MAPPING_SIGNATURE である必要があります。
   
-パブリックフォルダーストアのバイナリ blob のハッシュを計算した後、OST パスでハッシュ処理を行う前に、"" という文字列を表す定数0x2e505542。PUB "は、一意であることを保証するためににハッシュされます。これは、プライベートストアのハッシュとは区別されます。
+パブリック フォルダー ストアのバイナリ BLOB のハッシュを計算した後、OST パスをハッシュインする前に、定数 0x2E505542 を表します。PUB"は、プライベート ストアのハッシュとは異なる、一意のハッシュを保証するためにハッシュされます。
   
-サポートコードを使用してプロファイルの関連ビットを調べることができます。これは、ストアがパブリックまたはプライベートであるかどうか、キャッシュされているかどうか、および OST へのパスを特定するために使用されます。 このコードをプロジェクトに組み込むには、関数 computestorehash を呼び出します。このハッシュは、セッションポインターと pr\_ENTRYID、pr\_SERVICE_UID、およびメッセージストアテーブル\_から pr MDB_PROVIDER を入力として取得します。 必要な残りの情報はプロファイルから取得されます。 出力の場合、この関数は、ストアがキャッシュさ\_れた Exchange ストアである場合は pr MAPPING_SIGNATURE から計算されたもの、\_または pr ENTRYID から計算されたハッシュを返します。
+サポート コードは、プロファイルから関連するビットを作成します。これは、ストアがパブリックかプライベートか、キャッシュされている場合、および OST へのパスを判断するために使用できます。 このコードをプロジェクトに組み込むには、メッセージ ストア テーブルからセッション ポインター、PR \_ ENTRYID、PR \_ SERVICE_UID、PR MDB_PROVIDER を入力する ComputeStoreHash 関数を呼び出 \_ します。 必要な情報の残りの部分は、プロファイルから取得します。 出力の場合、この関数は、ストアがキャッシュされた Exchange ストアである場合は PR MAPPING_SIGNATURE から計算されたハッシュ、または PR ENTRYID から計算されたハッシュを返します \_ \_ 。
   
 > [!NOTE]
-> HrEmsmdbUIDFromStore サポート機能は、pbGlobalProfileSectionGuid を使用して exchange メールボックスのプロファイルセクションを開く場合の、[複数の exchange アカウント](using-multiple-exchange-accounts.md)に対応した代替の方法です。 
+> HrEmsmdbUIDFromStore サポート関数は、pbGlobalProfileSectionGuid を使用して Exchange メールボックスのプロファイル セクションを開く複数の[Exchange](using-multiple-exchange-accounts.md)アカウントに対応した代替機能です。 
   
 ```cpp
 #define PR_PROFILE_OFFLINE_STORE_PATH_A PROP_TAG(PT_STRING8, 0x6610)
@@ -238,10 +238,10 @@ void ComputeStoreHash(LPMAPISESSION lpMAPISession, LPSBinary lpEntryID, LPSBinar
 ```
 
 > [!TIP]
-> HrEmsmdbUIDFromStore 関数は、ストアを実際に開かずに動作するので、一般的な目的の方法として適しています。 ただし、store オブジェクトへのポインターが既にある場合は、PR_EMSMDB_SECTION_UID プロパティを読み取って、メッセージストアからプロファイルセクションの GUID を直接取得することもできます。 
+> HrEmsmdbUIDFromStore 関数は、実際にストアを開かなくても動作します。 ただし、ストア オブジェクトへのポインターが既に存在する場合は、PR_EMSMDB_SECTION_UID プロパティを読み取って、プロファイル セクション GUID をメッセージ ストアから直接取得することもできます。 
   
 ## <a name="see-also"></a>関連項目
 
-- [通知ベースのストアインデックス作成について](about-notification-based-store-indexing.md)
-- [通知ベースのインデックス作成の MAPI url について](about-mapi-urls-for-notification-based-indexing.md)
+- [ストア インデックスNotification-Basedについて](about-notification-based-store-indexing.md)
+- [インデックス作成の MAPI URL Notification-Basedについて](about-mapi-urls-for-notification-based-indexing.md)
 

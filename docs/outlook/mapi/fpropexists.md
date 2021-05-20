@@ -25,13 +25,13 @@ ms.locfileid: "33429489"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[imapiprop](imapipropiunknown.md)インターフェイス内の指定されたプロパティタグ、または**imapiprop**( [IMessage](imessageimapiprop.md)や[imapiprop](imapifolderimapicontainer.md)など) から派生したインターフェイスを検索します。 
+[IMAPIProp](imapipropiunknown.md)インターフェイスまたは [IMessage](imessageimapiprop.md)や **IMAPIFolder などの IMAPIProp** から派生したインターフェイスで、特定のプロパティ タグ [を検索します](imapifolderimapicontainer.md)。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 BOOL FPropExists(
@@ -44,24 +44,24 @@ BOOL FPropExists(
 
  _pobj_
   
-> 順番プロパティタグを検索する**imapiprop**から派生した**imapiprop**インターフェイスまたはインターフェイスへのポインター。 
+> [in]プロパティ タグを **検索する IMAPIProp** から派生した **IMAPIProp** インターフェイスまたはインターフェイスへのポインター。 
     
  _ulPropTag_
   
-> 順番検索するプロパティタグを指定します。
+> [in]検索するプロパティ タグ。
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 指定したプロパティタグに一致するものが見つかりました。 
+> 指定されたプロパティ タグの一致が見つかりました。 
     
 FALSE 
   
-> 指定されたプロパティタグに一致するものが見つかりませんでした。
+> 指定されたプロパティ タグの一致が見つかりませんでした。
     
 ## <a name="remarks"></a>注釈
 
-_ulPropTag_パラメーターの property タグに type PT_UNSPECIFIED が指定されている場合、 **fpropexists**関数は、プロパティ識別子のみに基づいて一致を検索します。 それ以外の場合は、型を含むプロパティタグ全体の一致が照合されます。 
+_ulPropTag_ パラメーターのプロパティ タグに型 PT_UNSPECIFIED がある場合 **、FPropExists** 関数はプロパティ識別子にのみ基づいて一致を検索します。 それ以外の場合は、型を含むプロパティ タグ全体が一致します。 
   
 

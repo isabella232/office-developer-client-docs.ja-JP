@@ -55,10 +55,10 @@ To retrieve a receive folder for a particular message class, clients pass the me
   
 |**�N���X�̃��b�Z�[�W���M���܂��B**|**�t�H���_�[���\������܂��B**|
 |:-----|:-----|
-|**IPM.メモ: 簡単な例** <br/> |�T���v���̃t�H���_�[  <br/> |
+|**IPM。Note.Sample.Simple** <br/> |�T���v���̃t�H���_�[  <br/> |
 |**IPM.Note** <br/> |��M�g���C] �t�H���_�[  <br/> |
-|**IPM.カード** <br/> |��M�g���C] �t�H���_�[  <br/> |
-|**IPM.メモ. 単純な完全** <br/> |�T���v���̃t�H���_�[  <br/> |
+|**IPM。タイムカード** <br/> |��M�g���C] �t�H���_�[  <br/> |
+|**IPM。Note.Sample.Simple.Totally** <br/> |�T���v���̃t�H���_�[  <br/> |
    
 Clients call the **SetReceiveFolder** method to make an explicit association between a particular message class and receive folder. When a message is delivered to an empty message class, MAPI places the message in the receive folder that is defined for a prefix of the empty class. For example, if your client has a receive folder established for messages with class **IPM** and a message with class **IPM.Note.Test** is delivered, this message will be placed in the receive folder for the **IPM** message class. 
   

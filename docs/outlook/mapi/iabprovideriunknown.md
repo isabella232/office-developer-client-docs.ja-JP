@@ -25,23 +25,23 @@ ms.locfileid: "33431471"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳プロバイダオブジェクトにログオンするメソッドと、アドレス帳プロバイダオブジェクトを無効にするメソッドを提供します。
+アドレス帳プロバイダー オブジェクトにログオンするメソッドと、アドレス帳プロバイダー オブジェクトを無効にするメソッドを提供します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapispi  <br/> |
-|公開者:  <br/> |アドレス帳プロバイダーのオブジェクト  <br/> |
+|ヘッダー ファイル:  <br/> |Mapispi.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |アドレス帳プロバイダーのオブジェクト  <br/> |
 |実装元:  <br/> |アドレス帳プロバイダー  <br/> |
 |呼び出し元:  <br/> |MAPI  <br/> |
 |インターフェイス識別子:  <br/> |IID_IABProvider  <br/> |
-|ポインターの種類:  <br/> |lpabprovider  <br/> |
+|ポインターの種類:  <br/> |LPABPROVIDER  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[Logon](iabprovider-logon.md) <br/> |アクティブなセッションへの接続を確立します。  <br/> |
-|[シャットダウン](iabprovider-shutdown.md) <br/> |アクティブなセッションへの接続を取り消します。  <br/> |
+|[Logon](iabprovider-logon.md) <br/> |アクティブ なセッションへの接続を確立します。  <br/> |
+|[シャットダウン](iabprovider-shutdown.md) <br/> |アクティブなセッションへの接続をキャンセルします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

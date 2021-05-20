@@ -23,36 +23,36 @@ ms.locfileid: "33428971"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-受信確認を要求するメッセージの受信のディスポジションを示します。 
+受信を要求するメッセージの受信の廃棄を示します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_REPORT_DISPOSITION_MODE、PR_REPORT_DISPOSITION_MODE_A、PR_REPORT_DISPOSITION_MODE_W  <br/> |
 |識別子:  <br/> |0x0081  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|エリア:  <br/> |MAPI エンベロープ  <br/> |
+|エリア:  <br/> |MAPI 封筒  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このプロパティに指定できる値は、"manual-action/mdn-送信-自動" および "manual-action/mdn-手動で送信する" です。
+このプロパティに使用できる値は、「手動アクション/MDN-sent-automatically」と「手動アクション/MDN-sent-manually」です。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]] 
+[[MS-OXPROPS]] 
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -62,7 +62,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

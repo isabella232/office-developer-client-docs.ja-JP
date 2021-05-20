@@ -1,5 +1,5 @@
 ---
-title: imapisupportdoconfigpropsheet
+title: IMAPISupportDoConfigPropsheet
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33429017"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-構成プロパティシートを表示します。
+構成プロパティ シートを表示します。
   
 ```cpp
 HRESULT DoConfigPropsheet(
@@ -40,45 +40,45 @@ HRESULT DoConfigPropsheet(
 
 ## <a name="parameters"></a>パラメーター
 
- _uluiparam_
+ _ulUIParam_
   
-> 順番プロパティシートの親ウィンドウへのハンドル。
+> [in]プロパティ シートの親ウィンドウへのハンドル。
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lpsztitle_
+ _lpszTitle_
   
-> 順番プロパティシートのタイトルへのポインター。
+> [in]プロパティ シートのタイトルへのポインター。
     
- _lpdisplaytable_
+ _lpDisplayTable_
   
-> 順番プロパティシートに表示されるコントロールを説明する表示テーブルへのポインター。
+> [in]プロパティ シートに表示するコントロールを説明する表示テーブルへのポインター。
     
- _lpconfigdata_
+ _lpConfigData_
   
-> 順番プロパティシートに表示される構成プロパティにアクセスするために使用される[imapiprop](imapipropiunknown.md)実装へのポインター。 
+> [in]プロパティ シートに表示する構成プロパティにアクセスするために使用する [IMAPIProp](imapipropiunknown.md) 実装へのポインター。 
     
- _ultoppage_
+ _ulTopPage_
   
-> 順番プロパティシートの既定のトップページの0から始まるインデックス。
+> [in]プロパティ シートの既定のトップ ページへの 0 から始るインデックス。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 構成プロパティシートが表示されました。
+> 構成プロパティ シートが表示された。
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport::D oconfigpropsheet**メソッドは、すべてのサポートオブジェクトに実装されています。 **doconfigpropsheet**は、サービスプロバイダーとメッセージサービスのプロパティを表示するための標準的なユーザーインターフェイスを提供します。 ユーザーが一貫した Windows インターフェイスを利用できるようにするには、すべての構成プロパティでこの標準ダイアログボックスを使用する必要があります。 
+**IMAPISupport::D oConfigPropsheet** メソッドは、すべてのサポート オブジェクトに実装されます。 **DoConfigPropSheet は** 、サービス プロバイダーとメッセージ サービスのプロパティを表示するための標準的なユーザー インターフェイスを提供します。 すべての構成プロパティの表示には、この標準のダイアログ ボックスを使用して、ユーザーが一貫性のあるインターフェイスを利用Windows必要があります。 
   
-サービスプロバイダーは、 [imapistatus:: settingsdialog](imapistatus-settingsdialog.md)メソッドの実装の一部として、またはプロパティの詳細を表示するために使用されるボタンから、 **doconfigpropsheet**を呼び出します。 メッセージサービスは、メッセージサービスエントリポイント関数から**doconfigpropsheet**を呼び出します。 
+サービス プロバイダーは [、IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md)メソッドの実装の一環として、またはプロパティの詳細を表示するために使用されるボタンから **DoConfigPropSheet** を呼び出します。 メッセージ サービスは、メッセージ サービスエントリ ポイント関数から **DoConfigPropSheet** を呼び出します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-_lpdisplaytable_パラメーターによって示される表示テーブルは、 [builddisplaytable](builddisplaytable.md)関数またはカスタムコードを呼び出すことによって作成できます。 
+[BuildDisplayTable](builddisplaytable.md)関数を呼び出すことによって、またはカスタム コードを使用して _、lpDisplayTable_ パラメーターが指す表示テーブルを作成できます。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -25,7 +25,7 @@ ms.locfileid: "33430232"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[IMAPITable:: Advise](imapitable-advise.md)メソッドへの呼び出しを使用して、以前に設定した通知の送信をキャンセルします。 
+[IMAPITable::Advise](imapitable-advise.md)メソッドへの呼び出しで以前に設定された通知の送信をキャンセルします。 
   
 ```cpp
 HRESULT Unadvise(
@@ -35,9 +35,9 @@ ULONG_PTR ulConnection
 
 ## <a name="parameters"></a>パラメーター
 
- _ulconnection_
+ _ulConnection_
   
-> 順番[IMAPITable:: Advise](imapitable-advise.md)への呼び出しによって返される登録接続の番号。
+> [in] [IMAPITable::Advise](imapitable-advise.md)への呼び出しによって返される登録接続の数。
     
 ## <a name="return-value"></a>戻り値
 
@@ -47,9 +47,9 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**imapitable:: アドバイズ**中止メソッドを使用して、前述の**IMAPITable:: advise**の呼び出しで_lpAdviseSink_パラメーターで渡されたアドバイズシンクオブジェクトへのポインターを解放し、通知登録を取り消します。 アドバイズシンクオブジェクトへのポインターを破棄する一環として、オブジェクトの**IUnknown:: Release**メソッドが呼び出されます。 通常、**リリース**は、**アドバイズ**中止の呼び出し中に呼び出されますが、別のスレッドがアドバイズシンクの[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドを呼び出している場合は、 **onnotify**になるまで**release**呼び出しが遅延します。メソッドはを返します。 
+**IMAPITable::Unadvise** メソッドを使用して **、IMAPITable::Advise** の前の呼び出しで _lpAdviseSink_ パラメーターで渡されたアアドバイス シンク オブジェクトへのポインターを解放し、通知登録を取り消します。 アアドバイス シンク オブジェクトへのポインターを破棄する一環として、オブジェクトの **IUnknown::Release** メソッドが呼び出されます。 一般に **、Unadvise** 呼び出し中に Release が呼び出されますが、別のスレッドがアドバイス シンクの [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出している場合 **、OnNotify** メソッドが返されるまで、Release 呼び出しは遅延されます。  
   
-通知プロセスの詳細については、「 [MAPI でのイベント通知](event-notification-in-mapi.md)」を参照してください。 テーブル通知に関する特定の情報については、「[テーブル通知につい](about-table-notifications.md)て」を参照してください。 **imapisupport**メソッドを使用して通知をサポートする方法については、「[サポートイベントの通知](supporting-event-notification.md)」を参照してください。
+通知プロセスの詳細については、「MAPI での [イベント通知」を参照してください](event-notification-in-mapi.md)。 テーブル通知の詳細については、「テーブル通知について [」を参照してください](about-table-notifications.md)。 **IMAPISupport メソッドを使用して通知を** サポートする方法については、「Support Event Notification 」[を参照してください](supporting-event-notification.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -57,7 +57,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl  <br/> |CContentsTableListCtrl:: notificationoff  <br/> |mfcmapi は、 **IMAPITable:: アドバイズ**中止メソッドを使用して、テーブルの通知を取り消します。  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::NotificationOff  <br/> |MFCMAPI は **IMAPITable::Unadvise** メソッドを使用して、テーブルの通知をキャンセルします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

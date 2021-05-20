@@ -25,7 +25,7 @@ ms.locfileid: "33431779"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-新しいメッセージが到着したことをメッセージストアに通知します。 このメソッドは、MAPI スプーラーによってのみ呼び出されます。
+�V�������b�Z�[�W�������������b�Z�[�W �X�g�A�ɒʒm���܂��B���̕��@�́AMAPI �X�v�[���[�ɂ���Ă̂݌Ăяo����܂��B
   
 ```cpp
 HRESULT NotifyNewMail(
@@ -35,7 +35,7 @@ HRESULT NotifyNewMail(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpnotification_
+ _lpNotification_
   
 > [in] A pointer to a [NOTIFICATION](notification.md) structure that describes the new message notification. 
     

@@ -17,7 +17,7 @@ ms.locfileid: "33428152"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックでは、名前付きの[PidLidHeaderItem 標準プロパティ](pidlidheaderitem-canonical-property.md)を使用して、Microsoft Outlook 2013 がメッセージのヘッダーのみをダウンロードしたか、メッセージのヘッダーと本文をダウンロードしたかを判断する Visual C++ のコードサンプルを示します。 
+このトピックでは、Visual C++ で、名前の付いた[PidLidHeaderItem Canonical プロパティ](pidlidheaderitem-canonical-property.md)を使用して、Microsoft Outlook 2013 がメッセージのヘッダーまたはヘッダーとメッセージの本文のみをダウンロードしたかどうかを判断するコード サンプルを示します。 
   
 ```cpp
 BOOL bIsHeader(LPMESSAGE lpMessage) 

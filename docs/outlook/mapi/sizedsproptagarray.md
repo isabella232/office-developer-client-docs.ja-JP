@@ -23,11 +23,11 @@ ms.locfileid: "33429349"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定した数のプロパティタグを含む名前付きの[SPropTagArray](sproptagarray.md)構造を作成します。 
+指定した数の [プロパティ タグを含む名前付き SPropTagArray](sproptagarray.md) 構造体を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**SPropTagArray** <br/> |
    
 ```cpp
@@ -36,19 +36,19 @@ SizedSPropTagArray (_ctag, _name)
 
 ## <a name="parameters"></a>パラメーター
 
-__ctag_
+_ _ctag_
   
-> 新しい構造に含めるプロパティタグの数。
+> 新しい構造に含めるプロパティ タグの数。
     
-__名前_
+_ _name_
   
-> 新しい構造の名前を指定します。
+> 新しい構造の名前。
     
 ## <a name="remarks"></a>注釈
 
-**SizedSPropTagArray**マクロを使用して、明示的な境界を持つプロパティタグ配列を作成します。 
+**SizedSPropTagArray** マクロを使用して、明示的な境界を持つプロパティ タグ配列を作成します。 
   
-**SizedSPropTagArray**マクロの結果として得られる新しい構造を**SPropTagArray**構造体へのポインターとして使用するには、次のキャストを実行します。 
+**SizedSPropTagArray** マクロから得られた新しい構造を **SPropTagArray** 構造体へのポインターとして使用するには、次のキャストを実行します。 
   
 ```cpp
 lpPropTagArray = (LPPropTagArray) &SizedSPropTagArray;

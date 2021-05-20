@@ -20,7 +20,7 @@ ms.locfileid: "33431947"
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IEnumFBBlock](ienumfbblock.md)を参照してください。
+[「IEnumFBBlock」を参照](ienumfbblock.md)してください。
   
 ```cpp
 HRESULT Restrict(  
@@ -32,13 +32,13 @@ HRESULT Restrict(
 
 ## <a name="parameters"></a>パラメーター
 
-_ftmstart_
+_ftmStart_
   
->  順番列挙を制限する開始時刻。 
+>  [in]列挙を制限する開始時刻。 
     
 _ftmEnd_
   
-> 順番列挙を制限する終了時刻。
+> [in]列挙を制限する終了時刻。
     
 ## <a name="return-values"></a>戻り値
 
@@ -46,7 +46,7 @@ _ftmEnd_
   
 ## <a name="remarks"></a>注釈
 
-このメソッドは、列挙をリセットすることもできます。
+また、このメソッドは列挙をリセットします。
   
 ## <a name="see-also"></a>関連項目
 

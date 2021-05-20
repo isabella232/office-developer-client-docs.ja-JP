@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm870
 localization_priority: Normal
 ms.assetid: d6fe2574-b719-f38e-b1f1-592a812f1682
-description: フォントの幅を制御します。 このセルの既定値は 100% です。
+description: フォントの幅を制御します。このセルの既定値は 100% です。
 ms.openlocfilehash: 60e896772ddd1d59e1a1da7f2c0e90893658c624
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33429153"
 ---
 # <a name="scale-cell-character-section"></a>[Scale] セル ([Character] セクション)
 
-フォントの幅を制御します。 このセルの既定値は 100% です。
+フォントの幅を制御します。このセルの既定値は 100% です。
   
 ## <a name="remarks"></a>注釈
 
@@ -30,14 +30,14 @@ ms.locfileid: "33429153"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |文字 fontscale [ *i* ] *i* = <1>、2、3...  <br/> |
+|セル名:  <br/> |Char.FontScale[ *i*  ]  *ここで、i*  = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Scale] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-|行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2...  <br/> |
+|行インデックス:  <br/> |**visRowCharacter**  +  *i* *=* 0, 1, 2...  <br/> |
 |セル インデックス:  <br/> |**visCharacterFontScale** <br/> |
    
 

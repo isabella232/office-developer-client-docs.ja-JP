@@ -22,7 +22,7 @@ dstUnit で記述された形式に従って書式設定された文字列とし
   
 ## <a name="syntax"></a>構文
 
-formatex (* **式** *、"* **形式** *", [* * *srcunit* * *], [* * *dstunit* * *], [* * *langID* * *] [, * * *calid* * *]) 
+FORMATEX(** *式* **," ** *format* ** ",[ ** *srcUnit* ** ],[ ** *dstUnit* ** ],[ ** *langID* ** ][, ** *calID* ** ]) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -30,10 +30,10 @@ formatex (* **式** *、"* **形式** *", [* * *srcunit* * *], [* * *dstunit* * 
 |:-----|:-----|:-----|:-----|
 | _expression_ <br/> |必須  <br/> |**String** <br/> |定数、演算子、関数、およびシェイプシートのセルに対する参照を組み合わせたもので、結果が値となる式です。  <br/> |
 | _format_ <br/> |必須  <br/> |**String** <br/> |文字列の書式設定に使用する図の書式設定。図の書式設定の詳細については、「[図の書式設定](about-format-pictures.md)」を参照してください。<br/> |
-| _srcunit_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> | 式を評価するために使用する単位 (in、cm など) です。  <br/> |
+| _srcUnit_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> | 式を評価するために使用する単位 (in、cm など) です。  <br/> |
 | _dstUnit_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |式の結果に使用する単位 (in、cm など) です。  <br/> |
 | _langID_ <br/> |省略可能  <br/> |**数値** <br/> |Microsoft Office system の日付/時間形式の書式設定に使用する言語です。  <br/> |
-| _calid_ <br/> |省略可能  <br/> |**数値** <br/> |Microsoft Office system の日付/時間形式を書式設定するときのカレンダーです。  <br/> |
+| _calID_ <br/> |省略可能  <br/> |**数値** <br/> |Microsoft Office system の日付/時間形式を書式設定するときのカレンダーです。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

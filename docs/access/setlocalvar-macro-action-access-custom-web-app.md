@@ -1,5 +1,5 @@
 ---
-title: setlocalvar マクロアクション (Access カスタム web アプリ)
+title: SetLocalVar マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428117"
 ---
-# <a name="setlocalvar-macro-action-access-custom-web-app"></a>setlocalvar マクロアクション (Access カスタム web アプリ)
+# <a name="setlocalvar-macro-action-access-custom-web-app"></a>SetLocalVar マクロ アクション (Access カスタム Web アプリ)
 
 "SetLocalVar/ローカル変数の設定" アクションは、一時変数を作成し、それを特定の値に設定します。 
   

@@ -1,5 +1,5 @@
 ---
-title: ForEachRecord データブロック (Access カスタム web アプリ)
+title: ForEachRecord データ ブロック (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428236"
 ---
-# <a name="foreachrecord-data-block-access-custom-web-app"></a>ForEachRecord データブロック (Access カスタム web アプリ)
+# <a name="foreachrecord-data-block-access-custom-web-app"></a>ForEachRecord データ ブロック (Access カスタム Web アプリ)
 
 **ForEachRecord** データ ブロックは、ドメイン内のレコードごとにステートメントのセットを繰り返します。 
   
@@ -30,9 +30,9 @@ ms.locfileid: "33428236"
   
 |**引数名**|**必須**|**説明**|
 |:-----|:-----|:-----|
-|**順番** <br/> |はい  <br/> |実行するステートメントの対象レコードのドメインを識別する文字列。 引数*In に*は、テーブル名、選択クエリ、または SQL ステートメントを含めることができます。  <br/> **注**: 指定されたドメインには、リンクテーブルまたは ODBC データソースに格納されているデータを含めることはできません。           |
-|Where Condition/Where 条件式 <br/> |いいえ  <br/> |**ForEachRecord** データ ブロックを適用するデータの範囲を制限するための文字列式を指定します。 たとえば、多くの場合、抽出条件は SQL 式の WHERE 句と同じ役割を果たします (ただし WHERE という語は使用しません)。 criteria を省略すると、引数*In で*指定したドメイン全体で**ForEachRecord**データブロックが動作します。 抽出条件に含まれているフィールドは、のフィールドで** もある必要があります。  <br/> |
-|**Alias** <br/> |いいえ  <br/> |引数*In で*指定したドメインの代替名を示す文字列型 (string) の値を使用します。 以降の参照用にテーブル名を短くして、あいまいな参照を防ぐ目的でよく使用されます。 *alias*が指定されていない場合は、テーブル名またはクエリ名がエイリアスとして使用されます。  <br/> |
+|**In** <br/> |はい  <br/> |実行するステートメントの対象レコードのドメインを識別する文字列。 *In 引数* には、テーブルの名前、選択クエリ、またはクエリ ステートメントSQLできます。  <br/> **注**: 指定したドメインには、リンク テーブルまたは ODBC データ ソースに格納されているデータを含めできません。           |
+|Where Condition/Where 条件式 <br/> |いいえ  <br/> |**ForEachRecord** データ ブロックを適用するデータの範囲を制限するための文字列式を指定します。 たとえば、多くの場合、抽出条件は SQL 式の WHERE 句と同じ役割を果たします (ただし WHERE という語は使用しません)。 criteria を省略すると、引数 In で指定されたドメイン全体で **ForEachRecord** データ ブロックが  *動作*  します。 条件に含まれるフィールドは、In のフィールドである必要  *があります*  。  <br/> |
+|**Alias** <br/> |いいえ  <br/> |In 引数で指定されたドメインの代替名を指定  *する文字列*  。 以降の参照用にテーブル名を短くして、あいまいな参照を防ぐ目的でよく使用されます。 Alias  *を*  指定しない場合、テーブル名またはクエリ名がエイリアスとして使用されます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

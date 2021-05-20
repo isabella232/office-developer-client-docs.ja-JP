@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6973e2e6-7e7f-48ba-95b3-37c959f6ffb1
-description: マスター シェイプ内の指定したセルの値が、図形の置換操作中に置換される値 (ローカル値を含む) に優先するかどうかを示します。 マスター シェイプの [ReplaceLockFormat] セルが TRUE (1) に設定されている場合、マスターの書式設定値は、マスターによって置き換えられる図形の対応する値すべてに優先します。
+description: マスター シェイプ内の指定したセルの値が、図形の置換操作中に置換される値 (ローカル値を含む) に優先するかどうかを示します。マスター シェイプの [ReplaceLockFormat] セルが TRUE (1) に設定されている場合、マスターの書式設定値は、マスターによって置き換えられる図形の対応する値すべてに優先します。
 ms.openlocfilehash: 88af22accb7a80640e7553338dae1af48934f246
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33427235"
 ---
 # <a name="replacelockformat-cell-change-shape-behavior-section"></a>[ReplaceLockFormat] セル ([図形の動作の変更] セクション)
 
-マスター シェイプ内の指定したセルの値が、図形の置換操作中に置換される値 (ローカル値を含む) に優先するかどうかを示します。 マスター シェイプの [**ReplaceLockFormat**] セルが TRUE (1) に設定されている場合、マスターの書式設定値は、マスターによって置き換えられる図形の対応する値すべてに優先します。 
+マスター シェイプ内の指定したセルの値が、図形の置換操作中に置換される値 (ローカル値を含む) に優先するかどうかを示します。マスター シェイプの [**ReplaceLockFormat**] セルが TRUE (1) に設定されている場合、マスターの書式設定値は、マスターによって置き換えられる図形の対応する値すべてに優先します。 
   
 |**値**|**説明**|
 |:-----|:-----|
@@ -49,7 +49,7 @@ ms.locfileid: "33427235"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [replacelockformat]  <br/> |
+| セル名:  <br/> | ReplaceLockFormat  <br/> |
    
 プログラムから、インデックスによって [**ReplaceLockFormat**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

@@ -25,7 +25,7 @@ ms.locfileid: "33428782"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームが使用する動詞の完全なセットへのポインターを返します。
+フォームで使用される動詞の完全なセットへのポインターを返します。
   
 ```cpp
 HRESULT CalcVerbSet(
@@ -38,15 +38,15 @@ HRESULT CalcVerbSet(
 
  _ulFlags_
   
-> 順番返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 返される文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
+> 返される文字列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。
     
  _ppMAPIVerbArray_
   
-> 読み上げフォームの動詞を含む、返された[SMAPIVerbArray](smapiverbarray.md)構造体へのポインターへのポインター。 
+> [out]フォームの動詞を含む [、返される SMAPIVerbArray](smapiverbarray.md) 構造体へのポインターを指すポインター。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -56,11 +56,11 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
+> このフラグMAPI_UNICODE設定され、実装が Unicode をサポートしていないか、または設定されていないMAPI_UNICODE実装が Unicode のみをサポートしています。
     
 ## <a name="remarks"></a>注釈
 
-クライアントアプリケーションは、 **imapiforminfo:: CalcVerbSet**メソッドを呼び出して、フォームで使用される動詞のセットへのポインターを取得します。 _ppMAPIVerbArray_パラメーターで返される**SMAPIVerbArray**構造体では、動詞がインデックス番号の順に返されます。各動詞のインデックスは、 **lverb**メンバにあります。 クライアントアプリケーションは、verb 配列を使用してメニューを動的に作成したり、ボタンを非表示または表示したりすることができます。 
+クライアント アプリケーションは **IMAPIFormInfo::CalcVerbSet** メソッドを呼び出して、フォームで使用される一連の動詞へのポインターを取得します。 ppMAPIVerbArray パラメーターで返される _SMAPIVerbArray_ 構造体では、動詞はインデックス番号の順に返されます。 各動詞のインデックスは、**その lVerb メンバーに見** つかりました。 クライアント アプリケーションでは、動詞配列を使用してメニューを動的に作成したり、ボタンを非表示または表示したりできます。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -68,7 +68,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|mfcoutput .cpp  <br/> |出力 forminfo (_c)  <br/> |mfcmapi は、フォーム情報オブジェクトのデバッグ出力を書き込むときに、 **imapiforminfo:: CalcVerbSet**メソッドを使用します。  <br/> |
+|MFCOutput.cpp  <br/> |_OutputFormInfo  <br/> |MFCMAPI は、フォーム情報オブジェクトのデバッグ出力を書き込む間に **IMAPIFormInfo::CalcVerbSet** メソッドを使用します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

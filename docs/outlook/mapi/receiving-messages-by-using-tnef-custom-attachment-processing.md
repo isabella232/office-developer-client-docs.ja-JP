@@ -21,20 +21,20 @@ ms.locfileid: "33429321"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-カスタマイズされた添付ファイル処理を伴う TNEF メッセージを受信するには
+カスタマイズされた添付ファイル処理を使用して TNEF メッセージを受信するには、次の方法を実行します。
   
-1. 受信メッセージから新しい MAPI メッセージに、すべての送信機テーブルプロパティ (メッセージングシステムがサポートするもの) をインポートします。 これには、TNEF データストリームを含むメッセージテキストが含まれます。
+1. すべての転送可能なプロパティ (メッセージング システムがサポートするプロパティ) を受信メッセージから新しい MAPI メッセージにインポートします。 これには、TNEF データ ストリームを含むメッセージ テキストが含まれます。
     
-2. TNEF ストリームを含む特殊な添付ファイルを識別し、デコードします。
+2. TNEF ストリームを含む特別な添付ファイルを識別してデコードします。
     
-3. 受信メッセージからすべての添付ファイルを新しい mapi メッセージの mapi 添付ファイルに抽出します。 回復されたファイル名、または添付ファイルの他の識別マーカーを、 [ITnef:: ExtractProps](itnef-extractprops.md)メソッドを使用して、新しい添付ファイルの**PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md)) プロパティに配置する必要があります。後で、適切な添付ファイルを、メッセージテキストでエンコードされた添付ファイルタグに関連付けることができます。 
+3. 新しい MAPI メッセージの MAPI 添付ファイルに、受信メッセージからすべての添付ファイルを抽出します。 回復されたファイル名、または添付ファイルの他の識別マーカーは、新しい添付ファイルの **PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md)) プロパティに配置し、後で [ITnef::ExtractProps](itnef-extractprops.md) メソッドがメッセージ テキストでエンコードされた添付ファイル タグに正しい添付ファイルを関連付け可能にしてください。 
     
-4. デコードされた TNEF ストリームをラップする OLE **IStream**インターフェイスを作成し、そのオブジェクトを[OpenTnefStreamEx](opentnefstreamex.md)関数の呼び出しで新しい MAPI メッセージと共に使用します。 
+4. デコードされた TNEF ストリームをラップし [、OpenTnefStreamEx](opentnefstreamex.md)関数の呼び出しで新しい MAPI メッセージと共にそのオブジェクトを使用する OLE **IStream** インターフェイスを作成します。 
     
-5. **ITnef:: ExtractProps**メソッドを呼び出して、TNEF データストリームからメッセージのノン非対称テーブルプロパティを回復します。 
+5. **ITnef::ExtractProps** メソッドを呼び出して、TNEF データ ストリームからメッセージの転送できないプロパティを回復します。 
     
-6. MAPI_CREATE および MAPI_MODIFY フラグセットを使用して、 [ITnef:: OpenTaggedBody](itnef-opentaggedbody.md)メソッドを呼び出します。 この呼び出しは、メッセージテキストから attachment タグを削除し、それを MAPI メッセージの添付ファイルの位置情報に変換します。 
+6. [ITnef::OpenTaggedBody](itnef-opentaggedbody.md)メソッドを呼び出し、MAPI_CREATEフラグMAPI_MODIFY設定します。 この呼び出しは、メッセージ テキストから添付ファイル タグを削除し、MAPI メッセージ内の添付ファイルの位置情報に変換します。 
     
-7. MAPI スプーラーを経由してメッセージを配信します。
+7. MAPI スプーラーを介してメッセージを配信します。
     
 

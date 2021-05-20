@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251448
 localization_priority: Normal
 ms.assetid: 87508007-8ad2-3bcf-55dc-f0207c7c6fe3
-description: 'cellreference の値が #N/a 以外のエラーの種類の場合は TRUE を返します。それ以外の場合は、FALSE を返します。 iserr 関数は、別のセルを参照する数式で使用されます。'
+description: cellreference の値がエラーの種類である場合は TRUE を返します(#N/A を除く)。それ以外の場合は、FALSE を返します。 ISERR 関数は、別のセルを参照する数式で使用されます。
 ms.openlocfilehash: e2117c38d3cad2408295ed6894aefc78e107596e
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33432108"
 ---
 # <a name="iserr-function"></a>ISERR 関数
 
-_cellreference_の値が #N/a 以外のエラーの種類の場合は TRUE を返します。それ以外の場合は、FALSE を返します。 iserr 関数は、別のセルを参照する数式で使用されます。 
+セル参照の値がエラーの  _種類である場合_ は TRUE を返します(#N/A を除く)。それ以外の場合は、FALSE を返します。 ISERR 関数は、別のセルを参照する数式で使用されます。 
   
 ## <a name="syntax"></a>構文
 
-iserr (* * *cellreference* * *) 
+ISERR(** *cellreference* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -32,19 +32,19 @@ iserr (* * *cellreference* * *)
    
 ## <a name="example-1"></a>例 1
 
-|**Cell**|**Formula**|**戻り値**|
+|**Cell**|**式**|**戻り値**|
 |:-----|:-----|:-----|
-|最初の A1  <br/> |=NA( )  <br/> |#N/A!  <br/> |
-|最初の B1  <br/> |= iserr (A1)  <br/> |FALSE  <br/> |
+|Scratch.A1  <br/> |=NA( )  <br/> |#N/A!  <br/> |
+|Scratch.B1  <br/> |=ISERR(Scratch.A1)  <br/> |FALSE  <br/> |
    
 ISERR 関数は #N/A! エラーを認識しないため、FALSE を返します。すべてのエラー タイプを検出するには、ISERROR を使用します。
   
 ## <a name="example-2"></a>例 2
 
-|**Cell**|**Formula**|**戻り値**|
+|**Cell**|**式**|**戻り値**|
 |:-----|:-----|:-----|
-|最初の X1  <br/> |= "House"  <br/> |#VALUE!  <br/> |
-|最初の A1  <br/> |= iserr (最初の X1)  <br/> |TRUE  <br/> |
+|Scratch.X1  <br/> |="House"  <br/> |#VALUE!  <br/> |
+|Scratch.A1  <br/> |=ISERR(Scratch.X1)  <br/> |TRUE  <br/> |
    
 ISERR 関数は #VALUE! エラーを認識するため、TRUE を返します。
   

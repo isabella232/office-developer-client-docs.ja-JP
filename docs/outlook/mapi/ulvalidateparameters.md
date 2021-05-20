@@ -25,7 +25,7 @@ ms.locfileid: "33431275"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-内部関数を呼び出して、クライアントアプリケーションがサービスプロバイダーと MAPI に渡されたことを確認します。 
+内部関数を呼び出して、クライアント アプリケーションがサービス プロバイダーと MAPI に渡したパラメーターを確認します。 
   
 |||
 |:-----|:-----|
@@ -44,11 +44,11 @@ HRESULT UlValidateParameters(
 
  _eMethod_
   
-> 順番検証するメソッドを列挙で指定します。 
+> [in]列挙で検証するメソッドを指定します。 
     
  _First_
   
-> 順番スタック上の最初の引数へのポインター。
+> [in]スタックの最初の引数へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -58,10 +58,10 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> 予期しないまたは不明な配信元のエラーにより、操作が完了しませんでした。
+> 予期しない、または不明な発生源のエラーにより、操作が完了しなかっていません。
     
 ## <a name="remarks"></a>注釈
 
-ulvalidateparameters マクロは[ulvalidateparameters](ulvalidateparms.md)マクロによって置き換えられました。 **** **ulvalidateparameters**は RISC プラットフォームでは正しく動作せず、これでコンパイルができなくなりました。 これは依然としてコンパイルされており、Intel プラットフォームで正常に動作しますが、 **ulvalidateparms**をすべてのプラットフォームで使用することをお勧めします。 
+**UlValidateParameters** マクロは [、UlValidateParms](ulvalidateparms.md)マクロに取ってかえされています。 **UlValidateParameters** は RISC プラットフォームで正しく動作し、コンパイルが行えなくなります。 Intel プラットフォームではコンパイルおよび正常に動作しますが、すべてのプラットフォームで **UlValidateParms** が推奨されます。 
   
 

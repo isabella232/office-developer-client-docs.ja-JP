@@ -25,15 +25,15 @@ ms.locfileid: "33427018"
   
 ## <a name="syntax"></a>構文
 
-disttopath (* * *section* * *, * * *x* * *, * * *y* * *) 
+DISTTOPATH(** *section* **, ** *x* **, ** *y* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _セクション_ <br/> |必須  <br/> |**String** <br/> |パスを表す [Geometry] セクション。[Path] セルへの参照によって指定されます (Geometry1.Path など)。  <br/> |
-| _x_ <br/> |必須  <br/> |**Double** <br/> |点の_x_座標を指定します。  <br/> |
-| _y_ <br/> |必須  <br/> |**Double** <br/> |点の_y_座標です。  <br/> |
+| _x_ <br/> |必須  <br/> |**Double** <br/> |ポイント  _の x_ 座標。  <br/> |
+| _y_ <br/> |必須  <br/> |**Double** <br/> |ポイント  _の y_ 座標。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
@@ -41,7 +41,7 @@ disttopath (* * *section* * *, * * *x* * *, * * *y* * *)
   
 ## <a name="remarks"></a>注釈
 
-section が存在しない場合、#REF! _セクション_が存在しない場合。 
+section が存在しない場合、#REF! セクション  _が_ 存在しない場合。 
   
 戻り値は、点がトラベルの方向の左側にある場合は正、右側にある場合は負になります。
   

@@ -21,7 +21,7 @@ ms.locfileid: "33428649"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージングユーザーの性別に対して使用可能な値を指定します。
+メッセージング ユーザーの性別に使用できる値を指定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -39,29 +39,29 @@ enum Gender {
 
 ## <a name="members"></a>メンバー
 
- _gendermin_
+ _genderMin_
   
-> 性別に対してサポートされている、さまざまな値の最小数。
+> 性別でサポートされる異なる値の最小数。
     
- _genderunspecified_
+ _genderUnspecified_
   
-> メッセージユーザーに性別が指定されていません。
+> メッセージング ユーザーの性別は指定されていません。
     
- _genderfemale_
+ _genderFemale_
   
-> メッセージングユーザーが女性である。
+> メッセージング ユーザーは女性です。
     
- _gendermale_
+ _genderMale_
   
-> メッセージングユーザーが男性である。
+> メッセージング ユーザーは男性です。
     
- _gendercount_
+ _genderCount_
   
-> 性別に対してサポートされているさまざまな値の数。
+> 性別でサポートされるさまざまな値の数。
     
- _gendermax_
+ _genderMax_
   
-> 性別に対してサポートされているさまざまな値の最大数。
+> 性別でサポートされるさまざまな値の最大数。
     
 ## <a name="see-also"></a>関連項目
 

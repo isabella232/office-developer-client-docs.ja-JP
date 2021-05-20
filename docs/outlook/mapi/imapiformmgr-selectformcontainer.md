@@ -25,7 +25,7 @@ ms.locfileid: "33428593"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ユーザーがフォームコンテナーを選択できるようにするダイアログボックスを提供し、ユーザーが選択したコンテナーオブジェクトのインターフェイスを返します。
+ユーザーがフォーム コンテナーを選択できるダイアログ ボックスを表示し、ユーザーが選択したコンテナー オブジェクトのインターフェイスを返します。
   
 ```cpp
 HRESULT SelectFormContainer(
@@ -37,29 +37,29 @@ HRESULT SelectFormContainer(
 
 ## <a name="parameters"></a>パラメーター
 
- _uluiparam_
+ _ulUIParam_
   
-> 順番表示されるダイアログボックスの親ウィンドウへのハンドル。 
+> [in]表示されるダイアログ ボックスの親ウィンドウへのハンドル。 
     
  _ulFlags_
   
-> 順番フォームライブラリの選択方法 (つまり、フォームコンテナーの選択方法) を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]フォーム ライブラリの選択方法 (フォーム コンテナーの選択方法) を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPIFORM_SELECT_ALL_REGISTRIES 
   
-> 選択は、すべてのコンテナーから行うことができます。 これは既定の選択の種類です。 
+> すべてのコンテナーから選択できます。 これは既定の選択の種類です。 
     
 MAPIFORM_SELECT_FOLDER_REGISTRY_ONLY 
   
-> 選択は、フォルダーコンテナーからのみ行うことができます。
+> フォルダー コンテナーからのみ選択できます。
     
 MAPIFORM_SELECT_NON_FOLDER_REGISTRY_ONLY 
   
-> 選択は、フォルダーに関連付けられていないコンテナーからのみ行うことができます。
+> フォルダーに関連付けされていないコンテナーからのみ選択できます。
     
  _lppfcnt_
   
-> 読み上げ返されるインターフェイスへのポインターへのポインター。 このインターフェイスは、ユーザーによって選択された container オブジェクトに対して使用されます。
+> [out]返されたインターフェイスへのポインターを指すポインター。 このインターフェイスは、ユーザーが選択したコンテナー オブジェクト用です。
     
 ## <a name="return-value"></a>戻り値
 
@@ -69,7 +69,7 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-通常、フォームビューアーは、 **imapiformmgr:: selectformcontainer**メソッドを呼び出して、フォームがインストールされているフォームコンテナーを選択します。 **selectformcontainer**を使用してローカルフォームコンテナーを選択することはできません。これは、値が HFRMREG_LOCAL です。 
+フォーム ビューアーは通常 **、IMAPIFormMgr::SelectFormContainer** メソッドを呼び出して、フォームがインストールされているフォーム コンテナーを選択します。 **SelectFormContainer** を使用してローカル フォーム コンテナーを選択することはできません。このコンテナーの値はHFRMREG_LOCAL。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -77,7 +77,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|maindlg .cpp  <br/> |CMainDlg:: onselectformcontainer  <br/> |mfcmapi は、 **imapiformmgr:: selectformcontainer**メソッドを使用して、コンテンツをレンダリングする前にフォームコンテナーを選択します。  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnSelectFormContainer  <br/> |MFCMAPI は **IMAPIFormMgr::SelectFormContainer** メソッドを使用して、コンテンツをレンダリングする前にフォーム コンテナーを選択します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

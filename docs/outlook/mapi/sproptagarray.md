@@ -25,12 +25,12 @@ ms.locfileid: "33430701"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティタグの配列を格納します。 
+プロパティ タグの配列を含む。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
-|関連するマクロ:  <br/> |[CbNewSPropTagArray](cbnewsproptagarray.md)、 [CbSPropTagArray](cbsproptagarray.md)、 [SizedSPropTagArray](sizedsproptagarray.md) <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|関連するマクロ:  <br/> |[CbNewSPropTagArray](cbnewsproptagarray.md), [CbSPropTagArray](cbsproptagarray.md), [SizedSPropTagArray](sizedsproptagarray.md) <br/> |
    
 ```cpp
 typedef struct _SPropTagArray
@@ -41,37 +41,37 @@ typedef struct _SPropTagArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> **aulPropTag**メンバーによって示される、配列内のプロパティタグの数。 
+> **aulPropTag** メンバーによって示される配列内のプロパティ タグの数。 
     
  **aulPropTag**
   
-> プロパティタグの配列。
+> プロパティ タグの配列。
     
 ## <a name="remarks"></a>注釈
 
-property タグは、2つの部分で構成される32ビットの符号なし整数です。 
+プロパティ タグは、2 つの部分で構成される 32 ビットの符号なし整数です。 
   
-- 上位16ビットの識別子。
+- 高次 16 ビットの識別子。
     
-- ローオーダー16ビットの型。
+- 低次 16 ビットの型。
     
-識別子は、特定の範囲の数値です。 MAPI は、識別子の範囲を定義して、プロパティがどのように使用され、保持する責任者を示します。 MAPI は、Mapitags ヘッダーファイルでサポートされている各プロパティタグに対する制約を定義します。
+識別子は、特定の範囲の数値です。 MAPI では、プロパティの使用および管理の責任者を示す識別子の範囲を定義します。 MAPI は、Mapitags.h ヘッダー ファイルでサポートする各プロパティ タグの制約を定義します。
   
-この型は、プロパティの値の形式を示します。 MAPI は、mapidefs.h ヘッダーファイルでサポートされている各プロパティの種類に対して定数を定義します。 
+型は、プロパティの値の形式を示します。 MAPI は、Mapidefs.h ヘッダー ファイルでサポートする各プロパティの種類の定数を定義します。 
   
-プロパティタグとそのコンポーネントの詳細については、以下のいずれかのトピックを参照してください。 
+プロパティ タグとそのコンポーネントの詳細については、次のいずれかのトピックを参照してください。 
   
-[MAPI プロパティタグ](mapi-property-tags.md)
+[MAPI プロパティ のタグ](mapi-property-tags.md)
   
 [MAPI プロパティ識別子の概要](mapi-property-identifier-overview.md)
   
 [MAPI プロパティの種類の概要](mapi-property-type-overview.md)
   
-単一値および複数値のプロパティの種類の完全な一覧については、付録、[プロパティの識別子と型](property-identifiers-and-types.md)を参照してください。 
+単一値および複数値プロパティの種類の完全な一覧については、付録「プロパティ識別子と型」 [を参照してください](property-identifiers-and-types.md)。 
   
 ## <a name="see-also"></a>関連項目
 

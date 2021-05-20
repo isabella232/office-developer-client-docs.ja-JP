@@ -20,7 +20,7 @@ ms.locfileid: "33431702"
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkErrorUnknown](iolkerrorunknown.md)を参照してください。
+[「IOlkErrorUnknown」を参照してください](iolkerrorunknown.md)。
   
 ```cpp
 HRESULT IOlkErrorUnknown::GetLastError(  
@@ -32,13 +32,13 @@ HRESULT IOlkErrorUnknown::GetLastError(
 
 ## <a name="parameters"></a>パラメーター
 
-_部門_
+_hr_
   
-> 順番検索するエラーコード。
+> [in]参照するエラー コード。
     
 _ppwszError_
   
-> 読み上げ*hr*に対応するエラーメッセージ。 
+> [out]hr に対応  *するエラー*  メッセージです。 
     
 ## <a name="return-values"></a>戻り値
 

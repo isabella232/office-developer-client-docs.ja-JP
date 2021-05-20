@@ -22,23 +22,23 @@ ms.locfileid: "33436315"
   
 ## <a name="syntax"></a>構文
 
-合計 (* * *number1* * *, * * *number2* * *,..., * * *[number n]* * *) 
+SUM(** *number1* **, ** *number2 **,...,* ** *[numberN]* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number1_ <br/> |必須  <br/> |**数値** <br/> |最初の数値を指定します。  <br/> |
-| _number2_ <br/> |必須  <br/> |**数値** <br/> |2 番目の数値を指定します。  <br/> |
-| _番号 n_ <br/> |省略可能  <br/> |**数値** <br/> |n 番目の数値を指定します。  <br/> |
+| _number1_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |最初の数値を指定します。  <br/> |
+| _number2_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |2 番目の数値を指定します。  <br/> |
+| _numberN_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |n 番目の数値を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-数値
+数値型 (Numeric)
   
 ## <a name="example"></a>例
 
-合計 (5、7、12)
+SUM(5,7,12)
   
 24 を返します。
   

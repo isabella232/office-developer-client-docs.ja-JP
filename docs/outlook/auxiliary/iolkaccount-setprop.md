@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 883b1c5d-47dd-a006-b5f1-130691bdd019
-description: 指定された account プロパティの値を設定します。
+description: 指定したアカウント プロパティの値を設定します。
 ms.openlocfilehash: 94134cee7886177ab840a6caff7d70d65bf9d4cb
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33431989"
 ---
 # <a name="iolkaccountsetprop"></a>IOlkAccount::SetProp
 
-指定された account プロパティの値を設定します。
+指定したアカウント プロパティの値を設定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkAccount](iolkaccount.md)を参照してください。
+[「IOlkAccount」を参照してください](iolkaccount.md)。
   
 ```cpp
 HRESULT IOlkAccount::SetProp(  
@@ -31,24 +31,24 @@ HRESULT IOlkAccount::SetProp(
 
 ## <a name="parameters"></a>パラメーター
 
-_dwprop_
+_dwProp_
   
-> 順番設定する account プロパティのプロパティタグ。
+> [in]設定する account プロパティのプロパティ タグ。
     
-_pvar_
+_pVar_
   
-> 順番指定したプロパティの値を指定します。
+> [in]指定したプロパティの値。
     
 ## <a name="return-values"></a>戻り値
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |メソッドの呼び出しが成功しました。  <br/> |
-|E_INVALIDARG  <br/> |無効なプロパティタグが指定されました。  <br/> |
+|E_INVALIDARG  <br/> |無効なプロパティ タグが指定されました。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-[IOlkAccount:: SaveChanges](iolkaccount-savechanges.md)を使用して、アカウントプロパティの値に対する変更を保存します。 
+[IOlkAccount::SaveChanges](iolkaccount-savechanges.md)を使用して、アカウント プロパティの値に対する変更を保存します。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: iaddrbookunadvise
+title: IAddrBookUnadvise
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33436154"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-以前にアドレス帳エントリに対して設定された通知登録を取り消します。
+アドレス帳エントリに対して以前に確立された通知登録を取り消します。
   
 ```cpp
 HRESULT Unadvise(
@@ -35,19 +35,19 @@ HRESULT Unadvise(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulconnection_
+ _ulConnection_
   
-> 順番キャンセルする登録を表す接続番号。 _ulconnection_パラメーターには、以前の[IAddrBook:: Advise](iaddrbook-advise.md)メソッドの呼び出しによって返される値を含める必要があります。 
+> [in]取り消す登録を表す接続番号。 _ulConnection パラメーターには_[、IAddrBook::Advise](iaddrbook-advise.md)メソッドの前の呼び出しによって返される値を含む必要があります。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 登録が正常にキャンセルされました。
+> 登録が正常に取り消されました。
     
 ## <a name="remarks"></a>注釈
 
-クライアントは、**アドバイズ**中止メソッドを呼び出して、特定のアドレス帳エントリへの変更に関する通知を受信しないようにします。 通知登録が取り消されると、アドレス帳プロバイダーは、呼び出し元のアドバイズシンクへのポインターを解放します。 ただし、リリースは、**アドバイズ**中止通話中、またはそれ以降の時点で、別のスレッドが[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドを呼び出している場合に発生する可能性があります。 通知が進行中の場合、 **onnotify**メソッドが戻るまでリリースは遅延します。 
+クライアントは **Unadvise メソッドを呼** び出して、特定のアドレス帳エントリへの変更に関する通知の受信を停止します。 通知登録が取り消された場合、アドレス帳プロバイダーは発信者の通知シンクへのポインターを解放します。 ただし、別のスレッドが [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出している間に **、Unadvise** 呼び出し中または後の時点でリリースが発生する可能性があります。 通知が進行中の場合 **、OnNotify** メソッドが返されるまでリリースが遅延します。 
   
 ## <a name="see-also"></a>関連項目
 

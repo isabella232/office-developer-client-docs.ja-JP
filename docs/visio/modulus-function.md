@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251465
 localization_priority: Normal
 ms.assetid: cb6326a5-1bf8-b6a3-5c0d-d38c071353a5
-description: 数値を除数で割ったときの剰余 (モジュラス) を返します。
+description: 数値を除算で割った場合の残余 (モジュラス) を返します。
 ms.openlocfilehash: f6b713b1b3a9d2afa85f49de9d451642a00d8dad
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,22 +18,22 @@ ms.locfileid: "33429272"
 ---
 # <a name="modulus-function"></a>MODULUS 関数
 
-数値を除数で割ったときの剰余 (モジュラス) を返します。
+数値を除算で割った場合の残余 (モジュラス) を返します。
   
 ## <a name="syntax"></a>構文
 
-モジュラス (* **数値** *, * **除数** *) 
+MODULUS(** *number* **, ** *divisor* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _number_ <br/> |必須  <br/> |**数値** <br/> |被除数 (割られる数) を指定します。  <br/> |
-| _序数_ <br/> |必須  <br/> |**数値** <br/> |除数を指定します。  <br/> |
+| _divisor_ <br/> |必須  <br/> |**数値** <br/> |除数を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-数値
+番号
   
 ## <a name="remarks"></a>注釈
 

@@ -26,6 +26,6 @@ ID ()
   
 ### <a name="return-value"></a>戻り値
 
-数値
+番号
   
 

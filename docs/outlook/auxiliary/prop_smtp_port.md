@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431870"
 ---
-# <a name="propsmtpport"></a>PROP_SMTP_PORT
+# <a name="prop_smtp_port"></a>PROP_SMTP_PORT
 
 SMTP アカウントのポート番号を表します。
   
@@ -24,8 +24,8 @@ SMTP アカウントのポート番号を表します。
 |:-----|:-----|
 |識別子:  <br/> |0x0201  <br/> |
 |プロパティの種類:  <br/> |PT_DWORD  <br/> |
-|プロパティタグ:  <br/> |0x02010003  <br/> |
-|接続  <br/> |読み取り専用  <br/> |
+|プロパティ タグ:  <br/> |0x02010003  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

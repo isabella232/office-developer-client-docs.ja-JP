@@ -23,11 +23,11 @@ ms.locfileid: "33428607"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定した数の並べ替え順序を含む、名前付きの[ssortorderset](ssortorderset.md)構造を作成します。 
+指定した数の並べ替え順序を含む名前付き [SSortOrderSet](ssortorderset.md) 構造体を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**SSortOrderSet** <br/> |
    
 ```cpp
@@ -36,19 +36,19 @@ SizedSSortOrderSet (_csort,_name)
 
 ## <a name="parameters"></a>パラメーター
 
-__csort_
+_ _csort_
   
 > 新しい構造に含める並べ替え順序の数。
     
-__名前_
+_ _name_
   
-> 新しい構造の名前を指定します。
+> 新しい構造の名前。
     
 ## <a name="remarks"></a>注釈
 
-**sizedssortorderset**マクロを使用して、明示的な境界で並べ替え順序セットを作成します。 
+**SizedSSortOrderSet** マクロを使用して、明示的な境界を持つ並べ替え順序セットを作成します。 
   
-**sizedssortorderset**マクロの結果として得られる新しい構造を、 **ssortorderset**構造へのポインターとして使用するには、次のキャストを実行します。 
+**SizedSSortOrderSet** マクロから得られた新しい構造を **SSortOrderSet** 構造体へのポインターとして使用するには、次のキャストを実行します。 
   
 ```cpp
 lpSSortOrderSet = (LPSSortOrderSet) &SizedSSortOrderSet;

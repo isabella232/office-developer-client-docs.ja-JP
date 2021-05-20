@@ -25,11 +25,11 @@ ms.locfileid: "33435909"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_STRING8 型のプロパティを記述するために使用される文字列値の配列を格納します。
+型のプロパティを記述するために使用される文字列値の配列が含PT_MV_STRING8。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SLPSTRArray
@@ -40,19 +40,19 @@ typedef struct _SLPSTRArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> **lppszA**メンバーが指す配列内の値の数。 
+> lppszA メンバーが指す配列 **内の値の** 数。 
     
  **lppszA**
   
-> null で終了した8ビット文字の文字列の配列へのポインター。
+> null-ended 8 ビット文字文字列の配列へのポインター。
     
 ## <a name="remarks"></a>注釈
 
-PT_MV_STRING8 の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。
+プロパティの詳細については、「PT_MV_STRING8の [種類」を参照してください](property-types.md)。
   
 ## <a name="see-also"></a>関連項目
 

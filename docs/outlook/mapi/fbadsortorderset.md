@@ -25,7 +25,7 @@ ms.locfileid: "33428460"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メモリの割り当てを確認して、設定された並べ替え順序を検証します。 
+メモリ割り当てを確認して並べ替え順序セットを検証します。 
   
 |||
 |:-----|:-----|
@@ -43,20 +43,20 @@ ULONG FBadSortOrderSet(
 
  _lpsos_
   
-> 順番検証するように設定されている並べ替え順序を識別する、 [ssortorderset](ssortorderset.md)構造体へのポインター。 
+> [in]検証する [並べ替え順序セットを識別する SSortOrderSet](ssortorderset.md) 構造体へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 指定された並べ替え順序セットが無効です。 
+> 指定した並べ替え順序セットが無効です。 
     
 FALSE 
   
-> 指定された並べ替え順序の設定は有効です。
+> 指定した並べ替え順序セットが有効です。
     
 ## <a name="remarks"></a>注釈
 
-**fbadsortorderset**関数を使用して、 [IMAPITable:: sorttable](imapitable-sorttable.md)メソッドなどの sort メソッドの呼び出しを準備できます。 
+**FBadSortOrderSet** 関数を使用して [、IMAPITable::SortTable](imapitable-sorttable.md)メソッドなどの並べ替えメソッドの呼び出しを準備できます。 
   
 

@@ -25,7 +25,7 @@ ms.locfileid: "33428523"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームが閉じられていることをフォームビューアーに通知します。
+フォームが閉じているとフォーム ビューアーに通知します。
   
 ```cpp
 HRESULT OnShutdown( void );
@@ -39,11 +39,11 @@ HRESULT OnShutdown( void );
 
 S_OK 
   
-> 通知に成功しました。
+> 通知が成功しました。
     
 ## <a name="remarks"></a>注釈
 
-フォーム通知の詳細については、「[フォーム通知の送信と受信](sending-and-receiving-form-notifications.md)」を参照してください。
+フォーム通知の詳細については、「フォーム通知の送受信 [」を参照してください](sending-and-receiving-form-notifications.md)。
   
 ## <a name="see-also"></a>関連項目
 

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251272
 localization_priority: Normal
 ms.assetid: b8482cd8-5205-40ef-b4e1-4ceb197ac80f
-description: 図形の x 軸を基準として、テキストブロックの現在の回転角度を指定します。 既定値は 0°です。
+description: 図形の x 軸に対するテキスト ブロックの現在の回転角度を決定します。 既定値は 0°です。
 ms.openlocfilehash: 701a2b0ce5fccb29cc61309de1d1768a96d92c99
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33432171"
 ---
 # <a name="txtangle-cell-text-transform-section"></a>[TxtAngle] セル ([Text Transform] セクション)
 
-図形の*x*軸を基準として、テキストブロックの現在の回転角度を指定します。 既定値は 0°です。 
+図形の x 軸に対するテキスト ブロックの現在の回転角度を決定します。 既定値は 0°です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -26,7 +26,7 @@ ms.locfileid: "33432171"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [txtangle]  <br/> |
+| セル名 :  <br/> | TxtAngle  <br/> |
    
 プログラムから、インデックスによって [TxtAngle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

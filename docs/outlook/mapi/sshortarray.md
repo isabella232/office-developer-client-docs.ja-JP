@@ -25,11 +25,11 @@ ms.locfileid: "33429615"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_SHORT 型のプロパティを記述するために使用される、符号なし整数値の配列を格納します。
+型のプロパティを記述するために使用される符号なし整数値の配列をPT_MV_SHORT。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SShortArray
@@ -40,11 +40,11 @@ typedef struct _SShortArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> **lpi**メンバーが指す配列内の値の数。 
+> lpi メンバーが指す配列内の **値の** 数。 
     
  **lpi**
   
@@ -52,7 +52,7 @@ typedef struct _SShortArray
     
 ## <a name="remarks"></a>注釈
 
-PT_MV_SHORT およびその他のプロパティの種類の詳細については、「[プロパティの種類](property-types.md)」を参照してください。 
+プロパティおよび他のプロパティPT_MV_SHORT詳細については [、「Property Types」を参照してください](property-types.md)。 
   
 ## <a name="see-also"></a>関連項目
 

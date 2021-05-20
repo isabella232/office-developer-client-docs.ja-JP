@@ -25,7 +25,7 @@ ms.locfileid: "33428768"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロバイダーテーブルへのアクセスを提供します。これは、プロファイル内のサービスプロバイダーの一覧です。
+プロファイル内のサービス プロバイダーの一覧であるプロバイダー テーブルへのアクセスを提供します。
   
 ```cpp
 HRESULT GetProviderTable(
@@ -38,51 +38,51 @@ HRESULT GetProviderTable(
 
  _ulFlags_
   
-> 順番常に NULL。
+> [in]常に NULL。
     
- _lpptable_
+ _lppTable_
   
-> 読み上げプロバイダテーブルへのポインターへのポインター。
+> [out]プロバイダー テーブルへのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> プロバイダーテーブルが正常に返されました。
+> プロバイダー テーブルが正常に返されました。
     
 ## <a name="remarks"></a>注釈
 
-**IMsgServiceAdmin:: getprovidertable**メソッドは、プロファイルに現在インストールされているすべてのアドレス帳、メッセージストア、およびトランスポートプロバイダーを一覧表示した MAPI プロバイダーテーブルへのアクセスを提供します。 
+**IMsgServiceAdmin::GetProviderTable** メソッドは、プロファイルに現在インストールされているすべてのアドレス帳、メッセージ ストア、およびトランスポート プロバイダーを一覧表示する MAPI プロバイダー テーブルへのアクセスを提供します。 
   
-[IProviderAdmin:: getprovidertable](iprovideradmin-getprovidertable.md)メソッドによって返されるプロバイダテーブルとは異なり、 **IMsgServiceAdmin:: getprovidertable**を通じて返されるプロバイダテーブルには、関連付けられている情報を表す追加の行を含めることができませんプロファイルに1つ以上のサービスプロバイダーがある。 
+[IProviderAdmin::GetProviderTable](iprovideradmin-getprovidertable.md)メソッドを介して返されるプロバイダー テーブルとは異なり **、IMsgServiceAdmin::GetProviderTable** を介して返されるプロバイダー テーブルには、プロファイル内の 1 つ以上のサービス プロバイダーに関連付けられた情報を表す追加の行を含めできません。 
   
-削除されているか、または使用されていて、削除対象としてマークされているプロバイダーは、プロバイダテーブルには含まれません。 プロバイダーテーブルは静的であるため、プロファイルからの以降の追加または削除がテーブルに反映されることはありません。 
+削除されたプロバイダー、または使用されているが削除のマークが付いているプロバイダーは、プロバイダー テーブルには含まれません。 プロバイダー テーブルは静的です。つまり、プロファイルへの以降の追加またはプロファイルからの削除はテーブルに反映されません。 
   
-プロファイルにプロバイダーが含まれていない場合、 **getprovidertable**は0行と S_OK 戻り値を持つテーブルを返します。 
+プロファイルにプロバイダーがない場合 **、GetProviderTable** は行が 0 のテーブルを返し、その値S_OK返します。 
   
-プロバイダテーブルの列の完全なリストについては、「[プロバイダ table](provider-tables.md)」を参照してください。 
+プロバイダー テーブル内の列の完全な一覧については、「Provider [Table」を参照してください](provider-tables.md)。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-プロバイダーテーブルの行をトランスポート順で取得するには、次の手順を使用します。
+プロバイダー テーブルの行をトランスポート順序で取得するには、次の手順を使用します。
   
-1. **PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) プロパティに一致するプロパティ制限を MAPI_TRANSPORT_PROVIDER に適用するには、 [IMAPITable:: Restrict](imapitable-restrict.md)メソッドを呼び出します。
+1. [IMAPITable::Restrict](imapitable-restrict.md)メソッドを呼び出して、PR_RESOURCE_TYPE **(** [PidTagResourceType](pidtagresourcetype-canonical-property.md)) プロパティと一致するプロパティ制限を適用MAPI_TRANSPORT_PROVIDER。
     
-2. **PR_PROVIDER_ORDINAL** ([PidTagProviderOrdinal](pidtagproviderordinal-canonical-property.md)) 列でテーブルを並べ替えるには、 [IMAPITable:: sorttable](imapitable-sorttable.md)メソッドを呼び出します。 
+2. [IMAPITable::SortTable](imapitable-sorttable.md)メソッドを呼び出して、テーブルを [PR_PROVIDER_ORDINAL **]** 列 [(PidTagProviderOrdinal)](pidtagproviderordinal-canonical-property.md)列で並べ替えてください。 
     
-3. [IMAPITable:: QueryRows](imapitable-queryrows.md)メソッドを呼び出して、テーブルの行を取得します。 
+3. [IMAPITable::QueryRows メソッドを呼](imapitable-queryrows.md)び出して、テーブルの行を取得します。 
     
-これらの呼び出しに代わる方法として、すべての適切なデータ構造を渡すことで、 [hrqueryallrows](hrqueryallrows.md)関数への1回の呼び出しを行う方法があります。 
+これらの呼び出しの代わりに、適切なすべてのデータ構造が渡された [HrQueryAllRows](hrqueryallrows.md) 関数を 1 回呼び出す方法があります。 
   
-各行の**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) 列を取得する場合は、この**MAPIUID**構造体の配列を使用して、 [IMsgServiceAdmin:: msgservicetransportorder](imsgserviceadmin-msgservicetransportorder.md)の呼び出しでトランスポートの順序を設定できます。
+各行で **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) 列を取得する場合は、 **この MAPIUID** 構造体の配列を使用して [、IMsgServiceAdmin::MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md)の呼び出しでトランスポート順序を設定できます。
   
-_ulflags_パラメーターに MAPI_UNICODE フラグを設定すると、次の処理が行われます。 
+_ulFlags_ パラメーター MAPI_UNICODEフラグを設定すると、次の手順が実行されます。 
   
-- 文字列の種類を Unicode に設定し、 [IMAPITable:: querycolumns](imapitable-querycolumns.md)メソッドによってプロバイダテーブルの最初のアクティブな列に対して返されるデータを指定します。 プロバイダーテーブルの最初のアクティブな列は、テーブルを含むプロバイダーが[IMAPITable:: SetColumns](imapitable-setcolumns.md)メソッドを呼び出す前に**querycolumns**メソッドが返す列です。 
+- [IMAPITable::QueryColumns](imapitable-querycolumns.md)メソッドによってプロバイダー テーブルの最初のアクティブな列に対して返されるデータの文字列型を Unicode に設定します。 プロバイダー テーブルの最初のアクティブな列は、テーブルを含むプロバイダーが [IMAPITable::SetColumns](imapitable-setcolumns.md)メソッドを呼び出す前に **QueryColumns** メソッドが返す列です。 
     
-- **QueryRows**によってプロバイダテーブルの最初のアクティブな行に対して返されるデータについて、文字列の種類を Unicode に設定します。 プロバイダーテーブルの最初のアクティブな行は、そのテーブルを含むプロバイダーが**SetColumns**を呼び出す前に**QueryRows**が返す行です。 
+- QueryRows によってプロバイダー テーブルの最初のアクティブな行に対して返されるデータの文字列型を **Unicode に設定します**。 プロバイダー テーブルの最初のアクティブな行は、テーブルを含むプロバイダーが **SetColumns** を呼び出す前に **QueryRows** が返す行です。 
     
-- は、プロバイダーテーブルを含むクライアントが[imapitable:: sorttable](imapitable-sorttable.md)メソッドを呼び出す前に、 [imapitable:: querysortorder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序のプロパティの種類を制御します。 
+- プロバイダー テーブルを含むクライアントが[IMAPITable::SortTable](imapitable-sorttable.md)メソッドを呼び出す前に[、IMAPITable::QuerySortOrder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序のプロパティの種類を制御します。 
     
 ## <a name="see-also"></a>関連項目
 

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0ae21571-2299-6407-807c-428668bb6798
-description: 夏時間のすべての過去、現在、および今後のタイムゾーンシフトルールを含むタイムゾーン全体を表します。
+description: 夏時間のすべての履歴、現在、および将来のタイム ゾーン シフト ルールを含む、タイム ゾーン全体を表します。
 ms.openlocfilehash: 5f7000ecc1fa602b330670c2ee1c39f673a11a65
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33429342"
 ---
 # <a name="tzdefinition"></a>TZDEFINITION
 
-夏時間のすべての過去、現在、および今後のタイムゾーンシフトルールを含むタイムゾーン全体を表します。
+夏時間のすべての履歴、現在、および将来のタイム ゾーン シフト ルールを含む、タイム ゾーン全体を表します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -31,27 +31,27 @@ typedef struct {
 
 ## <a name="members"></a>メンバー
 
-_wflags_
+_wFlags_
   
-> Windows レジストリのタイムゾーンを表すキー名が有効であることを示します。 各タイムゾーンは常にキー名によって識別される必要があるため、このメンバーの値は常に**TZDEFINITION_FLAG_VALID_KEYNAME**にする必要があります。
+> レジストリ内のタイム ゾーンを表すキー名が有効Windows示します。 各タイム ゾーンは常にキー名で識別される必要があるから、このメンバーは常に値を持つ必要 **TZDEFINITION_FLAG_VALID_KEYNAME。**
     
 _pwszKeyName_
   
-> Windows レジストリ内のこのタイムゾーンのキーの名前。 この名前はローカライズしないでください。 これは、windows Software Development Kit (SDK) ヘッダーファイル windows で定義されている**MAX_PATH**の最大サイズを持ちます。 
+> レジストリ内のこのタイム ゾーンのキー Windowsします。 この名前はローカライズする必要があります。 ソフトウェア開発キット (SDK) ヘッダー MAX_PATH windows.h で定義されている Windowsの最大サイズを持っています。  
     
-_crules しくみ_
+_cRules_
   
-> この定義のタイムゾーンルールの数。 ルールの最大数は**TZ_MAX_RULES**です。 
+> この定義のタイム ゾーン ルールの数。 ルールの最大数は次 **TZ_MAX_RULES。** 
     
-_rgrules_
+_rgRules_
   
-> シフトが発生するタイミングを記述するルールの配列です。
+> シフトが発生する時間を表すルールの配列。
     
 ## <a name="remarks"></a>注釈
 
-*rgrules* 、少なくとも1つのルールが必要です。 [ *rgrules*の最初のルールは、最初のルールの*ststart*に関係なく、2番目のルールが開始されるまで使用するルールと見なされます。 
+rgRules には少なくとも  *1 つのルールが必要です*  。 *rgRules* の最初のルールは、最初のルールの *stStart* に関係なく、2 番目のルールが開始されるまで使用するルールと見なされます。 
   
-ルールは、最も古いものから [最新] に順に並べ替える必要があります。 ルール間に重複が許可されていないため、新しいルールが開始される前のルールが終了したと見なされます。
+ルールは、最も古いルールから最新の順に並べ替える必要があります。 ルール間に重複は許可されません。そのため、以前のルールは新しいルールの開始時に終了すると見なされます。
   
 ## <a name="see-also"></a>関連項目
 

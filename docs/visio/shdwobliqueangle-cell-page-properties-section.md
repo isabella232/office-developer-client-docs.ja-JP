@@ -24,7 +24,7 @@ ms.locfileid: "33430428"
 
 このセルの値がゼロ (0) の場合は影の傾きの角度が真上で、時計回りに角度を指定します。
   
- このセルで説明されている角度は、[shapeshdwtype] セル (ページ上の図形の影の種類) が page Default (**visFSTPageDefault** ) に設定されており、影の種類が斜体の場合に使用されます。 既定のページの影の種類は、[Page Properties] セクションの [ShdwType] セルで定義されます。 
+ このセルで説明する角度は、ShapeShdwType セル (ページ上の図形の影の種類) が Page Default **(visFSTPageDefault)** に設定され、シャドウの種類が斜めになるたびに使用されます。 既定のページの影の種類は、[Page Properties] セクションの [ShdwType] セルで定義されます。 
   
 個々の図形に対してこの動作を設定するには、[Fill Format] セクションで [ShapeShdwObliqueAngle] セルを使用します。
   
@@ -32,7 +32,7 @@ ms.locfileid: "33430428"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [shdwobliqueangle]  <br/> |
+| セル名 :  <br/> | ShdwObliqueAngle  <br/> |
    
 プログラムから、インデックスによって [ShdwObliqueAngle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

@@ -1,5 +1,5 @@
 ---
-title: imapiformgetviewcontext
+title: IMAPIFormGetViewContext
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33430904"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームの現在のビューコンテキストを返します。 
+フォームの現在のビュー コンテキストを返します。 
   
 ```cpp
 HRESULT GetViewContext(
@@ -35,27 +35,27 @@ HRESULT GetViewContext(
 
 ## <a name="parameters"></a>パラメーター
 
- _ppviewcontext_
+ _ppViewContext_
   
-> 読み上げフォームのビューコンテキストへのポインターへのポインター。
+> [out]フォームのビュー コンテキストへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> フォームの現在のビューコンテキストが正常に返されました。 
+> フォームの現在のビュー コンテキストが正常に返されました。 
     
 S_FALSE 
   
-> フォームにビューコンテキストはありません。
+> フォームのビュー コンテキストはありません。
     
 ## <a name="remarks"></a>注釈
 
-フォーム閲覧者は**getviewcontext**を呼び出して、以前の[imapiform:: setviewcontext](imapiform-setviewcontext.md)への呼び出しで設定されたビューコンテキストへのポインターを取得します。 **setviewcontext**に対して前回の呼び出しが行われていない場合、 **getviewcontext**は_ppviewcontext_を NULL に設定します。 
+フォーム ビューアーは **GetViewContext** を呼び出して [、IMAPIForm::SetViewContext](imapiform-setviewcontext.md)への以前の呼び出しで確立されたビュー コンテキストへのポインターを取得します。 **SetViewContext** に対して以前に呼び出しが行われた場合 **、GetViewContext は ppViewContext** _を NULL に_ 設定します。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-フォームのビューコンテキストポインターを、 _ppviewcontext_パラメーターの呼び出し元フォームビューアーによって渡されるポインターにコピーします。 フォームにビューコンテキストがない場合は、 _ppviewcontext_を NULL に設定します。 
+_ppViewContext_ パラメーターで呼び出し元のフォーム ビューアーによって渡されたポインターに、フォームのビュー コンテキスト ポインターをコピーします。 フォームにビュー コンテキストがない場合は  _、ppViewContext を NULL に_ 設定します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -63,7 +63,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions  <br/> |openmessagenonmodal  <br/> |mfcmapi は、 **imapiform:: getviewcontext**メソッドを使用して、フォームにビューコンテキストがあるかどうかを確認します。  <br/> |
+|MAPIFormFunctions.cpp  <br/> |OpenMessageNonModal  <br/> |MFCMAPI は **IMAPIForm::GetViewContext** メソッドを使用して、フォームにビュー コンテキストが含されているかどうかを確認します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

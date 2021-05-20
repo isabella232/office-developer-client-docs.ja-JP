@@ -22,7 +22,7 @@ Microsoft Visual Basic for Applications (VBA) プロジェクトでアドオン�
   
 ## <a name="syntax"></a>構文
 
-RUNADDON (" *string* ") 
+RUNADDON() *文字列*  ") 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -32,11 +32,11 @@ RUNADDON (" *string* ")
    
 ## <a name="remarks"></a>注釈
 
-RUNADDON 関数呼び出しを含むドキュメントのプロジェクト (または、参照されている場合は別のプロジェクト) に、 _string_という名前のマクロ (引数を持たないプロシージャ) が含まれていないと、Microsoft Visio は、_文字列_という名前のアドオンを実行します。 指定した名前のアドイン__ が見つからない場合、Visio は何もエラーを報告しません。 **TraceFlags** プロパティを使用すると、Visio が実行しようとするプロシージャとアドオンを監視することができます。 
+RUNADDON 関数呼び出しを含むドキュメントのプロジェクト (または参照されている場合は別のプロジェクト) に、string という名前のマクロ (引数を持つプロシージャ) がない場合、Microsoft Visio はアドオンの名前付き文字列 _を実行します_。 名前付き文字列が見つからない場合、Visioは何も実行し、エラーは報告しません。 **TraceFlags** プロパティを使用すると、Visio が実行しようとするプロシージャとアドオンを監視することができます。 
   
-標準モジュール内のプロシージャを呼び出すときは、複数のモジュールに同じ名前のプロシージャを含めることができるので、プロシージャを含むモジュール名 (たとえば、 *procName*) で文字列の先頭に指定することをお勧めします。 
+標準モジュールでプロシージャを呼び出す場合は、複数のモジュールが同じ名前のプロシージャを持つ可能性があるため、プロシージャを含むモジュール名  *(moduleName.procName* など) を文字列の先頭に付けます。 
   
-RUNADDON 関数呼び出しを含む図面のプロジェクト以外のプロジェクトでプロシージャを呼び出すには、*から*を使用します (VBA プロジェクトの*projName*への参照を明示的に設定する必要があります)。 
+RUNADDON 関数呼び出しを含むドキュメントのプロジェクト以外のプロジェクトでプロシージャを呼び出す場合は、  *構文 projName.modName.procName*  を使用します (VBA プロジェクトで  *projName*  への参照を明示的に設定している必要があります)。 
   
 > [!NOTE]
 >  Visio 2002 以降、RUNADDON 関数は任意の VBA コードを含む文字列を実行できなくなりました。従来 RUNADDON 関数に渡されていたコードは、RUNADDON 関数から呼び出される図面の VBA プロジェクト内のプロシージャへ移動することができます。 
@@ -47,9 +47,9 @@ Visio でのコードの実行に関する詳細については、この『シ�
   
 ## <a name="example-1"></a>例 1
 
-RUNADDON ("Calendar")
+RUNADDON("Calendar.exe")
   
-予定表 .exe というアドオンを起動します。
+アドインと呼ばれるアドオンを起動Calendar.exe。
   
 ## <a name="example-2"></a>例 2
 
@@ -59,7 +59,7 @@ Array Shapes という名の (VSL 実装) アドオンを起動します。
   
 ## <a name="example-3"></a>例 3
 
-RUNADDON ("ThisDocument statistics")
+RUNADDON("ThisDocument.ReportStatistics")
   
 この関数呼び出しを含む図面プロジェクト内の **ThisDocument** モジュール内で ReportStatistics マクロを呼び出します。 
   
@@ -68,8 +68,8 @@ RUNADDON ("ThisDocument statistics")
   
 ## <a name="example-4"></a>例 4
 
-RUNADDON (" *ModuleName* .reportstatistics ") 
+RUNADDON(" *ModuleName*  .ReportStatistics") 
   
-この関数呼び出しを含むドキュメントプロジェクトの*ModuleName*内で reportstatistics マクロを呼び出します。 
+この関数呼び出しを含むドキュメント プロジェクト  *の ModuleName*  の ReportStatistics マクロを呼び出します。 
   
 

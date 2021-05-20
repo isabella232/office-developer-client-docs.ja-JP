@@ -25,11 +25,11 @@ ms.locfileid: "33430610"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-制限に注釈を付けるために使用されるコメント制限について説明します。 
+制限に注釈を付けるコメント制限について説明します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SCommentRestriction
@@ -41,27 +41,27 @@ typedef struct _SCommentRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> **lpprop**メンバーによって参照されている配列内のプロパティ値の数。 
+> **lpProp** メンバーが指す配列内のプロパティ値の数。 
     
- **lpres**
+ **lpRes**
   
-> [srestriction](srestriction.md)構造体へのポインター。 
+> [SRestriction](srestriction.md)構造体へのポインター。 
     
- **lpprop**
+ **lpProp**
   
-> [spropvalue](spropvalue.md)構造体の配列へのポインター。それぞれには、プロパティタグと、名前付きプロパティの値が含まれています。 
+> 名前付きプロパティのプロパティ タグと値を含む [SPropValue](spropvalue.md) 構造体の配列へのポインター。 
     
 ## <a name="remarks"></a>注釈
 
-**sコメント制限**構造は、オブジェクトを一連の名前付きプロパティに関連付けます。 コメント制限は、評価されないため、他の制限とは異なります。 つまり、 [IMAPITable:: Restrict](imapitable-restrict.md)メソッドでは無視されます。 **imapitable:: Restrict**呼び出しが行われた後、 [imapitable:: QueryRows](imapitable-queryrows.md)メソッドによって返される行には影響はありません。 
+**SCommentRestriction 構造体は**、オブジェクトを名前付きプロパティのセットと関連付ける。 コメントの制限は、評価されないので、他の制限とは異なっています。 つまり [、IMAPITable::Restrict メソッドでは無視](imapitable-restrict.md) されます。 IMAPITable::Restrict 呼び出しが行われた後[、IMAPITable::QueryRows](imapitable-queryrows.md)メソッドによって返される行には影響しません。  
   
-**sコメント制限**構造を使用すると、アプリケーション固有の情報をディスクに保存するときに制限を設定できます。 たとえば、プロパティ制限で使用される名前付きプロパティの名前を保存するクライアントは、 **sコメント制限**構造でそのようにすることができます。 プロパティの制限でプロパティ名を保存することはできません。これは、関連付けられた[spropertyrestriction](spropertyrestriction.md)構造体には property タグのみが含まれるためです。 
+**SCommentRestriction 構造** を使用すると、アプリケーション固有の情報をディスクに保存するときに制限を付け続けることができます。 たとえば、プロパティ制限で使用される名前付きプロパティの名前を保存するクライアントは **、SCommentRestriction** 構造で使用できます。 関連付けられた [SPropertyRestriction](spropertyrestriction.md) 構造体にはプロパティ タグしか保持されないので、プロパティの制限ではプロパティ名を保存できない。 
   
-詳細については**** 、「制限[につい](about-restrictions.md)て」を参照してください。 
+**SCommentRestriction** 構造と制限全般の詳細については、「制限について」[を参照してください](about-restrictions.md)。 
   
 ## <a name="see-also"></a>関連項目
 

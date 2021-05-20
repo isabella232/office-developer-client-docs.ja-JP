@@ -15,13 +15,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429566"
 ---
-# <a name="mapiofflinecreateinfo"></a>MAPIOFFLINE_CREATEINFO
+# <a name="mapioffline_createinfo"></a>MAPIOFFLINE_CREATEINFO
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-この構造体は、 [hrcreateofflineobj](hrcreateofflineobj.md)と組み合わせて使用されます。
+この構造は [、HrCreateOfflineObj で使用されます](hrcreateofflineobj.md)。
   
 ```cpp
 typedef struct
@@ -39,50 +39,50 @@ typedef struct
 } MAPIOFFLINE_CREATEINFO;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **ulsize**
+ **ulSize**
   
 > 構造体のサイズ。
     
- **ulcreateflags**
+ **ulCreateFlags**
   
-> 0である必要があります。
+> 0 である必要があります。
     
  **pwszProfileName**
   
 > プロファイルの名前を指定します。
     
- **ulcapabilities**
+ **ulCapabilities**
   
-> 次の機能フラグのビットマスク。
+> 次の機能フラグのビット マスク。
     
 |||
 |:-----|:-----|
-|MAPIOFFLINE_CAPABILITY_OFFLINE  <br/> |オフラインオブジェクトがオフラインになることができる。  <br/> |
-|MAPIOFFLINE_CAPABILITY_ONLINE  <br/> |オフラインオブジェクトがオンラインになることができる。  <br/> |
+|MAPIOFFLINE_CAPABILITY_OFFLINE  <br/> |オフライン オブジェクトはオフラインにできます。  <br/> |
+|MAPIOFFLINE_CAPABILITY_ONLINE  <br/> |オフライン オブジェクトはオンラインにできます。  <br/> |
    
- **pguid**
+ **pGUID**
   
-> 他のオフラインオブジェクトからこの種類のオフラインオブジェクトを一意に識別するために使用される GUID へのポインター。 GUID_GlobalState は、オブジェクトが親オブジェクトとして使用できるグローバルオフラインオブジェクトを参照します。
+> 他のオフライン オブジェクトからこの種類のオフライン オブジェクトを一意に識別するために使用される GUID へのポインター。 GUID_GlobalStateは、オブジェクトが親オブジェクトとして使用できるグローバル オフライン オブジェクトを参照します。
     
- **pinstance**
+ **pInstance**
   
-> このオフラインオブジェクトを一意に識別する GUID へのポインター。 これは、このオフラインオブジェクトを他のオブジェクトからあいまいにするために使用されます。
+> このオフライン オブジェクトを一意に識別する GUID へのポインター。 このオフライン オブジェクトを他のオブジェクトからあいまいに解除するために使用されます。
     
- **pparent**
+ **pParent**
   
-> このオフラインオブジェクトの親であるオフラインオブジェクトへのポインター。このオフラインオブジェクトの変更内容が継承されます。
+> このオフライン オブジェクトの親であり、このオフライン オブジェクトが継承する変更を持つオフライン オブジェクトへのポインター。
     
  **pMAPISupport**
   
->  このオフラインオブジェクトを使用する MAPI サポートオブジェクトを識別します。 たとえば、このオフラインオブジェクトを使用してストアのオフラインとオンラインの状態を追跡している場合は、ストアのサポートオブジェクトです。 ただし、これがサポートオブジェクトのないオブジェクトのオフラインオブジェクトである場合は、NULL にすることができます。 
+>  このオフライン オブジェクトを使用する MAPI サポート オブジェクトを識別します。 たとえば、このオフライン オブジェクトを使用してストアのオフライン状態とオンライン状態を追跡する場合、これが stores サポート オブジェクトです。 ただし、サポート オブジェクトがないオブジェクトのオフライン オブジェクトの場合は、NULL を指定できます。 
     
  **pAggregateInfo**
   
-> MAPIOFFLINE_AGGREGATEINFO 構造体へのポインター。 詳細については、「 [MAPIOFFLINE_AGGREGATEINFO](mapioffline_aggregateinfo.md)」を参照してください。
+> 構造体へのポインター MAPIOFFLINE_AGGREGATEINFOします。 詳細については、「MAPIOFFLINE_AGGREGATEINFO」 [を参照してください](mapioffline_aggregateinfo.md)。
     
- **pconnectinfo**
+ **pConnectInfo**
   
 > null である必要があります。
     

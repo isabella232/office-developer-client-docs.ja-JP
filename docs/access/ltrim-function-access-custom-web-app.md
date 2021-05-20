@@ -1,5 +1,5 @@
 ---
-title: LTrim 関数 (Access カスタム web アプリ)
+title: LTrim 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430974"
 ---
-# <a name="ltrim-function-access-custom-web-app"></a>LTrim 関数 (Access カスタム web アプリ)
+# <a name="ltrim-function-access-custom-web-app"></a>LTrim 関数 (Access カスタム Web アプリ)
 
 先頭の空白を削除した後の文字式を返します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "33430974"
   
 ## <a name="syntax"></a>構文
 
- **LTrim**(*textexpression*) 
+ **LTrim** (*TextExpression*) 
   
 **LTrim** 関数の引数は次のとおりです。 
   

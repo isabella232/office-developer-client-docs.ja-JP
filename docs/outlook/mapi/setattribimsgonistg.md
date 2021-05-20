@@ -25,13 +25,13 @@ ms.locfileid: "33428831"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[OpenIMsgOnIStg](openimsgonistg.md)関数によって指定された[IMessage](imessageimapiprop.md)オブジェクトのプロパティの属性を設定または変更します。 
+[OpenIMsgOnIStg](openimsgonistg.md)関数によって提供される[IMessage](imessageimapiprop.md)オブジェクトのプロパティの属性を設定または変更します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Imessage  <br/> |
+|ヘッダー ファイル:  <br/> |Imessage.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとメッセージストアプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとメッセージ ストア プロバイダー  <br/> |
    
 ```cpp
 HRESULT SetAttribIMsgOnIStg(
@@ -46,19 +46,19 @@ HRESULT SetAttribIMsgOnIStg(
 
  _lpObject_
   
-> 順番プロパティ属性が設定されているオブジェクトへのポインター。 
+> [in]プロパティ属性が設定されているオブジェクトへのポインター。 
     
- _lpproptags_
+ _lpPropTags_
   
-> 順番プロパティタグの配列が含まれている[SPropTagArray](sproptagarray.md)構造体へのポインター。プロパティの属性が設定されているプロパティを示します。 
+> [in]プロパティ属性が設定されているプロパティを示すプロパティ タグの配列を含む [SPropTagArray](sproptagarray.md) 構造体へのポインター。 
     
  _lpPropAttrs_
   
-> 順番設定するプロパティ属性を一覧表示する[sproな trarray](spropattrarray.md)構造体へのポインター。 
+> [in]設定する [プロパティ属性を示す SPropAttrArray](spropattrarray.md) 構造体へのポインター。 
     
- _lpppropproblems 問題_
+ _lppPropProblems_
   
-> 読み上げプロパティの問題のセットを含む、返された[sprop問題の配列](spropproblemarray.md)構造体へのポインター。 この構造体は、 **SetAttribIMsgOnIStg**が一部のプロパティを設定できた場合に発生する問題を特定します。ただし、すべてではありません。 _lpppropproblems_パラメーターに NULL へのポインターが渡された場合、一部のプロパティが設定されていない場合でも、プロパティ問題の配列は返されません。 
+> [out]プロパティの問題のセットを含む、返される [SPropProblemArray](spropproblemarray.md) 構造体へのポインター。 この構造は **、SetAttribIMsgOnIStg** が一部のプロパティを設定できたが、すべてではない場合に発生する問題を識別します。 _lppPropProblems_ パラメーターに NULL へのポインターが渡された場合、一部のプロパティが設定されていない場合でも、プロパティの問題配列は返されません。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -68,16 +68,16 @@ S_OK
     
 MAPI_W_ERRORS_RETURNED 
   
-> 呼び出しは全体的に成功しましたが、1つ以上のプロパティがアクセスできず、PT_ERROR のプロパティの種類で返されました。
+> 呼び出しは全体的に成功しましたが、1 つ以上のプロパティにアクセスする必要が生じ、プロパティの種類が変更されたPT_ERROR。
     
 ## <a name="remarks"></a>注釈
 
-property 属性は、プロパティオブジェクト (つまり、 [imapiprop: IUnknown](imapipropiunknown.md)インターフェイスを実装するオブジェクト) にのみアクセスできます。 ole 構造化ストレージオブジェクトで MAPI プロパティを使用できるようにするために、 [OpenIMsgOnIStg](openimsgonistg.md)は、ole **IStorage**オブジェクトの先頭に[IMessage: imapiprop](imessageimapiprop.md)オブジェクトをビルドします。 このようなオブジェクトのプロパティ属性は、 **SetAttribIMsgOnIStg**を使用して設定または変更したり、 [GetAttribIMsgOnIStg](getattribimsgonistg.md)で取得したりできます。 
+プロパティ属性にアクセスできるのは、プロパティ オブジェクト、つまり [IMAPIProp : IUnknown](imapipropiunknown.md) インターフェイスを実装するオブジェクトのみです。 OLE 構造化ストレージ オブジェクトで MAPI プロパティを使用するために [、OpenIMsgOnIStg](openimsgonistg.md)は OLE **IStorage** オブジェクトの上に [IMessage : IMAPIProp](imessageimapiprop.md)オブジェクトを作成します。 このようなオブジェクトのプロパティ属性は **、SetAttribIMsgOnIStg** を使用して設定または変更し [、GetAttribIMsgOnIStg](getattribimsgonistg.md)を使用して取得できます。 
   
- **メモ****GetAttribIMsgOnIStg**および**SetAttribIMsgOnIStg**は、すべての**IMessage**オブジェクトでは動作しません。 これらは、 **OpenIMsgOnIStg**によって返される**** **IMessage**オブジェクトに対してのみ有効です。 
+ **メモ****GetAttribIMsgOnIStg** および **SetAttribIMsgOnIStg** は、すべての **IMessage オブジェクトで動作しません**。 これらは **、OpenIMsgOnIStg** によって返される **IMessage**-on- **IStorage** オブジェクトでのみ有効です。 
   
-_lpPropAttrs_パラメーターでは、属性の数と位置が、 _lpproptags_パラメーターで渡されるプロパティタグの数と位置に一致する必要があります。 
+_lpPropAttrs_ パラメーターでは、属性の数と位置が _lpPropTags_ パラメーターで渡されるプロパティ タグの数と位置と一致している必要があります。 
   
-**SetAttribIMsgOnIStg**関数は、 **IMessage**スキーマで必要な場合にメッセージプロパティを読み取り専用にするために使用されます。 サンプルメッセージストアプロバイダーは、これを目的として使用します。 詳細については、「[メッセージ](mapi-messages.md)」を参照してください。 
+**SetAttribIMsgOnIStg** 関数は、IMessage スキーマで必要なときにメッセージ プロパティを読み取り **専用にするために使用** されます。 サンプル メッセージ ストア プロバイダーは、この目的のためにそれを使用します。 詳細については、「Messages」を [参照してください](mapi-messages.md)。 
   
 

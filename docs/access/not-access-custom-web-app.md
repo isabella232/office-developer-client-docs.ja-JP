@@ -1,5 +1,5 @@
 ---
-title: NOT (Access カスタム web アプリ)
+title: NOT (Access custom Web app)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430722"
 ---
-# <a name="not-access-custom-web-app"></a>NOT (Access カスタム web アプリ)
+# <a name="not-access-custom-web-app"></a>NOT (Access custom Web app)
 
 ブール型 (Boolean) の入力値を反転します。
   

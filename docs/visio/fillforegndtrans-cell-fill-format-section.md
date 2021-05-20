@@ -34,7 +34,7 @@ ms.locfileid: "33427851"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[fillforegndtrans]  <br/> |
+|セル名:  <br/> |FillForegndTrans  <br/> |
    
 プログラムから、インデックスによって [FillForegndTrans] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

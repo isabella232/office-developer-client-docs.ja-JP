@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm60032
 localization_priority: Normal
 ms.assetid: c1e3d7bf-e6b6-65f1-ae40-80c8ba4821cd
-description: 図面校閲者のマークアップに割り当てられている色を表す RGB 値。
+description: ドキュメント レビューアーのマークアップに割り当てられた色を表す RGB 値。
 ms.openlocfilehash: d9df6605ca6c8a22353978b9483989ecfc08130d
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33430540"
 ---
 # <a name="color-cell-reviewer-section"></a>[Color] セル ([Reviewer] セクション)
 
-図面校閲者のマークアップに割り当てられている色を表す RGB 値。 
+ドキュメント レビューアーのマークアップに割り当てられた色を表す RGB 値。 
   
 ## <a name="remarks"></a>注釈
 
@@ -30,14 +30,14 @@ ms.locfileid: "33430540"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | 校閲者の色 [ *i* ] *i* = <1>、2、3...  <br/> |
+| セル名:  <br/> | Reviewer.Color [  *i*  ] ここで  *、i*  = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Color] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionReviewer** <br/> |
-| 行インデックス:  <br/> |**visRowReviewer** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス:  <br/> |**visRowReviewer**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス:  <br/> |**visReviewerColor** <br/> |
    
 

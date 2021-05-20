@@ -1,5 +1,5 @@
 ---
-title: imapiforminfosaveform
+title: IMAPIFormInfoSaveForm
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33428747"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-構成ファイルに特定のフォームの説明を保存します。
+特定のフォームの説明を構成ファイルに保存します。
   
 ```cpp
 HRESULT SaveForm(
@@ -35,9 +35,9 @@ HRESULT SaveForm(
 
 ## <a name="parameters"></a>パラメーター
 
- _szfilename_
+ _szFileName_
   
-> 順番フォームの説明メッセージファイルの名前を示す文字列。説明は保存されます。 このファイル名には、拡張子 fdm を付ける必要があります。
+> [in]説明が保存されているフォームの説明メッセージ ファイルの名前を指定する文字列。 このファイル名には、拡張子 .fdm が必要です。
     
 ## <a name="return-value"></a>戻り値
 
@@ -47,21 +47,21 @@ S_OK
     
 MAPI_E_EXTENDED_ERROR 
   
-> 構成ファイルを書き込めませんでした。 エラーに関連付けられている[MAPIERROR](mapierror.md)構造体を取得するには、 [imapiprop:: GetLastError](imapiprop-getlasterror.md)メソッドを呼び出します。 
+> 構成ファイルを書き込む必要があります。 エラーに関連 [付けられている MAPIERROR](mapierror.md) 構造を取得するには [、IMAPIProp::GetLastError メソッドを呼び出](imapiprop-getlasterror.md) します。 
     
 MAPI_E_NO_SUPPORT 
   
-> **saveform**は、ローカルフォームコンテナーにフォームを保存するために呼び出された可能性があります。 **saveform**は、ローカルフォームコンテナーではサポートされていません。 
+> ローカル フォーム コンテナーにフォームを保存するために **SaveForm** が呼び出された可能性があります。 **SaveForm** はローカル フォーム コンテナーではサポートされていません。 
     
 ## <a name="remarks"></a>注釈
 
-クライアントアプリケーションは、指定されたファイル名を持つファイルに現在のフォームの説明を保存するために、 **imapiforminfo:: saveform**メソッドを呼び出します。 **saveform**構成ファイルを作成します。 
+クライアント アプリケーションは **IMAPIFormInfo::SaveForm** メソッドを呼び出して、指定されたファイル名を持つファイルに現在のフォームの説明を保存します。 **SaveForm** は構成ファイルを作成します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-フォームを再インストールするには、フォームライブラリプロバイダーが表示するダイアログボックスでフォーム記述子メッセージのリストからフォームを選択します。 フォーム記述子メッセージに推奨される拡張子は、fdm です。
+フォームを再インストールするには、フォーム ライブラリ プロバイダーが表示するダイアログ ボックスのフォーム記述子メッセージの一覧からフォームを選択します。 フォーム記述子メッセージの推奨拡張機能は .fdm です。
   
-**saveform**が MAPI_E_EXTENDED_ERROR を返す場合は、 [imapiprop:: GetLastError](imapiprop-getlasterror.md)メソッドを呼び出し、返された**MAPIERROR**構造を調べて、エラーの原因となった条件を特定します。 
+**SaveForm** が MAPI_E_EXTENDED_ERROR を返す場合は [IMAPIProp::GetLastError](imapiprop-getlasterror.md)メソッドを呼び出し、返された **MAPIERROR** 構造体をチェックして、エラーの原因となる条件を特定します。 
   
 ## <a name="see-also"></a>関連項目
 

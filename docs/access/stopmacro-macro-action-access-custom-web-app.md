@@ -1,5 +1,5 @@
 ---
-title: StopMacro マクロアクション (Access カスタム web アプリ)
+title: StopMacro マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429496"
 ---
-# <a name="stopmacro-macro-action-access-custom-web-app"></a>StopMacro マクロアクション (Access カスタム web アプリ)
+# <a name="stopmacro-macro-action-access-custom-web-app"></a>StopMacro マクロ アクション (Access カスタム Web アプリ)
 
 " **StopMacro/マクロの中止** " アクションを使用すると、現在実行中のマクロを中止できます。 
   

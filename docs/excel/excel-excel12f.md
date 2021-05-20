@@ -22,9 +22,9 @@ ms.locfileid: "33431674"
 
  **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework library functions. **Excel** is a wrapper for the [Excel4](excel4-excel12.md) function. **Excel12f** is a wrapper for the [Excel12](excel4-excel12.md) function. Each checks to see that none of the arguments is zero, which would indicate that the creation of a temporary **XLOPER** or **XLOPER12** failed. If an error occurs, each prints a debug message. When finished, each frees all temporary memory that might have been created for temporary **XLOPER**s and **XLOPER12**s.
+Framework library functions. **Excel** is a wrapper for the [Excel4](excel4-excel12.md) function. **Excel12f** is a wrapper for the [Excel12](excel4-excel12.md) function. Each checks to see that none of the arguments is zero, which would indicate that the creation of a temporary **XLOPER** or **XLOPER12** failed. If an error occurs, each prints a debug message. When finished, each frees all temporary memory that might have been created for temporary **XLOPER** s and **XLOPER12** s.
   
- **Excel12f**から Excel 2007 C API ライブラリ以降の DLL からのみ呼び出すことができます。さらに、Excel 2007 以降で起動したときのみ動作し、それ以外は **xlretFailed** で失敗します。 
+ **Excel12f** から Excel 2007 C API ライブラリ以降の DLL からのみ呼び出すことができます。さらに、Excel 2007 以降で起動したときのみ動作し、それ以外は **xlretFailed** で失敗します。 
   
 ```cs
 int Excel(int iFunction, LPXLOPER pxRes, int iCount, 

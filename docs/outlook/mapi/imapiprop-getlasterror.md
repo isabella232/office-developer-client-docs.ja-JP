@@ -1,5 +1,5 @@
 ---
-title: imapipropgetlasterror
+title: IMAPIPropGetLastError
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33435832"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。 
+前のエラー [に関する](mapierror.md) 情報を含む MAPIERROR 構造体を返します。 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,19 +39,19 @@ HRESULT GetLastError(
 
  _hResult_
   
-> 順番前のメソッド呼び出しで生成されたエラーコードへのハンドル。
+> [in]前のメソッド呼び出しで生成されたエラー コードのハンドル。
     
  _ulFlags_
   
-> 順番_lppMAPIError_でポイントされている**MAPIERROR**構造体で返されるテキストの形式を示すフラグのビットマスク。 次のフラグを設定できます。
+> [in]_lppMAPIError_ によって指される **MAPIERROR** 構造で返されるテキストの形式を示すフラグのビットマスクです。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 文字列は、Unicode 形式である必要があります。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式である必要があります。
+> 文字列は Unicode 形式である必要があります。 このフラグMAPI_UNICODE設定しない場合、文字列は ANSI 形式である必要があります。
     
  _lppMAPIError_
   
-> 読み上げエラーのバージョン、コンポーネント、およびコンテキスト情報を含む**MAPIERROR**構造体へのポインターへのポインター。 エラー情報を返さない場合は、 _lppMAPIError_パラメーターを NULL に設定できます。 
+> [out]エラーのバージョン、コンポーネント、コンテキスト情報を含む **MAPIERROR** 構造体へのポインターを指すポインター。 _lppMAPIError パラメーター_ は、返すエラー情報がない場合は NULL に設定できます。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -61,25 +61,25 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
+> このフラグMAPI_UNICODE設定され、実装が Unicode をサポートしていないか、または設定されていないMAPI_UNICODE実装が Unicode のみをサポートしています。
     
 ## <a name="remarks"></a>注釈
 
-**imapiprop:: GetLastError**メソッドは、失敗した前のメソッド呼び出しに関する情報を提供します。 クライアントは、 **MAPIERROR**構造のデータをダイアログボックスに含めることによって、エラーに関する詳細情報をユーザーに提供できます。 
+**IMAPIProp::GetLastError** メソッドは、失敗した以前のメソッド呼び出しに関する情報を提供します。 クライアントは、ダイアログ ボックスに **MAPIERROR** 構造のデータを含め、エラーに関する詳細情報をユーザーに提供できます。 
   
-MAPI で提供される**GetLastError**のすべての実装は、 [IAddrBook](iaddrbookimapiprop.md)の実装を除く ANSI 実装です。 **IAddrBook**に含まれている**GetLastError**メソッドは、Unicode をサポートしています。 
+MAPI によって提供される **GetLastError** の実装はすべて [、IAddrBook](iaddrbookimapiprop.md) 実装を除く ANSI 実装です。 **IAddrBook に含まれる GetLastError** メソッド **は Unicode** をサポートしています。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-このメソッドのリモートトランスポートプロバイダーによる実装の詳細と、このメソッドが返すメッセージは、トランスポートプロバイダーによって異なります。これは、さまざまな HRESULT 値につながる特定のエラー条件が異なるトランスポートに対して異なるためです。会社.
+リモート トランスポート プロバイダーによるこのメソッドの実装の詳細と、このメソッドが返すメッセージの詳細は、さまざまな HRESULT 値につながる特定のエラー条件がトランスポート プロバイダーによって異なってきます。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-_lppMAPIError_パラメーターで示されている**MAPIERROR**構造体は、戻り値**** が S_OK の場合にのみ使用できます。 **GetLastError**では、最後のエラーが発生したかどうか、またはエラーについてのレポートを何にも持っていない場合があります。 このような場合、代わりに_lppMAPIError_で NULL へのポインターが返されます。 
+戻り値が指定されている場合にのみ **、GetLastError** が 1 を提供する場合は _、lppMAPIError_ パラメーターが指す **MAPIERROR** 構造をS_OK。 **GetLastError では、** 最後のエラーが何だったのか、またはエラーについて報告する必要がなにもない場合があります。 この状況では、代わりに  _lppMAPIError_ で NULL へのポインターが返されます。 
   
-**MAPIERROR**構造体のメモリを解放するには、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出します。 
+**MAPIERROR** 構造体のメモリを解放するには [、MAPIFreeBuffer 関数を呼び出](mapifreebuffer.md)します。 
   
-**GetLastError**メソッドの詳細については、「 [MAPI 拡張エラー](mapi-extended-errors.md)」を参照してください。
+**GetLastError メソッドの詳細については、「MAPI** 拡張 [エラー」を参照してください](mapi-extended-errors.md)。
   
 ## <a name="see-also"></a>関連項目
 

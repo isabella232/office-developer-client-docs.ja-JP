@@ -37,7 +37,7 @@ The function calls for establishing a session have a collection of flags and par
   
 **MAPI �Z�b�V�����̃t���[�`���[�g**
   
-![MAPI セッションのフローチャート](media/amapi_47.gif "MAPI セッションのフローチャート")
+![MAPI セッションフローチャート](media/amapi_47.gif "MAPI セッションフローチャート")
   
 �N���C�A���g �A�v���P�[�V���������Z�b�V�����̏������@�̏ڍׂɂ��ẮA [MAPI �Z�b�V�����̏���](mapi-session-handling.md)��Q�Ƃ��Ă��������B
   

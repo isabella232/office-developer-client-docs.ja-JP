@@ -26,6 +26,6 @@ ms.locfileid: "33432248"
   
 図形が複数のレイヤーに割り当てられている場合、各レイヤーのインデックスは、[Layer Membership] セルに、セミコロンで区切られて表示されます。
   
-数式で [Layer Membership] セルの値を参照するには、名前**layer member**を使用します。
+数式の [Layer Membership] セルの値を参照するには、LayerMember という名前 **を使用します**。
   
 

@@ -1,5 +1,5 @@
 ---
-title: imapisecuremessage IUnknown
+title: IMAPISecureMessage IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -29,25 +29,25 @@ ms.locfileid: "33429748"
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |exchsec  <br/> |
-|公開者:  <br/> |[IMessage: IMAPIProp](imessageimapiprop.md) <br/> |
-|実装元:  <br/> |microsoft outlook 2010 および microsoft outlook 2013  <br/> |
+|ヘッダー ファイル:  <br/> |Exchsec.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |[IMessage: IMAPIProp](imessageimapiprop.md) <br/> |
+|実装元:  <br/> |Microsoft Outlook 2010とMicrosoft Outlook 2013  <br/> |
 |呼び出し元:  <br/> |クライアント  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPISECUREMESSAGE  <br/> |
 |ポインターの種類:  <br/> |LPMAPISECUREMESSAGE  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|Placeholder メンバ。  <br/> |サポートされていないか文書化されていません。  <br/> |
-|Placeholder メンバ。  <br/> |サポートされていないか文書化されていません。  <br/> |
-|Placeholder メンバ。  <br/> |サポートされていないか文書化されていません。  <br/> |
-|Placeholder メンバ。  <br/> |サポートされていないか文書化されていません。  <br/> |
-|[IMAPISecureMessage::GetBaseMessage](imapisecuremessage-getbasemessage.md) <br/> |この[imapisecuremessage: IUnknown](imapisecuremessageiunknown.md)がカプセル化されている、基になる[IMessage: imapiprop](imessageimapiprop.md)を取得します。  <br/> |
-|Placeholder メンバ。  <br/> |サポートされていないか文書化されていません。  <br/> |
-|Placeholder メンバ。  <br/> |サポートされていないか文書化されていません。  <br/> |
-|Placeholder メンバ。  <br/> |サポートされていないか文書化されていません。  <br/> |
+|プレースホルダー メンバー。  <br/> |サポートされていないか、文書化されていません。  <br/> |
+|プレースホルダー メンバー。  <br/> |サポートされていないか、文書化されていません。  <br/> |
+|プレースホルダー メンバー。  <br/> |サポートされていないか、文書化されていません。  <br/> |
+|プレースホルダー メンバー。  <br/> |サポートされていないか、文書化されていません。  <br/> |
+|[IMAPISecureMessage::GetBaseMessage](imapisecuremessage-getbasemessage.md) <br/> |この[IMAPISecureMessage : IUnknown](imapisecuremessageiunknown.md)がカプセル化している基になる IMessage : [IMAPIProp](imessageimapiprop.md)を取得します。  <br/> |
+|プレースホルダー メンバー。  <br/> |サポートされていないか、文書化されていません。  <br/> |
+|プレースホルダー メンバー。  <br/> |サポートされていないか、文書化されていません。  <br/> |
+|プレースホルダー メンバー。  <br/> |サポートされていないか、文書化されていません。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

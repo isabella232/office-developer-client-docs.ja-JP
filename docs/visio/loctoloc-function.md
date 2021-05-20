@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251586
 localization_priority: Normal
 ms.assetid: 1f09482a-0b1b-1bef-bc23-7f7793c4c65f
-description: 変換後の座標系のローカル座標に変換された点を返します。
+description: 変換先の座標系のローカル座標の変換されたポイントを返します。
 ms.openlocfilehash: f08feb6137c3022027d19b45f06285fb8b6441a7
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,19 +18,19 @@ ms.locfileid: "33427487"
 ---
 # <a name="loctoloc-function"></a>LOCTOLOC 関数
 
-変換後の座標系のローカル座標に変換された点を返します。
+変換先の座標系のローカル座標の変換されたポイントを返します。
   
 ## <a name="syntax"></a>構文
 
-loctoloc (* * *srcpoint* * *, * * *srcref* * *, * * *dstref* * *) 
+LOCTOLOC(** *srcPoint* **, ** *srcRef* **, ** *dstRef* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _srcpoint_ <br/> |必須  <br/> |**String** <br/> | 変換元の座標系でのローカル座標の点を指定します。  <br/> |
-| _srcref_ <br/> |必須  <br/> |**String** <br/> | 変換元オブジェクトのセルに対する参照を指定します。  <br/> |
-| _dstref_ <br/> |必須  <br/> |**String** <br/> | 変換先オブジェクトのセルに対する参照を指定します。  <br/> |
+| _srcPoint_ <br/> |必須  <br/> |**String** <br/> | 変換元の座標系でのローカル座標の点を指定します。  <br/> |
+| _srcRef_ <br/> |必須  <br/> |**String** <br/> | 変換元オブジェクトのセルに対する参照を指定します。  <br/> |
+| _dstRef_ <br/> |必須  <br/> |**String** <br/> | 変換先オブジェクトのセルに対する参照を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

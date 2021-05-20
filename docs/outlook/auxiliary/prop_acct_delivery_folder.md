@@ -14,26 +14,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427151"
 ---
-# <a name="propacctdeliveryfolder"></a>PROP_ACCT_DELIVERY_FOLDER
+# <a name="prop_acct_delivery_folder"></a>PROP_ACCT_DELIVERY_FOLDER
 
 アカウントの既定の配信フォルダーのエントリ ID を表します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkAccount](iolkaccount.md)を参照してください。
+[「IOlkAccount」を参照してください](iolkaccount.md)。
   
 |||
 |:-----|:-----|
 |識別子:  <br/> |0x0019  <br/> |
 |プロパティの種類:  <br/> |PT_BINARY  <br/> |
-|プロパティタグ:  <br/> |0x00190102  <br/> |
-|接続  <br/> |読み取り/書き込み  <br/> |
+|プロパティ タグ:  <br/> |0x00190102  <br/> |
+|アクセス:  <br/> |読み取り/書き込み  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-[IOlkAccount:: getprop](iolkaccount-getprop.md)または[IOlkAccount:: setprop](iolkaccount-setprop.md)を使用して、このプロパティを取得または設定します。
+[IOlkAccount::GetProp](iolkaccount-getprop.md)または[IOlkAccount::SetProp](iolkaccount-setprop.md)をそれぞれ使用して、このプロパティを取得または設定します。
   
-既定の配信フォルダーは**受信トレイ**です。
+既定の配信フォルダーは受信トレイ **です**。
   
 ## <a name="see-also"></a>関連項目
 

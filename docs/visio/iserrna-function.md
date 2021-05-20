@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251451
 localization_priority: Normal
 ms.assetid: 6ee7dc3d-efe9-c862-f71d-034b3d9c3ec6
-description: 'cellreference の値がエラーの種類である場合は TRUE を返します #N/a! (使用できません)、それ以外の場合は、FALSE を返します。 ISERRNA 関数は、別のセルを参照する数式で使用されます。'
+description: cellreference の値がエラー型の場合は TRUE を#N/A! (使用できません)。それ以外の場合は、FALSE を返します。 ISERRNA 関数は、別のセルを参照する数式で使用されます。
 ms.openlocfilehash: 8a398eca6da659a6b8f29e4ef8e31b18abf56fde
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33432115"
 ---
 # <a name="iserrna-function"></a>ISERRNA 関数
 
-_cellreference_の値がエラーの種類である場合は TRUE を返します #N/a! (使用できません)、それ以外の場合は、FALSE を返します。 ISERRNA 関数は、別のセルを参照する数式で使用されます。 
+cellreference の値が  _エラー型の場合_ は TRUE を#N/A! (使用できません)。それ以外の場合は、FALSE を返します。 ISERRNA 関数は、別のセルを参照する数式で使用されます。 
   
 ## <a name="syntax"></a>構文
 
-ISERRNA (* * *cellreference* * *) 
+ISERRNA(** *cellreference* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -32,19 +32,19 @@ ISERRNA (* * *cellreference* * *)
    
 ## <a name="example-1"></a>例 1
 
-|**Cell**|**Formula**|**戻り値**|
+|**Cell**|**式**|**戻り値**|
 |:-----|:-----|:-----|
-|最初の A1  <br/> |="5 + 3"  <br/> |~  <br/> |
-|最初の B1  <br/> |= ISERRNA (A1)  <br/> |FALSE  <br/> |
+|Scratch.A1  <br/> |="5 + 3"  <br/> |"8"  <br/> |
+|Scratch.B1  <br/> |=ISERRNA(Scratch.A1)  <br/> |FALSE  <br/> |
    
 戻り値が有効であるため、FALSE を返します。
   
 ## <a name="example-2"></a>例 2
 
-|**Cell**|**Formula**|**戻り値**|
+|**Cell**|**式**|**戻り値**|
 |:-----|:-----|:-----|
-|最初の A1  <br/> |=NA( )  <br/> |#N/A!  <br/> |
-|最初の B1  <br/> |= ISERRNA (A1)  <br/> |TRUE  <br/> |
+|Scratch.A1  <br/> |=NA( )  <br/> |#N/A!  <br/> |
+|Scratch.B1  <br/> |=ISERRNA(Scratch.A1)  <br/> |TRUE  <br/> |
    
 戻り値がエラー タイプ #N/A! であるため、TRUE を返します。
   

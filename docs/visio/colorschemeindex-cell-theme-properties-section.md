@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: fb84f71e-59c4-43d4-a28b-c3d6f267d2ae
-description: 図形の配色が後にかかるテーマのインデックスを整数で指定します。
+description: 図形の配色が後に続くテーマのインデックスを整数で指定します。
 ms.openlocfilehash: d67363b48454a717914b8ff9e39952609d848118
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,17 +16,17 @@ ms.locfileid: "33430764"
 ---
 # <a name="colorschemeindex-cell-theme-properties-section"></a>[ColorSchemeIndex] セル ([テーマのプロパティ] セクション)
 
-図形の配色が後にかかるテーマのインデックスを整数で指定します。
+図形の配色が後に続くテーマのインデックスを整数で指定します。
   
 ## <a name="remarks"></a>注釈
 
-別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [ **[colorschemeindex]** ] セルへの参照を取得するには、次の値を使用します。 
+別の数式 **、Cell** 要素の **N** 属性の値、または **CellsU** プロパティを使用するプログラムから、名前によって **ColorSchemeIndex** セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [colorschemeindex]  <br/> |
+| セル名:  <br/> | ColorSchemeIndex  <br/> |
    
-プログラムから、インデックスによって [ **[colorschemeindex]** ] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。 
+プログラムからインデックスによって **ColorSchemeIndex** セルへの参照を取得するには **、CellsSRC** プロパティを使用して、次の引数を指定します。 
   
 |||
 |:-----|:-----|

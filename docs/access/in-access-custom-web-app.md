@@ -1,5 +1,5 @@
 ---
-title: IN (Access カスタム web アプリ)
+title: IN (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430211"
 ---
-# <a name="in-access-custom-web-app"></a>IN (Access カスタム web アプリ)
+# <a name="in-access-custom-web-app"></a>IN (Access カスタム Web アプリ)
 
 指定した値がリスト内の任意の値に一致するかどうかを判別します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "33430211"
   
 ## <a name="syntax"></a>構文
 
- *式***で**(*式*[,...n]) 
+ *式* **IN** (*式*  [ ,...n ]) 
   
  *expression*  任意の有効な式です。式は両方とも、暗黙的に変換可能なデータ型でなければなりません。変換は、データ型の優先順位のルールに依存します。 
   

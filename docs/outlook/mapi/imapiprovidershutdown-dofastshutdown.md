@@ -1,5 +1,5 @@
 ---
-title: imapiprovidershutdowndofastshutdown
+title: IMAPIProviderShutdownDoFastShutdown
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33428845"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapi プロバイダーに対して、mapi クライアントが直ちに終了していることを示します。したがって、データ損失を防止するために mapi プロバイダーは変更を保持します。
+MAPI クライアントが直ちに終了し、MAPI プロバイダーがデータ損失を防ぐために変更を保持する MAPI プロバイダーを示します。
   
 ```cpp
 HRESULT DoFastShutdown ();
@@ -35,7 +35,7 @@ HRESULT DoFastShutdown ();
 
 S_OK
   
-> mapi プロバイダーは、mapi クライアントが直ちに終了する準備ができています。 
+> MAPI プロバイダーは、MAPI クライアントが直ちに終了する準備が整いました。 
     
 ## <a name="see-also"></a>関連項目
 

@@ -25,7 +25,7 @@ ms.locfileid: "33430568"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-現在のメッセージが作成または開かれたフォルダー (そのフォルダーが存在する場合) を返します。 このメソッドは、埋め込みメッセージの_ppfolder_パラメーターで NULL を返します。これは、フォルダー内に直接格納されるわけではありません。 
+そのようなフォルダーが存在する場合は、現在のメッセージが作成または開かされたフォルダーを返します。 このメソッドは、埋め込みメッセージ  _の ppFolder_ パラメーターに NULL を返します。これはフォルダーに直接格納されません。 
   
 ```cpp
 HRESULT GetFolder(
@@ -35,9 +35,9 @@ HRESULT GetFolder(
 
 ## <a name="parameters"></a>パラメーター
 
- _ppfolder_
+ _ppFolder_
   
-> 読み上げ返されるフォルダーへのポインターへのポインター。
+> [out]返されたフォルダーへのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -51,7 +51,7 @@ S_FALSE
     
 ## <a name="remarks"></a>注釈
 
-フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
+フォーム サーバーに関連するインターフェイスの一覧については、「MAPI フォーム インターフェイス [」を参照してください](mapi-form-interfaces.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -59,7 +59,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer  <br/> |cmymapiformviewer:: getfolder  <br/> |mfcmapi は、 **IMAPIMessageSite:: getfolder**メソッドを使用して、現在キャッシュされているポインターを指定のフォルダーに返します。  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetFolder  <br/> |MFCMAPI は **IMAPIMessageSite::GetFolder** メソッドを使用して、現在キャッシュされているポインターを指定したフォルダーに返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームインターフェイス](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

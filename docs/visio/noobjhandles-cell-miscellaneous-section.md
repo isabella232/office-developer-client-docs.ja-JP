@@ -31,7 +31,7 @@ ms.locfileid: "33428656"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [noobjhandles]  <br/> |
+| セル名:  <br/> | NoObjHandles  <br/> |
    
 プログラムから、インデックスによって [NoObjHandles] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   

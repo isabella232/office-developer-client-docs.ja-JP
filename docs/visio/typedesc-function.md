@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251572
 localization_priority: Normal
 ms.assetid: 08bc529e-e04e-206a-6322-77a8941e19f4
-description: オブジェクトの内部型を表す文字列型 (string) の値を返します。
+description: オブジェクトの内部型を表す文字列を返します。
 ms.openlocfilehash: d6674e95bb41c9791893426bd58d67e10f165dc8
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33428663"
 ---
 # <a name="typedesc-function"></a>TYPEDESC 関数
 
-オブジェクトの内部型を表す文字列型 (string) の値を返します。 
+オブジェクトの内部型を表す文字列を返します。 
   
 ## <a name="syntax"></a>構文
 

@@ -25,7 +25,7 @@ ms.locfileid: "33435902"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポートプロバイダーの状態オブジェクトを開きます。
+トランスポート プロバイダーの状態オブジェクトを開きます。
   
 ```cpp
 HRESULT OpenStatusEntry(
@@ -38,35 +38,35 @@ HRESULT OpenStatusEntry(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpinterface_
+ _lpInterface_
   
-> 順番トランスポートログオンオブジェクトのインターフェイス識別子 (IID) へのポインター。 NULL を渡すと、 [imapistatus](imapistatusimapiprop.md)インターフェイスが返されます。 _lpinterface_パラメーターは、オブジェクトのインターフェイスの識別子に設定することもできます。 
+> [in]トランスポート ログオン オブジェクトのインターフェイス識別子 (IID) へのポインター。 NULL を渡すと [、IMAPIStatus インターフェイスが返](imapistatusimapiprop.md) されます。 _lpInterface パラメーター_ は、オブジェクトのインターフェイスの識別子に設定することもできます。 
     
  _ulFlags_
   
-> 順番status オブジェクトが開かれる方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]status オブジェクトの開き方を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_MODIFY 
   
 > 読み取り/書き込みアクセス許可を要求します。 既定のインターフェイスは読み取り専用です。 
     
- _lpulobjtype_
+ _lpulObjType_
   
-> 読み上げ開かれているオブジェクトの種類へのポインター。
+> [out]開いたオブジェクトの種類へのポインター。
     
- _lppentry_
+ _lppEntry_
   
-> 読み上げ開かれた状態オブジェクトへのポインターへのポインター。
+> [out]開いた状態オブジェクトへのポインターへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、予想される値または値が返されました。
+> 呼び出しは成功し、予期される値または値を返しました。
     
 ## <a name="remarks"></a>注釈
 
-クライアントアプリケーションがトランスポートプロバイダーの状態テーブルの行のエントリ id に対して**openentry**メソッドを呼び出すと、MAPI スプーラーは**IXPLogon:: openstatusentry**メソッドを呼び出します。 **openstatusentry**この特定のトランスポートプロバイダーログオンに関連付けられている**imapistatus**インターフェイスを持つオブジェクトを開きます。 次に、このオブジェクトを使用して、クライアントアプリケーションが**imapistatus**メソッドを呼び出すことができるようにします (たとえば、 [imapistatus:: settingsdialog](imapistatus-settingsdialog.md)メソッドを使用してログオンセッションを再構成する場合、またはを使用[してログオンセッションの状態を確認する場合など)。imapistatus:: validatestate](imapistatus-validatestate.md)メソッド)。 
+MAPI スプーラーは、クライアント アプリケーションがトランスポート プロバイダーの状態テーブル行のエントリ識別子の **OpenEntry** メソッドを呼び出す場合に **、IXPLogon::OpenStatusEntry** メソッドを呼び出します。 **OpenStatusEntry は、** この特定のトランスポート プロバイダーログオンに関連付けられた **IMAPIStatus** インターフェイスを持つオブジェクトを開きます。 次に、このオブジェクトを使用して、クライアント アプリケーションが **IMAPIStatus** メソッドを呼び出す (たとえば [、IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md) メソッドを使用してログオン セッションを再構成したり [、IMAPIStatus::ValidateState](imapistatus-validatestate.md) メソッドを使用してログオン セッションの状態を検証したりするために使用されます)。 
   
 ## <a name="see-also"></a>関連項目
 

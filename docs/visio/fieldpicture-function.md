@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251592
 localization_priority: Normal
 ms.assetid: df88c55f-c098-dd4c-bf53-c7d7b60cf719
-description: Microsoft Visio の内部テキストフィールドの書式設定コードと一致する形式の画像文字列を返します。
+description: 内部テキスト フィールドの書式コードに一致する書式Visio文字列を返します。
 ms.openlocfilehash: 1ab24c602c7975cf6be22a564a8b9ee9aa0d6f46
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33431457"
 ---
 # <a name="fieldpicture-function"></a>FIELDPICTURE 関数
 
-Microsoft Visio の内部テキストフィールドの書式設定コードと一致する形式の画像文字列を返します。
+内部テキスト フィールドの書式コードに一致する書式Visio文字列を返します。
   
 ## <a name="syntax"></a>構文
 
-fieldpicture (* * *code* * *) 
+FIELDPICTURE(** *code* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -40,7 +40,7 @@ fieldpicture (* * *code* * *)
   
 ## <a name="example"></a>例
 
-fieldpicture (0) 
+FIELDPICTURE(0) 
   
 書式形式の文字列 "esc(0)" を返します。この文字列を FORMAT 関数で使用する場合、小数点以下 1 位までと小文字の単位を含む数値を指定することになります。 
   

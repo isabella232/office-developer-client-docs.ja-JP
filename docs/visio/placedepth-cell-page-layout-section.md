@@ -22,10 +22,10 @@ ms.locfileid: "33432038"
   
 |**値**|**垂直および水平レイアウトの配置の深さ**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | ページの既定値  <br/> |**visPLOPlaceDepthDefault** <br/> |
-| 1   <br/> | 中  <br/> |**visPLOPlaceDepthMedium** <br/> |
-| 2   <br/> | 深い  <br/> |**visPLOPlaceDepthDeep** <br/> |
-| 3   <br/> | 浅い  <br/> |**visPLOPlaceDepthShallow** <br/> |
+| 0  <br/> | ページの既定値  <br/> |**visPLOPlaceDepthDefault** <br/> |
+| 1  <br/> | 中  <br/> |**visPLOPlaceDepthMedium** <br/> |
+| 2  <br/> | 深い  <br/> |**visPLOPlaceDepthDeep** <br/> |
+| 3  <br/> | 浅い  <br/> |**visPLOPlaceDepthShallow** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -33,7 +33,7 @@ ms.locfileid: "33432038"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [placedepth]  <br/> |
+| セル名:  <br/> | PlaceDepth  <br/> |
    
 プログラムから、インデックスによって [PlaceDepth] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

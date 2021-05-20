@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ea95a90c-4729-4689-a6f4-31dfccf37b9b
-description: ページ上のアクティブなテーマのバリエーションの色のインデックスを整数で指定します。
+description: ページ上のアクティブなテーマバリエーションの色インデックスを整数で指定します。
 ms.openlocfilehash: 7582b779fb5be6bdf3528da137b1b08b8cd9c01a
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,17 +16,17 @@ ms.locfileid: "33431772"
 ---
 # <a name="variationcolorindex-cell-theme-properties-section"></a>[VariationColorIndex] セル ([テーマのプロパティ] セクション)
 
-ページ上のアクティブなテーマのバリエーションの色のインデックスを整数で指定します。
+ページ上のアクティブなテーマバリエーションの色インデックスを整数で指定します。
   
 ## <a name="remarks"></a>注釈
 
-別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [ **[variationcolorindex]** ] セルへの参照を取得するには、次の値を使用します。 
+別の数式 **、Cell** 要素 **の N** 属性の値、または CellsU プロパティを使用するプログラムから、名前によって **[VariationColorIndex]** セルへの参照を取得するには、次の値を使用します。  
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [variationcolorindex]  <br/> |
+| セル名:  <br/> | VariationColorIndex  <br/> |
    
-プログラムから、インデックスによって [ **[variationcolorindex]** ] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。 
+プログラムからインデックスによって **[VariationColorIndex]** セルへの参照を取得するには **、CellsSRC** プロパティを使用して、次の引数を指定します。 
   
 |||
 |:-----|:-----|

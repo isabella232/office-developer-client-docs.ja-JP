@@ -1,5 +1,5 @@
 ---
-title: IAddrBook imapiprop
+title: IAddrBook IMAPIProp
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,40 +25,40 @@ ms.locfileid: "33429825"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI アドレス帳へのアクセスをサポートし、コモンダイアログボックスを表示するなどの操作を含みます。コンテナー、メッセージングユーザー、および配布リストを開きます。名前解決を実行する。
+MAPI アドレス帳へのアクセスをサポートし、一般的なダイアログ ボックスの表示などの操作が含まれます。コンテナー、メッセージング ユーザー、配布リストを開く。名前解決を実行します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapix  <br/> |
-|公開者:  <br/> |アドレス帳オブジェクト  <br/> |
+|ヘッダー ファイル:  <br/> |Mapix.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |アドレス帳オブジェクト  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーション、サービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション、サービス プロバイダー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IAddrBook  <br/> |
-|ポインターの種類:  <br/> |lpadrbook  <br/> |
-|トランザクションモデル:  <br/> |書き込み不可  <br/> |
+|ポインターの種類:  <br/> |LPADRBOOK  <br/> |
+|トランザクション モデル:  <br/> |書き込み不可  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
 |[OpenEntry](iaddrbook-openentry.md) <br/> |アドレス帳エントリを開き、エントリへのアクセスに使用できるインターフェイスへのポインターを返します。  <br/> |
-|[CompareEntryIDs](iaddrbook-compareentryids.md) <br/> |特定のアドレス帳プロバイダーに属する2つのエントリ識別子を比較して、同じアドレス帳オブジェクトを参照しているかどうかを判断します。  <br/> |
-|[助言](iaddrbook-advise.md) <br/> |クライアントまたはサービスプロバイダーに、アドレス帳の1つまたは複数のエントリの変更に関する通知を受信するように登録します。  <br/> |
-|[アドバイズ](iaddrbook-unadvise.md) <br/> |以前にアドレス帳エントリに対して設定された通知登録を取り消します。  <br/> |
-|[createoneoff](iaddrbook-createoneoff.md) <br/> |1回限りのアドレスのエントリ id を作成します。  <br/> |
-|[newentry](iaddrbook-newentry.md) <br/> |新しい受信者をアドレス帳コンテナーまたは送信メッセージの受信者リストに追加します。  <br/> |
-|[ResolveName](iaddrbook-resolvename.md) <br/> |名前解決を実行し、受信者リスト内の受信者にエントリ識別子を割り当てます。  <br/> |
-|[住所](iaddrbook-address.md) <br/> |[Outlook アドレス帳] ダイアログボックスを表示します。  <br/> |
-|[詳細](iaddrbook-details.md) <br/> |特定のアドレス帳エントリの詳細を表示するダイアログボックスを表示します。  <br/> |
-|**RecipOptions** <br/> | *サポートされていないか文書化されていません。*  <br/> |
-|**QueryDefaultRecipOpt** <br/> | *サポートされていないか文書化されていません。*  <br/> |
-|[getpab](iaddrbook-getpab.md) <br/> |個人用アドレス帳 (PAB) として指定されているコンテナーのエントリ識別子を返します。  <br/> |
-|[setpab](iaddrbook-setpab.md) <br/> |特定のコンテナーを個人用アドレス帳 (PAB) として指定します。  <br/> |
+|[CompareEntryIDs](iaddrbook-compareentryids.md) <br/> |特定のアドレス帳プロバイダーに属する 2 つのエントリ識別子を比較して、同じアドレス帳オブジェクトを参照するかどうかを判断します。  <br/> |
+|[アドバイス](iaddrbook-advise.md) <br/> |アドレス帳内の 1 つ以上のエントリに対する変更に関する通知を受信するクライアントまたはサービス プロバイダーを登録します。  <br/> |
+|[Unadvise](iaddrbook-unadvise.md) <br/> |アドレス帳エントリに対して以前に確立された通知登録を取り消します。  <br/> |
+|[CreateOneOff](iaddrbook-createoneoff.md) <br/> |1 回のアドレスのエントリ識別子を作成します。  <br/> |
+|[NewEntry](iaddrbook-newentry.md) <br/> |アドレス帳コンテナーまたは送信メッセージの受信者リストに新しい受信者を追加します。  <br/> |
+|[ResolveName](iaddrbook-resolvename.md) <br/> |名前解決を実行し、受信者リストの受信者にエントリ識別子を割り当てる。  <br/> |
+|[Address](iaddrbook-address.md) <br/> |[アドレスOutlook] ダイアログ ボックスを表示します。  <br/> |
+|[詳細](iaddrbook-details.md) <br/> |特定のアドレス帳エントリに関する詳細を表示するダイアログ ボックスを表示します。  <br/> |
+|**RecipOptions** <br/> | *サポートされていないか、文書化されていません。*  <br/> |
+|**QueryDefaultRecipOpt** <br/> | *サポートされていないか、文書化されていません。*  <br/> |
+|[GetPAB](iaddrbook-getpab.md) <br/> |個人用アドレス帳 (PAB) として指定されているコンテナーのエントリ識別子を返します。  <br/> |
+|[SetPAB](iaddrbook-setpab.md) <br/> |特定のコンテナーを個人用アドレス帳 (PAB) として指定します。  <br/> |
 |[GetDefaultDir](iaddrbook-getdefaultdir.md) <br/> |最初のアドレス帳コンテナーのエントリ識別子を返します。  <br/> |
-|[SetDefaultDir](iaddrbook-setdefaultdir.md) <br/> |指定したコンテナーを、最初に使用可能にする既定のアドレス帳コンテナーとして確立します。  <br/> |
-|[GetSearchPath](iaddrbook-getsearchpath.md) <br/> |[ResolveName](iaddrbook-resolvename.md)メソッドによって開始された名前解決プロセスに含まれるコンテナーのエントリ id の順序付きリストを返します。  <br/> |
-|[SetSearchPath](iaddrbook-setsearchpath.md) <br/> |名前解決プロセスで使用されるプロファイルに新しい検索パスを設定します。  <br/> |
-|[PrepareRecips](iaddrbook-preparerecips.md) <br/> |メッセージングシステムで後で使用するために、受信者リストを準備します。  <br/> |
+|[SetDefaultDir](iaddrbook-setdefaultdir.md) <br/> |指定したコンテナーを、最初に使用可能にした既定のアドレス帳コンテナーとして確立します。  <br/> |
+|[GetSearchPath](iaddrbook-getsearchpath.md) <br/> |ResolveName メソッドによって開始された名前解決プロセスに含めるコンテナーのエントリ識別子の順序付きリスト [を返](iaddrbook-resolvename.md) します。  <br/> |
+|[SetSearchPath](iaddrbook-setsearchpath.md) <br/> |名前解決プロセスに使用するプロファイル内の新しい検索パスを設定します。  <br/> |
+|[PrepareRecips](iaddrbook-preparerecips.md) <br/> |メッセージング システムで後で使用する受信者リストを準備します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

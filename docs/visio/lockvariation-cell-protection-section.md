@@ -29,7 +29,7 @@ ms.locfileid: "33427928"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [lockvariation]  <br/> |
+| セル名:  <br/> | LockVariation  <br/> |
    
 プログラムから、インデックスによって [**LockVariation**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

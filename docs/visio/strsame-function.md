@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251786
 localization_priority: Normal
 ms.assetid: d9fc2007-cc21-b20c-adee-be87cc356753
-description: 文字列が同じかどうかを判断します。 同じである場合は TRUE を返し、そうでない場合は FALSE を返します。
+description: 文字列が同じかどうかを判断します。 同じ場合は TRUE、同じでない場合は FALSE を返します。
 ms.openlocfilehash: 0f298c966ec7a3f1e23c89473fecc555ed950f79
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33428684"
 ---
 # <a name="strsame-function"></a>STRSAME 関数
 
-文字列が同じかどうかを判断します。 同じである場合は TRUE を返し、そうでない場合は FALSE を返します。 
+文字列が同じかどうかを判断します。 同じ場合は TRUE、同じでない場合は FALSE を返します。 
   
 ## <a name="syntax"></a>構文
 
-strsame ("* * *string1* * *", "* * *string2* * *", * * *ignoreCase* * *) 
+STRSAME (" ** *string1* ** ", " ** *string2* ** ", ** *ignoreCase* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -30,7 +30,7 @@ strsame ("* * *string1* * *", "* * *string2* * *", * * *ignoreCase* * *)
 |:-----|:-----|:-----|:-----|
 | _string1_ <br/> |必須  <br/> |**String** <br/> |比較する最初の文字列を指定します。  <br/> |
 | _string2_ <br/> |必須  <br/> |**String** <br/> |比較する 2 番目の文字列を指定します。  <br/> |
-| _ignoreCase_ <br/> |省略可能  <br/> |**Boolean** <br/> |大文字/小文字を区別しない場合は TRUE を、大文字/小文字を区別する場合は FALSE を指定します。 既定値は FALSE です。  <br/> |
+| _ignoreCase_ <br/> |省略可能  <br/> |**Boolean** <br/> |大文字/小文字を区別しない場合は TRUE を、大文字/小文字を区別する場合は FALSE を指定します。既定値は FALSE です。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
@@ -42,13 +42,13 @@ Boolean
   
 ## <a name="example-1"></a>例 1
 
-strsame ("cat", "dog")
+STRSAME("cat","dog")
   
 FALSE を返します。
   
 ## <a name="example-2"></a>例 2
 
-strsame ("cat", "cat")
+STRSAME("cat","cat")
   
 TRUE を返します。
   
@@ -60,7 +60,7 @@ TRUE を返します。
   
 ## <a name="example-4"></a>例 4
 
-strsame ("cat", "cat")
+STRSAME("cat","CAT")
   
 FALSE を返します。
   

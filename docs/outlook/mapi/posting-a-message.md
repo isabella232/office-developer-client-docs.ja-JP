@@ -19,40 +19,40 @@ ms.locfileid: "33429769"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージを投稿することは、メッセージの送信と似ています。 主な違いは、宛先です。 1つまたは複数のメッセージングシステムで1人または複数の受信者に転送されるのではなく、現在のメッセージストア内のフォルダーに投稿されたメッセージが残っています。
+メッセージの投稿は、メッセージの送信に似ています。 主な違いは宛先です。 1 つ以上のメッセージング システムで 1 つ以上の受信者に送信されるのではなく、投稿されたメッセージは現在のメッセージ ストア内のフォルダーに残ります。
   
 ### <a name="to-post-a-message"></a>メッセージを投稿するには
   
-1. [IMsgStore:: openentry](imsgstore-openentry.md)を呼び出して、宛先フォルダーを開きます。 宛先フォルダーが受信トレイの場合は、 [IMsgStore:: getreceivefolder](imsgstore-getreceivefolder.md)を呼び出して**openentry**に渡すエントリ識別子を見つけます。 
+1. [IMsgStore::OpenEntry を呼び出して、移動先フォルダーを開きます](imsgstore-openentry.md)。 宛先フォルダーが受信トレイの場合は [、IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md)を呼び出して **OpenEntry** に渡すエントリ識別子を探します。 
     
-2. [imapifolder:: CreateMessage](imapifolder-createmessage.md)を呼び出して、メッセージを作成します。 
+2. [IMAPIFolder::CreateMessage を呼び出して](imapifolder-createmessage.md)メッセージを作成します。 
     
-3. メッセージの[imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出して、次のように設定します。 
+3. メッセージの [IMAPIProp::SetProps メソッドを呼び出して設定](imapiprop-setprops.md) します。 
     
-   - **PidTagMessageFlags** ( [PR_MESSAGE_FLAGS](pidtagmessageflags-canonical-property.md)) プロパティの MSGFLAG_READ フラグ。
+   - MSGFLAG_READ **PidTagMessageFlags** [(](pidtagmessageflags-canonical-property.md)PR_MESSAGE_FLAGS ) プロパティPR_MESSAGE_FLAGSフラグです。
     
-   - **PR_SENDER**プロパティ。 
+   - プロパティ **PR_SENDER** します。 
     
-   - **PR_SENT_REPRESENTING**プロパティ。 
+   - プロパティ **PR_SENT_REPRESENTING** します。 
     
-   - **PR_RECEIPT_TIME** ([PidTagReceiptTime](pidtagreceipttime-canonical-property.md)) プロパティ。
+   - プロパティ **PR_RECEIPT_TIME** ([PidTagReceiptTime](pidtagreceipttime-canonical-property.md)) プロパティです。
     
-   - **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) または**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティ。
+   - プロパティ **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) または PR_BODY **(** [PidTagBody](pidtagbody-canonical-property.md)) プロパティを指定します。
     
-   - **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) プロパティ。
+   - プロパティ **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) プロパティです。
     
-   - **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティ。
+   - プロパティ **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティです。
     
-   - メッセージクラスに必要なすべてのプロパティ。
+   - メッセージ クラスで必要なプロパティ。
     
-4. メッセージの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出して、メッセージを保存します。 
+4. メッセージを保存するには、 [メッセージの IMAPIProp::SaveChanges](imapiprop-savechanges.md) メソッドを呼び出します。 
     
-5. 必要に応じて、添付ファイルを作成し、そのプロパティを設定して保存します。 メッセージへの添付ファイルの追加の詳細については、「[メッセージの添付ファイルを作成](creating-a-message-attachment.md)する」を参照してください。
+5. 必要に応じて、添付ファイルを作成し、そのプロパティを設定し、保存します。 メッセージへの添付ファイルの追加の詳細については、「メッセージ添付ファイルの [作成」を参照してください](creating-a-message-attachment.md)。
     
-6. メッセージを保存するには、 **IMessage:: SaveChanges**を呼び出します。 この時点で、移動先フォルダーの contents テーブルに表示されます。 
+6. **IMessage::SaveChanges を呼び出して** メッセージを保存します。 この時点で、移動先フォルダーのコンテンツ テーブルに表示されます。 
     
-受信者リストは作成されていないことに注意してください。 代わりに、送信されたメッセージのトランスポートプロバイダーによって設定されるプロパティをいくつか設定します。 
+受信者リストを作成しない場合に注意してください。 代わりに、送信メッセージに対してトランスポート プロバイダーによって通常設定されるいくつかのプロパティを設定します。 
   
-表示されているフォルダーの contents テーブルにメッセージを表示する前に、メッセージを保存する場合は、そのメッセージを IPM サブツリーのルートフォルダーなどの非表示のフォルダー内に作成して、移動先のフォルダーに移動します。 
+メッセージを表示フォルダーのコンテンツ テーブルに表示する前に断続的に保存する場合は、IPM サブツリーのルート フォルダーなどの非表示フォルダーにメッセージを作成し、ターゲット フォルダーに移動します。 
   
 

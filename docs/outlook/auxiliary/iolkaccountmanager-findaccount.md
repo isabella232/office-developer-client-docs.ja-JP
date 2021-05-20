@@ -32,24 +32,24 @@ HRESULT IOlkAccountManager::FindAccount (
 
 ## <a name="parameters"></a>パラメーター
 
-_dwprop_
+_dwProp_
   
-> 順番検索するプロパティ。 [PROP_ACCT_ID](prop_acct_id.md)または[PROP_ACCT_IS_EXCH](prop_acct_is_exch.md)である必要があります。
+> [in]検索するプロパティ。 必ず[、PROP_ACCT_ID](prop_acct_id.md)またはPROP_ACCT_IS_EXCH。 [](prop_acct_is_exch.md)
     
-_pvar_
+_pVar_
   
-> 順番一致する値を指定します。
+> [in]一致する値。
     
-_ppaccount_
+_ppAccount_
   
-> 読み上げアカウントが見つかりました。 このオブジェクトは、 [IOlkAccount](iolkaccount.md)インターフェイスをサポートします。 
+> [out]見つかったアカウント。 このオブジェクトは [、IOlkAccount インターフェイスをサポート](iolkaccount.md) します。 
     
 ## <a name="return-values"></a>戻り値
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |呼び出しが成功しました。  <br/> |
-|E_ACCT_NOT_FOUND  <br/> |指定されたアカウントが見つかりません。  <br/> |
+|E_ACCT_NOT_FOUND  <br/> |指定したアカウントが見つかりません。  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |アカウント マネージャーが使用するために初期化されていません。  <br/> |
 |E_OLK_PARAM_NOT_SUPPORTED  <br/> |1 つ以上のパラメーターが無効です。  <br/> |
    

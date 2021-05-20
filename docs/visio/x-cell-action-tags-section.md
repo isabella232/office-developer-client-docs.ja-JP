@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm60093
 localization_priority: Normal
 ms.assetid: d13e362b-9b69-30c5-003a-9c5df2aa29f6
-description: 図形のローカル座標で、アクションタグボタンが配置される位置の x 座標です。
+description: アクション タグ ボタンを配置する図形のローカル座標の x 座標位置。
 ms.openlocfilehash: 9f26bec81563c9813a88ed5c69730266834ee101
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33431114"
 ---
 # <a name="x-cell-action-tags-section"></a>[X] セル ([Action Tags] セクション)
 
-図形のローカル座標で、アクションタグボタンが配置される位置の*x*座標です。 
+アクション  *タグ*  ボタンを配置する図形のローカル座標の x 座標位置。 
   
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
@@ -31,14 +31,14 @@ ms.locfileid: "33431114"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> |タグ. *名前*です。X にスマートタグを指定します。 *name*は、アクションタグ行の名前です。  <br/> |
+| セル名:  <br/> |SmartTags。 *name*  .X は SmartTags です。 *name*  はアクション タグ行の名前です。  <br/> |
    
 プログラムから、インデックスによって [X] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionSmartTag** <br/> |
-| 行インデックス:  <br/> |**visRowSmartTag** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス:  <br/> |**visRowSmartTag**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス:  <br/> |**visSmartTagX** <br/> |
    
 

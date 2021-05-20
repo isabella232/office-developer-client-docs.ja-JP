@@ -25,7 +25,7 @@ ms.locfileid: "33432241"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルビューの制限に使用される制限を検証します。 
+テーブル ビューを制限するために使用される制限を検証します。 
   
 |||
 |:-----|:-----|
@@ -43,20 +43,20 @@ ULONG FBadRestriction(
 
  _lpres_
   
-> 順番検証する制限を定義する[srestriction](srestriction.md)構造。 
+> [in]検証 [する制限を定義する SRestriction](srestriction.md) 構造。 
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 指定した制限または1つ以上のサブ制限が無効です。 
+> 指定された制限、または 1 つ以上のサブ制限が無効です。 
     
 FALSE 
   
-> 指定した制限とそのすべてのサブ制限が有効である。
+> 指定された制限とそのすべてのサブ制限が有効です。
     
 ## <a name="remarks"></a>注釈
 
-制限が検証されたら、 [imapitable:: Restrict](imapitable-restrict.md)メソッドへの呼び出しで、テーブルを特定の行に制限したり、 [imapitable:: FindRow](imapitable-findrow.md)メソッドを使用してテーブルの行を検索したり、 [IMAPIContainer](imapicontainerimapiprop.md)のメソッドに渡したりすることができます。container オブジェクトに対する制限を実行するインターフェイス。 
+制限が検証された後 [、IMAPITable::Restrict](imapitable-restrict.md) メソッドへの呼び出しで渡して、テーブルを特定の行に制限し [、IMAPITable::FindRow](imapitable-findrow.md) メソッドでテーブル行を検索し [、IMAPIContainer](imapicontainerimapiprop.md) インターフェイスのメソッドに渡してコンテナー オブジェクトに対する制限を実行できます。 
   
 

@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435951"
 ---
-# <a name="propsmtppassword"></a>PROP_SMTP_PASSWORD
+# <a name="prop_smtp_password"></a>PROP_SMTP_PASSWORD
 
 SMTP アカウントのパスワードを表します。
   
@@ -24,8 +24,8 @@ SMTP アカウントのパスワードを表します。
 |:-----|:-----|
 |識別子:  <br/> |0x0205  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE|SECURE_FLAG  <br/> |
-|プロパティタグ:  <br/> |0x2058001f  <br/> |
-|接続  <br/> |読み取り専用  <br/> |
+|プロパティ タグ:  <br/> |0x2058001F  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

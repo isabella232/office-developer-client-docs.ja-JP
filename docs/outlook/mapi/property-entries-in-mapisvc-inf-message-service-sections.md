@@ -1,5 +1,5 @@
 ---
-title: mapisvc.inf メッセージサービスセクションのプロパティエントリ
+title: MapiSvc.inf メッセージ サービス セクションのプロパティ エントリ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,41 +15,41 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427998"
 ---
-# <a name="property-entries-in-mapisvcinf-message-service-sections"></a>mapisvc.inf メッセージサービスセクションのプロパティエントリ
+# <a name="property-entries-in-mapisvcinf-message-service-sections"></a>MapiSvc.inf メッセージ サービス セクションのプロパティ エントリ
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティを設定するエントリは、次の形式を使用します。
+プロパティを設定するエントリでは、次の形式を使用します。
   
- **プロパティタグ****=** プロパティ値 
+ **プロパティ タグ** **=** プロパティ値 
   
-構成データが mapi で定義されたプロパティの1つを表している場合、またはデータが mapi プロパティを表していない場合は標準でないタグとして、プロパティタグを標準の mapi プロパティタグにすることができます。 非標準のタグは、プロパティの識別子の値とプロパティの型を結合することによって作成されます。 結果は8桁の16進数値になります。 プロパティの値には、どのような意味でプロパティタグを指定できます。 
+構成データが MAPI によって事前定義されたプロパティの 1 つを表す場合、またはデータが MAPI プロパティを表していない場合は標準以外のタグを表す場合、プロパティ タグには標準の MAPI プロパティ タグを指定できます。 標準以外のタグは、プロパティ識別子の値とプロパティの種類を組み合わせて作成されます。 結果は 8 桁の 16 進数です。 プロパティの値は、プロパティ タグに対して意味のある値を指定できます。 
   
-メッセージサービスセクションには、構成されているメッセージサービスに応じて、さまざまなエントリを含めることができます。 通常、次の MAPI プロパティは、表示されている形式のメッセージサービスセクションに含まれています。
+メッセージ サービス セクションには、構成するメッセージ サービスに応じて、さまざまなエントリを含めできます。 通常、次の MAPI プロパティは、一覧表示された形式のメッセージ サービス セクションに含まれます。
   
- **PR_DISPLAY_NAME** =  _文字列_
+ **PR_DISPLAY_NAME**  =  _string_
   
- **** =  _DLL ファイルの PR_SERVICE_DLL_NAME 名_
+ **PR_SERVICE_DLL_NAME**  =  _DLL ファイルの名前_
   
- **** =  _エントリポイント関数の PR_SERVICE_ENTRY_NAME 名_
+ **PR_SERVICE_ENTRY_NAME**  =  _エントリ ポイント関数の名前_
   
- **PR_SERVICE_SUPPORT_FILES** =  _ファイルの一覧_
+ **PR_SERVICE_SUPPORT_FILES**  =  _ファイルの一覧_
   
- **PR_SERVICE_DELETE_FILES** =  _ファイルの一覧_
+ **PR_SERVICE_DELETE_FILES**  =  _ファイルの一覧_
   
- **PR_RESOURCE_FLAGS** =  _ビットマスク_
+ **PR_RESOURCE_FLAGS**  =  _ビットマスク_
   
-**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) 文字列は、ユーザーインターフェイスに表示されるメッセージサービスの名前です。これは、ユーザーがメッセージサービスと関連付けられます。 表示名は、mapisvc.inf の省略可能なエントリです。 表示名は2つの部分で構成される場合があります。メッセージサービスによって割り当てられたパーツと、ユーザーによって割り当てられたパーツ。 ユーザーがいずれかのパーツの割り当てを担当している場合は、通常、クライアントアプリケーションのコントロールの下に、メッセージサービスによって提供されるプロパティシートとして知られる特別なダイアログボックスで処理されます。 
+PR_DISPLAY_NAME  ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) 文字列は、ユーザー インターフェイスに表示されるメッセージ サービスの名前、ユーザーがメッセージ サービスに関連付ける名前です。 表示名は mapisvc.inf の省略可能なエントリです。 表示名が 2 つの部分で構成される場合があります。メッセージ サービスによって割り当てられたパーツと、ユーザーによって割り当てられたパーツ。 ユーザーがパーツの 1 つを割り当てる責任がある場合、これは通常、クライアント アプリケーションの制御下でメッセージ サービスによって提供されるプロパティ シートと呼ばれる特別なダイアログ ボックスで処理されます。 
   
-**PR_SERVICE_DLL_NAME** ([PidTagServiceDllName](pidtagservicedllname-canonical-property.md)) エントリに提供される情報は、メッセージサービスを含む DLL の名前です。 **PR_SERVICE_ENTRY_NAME** ([PidTagServiceEntryName](pidtagserviceentryname-canonical-property.md)) エントリに提供されている情報は、MAPI がメッセージサービスを構成するために呼び出す DLL 内のエントリポイント関数の名前です。 
+メッセージ サービス ([PidTagServiceDllName](pidtagservicedllname-canonical-property.md))**エントリPR_SERVICE_DLL_NAME情報** は、メッセージ サービスを含む DLL の名前です。 **PR_SERVICE_ENTRY_NAME** ([PidTagServiceEntryName](pidtagserviceentryname-canonical-property.md)) エントリに対して提供される情報は、MAPI がメッセージ サービスを構成するために呼び出す DLL 内のエントリ ポイント関数の名前です。 
   
-**PR_SERVICE_SUPPORT_FILES** ([PidTagServiceSupportFiles](pidtagservicesupportfiles-canonical-property.md)) エントリに記載されているファイルは、メッセージサービスと共にインストールする必要があります。 同様に、メッセージサービスが削除されたときに、 **PR_SERVICE_DELETE_FILES** ([PidTagServiceDeleteFiles](pidtagservicedeletefiles-canonical-property.md)) エントリ内のファイルを削除する必要があります。 
+メッセージ サービス ([PidTagServiceSupportFiles](pidtagservicesupportfiles-canonical-property.md))**エントリにPR_SERVICE_SUPPORT_FILES** ファイルは、メッセージ サービスと一緒にインストールする必要があるファイルです。 同様に、メッセージ サービスが **削除PR_SERVICE_DELETE_FILES、** メッセージ サービス ([PidTagServiceDeleteFiles](pidtagservicedeletefiles-canonical-property.md)) エントリ内のファイルを削除する必要があります。 
   
-**PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) エントリは、メッセージサービスに対して定義されたオプションのコレクションです。 たとえば、SERVICE_SINGLE_COPY ビットは、メッセージサービスが特定のプロファイルに一度しか表示されない場合に設定されます。 メッセージサービスが id 情報を提供しない場合は、SERVICE_NO_PRIMARY_IDENTITY ビットが設定されます。 
+この **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) エントリは、メッセージ サービスに対して定義されたオプションのコレクションです。 たとえば、メッセージ サービスSERVICE_SINGLE_COPY特定のプロファイルに 1 回しか表示されない場合に、このビットが設定されます。 メッセージ SERVICE_NO_PRIMARY_IDENTITY ID 情報を提供しない場合は、このビットが設定されます。 
   
-標準的でないプロパティエントリの2つの例を次に示します。 最初のエントリは、プロパティ値として既定のアドレス帳で使用されるファイルへのパスを指定します。2番目のエントリは、数値プロパティ値を指定します。 両方のエントリが AB メッセージサービスに固有のものであることを意味します。
+標準以外のプロパティ エントリの 2 つの例を次に示します。 最初のエントリは、既定のアドレス帳でプロパティ値として使用されるファイルへのパスを指定します。2 番目のエントリは、数値プロパティ値を指定します。 どちらのエントリも、AB メッセージ サービスに固有の意味を持ちます。
   
 ```cpp
 6600001e=full path to file

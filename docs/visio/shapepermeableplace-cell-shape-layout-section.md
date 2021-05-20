@@ -27,7 +27,7 @@ ms.locfileid: "33427221"
    
 ## <a name="remarks"></a>注釈
 
-このセルの値は、[**基本動作**] ダイアログボックスの [**配置**] タブで設定することもできます (図形が選択されている場合)、[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリックし、[**配置**] タブをクリックします。). 
+[動作] ダイアログ ボックスの [配置] タブで、このセルの値を設定することもできます (図形が選択されている場合は、[開発] タブの[図形のデザイン] グループで、[動作] をクリックし、[配置] タブ **をクリック** します)。  [](run-in-developer-mode-display-the-developer-tab.md) 
   
 Visio 2000 より前のバージョンでは、[Miscellaneous] セクションで [ObjInteract] セルを使用してこの動作を設定していました。
   
@@ -35,7 +35,7 @@ Visio 2000 より前のバージョンでは、[Miscellaneous] セクション�
   
 |||
 |:-----|:-----|
-|セル名 :  <br/> |[shapepermeableplace]  <br/> |
+|セル名 :  <br/> |ShapePermeablePlace  <br/> |
    
 プログラムから、インデックスによって [ShapePermeablePlace] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

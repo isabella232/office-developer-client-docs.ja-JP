@@ -25,32 +25,32 @@ ms.locfileid: "33428880"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージストアのログオンオブジェクト内のリソースにアクセスします。
+メッセージ ストア ログオン オブジェクト内のリソースにアクセスします。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapispi  <br/> |
-|公開者:  <br/> |メッセージストアのログオンオブジェクト  <br/> |
-|実装元:  <br/> |メッセージストアプロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapispi.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |メッセージ ストアログオン オブジェクト  <br/> |
+|実装元:  <br/> |メッセージ ストア プロバイダー  <br/> |
 |呼び出し元:  <br/> |MAPI  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMSLogon  <br/> |
-|ポインターの種類:  <br/> |lpmslogon  <br/> |
+|ポインターの種類:  <br/> |LPMSLOGON  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[GetLastError](imslogon-getlasterror.md) <br/> |メッセージストアオブジェクトに対して発生した最後のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
-|[Logoff](imslogon-logoff.md) <br/> |メッセージストアプロバイダーからログオフします。  <br/> |
-|[OpenEntry](imslogon-openentry.md) <br/> |folder オブジェクトまたは message オブジェクトを開き、オブジェクトへのポインターを返します。これにより、さらにアクセスできるようになります。  <br/> |
-|[CompareEntryIDs](imslogon-compareentryids.md) <br/> |2つのエントリ識別子を比較して、同じオブジェクトを参照しているかどうかを判断します。  <br/> |
-|[助言](imslogon-advise.md) <br/> |メッセージストアの変更について通知するために、オブジェクトをメッセージストアプロバイダーに登録します。  <br/> |
-|[アドバイズ](imslogon-unadvise.md) <br/> |**IMSLogon:: Advise**メソッドの呼び出しを使用して、以前に作成されたメッセージストア変更の通知用のオブジェクトの登録を削除します。  <br/> |
-|[openstatusentry](imslogon-openstatusentry.md) <br/> |status オブジェクトを開きます。  <br/> |
+|[GetLastError](imslogon-getlasterror.md) <br/> |メッセージ ストア オブジェクト [に対して](mapierror.md) 発生した最後のエラーに関する情報を含む MAPIERROR 構造体を返します。  <br/> |
+|[Logoff](imslogon-logoff.md) <br/> |メッセージ ストア プロバイダーをログオフします。  <br/> |
+|[OpenEntry](imslogon-openentry.md) <br/> |フォルダーまたはメッセージ オブジェクトを開き、オブジェクトへのポインターを返して、さらにアクセスできます。  <br/> |
+|[CompareEntryIDs](imslogon-compareentryids.md) <br/> |2 つのエントリ識別子を比較して、同じオブジェクトを参照するかどうかを判断します。  <br/> |
+|[アドバイス](imslogon-advise.md) <br/> |メッセージ ストア内の変更に関する通知のために、メッセージ ストア プロバイダーにオブジェクトを登録します。  <br/> |
+|[Unadvise](imslogon-unadvise.md) <br/> |**IMSLogon::Advise** メソッドの呼び出しを使用して、以前に確立されたメッセージ ストアの変更の通知に対するオブジェクトの登録を削除します。  <br/> |
+|[OpenStatusEntry](imslogon-openstatusentry.md) <br/> |状態オブジェクトを開きます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-メッセージストアのログオンオブジェクトは、MAPI が直接呼び出す、開いているメッセージストアプロバイダーの一部です。 MAPI が呼び出すメッセージストアのログオンオブジェクトと、クライアントアプリケーションが呼び出すメッセージストアオブジェクトとの間には、1対1の対応があります。ログオンおよびストアオブジェクトは、2つのインターフェイスを公開する1つのオブジェクトと考えることができます。 2つのオブジェクトが一緒に作成され、一緒に解放されます。
+メッセージ ストア ログオン オブジェクトは、MAPI が直接呼び出す開いているメッセージ ストア プロバイダーの一部です。 MAPI が呼び出すメッセージ ストア ログオン オブジェクトと、クライアント アプリケーションが呼び出すメッセージ ストア オブジェクトとの間には、1 対 1 の対応があります。ログオンオブジェクトとストア オブジェクトは、2 つのインターフェイスを公開する 1 つのオブジェクトと考えて使用できます。 2 つのオブジェクトは一緒に作成され、一緒に解放されます。
   
 ## <a name="see-also"></a>関連項目
 

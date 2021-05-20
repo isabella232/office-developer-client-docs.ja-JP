@@ -22,23 +22,23 @@ ms.locfileid: "33429279"
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|.0  <br/> |ページの既定値を使用します。  <br/> |**visLOFlipDefault** <br/> |
-|1   <br/> |水平方向に反転します。  <br/> |**visLOFlipX** <br/> |
-|2   <br/> |垂直方向に反転します。  <br/> |**visLOFlipY** <br/> |
-|4   <br/> |0 ～ 270°の範囲で 90°ずつ回転します。  <br/> |**visLOFlipRotate** <br/> |
-|8   <br/> |反転しません。  <br/> |**visLOFlipNone** <br/> |
+|0  <br/> |ページの既定値を使用します。  <br/> |**visLOFlipDefault** <br/> |
+|1  <br/> |水平方向に反転します。  <br/> |**visLOFlipX** <br/> |
+|2  <br/> |垂直方向に反転します。  <br/> |**visLOFlipY** <br/> |
+|4  <br/> |0 ～ 270°の範囲で 90°ずつ回転します。  <br/> |**visLOFlipRotate** <br/> |
+|8  <br/> |反転しません。  <br/> |**visLOFlipNone** <br/> |
    
 ## <a name="remarks"></a>注釈
 
 [ShapePlaceFlip] セルの値を使用すると、配置可能な図形の向きを、接続先となっている別の配置可能な図形に合わせることができます。
   
-図面ページ上の*すべて*の図形に対してこの動作を設定するには、[ページレイアウト] セクションの [配置] セルを使用します。 
+図面ページのすべての  *図形に対*  してこの動作を設定するには、[ページ レイアウト] セクションの [PlaceFlip] セルを使用します。 
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ShapePlaceFlip] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[shapeplaceflip]  <br/> |
+|セル名:  <br/> |ShapePlaceFlip  <br/> |
    
 プログラムから、インデックスによって [ShapePlaceFlip] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -46,6 +46,6 @@ ms.locfileid: "33429279"
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionObject** <br/> |
 |行インデックス:  <br/> |**visRowShapeLayout** <br/> |
-|セル インデックス:  <br/> |**vissloフェース eflip** <br/> |
+|セル インデックス:  <br/> |**visSLOPlaceFlip** <br/> |
    
 

@@ -22,16 +22,16 @@ ms.locfileid: "33427242"
   
 |**値**|**飛び越し点のスタイル**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|.0  <br/> |円弧  <br/> |**visLOJumpStyleDefault** <br/> |
-|1   <br/> |円弧  <br/> |**visLOJumpStyleArc** <br/> |
-|2   <br/> |Gap  <br/> |**visLOJumpStyleGap** <br/> |
-|3   <br/> |四角  <br/> |**visLOJumpStyleSquare** <br/> |
-|4   <br/> |2 辺  <br/> |**visLOJumpStyleTriangle** <br/> |
-|5   <br/> |台形  <br/> |**visLOJumpStyle2Point** <br/> |
-|6   <br/> |4 辺  <br/> |**visLOJumpStyle3Point** <br/> |
-|7   <br/> |5 辺  <br/> |**visLOJumpStyle4Point** <br/> |
-|8   <br/> |6 辺  <br/> |**visLOJumpStyle5Point** <br/> |
-|9   <br/> |7 辺  <br/> |**visLOJumpStyle6Point** <br/> |
+|0  <br/> |Arc  <br/> |**visLOJumpStyleDefault** <br/> |
+|1  <br/> |Arc  <br/> |**visLOJumpStyleArc** <br/> |
+|2  <br/> |Gap  <br/> |**visLOJumpStyleGap** <br/> |
+|3  <br/> |四角  <br/> |**visLOJumpStyleSquare** <br/> |
+|4  <br/> |2 辺  <br/> |**visLOJumpStyleTriangle** <br/> |
+|5  <br/> |台形  <br/> |**visLOJumpStyle2Point** <br/> |
+|6  <br/> |4 辺  <br/> |**visLOJumpStyle3Point** <br/> |
+|7  <br/> |5 辺  <br/> |**visLOJumpStyle4Point** <br/> |
+|8  <br/> |6 辺  <br/> |**visLOJumpStyle5Point** <br/> |
+|9  <br/> |7 辺  <br/> |**visLOJumpStyle6Point** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -41,7 +41,7 @@ ms.locfileid: "33427242"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[linejumpstyle]  <br/> |
+|セル名:  <br/> |LineJumpStyle  <br/> |
    
 プログラムから、インデックスによって [LineJumpStyle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

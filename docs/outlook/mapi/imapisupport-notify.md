@@ -1,5 +1,5 @@
 ---
-title: imapisupportnotify
+title: IMAPISupportNotify
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -23,7 +23,7 @@ ms.locfileid: "33435937"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したイベントの通知を、 [imapisupport:: Subscribe](imapisupport-subscribe.md)メソッドによって最初に通知用に登録されたアドバイズソースに送信します。 
+指定したイベントの通知を [、IMAPISupport::Subscribe](imapisupport-subscribe.md) メソッドを介して通知用に登録されたアドバイス ソースに送信します。 
   
 ```cpp
 HRESULT Notify(
@@ -36,31 +36,31 @@ ULONG FAR * lpulFlags
 
 ## <a name="parameters"></a>パラメーター
 
-_lpkey_
+_lpKey_
   
-> 順番アドバイズソースオブジェクトの通知キーへのポインター。 _lpkey_パラメーターを NULL にすることはできません。 
+> [in]アドバイス ソース オブジェクトの通知キーへのポインター。 _lpKey パラメーター_ は NULL にすることはできません。 
     
-_cnotification_
+_cNotification_
   
-> 順番lpnotifications パラメーターが指す通知構造の数__ 。 
+> [in]  _lpNotifications_ パラメーターが指す通知構造の数。 
     
-_lpnotifications_
+_lpNotifications_
   
-> 順番保留中の通知を記述する[通知](notification.md)構造の配列へのポインター。 
+> [in]保留中の通知を記述 [する NOTIFICATION](notification.md) 構造体の配列へのポインター。 
     
-_lアウトフラグ_
+_lpulFlags_
   
-> [入力]通知プロセスを制御するフラグのビットマスク。 入力時には、次のフラグを設定できます。
+> [in, out]通知プロセスを制御するフラグのビットマスク。 入力時に、次のフラグを設定できます。
     
   - MAPI_UNICODE 
     
-    > lpnotifications が指す通知構造の文字列は__ 、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。 
+    > _lpNotifications_ が指す通知構造の文字列は、Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。 
 
-    出力では、MAPI は次のフラグを設定できます。
+    出力時に、MAPI は次のフラグを設定できます。
         
   - NOTIFY_CANCELED 
     
-    > コールバック関数が同期通知をキャンセルしました。
+    > コールバック関数が同期通知を取り消しました。
     
 ## <a name="return-value"></a>戻り値
 
@@ -70,23 +70,23 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport:: Notify**メソッドは、すべてのサービスプロバイダーサポートオブジェクトに実装されています。 サービスプロバイダーは、MAPI に対して、 **imapisupport:: Subscribe**メソッドによって既に通知が登録されているアドバイズシンクに対して通知を生成することを要求する呼び出し**通知**を呼び出します。 
+**IMAPISupport::Notify** メソッドは、すべてのサービス プロバイダー サポート オブジェクトに実装されます。 サービス プロバイダーは **Notify** を呼び出して **、IMAPISupport::Subscribe** メソッドを介して通知に対して以前に登録した通知シンクの通知を MAPI が生成する要求を行います。 
   
-**Notify**は、lpnotifications パラメーターが指す__ 構造をメモリにコピーし、適切なアドバイズシンクの[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドを呼び出します。 **onnotify**が通知を終了すると、関係するメモリが解放されます。 呼び出し元はメモリを割り当てる必要がありません。MAPI は、必要なすべてのメモリ割り当てを実行します。 
+**Notify** は  _、lpNotifications_ パラメーターが指す構造体をメモリにコピーし、適切なアアドバイス シンクの [IMAPIAdviseSink::OnNotify メソッドを呼び出](imapiadvisesink-onnotify.md) します。 **通知で OnNotify** が終了すると、関連するメモリが解放されます。 呼び出し元はメモリを割り当てる必要があります。MAPI は、必要なすべてのメモリ割り当てを実行します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-_lpkey_パラメーターに渡された通知キーは、 _lpkey_で渡された**imapisupport:: Subscribe**メソッドに渡されるキーと同一である必要があります。 多くのプロバイダーは、アドバイズ元のエントリ識別子をキーとして使用しますが、ファイルパスなどのその他のデータを使用することができます。 MAPI はこのキーを使用して、指定されたアドバイズ元での通知のすべての登録を検索します。 
+lpKey パラメーターで渡される通知キーは _、lpKey_ で **IMAPISupport::Subscribe** メソッドに渡されるキーと同じである必要があります。  多くのプロバイダーは、アドバイス ソースのエントリ識別子をキーとして使用しますが、ファイル パスなどの他のデータを使用できます。 MAPI は、このキーを使用して、識別されたアドバイス ソース上の通知のすべての登録を検索します。 
   
-通知構造の**lて tryid**メンバは、長期のエントリ id に設定してください。 
+通知構造体の **lpEntryID** メンバーを長期エントリ識別子に設定してください。 
   
-保留中のいずれかの通知の**サブスクライブ**呼び出しで NOTIFY_SYNC フラグを設定すると、 **IMAPIAdviseSink:: onnotify**メソッドのコールバック関数が呼び出された後に**通知**されます。 アドバイズシンクは、手動で作成することも、 [HrAllocAdviseSink](hrallocadvisesink.md)を呼び出すことによって作成することもできます。 **HrAllocAdviseSink**関数を使用すると、発信者は通知の一部として呼び出しを**通知**するコールバック関数を指定できます。 コールバック関数は、 [NOTIFCALLBACK](notifcallback.md)プロトタイプに準拠しています。 クライアントによって実装されたコールバック関数は常に S_OK を返します。サービスプロバイダーによって実装されたコールバック関数は、CALLBACK_DISCONTINUE を返すことができます。 
+保留中の通知のサブスクライブ呼び出しでNOTIFY_SYNC フラグを設定すると **、Notify** は **IMAPIAdviseSink::OnNotify** メソッドコールバック関数を呼び出してから返します。 アドバイス シンクは、手動で作成するか [、HrAllocAdviseSink を呼び出すことによって作成できます](hrallocadvisesink.md)。 **HrAllocAdviseSink** 関数を使用すると、呼び出し元は通知の一部として **Notify** が呼び出すコールバック関数を指定できます。 コールバック関数は [NOTIFCALLBACK プロトタイプに準拠](notifcallback.md) しています。 クライアントによって実装されるコールバック関数は、常にS_OK。サービス プロバイダーによって実装されたコールバック関数は、CALLBACK_DISCONTINUE。 
   
-コールバック関数が CALLBACK_DISCONTINUE を返す場合、MAPI は通知の送信を停止し、 **NOTIFY**メソッドの_lNOTIFY_CANCELED flags_パラメーターでを返します。 プロセスが非アクティブであると仮定して、そのプロセスの通知の生成を停止することができます。 **Notify**で_l出 flags_に0が返された場合、プロセスはアクティブなままで、必要に応じて通知の送信を続行する必要があります。
+コールバック関数が通知を返CALLBACK_DISCONTINUE MAPI は通知の送信を停止し **、Notify** メソッドの  _lpulFlags_ パラメーター NOTIFY_CANCELEDを返します。 プロセスが非アクティブであり、そのプロセスの通知の生成を停止すると仮定できます。 Notify **が**  _lpulFlags_ で 0 を返す場合、プロセスはまだアクティブであり、必要に応じて引き続き通知を送信する必要があります。
   
-同期通知を使用する場合は、デッドロックの状況を回避するために注意してください。
+同期通知を使用する場合は、デッドロックの状況を避けるように注意してください。
   
-通知プロセスの詳細については、「 [MAPI でのイベント通知](event-notification-in-mapi.md)」を参照してください。 
+通知プロセスの詳細については、「MAPI での [イベント通知」を参照してください](event-notification-in-mapi.md)。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -35,9 +35,9 @@ HRESULT CopyMessage(
 
 ## <a name="parameters"></a>パラメーター
 
- _pfolderdestination_
+ _pFolderDestination_
   
-> 順番メッセージがコピーされるフォルダーへのポインター。
+> [in]メッセージをコピーするフォルダーへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -47,25 +47,25 @@ S_OK
     
 MAPI_E_NO_SUPPORT 
   
-> 操作は、このメッセージサイトではサポートされていません。
+> この操作は、このメッセージ サイトではサポートされていません。
     
 ## <a name="remarks"></a>注釈
 
-Form オブジェクトは**IMAPIMessageSite:: copymessage**メソッドを呼び出して、現在のメッセージを新しいフォルダーにコピーします。 **copymessage**は、現在ユーザーに表示されているメッセージを変更しません。また、新しく作成されたメッセージのインターフェイスはフォームに返されません。 
+フォーム オブジェクトは **IMAPIMessageSite::CopyMessage** メソッドを呼び出して、現在のメッセージを新しいフォルダーにコピーします。 **CopyMessage** は現在表示されているメッセージをユーザーに変更しないし、新しく作成されたメッセージのインターフェイスはフォームに返されません。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**copymessage**メソッドの一般的な実装では、次のタスクを実行します。 
+**CopyMessage** メソッドの一般的な実装では、次のタスクを実行します。 
   
 1. 現在のメッセージをコピーする新しいメッセージを作成します。
     
-2. [IPersistMessage:: Save](ipersistmessage-save.md)メソッドを呼び出して、 _pmessage_パラメーターに新しいメッセージへのポインターを指定し、 _fsameasload_パラメーターに FALSE を指定します。 
+2. _pMessage_ パラメーター内の新しいメッセージへのポインターを使用して [IPersistMessage::Save](ipersistmessage-save.md)メソッドを呼び出し _、fSameAsLoad_ パラメーターで FALSE を呼び出します。 
     
-3. _pmessage_パラメーターに NULL を渡す[IPersistMessage:: SaveCompleted](ipersistmessage-savecompleted.md)メソッドを呼び出します。 
+3. [iPersistMessage::SaveCompleted メソッド](ipersistmessage-savecompleted.md)を呼び出し _、pMessage_ パラメーターに NULL を渡します。 
     
-4. 新しいメッセージに対して[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出します。 
+4. 新しい [メッセージで IMAPIProp::SaveChanges](imapiprop-savechanges.md) メソッドを呼び出します。 
     
-フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
+フォーム サーバーに関連するインターフェイスの一覧については、「MAPI フォーム インターフェイス [」を参照してください](mapi-form-interfaces.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -73,7 +73,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer  <br/> |cmymapiformviewer:: copymessage  <br/> |実装されていません。  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::CopyMessage  <br/> |実装されていません。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -90,5 +90,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームインターフェイス](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

@@ -1,5 +1,5 @@
 ---
-title: imapisyncprogress scallbackprogress
+title: IMAPISyncProgressCallbackProgress
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33429111"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-送信/受信ダイアログの状態を更新します。 ストアプロバイダーは、この関数を定期的に呼び出します。
+[送受信] ダイアログの状態を更新します。 ストア プロバイダーは定期的にこの関数を呼び出します。
   
 ```cpp
 HRESULT Progress(
@@ -37,17 +37,17 @@ HRESULT Progress(
 
 ## <a name="parameters"></a>パラメーター
 
- **pwczsProgress**
+ **pwczsProgresss**
   
-> 現在の進行状況のステップを表示する文字列へのポインター。 進捗状況を更新する場合は、NULL にすることができます。
+> 現在の進行状況の手順を表示する文字列へのポインター。 進行状況を更新するには NULL を指定できます。
     
- **ulindex**
+ **ulIndex**
   
-> 現在進行中の位置。
+> 進行中の現在の位置。
     
- **ulindexmax**
+ **ulIndexMax**
   
-> 完全な進捗状況を示すインデックス。
+> 完全な進行状況を示すインデックス。
     
 ## <a name="return-value"></a>戻り値
 

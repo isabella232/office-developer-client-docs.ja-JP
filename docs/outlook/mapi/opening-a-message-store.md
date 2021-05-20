@@ -19,47 +19,47 @@ ms.locfileid: "33432374"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイルに応じて、クライアントは一般的なセッション中に1つ以上のメッセージストアを開く必要があります。 メッセージストアを開くことは、 [IMsgStore: imapiprop](imsgstoreimapiprop.md)実装へのポインターへのアクセスを得ることを意味します。 **IMsgStore**インターフェイスには、通知、フォルダー割り当ての作成、およびフォルダーとメッセージへのアクセスのためのメソッドが用意されています。 
+プロファイルによっては、クライアントは一般的なセッション中に 1 つ以上のメッセージ ストアを開く必要があります。 メッセージ ストアを開くとは、 [その IMsgStore : IMAPIProp](imsgstoreimapiprop.md) 実装へのポインターへのアクセスを得るという意味です。 **IMsgStore インターフェイスには**、通知、フォルダーの割り当て、フォルダーとメッセージへのアクセスのためのメソッドが提供されます。 
   
-クライアントは、ログオン時、およびプロファイルが変更されるときに、メッセージストアを開きます。 クライアントで、アクティブなセッション中にユーザーがプロファイルにメッセージストアを追加できるようにする場合は、それらをすぐに開くか、または次のセッションまで無視できます。 メッセージストアテーブルに通知を登録することによって、新しいメッセージストアの可用性に関する警告が表示されます。
+クライアントは、ログオン時とプロファイルの変更時にメッセージ ストアを開きます。 クライアントがアクティブ セッション中にユーザーがプロファイルにメッセージ ストアを追加することを許可している場合は、すぐに開くか、次のセッションまで無視できます。 メッセージ ストア テーブルに通知を登録すると、新しいメッセージ ストアの可用性が通知されます。
   
-メッセージストアを開くには、そのエントリ識別子を使用できるようにする必要があります。 ほとんどのクライアントは、メッセージストアテーブルを使用して開くメッセージストアのエントリ識別子にアクセスします。 ただし、メッセージストアによっては、エントリ識別子の形式が文書化されているため、クライアントがメッセージストアテーブルをバイパスし、必要なエントリ識別子を作成できるようになります。 このエントリ識別子を[imapisession:: openmsgstore](imapisession-openmsgstore.md)に直接渡すことができます。また、MAPI は、メッセージサービスに関連付けずにプロバイダーのプロファイルセクションを自動的に作成します。 
+メッセージ ストアを開くには、そのエントリ識別子を使用できる必要があります。 ほとんどのクライアントは、メッセージ ストア テーブルから開くメッセージ ストアのエントリ識別子にアクセスします。 ただし、一部のメッセージ ストアでは、エントリ識別子の形式を文書化するため、クライアントはメッセージ ストア テーブルをバイパスして、必要なエントリ識別子を構築できます。 このエントリ識別子を [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) に直接渡し、MAPI はメッセージ サービスに関連付けずにプロバイダーのプロファイル セクションを自動的に作成します。 
   
-## <a name="retrieve-an-entry-identifier-from-the-message-store-table"></a>メッセージストアテーブルからエントリ識別子を取得する
+## <a name="retrieve-an-entry-identifier-from-the-message-store-table"></a>メッセージ ストア テーブルからエントリ識別子を取得する
   
-1. 呼び出し[imapisession:: getmsgstorestable](imapisession-getmsgstorestable.md)メッセージストアテーブルを開くことができます。 
+1. [IMAPISession::GetMsgStoresTable](imapisession-getmsgstorestable.md)を呼び出して、メッセージ ストア テーブルを開きます。 
     
-2. **IMAPITable:: SetColumns**を呼び出して、テーブルを次の列を含む小さな列セットに制限します。 
+2. **IMAPITable::SetColumns** を呼び出して、テーブルを次の列を含む小さな列セットに制限します。 
     
-   - **PR_PROVIDER_DISPLAY**または**PR_DISPLAY_NAME**
-   - **PR_ENTRYID**プロパティ 
+   - **PR_PROVIDER_DISPLAY** または **PR_DISPLAY_NAME**
+   - **PR_ENTRYID** プロパティ 
    - **PR_MDB_PROVIDER**
    - **PR_RESOURCE_FLAGS**
     
-3. 開くメッセージストアを表す行をフィルターで除外する制限を作成します。 既定のメッセージストアの検索の詳細については、「[既定のメッセージストアを開く](opening-the-default-message-store.md)」を参照してください。 名前でメッセージストアを検索するには、次のいずれかのプロパティ制限を適用します。
+3. 開くメッセージ ストアを表す行をフィルター処理する制限を作成します。 既定のメッセージ ストアを探す方法の詳細については、「既定のメッセージ ストアを開 [く」を参照してください](opening-the-default-message-store.md)。 名前でメッセージ ストアを検索するには、次のプロパティ制限を適用します。
     
-   - この種類のメッセージストアの一般的な名前を**PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md)) と照合します。 たとえば、PR_PROVIDER_DISPLAY は "個人用フォルダー" に設定されている場合があります。
+   - この **PR_PROVIDER_DISPLAY** [(PidTagProviderDisplay)](pidtagproviderdisplay-canonical-property.md)とこの種類のメッセージ ストアの一般的な名前を一致します。 たとえば、ユーザー PR_PROVIDER_DISPLAY "個人用フォルダー" に設定できます。
     
-   - この種類のメッセージストアについて、 **PR_MDB_PROVIDER** ([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md)) を特定の**MAPIUID**に一致させます。 
+   - この **PR_MDB_PROVIDER** の **MAPIUID** と一致するメッセージ ストア ([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md)) を指定します。 
     
-   - この特定のメッセージストアの名前を**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) と照合します。 たとえば、 **PR_DISPLAY_NAME**は "私のメッセージは会計年度 2010" に設定されている場合があります。 
+   - この **PR_DISPLAY_NAME** [(PidTagDisplayName)](pidtagdisplayname-canonical-property.md)とこの特定のメッセージ ストアの名前を一致します。 たとえば、PR_DISPLAY_NAME"2010 会計年度のマイ メッセージ" に設定できます。  
     
-4. [hrqueryallrows](hrqueryallrows.md)を呼び出して、メッセージストアテーブルから適切な行を取得します。 _pprows_パラメーターによって指定された行セットの arow **** member メンバーのプロパティ値配列に、その行のエントリ識別子が含まれます。 
+4. [HrQueryAllRows を呼び出](hrqueryallrows.md)して、メッセージ ストア テーブルから適切な行を取得します。 行のエントリ識別子は _、pprows_ パラメーターが指す行セットの **aRow** メンバーのプロパティ値配列に含まれます。 
     
-5. [freeprows](freeprows.md)を呼び出して、 _pprows_が指す行セットを解放します。
+5. [FreeProws を呼び出](freeprows.md)して、pprows が指す行セット _を解放します_。
     
-6. **IUnknown:: release**メソッドを呼び出して、メッセージストアテーブルを解放します。 
+6. メッセージ ストア テーブルを解放するには、 **その IUnknown::Release メソッドを呼び出** します。 
     
-メッセージストアを開くためのカスタムエントリ識別子を作成した場合は、 [WrapStoreEntryID](wrapstoreentryid.md)関数を呼び出して標準のエントリ識別子に変換します。 
+開くメッセージ ストアのカスタム エントリ識別子を作成した場合は [、WrapStoreEntryID](wrapstoreentryid.md) 関数を呼び出して、標準エントリ識別子に変換します。 
   
-メッセージストアのエントリ識別子を取得したら、次のいずれかのメソッドを呼び出して開きます。
+メッセージ ストアのエントリ識別子を取得した後、次のいずれかのメソッドを呼び出して開きます。
   
 - [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)
 - [IMAPISession::OpenEntry](imapisession-openentry.md)
     
-メッセージストアにさまざまな特別なオプションを指定する必要がある場合は、 **openmsgstore**を呼び出します。 **openmsgstore**を使用すると、ダイアログボックスの表示を抑制したり、メッセージストアを一時的または非メッセージングストアとして指定したり、アクセスレベルを設定したり、エラーを遅延させたりすることができます。 **openentry**では、アクセスレベルを設定したり、エラーを遅延させることができます。 
+メッセージ ストアのさまざまな特別なオプションを指定する必要がある場合は **、OpenMsgStore** を呼び出します。 **OpenMsgStore** を使用すると、ダイアログ ボックスの表示を抑制し、メッセージ ストアを一時的なストアまたは非メッシュ ストアとして識別し、アクセス レベルを設定し、エラーを延期できます。 **OpenEntry では** 、アクセス レベルの設定とエラーの延期のみを行います。 
   
-MDB_NO_MAIL フラグを設定すると、メッセージストアがメッセージの送信または受信に使用されないことを MAPI に示します。 mapi は、このメッセージストアが存在することを mapi スプーラーに通知しません。 MDB_TEMPORARY フラグは、メッセージストアを一時的なものとして指定します。これは永続的な情報を格納するためには使用できません。 一時メッセージストアは、メッセージストアテーブルには表示されません。 
+メッセージ のMDB_NO_MAIL設定すると、メッセージ ストアはメッセージの送受信に使用されません。 MAPI では、このメッセージ ストアの存在について MAPI スプーラーには通知されません。 このMDB_TEMPORARYは、メッセージ ストアを一時的なものとして指定します。これは、永続的な情報を格納するために使用できないことを示します。 一時メッセージ ストアは、メッセージ ストア テーブルには表示されません。 
   
 ## <a name="see-also"></a>関連項目
 

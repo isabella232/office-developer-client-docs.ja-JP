@@ -25,7 +25,7 @@ ms.locfileid: "33429552"
   
 ## <a name="syntax"></a>構文
 
-LISTMEMBERCOUNT ()
+LISTMEMBERCOUNT()
   
 ### <a name="return-value"></a>戻り値
 
@@ -37,7 +37,7 @@ LISTMEMBERCOUNT ()
   
 ## <a name="example"></a>例
 
-listsheetref (1)!寸法 
+LISTSHEETREF(1)!Height 
   
 図形を含むリスト コンテナー図形の [Height] セルの値を返します。 
   

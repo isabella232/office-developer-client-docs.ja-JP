@@ -1,5 +1,5 @@
 ---
-title: メッセージストアプロバイダーに対して読み取りおよび非開封レポートを提供する
+title: メッセージ ストア プロバイダーに対する読み取りレポートと読み取り以外のレポートの提供
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,18 +15,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33432339"
 ---
-# <a name="providing-read-and-nonread-reports-for-message-store-providers"></a>メッセージストアプロバイダーに対して読み取りおよび非開封レポートを提供する
+# <a name="providing-read-and-nonread-reports-for-message-store-providers"></a>メッセージ ストア プロバイダーに対する読み取りレポートと読み取り以外のレポートの提供
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージストアプロバイダーがメッセージを受信できる場合は、メッセージストアプロバイダーによって受信されたメッセージの読み取りレポートおよび非開封レポートをサポートする必要があります。 受信したメッセージに**PR_READ_RECEIPT_REQUESTED** ([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md)) プロパティが含まれており、そのプロパティの値が TRUE である場合、メッセージストアは、ユーザーがメッセージを開いたときに送信者に通知メッセージを送信する必要があります。メッセージが開封されたことを示します。 同様に、ユーザーがメッセージを開く前に削除した場合は、メッセージが開封されていないことを示す返信を、メッセージストアが送信者に発行する必要があります。
+メッセージ ストア プロバイダーがメッセージを受信できる場合は、メッセージ ストア プロバイダーが受信したメッセージの読み取りレポートと未読レポートをサポートする必要があります。 受信メッセージに **PR_READ_RECEIPT_REQUESTED** ([PidTagReadReceiptRequested)](pidtagreadreceiptrequested-canonical-property.md)プロパティが含まれている場合、そのプロパティの値が TRUE の場合、メッセージ ストアは、ユーザーがメッセージを開くと送信者に通知メッセージを送信し、メッセージが読み取られたことを示す必要があります。 同様に、ユーザーがメッセージを開く前に削除した場合、メッセージ ストアは、メッセージが読み取りなかったことを示す返信を送信者に発行する必要があります。
   
-これらのレポートを発行するには、 [IMessage: imapiprop](imessageimapiprop.md)オブジェクトを作成し、メッセージに関連するプロパティを入力して、そのメッセージがユーザーによって生成された場合と同様に MAPI スプーラーに送信します。 [imapisupport:: readreceipt](imapisupport-readreceipt.md)メソッドは、このために使用できます。 
+これらのレポートの発行は [、IMessage : IMAPIProp](imessageimapiprop.md) オブジェクトを作成し、メッセージに関連するプロパティを入力し、メッセージがユーザーに送信された場合と同様に MAPI スプーラーに送信する問題です。 この [場合、IMAPISupport::ReadReceipt](imapisupport-readreceipt.md) メソッドを使用できます。 
   
 > [!NOTE]
-> 保留中の読み取りレポートまたは非開封レポートを含む未開封メッセージのコピーをメッセージストアが作成する場合は、特別な注意を払う必要があります。 このようなレポートは、ユーザーがレポートが要求されたメッセージのコピーを読み取るときには生成しないようにする必要があります。 このようなメッセージのコピーを作成する場合、メッセージストアプロバイダーには、 [imapifolder:: setreadflags](imapifolder-setreadflags.md)および[IMessage:: setreadflags](imessage-setreadflag.md)への呼び出しに CLEAR_RN_PENDING および CLEAR_NRN_PENDING フラグを含める必要があります。 
+> メッセージ ストアが未読メッセージのコピーを、保留中の読み取りレポートまたは未読レポートと一緒に作成する場合は、特別な注意が必要です。 このようなレポートは、ユーザーが要求されたメッセージのコピーを読み取った場合に生成される必要があります。 このようなメッセージのコピーを作成する場合、メッセージ ストア プロバイダーは [、IMAPIFolder::SetReadFlags](imapifolder-setreadflags.md) および [IMessage::SetReadFlag](imessage-setreadflag.md)への呼び出しに CLEAR_RN_PENDING フラグと CLEAR_NRN_PENDING フラグを含める必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

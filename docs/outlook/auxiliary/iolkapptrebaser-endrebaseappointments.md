@@ -34,7 +34,7 @@ _pContext_
   
 > [in]必要があります。[IOlkApptRebaser::BeginRebaseAppointments](iolkapptrebaser-beginrebaseappointments.md)への呼び出しから取得されたコンテキストへのポインター。
     
-_phresult_
+_phResult_
   
 > [out]必要があります。再配置の操作の結果を取得するためには、 **HRESULT** へのポインター。 
     

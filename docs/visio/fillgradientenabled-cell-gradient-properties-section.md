@@ -29,7 +29,7 @@ ms.locfileid: "33431212"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [fillgradientenabled]  <br/> |
+| セル名:  <br/> | FillGradientEnabled  <br/> |
    
 プログラムから、インデックスによって [**FillGradientEnabled**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -37,6 +37,6 @@ ms.locfileid: "33431212"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowGradientProperties** <br/> |
-| セル インデックス:  <br/> |* * visFillGradientEnabled * * <br/> |
+| セル インデックス:  <br/> |**visFillGradientEnabled ** <br/> |
    
 

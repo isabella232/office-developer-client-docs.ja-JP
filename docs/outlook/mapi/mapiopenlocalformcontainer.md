@@ -25,11 +25,11 @@ ms.locfileid: "33427739"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ローカルフォームライブラリへのインターフェイスポインターを返します。 
+ローカル フォーム ライブラリへのインターフェイス ポインターを返します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
 |呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
@@ -43,7 +43,7 @@ MAPIOpenLocalFormContainer(
 
  _ppfcnt_
   
-> 読み上げローカルフォームライブラリのインターフェイスへのポインターへのポインター。
+> [out]ローカル フォーム ライブラリ インターフェイスへのポインター。
     
 ## <a name="return-value"></a>Return value
 
@@ -51,7 +51,7 @@ MAPIOpenLocalFormContainer(
   
 ## <a name="remarks"></a>注釈
 
-ポインターが返されるインターフェイスは、サードパーティのインストールプログラムによって使用され、アプリケーション固有のフォームをプログラムが MAPI にログオンすることなく、ライブラリにインストールできます。 
+ポインターが返されるインターフェイスは、サードパーティのインストール プログラムがアプリケーション固有のフォームをライブラリにインストールするために使用できます。プログラムは最初に MAPI にログオンする必要があります。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -59,7 +59,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|maindlg .cpp  <br/> |CMainDlg:: OnMAPIOpenLocalFormContainer  <br/> |mfcmapi は、 **MAPIOpenLocalFormContainer**メソッドを使用して、ローカルフォームコンテナーを開き、新しいウィンドウにレンダリングします。  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnMAPIOpenLocalFormContainer  <br/> |MFCMAPI は **MAPIOpenLocalFormContainer** メソッドを使用してローカル フォーム コンテナーを開き、新しいウィンドウでレンダリングします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

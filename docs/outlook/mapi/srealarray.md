@@ -25,11 +25,11 @@ ms.locfileid: "33429874"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_R4 型のプロパティを記述するために使用される float 値の配列を格納します。 
+データ型のプロパティを記述するために使用される浮動小数点値の配列をPT_MV_R4。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SRealArray
@@ -40,19 +40,19 @@ typedef struct _SRealArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> **lpflt**メンバーが指す配列内の値の数。 
+> lpflt メンバーが指す配列内 **の値の** 数。 
     
  **lpflt**
   
-> 浮動小数点型の値の配列へのポインターを指定します。
+> 浮動小数点値の配列へのポインター。
     
 ## <a name="remarks"></a>注釈
 
-PT_MV_R4 プロパティの種類の詳細については、「[プロパティの種類](property-types.md)」を参照してください。
+プロパティの種類の詳細については、「PT_MV_R4プロパティの [種類」を参照してください](property-types.md)。
   
 ## <a name="see-also"></a>関連項目
 

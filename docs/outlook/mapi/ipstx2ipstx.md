@@ -1,5 +1,5 @@
 ---
-title: IPSTX2 ipstx
+title: IPSTX2 IPSTX
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,19 +25,19 @@ ms.locfileid: "33430876"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このインターフェイスは、 **[iostx](iostxiunknown.md)** インターフェイスを介してレプリケーションを実行するときに、ヘルパー機能を提供します。 
+このインターフェイスは、IOSTX インターフェイスを介してレプリケーションを実行するときにヘルパー **[機能を提供](iostxiunknown.md)** します。 
   
 |||
 |:-----|:-----|
-|提供元  <br/> |[IMsgStore](imsgstoreimapiprop.md)のクエリ <br/> |
+|提供者  <br/> |[IMsgStore でのクエリ](imsgstoreimapiprop.md) <br/> |
 |インターフェイス識別子:  <br/> |IID_IPSTX2  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
-| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていないか、文書化されていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていないか、文書化されていません。*  <br/> |
 |**[SetSpoolSuspendState](ipstx2-setspoolsuspendstate.md)** <br/> |スプーラーの中断状態を設定します。  <br/> |
    
 ## <a name="see-also"></a>関連項目

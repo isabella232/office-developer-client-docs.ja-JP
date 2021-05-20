@@ -25,11 +25,11 @@ ms.locfileid: "33429041"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-既存の[adrlist](adrlist.md)構造体のバイト数を計算します。 
+既存の ADRLIST 構造体のバイト [数を計算](adrlist.md) します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造  <br/> |**ADRLIST** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbADRLIST (_lpadrlist)
 
 ## <a name="parameters"></a>パラメーター
 
- __lpadrlist_
+ _ _lpadrlist_
   
-> 既存の**adrlist**構造体へのポインター。 
+> 既存の **ADRLIST** 構造へのポインター。 
     
 ## <a name="see-also"></a>関連項目
 
