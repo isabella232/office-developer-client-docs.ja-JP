@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251440
 localization_priority: Normal
 ms.assetid: 0f5c6097-eef5-5f58-e2ef-2c348e42dc9a
-description: 色の色合いコンポーネントの値を返します。
+description: 色の色相コンポーネントの値を返します。
 ms.openlocfilehash: 39fdd160f5cd792e95930a3e7c7cea3c37ed16c1
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,44 +16,44 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439493"
 ---
-# <a name="hue-function"></a><span data-ttu-id="55846-103">HUE 関数</span><span class="sxs-lookup"><span data-stu-id="55846-103">HUE Function</span></span>
+# <a name="hue-function"></a><span data-ttu-id="b7932-103">HUE 関数</span><span class="sxs-lookup"><span data-stu-id="b7932-103">HUE Function</span></span>
 
-<span data-ttu-id="55846-104">色の色合いコンポーネントの値を返します。</span><span class="sxs-lookup"><span data-stu-id="55846-104">Returns the value of a color's hue component.</span></span>
+<span data-ttu-id="b7932-104">色の色相コンポーネントの値を返します。</span><span class="sxs-lookup"><span data-stu-id="b7932-104">Returns the value of a color's hue component.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="55846-105">構文</span><span class="sxs-lookup"><span data-stu-id="55846-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b7932-105">構文</span><span class="sxs-lookup"><span data-stu-id="b7932-105">Syntax</span></span>
 
-<span data-ttu-id="55846-106">色合い (\* **式** \*)</span><span class="sxs-lookup"><span data-stu-id="55846-106">HUE(\*\* *expression* \*\* )</span></span> 
+<span data-ttu-id="b7932-106">HUE(\*\* *expression* \*\* )</span><span class="sxs-lookup"><span data-stu-id="b7932-106">HUE(\*\* *expression* \*\* )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="55846-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="55846-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b7932-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b7932-107">Parameters</span></span>
 
-|<span data-ttu-id="55846-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="55846-108">**Name**</span></span>|<span data-ttu-id="55846-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="55846-109">**Required/Optional**</span></span>|<span data-ttu-id="55846-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="55846-110">**Data Type**</span></span>|<span data-ttu-id="55846-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="55846-111">**Description**</span></span>|
+|<span data-ttu-id="b7932-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="b7932-108">**Name**</span></span>|<span data-ttu-id="b7932-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="b7932-109">**Required/Optional**</span></span>|<span data-ttu-id="b7932-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="b7932-110">**Data Type**</span></span>|<span data-ttu-id="b7932-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="b7932-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="55846-112">_expression_</span><span class="sxs-lookup"><span data-stu-id="55846-112">_expression_</span></span> <br/> |<span data-ttu-id="55846-113">必須</span><span class="sxs-lookup"><span data-stu-id="55846-113">Required</span></span>  <br/> |<span data-ttu-id="55846-114">**String**</span><span class="sxs-lookup"><span data-stu-id="55846-114">**String**</span></span> <br/> |<span data-ttu-id="55846-115">色として評価される式を指定します。</span><span class="sxs-lookup"><span data-stu-id="55846-115">An expression that evaluates to a color.</span></span>  <br/> |
+| <span data-ttu-id="b7932-112">_expression_</span><span class="sxs-lookup"><span data-stu-id="b7932-112">_expression_</span></span> <br/> |<span data-ttu-id="b7932-113">必須</span><span class="sxs-lookup"><span data-stu-id="b7932-113">Required</span></span>  <br/> |<span data-ttu-id="b7932-114">**String**</span><span class="sxs-lookup"><span data-stu-id="b7932-114">**String**</span></span> <br/> |<span data-ttu-id="b7932-115">色として評価される式を指定します。</span><span class="sxs-lookup"><span data-stu-id="b7932-115">An expression that evaluates to a color.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="55846-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="55846-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b7932-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="b7932-116">Return value</span></span>
 
-<span data-ttu-id="55846-117">数値</span><span class="sxs-lookup"><span data-stu-id="55846-117">Number</span></span>
+<span data-ttu-id="b7932-117">番号</span><span class="sxs-lookup"><span data-stu-id="b7932-117">Number</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="55846-118">注釈</span><span class="sxs-lookup"><span data-stu-id="55846-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b7932-118">注釈</span><span class="sxs-lookup"><span data-stu-id="b7932-118">Remarks</span></span>
 
-<span data-ttu-id="55846-p101">戻り値は 0 ～ 239 の数値です。引数として、図面のカラー テーブルにある色のインデックス、ユーザー設定の色を返す式 (RGB や HSL など)、またはカラー インデックスや色の結果を含むセルへの参照を指定します。入力した引数が無効な場合は、0 を返します。</span><span class="sxs-lookup"><span data-stu-id="55846-p101">The return value is a number in the range 0 to 239, inclusive. The input is an index of a color in the document's color table, an expression that resolves to a custom color (like RGB or HSL), or a reference to a cell that contains a color index or color result. The function returns 0 for invalid input.</span></span> 
+<span data-ttu-id="b7932-p101">戻り値は 0 ～ 239 の数値です。引数として、図面のカラー テーブルにある色のインデックス、ユーザー設定の色を返す式 (RGB や HSL など)、またはカラー インデックスや色の結果を含むセルへの参照を指定します。入力した引数が無効な場合は、0 を返します。</span><span class="sxs-lookup"><span data-stu-id="b7932-p101">The return value is a number in the range 0 to 239, inclusive. The input is an index of a color in the document's color table, an expression that resolves to a custom color (like RGB or HSL), or a reference to a cell that contains a color index or color result. The function returns 0 for invalid input.</span></span> 
   
-## <a name="example-1"></a><span data-ttu-id="55846-122">例 1</span><span class="sxs-lookup"><span data-stu-id="55846-122">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="b7932-122">例 1</span><span class="sxs-lookup"><span data-stu-id="b7932-122">Example 1</span></span>
 
-<span data-ttu-id="55846-123">色合い (Sheet. 4![fillforegnd]</span><span class="sxs-lookup"><span data-stu-id="55846-123">HUE(Sheet.4!FillForegnd)</span></span>
+<span data-ttu-id="b7932-123">HUE(Sheet.4!FillForegnd)</span><span class="sxs-lookup"><span data-stu-id="b7932-123">HUE(Sheet.4!FillForegnd)</span></span>
   
-<span data-ttu-id="55846-124">Sheet.4 について、前景の塗りつぶしの色に関する色合いを返します。</span><span class="sxs-lookup"><span data-stu-id="55846-124">Returns the hue of Sheet.4's fill foreground color.</span></span>
+<span data-ttu-id="b7932-124">Sheet.4 について、前景の塗りつぶしの色に関する色合いを返します。</span><span class="sxs-lookup"><span data-stu-id="b7932-124">Returns the hue of Sheet.4's fill foreground color.</span></span>
   
-## <a name="example-2"></a><span data-ttu-id="55846-125">例 2</span><span class="sxs-lookup"><span data-stu-id="55846-125">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="b7932-125">例 2</span><span class="sxs-lookup"><span data-stu-id="b7932-125">Example 2</span></span>
 
-<span data-ttu-id="55846-126">色合い (7)</span><span class="sxs-lookup"><span data-stu-id="55846-126">HUE(7)</span></span>
+<span data-ttu-id="b7932-126">HUE(7)</span><span class="sxs-lookup"><span data-stu-id="b7932-126">HUE(7)</span></span>
   
-<span data-ttu-id="55846-127">図面で既定の Microsoft Visio カラー パレットを使用する場合、120 を返します。Visio カラー パレットでは、インデックス 7 はシアンを示します。</span><span class="sxs-lookup"><span data-stu-id="55846-127">Returns 120 if the document uses the default Microsoft Visio color palette, where cyan is the color at index 7.</span></span>
+<span data-ttu-id="b7932-127">図面で既定の Microsoft Visio カラー パレットを使用する場合、120 を返します。Visio カラー パレットでは、インデックス 7 はシアンを示します。</span><span class="sxs-lookup"><span data-stu-id="b7932-127">Returns 120 if the document uses the default Microsoft Visio color palette, where cyan is the color at index 7.</span></span>
   
-## <a name="example-3"></a><span data-ttu-id="55846-128">例 3</span><span class="sxs-lookup"><span data-stu-id="55846-128">Example 3</span></span>
+## <a name="example-3"></a><span data-ttu-id="b7932-128">例 3</span><span class="sxs-lookup"><span data-stu-id="b7932-128">Example 3</span></span>
 
-<span data-ttu-id="55846-129">HUE(HSL(10, 20, 30) )</span><span class="sxs-lookup"><span data-stu-id="55846-129">HUE(HSL(10, 20, 30) )</span></span>
+<span data-ttu-id="b7932-129">HUE(HSL(10, 20, 30) )</span><span class="sxs-lookup"><span data-stu-id="b7932-129">HUE(HSL(10, 20, 30) )</span></span>
   
-<span data-ttu-id="55846-130">10 を返します。</span><span class="sxs-lookup"><span data-stu-id="55846-130">Returns 10.</span></span>
+<span data-ttu-id="b7932-130">10 を返します。</span><span class="sxs-lookup"><span data-stu-id="b7932-130">Returns 10.</span></span>
   
 

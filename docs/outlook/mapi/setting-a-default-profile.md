@@ -15,18 +15,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439815"
 ---
-# <a name="setting-a-default-profile"></a><span data-ttu-id="f4801-103">既定のプロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="f4801-103">Setting a Default Profile</span></span>
+# <a name="setting-a-default-profile"></a><span data-ttu-id="475c6-103">既定のプロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="475c6-103">Setting a Default Profile</span></span>
 
   
   
-<span data-ttu-id="f4801-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f4801-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="475c6-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="475c6-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="f4801-105">既定のプロファイルは、 [MAPILogonEx](mapilogonex.md)への呼び出しで明示的に指定されていない場合に使用されるプロファイルです。 MAPI_USE_DEFAULT フラグの代わりに設定します。</span><span class="sxs-lookup"><span data-stu-id="f4801-105">The default profile is the profile that is used if you do not explicitly specify one in the call to [MAPILogonEx](mapilogonex.md), setting instead the MAPI_USE_DEFAULT flag.</span></span>
+<span data-ttu-id="475c6-105">既定のプロファイルは [、MAPILogonEx](mapilogonex.md)の呼び出しで明示的に指定しない場合に使用されるプロファイルで、代わりに MAPI_USE_DEFAULT フラグを設定します。</span><span class="sxs-lookup"><span data-stu-id="475c6-105">The default profile is the profile that is used if you do not explicitly specify one in the call to [MAPILogonEx](mapilogonex.md), setting instead the MAPI_USE_DEFAULT flag.</span></span>
   
- <span data-ttu-id="f4801-106">**既定のプロファイルを設定するには**</span><span class="sxs-lookup"><span data-stu-id="f4801-106">**To establish a default profile**</span></span>
+ <span data-ttu-id="475c6-106">**既定のプロファイルを確立するには**</span><span class="sxs-lookup"><span data-stu-id="475c6-106">**To establish a default profile**</span></span>
   
-1. <span data-ttu-id="f4801-107">[MAPIAdminProfiles](mapiadminprofiles.md)関数を呼び出して、 **IProfAdmin**インターフェイスポインターを取得します。</span><span class="sxs-lookup"><span data-stu-id="f4801-107">Call the [MAPIAdminProfiles](mapiadminprofiles.md) function to retrieve an **IProfAdmin** interface pointer.</span></span> 
+1. <span data-ttu-id="475c6-107">[MAPIAdminProfiles 関数を呼び出](mapiadminprofiles.md)して **、IProfAdmin** インターフェイス ポインターを取得します。</span><span class="sxs-lookup"><span data-stu-id="475c6-107">Call the [MAPIAdminProfiles](mapiadminprofiles.md) function to retrieve an **IProfAdmin** interface pointer.</span></span> 
     
-2. <span data-ttu-id="f4801-108">Call [IProfAdmin:: setdefaultprofile](iprofadmin-setdefaultprofile.md)。</span><span class="sxs-lookup"><span data-stu-id="f4801-108">Call [IProfAdmin::SetDefaultProfile](iprofadmin-setdefaultprofile.md).</span></span> <span data-ttu-id="f4801-109">**setdefaultprofile**は、新しい既定のプロファイルに対して**PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) プロパティを設定し、以前の既定のプロファイルの設定を削除します。</span><span class="sxs-lookup"><span data-stu-id="f4801-109">**SetDefaultProfile** sets the **PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) property for the new default profile and removes the setting for the previous default profile.</span></span>
+2. <span data-ttu-id="475c6-108">[IProfAdmin::SetDefaultProfile を呼び出します](iprofadmin-setdefaultprofile.md)。</span><span class="sxs-lookup"><span data-stu-id="475c6-108">Call [IProfAdmin::SetDefaultProfile](iprofadmin-setdefaultprofile.md).</span></span> <span data-ttu-id="475c6-109">**SetDefaultProfile** は **PR_DEFAULT_PROFILE既定の** プロファイルの PR_DEFAULT_PROFILE ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) プロパティを設定し、以前の既定のプロファイルの設定を削除します。</span><span class="sxs-lookup"><span data-stu-id="475c6-109">**SetDefaultProfile** sets the **PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) property for the new default profile and removes the setting for the previous default profile.</span></span>
     
 

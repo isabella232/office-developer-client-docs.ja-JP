@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439612"
 ---
-# <a name="imapigetsessiongetmapisession"></a><span data-ttu-id="5f83c-103">IMAPIGetSession::GetMAPISession</span><span class="sxs-lookup"><span data-stu-id="5f83c-103">IMAPIGetSession::GetMAPISession</span></span>
+# <a name="imapigetsessiongetmapisession"></a><span data-ttu-id="d5b0e-103">IMAPIGetSession::GetMAPISession</span><span class="sxs-lookup"><span data-stu-id="d5b0e-103">IMAPIGetSession::GetMAPISession</span></span>
 
   
   
-<span data-ttu-id="5f83c-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5f83c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="d5b0e-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d5b0e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="5f83c-105">mapi サポートオブジェクトに関連付けられている mapi セッションへのポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="5f83c-105">Returns a pointer to the MAPI session associated with the MAPI support object.</span></span>
+<span data-ttu-id="d5b0e-105">MAPI サポート オブジェクトに関連付けられた MAPI セッションへのポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="d5b0e-105">Returns a pointer to the MAPI session associated with the MAPI support object.</span></span>
   
 ```cpp
 HRESULT GetMAPISession(
@@ -33,18 +33,18 @@ HRESULT GetMAPISession(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="5f83c-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5f83c-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d5b0e-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d5b0e-106">Parameters</span></span>
 
- <span data-ttu-id="5f83c-107">_lppsession_</span><span class="sxs-lookup"><span data-stu-id="5f83c-107">_lppSession_</span></span>
+ <span data-ttu-id="d5b0e-107">_lppSession_</span><span class="sxs-lookup"><span data-stu-id="d5b0e-107">_lppSession_</span></span>
   
-> <span data-ttu-id="5f83c-108">読み上げ現在の MAPI セッションへのポインター。</span><span class="sxs-lookup"><span data-stu-id="5f83c-108">[out] A pointer to the current MAPI session.</span></span>
+> <span data-ttu-id="d5b0e-108">[out]現在の MAPI セッションへのポインター。</span><span class="sxs-lookup"><span data-stu-id="d5b0e-108">[out] A pointer to the current MAPI session.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="5f83c-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="5f83c-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d5b0e-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="d5b0e-109">See also</span></span>
 
 
 
-[<span data-ttu-id="5f83c-110">IMAPIGetSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="5f83c-110">IMAPIGetSession : IUnknown</span></span>](imapigetsessioniunknown.md)
+[<span data-ttu-id="d5b0e-110">IMAPIGetSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="d5b0e-110">IMAPIGetSession : IUnknown</span></span>](imapigetsessioniunknown.md)
 
 
-[<span data-ttu-id="5f83c-111">サポートオブジェクトの概要</span><span class="sxs-lookup"><span data-stu-id="5f83c-111">Support Object Overview</span></span>](support-object-overview.md)
+[<span data-ttu-id="d5b0e-111">サポート オブジェクトの概要</span><span class="sxs-lookup"><span data-stu-id="d5b0e-111">Support Object Overview</span></span>](support-object-overview.md)
 
