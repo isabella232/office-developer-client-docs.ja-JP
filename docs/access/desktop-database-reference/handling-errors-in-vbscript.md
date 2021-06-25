@@ -7,19 +7,19 @@ ms:contentKeyID: 48548222
 ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
-ms.openlocfilehash: 3f3da0d9e68024d7da9a0bcfca0fef30c7f646ed
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d1870f80c15d958fc1b28cf9ef165df0a834971c
+ms.sourcegitcommit: 35b723efe168ae4bad461bd16b26f9a2412656f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292049"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53139087"
 ---
 # <a name="handling-errors-in-vbscript"></a>VBScript でのエラー処理
 
 
 **適用先:** Access 2013、Office 2013
 
-Visual Basic で使用する方法と VBScript で使用する方法には、若干の違いがあります。 主な違いは、VBScript では、ラベルで実行を継続することによるエラー処理の概念がサポートされていないことです。 つまり、VBScript では On Error GoTo を使用できません。 代わりに、VBScript でを使用します。 代わりに、次の例に示すように、On Error Resume Next を使用して、 **Errors**コレクションの**err.number**および**Count**プロパティの両方を確認します。
+Visual Basic で使用する方法と VBScript で使用する方法には、若干の違いがあります。 主な違いは、VBScript では、ラベルで実行を継続することによるエラー処理の概念がサポートされていないことです。 つまり、VBScript で On Error GoTo を使用することはできません。 代わりに、VBScript で On Error Resume Next を使用し、次の例に示すように **、Errors** コレクションの **Err.Number** プロパティと **Count** プロパティの両方をチェックします。
 
 ```vb 
  
