@@ -9,12 +9,12 @@ keywords:
 ms.assetid: b4c38442-42e6-4fd2-a1b0-97cfa3300379
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 localization_priority: Priority
-ms.openlocfilehash: 07deec5ad104c59074567725d6abf9b66711e351
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c4b6dbad7a31b7155d1bec3a5c867b6c74d0ff42
+ms.sourcegitcommit: 35b723efe168ae4bad461bd16b26f9a2412656f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304117"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53139094"
 ---
 # <a name="excel-recalculation"></a>Excel の再計算
 
@@ -97,10 +97,10 @@ Excel では、揮発性関数の概念をサポートしています。これ�
     
 VBA と C API は、揮発性として処理する必要のあるユーザー定義間数 (UDF) について Excel に通知する手段をサポートしています。VBA を使用する場合は、次のようにすると UDF が揮発性として宣されます。
   
-```vb
+```vba
 Function MyUDF(MakeMeVolatile As Boolean) As Double
    ' Good practice to call this on the first line.
-   Application.Volatile (MakeMeVolatile)
+   Application.Volatile MakeMeVolatile
    MyUDF = Now
 End Function
 
@@ -124,7 +124,7 @@ Excel には 3 つの計算モードがあります。
     
 計算が自動に設定されていると、データ入力の後に再計算が毎回実行されます。また、前のセクションで例を示したように、特定のイベントの後にも再計算が発生します。非常に巨大なブックの場合、再計算に長い時間がかかるようになり、この事態が発生した場合はユーザーによる制限が必要になります。つまり、再計算は必要なときにのみ行うということです。これを可能にするために、Excel では手動モードをサポートしています。ユーザーは、Excel のメニュー システムからモードを選択することも、VBA、COM、または C API を使用することで、プログラムによってモードを選択することもできます。
   
-データ テーブルとは、ワークシート内の特殊な構造のことです。最初に、ユーザーは結果の計算をワークシートにセット アップします。これは、1 つまたは 2 つのキーになる変更可能な入力と、その他のパラメーターによって決まります。次に、ユーザーは一方または両方のキーになる入力の値のセットに対する結果のテーブルを作成します。テーブルの作成には、**データ テーブル ウィザード**を使用します。テーブルのセット アップ後、Excel は入力を 1 つずつ計算に組み込んで、結果の値をテーブルにコピーします。1 つまたは 2 つの入力が使用できるため、データ テーブルは 1 次元または 2 次元になります。 
+データ テーブルとは、ワークシート内の特殊な構造のことです。最初に、ユーザーは結果の計算をワークシートにセット アップします。これは、1 つまたは 2 つのキーになる変更可能な入力と、その他のパラメーターによって決まります。次に、ユーザーは一方または両方のキーになる入力の値のセットに対する結果のテーブルを作成します。テーブルの作成には、**データ テーブル ウィザード** を使用します。テーブルのセット アップ後、Excel は入力を 1 つずつ計算に組み込んで、結果の値をテーブルにコピーします。1 つまたは 2 つの入力が使用できるため、データ テーブルは 1 次元または 2 次元になります。 
   
 データ テーブルの再計算の処理方法は若干異なります。
   
