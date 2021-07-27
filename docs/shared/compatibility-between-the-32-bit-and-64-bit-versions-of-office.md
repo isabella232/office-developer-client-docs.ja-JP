@@ -1,16 +1,16 @@
 ---
 title: Office の 32 ビット バージョンと 64 ビット バージョン間の互換性
-ms.date: 12/03/2019
+ms.date: 07/04/2021
 ms.audience: ITPro
 ms.assetid: ff49dc9e-daf8-43cf-8802-51c2537ed561
 description: 32 ビット バージョンの Office と 64 ビット バージョンの Office の互換性についてご確認ください。
 localization_priority: Priority
-ms.openlocfilehash: a0accc9c4b0198ab18b999353762a016d52f6b39
-ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
+ms.openlocfilehash: e1beaf4217091c1218653df33bd7d99883fb0862
+ms.sourcegitcommit: 8dcb4dc4aa066e3d79bcccd9a9aa6cd3f192b3e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819254"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53535893"
 ---
 # <a name="compatibility-between-the-32-bit-and-64-bit-versions-of-office"></a>Office の 32 ビット バージョンと 64 ビット バージョン間の互換性
 
@@ -25,7 +25,7 @@ Visual Basic for Applications 7.0 (VBA 7) は 64 ビット バージョンの Of
 > [!NOTE]
 > 既定で、64 ビット バージョンの Office をインストールすると、32 ビット バージョンが 64 ビット システムと共にインストールされます。Microsoft Office 64 ビット バージョンのインストール オプションを明示的に選択する必要があります。 
   
-VBA 7 では、既存の Windows API ステートメント (**Declare** ステートメント) を更新して、64 ビット バージョンで動作するようにしなければなりません。 さらに、これらのステートメントで使用されるアドレス ポインターとディスプレイ ウィンドウ ハンドルをユーザー定義型で更新する必要があります。 この点については、32 ビット バージョンと 64 ビット バージョン間の互換性に関する問題と推奨される解決案と共に、この記事で詳しく説明します。 
+VBA 7 では、既存の Windows API ステートメント (**Declare** ステートメント) を更新して、64 ビット バージョンで動作するようにしなければなりません。さらに、これらのステートメントで使われているユーザー定義型のアドレス ポインターと表示ウィンドウ ハンドルを更新することも必要です。この点については、32 ビット バージョンと 64 ビット バージョン間の互換性に関する問題と推奨される解決案と共に、この記事で詳しく説明します。 
   
 ## <a name="comparing-32-bit-and-64-bit-systems"></a>32 ビット システムと 64 ビット システムの比較
 <a name="odc_office_Compatibility32bit64bit_Comparing32BitSystemsto64BitSystems"> </a>
@@ -67,7 +67,7 @@ Office のネイティブの 64 ビット プロセスでは 32 ビットのバ�
 VBA ライブラリとタイプ ライブラリを組み合わせれば、Office アプリケーションの作成にさまざまな機能を使えるようになります。ただし、コンピューターのオペレーティング システムや他のコンポーネントとの直接のやりとりが必要になることもあります。たとえば、メモリやプロセスの管理、ウィンドウやコントロールなどの UI 要素の操作、Windows レジストリの変更を行うときです。このような状況では、DLL ファイルに組み込まれた外部関数を使うのが最善策です。VBA でこれを行うには、 **Declare** を使って API 呼び出しを行います。 
   
 > [!NOTE]
-> Microsoft は、1,500 個の Declare ステートメントが含まれている Win32API.txt ファイルと、コードに含める **Declare** ステートメントをコピーするツールを提供しています。 ただし、これらのステートメントは 32 ビット システム用であるため、この記事で後ほど説明する情報に従って 64 ビットに変換する必要があります。 既存の **Declare** ステートメントは、**PtrSafe** 属性を使って 64 ビットに対して安全なステートメントとしてマークするまでは、64 ビットの VBA にコンパイルされません。 この種類の変換の例については、Excel MVP Jan Karel Pieterse の Web サイト ([https://www.jkp-ads.com/articles/apideclarations.asp](https://www.jkp-ads.com/articles/apideclarations.asp)) をご覧ください。 [Office Code Compatibility Inspector ユーザーズ ガイド](https://docs.microsoft.com/previous-versions/office/office-2010/ee833946(v=office.14))は、**PtrSafe** 属性と適切な戻り値の型 (必要に応じて) の API **Declare** ステートメントの構文を検査するのに役立ちます。 
+> Microsoft は、1,500 個の Declare ステートメントが含まれている Win32API.txt ファイルと、コードに含める **Declare** ステートメントをコピーするツールを提供しています。ただし、これらのステートメントは 32 ビット システム用であるため、この記事で後ほど説明する情報に従って 64 ビットに変換する必要があります。既存の **Declare** ステートメントは、**PtrSafe** 属性を使って 64 ビットに対して安全であるとマークされるまでは、64 ビット VBA でコンパイルしません。この種類の変換の例については、Excel MVP Jan Karel Pieterse の Web サイト [https://www.jkp-ads.com/articles/apideclarations.asp](https://www.jkp-ads.com/articles/apideclarations.asp) をご覧ください。[Office Code Compatibility Inspector ユーザー ガイド](https://docs.microsoft.com/previous-versions/office/office-2010/ee833946(v=office.14))は、必要な場合や、適切な戻り値の型に **PtrSafe** 属性向けの API **Declare** ステートメントの構文を調査するのに役立つツールです。 
   
 **Declare** ステートメントの形式は、サブルーチン (戻り値がない) と関数 (戻り値がある) のどちらを呼び出すのかに応じて、次のどちらかになります。 
   
@@ -79,7 +79,7 @@ Public/Private Declare Function FunctionName Lib "Libname" alias "aliasname" (ar
 
 **SubName** 関数または **FunctionName** 関数は、プロシージャを VBA コードから呼び出すときに使用する名前を表しており、DLL ファイル内のプロシージャの実際の名前に置き換えます。プロシージャの名前として **AliasName** 引数を指定することもできます。 **Lib** キーワードの後ろには、呼び出すプロシージャが含まれている DLL ファイルの名前を指定します。引数リストには、プロシージャに渡す必要のあるパラメーターとデータ型を指定します。 
   
-次の **Declare** ステートメントは、Windows レジストリ内の*サブキー*を開き、その値を置き換えます。 
+次の **Declare** ステートメントは、Windows レジストリ内の *サブキー* を開き、その値を置き換えます。 
   
 ```vb
 Declare Function RegOpenKeyA Lib "advapi32.dll" (ByVal Key As Long, ByVal SubKey As String, NewKey As Long) As Long
@@ -150,7 +150,7 @@ Declare PtrSafe Function RegOpenKeyA Lib "advapi32.dll" (ByVal Key As LongPtr, B
   
 ```vb
 Declare Function SHBrowseForFolder Lib "shell32.dll" _
-  Alias "SHBrowseForFolderA" (lpBrowseInfo As BROWSEINFO) As Long
+  Alias "SHBrowseForFolderA" (lpBrowseInfo As BROWSEINFO) As LongPtr
   
 Public Type BROWSEINFO
   hOwner As Long
@@ -219,7 +219,7 @@ End Sub
   
 #### <a name="when-should-i-convert-long-parameters-to-longptr"></a>どのような場合に Long パラメーターを LongPtr に変換する必要がありますか。
   
-呼び出す関数については、Microsoft Developers Network の Windows API ドキュメントを確認する必要があります。ハンドルとポインターは **LongPtr** に変換する必要があります。たとえば、 [RegOpenKeyA](https://docs.microsoft.com/windows/win32/api/winreg/nf-winreg-regopenkeyexa) のドキュメントは、次のシグネチャを提供します。 
+呼び出す関数については、Microsoft Developers Network の Windows API ドキュメントを確認する必要があります。ハンドルとポインターは **LongPtr** に変換する必要があります。たとえば、 [RegOpenKeyA](/windows/win32/api/winreg/nf-winreg-regopenkeyexa.md) のドキュメントは、次のシグネチャを提供します。 
   
 ```cs
 LONG WINAPI RegOpenKeyEx(
@@ -241,7 +241,7 @@ LONG WINAPI RegOpenKeyEx(
 |samDesired [in]  <br/> |キーに対する必要なアクセス権を指定するマスク。  <br/> |
 |phkResult [out]  <br/> |キーを開くハンドルを受け取る変数への *ポインター*  。  <br/> |
    
-[Win32API_PtrSafe.txt](https://docs.microsoft.com/office/troubleshoot/office/win32api_ptrsafe-with-64-bit-support) では、**Declare** ステートメントが次のように定義されています。 
+[Win32API_PtrSafe.txt](/office/troubleshoot/office/win32api_ptrsafe-with-64-bit-support.md) では、**Declare** ステートメントが次のように定義されています。 
   
 ```vb
 Declare PtrSafe Function RegOpenKeyEx Lib "advapi32.dll" Alias "RegOpenKeyExA" (ByVal hKey As LongPtr , ByVal lpSubKey As String, ByVal ulOptions As Long, ByVal samDesired As Long, phkResult As LongPtr ) As Long
