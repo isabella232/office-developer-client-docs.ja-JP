@@ -13,7 +13,7 @@ f1_categories:
 localization_priority: Priority
 ms.openlocfilehash: 4fee5e9e8878274f2c20dd83a3dbedaf2903ca62
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32291334"
@@ -22,7 +22,7 @@ ms.locfileid: "32291334"
 
 **適用先**: Access 2013、Office 2013
 
-1 つのテーブルに 1 つのレコードまたは複数のレコードを追加します。 追加クエリとも呼ばれます。
+テーブルに 1 つまたは複数のレコードを追加します。追加クエリとも呼ばれます。
 
 ## <a name="syntax"></a>構文
 
@@ -102,7 +102,7 @@ IN 句を使用し、別のデータベースのテーブルにレコードを�
 
 別のテーブルから既存のレコードを追加する代わりに、VALUES 句を使用して 1 つの新しいレコードに各フィールドの値を指定できます。フィールド一覧を省略した場合、VALUES 句にはテーブル内のすべてのフィールドの値を含める必要があります。そうしないと、INSERT 操作は失敗します。作成するそれぞれの追加レコードには、VALUES 句がある追加の INSERT INTO ステートメントを使用します。
 
-[UtterAccess](https://www.utteraccess.com) コミュニティで**提供されるリンク**。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
+[UtterAccess](https://www.utteraccess.com) コミュニティで **提供されるリンク**。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
 
 - [INSERT/UPDATE ステートメントのための連続番号を生成](https://www.utteraccess.com/forum/generating-sequential-num-t446039.html)
 

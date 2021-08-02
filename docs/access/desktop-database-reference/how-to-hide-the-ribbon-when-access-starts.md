@@ -10,7 +10,7 @@ mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 384a575ae5e15b75ba7b0b891529c695cc3de599
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34537830"

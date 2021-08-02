@@ -9,7 +9,7 @@ mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 499513d706b254e72433d37d4eb5452ccbbaa257
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32294450"
@@ -42,12 +42,12 @@ ms.locfileid: "32294450"
 </tr>
 <tr class="even">
 <td><p>dbBigInt</p></td>
-<td><p>16</p></td>
+<td><p>16 </p></td>
 <td><p>多倍長整数型データ</p></td>
 </tr>
 <tr class="odd">
 <td><p>dbBinary</p></td>
-<td><p>9</p></td>
+<td><p>9 </p></td>
 <td><p>バイナリ型データ</p></td>
 </tr>
 <tr class="even">
@@ -62,7 +62,7 @@ ms.locfileid: "32294450"
 </tr>
 <tr class="even">
 <td><p>dbChar</p></td>
-<td><p>18</p></td>
+<td><p>18 </p></td>
 <td><p>テキスト型データ (固定幅)</p></td>
 </tr>
 <tr class="odd">
@@ -107,12 +107,12 @@ ms.locfileid: "32294450"
 </tr>
 <tr class="odd">
 <td><p>dbCurrency</p></td>
-<td><p>5</p></td>
+<td><p>5 </p></td>
 <td><p>通貨型データ</p></td>
 </tr>
 <tr class="even">
 <td><p>dbDate</p></td>
-<td><p>8</p></td>
+<td><p>8 </p></td>
 <td><p>日付型データ</p></td>
 </tr>
 <tr class="odd">
@@ -123,12 +123,12 @@ ms.locfileid: "32294450"
 </tr>
 <tr class="even">
 <td><p>dbDouble</p></td>
-<td><p>7</p></td>
+<td><p>7 </p></td>
 <td><p>倍精度浮動小数点型データ</p></td>
 </tr>
 <tr class="odd">
 <td><p>dbFloat</p></td>
-<td><p>21</p></td>
+<td><p> 21</p></td>
 <td><p>浮動小数点型データ (ODBCDirect のみ)</p>
 
 <br/>
@@ -148,7 +148,7 @@ ms.locfileid: "32294450"
 </tr>
 <tr class="even">
 <td><p>dbLong</p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>長整数型データ</p></td>
 </tr>
 <tr class="odd">
@@ -158,7 +158,7 @@ ms.locfileid: "32294450"
 </tr>
 <tr class="even">
 <td><p>dbMemo</p></td>
-<td><p>12</p></td>
+<td><p>12 </p></td>
 <td><p>メモ型データ (拡張テキスト)</p></td>
 </tr>
 <tr class="odd">
@@ -173,12 +173,12 @@ ms.locfileid: "32294450"
 </tr>
 <tr class="even">
 <td><p>dbSingle</p></td>
-<td><p>6</p></td>
+<td><p>6 </p></td>
 <td><p>単精度浮動小数点型データ</p></td>
 </tr>
 <tr class="odd">
 <td><p>dbText</p></td>
-<td><p>10</p></td>
+<td><p>10 </p></td>
 <td><p>テキスト型データ (可変幅)</p></td>
 </tr>
 <tr class="even">
@@ -203,7 +203,7 @@ ms.locfileid: "32294450"
 </tr>
 <tr class="even">
 <td><p>dbVarBinary</p></td>
-<td><p>17</p></td>
+<td><p>17 </p></td>
 <td><p>可変長バイナリ型データ (ODBCDirect のみ)</p>
 
 <br/>

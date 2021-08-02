@@ -15,7 +15,7 @@ f1_categories:
 localization_priority: Priority
 ms.openlocfilehash: 7beda04d1f18014101f00078de1d125c1fd67a69
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32314568"

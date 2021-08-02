@@ -13,7 +13,7 @@ f1_categories:
 localization_priority: Priority
 ms.openlocfilehash: e54f8c51787e51785bdaacaecd28a8d24e2cb5b1
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32300428"
@@ -33,8 +33,7 @@ ms.locfileid: "32300428"
 ## <a name="remarks"></a>注釈
 
 
-            **
-            [Recordset](recordset-object-dao.md)** オブジェクトを開くかまたは作成すると、そのオブジェクトの **NoMatch** プロパティは **False** に設定されます。
+            **[Recordset](recordset-object-dao.md)** オブジェクトを開くかまたは作成すると、そのオブジェクトの **NoMatch** プロパティは **False** に設定されます。
 
 レコードを見つける場合、テーブル タイプの **Recordset** オブジェクトに対しては **Seek** メソッドを使用し、ダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトに対しては **Find** メソッドのいずれか 1 つを使用します。**NoMatch** プロパティの設定値を調べ、レコードが見つかったかどうかを確認します。
 
