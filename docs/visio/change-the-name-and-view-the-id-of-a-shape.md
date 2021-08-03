@@ -1,5 +1,5 @@
 ---
-title: 図形の名前を変更して ID を表示する
+title: 図形の名前を変更し ID を表示する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,7 +11,7 @@ description: ''
 localization_priority: Priority
 ms.openlocfilehash: f98bf7b4e1736862d908a2f589379e1349164ffa
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32341931"

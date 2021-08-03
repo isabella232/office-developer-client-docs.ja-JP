@@ -7,7 +7,7 @@ description: 32 ビット バージョンの Office と 64 ビット バージ�
 localization_priority: Priority
 ms.openlocfilehash: e1beaf4217091c1218653df33bd7d99883fb0862
 ms.sourcegitcommit: 8dcb4dc4aa066e3d79bcccd9a9aa6cd3f192b3e1
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/23/2021
 ms.locfileid: "53535893"

@@ -8,7 +8,7 @@ description: ソリューションの開発と Word のカスタマイズを行�
 localization_priority: Priority
 ms.openlocfilehash: acd9fab9c09c88100ec473b0d456f90652643457
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32360523"
@@ -34,7 +34,8 @@ ms.locfileid: "32360523"
   
 ### <a name="code-samples"></a>コード サンプル
   
-- [Office デベロッパー センターの Word コード サンプル](https://developer.microsoft.com/word/gallery/?filterBy=Word,Samples)
+- 
+  [Office デベロッパー センターの Word コード サンプル](https://developer.microsoft.com/word/gallery/?filterBy=Word,Samples)
   
 ### <a name="other-resources"></a>その他のリソース
   

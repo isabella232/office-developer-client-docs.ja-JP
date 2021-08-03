@@ -8,7 +8,7 @@ description: ソリューションの開発と Excel のカスタマイズに関
 localization_priority: Priority
 ms.openlocfilehash: af840c94620f445689a5b7dcdd20341485a4a6d7
 ms.sourcegitcommit: e2cff03cb13d6c500942897b234db00476a72f18
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/16/2019
 ms.locfileid: "34100873"

@@ -8,7 +8,7 @@ description: Office 製品で起きる可能性のある互換性の問題に関
 localization_priority: Priority
 ms.openlocfilehash: 32e0b800565e826a42a5199cfb4e3016d1f1c6f1
 ms.sourcegitcommit: 007aa2ceb4f569201c3f4372de5c83b6c61f8875
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/02/2020
 ms.locfileid: "43102962"

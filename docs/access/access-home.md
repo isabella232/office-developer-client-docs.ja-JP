@@ -7,7 +7,7 @@ ms.assetid: 9858d097-d1d1-48df-8344-e7b46afbe0d1
 localization_priority: Priority
 ms.openlocfilehash: 8a18196371fefc5afe76ca9eee860ebdcc80cfdc
 ms.sourcegitcommit: fb521c23df785c9c3aefa5062272b2630a32e587
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/20/2021
 ms.locfileid: "52589167"

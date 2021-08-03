@@ -11,7 +11,7 @@ description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 localization_priority: Priority
 ms.openlocfilehash: f0b6f3d7310cac6d141fc74652a3333f70bda8e9
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32310506"
@@ -85,7 +85,7 @@ Excel では、次のものだけがスレッド セーフと見なされます�
   
 - **PHONETIC**
     
-- "format"または "address"引数が使用されている場合は**CELL** 
+- "format"または "address"引数が使用されている場合は **CELL** 
     
 - **INDIRECT**
     
@@ -138,9 +138,9 @@ Excel では、次のものだけがスレッド セーフと見なされます�
 - 計算されていないセルの参照の値を取得する [xlCoerce](xlcoerce.md) 関数の呼び出し。 
     
 > [!NOTE]
-> XLLワークシート関数は、スレッドセーフとして登録されているかどうかにかかわらず、**xlcSave**などのC APIコマンドを呼び出すことはできません。 
+> XLLワークシート関数は、スレッドセーフとして登録されているかどうかにかかわらず、**xlcSave** などのC APIコマンドを呼び出すことはできません。 
   
-スレッドセーフとして宣言されたXLL関数がXLM情報関数を呼び出したり、未計算のセルを参照したりすることはできないため、Excelでは、マクロシートに相当するものとして登録されているXLL関数をスレッドセーフとして登録することはできません。したがって、**xlCoerce**を使用して未計算のセル参照の値を取得しようとすると、**xlretUncalced**エラーとなります。 XLM情報関数を呼び出すと、**xlretFailed**エラーとなります。上記のその他の地点では、Excel C APIで導入されたエラーコード**xlretNotThreadSafe**エラーとなります。 
+スレッドセーフとして宣言されたXLL関数がXLM情報関数を呼び出したり、未計算のセルを参照したりすることはできないため、Excelでは、マクロシートに相当するものとして登録されているXLL関数をスレッドセーフとして登録することはできません。したがって、**xlCoerce** を使用して未計算のセル参照の値を取得しようとすると、**xlretUncalced** エラーとなります。 XLM情報関数を呼び出すと、**xlretFailed** エラーとなります。上記のその他の地点では、Excel C APIで導入されたエラーコード **xlretNotThreadSafe** エラーとなります。 
   
 C API 専用のコールバック関数は、すべてスレッド セーフです。
   
@@ -164,7 +164,7 @@ C API 専用のコールバック関数は、すべてスレッド セーフで�
     
 - **xlDefineBinaryName**
     
-1つの例外は**xlSet**関数です。これは、いずれにせよ、コマンドと同等であるため、どのワークシート関数からも呼び出すことはできません。 
+1つの例外は **xlSet** 関数です。これは、いずれにせよ、コマンドと同等であるため、どのワークシート関数からも呼び出すことはできません。 
   
 XLLワークシート関数はスレッドセーフとしてExcelに登録できます。これはExcelに、その関数が安全かつ同時に複数のスレッドで呼び出されることができると伝達します。ただし、関数の動作を必ずご確認ください。スレッドセーフとして登録された関数が安全に動作しない場合、Excelを不安定にする可能性があります。
   
