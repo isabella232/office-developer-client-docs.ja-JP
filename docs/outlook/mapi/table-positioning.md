@@ -3,17 +3,17 @@ title: テーブルの配置
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: a0cbbc93-8074-4e86-b660-ee7bab910587
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 656f696c58e9b62e7e601d7f531870b8c385e862
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fe261b96e18d320d3caafe6aa0afcd85abb721d9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418590"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549861"
 ---
 # <a name="table-positioning"></a>テーブルの配置
 

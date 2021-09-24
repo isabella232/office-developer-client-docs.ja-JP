@@ -3,17 +3,17 @@ title: MAPI を使用したメッセージの送信
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 3edfbfff-ea15-4926-bf0f-47137251d921
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: bf6324b89f06ef7f0553d3de1eaa24ae31a329ba
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c54271a24f149ef459b5646022b23823e4fbc1c4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438723"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550058"
 ---
 # <a name="sending-messages-by-using-mapi"></a>MAPI を使用したメッセージの送信
 

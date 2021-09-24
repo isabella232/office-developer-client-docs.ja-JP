@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PreprocessMessage
 api_type:
 - COM
 ms.assetid: dda50325-74b3-445e-986e-115f6536561f
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: a3982520cb1c745874a938962ece075a294b6257
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 00d2dce81ecb8db1cd69406136b306acc731cc6c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437246"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550205"
 ---
 # <a name="preprocessmessage"></a>PreprocessMessage
 

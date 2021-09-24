@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 63c47e94-f603-aef9-afed-e3819bd79408
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 64348347ea930e6a6a80b9a9075299d2e3109eda
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 265c0a39dec468b042bd569dc8ccdc22bce538d8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417631"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549869"
 ---
 # <a name="syncstate"></a>SYNCSTATE
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb612380(v=office.15)
 ms:contentKeyID: 55119895
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4346f3bf1b7bba1f26a34e1562997b4d043c8d49
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e543bf22d6403169b25e29a548cae8d30646686a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359746"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549722"
 ---
 # <a name="add-or-remove-a-store"></a>ストアを追加または削除する
 
@@ -22,7 +22,7 @@ ms.locfileid: "32359746"
 
 次のコード サンプルでは、指定されたプロファイルのストアを追加および削除する方法を示します。それぞれ、[NameSpace](https://msdn.microsoft.com/library/bb623442\(v=office.15\)) オブジェクトの [AddStoreEx](https://msdn.microsoft.com/library/bb610524\(v=office.15\)) メソッドおよび [RemoveStore](https://msdn.microsoft.com/library/bb645857\(v=office.15\)) メソッドを呼び出します。
 
-Outlook では、PST ストアの追加や削除はプログラムによってのみ行うことができます。 次のコード サンプルでは、Unicode ストアを追加し、.pst ファイルをユーザーの .pst ファイルの既定の場所である Documents and Settings\\\<UserName\>\\Local Settings\\Application Data\\Microsoft\\Outlook に格納します。 Local Settings フォルダーの下の Application Data フォルダーへのパスは、Environment.SpecialFolder.LocalApplicationData を使用して取得します。 ストアを追加した後、コード サンプルではストアを削除します。 **RemoveStore** メソッドで [Store](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) オブジェクトを削除するには [Folder](https://msdn.microsoft.com/library/bb609139\(v=office.15\)) オブジェクトが必要なので、 [Stores](https://msdn.microsoft.com/library/bb622944\(v=office.15\)) コレクションを列挙し、 **Store** オブジェクトの [FilePath](https://msdn.microsoft.com/library/bb646113\(v=office.15\)) プロパティに基づいて、追加したばかりの **Store** オブジェクトを見つけます。
+Outlook では、PST ストアの追加または削除は、プログラムによってのみ行うことができます。 次のコード サンプルでは、Unicode ストアを追加し、ユーザーの .pst ファイルの既定の場所に .pst ファイルを格納します。ドキュメントと 設定 ローカル 設定 アプリケーション データ \\ \<UserName\> \\ \\ Microsoft \\ \\ Outlook。 Local Settings フォルダーの下の Application Data フォルダーへのパスは、Environment.SpecialFolder.LocalApplicationData を使用して取得します。 ストアを追加した後、コード サンプルではストアを削除します。 **RemoveStore** メソッドで [Store](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) オブジェクトを削除するには [Folder](https://msdn.microsoft.com/library/bb609139\(v=office.15\)) オブジェクトが必要なので、 [Stores](https://msdn.microsoft.com/library/bb622944\(v=office.15\)) コレクションを列挙し、 **Store** オブジェクトの [FilePath](https://msdn.microsoft.com/library/bb646113\(v=office.15\)) プロパティに基づいて、追加したばかりの **Store** オブジェクトを見つけます。
 
 **RemoveStore** は、現在のプロファイルからのストアの削除のみを行います。ファイル システムから .pst ファイルを削除することはありません。
 

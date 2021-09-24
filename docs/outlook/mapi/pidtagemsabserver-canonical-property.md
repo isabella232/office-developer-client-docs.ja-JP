@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagEmsAbServer
 api_type:
 - HeaderDef
 ms.assetid: de942619-2507-8fe0-bc81-f9da9ef7266f
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: fba49b052a51bd498f61fc115f630d08fc6c8926
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4529b06949ef4f32a3f337a289d285949541f9ee
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335799"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550646"
 ---
 # <a name="pidtagemsabserver-canonical-property"></a>PidTagEmsAbServer 標準プロパティ
 

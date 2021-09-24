@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d897d2d1-25ba-48d7-b87e-d3c533d88c15
 description: Microsoft Visioに、Visio ファイル内のドキュメント パーツ間のリレーションシップを再計算するVisioします。
-ms.openlocfilehash: e757331984586dc910ada7d14e6385761f15929f
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: c6223107182862df0772316dab2218dbf6180fae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542906"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549456"
 ---
 # <a name="trigger-element-visio-xml"></a>Trigger 要素 (Visio XML)
 
@@ -70,24 +70,24 @@ Microsoft Visioに、Visio ファイル内のドキュメント パーツ間の�
 |RecalcBkgPageName  <br/> |[PageSheet (Page_Type complexType)](pagesheet-element-page_type-complextypevisio-xml.md) <br/> |**BKGPAGENAME** 関数を使用したクロスパーツ参照が存在するときにページに表示されるトリガー  <br/> |
 |RecalcColor  <br/> |[PageSheet (Page_Type complexType)](pagesheet-element-page_type-complextypevisio-xml.md) <br/> |ページまたはページに含まれる図形が RGB 関数を使用するたびにページに表示される **トリガー** 。  <br/> |
 |RecalcCreateDT  <br/> |[DocumentSheet](documentsheet-element-visiodocument_type-complextypevisio-xml.md) <br/> |**DOCCREATION** 関数を使用したクロスパーツ参照が存在する場合にドキュメントに表示されるトリガー。  <br/> |
-|RecalcData1  <br/> |[図形](shape-element-shapes_type-complextypevisio-xml.md) <br/> |DATA1 関数を使用したクロスパーツ参照が存在するときに図形に **表示される** トリガー。  <br/> |
-|RecalcData2  <br/> |[図形](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**DATA2** 関数を使用したクロスパーツ参照が存在するときに図形に表示されるトリガー。  <br/> |
-|RecalcData3  <br/> |[図形](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**DATA3** 関数を使用したクロスパーツ参照が存在するときに図形に表示されるトリガー。  <br/> |
+|RecalcData1  <br/> |[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |DATA1 関数を使用したクロスパーツ参照が存在するときに図形に **表示される** トリガー。  <br/> |
+|RecalcData2  <br/> |[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**DATA2** 関数を使用したクロスパーツ参照が存在するときに図形に表示されるトリガー。  <br/> |
+|RecalcData3  <br/> |[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**DATA3** 関数を使用したクロスパーツ参照が存在するときに図形に表示されるトリガー。  <br/> |
 |RecalcEditDT  <br/> |[DocumentSheet](documentsheet-element-visiodocument_type-complextypevisio-xml.md) <br/> |DOCLASTEDIT 関数を使用したクロスパーツ参照が存在する場合にドキュメント **に表示される** トリガー。  <br/> |
-|RecalcID  <br/> |[図形](shape-element-shapes_type-complextypevisio-xml.md) <br/> |ID 関数を使用したクロスパーツ参照が存在するときに図形に表示される **トリガー** 。  <br/> |
-|RecalcMasterName  <br/> |[図形](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**MASTERNAME** 関数を使用したクロスパーツ参照が存在するときに図形に表示されるトリガー。  <br/> |
-|RecalcName  <br/> |[図形](shape-element-shapes_type-complextypevisio-xml.md) <br/> |NAME 関数を使用したクロスパーツ参照が存在するときに図形に表示 **されるトリガー** 。  <br/> |
+|RecalcID  <br/> |[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |ID 関数を使用したクロスパーツ参照が存在するときに図形に表示される **トリガー** 。  <br/> |
+|RecalcMasterName  <br/> |[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**MASTERNAME** 関数を使用したクロスパーツ参照が存在するときに図形に表示されるトリガー。  <br/> |
+|RecalcName  <br/> |[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |NAME 関数を使用したクロスパーツ参照が存在するときに図形に表示 **されるトリガー** 。  <br/> |
 |RecalcNowAndRand  <br/> |[PageSheet (Page_Type complexType)](pagesheet-element-page_type-complextypevisio-xml.md) <br/> |ページまたはページに含まれる図形に **NOW** 関数または **RAND** 関数が含まれている場合に、ページに表示されるトリガー。  <br/> |
 |RecalcPageCount  <br/> |[DocumentSheet](documentsheet-element-visiodocument_type-complextypevisio-xml.md) <br/> |**PAGECOUNT** 関数を使用したクロスパーツ参照が存在するときにドキュメントに表示されるトリガー。  <br/> |
-|RecalcPageName  <br/> |[PageSheet (Page_Type complexType)](pagesheet-element-page_type-complextypevisio-xml.md) <br/> [図形](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**PAGENAME** 関数を使用したクロスパーツ参照が存在するときに図形に表示されるトリガー。  <br/> |
+|RecalcPageName  <br/> |[PageSheet (Page_Type complexType)](pagesheet-element-page_type-complextypevisio-xml.md) <br/> [Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**PAGENAME** 関数を使用したクロスパーツ参照が存在するときに図形に表示されるトリガー。  <br/> |
 |RecalcPageNum  <br/> |[PageSheet (Page_Type complexType)](pagesheet-element-page_type-complextypevisio-xml.md) <br/> |PAGENUMBER 関数を使用したクロスパーツ参照が存在する場合にページに表示 **されるトリガー** 。  <br/> |
 |RecalcPath  <br/> |[DocumentSheet](documentsheet-element-visiodocument_type-complextypevisio-xml.md) <br/> |**POINTALONGPATH、PATHLENGTH、または** **PATHSEGMENT** 関数を使用するクロスパーツ参照が存在するときに図形に表示されるトリガー。  <br/> |
 |RecalcPrintDT  <br/> |[DocumentSheet](documentsheet-element-visiodocument_type-complextypevisio-xml.md) <br/> |**DOCLASTPRINT** 関数を使用したクロスパーツ参照が存在する場合にドキュメントに表示されるトリガー。  <br/> |
 |RecalcSaveDT  <br/> |[DocumentSheet](documentsheet-element-visiodocument_type-complextypevisio-xml.md) <br/> |**DOCLASTSAVE** 関数を使用したクロスパーツ参照が存在するときにドキュメントに表示されるトリガー。  <br/> |
 |RecalcSummary  <br/> |[DocumentSheet](documentsheet-element-visiodocument_type-complextypevisio-xml.md) <br/> |CATEGORY、CREATOR、DESCRIPTION、KEYWORDS、SUBJECT、または TITLE 関数を使用するクロスパーツ参照が存在する場合にドキュメントに表示される **トリガー** 。   <br/> |
-|RecalcType  <br/> |[図形](shape-element-shapes_type-complextypevisio-xml.md) <br/> |TYPE 関数を使用したクロスパーツ参照が存在するときに図形に表示 **されるトリガー** 。  <br/> |
-|RelChanged  <br/> |[図形](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**CONTAINERMEMBERCOUNT** 関数を使用したクロスパーツ参照が存在するときに図形に表示されるトリガー。  <br/> |
+|RecalcType  <br/> |[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |TYPE 関数を使用したクロスパーツ参照が存在するときに図形に表示 **されるトリガー** 。  <br/> |
+|RelChanged  <br/> |[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**CONTAINERMEMBERCOUNT** 関数を使用したクロスパーツ参照が存在するときに図形に表示されるトリガー。  <br/> |
 |ZOrderChanged  <br/> |[PageSheet (Page_Type complexType)](pagesheet-element-page_type-complextypevisio-xml.md) <br/> |**CONTAINERSHEETREF** 関数を使用するクロスパーツ参照が存在する場合にページに表示されるトリガー。  <br/> |
-|Path  <br/> |[図形](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**POINTALONGPATH、PATHLENGTH、または** **PATHSEGMENT** 関数を使用するクロスパーツ参照が存在するときにページに表示されるトリガー。  <br/> |
+|Path  <br/> |[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**POINTALONGPATH、PATHLENGTH、または** **PATHSEGMENT** 関数を使用するクロスパーツ参照が存在するときにページに表示されるトリガー。  <br/> |
    
 

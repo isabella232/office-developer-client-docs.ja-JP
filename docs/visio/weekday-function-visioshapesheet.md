@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251512
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f2625ef8-3bdb-5a8d-48b9-149be0592533
 description: 日付または式の曜日を表す 1 ~ 7 の整数を返します。
-ms.openlocfilehash: 7c5d467d8c6ff14b99b64b8b0462d21d0b769998
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 38643d223bbafaeb0b66bfaf4f59ab4dbf9f5159
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404807"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549330"
 ---
 # <a name="weekday-function-visioshapesheet"></a>WEEKDAY 関数 (VisioShapeSheet)
 
@@ -29,8 +29,8 @@ WEEKDAY(" ** *datetime* ** "|** *式* ** [, ** *lcid* ** ])
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _datetime_ <br/> |必須  <br/> |**String** <br/> | 日付および時刻として一般的に認識される任意の文字列、または日付および時刻を含んだセルに対する参照を指定します。  <br/> |
-| _expression_ <br/> |必須  <br/> |**さまざま** <br/> |日付および時刻を算出する式を指定します。  <br/> |
-| _lcid_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |現地以外の日時を計算するときに使用するロケール識別子を指定します。ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
+| _expression_ <br/> |必須かどうか  <br/> |**さまざま** <br/> |日付および時刻を算出する式を指定します。  <br/> |
+| _lcid_ <br/> |オプション  <br/> |**数値型 (Numeric)** <br/> |現地以外の日時を計算するときに使用するロケール識別子を指定します。ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

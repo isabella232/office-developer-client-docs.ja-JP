@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagRoamingDictionary
 api_type:
 - COM
 ms.assetid: 40b50181-f88c-40ee-b3d0-a36dd36c158e
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4b2aa12b1b81dfd218781a839f5f84881763ef06
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a2f3e4638ac87bef8c692933739711a444d90ba8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359550"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550506"
 ---
 # <a name="pidtagroamingdictionary-canonical-property"></a>PidTagRoamingDictionary 標準プロパティ
 

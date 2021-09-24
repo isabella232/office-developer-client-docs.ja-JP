@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidNameRightsManagementLicense
 api_type:
 - COM
 ms.assetid: ca3c9317-7873-4f37-b78f-b35467c81c29
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 889b823a55c39ebc19e52c8cc9a1d078a5732a01
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: fd5503901e50c3b7f44d567aa09b3b6306639343
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315023"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550877"
 ---
 # <a name="pidnamerightsmanagementlicense-canonical-property"></a>PidNameRightsManagementLicense 標準プロパティ
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm1075
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1d9717c1-4310-0d62-874f-4df77cd81627
 description: Visio 2000 よりも前のバージョンの Visio に挿入するフィールドのコードを指定します。
-ms.openlocfilehash: 293451b61def59ccfdf849dc597def9521fd22e5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 916332de340b4e12e611031cfc49ddcacddb79d4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422216"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549442"
 ---
 # <a name="uicode-cell-text-fields-section"></a>[UICode] セル ([Text Fields] セクション)
 

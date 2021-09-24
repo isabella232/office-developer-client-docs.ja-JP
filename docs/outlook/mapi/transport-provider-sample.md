@@ -3,17 +3,17 @@ title: トランスポート プロバイダーのサンプル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: ec6eb6c0-bfe3-4989-9071-89a14c0e7bdd
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: def51a752abcb79a35980ed12eb73011c26d2597
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e40bb5049c20923de1ba9cce9cf05e3e90f4aa34
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356589"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549856"
 ---
 # <a name="transport-provider-sample"></a>トランスポート プロバイダーのサンプル
 
@@ -54,7 +54,7 @@ ms.locfileid: "32356589"
   
 1. サンプル トランスポート プロバイダーをダウンロードするには、「MAPI サンプル[のダウンロードOutlookを参照してください](downloading-the-outlook-mapi-samples.md)。
     
-2. MAPI サンプルに保存したフォルダー Outlook探します。 **OutlookMAPISamples- バージョン \< \>** 番号 zip フォルダーを右クリックし、[すべて抽出]**をクリックします**。
+2. MAPI サンプルに保存したフォルダー Outlook探します。 **OutlookMAPISamples- zip フォルダー \<version number\> を右クリック** し、[すべて抽出]**をクリックします**。
     
 3. [ **参照] を** クリックし、サンプルを保存する場所を選択し、[抽出] を **クリックします**。
     
@@ -104,7 +104,7 @@ ms.locfileid: "32356589"
   
 1. [ファイル] **メニューの** [新規] を **クリック** し、[メール メッセージ] **をクリックします**。
     
-2. [宛先 **] ボックス** に、[MRXP: ADDRESS] という形式を使用して受信者 **の名前 \< を入力 \> します**。 アドレスは、受信者の受信トレイへの UNC 共有またはローカル フォルダー パスです。
+2. [宛先 **] ボックス** に、[MRXP: ] という形式を使用して受信者 **の名前を \<ADDRESS\> 入力します**。 アドレスは、受信者の受信トレイへの UNC 共有またはローカル フォルダー パスです。
     
     > [!NOTE]
     > アドレスにコロンまたは円記号がある場合は、各コロンまたは円記号の前に円記号を挿入する必要があります。 たとえば、[MRXP:C:\Mail\myDir] にメールを送信するには、 を入力する必要があります  `[MRXP:C\:\\Mail\\myDir]` 。 

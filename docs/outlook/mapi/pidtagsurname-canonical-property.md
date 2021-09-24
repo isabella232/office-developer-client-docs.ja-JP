@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagSurname
 api_type:
 - COM
 ms.assetid: 1663f032-4cdc-43ed-8fdc-a91a3a6a84ff
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 82f4e7f1d275ad47679aaaa9ad6e4d0f69d54bc1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6c7112415b6c8fda408b794925af23ac922f9e67
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339446"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550310"
 ---
 # <a name="pidtagsurname-canonical-property"></a>PidTagSurname 標準プロパティ
 

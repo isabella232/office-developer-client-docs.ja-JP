@@ -3,15 +3,15 @@ title: Stream 構造
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9e305071-b6a5-4bd8-892e-25553d04bb15
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 7f1f1e028797edaa0afb45df4f39aca15ff6d425
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 249910bcf29ca532359331fa712e8c3e65fd4a0d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407824"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549904"
 ---
 # <a name="stream-structures"></a>Stream 構造
 

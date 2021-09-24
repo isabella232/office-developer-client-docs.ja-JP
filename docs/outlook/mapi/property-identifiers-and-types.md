@@ -3,17 +3,17 @@ title: プロパティ識別子と型
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 39a5c97c-5ac8-47a8-b193-a4b3ba6a02a5
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: caba60b7059d1c1f8f0440aeb55abb88801fbc9a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f1fefed6006dd90b200b8dfdc4ed4337a40a0186
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437218"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550177"
 ---
 # <a name="property-identifiers-and-types"></a>プロパティ識別子と型
 

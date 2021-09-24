@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SBitMaskRestriction
 api_type:
 - COM
 ms.assetid: ddd42180-6e4f-410c-9f78-d868a91452dc
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: afac8c352ad0a07fcb1cd98683b6a5c87940ab4d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8459e21becc85e3bee0603d5d8ade7f44ddee712
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424477"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550135"
 ---
 # <a name="sbitmaskrestriction"></a>SBitMaskRestriction
 
@@ -41,7 +41,7 @@ typedef struct _SBitMaskRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **relBMR**
   

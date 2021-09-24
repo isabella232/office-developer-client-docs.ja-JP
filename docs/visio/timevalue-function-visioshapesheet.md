@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251507
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 53579e0e-fcec-e745-0207-3861b5efa333
 description: システムの地域と言語の設定に基づいて、datetime または式で表される時刻値を返します。
-ms.openlocfilehash: 61eeafac64ce199eba0f9032c42474d2b44febce
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 19b6d92fa5efeb1f9881e429a3368b20b3bc9893
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432325"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549470"
 ---
 # <a name="timevalue-function-visioshapesheet"></a>TIMEVALUE 関数 (VisioShapeSheet)
 
@@ -29,8 +29,8 @@ TIMEVALUE(" ** *datetime* ** "|** *式* ** [, ** *lcid* ** ])
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _datetime_ <br/> |必須  <br/> |**String** <br/> | 日付および時刻として一般的に認識される任意の文字列、または日付および時刻を含んだセルに対する参照を指定します。  <br/> |
-| _expression_ <br/> |必須  <br/> |**さまざま** <br/> | 日付および時刻を算出する式を指定します。  <br/> |
-| _lcid_ <br/> |省略可能  <br/> |**数値** <br/> |現地以外の日時を計算するときに使用するロケール識別子を指定します。ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
+| _expression_ <br/> |必須かどうか  <br/> |**さまざま** <br/> | 日付および時刻を算出する式を指定します。  <br/> |
+| _lcid_ <br/> |オプション  <br/> |**数値** <br/> |現地以外の日時を計算するときに使用するロケール識別子を指定します。ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

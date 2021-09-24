@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagExtendedRuleMessageCondition
 api_type:
 - HeaderDef
 ms.assetid: 891851e1-e4a4-4c20-a26c-7223bcca35f7
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7c444485c3a443694e2902343a02da5605bde39f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: f41d8859e9ebc2bc2fa65967d8fd234e62dc0e6a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316332"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550602"
 ---
 # <a name="pidtagextendedrulemessagecondition-canonical-property"></a>PidTagExtendedRuleMessageCondition 標準プロパティ
 

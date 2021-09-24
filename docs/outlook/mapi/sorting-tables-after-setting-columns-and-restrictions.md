@@ -3,17 +3,17 @@ title: 列と制限の設定後のテーブルの並べ替え
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 57db0314-1df0-4fd2-b443-223b0512f1ad
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 62220794f325165e67db5397da2795d49959ef60
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ad28db9be13b18b71b57e0cdae82529f3d4483ea
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409882"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549897"
 ---
 # <a name="sorting-tables-after-setting-columns-and-restrictions"></a>列と制限の設定後のテーブルの並べ替え
 

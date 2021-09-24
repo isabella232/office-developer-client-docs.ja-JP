@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm965
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a7d5b0a1-3657-8211-f0e0-eaed588fa0bc
 description: 図形のテキスト ブロック内にある各段落の前に挿入する間隔を指定します。この値に、[SpLine] セルや [TopMargin] セル (テキスト ブロックの最初の段落に対して適用される) に指定した値が加えられて、テキスト ブロックが表示されます。
-ms.openlocfilehash: 9890910a11990bb5be7fe3ee4af95e578c8d9799
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 983384cda5c71684eb842beb5e67a8c26a9e13f0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425758"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549498"
 ---
 # <a name="spbefore-cell-paragraph-section"></a>[SpBefore] セル ([Paragraph] セクション)
 

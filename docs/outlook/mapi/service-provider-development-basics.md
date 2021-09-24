@@ -3,17 +3,17 @@ title: サービス プロバイダー開発の基本
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 00efb70f-405e-4efb-94bc-b39c310332cf
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 5fcea925b5f66d7ca10c1be1817193d803633634
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1e7050bc6b7d4b053b9dc81f31bc3f1dd6611f3c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437806"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550030"
 ---
 # <a name="service-provider-development-basics"></a>サービス プロバイダー開発の基本
 

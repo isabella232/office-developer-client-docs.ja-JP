@@ -1,33 +1,33 @@
 ---
-title: 複数の Exchange アカウントの使用
+title: ������ Exchange �A�J�E���g��g�p���܂��B
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4e1804bf-4c50-4942-a7ab-9a8caf1be7e5
-description: '最終更新日: 2012 年 6 月 25 日'
-ms.openlocfilehash: a5792ebaf78d77924bc3157be63d937b66e9f4b2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+description: '�ŏI�X�V��: 2012�N6��25��'
+ms.openlocfilehash: 2a6705a8a17add99559b4ef6de918181eadc1e73
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329654"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549770"
 ---
-# <a name="using-multiple-exchange-accounts"></a>複数の Exchange アカウントの使用
+# <a name="using-multiple-exchange-accounts"></a>������ Exchange �A�J�E���g��g�p���܂��B
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Microsoft Outlook 2010 および Microsoft Outlook 2013 では、複数の Exchange 電子メール アカウントの統合をサポートしています。 Outlook 2010 または Outlook 2013 では、ユーザーは 2 つの Exchange アカウントを同一のプロファイルに追加できます。その場合も、Exchange の豊富な機能 (公開されたグローバル アドレス一覧 (GAL)、Exchange の不在時構成、フォルダー共有など) は、そのまま使用できます。
+Microsoft Outlook 2010およびMicrosoft Outlook 2013 Exchange メール アカウントとの統合をサポートします。 Outlook 2010 または Outlook 2013 では、ユーザーは 2 つの exchange アカウントを同じプロファイルに追加し、発行済みのグローバル アドレス一覧 (GAL)、Exchange アウトオブ Office 構成、フォルダー共有などの豊富な Exchange 機能を利用できます。
   
-Microsoft Office Outlook 2007 以前の MAPI プロファイルの各セクションに詳しいユーザーは、Exchange の設定 (ユーザー名やサービス名など) が固定の Exchange グローバル プロファイル セクション **pbGlobalProfileSectionGuid** に保存されていることを知っています。 Outlook 2010 および Outlook 2013 では、設定を保存するための専用のプロファイル セクションが、それぞれの Exchange アカウントに必要になるため、**pbGlobalProfileSectionGuid** は使用されなくなりました。 
+Microsoft Office Outlook 2007 以前の MAPI プロファイル セクションに精通しているユーザーは、電子メール ユーザー名やサーバー名などの Exchange 設定が固定の Exchange グローバル プロファイル セクション **pbGlobalProfileSectionGuid** に格納されている点を知っています。 2010 Outlook Outlook 2013 では、各 Exchange アカウントには設定を保存するために独自のプロファイル セクションが必要であり **、pbGlobalProfileSectionGuid** は使用されなくなりました。 
   
-Outlook 2010 および Outlook 2013 の Exchange 設定は、以前と同様にプロファイルに保存されますが、その設定を格納しているプロファイル セクションにはプロファイルごとに動的に一意識別子が割り当てられます。プロファイルに収められた Exchange 設定の場所は、[PidTagExchangeProfileSectionId 標準プロパティ](pidtagexchangeprofilesectionid-canonical-property.md)に保存されていて、Exchange アカウントのメッセージ サービス プロファイル セクションで確認できます。また、このプロパティは、このアカウントのメッセージ サービスの各プロバイダーに対応するプロファイル セクションでも確認できます。一意識別子は、サーバーには保存されず、プロファイル間で異なるものになります。
+�v���t�@�C��] �ŁA Outlook 2010��Outlook 2013 Exchange �̐ݒ肪�܂��ۑ�����Ă��邪�A�v���t�@�C�����Ƃ̐ݒ��܂ރZ�N�V�����̃v���t�@�C���̈�ӂ̎��ʎq�����蓖�Ă��Ă��铮�I�ɕύX���܂��B�v���t�@�C���� Exchange �̐ݒ�̏ꏊ�́A[ [PidTagExchangeProfileSectionId ���K���̃v���p�e�B](pidtagexchangeprofilesectionid-canonical-property.md)] �́AExchange �A�J�E���g�̃��b�Z�[�W �T�[�r�X �v���t�@�C��] �Z�N�V�����ɋL�ڂ���Ă���ɕۑ�����܂��B���̃v���p�e�B�́A������Ƃ̏ꍇ�́A���̃��b�Z�[�W �T�[�r�X�̃v���o�C�_�[���Ƃ� [�v���t�@�C��] �Z�N�V�����ɂ�L�ڂ���Ă��܂��B��ӂ̎��ʎq�́A�T�[�o�[�ɕۑ�����Ă��Ȃ��ƁA�v���t�@�C���ňقȂ邪���܂��B
   
-Outlook 2010 および Outlook 2013 では、Exchange アカウントを特定する一意識別として **PidTagExchangeProfileSectionId** が使用されます。この目的に使用される場合、この一意識別子は **emsmdbUID** と呼ばれます。MAPI および Outlook の一部の操作では、その操作に使用する Exchange アカウントを指定するために、**emsmdbUID** が必要になることがあります。 
+Outlook 2010Outlook 2013 **PidTagExchangeProfileSectionId**��ӂ̎��ʎq�Ƃ��Ă�g���� Exchange �A�J�E���g��w�肵�܂��B���̕��@�Ŏg�p����ꍇ�A��ӂ̎��ʎq�� **emsmdbUID**�ƌĂ΂�܂��BMAPI �����Outlook����ɂ���āA **emsmdbUID**������Ɏg�p���� Exchange �A�J�E���g��w�肷��K�v����܂��B 
   
-複数の Exchange アカウントをサポートするために、いくつかの新しい関数の呼び出しをコード内で使用する必要があります。**entryID** と、[IMailUser : IMAPIProp](imailuserimapiprop.md) および [IDistList : IMAPIContainer](idistlistimapicontainer.md) の [IAddrBook::OpenEntry](iaddrbook-openentry.md) または [IAddrBook::CompareEntryIDs](iaddrbook-compareentryids.md) を使用する呼び出しがあれば、その呼び出しを次のいずれかに置き換えます。 
+������ Exchange �A�J�E���g��T�|�[�g���邽�߂ɁA�R�[�h�̈ꕔ�̐V�����֐��̌Ăяo����g�p���Ă��������B **IMailUser: IMAPIProp**�ƁA���̊֐��� 1 ��[IDistList: IMAPIContainer](iaddrbook-openentry.md)�� [entryID](iaddrbook-compareentryids.md)��[IAddrBook::OpenEntry](imailuserimapiprop.md)�܂���[IAddrBook::CompareEntryIDs](idistlistimapicontainer.md)��g�p���Ă��邷�ׂĂ̌Ăяo����u�������܂��B 
   
 - [HrCompareABEntryIDsWithExchangeContext](hrcompareabentryidswithexchangecontext.md)
     
@@ -49,40 +49,40 @@ Outlook 2010 および Outlook 2013 では、Exchange アカウントを特定�
     
 - [HrOpenABEntryWithSupport](hropenabentrywithsupport.md)
     
-## <a name="legacy-support"></a>レガシ サポート
+## <a name="legacy-support"></a>�]���̃T�|�[�g
 
-この新しい **emsmdbUID** セクションが現れる前に作成された MAPI クライアントは、引き続きサポートされます。このようなクライアントは、これまでどおりに以前のグローバル セクション **pbGlobalProfileSectionGuid** を取得します。このプロファイル セクションに対するクエリは、従来のクエリを処理する指定された 1 つの Exchange アカウントにリダイレクトされます。この従来の呼び出しを処理するアカウントは、メッセージ サービス テーブルを調べて、PR_EMSMDB_LEGACY の列を追加することで判断できます。これが true に設定されているメッセージ サービスは 1 つのみであり、そのサービスの **PidTagExchangeProfileSectionId** は従来の **emsmdbUID** と呼ばれます。
+���̐V���� **emsmdbUID**�Z�N�V������쐬����O�ɋL�q MAPI �N���C�A���g�͈��������T�|�[�g����܂��B�����̃N���C�A���g�͈��������O���[�o���O�̃Z�N�V���� **pbGlobalProfileSectionGuid**��擾���܂��B���̃v���t�@�C��] �Z�N�V�����̃N�G���́A�]���̏Ɖ��������� 1 �̎w�肳�ꂽ Exchange �A�J�E���g�Ƀ��_�C���N�g����܂��B�]���̌Ăяo�����������A�J�E���g�́A���b�Z�[�W �T�[�r�X �e�[�u������āAPR_EMSMDB_LEGACY �̗��ǉ����Ċm�F�ł��܂��B1 �̃��b�Z�[�W �T�[�r�X�݂͂̂ɐݒ肳��A���� **PidTagExchangeProfileSectionId** true �̏ꍇ�A����́A�]���� **emsmdbUID**�ƌĂ΂�܂��B
   
 > [!NOTE]
-> 構成可能な MAPI 設定 (既定のストアや既定のアカウントなど) は、どのアカウントが従来の呼び出しを処理するかについて影響しません。従来の呼び出しを処理するアカウントは構成できません。 
+> [!����] ����̃X�g�A�Ɗ���̃A�J�E���g�Ȃǂ� MAPI �ݒ�́A�A�J�E���g���]���̌Ăяo����������邽�߂̉e����^����Ȃ��B�]���̌Ăяo�����������A�J�E���g��\�����邱�Ƃ͂ł��܂���B 
   
-従来のアカウントの **emsmdbUID** は、Outlook グローバル プロファイル セクションにコピーされます。このプロパティが存在しない場合は、メッセージ サービス テーブルをクエリすることで、どのアカウントがレガシ ハンドラであるかを判断して、その値を Outlook グローバル プロファイル セクションで設定します。 
+�]���̃A�J�E���g�� **emsmdbUID**��Outlook�O���[�o�� �v���t�@�C��] �Z�N�V�����ɃR�s�[����܂��B���̃v���p�e�B�����݂��Ȃ��ꍇ�A���b�Z�[�W�̃T�[�r�X�̃e�[�u���̃N�G������s����ƁA�ǂ̂悤�ȃA�J�E���g���A�]���̃n���h���[�ł��邱�Ƃ�m�F���A Outlook�O���[�o�� �v���t�@�C��] �Z�N�V�����Œl��ݒ肵�܂��B 
   
-明確に説明すると、Outlook グローバル プロファイル セクションは Exchange グローバル プロファイル セクションとは別のものであり、Outlook 2010 および Outlook 2013 の Exchange グローバル プロファイル セクションは、複数の Exchange アカウントを持てるようになったため、実際にはグローバルではなくなっています。Outlook グローバル プロファイル セクションには、Outlook に関するプロパティ (フォルダー MRU の状態やグローバル接続の状態など) が含まれています。
+�I�t�ɂ���ƁAExchange �O���[�o�� �v���t�@�C�� �Z�N�V��������O���[�o�� �v���t�@�C��] �Z�N�V�������قȂ�Outlook����Outlook 2010�����Outlook 2013�� Exchange �̃O���[�o�� �v���t�@�C��] �Z�N�V�����͂���܂���O���[�o���{���ɕ����� Exchange �A�J�E���g�����邱�Ƃ��ł��܂��BOutlook�O���[�o�� �v���t�@�C��] �Z�N�V�����ɂ́A Outlook�A�ŋߎg�p�����t�H���_�[�̏�ԁA�܂��̓O���[�o���ڑ��̏�ԂȂǂ̃v���p�e�B���܂܂�Ă��܂��B
   
-## <a name="address-book-account-contexts"></a>アドレス帳アカウントのコンテキスト
+## <a name="address-book-account-contexts"></a>�A�h���X���̃A�J�E���g�̃R���e�L�X�g
 
-複数の Exchange アカウントでアドレスを正しく解決するには、アカウントのコンテキストを取得する新しい関数を使用して、アドレス帳の呼び出しで正しい Exchange アカウントを検索するようにします。
+������ Exchange �A�J�E���g�Ő������A�h���X��������ɂ́A�A�h���X���ɒʘb�������� Exchange �A�J�E���g������ł���悤�ɁA�A�J�E���g�̃R���e�L�X�g���V�����@�\��g�p���܂��B
   
-以前のアドレス帳 API の一部は、複数の Exchange に完全には対応していなかったため使用されなくなりました。通常、このアカウントのコンテキストは **emsmdbUID** になります。
+Api ���ꂽ�@�\������S�ɕ����� Exchange �ł͂Ȃ����߂ɁA�������O�̃A�h���X���� Api �͔p�~����܂����B���̃A�J�E���g�̃R���e�L�X�g�́A�ʏ�A **emsmdbUID**�ł��B
   
-この **emsmdbUID** に加えて、複数の Exchange アカウントには **emsabpUID** もあります。
+������ Exchange �A�J�E���g�ɂ́A **emsmdbUID**�ł́A�ɉ����āA **emsabpUID**�������܂��B
   
-1. **emsmdbUID** の値では、アカウントのコンテキストを識別します。 
+1. **emsmdbUID**�l�́A�A�J�E���g�̃R���e�L�X�g������܂��B 
     
-2. **emsabpUID** の値では、Exchange アドレス帳プロバイダーを識別します。 
+2. **emsabpUID**�l�́AExchange �A�h���X��������܂��B 
     
-通常、**emsabpUID** の値は受信者を解決するときに使用されます。受信者の解決に [IAddrBook::ResolveName](iaddrbook-resolvename.md) を使用すると、Exchange の受信者行には **PR_AB_PROVIDERS** (0x3D010102) プロパティが格納されます。**emsabpUID** の値は、このプロパティに格納されています。**emsabpUID** の値によって、特定の受信者の Exchange アドレス帳プロバイダーを識別します。 
+**emsabpUID**�l�͒ʏ�A��M�҂�������Ƃ��Ɏg�p����܂��B [IAddrBook::ResolveName](iaddrbook-resolvename.md)��g�p���Ď�M�҂�������ɂ́AExchange ��M�҂̍s�ɂ́A **emsabpUID**�l��܂ށA **PR_AB_PROVIDERS** (0x3D010102) �v���p�e�B���܂܂�Ă��܂��B���� **emsabpUID**�l�́A����̎�M�҂� Exchange �A�h���X����w�肵�܂��B 
   
-特定の **emsmdbUID** に対応する **emsabpUID** の値を調べるには、その **emsmdbUID** のプロファイル セクションを開いて、**PR_EMSABP_USER_UID** (0x0x3D1A0102) プロパティを取得します。 
+����� **emsmdbUID** **emsabpUID**�l��w�肷��ꍇ�́A **emsmdbUID**�̃v���t�@�C���̃Z�N�V������J���A **PR_EMSABP_USER_UID** (0x0x3D1A0102) �̃v���p�e�B��擾���܂��B 
   
-[IAddrBook::PrepareRecips](iaddrbook-preparerecips.md) を呼び出す場合は、その呼び出しで渡すリスト内の Exchange の受信者に、**PR_AB_PROVIDERS** プロパティが含まれていて、その受信者が属するアドレス帳プロバイダーと一致する **emsabpUID** が保持されていることを確認してください。[IAddrBook::ResolveName](iaddrbook-resolvename.md) から取得した行に対して [IAddrBook::PrepareRecips](iaddrbook-preparerecips.md) を呼び出す場合は追加のアクションは不要ですが、一部のコードでは **PR_ENTRYID** プロパティのみが含まれる行に対して [IAddrBook::PrepareRecips](iaddrbook-preparerecips.md) を呼び出すことになります。このような状況の行には、**PR_AB_PROVIDERS** プロパティが正しい **emsabpUID** に設定されている **PR_ENTRYID** と **PR_AB_PROVIDERS** の両方が格納されている必要があります。
+[IAddrBook::PrepareRecips](iaddrbook-preparerecips.md)�A�Ăяo���ꍇ�������X�g��� Exchange ��M�҂��A��M�҂���������A�h���X���ɑΉ����� **emsabpUID**�� **PR_AB_PROVIDERS**�v���p�e�B���܂܂�Ă��邱�Ƃ�m�F���܂��B�ǉ��̑����K�v�Ƃ��Ȃ�[IAddrBook::ResolveName](iaddrbook-preparerecips.md)����擾�����s��[IAddrBook::PrepareRecips](iaddrbook-resolvename.md)��Ăяo�����Ƃ��������̃R�[�h�ɓd�b�������[IAddrBook::PrepareRecips](iaddrbook-preparerecips.md) **PR_ENTRYID**�v���p�e�B�݂̂��܂܂�Ă���s�B���̍s�Ɠ����悤�ȏ󋵂� **PR_AB_PROVIDERS**�v���p�e�B�ɓK�؂� **emsabpUID**�� **PR_ENTRYID**�� **PR_AB_PROVIDERS**�̗�����܂߂�K�v������܂��B
   
-複数の Exchange アカウントを解決するためのプロセスについて、簡単な説明を次に示します。
+������ Exchange �A�J�E���g�������邽�߂̃v���Z�X�̊ȒP�Ȑ���́A���̂Ƃ���ł��B
   
-- サービスの一意識別子がある場合は、コードで、その識別子と一致する **PR_SERVICE_UID** プロパティのメッセージ ストアのテーブルを調べます。正しい **PR_MDB_PROVIDER** は、そこで判断できます。この行には、適切なストアが格納されています。
+- �T�[�r�X�̈�ӂ̎��ʎq��w�肷��ɂ́A�R�[�h�́A **PR_SERVICE_UID**�v���p�e�B�������̂ƈ�v���郁�b�Z�[�W �X�g�A�̃e�[�u���Ō������܂��B��������́A������ **PR_MDB_PROVIDER**��w��ł��܂��B���̍s�ɂ́A�K�؂ȃX�g�A���܂܂�Ă��܂��B
     
-- **emsmdbUID** がある場合は、コードで、その **emsmdbUID** と一致する **PidTagExchangeProfileSectionId** を公開している行についてメッセージ サービス テーブルを調べます。
+- �R�[�h�� **emsmdbUID**��w�肷��ƁA **emsmdbUID**�Ɉ�v���� **PidTagExchangeProfileSectionId**����J����s�̃��b�Z�[�W �T�[�r�X �e�[�u�����\������܂��B
     
 ## <a name="see-also"></a>関連項目
 
@@ -108,8 +108,8 @@ Outlook 2010 および Outlook 2013 では、Exchange アカウントを特定�
   
 [HrOpenABEntryWithSupport](hropenabentrywithsupport.md)
   
-[PidTagExchangeProfileSectionId 標準プロパティ](pidtagexchangeprofilesectionid-canonical-property.md)
+[PidTagExchangeProfileSectionId ���K���̃v���p�e�B](pidtagexchangeprofilesectionid-canonical-property.md)
 
 
-[グローバル プロファイル セクションを開く方法](https://support.microsoft.com/kb/188482)
+[[�O���[�o�� �v���t�@�C��] �Z�N�V������J�����@](https://support.microsoft.com/kb/188482)
 

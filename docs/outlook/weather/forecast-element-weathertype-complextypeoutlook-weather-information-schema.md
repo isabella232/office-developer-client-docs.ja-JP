@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9124fa30-d58b-8354-91e9-8d2237a8251d
 description: 今日、明日、明日の次の日を含む、少なくとも 3 日先の将来の気象条件を指定します。
-ms.openlocfilehash: 5e442ee5995bbd51c5e518162286bc199a625dbd
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 51a4df8c1ee711cb10db70d631ef93edb7d1c356
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540981"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549638"
 ---
 # <a name="forecast-element-weathertype-complextype-outlook-weather-information-schema"></a>forecast 要素 (weatherType complexType) (Outlook 天気予報スキーマ)
 
@@ -53,7 +53,7 @@ ms.locfileid: "34540981"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|date  <br/> |xs:date  <br/> |必須  <br/> |予測の日付を指定します。  <br/> |xs:date 型の値  <br/> |
+|date  <br/> |xs:date  <br/> |必須出席者  <br/> |予測の日付を指定します。  <br/> |xs:date 型の値  <br/> |
 |日  <br/> |xs:string  <br/> |必須  <br/> |予測の日を指定します。  <br/> |xs:string 型の値  <br/> |
 |high  <br/> |xs:integer  <br/> |必須  <br/> |予測される最高温度を指定します。  <br/> |xs:integer 型の値  <br/> |
 |low  <br/> |xs:integer  <br/> |必須  <br/> |予測される最低温度を指定します。  <br/> |xs:integer 型の値  <br/> |

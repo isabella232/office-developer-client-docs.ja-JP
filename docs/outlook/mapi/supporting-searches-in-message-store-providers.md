@@ -3,17 +3,17 @@ title: メッセージ ストア プロバイダーでの検索のサポート
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 30a3fe28-31ca-4eb8-9353-f75f6d339dc7
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 545047e90346b0f8e4a88eabcb20573f663f6d02
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b80b8e7593345f2f5e933dcc9e6d2d9f0770b6e7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425387"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549883"
 ---
 # <a name="supporting-searches-in-message-store-providers"></a>メッセージ ストア プロバイダーでの検索のサポート
 

@@ -3,17 +3,17 @@ title: メッセージ送信モデル
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 4bcd19f6-c225-43ac-8c27-c46388e9097a
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 090a765fd6c758e5f146caa0e7f36276b052f69e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4862fca03df1f152c757becc7f6c9e56b3e92363
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421124"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551059"
 ---
 # <a name="message-submission-model"></a>メッセージ送信モデル
 
