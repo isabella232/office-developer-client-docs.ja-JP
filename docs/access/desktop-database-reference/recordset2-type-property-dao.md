@@ -1,5 +1,5 @@
 ---
-title: Recordset2 プロパティ (DAO)
+title: Recordset2.Type プロパティ (DAO)
 TOCTitle: Type Property
 ms:assetid: 9bec543e-7f59-ea59-dc79-41d0e08b5ab6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198080(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052880
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 6646658daf482373ef8b62f6d3420b1d11152cac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 33b4b67da528360640030a2278979327553263a0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307176"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572782"
 ---
-# <a name="recordset2type-property-dao"></a>Recordset2 プロパティ (DAO)
+# <a name="recordset2type-property-dao"></a>Recordset2.Type プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -27,9 +27,9 @@ ms.locfileid: "32307176"
 
 ## <a name="syntax"></a>構文
 
-*式*。種類
+*expression* .Type
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 
@@ -54,11 +54,11 @@ ms.locfileid: "32307176"
 <tr class="even">
 <td><p><strong>dbOpenDynamic</strong></p></td>
 <td><p>動的 (ODBCDirect ワークスペースのみ)</p>
-<p><strong>注</strong>: ODBCDirect ワークスペースは、Microsoft access 2013 ではサポートされていません。 Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p></td>
+<p><strong>注</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Access データベース エンジンを使用せずに外部データ ソースにアクセスする場合は、ADO を使用してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbOpenDynaset</strong></p></td>
-<td><p>ダイナセットタイプ</p></td>
+<td><p>ダイナセット</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbOpenSnapshot</strong></p></td>
@@ -66,7 +66,7 @@ ms.locfileid: "32307176"
 </tr>
 <tr class="odd">
 <td><p><strong>dbOpenForwardOnly</strong></p></td>
-<td><p>前方のみ</p></td>
+<td><p>転送のみ</p></td>
 </tr>
 </tbody>
 </table>

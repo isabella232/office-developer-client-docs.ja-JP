@@ -1,29 +1,29 @@
 ---
-title: recordstatus プロパティ (DAO)
+title: Recordset2.RecordStatus プロパティ (DAO)
 TOCTitle: RecordStatus Property
 ms:assetid: 178872a9-e361-f277-627d-f91b01ceb6d1
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845575(v=office.15)
 ms:contentKeyID: 48543451
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ae3dc5ba640b4b24a7400fc9e467978777ef6fcc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7d512f7cdbb77ab2221f257dfe0e3dfeb9a32b74
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309367"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572789"
 ---
-# <a name="recordset2recordstatus-property-dao"></a>recordstatus プロパティ (DAO)
+# <a name="recordset2recordstatus-property-dao"></a>Recordset2.RecordStatus プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*。RecordStatus
+*式* .RecordStatus
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 

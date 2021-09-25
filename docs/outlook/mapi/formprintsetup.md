@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.FORMPRINTSETUP
 api_type:
 - COM
 ms.assetid: 6e82fe94-47bd-4a25-b25b-0ab6fe2db274
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: c2b9176e21341ef28e6f0bc007757b097a05daee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 589cb1260c5986b8a93da4bfc4dae4624ac3f018
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327287"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556707"
 ---
 # <a name="formprintsetup"></a>FORMPRINTSETUP
 
@@ -75,7 +75,7 @@ MAPI_UNICODE
   
 **GetPrintSetup** の _ulFlags_ パラメーターで MAPI_UNICODE フラグが渡される場合 **、hDevmode** メンバーと **hDevnames** メンバーによって参照される文字列は Unicode 形式である必要があります。 それ以外の場合、文字列は ANSI 形式である必要があります。 
   
-**IMAPIViewContext** を実装するフォーム ビューアーは、MAPI アロケーター関数 [MAPIAllocateBuffer](mapiallocatebuffer.md)を使用して **FORMPRINTSETUP** 構造体を割り当てる必要がありますが、Windows 関数 [GlobalAlloc](https://go.microsoft.com/fwlink/?LinkId=132110)を使用して個々のメンバー **hDevMode** および **hDevNames** を割り当てる必要があります。 メモリの解放も同様に処理されます。 **hDevMode** および **hDevNames** メンバーは、Windows 関数 [GlobalFree](https://go.microsoft.com/fwlink/?LinkId=132108)を使用して解放する必要があります。一方 **、FORMPRINTSETUP** 構造体は [MAPIFreeBuffer](mapifreebuffer.md)関数で解放する必要があります。 
+**IMAPIViewContext** を実装するフォーム ビューアーは、MAPI アロケーター関数 [MAPIAllocateBuffer](mapiallocatebuffer.md)を使用して **FORMPRINTSETUP** 構造体を割り当てる必要がありますが、Windows 関数 [GlobalAlloc](https://go.microsoft.com/fwlink/?LinkId=132110)を使用して、個々のメンバー **hDevMode** と **hDevNames** を割り当てる必要があります。 メモリの解放も同様に処理されます。 **hDevMode** および **hDevNames** メンバーは、Windows 関数 [GlobalFree](https://go.microsoft.com/fwlink/?LinkId=132108)を使用して解放する必要があります。一方 **、FORMPRINTSETUP** 構造体は [MAPIFreeBuffer](mapifreebuffer.md)関数で解放する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

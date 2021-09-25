@@ -1,29 +1,29 @@
 ---
-title: UpdateOptions プロパティ (DAO)
+title: Recordset2.UpdateOptions プロパティ (DAO)
 TOCTitle: UpdateOptions Property
 ms:assetid: 2692480e-c472-dd8e-f91a-939776822ece
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191899(v=office.15)
 ms:contentKeyID: 48543816
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0d655ba231466ac41902dba3a1422ca02893938f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 69e867eae41c0189302d18ff833db2e137596d2c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309102"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572775"
 ---
-# <a name="recordset2updateoptions-property-dao"></a>UpdateOptions プロパティ (DAO)
+# <a name="recordset2updateoptions-property-dao"></a>Recordset2.UpdateOptions プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*。UpdateOptions
+*式* .UpdateOptions
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 

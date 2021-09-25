@@ -3,17 +3,17 @@ title: フォーム プロパティの取得
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 9dec5ad6-af34-4c5e-848b-5c3909d0c0a1
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 023d2cf312438b1e4b6a90c57e1ead7d606d7727
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6fb1c828803063fbc77d1732ca18b527c08fd0f3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412920"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586832"
 ---
 # <a name="retrieving-form-properties"></a>フォーム プロパティの取得
 

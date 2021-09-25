@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249859(v=office.15)
 ms:contentKeyID: 48547211
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b97f4e8050cf293621c7b7fc79437c89171d86fc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 07d22fb6af644e81af6ec7b82f71b4b2cbeaf69e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293547"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562658"
 ---
 # <a name="enabling-a-dll-to-run-on-dcom"></a>DCOM で実行する DLL の有効化
 
 
 **適用先:** Access 2013、Office 2013
 
-次の手順では、ビジネスオブジェクトのダイナミックリンクライブラリで、コンポーネントサービス経由で DCOM と Microsoft インターネットインフォメーションサービス (HTTP) の両方を使用できるようにする方法の概要を説明します。
+次の手順では、ビジネス オブジェクトの動的リンク ライブラリでコンポーネント サービス経由で DCOM と Microsoft インターネット インフォメーション サービス (HTTP) の両方を使用する方法について説明します。
 
 1.  コンポーネント サービス MMC スナップインに新しい空のパッケージを作成します。 コンポーネント サービス MMC スナップインを使ってパッケージを作成し、このパッケージに DLL を追加します。これにより、DCOM を介して .dll にアクセスできるようになりますが、IIS を介したアクセスはできなくなります (.dll のレジストリを確認すると、 **Inproc** キーが空になっているのがわかります。後で説明するようにアクティブ化属性を設定すると、 **Inproc** キーに値が追加されます)。
 

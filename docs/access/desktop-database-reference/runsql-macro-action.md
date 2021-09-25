@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm12983
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: f3ef598ad50747d99ca884043e03ebfabfef8f63
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b2b745f9e58e716d4b4300034a86d87c8c7f02a2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308996"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562231"
 ---
 # <a name="runsql-macro-action"></a>RunSQL マクロ アクション
 
@@ -27,7 +27,7 @@ ms.locfileid: "32308996"
 > [!NOTE]
 > このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 **RunSQL** アクションの引数は次のとおりです。
 
@@ -89,7 +89,7 @@ Access のクエリは、実際には、クエリ ウィンドウのデザイン
 </tr>
 <tr class="even">
 <td><p>テーブル作成</p></td>
-<td><p>[...] を選択します。分ける</p></td>
+<td><p>SELECT...INTO</p></td>
 </tr>
 <tr class="odd">
 <td><p>更新</p></td>

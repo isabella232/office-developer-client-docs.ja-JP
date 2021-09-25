@@ -3,17 +3,17 @@ title: メッセージ ストア プロバイダーのサンプル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: f1e4077b-7a95-440d-a326-a8dc9cdab4fe
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: eb51881aac6e1953a21686857944ba2a15d0dca2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c9cd4c62dfff127763494c2edab0a3ec47ee9413
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436868"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571417"
 ---
 # <a name="message-store-provider-sample"></a>メッセージ ストア プロバイダーのサンプル
 
@@ -52,7 +52,7 @@ ms.locfileid: "33436868"
   
 1. サンプル ラップされた PST プロバイダーをダウンロードするには、「MAPI サンプル[のダウンロードOutlookを参照してください](downloading-the-outlook-mapi-samples.md)。
     
-2. MAPI サンプルに保存したフォルダー Outlook探します。 **OutlookMAPISamples- バージョン \< \>** 番号 zip フォルダーを右クリックし、[すべて抽出]**をクリックします**。
+2. MAPI サンプルに保存したフォルダー Outlook探します。 **OutlookMAPISamples- zip フォルダー \<version number\> を右クリック** し、[すべて抽出]**をクリックします**。
     
 3. [ **参照]** をクリックし、サンプルを保存する場所を選択し、[抽出] を **クリックします**。
     

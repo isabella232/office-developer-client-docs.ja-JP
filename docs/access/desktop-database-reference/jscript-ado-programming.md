@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249002(v=office.15)
 ms:contentKeyID: 48543706
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 88a84f6fa3604286ca27651cefc999c96ff41d0e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0587f2d07342d97695524859ebca10248e70d931
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290892"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562602"
 ---
 # <a name="jscript-ado-programming"></a>JScript ADO プログラミング
 
@@ -26,11 +26,11 @@ Microsoft JScript では、タイプ ライブラリをサポートしていな�
 
 ただし、ADO では JScript 用の次の定義を納めた 2 つのインクルード ファイルを用意しています。
 
-- サーバー側スクリプトでは adojavas.inc を使用します。これは、既定で c\\: Program\\Files Common\\Files\\System\\ ado フォルダーにインストールされます。
+- サーバー側スクリプトでは、既定で c: Program Files Common Files System ado フォルダーにインストールされている Adojavas.inc \\ \\ \\ \\ \\ を使用します。
 
-- クライアント側スクリプトでは、Adcjavas を使用します。これは、既定で\\c:\\Program Files\\Common\\Files System\\ msdac フォルダーにインストールされます。
+- クライアント側スクリプトでは、既定で c: Program Files Common Files System msdac フォルダーにインストールされている Adcjavas.inc を \\ \\ \\ \\ \\ 使用します。
 
-定数定義は、これらのファイルから ASP ページにコピーして貼り付けるか、またはサーバー側スクリプトを実行している場合は、adojavas.inc ファイルを web サイトのフォルダーにコピーして、次のように asp ページから参照します。
+これらのファイルから定数定義をコピーして ASP ページに貼り付けるか、サーバー側スクリプトを実行している場合は、Adojavas.inc ファイルを Web サイトのフォルダーにコピーし、ASP ページから次のように参照します。
 
 ```javascript  
  

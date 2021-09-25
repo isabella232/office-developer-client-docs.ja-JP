@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250201(v=office.15)
 ms:contentKeyID: 48548521
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ea7f3e27a75b4483cb8cf46e27d4492f831cff33
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f1464bce8cbaed5e33c40d90a246c6302e5d85e2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314400"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562189"
 ---
 # <a name="submitchanges-method-rds"></a>SubmitChanges メソッド (RDS)
 
@@ -22,9 +22,9 @@ ms.locfileid: "32314400"
 
 ## <a name="syntax"></a>構文
 
-*DataControl*。SubmitChanges
+*DataControl*.SubmitChanges
 
-*DataFactory*。SubmitChanges*Connection*、 *Recordset*
+*DataFactory*.SubmitChanges *Connection*, *Recordset*
 
 ## <a name="parameters"></a>パラメーター
 
@@ -43,7 +43,7 @@ ms.locfileid: "32314400"
 
 変更を加えられたレコードだけが変更を反映させるために送信され、すべての変更が成功するか、またはすべてまとめて失敗します。
 
-**SubmitChanges**は、*既定*の**rdsserver.datafactory**オブジェクトでのみ使用できます。 カスタム ビジネス オブジェクトには、このメソッドは使用できません。
+**SubmitChanges は、既定** の **RDSServer.DataFactory オブジェクトでのみ使用** できます。 カスタム ビジネス オブジェクトには、このメソッドは使用できません。
 
 **URL** プロパティが設定されている場合、 **SubmitChanges** は、その URL で指定された場所に変更内容を送信します。
 

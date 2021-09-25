@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagLocaleId
 api_type:
 - HeaderDef
 ms.assetid: 9e4d1554-a47f-461c-8f79-0604d5542e8d
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: e4211f65cd526503f1fac9f990d28ace7e2f935a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c5c4e2c4b728245a60108e6466a5d40410876801
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278815"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587553"
 ---
 # <a name="pidtaglocaleid-canonical-property"></a>PidTagLocaleId 標準プロパティ
 

@@ -1,20 +1,20 @@
 ---
-title: "\"Recordset2/入力規則\" プロパティ (DAO)"
+title: Recordset2.ValidationRule プロパティ (DAO)
 TOCTitle: ValidationRule Property
 ms:assetid: d46cc255-e588-e9e6-66d7-31fc26ae45b8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835002(v=office.15)
 ms:contentKeyID: 48547940
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7b146aa0278db278f3831bc0e00987d21e14b70a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 03decdb37e04d760f2807ce51de7fa003114c486
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307155"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552599"
 ---
-# <a name="recordset2validationrule-property-dao"></a>"Recordset2/入力規則" プロパティ (DAO)
+# <a name="recordset2validationrule-property-dao"></a>Recordset2.ValidationRule プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -23,9 +23,9 @@ ms.locfileid: "32307155"
 
 ## <a name="syntax"></a>構文
 
-*式*。規則
+*式* .ValidationRule
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 
@@ -43,7 +43,7 @@ ms.locfileid: "32307155"
 <thead>
 <tr class="header">
 <th><p>TableDef</p></th>
-<th><p>使用方法</p></th>
+<th><p>使用法</p></th>
 </tr>
 </thead>
 <tbody>
@@ -68,5 +68,5 @@ ms.locfileid: "32307155"
 テーブル タイプの **Recordset** オブジェクトの場合、 **ValidationRule** プロパティは、テーブル タイプの **Recordset** オブジェクトの作成に使用する **TableDef** オブジェクトの **ValidationRule** プロパティの設定を継承します。
 
 > [!NOTE]
-> このプロパティに整数以外の値を連結した文字列を設定した場合、システムパラメーターでコンマ以外の小数点 (例: strrule = "PRICE &gt; " &amp; lngPrice, and lngPrice = 125, 50) を指定すると、エラーが発生します。コードがデータを検証しようとしています。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Access の SQL で小数点の記号として使用できるのはピリオドのみであるためです。</P>
+> 整数以外の値で連結された文字列にプロパティを設定し、システム パラメーターで米国以外の値を指定する場合。コンマなどの 10 進文字 (strRule = "PRICE &gt; " &amp; lngPrice、lngPrice = 125,50 など) は、コードがデータを検証しようとするときにエラーが発生します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Access の SQL で小数点の記号として使用できるのはピリオドのみであるためです。</P>
 

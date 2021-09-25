@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidAppointmentRecur
 api_type:
 - COM
 ms.assetid: 56d6240f-d07b-48d1-aef0-bf57078ea6c3
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: de50616664048af6b931a09df7c65461e9ee3399
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: eb481316d905e9b3c33b181600626e2b9d8bcf39
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331781"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571298"
 ---
 # <a name="pidlidappointmentrecur-canonical-property"></a>PidLidAppointmentRecur 標準プロパティ
 
@@ -33,7 +33,7 @@ ms.locfileid: "32331781"
 |プロパティ セット:  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008216  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |カレンダー  <br/> |
+|エリア:  <br/> |予定表  <br/> |
    
 ## <a name="remarks"></a>注釈
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249522(v=office.15)
 ms:contentKeyID: 48545841
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 05e5d3a77dc7db5ef5a0d81a3f13d5fc5987f5de
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: bef40c027c85621005d02ab16b9606b9784368a6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283409"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553418"
 ---
 # <a name="ado-enumerated-constants"></a>ADO の列挙定数
 
@@ -186,7 +186,7 @@ ms.locfileid: "32283409"
 </tr>
 <tr class="odd">
 <td><p><a href="recordopenoptionsenum.md">RecordOpenOptionsEnum</a></p></td>
-<td><p><strong>Record</strong> を開くときのオプションを指定します。 これらの値は OR 演算子で結合することもできます。</p></td>
+<td><p><strong>Record</strong> を開くときのオプションを指定します。これらの値は OR 演算子で結合することもできます。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="recordstatusenum.md">RecordStatusEnum</a></p></td>
@@ -206,35 +206,35 @@ ms.locfileid: "32283409"
 </tr>
 <tr class="even">
 <td><p><a href="schemaenum.md">SchemaEnum</a></p></td>
-<td><p><strong>OpenSchema</strong> メソッドが取得するスキーマ <strong>Recordset</strong> の種類を指定します。 <strong>Recordset</strong> 内のレコードの検索方向を表します。</p></td>
+<td><p><strong>OpenSchema</strong> メソッドが取得するスキーマ <strong>Recordset</strong> の種類を指定します。<strong>Recordset</strong> 内のレコードの検索方向を表します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="searchdirectionenum.md">SearchDirectionEnum</a></p></td>
-<td><p><strong>Recordset</strong>内でのレコード検索の方向を指定します。実行する<strong>Seek</strong>の種類を指定します。</p></td>
+<td><p>Recordset 内のレコード検索の方向を指定 <strong>します</strong>。実行する Seek の <strong>種類を</strong> 指定します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="seekenum.md">SeekEnum</a></p></td>
-<td><p>実行する<strong>Seek</strong>の種類を指定します。<strong>Stream</strong>オブジェクトを開くときのオプションを指定します。 これらの値は AND 演算子で結合できます。</p></td>
+<td><p>実行する Seek の <strong>種類を</strong> 指定します。Stream オブジェクトを開くオプション <strong>を指定</strong> します。 これらの値は AND 演算子で結合できます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="streamopenoptionsenum.md">StreamOpenOptionsEnum</a></p></td>
-<td><p><strong>Stream</strong> オブジェクトを開くときのオプションを表します。 これらの値は、and 演算子と組み合わせて使用できます。stream オブジェクトから、ストリーム全体を読み取るか、または次の<strong></strong>行を読み取るかを指定します。</p></td>
+<td><p><strong>Stream</strong> オブジェクトを開くときのオプションを表します。 値は AND 演算子と組み合わせることができます。ストリーム全体または次の行を Stream オブジェクトから読み取るかどうかを <strong>指定</strong> します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="streamreadenum.md">StreamReadEnum</a></p></td>
-<td><p>stream オブジェクトから、ストリーム全体を読み取るか、または次の<strong></strong>行を読み取るかを指定します。<strong>Stream</strong>オブジェクトに格納されているデータの種類を指定します。</p></td>
+<td><p>ストリーム全体または次の行を Stream オブジェクトから読み取るかどうかを <strong>指定</strong> します。Stream オブジェクトに格納されているデータの種類を <strong>指定</strong> します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="streamtypeenum.md">StreamTypeEnum</a></p></td>
-<td><p><strong>Stream</strong>オブジェクトに格納されているデータの種類を指定します。<strong>Stream</strong>オブジェクトに書き込む文字列に、行区切り記号を追加するかどうかを指定します。</p></td>
+<td><p>Stream オブジェクトに格納されているデータの種類を <strong>指定</strong> します。Stream オブジェクトに書き込まれる文字列に行区切り記号を追加するかどうかを <strong>指定</strong> します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="streamwriteenum.md">StreamWriteEnum</a></p></td>
-<td><p><strong>Stream</strong>オブジェクトに書き込む文字列に、行区切り記号を追加するかどうかを指定します。文字列として<strong>Recordset</strong>を取得するときの形式を指定します。</p></td>
+<td><p>Stream オブジェクトに書き込まれる文字列に行区切り記号を追加するかどうかを <strong>指定</strong> します。Recordset を文字列として取得する場合 <strong>の形式</strong> を指定します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="stringformatenum.md">StringFormatEnum</a></p></td>
-<td><p>文字列として<strong>Recordset</strong>を取得するときの形式を指定します。<strong>Connection</strong>オブジェクトのトランザクション属性を指定します。</p></td>
+<td><p>Recordset を文字列として取得する場合 <strong>の形式</strong> を指定します。Connection オブジェクトのトランザクション属性を <strong>指定</strong> します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="xactattributeenum.md">XactAttributeEnum</a></p></td>

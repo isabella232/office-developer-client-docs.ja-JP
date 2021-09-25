@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SizedDtblCheckBox
 api_type:
 - COM
 ms.assetid: 9d04a124-54d4-43ac-967f-ea8e7a09b1d0
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6d23d56a27095497aedc64d7bbf5ffda266d0c97
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9282562032279ab11a36d0ed1687ccd1d1ae8365
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420809"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586727"
 ---
 # <a name="sizeddtblcheckbox"></a>SizedDtblCheckBox
  

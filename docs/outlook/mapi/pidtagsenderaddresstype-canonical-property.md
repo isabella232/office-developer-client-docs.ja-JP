@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagSenderAddressType
 api_type:
 - COM
 ms.assetid: ad7f49ac-6fe8-4037-90f3-8dabd5648bed
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1389c1189293955145f14e65f4c0f3e58bec909f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 77a156132cd9a4192a2f2446e393525b272f3490
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359144"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586993"
 ---
 # <a name="pidtagsenderaddresstype-canonical-property"></a>PidTagSenderAddressType 標準プロパティ
 

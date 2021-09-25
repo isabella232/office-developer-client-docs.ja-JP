@@ -3,17 +3,17 @@ title: 既定のプロファイルの設定
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 1d1e862d-ba49-48a1-bb51-0af861323b7b
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: f6bf8f88fa3e87ae619fa32d759fc182290998ad
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c7c28bcab989c778e98da6619bba6f8c628f7553
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439815"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586734"
 ---
 # <a name="setting-a-default-profile"></a>既定のプロファイルの設定
 

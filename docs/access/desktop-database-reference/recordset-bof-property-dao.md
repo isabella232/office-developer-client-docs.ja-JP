@@ -1,31 +1,31 @@
 ---
-title: Recordset プロパティ (DAO)
+title: Recordset.BOF プロパティ (DAO)
 TOCTitle: BOF Property
 ms:assetid: c50a0c5f-1b26-33ea-4cf2-311f9514a94a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff823092(v=office.15)
 ms:contentKeyID: 48547603
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: babd2351775a9a3cf3128a55627be291a29ea025
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a2b47a11ab4c11ab9eb3f0134c9316ac7fbaf98f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300589"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562364"
 ---
-# <a name="recordsetbof-property-dao"></a>Recordset プロパティ (DAO)
+# <a name="recordsetbof-property-dao"></a>Recordset.BOF プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
 
-カレントレコードの位置が**Recordset**オブジェクトの最初のレコードより前にあるかどうかを示す値を返します。 値の取得のみ可能なブール型 (**Boolean**) の値です。
+カレント レコードの位置が、 **Recordset** オブジェクトの先頭のレコードより前にあるかどうかを示す値を取得します。値の取得のみ可能です。ブール型 ( **Boolean**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。bof プロパティ
+*式* .BOF
 
-*式***Recordset**オブジェクトを表す変数を取得します。
+*expression*: **Recordset** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
@@ -58,39 +58,39 @@ ms.locfileid: "32300589"
 <thead>
 <tr class="header">
 <th><p></p></th>
-<th><p>MoveFirst<br />
+<th><p>MoveFirst、<br />
 MoveLast</p></th>
-<th><p>MovePrevious<br />
-移動&lt; 0</p></th>
+<th><p>MovePrevious、<br />
+Move &lt; 0</p></th>
 <th><p><br />
 Move 0</p></th>
-<th><p>MoveNext<br />
-移動&gt; 0</p></th>
+<th><p>MoveNext、<br />
+Move &gt; 0</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>BOF = True、</strong><br />
-<strong>EOF = False</strong></p></td>
+<td><p><strong>BOF=True、</strong><br />
+<strong>EOF=False</strong></p></td>
 <td><p>可</p></td>
-<td><p>Error</p></td>
-<td><p>Error</p></td>
+<td><p>エラー</p></td>
+<td><p>エラー</p></td>
 <td><p>可</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>BOF = False、</strong><br />
-<strong>EOF = True</strong></p></td>
+<td><p><strong>BOF=False、</strong><br />
+<strong>EOF=True</strong></p></td>
 <td><p>可</p></td>
 <td><p>可</p></td>
-<td><p>Error</p></td>
-<td><p>Error</p></td>
+<td><p>エラー</p></td>
+<td><p>エラー</p></td>
 </tr>
 <tr class="odd">
 <td><p>両方とも <strong>True</strong></p></td>
-<td><p>エラー</p></td>
 <td><p>Error</p></td>
 <td><p>Error</p></td>
-<td><p>エラー</p></td>
+<td><p>Error</p></td>
+<td><p>Error</p></td>
 </tr>
 <tr class="even">
 <td><p>両方とも <strong>False</strong></p></td>
@@ -130,23 +130,23 @@ Microsoft Access ワークスペースでは、レコードを空の **Recordset
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>MoveFirst</strong>、 <strong>MoveLast</strong></p></td>
+<td><p><strong>MoveFirst</strong>、<strong>MoveLast</strong></p></td>
 <td><p><strong>True</strong></p></td>
 <td><p><strong>True</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Move</strong> 0</p></td>
-<td><p>変化なし</p></td>
-<td><p>変化なし</p></td>
+<td><p>変更なし</p></td>
+<td><p>変更なし</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>MovePrevious</strong>、<strong>移動</strong> &lt; 0</p></td>
+<td><p><strong>MovePrevious</strong>、<strong>Move</strong> &lt; 0</p></td>
 <td><p><strong>True</strong></p></td>
-<td><p>変化なし</p></td>
+<td><p>変更なし</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>MoveNext</strong>、 <strong>Move</strong> &gt; 0</p></td>
-<td><p>変化なし</p></td>
+<td><p><strong>MoveNext</strong>、<strong>Move</strong> &gt; 0</p></td>
+<td><p>変更なし</p></td>
 <td><p><strong>True</strong></p></td>
 </tr>
 </tbody>

@@ -3,15 +3,15 @@ title: ニックネーム キャッシュ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2813c102-6778-4443-ab4b-b573f3568705
 description: '最終更新日: 2013 年 1 月 30 日'
-ms.openlocfilehash: 841b01ae8dfcf841b0a1d64113ce7258c4c61583
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6c1074086f4aec413c09fdfe3ca8e7b879f083e4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334518"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579454"
 ---
 # <a name="nickname-cache"></a>ニックネーム キャッシュ
 
@@ -41,7 +41,7 @@ Outlook 2010 または Outlook 2013 と対話するアプリケーションの�
   
  **Outlook 2010 および Outlook 2013**
   
-Outlook 2010 または Outlook 2013 は、メール アカウントの配信ストアの受信トレイの [関連コンテンツ] テーブルにあるメッセージからオートコンプリート ストリームを読み取ります。 この非表示のメッセージには、メッセージ クラスと、メッセージのIPM.Configがあります。オートコンプリート。 オートコンプリート ストリームは、PR_ROAMING_BINARYSTREAM プロパティ[(PidTagRoamingBinary 標準](pidtagroamingbinary-canonical-property.md)プロパティ) のこのメッセージに格納されます。 オートコンプリート データは、%USERPROFILE%\AppData\Local\Microsoft\Outlook\RoamCache にあるオートコンプリート .dat ファイルに一時的にキャッシュされる可能性があります。 ただし、.dat ファイルはキャッシュのみであり、ユーザーが 2010 年または 2013 年 2013 年に終了した場合、配信ストアに書きOutlookにはOutlookされません。
+Outlook 2010 または Outlook 2013 は、メール アカウントの配信ストアの受信トレイの [関連コンテンツ] テーブルにあるメッセージからオートコンプリート ストリームを読み取ります。 この非表示のメッセージには、IPM のメッセージ クラスと件名があります。Configuration.Autocomplete。 オートコンプリート ストリームは、PR_ROAMING_BINARYSTREAM プロパティ[(PidTagRoamingBinary 標準](pidtagroamingbinary-canonical-property.md)プロパティ) のこのメッセージに格納されます。 オートコンプリート データは、%USERPROFILE%\AppData\Local\Microsoft\Outlook\RoamCache にあるオートコンプリート .dat ファイルに一時的にキャッシュされる可能性があります。 ただし、.dat ファイルはキャッシュのみであり、ユーザーが 2010 年または 2013 年 2013 年に終了した場合、配信ストアに書きOutlookにはOutlookされません。
   
 ## <a name="loading-the-autocomplete-stream"></a>オートコンプリート ストリームの読み込み
 

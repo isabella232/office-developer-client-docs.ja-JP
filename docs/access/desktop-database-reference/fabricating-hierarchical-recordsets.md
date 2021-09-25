@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248836(v=office.15)
 ms:contentKeyID: 48543153
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f644f25a04c5573a93aa106884473fed6b45440e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2cf3af43e288fc95bc7a8b21f90955f1061ac050
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293204"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552963"
 ---
 # <a name="fabricating-hierarchical-recordsets"></a>階層レコードセットの生成
 
@@ -48,5 +48,5 @@ ms.locfileid: "32293204"
     rsCustomers.Open strShape, cn, adOpenStatic, adLockOptimistic, -1
 ```
 
-作成された**Recordset**は、ファイルに設定、操作、または永続化することができます。
+Recordset が **作成** された後は、ファイルにデータを取り込み、操作、または永続化できます。
 

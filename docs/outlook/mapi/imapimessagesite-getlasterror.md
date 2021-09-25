@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIMessageSite.GetLastError
 api_type:
 - COM
 ms.assetid: 7ea282d7-388a-4f05-9780-f8dbc5c5d395
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: cc4de8aa21d4b3b27bf757389b663ebeff69a9cc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e14d6ae4752e1852b48a1684fbf161ea7c01d22d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420739"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571767"
 ---
 # <a name="imapimessagesitegetlasterror"></a>IMAPIMessageSite::GetLastError
 

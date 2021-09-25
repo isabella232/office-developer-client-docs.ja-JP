@@ -3,17 +3,17 @@ title: オプションのトランスポート プロバイダーの機能
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 0bec2c17-b41c-4e46-8961-a55bde1f7326
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: df38350b049264e7e20ac0bb821c71d93b992d2a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9cd3623ec185a21f0c12c2fadca826cbe756e7cb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404303"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571389"
 ---
 # <a name="optional-transport-provider-features"></a>オプションのトランスポート プロバイダーの機能
 

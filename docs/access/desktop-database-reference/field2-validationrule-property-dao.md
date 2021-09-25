@@ -1,20 +1,20 @@
 ---
-title: Field2 プロパティ (DAO)
+title: Field2.ValidationRule プロパティ (DAO)
 TOCTitle: ValidationRule Property
 ms:assetid: 5464d2de-f3d7-5d6b-4fc5-66df6a5540cb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194105(v=office.15)
 ms:contentKeyID: 48544896
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b6e9e50148f4b87a957ff2317b1b39522d7d4e1c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3e2c8ba72f55f5c362e01726d0a528b12d9a9960
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292651"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552942"
 ---
-# <a name="field2validationrule-property-dao"></a>Field2 プロパティ (DAO)
+# <a name="field2validationrule-property-dao"></a>Field2.ValidationRule プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -23,9 +23,9 @@ ms.locfileid: "32292651"
 
 ## <a name="syntax"></a>構文
 
-*式*。規則
+*式* .ValidationRule
 
-*式***Field2**オブジェクトを返すオブジェクト式を指定します。
+*式* Field2 オブジェクトを **返す** 式。
 
 ## <a name="remarks"></a>注釈
 
@@ -43,17 +43,17 @@ ms.locfileid: "32292651"
 <thead>
 <tr class="header">
 <th><p>オブジェクトの追加先</p></th>
-<th><p>使用方法</p></th>
+<th><p>使用法</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><strong>Index</strong></p></td>
-<td><p>サポートされていません</p></td>
+<td><p>サポートされません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong></p></td>
-<td><p>読み取り専用</p></td>
+<td><p>値の取得のみ可能です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong></p></td>
@@ -77,6 +77,6 @@ ms.locfileid: "32292651"
 
 
 > [!NOTE]
-> このプロパティに整数以外の値を連結した文字列を設定した場合、システムパラメーターでコンマ以外の小数点 (例: strrule = "PRICE &gt; " &amp; lngPrice, and lngPrice = 125, 50) を指定すると、エラーが発生します。コードがデータを検証しようとしています。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Acces データベース エンジンの SQL で小数点の記号として使用できるのはピリオドのみであるためです。
+> 整数以外の値で連結された文字列にプロパティを設定し、システム パラメーターで米国以外の値を指定する場合。コンマなどの 10 進文字 (strRule = "PRICE &gt; " &amp; lngPrice、lngPrice = 125,50 など) は、コードがデータを検証しようとするときにエラーが発生します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Acces データベース エンジンの SQL で小数点の記号として使用できるのはピリオドのみであるためです。
 
 

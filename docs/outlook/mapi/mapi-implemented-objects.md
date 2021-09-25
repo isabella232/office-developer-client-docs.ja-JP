@@ -3,17 +3,17 @@ title: MAPI 実装オブジェクト
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 5d07c259-0ceb-4ea5-98b4-b01720edfe2a
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 86aa8451b5b127764134f1a3a905366fd014d0c3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 230b7483f284d57a9473502c9c8f21f0f7d85160
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430631"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556183"
 ---
 # <a name="mapi-implemented-objects"></a>MAPI 実装オブジェクト
   
@@ -39,7 +39,7 @@ MAPI には、サポート オブジェクトと TNEF オブジェクトの 2 �
 |[プロファイル] セクション  <br/> |特定のメッセージ サービスまたはサービス プロバイダーの説明に使用されるプロファイルの一部。  <br/> |
 |プロパティ データ  <br/> |プロパティへのアクセスを維持し **、IMAPIProp の実装に役立ちます**。  <br/> |
 |プロバイダーの管理  <br/> |構成用のサービス プロバイダー情報へのアクセスを提供します。  <br/> |
-|セッション  <br/> |基になるメッセージング システムへの接続を表し、MAPI リソースへのアクセスをクライアントに提供します。  <br/> |
+|Session  <br/> |基になるメッセージング システムへの接続を表し、MAPI リソースへのアクセスをクライアントに提供します。  <br/> |
 |状態  <br/> |MAPI サブシステム、アドレス帳、または MAPI スプーラーの状態へのアクセスを提供します。  <br/> |
 |サポート  <br/> |サービス プロバイダーがクライアント要求を処理するのに役立ちます。  <br/> |
 |Table  <br/> |データベース テーブルと同様に、行および列形式のオブジェクト データの概要ビューへのアクセスを提供します。  <br/> |
@@ -50,7 +50,7 @@ MAPI には、サポート オブジェクトと TNEF オブジェクトの 2 �
   
 **MAPI が実装するオブジェクト**
   
-![MAPI が実装するオブジェクト](media/amapi_68.gif "")
+![MAPI が実装するオブジェクト](media/amapi_68.gif "MAPI が実装するオブジェクト")
   
 ## <a name="see-also"></a>関連項目
 

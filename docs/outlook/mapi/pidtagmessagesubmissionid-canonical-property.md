@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagMessageSubmissionId
 api_type:
 - HeaderDef
 ms.assetid: 0a799fe5-04e2-4e1d-b0cd-9bdd2577d299
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 723affa054cb35a9cc7a2ee28e051e3b9a6d04e0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4c308800b10ea7acb9a39a9852da25d88ddbd65a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329401"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587448"
 ---
 # <a name="pidtagmessagesubmissionid-canonical-property"></a>PidTagMessageSubmissionId 標準プロパティ
 

@@ -3,17 +3,17 @@ title: MAPI アプリケーション開発
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: efc84e9c-7b1a-438a-9308-9a7e454c59b0
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 3f22aa5169e885aa17293a0ba7e49a7d5fc34d62
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 322d94d22b0081808701267c6c0ee110e6c36806
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417610"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571494"
 ---
 # <a name="mapi-application-development"></a>MAPI アプリケーション開発
 

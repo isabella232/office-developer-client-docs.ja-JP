@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagSearchFolderLastUsed
 api_type:
 - COM
 ms.assetid: e4071307-6205-4079-ab65-7499d14f145c
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7ff6df6eddc8e610341cb09ccb152f4ad748a984
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ead7acc202025d8a9381fbf1cf3593afbb60c1aa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336534"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586986"
 ---
 # <a name="pidtagsearchfolderlastused-canonical-property"></a>PidTagSearchFolderLastUsed 標準プロパティ
 

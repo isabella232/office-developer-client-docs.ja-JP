@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMsgStore.Unadvise
 api_type:
 - COM
 ms.assetid: 1394039b-d509-49a5-8421-b7362d906879
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: f85b662b7fe710c66a2e69dd3cd3db22e3283ddb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6c0765e2764eced086f2de5c326449919d96b3fc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309724"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571662"
 ---
 # <a name="imsgstoreunadvise"></a>IMsgStore::Unadvise
 

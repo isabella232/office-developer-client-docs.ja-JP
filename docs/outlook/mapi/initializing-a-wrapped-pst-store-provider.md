@@ -3,15 +3,15 @@ title: ラップされた PST ストア プロバイダーの初期化
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 07633717-ba4c-b146-ad65-60b37ab98ab6
 description: '最終更新日: 2012 年 10 月 5 日'
-ms.openlocfilehash: 31114e4082fbc5e4c57da95eb6b32339822b1645
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3601e359eef6d798170d10e2debcb3613245f30c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427823"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571655"
 ---
 # <a name="initializing-a-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーの初期化
 

@@ -1,18 +1,18 @@
 ---
-title: カーソルの種類 (Access デスクトップデータベースリファレンス)
+title: Cursors の種類 (Access デスクトップ データベースリファレンス)
 TOCTitle: Types of Cursors
 ms:assetid: 589f3755-3cf5-9470-bd66-8e8afa218fc5
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249299(v=office.15)
 ms:contentKeyID: 48544996
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6493d746f43ac8d923e5b1b9d6dcd3de44b411ec
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: cffca4770487c9688c1a9de8c44c0335c14f5bdb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314029"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562154"
 ---
 # <a name="types-of-cursors"></a>カーソルの種類
 

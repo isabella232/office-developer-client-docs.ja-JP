@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ff1a6843-6dd6-4527-9fc1-70da288cb9e7
 description: このセクションでは、アイテムの競合Outlook解決し、オフライン アドレス帳の更新時間を決定し、自動構成用にドメインを登録する方法について説明します。
-ms.openlocfilehash: 781d1fe34a8918fdb96900e4f191ea36cf1b732c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f6d38c066badbab92d439b9625bb4b916f51c6c7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411023"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557128"
 ---
 # <a name="outlook-configuration"></a>Outlook の構成
 

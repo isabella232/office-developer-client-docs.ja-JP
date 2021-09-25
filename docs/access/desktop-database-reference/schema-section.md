@@ -1,18 +1,18 @@
 ---
-title: スキーマセクション (Access デスクトップデータベースリファレンス)
+title: '[スキーマ] セクション (Access デスクトップ データベースリファレンス)'
 TOCTitle: Schema Section
 ms:assetid: 59b42ffb-0524-adc3-8bcd-6e4cd2c505ce
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249304(v=office.15)
 ms:contentKeyID: 48545023
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f8c479c430dd6d0ca742fefb4948544d31ba2e61
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a92d778bcad1f2c58bfc2997f6ac112cc9f6049d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308940"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572747"
 ---
 # <a name="schema-section"></a>スキーマ セクション
 
@@ -148,7 +148,7 @@ Schema セクションは必須です。前の例で示したように、ADO は
 <s:AttributeType name="title_id" dt:type="int"/> 
 ```
 
-2 番目の例では、 **rs:fixedlength** 属性を細部で使用しています。 **rs:fixedlength** 属性が true に設定されている列は、そのデータにはスキーマで定義されている長さが必要だということを示しています。 この場合、タイトル\_id の有効な値は、"123" のように "123456" です。 "123" は長さが 6 ではなく 3 のため有効ではありません。 **fixedlength** プロパティの詳細については、「OLE DB Programmer's Guide」 (英語) を参照してください。
+2 番目の例では、 **rs:fixedlength** 属性を細部で使用しています。 **rs:fixedlength** 属性が true に設定されている列は、そのデータにはスキーマで定義されている長さが必要だということを示しています。 この場合、タイトル ID の法的値は \_ "123" 123456"です。 "123" は長さが 6 ではなく 3 のため有効ではありません。 **fixedlength** プロパティの詳細については、「OLE DB Programmer's Guide」 (英語) を参照してください。
 
 ## <a name="handling-nulls"></a>Null の処理
 
@@ -164,14 +164,14 @@ Null 値は **rs:maybenull** 属性によって処理されます。この属性
 </s:AttributeType> 
 ```
 
-定義により CompanyName を null に設定できますが、ShipperID に null 値を含めることはできません。 データセクションに次の行が含まれている場合、永続化プロバイダーは CompanyName 列のデータの状態を OLE DB 状態定数 DBSTATUS\_S\_ISNULL に設定します。
+定義により CompanyName を null に設定できますが、ShipperID に null 値を含めることはできません。 データ セクションに次の行が含まれている場合、永続プロバイダーは、CompanyName 列のデータの状態を OLE DB 状態定数 DBSTATUS \_ S \_ ISNULL に設定します。
 
 ```xml 
  
 <z:row ShipperID="1"/> 
 ```
 
-行が完全に空の場合は、次のように、永続化プロバイダーは\_DBSTATUS E\_の OLE DB の状態を ShipperID\_で\_使用できません。また、CompanyName の場合は DBSTATUS S ISNULL を返します。
+次のように、行が完全に空の場合、永続プロバイダーは、SHIPPerID および \_ \_ DBSTATUS \_ S \_ ISNULL for CompanyName の DBSTATUS E UNAVAILABLE の OLE DB 状態を返します。
 
 ```xml 
  
@@ -185,7 +185,7 @@ Null 値は **rs:maybenull** 属性によって処理されます。この属性
 <z:row ShipperID="1" CompanyName=""/> 
 ```
 
-前の行の場合、永続化プロバイダーは、両方の列に対し\_て\_OLE DB 状態 DBSTATUS S OK を返します。 この場合の CompanyName は単に "" (長さがゼロの文字列) です。
+前の行の永続化プロバイダーは、両方の列に対して DBSTATUS S OK の OLE DB 状態 \_ \_ を返します。 この場合の CompanyName は単に "" (長さがゼロの文字列) です。
 
 OLE DB 用の XML ドキュメントのスキーマ内で使用できる OLE DB コンストラクトの詳細については、"urn:schemas-microsoft-com:rowset" の定義および「OLE DB Programmer's Guide」 (英語) を参照してください。
 

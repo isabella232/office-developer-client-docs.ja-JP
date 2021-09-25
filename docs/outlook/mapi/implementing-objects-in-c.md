@@ -3,17 +3,17 @@ title: C でのオブジェクトの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 24fc4d78-726d-40ff-bad2-25dc298bd51a
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 6026e697cc31545bf7ef518fcbd33ea8db48af5d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 821e59dc006b334383cad6367e19359d0f6006fd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414943"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556449"
 ---
 # <a name="implementing-objects-in-c"></a>C でのオブジェクトの実装
 
@@ -27,7 +27,7 @@ vtable 自体には、オブジェクトでサポートされている各イン�
   
 **オブジェクトの実装**
   
-![オブジェクト実装](media/amapi_42.gif "オブジェクトの実装")
+![オブジェクトの実装](media/amapi_42.gif "オブジェクトの実装")
   
 次のコード例は、C サービス プロバイダーが単純な状態オブジェクトを定義する方法を示しています。 最初のメンバーは、vtable ポインターです。オブジェクトの残りの部分はデータ メンバーででなされます。 
   

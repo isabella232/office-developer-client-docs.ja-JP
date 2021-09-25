@@ -3,17 +3,17 @@ title: セッションを使用したオブジェクトへのアクセス
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: ecada707-2960-41ec-be7e-619cad257c57
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: a76397b74642aedf9ad5c9704735d869f61db7e3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: da0ee486979d02f70f24fed2e6e63a5ce5277564
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410540"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556981"
 ---
 # <a name="accessing-objects-by-using-the-session"></a>セッションを使用したオブジェクトへのアクセス
 
@@ -38,10 +38,10 @@ ms.locfileid: "33410540"
 |アドレス帳プロバイダーのログオン オブジェクト  <br/> |[IABLogon::OpenEntry](iablogon-openentry.md) <br/> |
 |アドレス帳  <br/> |[IAddrBook::OpenEntry](iaddrbook-openentry.md) <br/> |
 |アドレス帳コンテナー  <br/> |[IMAPIContainer::OpenEntry](imapicontainer-openentry.md) <br/> |
-|セッション  <br/> |[IMAPISession::OpenEntry](imapisession-openentry.md) <br/> |
+|Session  <br/> |[IMAPISession::OpenEntry](imapisession-openentry.md) <br/> |
 |メッセージ ストア  <br/> |[IMsgStore::OpenEntry](imsgstore-openentry.md) <br/> |
 |メッセージ ストア プロバイダーのログオン オブジェクト  <br/> |[IMSLogon::OpenEntry](imslogon-openentry.md) <br/> |
-|Folder  <br/> |[IMAPIContainer::OpenEntry](imapicontainer-openentry.md) <br/> |
+|フォルダー  <br/> |[IMAPIContainer::OpenEntry](imapicontainer-openentry.md) <br/> |
 |サポート オブジェクト  <br/> |[IMAPISupport::OpenEntry](imapisupport-openentry.md) <br/> |
    
 **一部の OpenEntry** メソッドでは **、IMAPISession::OpenEntry** と同様に、オブジェクトのエントリ識別子を開く必要があります。その他のメソッドでは、NULL を指定できます。 NULL エントリ識別子は、オブジェクトによって異なる方法で解釈されます。 たとえば、NULL エントリ識別子を使用して **IAddrBook::OpenEntry** を呼び出す場合、MAPI はアドレス帳のルート コンテナーを開きます。 メッセージ ストアの **OpenEntry メソッドも** 同様に動作します。メッセージ ストアのルート フォルダーが開きます。 **IMAPIContainer::OpenEntry** は、フォルダーコンテナーとアドレス帳コンテナーの両方によって実装され、実装者によっては MAPI_E_INVALID_PARAMETER またはルート コンテナーを返す場合があります。 

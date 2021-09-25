@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ITableData.HrQueryRow
 api_type:
 - COM
 ms.assetid: 66ce8f36-2b2b-4a8e-b9b2-43782d8357a1
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: da41fadc9a71a410dd115e28ce2cf9c81442b104
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a513fbe235a61b331f05c7c99d11f9adc3c987ac
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434768"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556225"
 ---
 # <a name="itabledatahrqueryrow"></a>ITableData::HrQueryRow
 

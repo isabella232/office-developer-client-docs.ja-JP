@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249202(v=office.15)
 ms:contentKeyID: 48544502
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2bfe788923d623300edac28f0f27534b3ffd8b32
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 039cb85a1867c84b74627e83621a43fca5f11fc4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283402"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553439"
 ---
 # <a name="ado-dynamic-property-index"></a>ADO の動的プロパティ インデックス
 
@@ -38,7 +38,7 @@ ms.locfileid: "32283402"
 
 (1) このプロパティは、ブール型 (Boolean) のフラグで、指定したインターフェイスを使用するかどうかを示します。等価の OLE DB プロパティが存在する場合は、その名前を示します。
 
-(2) "Bookmarkable" ADO プロパティは、下位互換性のために内部的に生成され、OLE DB プロパティの\_DBPROP IROWSETLOCATE にマップされます。 これは、ADO プロパティ IRowsetLocate に対応するプロパティと同じです。
+(2) "Bookmarkable" ADO プロパティは、下位互換性のために内部的に生成され、OLE DB プロパティ DBPROP \_ IROWSETLOCATE にマップされます。 これは、ADO プロパティ IRowsetLocate に対応するプロパティと同じです。
 
 (3) ADO プロパティ名 "Hidden Columns" は、OLE DB プロパティ名の "説明" 欄では "Hidden Columns Count" となっています。
 
@@ -149,7 +149,7 @@ ms.locfileid: "32283402"
 <td><p>DBPROP_INIT_LCID</p></td>
 </tr>
 <tr class="odd">
-<td><p>場所</p></td>
+<td><p>Location</p></td>
 <td><p>DBPROP_INIT_LOCATION</p></td>
 </tr>
 <tr class="even">
@@ -338,7 +338,7 @@ ms.locfileid: "32283402"
 </tr>
 <tr class="even">
 <td><p>IChapteredRowset</p></td>
-<td><p>スナップショット</p></td>
+<td><p>(1)</p></td>
 </tr>
 <tr class="odd">
 <td><p>IColumnsInfo</p></td>
@@ -353,8 +353,8 @@ ms.locfileid: "32283402"
 <td><p>DBPROP_ICONNECTIONPOINTCONTAINER (1)</p></td>
 </tr>
 <tr class="even">
-<td><p>iconverttype</p></td>
-<td><p>スナップショット</p></td>
+<td><p>IConvertType</p></td>
+<td><p>(1)</p></td>
 </tr>
 <tr class="odd">
 <td><p>ILockBytes</p></td>
@@ -365,12 +365,12 @@ ms.locfileid: "32283402"
 <td><p>DBPROP_IROWSET (1)</p></td>
 </tr>
 <tr class="odd">
-<td><p>idbas/chstatus</p></td>
+<td><p>IDBAsynchStatus</p></td>
 <td><p>DBPROP_IDBASYNCHSTATUS (1)</p></td>
 </tr>
 <tr class="even">
-<td><p>iparentrowset</p></td>
-<td><p>スナップショット</p></td>
+<td><p>IParentRowset</p></td>
+<td><p>(1)</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetChange</p></td>
@@ -378,7 +378,7 @@ ms.locfileid: "32283402"
 </tr>
 <tr class="even">
 <td><p>IRowsetExactScroll</p></td>
-<td><p>スナップショット</p></td>
+<td><p>(1)</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetFind</p></td>
@@ -402,7 +402,7 @@ ms.locfileid: "32283402"
 </tr>
 <tr class="even">
 <td><p>IRowsetResynch</p></td>
-<td><p>スナップショット</p></td>
+<td><p>(1)</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetScroll</p></td>
@@ -614,7 +614,7 @@ ms.locfileid: "32283402"
 </tr>
 <tr class="odd">
 <td><p>Private1</p></td>
-<td><p>5</p></td>
+<td><p>(5)</p></td>
 </tr>
 <tr class="even">
 <td><p>Quick Restart</p></td>

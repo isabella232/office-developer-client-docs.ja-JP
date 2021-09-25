@@ -1,20 +1,20 @@
 ---
-title: drilleddown プロパティ (ADO MD)
+title: DrilledDown プロパティ (ADO MD)
 TOCTitle: DrilledDown property (ADO MD)
 ms:assetid: 1dfe728f-8da2-1d2b-7361-8689a0b088b4
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248972(v=office.15)
 ms:contentKeyID: 48543610
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 40a97c7f755f681169c77c3a2077ee41d9cdc980
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2cd7f38bc3adee25c5a4fa7765b94a289fc5b7b7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293687"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553068"
 ---
-# <a name="drilleddown-property-ado-md"></a>drilleddown プロパティ (ADO MD)
+# <a name="drilleddown-property-ado-md"></a>DrilledDown プロパティ (ADO MD)
 
 
 **適用先:** Access 2013、Office 2013

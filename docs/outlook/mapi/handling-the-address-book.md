@@ -3,17 +3,17 @@ title: アドレス帳の処理
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: b685244a-fe1b-4416-85d3-4bd86ccbc3aa
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 464549732562a4a02d081dc5a4c5e573e38cbbce
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4901935b412986deceac7926cb653f6515bf8f72
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413921"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556659"
 ---
 # <a name="handling-the-address-book"></a>アドレス帳の処理
   

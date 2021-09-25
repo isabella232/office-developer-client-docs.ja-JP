@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249220(v=office.15)
 ms:contentKeyID: 48544595
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 99f381ad2f38dc7d2c467ed1e40e4084032006d1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 63d96a0ae4889f4120ad44744cbf9628451dfdc6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290868"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562616"
 ---
 # <a name="item-property-ado-md-cellset"></a>Item プロパティ (ADO MD Cellset)
 
@@ -22,19 +22,19 @@ ms.locfileid: "32290868"
 
 ## <a name="syntax"></a>構文
 
-*セルのセル* = ** セットを設定します。アイテム (*位置*)
+セル *セルセット*  =  *を設定します*。Item (*Positions*)
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
-|*Positions* |セルを一意に指定する値の**バリアント型 (Variant** ) の配列です。 *Positions* は次のいずれかです。<br/><br/>-位置番号の配列<br/>-メンバ名の配列<br/>-序数の位置 |
+|*Positions* |セル **を一意** に指定する値のバリアント型 (Variant) の配列。 *Positions* は次のいずれかです。<br/><br/>- 位置番号の配列<br/>- メンバー名の配列<br/>- 序数の位置 |
 
 ## <a name="remarks"></a>注釈
 
 **Item** プロパティを使用して、[Cellset](cellset-object-ado-md.md) オブジェクト内の [Cell](cell-object-ado-md.md) オブジェクトを返します。**Item** プロパティによって、引数 *Positions* に対応するセルが見つからない場合は、エラーが発生します。
 
-**Item** プロパティは **Cellset** オブジェクトの既定プロパティです。 次のいずれの構文形式でも同じ結果が得られます。
+**Item** プロパティは **Cellset** オブジェクトの既定プロパティです。次のいずれの構文形式でも同じ結果が得られます。
 
 ```vb
     Cellset.Item ( Positions )

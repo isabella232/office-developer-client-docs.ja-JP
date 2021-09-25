@@ -1,5 +1,5 @@
 ---
-title: Recordset2 プロパティ (DAO)
+title: Recordset2.EOF プロパティ (DAO)
 TOCTitle: EOF Property
 ms:assetid: 9d4e1ee2-e866-3ebf-e08b-b31b0cb47ed9
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198245(v=office.15)
@@ -10,26 +10,26 @@ f1_keywords:
 - dao360.chm1052886
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 2d328160b6c88de61a041c54bcd6f305b73c26da
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fa77494e65148c23e4c65bf2acc81f14359b7c7a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309444"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572831"
 ---
-# <a name="recordset2eof-property-dao"></a>Recordset2 プロパティ (DAO)
+# <a name="recordset2eof-property-dao"></a>Recordset2.EOF プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 カレント レコードの位置が、**Recordset** オブジェクトの最後のレコードより後にあるかどうかを示す値を取得します。値の取得のみ可能です。ブール型 (**Boolean**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。EOF
+*式* .EOF
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 
@@ -62,39 +62,39 @@ ms.locfileid: "32309444"
 <thead>
 <tr class="header">
 <th><p></p></th>
-<th><p>MoveFirst<br />
+<th><p>MoveFirst、<br />
 MoveLast</p></th>
-<th><p>MovePrevious<br />
-移動&lt; 0</p></th>
+<th><p>MovePrevious、<br />
+Move &lt; 0</p></th>
 <th><p><br />
 Move 0</p></th>
-<th><p>MoveNext<br />
-移動&gt; 0</p></th>
+<th><p>MoveNext、<br />
+Move &gt; 0</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>BOF = True、</strong><br />
-<strong>EOF = False</strong></p></td>
+<td><p><strong>BOF=True、</strong><br />
+<strong>EOF=False</strong></p></td>
 <td><p>可</p></td>
-<td><p>Error</p></td>
-<td><p>Error</p></td>
+<td><p>エラー</p></td>
+<td><p>エラー</p></td>
 <td><p>可</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>BOF = False、</strong><br />
-<strong>EOF = True</strong></p></td>
+<td><p><strong>BOF=False、</strong><br />
+<strong>EOF=True</strong></p></td>
 <td><p>可</p></td>
 <td><p>可</p></td>
-<td><p>Error</p></td>
-<td><p>Error</p></td>
+<td><p>エラー</p></td>
+<td><p>エラー</p></td>
 </tr>
 <tr class="odd">
 <td><p>両方とも <strong>True</strong></p></td>
-<td><p>エラー</p></td>
 <td><p>Error</p></td>
 <td><p>Error</p></td>
-<td><p>エラー</p></td>
+<td><p>Error</p></td>
+<td><p>Error</p></td>
 </tr>
 <tr class="even">
 <td><p>両方とも <strong>False</strong></p></td>
@@ -134,23 +134,23 @@ Microsoft Access ワークスペースでは、レコードを空の **Recordset
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>MoveFirst</strong>、 <strong>MoveLast</strong></p></td>
+<td><p><strong>MoveFirst</strong>、<strong>MoveLast</strong></p></td>
 <td><p><strong>True</strong></p></td>
 <td><p><strong>True</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Move</strong> 0</p></td>
-<td><p>変化なし</p></td>
-<td><p>変化なし</p></td>
+<td><p>変更なし</p></td>
+<td><p>変更なし</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>MovePrevious</strong>、<strong>移動</strong> &lt; 0</p></td>
+<td><p><strong>MovePrevious</strong>、<strong>Move</strong> &lt; 0</p></td>
 <td><p><strong>True</strong></p></td>
-<td><p>変化なし</p></td>
+<td><p>変更なし</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>MoveNext</strong>、 <strong>Move</strong> &gt; 0</p></td>
-<td><p>変化なし</p></td>
+<td><p><strong>MoveNext</strong>、<strong>Move</strong> &gt; 0</p></td>
+<td><p>変更なし</p></td>
 <td><p><strong>True</strong></p></td>
 </tr>
 </tbody>

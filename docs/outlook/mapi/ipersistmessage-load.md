@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IPersistMessage.Load
 api_type:
 - COM
 ms.assetid: bd4646d2-8229-499d-91aa-3cbec72b9445
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 5024c2f8b88b54051e4b8400f4b3f14374b10c23
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 23b486a91701a317f23b6dd1f0018db115f369c4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317130"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579769"
 ---
 # <a name="ipersistmessageload"></a>IPersistMessage::Load
 

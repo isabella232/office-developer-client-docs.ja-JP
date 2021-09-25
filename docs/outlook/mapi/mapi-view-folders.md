@@ -3,17 +3,17 @@ title: MAPI ビュー フォルダー
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: a1936ec2-bf8a-4242-a41d-64d26b813bd0
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: ca9e5138d3ded13dfe33037f75e43ef1098f3c2d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 194d62a645a5c641abc931db695b0d6acf0ac53a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412535"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579496"
 ---
 # <a name="mapi-view-folders"></a>MAPI ビュー フォルダー
 

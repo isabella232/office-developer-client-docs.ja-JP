@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagContactAddressBookStoreNames
 api_type:
 - HeaderDef
 ms.assetid: d1c3b6d9-75aa-4bc2-9a10-4b9664a8d42e
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7818a638654c2d4a821ad25d71991d4468172a35
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d712e8cf5d4377b8f4ba52954a91f3391a2bf729
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439885"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571109"
 ---
 # <a name="pidtagcontactaddressbookstorenames-canonical-property"></a>PidTagContactAddressBookStoreNames 標準プロパティ
 

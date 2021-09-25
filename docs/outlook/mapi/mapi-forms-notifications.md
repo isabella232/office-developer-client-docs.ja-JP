@@ -3,17 +3,17 @@ title: MAPI フォーム通知
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 97ff2733-a2b1-4da0-b628-00850fc7925b
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: e9c10f78af6dff2e0d0c59d0bfe59be07dccd4b2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b0d5ffeb6aee30966f12e13a82ef7e345a86ab3f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418611"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556176"
 ---
 # <a name="mapi-forms-notifications"></a>MAPI フォーム通知
 

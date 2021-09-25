@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249679(v=office.15)
 ms:contentKeyID: 48546479
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4326b3edcbdfa9e3dabc4e3d0692290c343c3bd6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 36d0169b3bfd37bc8a412e4159948c1dd4cdc63b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295537"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562798"
 ---
 # <a name="copyrecord-copyto-and-savetofile-methods-example-vb"></a>CopyRecord メソッド、CopyTo メソッド、SaveToFile メソッドの使用例 (VB)
 
 
 **適用先:** Access 2013、Office 2013
 
-この例では、[Stream](stream-object-ado.md) オブジェクトまたは [Record](record-object-ado.md) オブジェクトを使用してファイルのコピーを作成する方法を示します。 インターネット発行用に web フォルダーに対して1つのコピーが作成されます。 この例では、 [Stream Type](type-property-ado-stream.md)、 **Open** 、 [LoadFromFile](loadfromfile-method-ado.md)、[Record Open](open-method-ado-record.md) などのプロパティやメソッドも使用されています。
+この例では、[Stream](stream-object-ado.md) オブジェクトまたは [Record](record-object-ado.md) オブジェクトを使用してファイルのコピーを作成する方法を示します。 インターネット発行用の Web フォルダーに 1 つのコピーが作成されます。 この例では、 [Stream Type](type-property-ado-stream.md)、 **Open** 、 [LoadFromFile](loadfromfile-method-ado.md)、[Record Open](open-method-ado-record.md) などのプロパティやメソッドも使用されています。
 
 ```vb 
  

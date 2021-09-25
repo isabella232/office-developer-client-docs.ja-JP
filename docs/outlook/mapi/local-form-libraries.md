@@ -3,17 +3,17 @@ title: ローカル フォーム ライブラリ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: fbfe2303-b7bc-456b-b746-37f4f4e3eff7
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 0680c84caf52badb446fed8d31c68a26b06f4d1a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ef45a519fb21392b79bd18897954f459933a19a4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431282"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556232"
 ---
 # <a name="local-form-libraries"></a>ローカル フォーム ライブラリ
 

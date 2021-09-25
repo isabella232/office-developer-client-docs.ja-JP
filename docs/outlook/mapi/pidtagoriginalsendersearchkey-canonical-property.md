@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagOriginalSenderSearchKey
 api_type:
 - COM
 ms.assetid: 164eb9dd-e553-459e-99c1-3da0284bb01f
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 97ab08d3da3725187ef2d5c70bec80e9142bdd21
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e4b988bc5a1ee3c2e6c16cedfe3399d1af683e81
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342603"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587399"
 ---
 # <a name="pidtagoriginalsendersearchkey-canonical-property"></a>PidTagOriginalSenderSearchKey 標準プロパティ
 

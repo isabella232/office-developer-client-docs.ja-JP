@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagRecordKey
 api_type:
 - COM
 ms.assetid: a12fb9a2-799d-4112-b26c-4b2854c47cc2
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7a3ae7db1fb97e97f7d0939b67f139af62477bf7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 96e509e1348bf3996d1f73d2f7a14d4f386774f3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355266"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587210"
 ---
 # <a name="pidtagrecordkey-canonical-property"></a>PidTagRecordKey 標準プロパティ
 
@@ -57,15 +57,15 @@ ms.locfileid: "32355266"
 |**特性**|**PR_ENTRYID**|**PR_RECORD_KEY**|**PR_SEARCH_KEY**|
 |:-----|:-----|:-----|:-----|
 |添付ファイル オブジェクトに必須  <br/> |いいえ  <br/> |はい  <br/> |いいえ  <br/> |
-|フォルダー オブジェクトに必須  <br/> |はい  <br/> |はい  <br/> |いいえ  <br/> |
-|メッセージ ストア オブジェクトで必須  <br/> |はい  <br/> |はい  <br/> |いいえ  <br/> |
-|状態オブジェクトで必須  <br/> |はい  <br/> |いいえ  <br/> |いいえ  <br/> |
+|フォルダー オブジェクトに必須  <br/> |はい  <br/> |必要  <br/> |いいえ  <br/> |
+|メッセージ ストア オブジェクトで必須  <br/> |はい  <br/> |必要  <br/> |いいえ  <br/> |
+|状態オブジェクトで必須  <br/> |必要  <br/> |いいえ  <br/> |いいえ  <br/> |
 |クライアントによる折りたたみ可能  <br/> |いいえ  <br/> |いいえ  <br/> |はい  <br/> |
 |SaveChanges への呼び出し **の前に使用可能** <br/> |多分  <br/> |多分  <br/> |メッセージ はい その他 多分  <br/> |
-|コピー操作で変更された  <br/> |はい  <br/> |はい  <br/> |いいえ  <br/> |
+|コピー操作で変更された  <br/> |はい  <br/> |必要  <br/> |いいえ  <br/> |
 |コピー後にクライアントが変更可能  <br/> |いいえ  <br/> |いいえ  <br/> |はい  <br/> |
 |..内で一意です。  <br/> |ワールド全体  <br/> |プロバイダー インスタンス  <br/> |ワールド全体  <br/> |
-|バイナリ比較 (memcmp と同様)  <br/> |いいえ -- **IMAPISupport:: CompareEntryIDs を使用する** <br/> |はい  <br/> |はい  <br/> |
+|バイナリ比較 (memcmp と同様)  <br/> |いいえ -- **IMAPISupport:: CompareEntryIDs を使用する** <br/> |はい  <br/> |必要  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 

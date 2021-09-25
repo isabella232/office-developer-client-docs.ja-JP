@@ -3,17 +3,17 @@ title: MAPI の初期化
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 22ee8157-d74e-4a94-9c76-b9ac736d5211
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 5fde3e7eda8d98eb5080fff360616649b1eb96a5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7efde83b40ca62fcd19d430f9b261789bac55e18
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309731"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556351"
 ---
 # <a name="initializing-mapi"></a>MAPI の初期化
 
@@ -25,7 +25,7 @@ MAPI ライブラリを使用するクライアント アプリケーション�
   
 - MAPI_NT_SERVICE
     
-    クライアントが windows MAPI_NT_SERVICE実装されている場合は、このフラグを設定します。 クライアントが Windows サービスであり、このフラグを設定しない場合、MAPI はサービスとして認識できません。 
+    クライアントが MAPI_NT_SERVICEサービスとして実装されている場合は、Windowsフラグを設定します。 クライアントがサービスのWindowsこのフラグを設定しない場合、MAPI はサービスとして認識できません。 
     
 - MAPI_MULTITHREAD_NOTIFICATIONS
     
@@ -45,13 +45,13 @@ MAPI ライブラリを使用するクライアント アプリケーション�
     
 最初の **MAPIInitialize** 呼び出しでフラグを設定することで、使用するスレッドを選択できます。 スレッドの 1 つで通知を処理できる危険性は、スレッドが消えると、通知ウィンドウが破棄され、通知を他のスレッドに送信できなくなるという危険があります。 また、非表示ウィンドウのメッセージ キューに投稿される通知メッセージのディスパッチを制御するために、特別な処理が必要になる場合があります。 
   
-別のウィンドウを使用して通知を処理する場合は、通知が適切なスレッドに適切な時刻に表示されます。 通知ウィンドウに投稿された Windows メッセージをチェックして処理する特別なコードは必要はありません。 
+別のウィンドウを使用して通知を処理する場合は、通知が適切なスレッドに適切な時刻に表示されます。 通知ウィンドウに投稿されたメッセージを確認して処理する特別なWindows必要はありません。 
   
 MAPI では、次の種類のクライアント アプリケーションが別のスレッドを使用して、通知サポート用の非表示ウィンドウを作成する必要があります。
   
 - すべてのマルチスレッド クライアント。
     
-- シングル スレッド Windows サービスと Win32 コンソール アプリケーション。
+- シングル スレッド サービスWindows Win32 コンソール アプリケーション。
     
 - 通知にメイン スレッドを使用する必要ないシングル スレッド クライアント。
     

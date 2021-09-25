@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f64cde12-7ed1-444f-8ca4-51cb3ea514cf
 description: '最終更新日: 2012 年 2 月 21 日'
-ms.openlocfilehash: ad41f9b6060e5cfbabecfd9bb29a47815929d6b5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 13824c686c92901db5fa7849247b3be176aba961
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338732"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571395"
 ---
 # <a name="mnls_widechartomultibyte"></a>MNLS_WideCharToMultiByte
 

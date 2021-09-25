@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249845(v=office.15)
 ms:contentKeyID: 48547146
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: fbdf8362796bfec7821e1464400ec1ba00637d6b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: cff591f5421c8d322d207cc2498d43fb89a3946e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32312762"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562084"
 ---
 # <a name="users-collection-properties-methods-and-events-adox"></a>Users コレクションのプロパティ、メソッド、およびイベント (ADOX)
 
@@ -23,9 +23,9 @@ ms.locfileid: "32312762"
 - [Count プロパティ](count-property-ado.md)
 - [Item プロパティ](item-property-ado.md)
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>Methods
 
-- [Append メソッド (ユーザー)](append-method-adox-users.md)
+- [Append メソッド (Users)](append-method-adox-users.md)
 - [Delete メソッド (コレクション)](delete-method-adox-collections.md)
 - [Refresh メソッド](refresh-method-ado.md)
 

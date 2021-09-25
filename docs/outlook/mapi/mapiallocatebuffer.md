@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPIAllocateBuffer
 api_type:
 - HeaderDef
 ms.assetid: f1fc7fc5-c71f-44f7-930a-571773eb6809
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 589ad42199e6f2ec1039499dfd9beda044ccc3dd
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c50f34f273f351bb0c2051247073cbc611013fd9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425695"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579482"
 ---
 # <a name="mapiallocatebuffer"></a>MAPIAllocateBuffer
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845094(v=office.15)
 ms:contentKeyID: 48543144
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 566c1e01242f1ac3711211e5f87ff4d176d5c594
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: afdd9a1fd2228b75d37826b08bdbe4ae36acac6a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314603"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552529"
 ---
 # <a name="setoptionenum-enumeration-dao"></a>SetOptionEnum 列挙 (DAO)
 
@@ -41,7 +41,7 @@ ms.locfileid: "32314603"
 <td><p>ExclusiveAsyncDelay キー。</p></td>
 </tr>
 <tr class="even">
-<td><p>dbflushtransactiontimeout</p></td>
+<td><p>dbFlushTransactionTimeout</p></td>
 <td><p>66</p></td>
 <td><p>FlushTransactionTimeout キー。</p></td>
 </tr>
@@ -51,18 +51,18 @@ ms.locfileid: "32314603"
 <td><p>ImplicitCommitSync キー。</p></td>
 </tr>
 <tr class="even">
-<td><p>dblockdelay</p></td>
+<td><p>dbLockDelay</p></td>
 <td><p>63</p></td>
 <td><p>LockDelay キー。</p></td>
 </tr>
 <tr class="odd">
-<td><p>dblockretry</p></td>
+<td><p>dbLockRetry</p></td>
 <td><p>57</p></td>
 <td><p>LockRetry キー。</p></td>
 </tr>
 <tr class="even">
-<td><p>dbmaxbuffersize</p></td>
-<td><p>~</p></td>
+<td><p>dbMaxBufferSize</p></td>
+<td><p>8 </p></td>
 <td><p>MaxBufferSize キー。</p></td>
 </tr>
 <tr class="odd">
@@ -72,11 +72,11 @@ ms.locfileid: "32314603"
 </tr>
 <tr class="even">
 <td><p>dbPageTimeout</p></td>
-<td><p>シックス</p></td>
+<td><p>6 </p></td>
 <td><p>PageTimeout キー。</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbpasswordencryptionalgorithm</p></td>
+<td><p>dbPasswordEncryptionAlgorithm</p></td>
 <td><p>81</p></td>
 <td><p>暗号化アルゴリズムの名前。</p></td>
 </tr>
@@ -86,7 +86,7 @@ ms.locfileid: "32314603"
 <td><p>暗号化キーの長さ。40 から始まる 8 の倍数である必要があります。</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbpasswordencryptionprovider</p></td>
+<td><p>dbPasswordEncryptionProvider</p></td>
 <td><p>80</p></td>
 <td><p>暗号化プロバイダーの名前。</p></td>
 </tr>
@@ -96,12 +96,12 @@ ms.locfileid: "32314603"
 <td><p>RecycleLVs キー。</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbsharedasyncdelay</p></td>
+<td><p>dbSharedAsyncDelay</p></td>
 <td><p>61</p></td>
 <td><p>SharedAsyncDelay キー。</p></td>
 </tr>
 <tr class="even">
-<td><p>dbusercommitsync</p></td>
+<td><p>dbUserCommitSync</p></td>
 <td><p>58</p></td>
 <td><p>UserCommitSync キー。</p></td>
 </tr>

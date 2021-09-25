@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIViewContext.GetPrintSetup
 api_type:
 - COM
 ms.assetid: eaf3bafb-975d-42c8-99ea-7f9ef9c934ba
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: a58e723113f70c10b5c8468f5bdd0d8d9014bd2c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 58eccafa4faec96de0acacd4338798dba9f110d2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425128"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556463"
 ---
 # <a name="imapiviewcontextgetprintsetup"></a>IMAPIViewContext::GetPrintSetup
 

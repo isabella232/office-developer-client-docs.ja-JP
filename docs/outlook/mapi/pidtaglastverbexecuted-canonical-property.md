@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagLastVerbExecuted
 api_type:
 - HeaderDef
 ms.assetid: 502f0261-697f-41bf-8530-75e1d0f503e5
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9abd4eb955428595ebe41ab9b2c661303ee2779a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4e5e13f54cf33542ac8a73a28e5cfb948e484dba
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279616"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587539"
 ---
 # <a name="pidtaglastverbexecuted-canonical-property"></a>PidTagLastVerbExecuted 標準プロパティ
 

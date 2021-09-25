@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IProfAdmin.SetDefaultProfile
 api_type:
 - COM
 ms.assetid: 58f50535-b0ed-4097-bda8-fd3ccc2d4b49
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 44be43864d943257520f27297e5754a4978c568d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2c59eb9a4972c72ae1afea4e21118df24eae756a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439626"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556316"
 ---
 # <a name="iprofadminsetdefaultprofile"></a>IProfAdmin::SetDefaultProfile
 

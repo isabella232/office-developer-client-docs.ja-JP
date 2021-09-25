@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249464(v=office.15)
 ms:contentKeyID: 48545618
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5d54ad7f92e7be635dc52be9912f348d67587d31
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a2023721e6fd94246421f4103e266b7e23c725d6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308513"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562210"
 ---
 # <a name="status-property-example-vc"></a>Status プロパティの使用例 (VC++)
 
@@ -210,7 +210,7 @@ void PrintComError(_com_error &e)
 // EndStatusCpp 
 ```
 
-**statusx .h**
+**StatusX.h**
 
 ```cpp 
  

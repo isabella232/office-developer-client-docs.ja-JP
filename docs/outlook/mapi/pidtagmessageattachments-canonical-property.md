@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagMessageAttachments
 api_type:
 - HeaderDef
 ms.assetid: 85762771-b823-4227-9a7b-75b6ac280b2d
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 975f52e6ea0ca7a469a027565f845f9dc0f9c2cf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e01c5aacef78bbe911ec989c043de1cd0c5eb5fd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342568"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587490"
 ---
 # <a name="pidtagmessageattachments-canonical-property"></a>PidTagMessageAttachments 標準プロパティ
 

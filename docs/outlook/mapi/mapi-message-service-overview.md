@@ -3,17 +3,17 @@ title: MAPI メッセージ サービスの概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 58f36a6b-bcc5-4ebb-9761-6f420a718d97
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 8973cdcee2b10346d0ba07033357b50f7e9a6a27
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b4463dcadb73eb44aadd16cb75eb9750968a57bb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406256"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579608"
 ---
 # <a name="mapi-message-service-overview"></a>MAPI メッセージ サービスの概要
   
@@ -27,7 +27,7 @@ ms.locfileid: "33406256"
   
 **メッセージ サービスのインストールおよび構成**
   
-![メッセージ サービスのインストールと構成](media/amapi_44.gif "メッセージ サービスのインストールと構成")
+![メッセージ サービスのインストールおよび構成](media/amapi_44.gif "メッセージ サービスのインストールおよび構成")
   
 ユーザーは、各メッセージ サービスのインストール コードを呼び出して、サービスとそのサービス プロバイダーをプロファイルに追加します。 図に示すメッセージ サービスの 1 つには、3 つのサービス プロバイダーがあります。他のメッセージ サービスには、2 つのサービス プロバイダーがあります。 インストールが完了した後、通常はログオン時に、各メッセージ サービスのサービス プロバイダーが構成されます。 各メッセージ サービスの構成コードは、サービス内のプロバイダーの構成を処理します。
   

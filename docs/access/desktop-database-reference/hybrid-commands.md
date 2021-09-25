@@ -1,18 +1,18 @@
 ---
-title: ハイブリッドコマンド (Access デスクトップデータベースリファレンス)
+title: ハイブリッド コマンド (Access デスクトップ データベースリファレンス)
 TOCTitle: Hybrid commands
 ms:assetid: 55654274-0494-349f-820d-92108284449d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249286(v=office.15)
 ms:contentKeyID: 48544929
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7fe3e6d0afbba82cacd5a55c630f1ca41f3e318a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7c7768ab15659abcf1ab49cb03524f4871616740
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291909"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552829"
 ---
 # <a name="hybrid-commands"></a>ハイブリッド コマンド
 

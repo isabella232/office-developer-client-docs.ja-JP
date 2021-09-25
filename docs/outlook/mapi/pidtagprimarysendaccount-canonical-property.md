@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagPrimarySendAccount
 api_type:
 - COM
 ms.assetid: 2f268b3b-2e4c-4aea-8879-bdd0ac1df35c
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2c32cc61fea63cd38215c30e04e8a467d4901cc9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 13515f4ae2511b3c5d3751835335cd991d850715
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339376"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587287"
 ---
 # <a name="pidtagprimarysendaccount-canonical-property"></a>PidTagPrimarySendAccount 標準プロパティ
 

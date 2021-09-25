@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMsgServiceAdmin.SetPrimaryIdentity
 api_type:
 - COM
 ms.assetid: 763cab41-f6f6-4cb0-8cb8-170fdf2a92e6
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: b237a57dfea020c7bfcb66d49d43428c1f6506c2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d12795d083053460dc61a2f7e36df3802120665d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430365"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579860"
 ---
 # <a name="imsgserviceadminsetprimaryidentity"></a>IMsgServiceAdmin::SetPrimaryIdentity
 

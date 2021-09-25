@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm98639
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 86834cd8b6132e8939067c0e34037ca1b0ef8bad
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0a6494c6cdf3771d5d0235c4572fae23d48f924f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314610"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572677"
 ---
 # <a name="setorderby-macro-action"></a>SetOrderBy マクロ アクション
 
@@ -25,7 +25,7 @@ ms.locfileid: "32314610"
 
 **SetOrderBy** アクションを使用し、フォーム、レポート、テーブル、またはクエリ結果のレコードを並べ替えることができます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 **SetOrderBy** アクションの引数は次のとおりです。
 

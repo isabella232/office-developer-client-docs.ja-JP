@@ -3,17 +3,17 @@ title: MAPI クライアント オブジェクト
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 11304a4c-d986-4ad9-a140-19a59825a8df
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6e78c80d861a5a56584bfb03bfdf2895efde8730
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: cea1d2df5d446887bf4ea3d8768a34456a67df98
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412409"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579657"
 ---
 # <a name="mapi-client-objects"></a>MAPI クライアント オブジェクト
   
@@ -35,7 +35,7 @@ ms.locfileid: "33412409"
    
 次の図は、これらの異なるクライアント オブジェクト、継承元のインターフェイス、およびそれらを使用する MAPI コンポーネントの関係を示しています。 
   
-![クライアント オブジェクトと対応するインターフェイス](media/amapi_65.gif "クライアント オブジェクトと対応するインターフェイス")
+![クライアント オブジェクトとそれに対応するインターフェイス](media/amapi_65.gif "クライアント オブジェクトとそれに対応するインターフェイス")
   
 クライアントは、実装するオブジェクトよりも多くのオブジェクトを使用します。 すべてのクライアントは、セッション オブジェクトを使用して、MAPI が実装するさまざまなサービス プロバイダー オブジェクトとオブジェクトにアクセスします。 クライアントは、間接的に、セッション、アドレス帳、MAPI が提供する状態オブジェクト、または特定のサービス プロバイダーが実装するさまざまなオブジェクトを介して直接、サービス プロバイダーと対話します。 アドレス帳プロバイダーと直接連絡を取る場合、クライアントはアドレス帳コンテナー、メッセージング ユーザー、配布リストを使用します。 メッセージ ストア プロバイダーに直接アクセスするには、クライアントはメッセージ ストア オブジェクト、フォルダー、メッセージ、添付ファイルを使用します。 サービス プロバイダーが状態オブジェクトをサポートする場合、クライアントは status オブジェクトを使用してサービス プロバイダーの状態を監視できます。
   

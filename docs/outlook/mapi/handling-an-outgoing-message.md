@@ -3,17 +3,17 @@ title: 送信メッセージの処理
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: f40c2e0b-1a35-4901-868f-af6c191c921e
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 07785ac82c41108b4333b3c370e3d2f5bfd1426a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 18fe188f7906b3a2fdd8192a353cc8ba39ad0247
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407628"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556694"
 ---
 # <a name="handling-an-outgoing-message"></a>送信メッセージの処理
 

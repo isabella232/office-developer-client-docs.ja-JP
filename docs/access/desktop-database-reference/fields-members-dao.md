@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822428(v=office.15)
 ms:contentKeyID: 48547307
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a6bfefea569d5298b5fa5c69b1cf610592c9f952
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d69025011962a861258e48ed73d381a2069563d7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292539"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552928"
 ---
 # <a name="fields-members-dao"></a>Fields メンバー (DAO)
 
@@ -36,8 +36,8 @@ Fields コレクションには、Index、QueryDef、Relation、Recordset、ま�
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="fields-append-method-dao.md">追加</a></strong></p></td>
-<td><p>新しい <strong><a href="field-object-dao.md">Field</a></strong> オブジェクトを <strong><a href="fields-collection-dao.md">Fields</a></strong> コレクションに追加します。</p></td>
+<td><p><strong><a href="fields-append-method-dao.md">Append</a></strong></p></td>
+<td><p>新しい <strong><a href="field-object-dao.md">Field</a></strong> を <strong><a href="fields-collection-dao.md">Fields</a></strong> コレクションに追加します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="fields-delete-method-dao.md">Delete</a></strong></p></td>
@@ -67,7 +67,7 @@ Fields コレクションには、Index、QueryDef、Relation、Recordset、ま�
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="fields-count-property-dao.md">Count</a></strong></p></td>
-<td><p>指定したコレクション内のオブジェクトの数を取得します。 整数型 ( <strong>Integer</strong>) の値を使用します。</p></td>
+<td><p>指定したコレクション内のオブジェクトの数を取得します。整数型 ( <strong>Integer</strong>) の値を使用します。</p></td>
 </tr>
 </tbody>
 </table>

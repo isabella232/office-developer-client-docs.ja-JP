@@ -3,17 +3,17 @@ title: サービス プロバイダーの一意の識別子の登録
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 964fceb4-8a1c-46c1-98e1-a325c9259f8b
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 9f4acbb06f85a88a6c057da263ae95e09f72e0bb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: afdf2c475bf39379f8fed9953cb2c76891c6fc69
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410176"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586839"
 ---
 # <a name="registering-service-provider-unique-identifiers"></a>サービス プロバイダーの一意の識別子の登録
 

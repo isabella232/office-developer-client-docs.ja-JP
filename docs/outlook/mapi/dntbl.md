@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 77835b48-43aa-8518-9712-754e84f1e713
 description: '最終更新日: 2012 年 7 月 5 日'
-ms.openlocfilehash: 4716a6f42968d7451a5db36173c4e6a9e843c08e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.openlocfilehash: 1106df7e7d0926f9a7a4d4d1f0d1425f1bf11371
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337003"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556764"
 ---
 # <a name="dntbl"></a>DNTBL
  

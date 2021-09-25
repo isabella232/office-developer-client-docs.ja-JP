@@ -3,17 +3,17 @@ title: MAPI アーキテクチャの概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 00d2993c-d66a-4a00-9fb2-98696d29a007
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 98a723528a714918ad7e0f10534efb0d38ef139a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8fbb340371a2f7ff5ef6b28fa63af2f4ecc438d5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410078"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571480"
 ---
 # <a name="mapi-architecture-overview"></a>MAPI アーキテクチャの概要
  
@@ -21,7 +21,7 @@ ms.locfileid: "33410078"
   
 MAPI は、次の図に示すように、モジュール型アーキテクチャを定義します。  
   
-![Outlook 2010 アーキテクチャ](media/amapi_43.gif "Outlook 2010 アーキテクチャ")
+![Outlook 2010 のアーキテクチャ](media/amapi_43.gif "Outlook 2010 のアーキテクチャ")
   
 MAPI アプリケーションは、MAPI サブシステムのクライアントなので、クライアント アプリケーションと呼ばれる。 メッセージング ベースのアプリケーションは、メッセージングを処理の中心的な部分として採用し、さまざまな種類の情報をさまざまな形式で交換し、情報をローカルに保存および整理する機能など、広範なメッセージング機能を提供します。 メール、スケジュール、および作業フロー アプリケーションは、メッセージング ベースのアプリケーションの例です。
   

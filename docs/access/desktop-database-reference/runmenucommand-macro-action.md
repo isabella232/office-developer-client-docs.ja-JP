@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm6446
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: c2b5a19b7a92fb68dfb774afeec5cd6ba456f38d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 405d2d69666f6ebe9065ea6656e3fe1b4192153b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306504"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562245"
 ---
 # <a name="runmenucommand-macro-action"></a>RunMenuCommand マクロ アクション
 
@@ -24,7 +24,7 @@ ms.locfileid: "32306504"
 
 "RunMenuCommand/メニューコマンドの実行" アクションを使用すると、組み込みの Microsoft Access コマンドを実行できます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "RunMenuCommand/メニューコマンドの実行" アクションの引数は次のとおりです。
 

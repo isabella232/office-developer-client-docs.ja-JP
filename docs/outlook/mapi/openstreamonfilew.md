@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - OpenStreamOnFileW
 api_type:
 - COM
 ms.assetid: 263b9f24-eac8-4d34-8f66-dc87024b94b9
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7e67d84320b57fe6e510b70a68088f289ef6030d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bc4bd3f9a5e6c2d8d084ff9bdd1fa1c79781fa29
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406025"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579447"
 ---
 # <a name="openstreamonfilew"></a>OpenStreamOnFileW
 
@@ -116,7 +116,7 @@ MAPI は、ほとんどのメモリ割り当ておよび割り当て解除に  _
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-メッセージ SOF_UNIQUEFILENAMEフラグを使用して、メッセージング システム固有の名前を持つ一時ファイルを作成します。 このフラグを設定すると  _、lpszFileName_ パラメーターは一時ファイルのパスを指定し  _、lpszPrefix_ パラメーターにはファイル名のプレフィックス文字が含まれています。 構築されたファイル名は <prefix> HHHH です。TMP。HHHH は 16 進数です。 _lpszFileName_ が NULL の場合、ファイルは Windows 関数 **GetTempPath** から返される一時ファイル ディレクトリに作成され、一時ファイル ディレクトリが指定されていない場合はカレント ディレクトリに作成されます。
+メッセージ SOF_UNIQUEFILENAMEフラグを使用して、メッセージング システム固有の名前を持つ一時ファイルを作成します。 このフラグを設定すると  _、lpszFileName_ パラメーターは一時ファイルのパスを指定し  _、lpszPrefix_ パラメーターにはファイル名のプレフィックス文字が含まれています。 構築されたファイル名は <prefix> HHHH です。TMP。HHHH は 16 進数です。 _lpszFileName_ が NULL の場合、ファイルは Windows 関数 **GetTempPath** から返される一時ファイル ディレクトリ、または一時ファイル ディレクトリが指定されていない場合はカレント ディレクトリに作成されます。
   
 SOF_UNIQUEFILENAME フラグが設定されていない場合  _、lpszPrefix_ は無視され  _、lpszFileName_ には、開くまたは作成するファイルの完全修飾パスとファイル名を含む必要があります。 ファイルは  _、ulFlags_ で設定されている他のフラグに基づいて開かまたは作成されます。
   

@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMSLogon.CompareEntryIDs
 api_type:
 - COM
 ms.assetid: 481812d6-8e94-4510-b288-55501dd5757c
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 4196ed8b949ecb9e23c4bd34380db9cc5a369e23
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 984be94199e5cf5f10c9231d6efaf2d04079f84c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410134"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556372"
 ---
 # <a name="imslogoncompareentryids"></a>IMSLogon::CompareEntryIDs
 

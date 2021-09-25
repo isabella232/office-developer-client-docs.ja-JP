@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195587(v=office.15)
 ms:contentKeyID: 48545538
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 201b284a56fbd3030b41a95424b41c73ee13e385
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a8850aa9ea4dc07abdac7e37943438be34916ffd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308646"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552515"
 ---
 # <a name="showallrecords-macro-action"></a>ShowAllRecords マクロ アクション
 
@@ -22,7 +22,7 @@ ms.locfileid: "32308646"
 
 "**ShowAllRecords/全レコードの表示**" アクションを使用すると、作業中のテーブル、クエリの結果セット、またはフォームに適用されているフィルターを解除して、テーブルまたは結果セットのすべてのレコード、またはフォームの基になっているテーブルまたはクエリのすべてのレコードを表示できます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "**ShowAllRecords/全レコードの表示**" アクションには、引数はありません。
 
@@ -54,26 +54,26 @@ Visual Basic for Applications (VBA) モジュールで " **ShowAllRecords/全レ
 <th><p>条件</p></th>
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>Comment</p></th>
+<th><p>コメント</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>[会社名フィルター] =1</p></td>
 <td><p><strong>ApplyFilter</strong></p></td>
-<td><p><strong>Where 条件式</strong>: [会社名] &quot;Like [アイウエオ] *&quot;</p></td>
+<td><p><strong>Where Condition</strong>: [会社名] Like &quot; [AÀÁÂÃÄ]*&quot;</p></td>
 <td><p>ア行で始まる会社名を抽出します。</p></td>
 </tr>
 <tr class="even">
 <td><p>[会社名フィルター] =2</p></td>
 <td><p><strong>ApplyFilter</strong></p></td>
-<td><p><strong>Where 条件式</strong>: [会社名] &quot;B のようになります。&quot;</p></td>
+<td><p><strong>Where Condition</strong>: [会社名] &quot; Like B*&quot;</p></td>
 <td><p>カ行またはガ行で始まる会社名を抽出します。</p></td>
 </tr>
 <tr class="odd">
 <td><p>[会社名フィルター] =3</p></td>
 <td><p><strong>ApplyFilter</strong></p></td>
-<td><p><strong>Where 条件式</strong>: [会社名] &quot;Like [cç] *&quot;</p></td>
+<td><p><strong>Where Condition</strong>: [会社名] Like &quot; [CÇ]*&quot;</p></td>
 <td><p>サ行またはザ行で始まる会社名を抽出します。</p></td>
 </tr>
 <tr class="even">
@@ -85,7 +85,7 @@ Visual Basic for Applications (VBA) モジュールで " **ShowAllRecords/全レ
 <tr class="odd">
 <td><p>[会社名フィルター] =26</p></td>
 <td><p><strong>ApplyFilter</strong></p></td>
-<td><p><strong>Where 条件式</strong>: [会社名] &quot;Like [abcdefghijklmnopqrstuvwxyz] *&quot;</p></td>
+<td><p><strong>Where Condition</strong>: [会社名] Like &quot; [ZÆØÅ]*&quot;</p></td>
 <td><p>アルファベットで始まる会社名を抽出します。</p></td>
 </tr>
 <tr class="even">
@@ -95,7 +95,7 @@ Visual Basic for Applications (VBA) モジュールで " **ShowAllRecords/全レ
 <td><p>全レコードを表示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RecordsetClone]。RecordCount&gt;0</p></td>
+<td><p>[RecordsetClone].[RecordCount] &gt;0</p></td>
 <td><p><strong>GoToControl</strong></p></td>
 <td><p><strong>Control Name/コントロール名</strong>: 会社名</p></td>
 <td><p>選択した文字で始まるレコードが抽出されたら、[会社名] コントロールに移動します。</p></td>

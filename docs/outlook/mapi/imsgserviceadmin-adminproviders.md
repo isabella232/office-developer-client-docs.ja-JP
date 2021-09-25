@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMsgServiceAdmin.AdminProviders
 api_type:
 - COM
 ms.assetid: 0d605e2c-10db-46e1-95d5-12fabd524baa
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6b7360995a781824b50ff02b5d2dec8e481e7ba7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 733ec8ec6e24e165e0cc30dadd67b2bebdb6b00c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422762"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571697"
 ---
 # <a name="imsgserviceadminadminproviders"></a>IMsgServiceAdmin::AdminProviders
 

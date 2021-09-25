@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IPSTOVERRIDE1
 api_type:
 - COM
 ms.assetid: d26cee81-45ea-4fd3-8a54-5f35264b5d6a
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5208e77f3605b5ba861f68786d8fe5e91b990d32
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 0e518fc9ea0e7f4b4b4576b45a06ec7c0fe2e303
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315499"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556309"
 ---
 # <a name="ipstoverride1--iunknown"></a>IPSTOVERRIDE1 : IUnknown
 
@@ -31,7 +31,7 @@ ms.locfileid: "32315499"
 |:-----|:-----|
 |継承元:  <br/> |IUnknown  <br/> |
 |実装元:  <br/> |PST ストア プロバイダー  <br/> |
-|呼び出し元:  <br/> |クライアント  <br/> |
+|呼び出し元:  <br/> |Client  <br/> |
 |インターフェイス識別子:  <br/> |IID_IPSTOVERRIDE1  <br/> |
    
 ## <a name="vtable-order"></a>Vtable の順序

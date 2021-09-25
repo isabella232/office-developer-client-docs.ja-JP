@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIViewAdviseSink.OnPrint
 api_type:
 - COM
 ms.assetid: d16219a0-268c-428d-9f02-4f06eb5b6d7d
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: e66315042f8b5cd5aff0e4aa076588c9f312376a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 69f560903ef0fa1430007818cc364752fd9eaeae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406172"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556483"
 ---
 # <a name="imapiviewadvisesinkonprint"></a>IMAPIViewAdviseSink::OnPrint
 
@@ -42,7 +42,7 @@ HRESULT hrStatus
     
  _hrStatus_
   
-> [in]印刷ジョブの状態を示す HRESULT 値。 使用可能な値は次のいずれかです。
+> [in]印刷ジョブの状態を示す HRESULT 値。 使用可能な値は次のとおりです。
     
 S_FALSE 
   

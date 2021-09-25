@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834805(v=office.15)
 ms:contentKeyID: 48547929
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: cf8e891936d4f8bd03535fa199026bc4ad8ff9ba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9967bd299b4de28a35077c2676f88a8156d1add1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293414"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552970"
 ---
 # <a name="errors-collection-dao"></a>Errors コレクション (DAO)
 
@@ -23,7 +23,7 @@ ms.locfileid: "32293414"
 
 ## <a name="remarks"></a>注釈
 
-DAO オブジェクトに関係するすべての操作では、1 つ以上のエラーが発生する場合があります。 エラーが発生するたびに、1 つ以上の **Error** オブジェクトが **DBEngine** オブジェクトの **Errors** コレクションに追加されます。 別の DAO 操作によってエラーが発生すると、 **Errors** コレクションがクリアされ、 **Errors** コレクションに **Error** オブジェクトの新しいセットが配置されます。 **Errors** コレクションの最高値のオブジェクト (DBEngine.Errors.Count - 1) は、Microsoft Visual Basic for Applications (VBA) の **Err** オブジェクトがレポートするエラーに対応します。
+DAO オブジェクトに関係するすべての操作では、1 つ以上のエラーが発生する場合があります。エラーが発生するたびに、1 つ以上の **Error** オブジェクトが **DBEngine** オブジェクトの **Errors** コレクションに追加されます。別の DAO 操作によってエラーが発生すると、**Errors** コレクションがクリアされ、**Errors** コレクションに **Error** オブジェクトの新しいセットが配置されます。**Errors** コレクションの最高値のオブジェクト (DBEngine.Errors.Count - 1) は、Microsoft Visual Basic for Applications (VBA) の **Err** オブジェクトがレポートするエラーに対応します。
 
 エラーを生成しない DAO 操作が **Errors** コレクションに影響を及ぼすことはありません。
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191819(v=office.15)
 ms:contentKeyID: 48543756
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3b935e05264497c7ad09ada4a8c50c775845857b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f11c3f5711d7f566dacad8071574ebe230d91b16
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309304"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562308"
 ---
 # <a name="recordsets-collection-dao"></a>Recordsets コレクション (DAO)
 
@@ -32,9 +32,9 @@ DAO オブジェクトを使用する場合は、 **Recordset** オブジェク�
 
 - **Recordsets**(0)
 
-- **Recordsets**("name")
+- **Recordsets** (「名前」)
 
-- **レコードセット**\!\[名\]
+- **Recordsets**\!\[名前\]
 
 > [!NOTE]
 > [!メモ] 同じデータ ソースまたはデータベースから **Recordset** オブジェクトを複数回開いて、 **Recordsets** コレクションに重複する名前を作成できます。 **Recordset** オブジェクトをオブジェクト変数に割り当て、変数名で参照する必要があります。

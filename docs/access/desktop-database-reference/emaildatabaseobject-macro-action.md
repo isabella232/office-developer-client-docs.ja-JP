@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm24439
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 15cb7d6c422a9d7b0fae17ab649b6cfbc1b497a4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 36524db4773b1b2882bcd5f1864fa2cadad00a70
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293568"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553005"
 ---
 # <a name="emaildatabaseobject-macro-action"></a>EMailDatabaseObject マクロ アクション
 
-**適用対象:** Access 2013 |Office 2013
+**適用先**: Access 2013 | Office 2013
 
 You can use the **EMailDatabaseObject** action to include the specified Microsoft Access datasheet, form, report, module, or data access page in an electronic mail message, where it can be viewed and forwarded.
 
@@ -44,7 +44,7 @@ You can use the **EMailDatabaseObject** action to include the specified Microsof
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Object Type/オブジェクトの種類</strong></p></td>
+<td><p><strong>オブジェクトの種類</strong></p></td>
 <td><p>The type of object to include in the mail message. Click <strong>Table</strong> (for a table datasheet), <strong>Query</strong> (for a query datasheet), <strong>Form</strong> (for a form or form datasheet), <strong>Report</strong>, <strong>Module</strong>, or <strong>Data Access Page</strong>, <strong>Server View</strong>, <strong>Stored Procedures</strong>, or <strong>Function</strong> in the <strong>Object Type</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane. You can't send a macro. If you want to include the active object, select its type with this argument, but leave the <strong>Object Name</strong> argument blank.  </p></td>
 </tr>
 <tr class="even">
@@ -53,7 +53,7 @@ You can use the **EMailDatabaseObject** action to include the specified Microsof
 </tr>
 <tr class="odd">
 <td><p><strong>Output Format/出力ファイル形式</strong></p></td>
-<td><p>The type of format you want used for the included object. The list of formats you can select from will change depending on what you select for the <strong>Object Type</strong> argument. 使用可能な形式には、excel <strong>97-excel 2003 ブック (* .xls</strong>)、 <strong>excel バイナリブック (* .xlsb)</strong>、 <strong>excel ブック (* .xlsx)</strong>、 <strong>HTML (* .htm、* .html)</strong>、 <strong>Microsoft Excel 5.0/95 ブック (* .xls</strong>)、 <strong>PDF 形式</strong>、<strong>リッチテキスト fomat (* .rtf)</strong>、<strong>テキストファイル (* .txt</strong>)、 <strong>xps 形式 (* .xps)</strong>。 in the <strong>Output Format</strong> box. Modules can be sent only in text format. Data access pages can only be sent in HTML format. If you leave this argument blank, Access prompts you for the output format.</p></td>
+<td><p>The type of format you want used for the included object. The list of formats you can select from will change depending on what you select for the <strong>Object Type</strong> argument. 使用可能な形式には<strong>、Excel 97 - Excel 2003 ブック (*.xls)</strong>、Excel バイナリ ブック<strong>(*.xlsb)</strong> <strong>、Excel ブック (*.xlsx)</strong> <strong>、HTML (*.htm) が含まれます。 *.html)</strong> <strong>、Microsoft Excel 5.0/95 ブック (*.xls)</strong> <strong>、PDF 形式</strong>、リッチ テキスト フォマット<strong>(*.rtf)、</strong>テキスト<strong>ファイル (*.txt)、</strong>または<strong>XPS 形式 (*)xps)</strong>. in the <strong>Output Format</strong> box. Modules can be sent only in text format. Data access pages can only be sent in HTML format. If you leave this argument blank, Access prompts you for the output format.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>To/宛先</strong></p></td>
@@ -61,11 +61,11 @@ You can use the **EMailDatabaseObject** action to include the specified Microsof
 </tr>
 <tr class="odd">
 <td><p><strong>Cc/CC</strong></p></td>
-<td><p>メールメッセージの [ <strong>Cc</strong> ] (&quot;カーボンコピー&quot;) 行に登録するメッセージの受信者名を入力します。 この引数を指定しない場合、メール メッセージの [ <strong>CC</strong>] 行が空白になります。</p></td>
+<td><p>メール メッセージの Cc <strong>(</strong> カーボン コピー) 行に名前を付け &quot; &quot; したいメッセージ受信者。 この引数を指定しない場合、メール メッセージの [ <strong>CC</strong>] 行が空白になります。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Bcc</strong></p></td>
-<td><p>メールメッセージの<strong>Bcc</strong> (&quot;ブラインドカーボンコピー&quot;) 行に配置するメッセージの受信者名を指定します。 この引数を指定しない場合、メール メッセージの [ <strong>BCC</strong>] 行が空白になります。</p></td>
+<td><p>メール メッセージの <strong>BCC</strong> (ブラインド カーボン コピー) 行に名前を付けしたい &quot; &quot; メッセージ受信者。 この引数を指定しない場合、メール メッセージの [ <strong>BCC</strong>] 行が空白になります。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Subject/件名</strong></p></td>
@@ -95,7 +95,7 @@ The following rules apply when you use the **EMailDatabaseObject** action to inc
 
 - テーブル、クエリ、およびフォームの各データシートを送信できます。添付されるオブジェクトには、OLE オブジェクトを含むフィールドを除くデータシートのすべてのフィールドが出力されます。OLE オブジェクトを含むフィールドの列もオブジェクトに出力されますが、フィールド値は空白になります。
 
-- yes/No 型フィールド (トグルボタン、オプションボタン、チェックボックス) に連結されたコントロールの場合、出力ファイルには-1 (Yes) または 0 (No) の値が表示されます。
+- [はい/いいえ] フィールドにバインドされたコントロール (トグル ボタン、オプション ボタン、またはチェック ボックス) の場合、出力ファイルには値 -1 (Yes) または 0 (No) が表示されます。
 
 - ハイパーリンク型 (Hyperlink) フィールドに連結されたテキスト ボックスの場合、出力ファイルには MS-DOS テキストを除くすべての出力形式のハイパーリンクが出力されます (MS-DOS テキストの場合、ハイパーリンクは通常のテキストとして出力されます)。
 
@@ -111,7 +111,7 @@ To run the **EMailDatabaseObject** action in a Visual Basic for Applications (VB
 
 ### <a name="about-the-contributor"></a>共同作成者について
 
-**リンクの提供**元Luke Chung、 [fms、inc.](https://www.fmsinc.com/)、FMS、inc. の創設者および社長。これは、カスタムデータベースソリューションおよび開発者ツールのリーディングプロバイダーです。
+**によって提供されるリンク** ルーク [Chung, FMS, Inc.](https://www.fmsinc.com/), FMS, Inc. の創設者兼社長、 カスタム データベース ソリューションと開発者ツールのリーディング プロバイダー。
 
 - [送信用の SendObject メソッドの使用に関する機能と制限](https://www.fmsinc.com/microsoftaccess/email/sendobject.html)
 
