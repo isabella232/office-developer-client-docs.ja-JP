@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3c04d243-002c-bb00-a4be-0bcb8e156402
 description: 図形に定義された特定のコントロール ハンドルのプロパティが含まれます。
-ms.openlocfilehash: 662dfe730c92ae25b3d243364bf1fa22a5eb8605
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 45759522218736ddb6b08c3fd989658e08145fba
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541836"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615985"
 ---
 # <a name="cell-element-controls-row-visio-xml"></a>Cell 要素 (Controls Row) (Visio XML)
 

@@ -1,5 +1,5 @@
 ---
-title: Relation レプリカプロパティ (DAO)
+title: Relation.PartialReplica プロパティ (DAO)
 TOCTitle: PartialReplica Property
 ms:assetid: 3cb15639-371e-06e3-e2ba-30466ce09a72
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192692(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053557
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: fef48902b806f13947ae4b81728af4c5704c2b8e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c674003234bb4b5e961651e85b87342ad49486e7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307015"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564933"
 ---
-# <a name="relationpartialreplica-property-dao"></a>Relation レプリカプロパティ (DAO)
+# <a name="relationpartialreplica-property-dao"></a>Relation.PartialReplica プロパティ (DAO)
 
 **適用先:** Access 2013、Office 2013
 
@@ -26,19 +26,19 @@ ms.locfileid: "32307015"
 
 ## <a name="syntax"></a>構文
 
-*式*。PartialReplica
+*式* .PartialReplica
 
-*式***Relation**オブジェクトを返す式を指定します。
+*式* Relation オブジェクトを返 **す式** 。
 
 ## <a name="remarks"></a>注釈
 
 設定値または戻り値はブール型 (Boolean) の値で、同期時にこのリレーションシップを適用する必要がある場合は **True** です。
 
-このプロパティを使用すると、テーブル間のリレーションシップに基づいて、フル レプリカのデータを部分レプリカにレプリケートできます。 **ReplicaFilter** プロパティの設定のみでは部分レプリカにレプリケートする必要のあるデータを適切に指定できない場合に、 **PartialReplica** プロパティを使用できます。 たとえば、顧客テーブルが注文テーブルと一対多のリレーションシップを持つデータベースがあり、すべての注文ではなくカリフォルニア地域の顧客からの注文のみをレプリケートする部分レプリカを構成するとします。 Region フィールドは注文テーブルではなく顧客テーブルにあるため、注文テーブルの **ReplicaFilter** プロパティを Region = 'CA' に設定することはできません。
+このプロパティを使用すると、テーブル間のリレーションシップに基づいて、フル レプリカのデータを部分レプリカにレプリケートできます。**ReplicaFilter** プロパティの設定のみでは部分レプリカにレプリケートする必要のあるデータを適切に指定できない場合に、**PartialReplica** プロパティを使用できます。たとえば、顧客テーブルが注文テーブルと一対多のリレーションシップを持つデータベースがあり、すべての注文ではなくカリフォルニア地域の顧客からの注文のみをレプリケートする部分レプリカを構成するとします。Region フィールドは注文テーブルではなく顧客テーブルにあるため、注文テーブルの **ReplicaFilter** プロパティを Region = 'CA' に設定することはできません。
 
 カリフォルニア地域からのすべての注文をレプリケートするには、レプリケーション時に注文テーブルと顧客テーブル間のリレーションシップがアクティブになるように指定する必要があります。部分レプリカを作成した後、以下の手順を実行すると、カリフォルニア地域からのすべての注文が部分レプリカに設定されます。
 
-1.  Customers **TableDef**オブジェクトの**ReplicaFilter**プロパティを "Region = ' CA '" に設定します。
+1.  Customers **TableDef オブジェクト** の **ReplicaFilter** プロパティを "Region = 'CA' に設定します。
 
 2.  注文テーブルと顧客テーブル間のリレーションシップに対応する **Relation** オブジェクトの **PartialReplica** プロパティの値を **True** に設定します。
 

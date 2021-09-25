@@ -1,18 +1,18 @@
 ---
-title: URL プロパティ (RDS-Access デスクトップデータベースリファレンス)
+title: URL プロパティ (RDS - Access デスクトップ データベース リファレンス)
 TOCTitle: URL property (RDS)
 ms:assetid: 722765dc-f89c-0131-73b1-69c56a795546
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249457(v=office.15)
 ms:contentKeyID: 48545603
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: aafc8cc10410cafed21e38ad7fec269c391c1fa2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c05bf1051a6c84d40225af8799c9ab2a4486331e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32313399"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576829"
 ---
 # <a name="url-property-rds"></a>URL プロパティ (RDS)
 
@@ -24,9 +24,9 @@ ms.locfileid: "32313399"
 
 ## <a name="syntax"></a>構文
 
-デザイン時: \<パラメーター名 = "URL" 値 = "Server"\>
+設計時間: \<PARAM NAME="URL" VALUE="Server"\>
 
-実行時間: DataControl = "Server"
+実行時: DataControl.URL="Server"
 
 ## <a name="parameters"></a>パラメーター
 

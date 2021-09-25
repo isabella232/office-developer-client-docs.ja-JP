@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm119055
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 1c37e798e0624a5655b63a76332073e5b57c0823
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4bf5a40d1643861a438e4de4668d845c92ebb93f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288603"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577214"
 ---
 # <a name="navigateto-macro-action"></a>NavigateTo マクロ アクション
 
@@ -24,7 +24,7 @@ ms.locfileid: "32288603"
 
 You can use the **NavigateTo** action to control the display of database objects in the Navigation Pane. For example, you can change how the database objects are categorized, and you can filter the objects so that only certain ones are displayed.
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "NavigateTo/移動先" アクションの引数は次のとおりです。
 
@@ -41,12 +41,12 @@ You can use the **NavigateTo** action to control the display of database objects
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>カテゴリ</strong></p></td>
+<td><p><strong>分類</strong></p></td>
 <td><p>必ず指定します。ナビゲーション ウィンドウにオブジェクトを表示する際に使用するカテゴリを指定します。[<strong>カテゴリ</strong>] ボックスで [<strong>オブジェクトの種類</strong>]、[<strong>テーブルとビュー</strong>]、[<strong>更新日</strong>]、[<strong>作成日</strong>]、または [<strong>ユーザー設定</strong>] をクリックします。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Group</strong></p></td>
-<td><p>省略可能です。 "Group/グループ" 引数は、ナビゲーション ウィンドウ内のカテゴリに表示されるオブジェクトを制限します。 引数<strong>Group</strong>を省略すると、引数<strong>Category</strong>に指定した条件によって分類されたすべてのデータベースオブジェクトがナビゲーションウィンドウに表示されます。 次の表は、さまざまな "Category/カテゴリ" 引数で使用できる有効な "Group/グループ" 引数の例を示しています。</p></td>
+<td><p><strong>グループ</strong></p></td>
+<td><p>オプション。 "Group/グループ" 引数は、ナビゲーション ウィンドウ内のカテゴリに表示されるオブジェクトを制限します。 引数 Group を空白 <strong>のままに</strong> すると、ナビゲーション ウィンドウには、Category 引数で指定した条件に分類された、すべてのデータベース オブジェクトが <strong>表示</strong> されます。 次の表は、さまざまな "Category/カテゴリ" 引数で使用できる有効な "Group/グループ" 引数の例を示しています。</p></td>
 </tr>
 </tbody>
 </table>
@@ -54,7 +54,7 @@ You can use the **NavigateTo** action to control the display of database objects
 
 ## <a name="remarks"></a>注釈
 
-- このアクションの動作は、ナビゲーションウィンドウのタイトルバーからカテゴリとグループを選択した場合と同じです。
+- このアクションは、ナビゲーション ウィンドウのタイトル バーからカテゴリとグループを選択する場合と似ています。
 
 - Valid **Group** arguments depend on which **Category** argument is used. If you enter an invalid **Group** argument, an error message appears.The following table contains examples of valid **Group** arguments for each **Category** argument.
     

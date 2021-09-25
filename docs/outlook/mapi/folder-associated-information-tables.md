@@ -3,17 +3,17 @@ title: Folder-Associated情報テーブル
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: b72a0d36-c489-41d6-af57-72fbf4b7a3f5
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 2332c2a2f7eb46816eab5305b73344e25b2832d7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2710605feba0faafdfdc0ad1f4e3a1e3b19de999
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426416"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576283"
 ---
 # <a name="folder-associated-information-tables"></a>Folder-Associated情報テーブル
 

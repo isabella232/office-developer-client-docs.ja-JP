@@ -1,23 +1,23 @@
 ---
-title: HelloData コード (Access デスクトップデータベースリファレンス)
+title: HelloData コード (Access デスクトップ データベースリファレンス)
 TOCTitle: HelloData code
 ms:assetid: b413a72a-fb85-177a-2d93-27c2bde935b3
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249860(v=office.15)
 ms:contentKeyID: 48547213
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3f180413b47d909d0f23a8dacd70f85bc9684c57
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e7d3b2d36f81cd08cd688618d5c1f4f522cbf96f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292007"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615439"
 ---
 # <a name="hellodata-code"></a>HelloData コード
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ```vb 
  

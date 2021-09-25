@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm840
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d0f91e7d-2373-cfef-e105-fb17e77c7f2d
 description: ユーザー定義のセルに関する説明プロンプトまたはコメントを指定します。 アプリケーションは、プロンプト テキストを自動的に二重引用符 () で囲み、テキスト文字列を示します。 等号 (=) を入力し、二重引用符を省略した場合は、アプリケーションが評価する数式をこのセルに入力できます。
-ms.openlocfilehash: 7684025e03bd3f4f68893179b1df00cc0cb535e2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 158925e01f710053998189367a9182b2b3eda4b0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435727"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623181"
 ---
 # <a name="prompt-cell-user-defined-cells-section"></a>[Prompt] セル ([User-Defined Cells] セクション)
 

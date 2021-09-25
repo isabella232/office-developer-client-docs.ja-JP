@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249465(v=office.15)
 ms:contentKeyID: 48545619
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f059e5dfe064442f10972fd36344e64f84fe7ea5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6fca58a5235e37a56e66d0b16f8634c3b096f1a7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296445"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586132"
 ---
 # <a name="chapter-2-getting-data"></a>第 2 章: データの取得
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 前の章では、ADO アプリケーションの作成に必要となる、データの取得、データの確認、データの編集、およびデータの更新という 4 つの主な操作について概説しました。この章では、最初の操作であるデータの取得に関連する概念の詳細について説明します。
 
@@ -37,6 +37,6 @@ ADO のオブジェクト モデルでは、接続の概念を **Connection** �
 この章では、次のトピックについて説明します。
 
 - [接続の作成](making-a-connection.md)
-- [connection オブジェクト参照 (ADO) の使用](using-the-connection-object-access.md)
-- [command オブジェクト参照 (ADO) の使用](using-the-command-object-access.md)
-- [Recordset にデータを追加する (ADO)](adding-data-to-a-recordset.md)
+- [接続オブジェクト参照 (ADO) の使用](using-the-connection-object-access.md)
+- [コマンド オブジェクト参照 (ADO) の使用](using-the-command-object-access.md)
+- [Recordset (ADO) へのデータの追加](adding-data-to-a-recordset.md)

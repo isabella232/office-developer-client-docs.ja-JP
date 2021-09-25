@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidReminderOverride
 api_type:
 - COM
 ms.assetid: ad7e37e1-bd12-409f-87e5-ebc0c298a072
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4956ce33d00135c34193dec3df832c6878b2c6db
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8b7ea05c096a59410497df5baf3e58597dd2355e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360109"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630216"
 ---
 # <a name="pidlidreminderoverride-canonical-property"></a>PidLidReminderOverride 標準プロパティ
 

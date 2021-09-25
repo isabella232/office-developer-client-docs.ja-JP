@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm2085
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 89bcde81-4530-bd00-6e2e-fab7deec175b
 description: ページに定義されたすべてのレイヤー、および各レイヤーに設定されたプロパティを表示します。
-ms.openlocfilehash: 058c8cbe2ee38a0ebc52935f7108d51ec4f2aef5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 43b9df1e7f392fdd01f418f08036119260ebc86b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424204"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615915"
 ---
 # <a name="layers-section"></a>[Layers] セクション
 

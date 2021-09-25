@@ -3,15 +3,15 @@ title: 階層状態のダウンロード
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8e0400ba-8530-e6ac-5de8-a62aeec5e10a
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 45535eef75c6fc091c02ec35b669675a51e4cf48
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 16a9691cb5129fd53817db295017cdac664992bd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337010"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596569"
 ---
 # <a name="download-hierarchy-state"></a>階層状態のダウンロード
 

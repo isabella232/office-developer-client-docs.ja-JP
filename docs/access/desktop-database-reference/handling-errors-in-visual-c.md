@@ -6,22 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249483(v=office.15)
 ms:contentKeyID: 48545684
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d0e76dc3cc9634a1531a34058bf7a1baf636c94c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: bb499b24b151f93d68ef28594217f6707bb48b34
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292028"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615446"
 ---
 # <a name="handling-errors-in-visual-c"></a>Visual C++ でのエラー処理
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-COM では、ほとんどの操作は、関数が正常に完了したかどうかを示す HRESULT リターンコードを返します。 import \#ディレクティブは、各 "raw" メソッドまたはプロパティの前後にラッパーコードを生成し、返された HRESULT をチェックします。 hresult が失敗を示している場合、ラッパーコードは、hresult リターン\_コード\_を\_引数として com 問題 errorex () を呼び出すことによって com エラーをスローします。 COM エラーオブジェクトは、 **try-catch**ブロックでキャッチできます。 (効率を上げるために、 \_com\_error オブジェクトへの参照をキャッチします)。
+COM では、ほとんどの操作は、関数が正常に完了したかどうかを示す HRESULT 戻りコードを返します。 import ディレクティブは、各 "raw" メソッドまたはプロパティの周囲にラッパー コードを生成し、返される \# HRESULT をチェックします。 HRESULT がエラーを示す場合、ラッパー コードは、HRESULT 戻りコードを引数として com issue errorex() を呼び出すことによって \_ \_ COM \_ エラーをスローします。 COM エラー オブジェクトは **、try-catch ブロックでキャッチ** できます。 (効率を高めるには、com エラー オブジェクトへの参照 \_ を \_ キャッチします)。
 
 ここでは、発生するエラーは ADO エラーです。ADO エラーは、ADO 操作の失敗によって発生します。基になるプロバイダーによって返されたエラーは、 **Connection** オブジェクトの **Errors** コレクションに **Error** オブジェクトとして格納されます。
 
-import \#ディレクティブは、ADO .dll で宣言されているメソッドおよびプロパティに対してのみエラー処理ルーチンを作成します。 しかし、独自のエラー チェック マクロやインライン関数を記述することにより、上記と同じエラー処理機構を利用できます。 例については、トピック「Visual C++ Extensions」を参照してください。
+import ディレクティブは、ADO プロパティで宣言されたメソッドとプロパティのエラー処理ルーチン \# のみを作成.dll。 しかし、独自のエラー チェック マクロやインライン関数を記述することにより、上記と同じエラー処理機構を利用できます。 例については、トピック「Visual C++ Extensions」を参照してください。
 

@@ -1,18 +1,18 @@
 ---
-title: RDS プロパティ (Access デスクトップデータベースリファレンス)
+title: RDS プロパティ (Access デスクトップ データベースリファレンス)
 TOCTitle: RDS properties
 ms:assetid: 002989dc-0022-d3a2-ddd2-2230837b3a63
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248775(v=office.15)
 ms:contentKeyID: 48542899
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 35d3552705ff358f34a40aa51a2ec13b4b80f6d2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7cc662abeca7dbc7135b7283631c0c441caaef3b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300841"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564975"
 ---
 # <a name="rds-properties"></a>RDS プロパティ
 
@@ -56,7 +56,7 @@ ms.locfileid: "32300841"
 </tr>
 <tr class="odd">
 <td><p><a href="handler-property-rds.md">ハンドラー</a></p></td>
-<td><p><strong>rdsserver.datafactory</strong>の機能を拡張するサーバー側のカスタマイズプログラム (<em>ハンドラー</em>) の名前と、<em>ハンドラー</em>で使用されるパラメーターを示します。</p></td>
+<td><p><strong>RDSServer.DataFactory</strong>の機能を拡張するサーバー側カスタマイズ プログラム<em>(ハンドラー</em>) の名前と、ハンドラーで使用されるパラメーターを示<em>します</em>。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="internettimeout-property-rds.md">InternetTimeout</a></p></td>
@@ -67,7 +67,7 @@ ms.locfileid: "32300841"
 <td><p><strong>DataControl</strong> オブジェクトがデータを取得して <strong>Recordset</strong> オブジェクトに格納するときの進行状況を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="recordset-sourcerecordset-properties-rds.md">Recordset および SourceRecordset</a></p></td>
+<td><p><a href="recordset-sourcerecordset-properties-rds.md">Recordset と SourceRecordset</a></p></td>
 <td><p>カスタム ビジネス オブジェクトから返された <strong>Recordset</strong> オブジェクトを示します。</p></td>
 </tr>
 <tr class="odd">

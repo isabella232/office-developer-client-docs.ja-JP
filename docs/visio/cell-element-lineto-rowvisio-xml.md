@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 64f2494d-2de7-6bc5-0db4-91b952bdcb5e
 description: 直線セグメントの最後の頂点に対する x 座標または y 座標を格納します。
-ms.openlocfilehash: 4b1628549e659712a1c2e79ae0fbf53d594e18f9
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 40364dcd20b4e8d70ccac3238921c9a2686d3bbd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539510"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615936"
 ---
 # <a name="cell-element-lineto-row-visio-xml"></a>Cell 要素 (LineTo Row) (Visio XML)
 

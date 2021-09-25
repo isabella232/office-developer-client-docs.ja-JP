@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250106(v=office.15)
 ms:contentKeyID: 48548104
 ms.date: 10/17/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a80b089fa72ef01eb1b4b2f1dae494e002c6a6fb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fd50934eeaf91149f59262a45e9585602ffb73e3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281957"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586314"
 ---
 # <a name="accessing-rows-in-a-hierarchical-recordset"></a>階層レコードセット内の行へのアクセス
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 次の例では、階層 [Recordset](recordset-object-ado.md) 内の行へのアクセスに必要な手順を示します。
 
@@ -29,7 +29,7 @@ ms.locfileid: "32281957"
 4. 内側のループで、追加された **Recordset** の各行からの 4 つのフィールドが表示されます。
 
 > [!NOTE] 
-> [StayInSync](stayinsync-property-ado.md)プロパティは、説明のために FALSE に設定されているので、外側のループの各反復処理でチャプターを明示的に変更できます。 ただし、手順 2 にある最初の行の前に手順 3 の割り当て作業を移動すると、割り当てが 1 回だけで済むので、より効率的になります。 **StayInSync**プロパティを TRUE に設定すると、 *rstTitleAuthor*が暗黙的に自動的に対応するチャプターに変更されます。この場合、 *rst*が新しい行に移動します。
+> [図を示す目的で StayInSync](stayinsync-property-ado.md)プロパティは FALSE に設定されています。そのため、外側ループの各反復で章の変更を明示的に確認できます。 ただし、手順 2 にある最初の行の前に手順 3 の割り当て作業を移動すると、割り当てが 1 回だけで済むので、より効率的になります。 **StayInSync** プロパティを TRUE に設定すると *、rstTitleAuthor* は *、rst* が新しい行に移動するたびに、暗黙的に自動的に対応するチャプターに変更されます。
 
 **例**
 

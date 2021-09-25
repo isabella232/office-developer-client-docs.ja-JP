@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2a15e5df-b8e3-9c37-b1ee-2881d010e30b
 description: このトピックでは、アカウント管理 API の定数定義、クラス識別子、およびインターフェイス識別子について説明します。
-ms.openlocfilehash: d36116e30eb7879dcd0db0523be8f28bb8fe82a7
-ms.sourcegitcommit: adcf409d56b6cb25be6117f09794defa41ad6c0f
+ms.openlocfilehash: 2ff026a5fe8274b5279677f2c4da936ed12bd02f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "37495314"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596660"
 ---
 # <a name="constants-account-management-api"></a>定数 (アカウント管理 API)
 
@@ -47,7 +47,7 @@ ms.locfileid: "37495314"
 |NOTIFY_ACCT_CHANGED  <br/> |1  <br/> |
 |NOTIFY_ACCT_CREATED  <br/> |2  <br/> |
 |NOTIFY_ACCT_DELETED  <br/> |3  <br/> |
-|NOTIFY_ACCT_ORDER_CHANGED  <br/> |4  <br/> |
+|NOTIFY_ACCT_ORDER_CHANGED  <br/> |4   <br/> |
 |NOTIFY_ACCT_PREDELETED  <br/> |5  <br/> |
 |OLK_ACCOUNT_NO_FLAGS  <br/> |0  <br/> |
 |S_OK  <br/> | *SDK ヘッダー ファイル winerror.h Windowsで定義されています。*  <br/> |
@@ -62,7 +62,7 @@ ms.locfileid: "37495314"
 |REMOVE_AFTER  <br/> |0x2  <br/> |
 |REMOVE_ON_NUKE  <br/> |0x4  <br/> |
 |GET_REMOVE_AFTER_DAYS(ul)  <br/> |((ul) \> \>16)  <br/> |
-|SET_REMOVE_AFTER_DAYS(日)  <br/> |(日) \< \<16)  <br/> |
+|SET_REMOVE_AFTER_DAYS(日)  <br/> |(日)\<\<16)  <br/> |
    
 ## <a name="class-identifiers"></a>クラス識別子
 

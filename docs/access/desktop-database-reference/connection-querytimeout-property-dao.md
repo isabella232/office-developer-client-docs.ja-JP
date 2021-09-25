@@ -1,5 +1,5 @@
 ---
-title: 接続プロパティ (DAO)
+title: Connection.QueryTimeout プロパティ (DAO)
 TOCTitle: QueryTimeout Property
 ms:assetid: 97853412-d5ae-7a71-ccaa-595c68919654
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197804(v=office.15)
@@ -10,26 +10,26 @@ f1_keywords:
 - dao360.chm1052905
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a2a03b97fc69d6d770a5d7a1d149f6518933002b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6a7c98fb9b5c64f7db657f9a2c12c07688b50fcb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295822"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615761"
 ---
-# <a name="connectionquerytimeout-property-dao"></a>接続プロパティ (DAO)
+# <a name="connectionquerytimeout-property-dao"></a>Connection.QueryTimeout プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ODBC データ ソースでクエリが実行される場合の、タイムアウト エラーが発生するまでに待機する秒数を指定する値を設定または取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*。QueryTimeout
+*式* .QueryTimeout
 
-*式***Connection**オブジェクトを表す変数を取得します。
+*式***Connection** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 

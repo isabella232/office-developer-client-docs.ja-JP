@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm540
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 56f9043d-a632-65df-c710-45867cce1627
 description: 飛び越し点を表示するコネクタを指定します。
-ms.openlocfilehash: 7b5b8c8f1de160a4dc766d30a5f518c5653c270b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ffe98e406e76568a5580b03af0498faaf372c549
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416252"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623433"
 ---
 # <a name="linejumpcode-cell-page-layout-section"></a>[LineJumpCode] セル ([Page Layout] セクション)
 
@@ -26,7 +26,7 @@ ms.locfileid: "33416252"
 |1  <br/> |横の線  <br/> |**visPLOJumpHorizontal** <br/> |
 |2  <br/> |縦の線  <br/> |**visPLOJumpVertical** <br/> |
 |3  <br/> |最後の経路  <br/> |**visPLOJumpLastRouted** <br/> |
-|4  <br/> |最後に表示された線  *(z*  オーダーの上の図形)  <br/> |**visPLOJumpDisplayOrder** <br/> |
+|4   <br/> |最後に表示された線  *(z*  オーダーの上の図形)  <br/> |**visPLOJumpDisplayOrder** <br/> |
 |5  <br/> |最初に表示される線  *(z*  オーダーの下部の図形)  <br/> |**visPLOJumpReverseDisplayOrder** <br/> |
    
 ## <a name="remarks"></a>注釈

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6210ff71-fbcd-2c97-6dde-1e334891e08d
 description: 図形またはページ上のアクション タグに 1 つのプロパティを定義します。
-ms.openlocfilehash: 3b43206838dae432df677a3ff8792c85328db53b
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: ca7c75f364209b2f40d17b4830128d729d762c34
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538803"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615999"
 ---
 # <a name="cell-element-action-tag-section-visio-xml"></a>Cell 要素 (Action Tag セクション) (Visio XML)
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm805
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c02186ce-6a20-fbe7-588d-d64c3ea4dec4
 description: 基線に対する、図形のテキストの位置を指定します。
-ms.openlocfilehash: d5f6823d6f55493095d29054745f62b579a47893
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bde906d82b7583e86f5e6d2f6bc4a4c14d792a28
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414019"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623188"
 ---
 # <a name="pos-cell-character-section"></a>[Pos] セル ([Character] セクション)
 

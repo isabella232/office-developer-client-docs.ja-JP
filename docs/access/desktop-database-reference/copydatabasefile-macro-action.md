@@ -6,25 +6,25 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835963(v=office.15)
 ms:contentKeyID: 48548373
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b3c98d8795bb7039c0ae158414401dc5d754066f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 44f079d84ec3b651b114ed9341fbf5361caf87e1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295500"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615733"
 ---
 # <a name="copydatabasefile-macro-action"></a>CopyDatabaseFile マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-" **CopyDatabaseFile/データベースファイルのコピー** " アクションを使用すると、Access プロジェクトに接続されている Microsoft SQL Server 7.0 以降のカレント データベースのコピーを作成できます。 Access は、現在のデータベースをデタッチして、そのデータベースを転送先サーバーに接続します。 データベースの切断と接続の詳細については、SQL Server のドキュメントを参照してください。
+" **CopyDatabaseFile/データベースファイルのコピー** " アクションを使用すると、Access プロジェクトに接続されている Microsoft SQL Server 7.0 以降のカレント データベースのコピーを作成できます。 Access は、現在のデータベースをデタッチし、コピー先サーバーに接続します。 データベースの切断と接続の詳細については、SQL Server のドキュメントを参照してください。
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> このアクションは、データベースが信頼されていない場合には許可されません。 
 
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 "CopyDatabaseFile/データベースファイルのコピー" アクションの引数は次のとおりです。
 
@@ -50,7 +50,11 @@ ms.locfileid: "32295500"
 </tr>
 <tr class="odd">
 <td><p><strong>Disconnect All Users/全ユーザーの切断</strong></p></td>
-<td><p>ユーザーを強制的にデータベースから切断するかどうかを指定します。 [はい] に設定した場合は、カレント データベースに接続されているすべてのユーザーを切断し、データベースのコピー操作を進めることができます。 [いいえ] に設定した場合は、データベースに接続しているユーザーが 1 人でもいると、データベースのコピー操作は失敗します。 既定値は [いいえ] です。</p><p><strong>警告</strong>: 適切な警告なしにデータベースからユーザーを切断すると、データが失われる可能性があります。</p></td>
+<td><p>ユーザーを強制的にデータベースから切断するかどうかを指定します。[はい] に設定した場合は、カレント データベースに接続されているすべてのユーザーを切断し、データベースのコピー操作を進めることができます。[いいえ] に設定した場合は、データベースに接続しているユーザーが 1 人でもいると、データベースのコピー操作は失敗します。既定値は [いいえ] です。 
+
+
+
+</p><p><strong>警告</strong>: 適切な警告なしにデータベースからユーザーを切断すると、データが失われる可能性があります。</p></td>
 </tr>
 </tbody>
 </table>

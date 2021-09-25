@@ -1,23 +1,23 @@
 ---
-title: Keys の Append メソッド、キーの種類、およびその他の列のプロパティの使用例 (VC + +)
+title: Keys Append メソッド、Key Type、RelatedColumn プロパティの例 (VC++)
 TOCTitle: Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule properties example (VC++)
 ms:assetid: d0784eb5-94aa-ef62-c26f-3d0980485990
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250041(v=office.15)
 ms:contentKeyID: 48547840
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: edbb25c9eda48a33f659e577882e40cc67a07190
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7a4e762cbd386010c135e31666741e48ca9845c9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290639"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615313"
 ---
-# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc"></a>Keys の Append メソッド、キーの種類、UpdateRule の column プロパティの使用例 (VC + +)
+# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc"></a>Keys Append メソッド、Key Type、RelatedColumn、RelatedTable、UpdateRule プロパティの例 (VC++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 次のコードでは、新しい外部キーの作成方法を示します。ここでは、2 つのテーブル (Customers および Orders) が存在することを前提としています。
 

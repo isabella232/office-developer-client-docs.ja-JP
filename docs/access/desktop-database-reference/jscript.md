@@ -1,18 +1,18 @@
 ---
-title: JScript (Access デスクトップデータベースリファレンス)
+title: JScript (Access デスクトップ データベース リファレンス)
 TOCTitle: JScript
 ms:assetid: 78da203c-1342-1a04-ae53-c1fb714d18b5
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249498(v=office.15)
 ms:contentKeyID: 48545762
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a528ba7cfec634427dd399f98b1a3981ee567bff
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: aaba002668e8106fd523ca87637039cf9e410e4b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290909"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577256"
 ---
 # <a name="jscript"></a>JScript
 

@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - infopath 2003-compatible form templates, clean-up code,InfoPath 2003-compatible form templates, initialization code
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8d19e8fa-4e5c-40bb-ae89-7a552cc7914d
 description: 既定では、InfoPath 2003 と互換性のあるフォーム テンプレート プロジェクトについて作成される FormCode.cs または FormCode.vb ファイルには、フォームのプログラム ロジックに対するすべてのソース コードが含まれています。プロジェクトのテンプレートによって FormCode.cs または FormCode.vb ファイルに以下の例とよく似たクラスが生成され、このクラスには、フォーム イベントのハンドラーだけでなく、初期化コードと後処理コードも定義できます。FormCode.cs および FormCode.vb ファイルは、イベント ハンドラーが実装される唯一のクラスとしてこのクラスを識別する、アセンブリ レベルの System.ComponentModel.DescriptionAttribute 属性を使用します。InfoPathNamespace 属性 (InfoPathNamespaceAttribute 型が実装する) をクラスに適用して、クラス内で使用する XML DOM セレクション名前空間を識別します。InfoPathNamespace で参照される名前空間は、InfoPath プロジェクト システムによって管理されます。
-ms.openlocfilehash: 659214a21dacf75b12f36cb6ad1e7f09c5af8800
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 8f96f7a3abb2e84264a60734fabb74bef2370761
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538369"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596737"
 ---
 # <a name="initialization-and-clean-up-code-using-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用する初期化コードと後処理コード
 

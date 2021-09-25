@@ -12,17 +12,17 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 72f31c71e710cca79695a7221f0e033d18d2f420
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 217b4dcb13d8ecf55b46674b07841381a565f0f9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301380"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606465"
 ---
 # <a name="procedure-clause-microsoft-access-sql"></a>PROCEDURE 句 (Microsoft Access SQL)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 クエリの名前と省略可能なパラメーターを定義します。
 
@@ -31,28 +31,30 @@ ms.locfileid: "32301380"
 
 ## <a name="syntax"></a>構文
 
-プロシージャ*名* \[ *param1 データ*\[型、 *param2 datatype*\[、...\]\]
+PROCEDURE *名* \[ *param1 datatype* \[ , *param2 datatype* \[ , ..\]\]
 
 PROCEDURE 句には、次の指定項目があります。
 
 |パーツ |説明 |
 |:----|:-----------|
-|*name* |プロシージャ名。 名前付け規則に従った名前を指定します。|
-|*param1*、 *param2* |1 つ以上のフィールド名またはパラメーター。 たとえば、次のように指定します。<br/><br/>`PROCEDURE Sales_By_Country [Beginning Date] DateTime, [Ending Date] DateTime;`<br/><br/>パラメーターの詳細については、「 [parameters](parameters-declaration-microsoft-access-sql.md)」を参照してください。|
-|*datatype* | [Microsoft Access SQL データ型](sql-data-types.md)の 1 つ、またはその別名のうちの 1 つを指定します。 |
+|*name* |プロシージャ名。名前付け規則に従った名前を指定します。|
+|*param1*、*param2* |1 つ以上のフィールド名またはパラメーター。たとえば、次のように指定します。
+<br/><br/>`PROCEDURE Sales_By_Country [Beginning Date] DateTime, [Ending Date] DateTime;`<br/><br/>パラメーターの詳細については、「パラメーター」を [参照してください](parameters-declaration-microsoft-access-sql.md)。|
+|*datatype* | 
+            [Microsoft Access SQL データ型](sql-data-types.md)の 1 つ、またはその別名のうちの 1 つを指定します。 |
 
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-SQL のプロシージャは、プロシージャ名を指定する PROCEDURE 句、パラメーター定義のリスト (省略可能)、および 1 つの SQL ステートメントで構成されます。 たとえば、プロシージャの Get\_part\_番号は、指定されたパーツ番号を取得するクエリを実行する場合があります。
+SQL のプロシージャは、プロシージャ名を指定する PROCEDURE 句、パラメーター定義のリスト (省略可能)、および 1 つの SQL ステートメントで構成されます。 たとえば、プロシージャ Get \_ Part \_ Number は、指定されたパーツ番号を取得するクエリを実行する場合があります。
 
 > [!NOTE]
-> - 句に複数のフィールド定義が含まれている場合 (つまり、*パラメータタイプ*のペア)、それらはコンマで区切ります。
+> - 句に複数のフィールド定義 *(param-datatype* ペア) が含まれる場合は、コンマで区切ります。
 > - PROCEDURE 句に続けて [SELECT](select-statement-microsoft-access-sql.md) や [UPDATE](update-statement-microsoft-access-sql.md) などの SQL ステートメントを記述する必要があります。
 
 ## <a name="example"></a>例
 
-この例では、クエリカテゴリリストに名前を指定し、enumfields プロシージャを呼び出します。この例では、select ステートメントの使用例を参照してください。
+この例では、クエリを CategoryList と名付け、EnumFields プロシージャを呼び出します。EnumFields プロシージャについては、SELECT ステートメントの使用例を参照してください。
 
 ```vb
     Sub ProcedureX() 

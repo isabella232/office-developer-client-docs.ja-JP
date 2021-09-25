@@ -1,17 +1,16 @@
 ---
 title: DeleteRecord Data Macro アクション (Access custom Web app)
-manager: kelbow
-ms.date: 09/05/2017
+manager: lindalu
+ms.date: 09/05/2021
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f6b68a9a-e04a-476e-a407-b1779fea1953
-description: DeleteRecord/レコードの削除アクションを使用して、レコードを削除できます。
-ms.openlocfilehash: 0e8a658b944e894e4d4014fb3d3d9a583efbee8d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 01d0cdeecd7c1401c274822736a3cd40a865db52
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423154"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586433"
 ---
 # <a name="deleterecord-data-macro-action-access-custom-web-app"></a>DeleteRecord Data Macro アクション (Access custom Web app)
 
@@ -33,5 +32,3 @@ You can use the **DeleteRecord** action to delete a record.
 **LastCreateRecordIdentity** ローカル変数を使用して、 **CreateRecord** データ ブロックで一番新しく作成したレコードを操作できます。たとえば、次の構文では一番新しく作成したレコードを参照します。 
   
 `[LastCreateRecordIdentity]`
-
-

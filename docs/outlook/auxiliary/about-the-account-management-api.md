@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eb6b921d-ecf8-3ce5-87ba-ac1632416b05
 description: アカウント管理 API は、アカウント情報へのアクセスを提供し、アカウント変更の通知をサポートします。 この API のクライアントとして、メール プロバイダーは次の操作を行います。
-ms.openlocfilehash: 76520b7cc7f28ede28257729e4e4fbe2d5096290
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6711fc3297c803c0af3115e31a36255dafe3d028
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426250"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596709"
 ---
 # <a name="about-the-account-management-api"></a>アカウント管理 API について
 

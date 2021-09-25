@@ -1,5 +1,5 @@
 ---
-title: LoadFromFile メソッド (DAO)
+title: Field2.LoadFromFile メソッド (DAO)
 TOCTitle: LoadFromFile Method
 ms:assetid: 8ffe4636-d4da-0579-f4b5-14f423647562
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197396(v=office.15)
@@ -10,29 +10,29 @@ f1_keywords:
 - dao360.chm1101190
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: bdb1ba92c4a0f4fbee7204b2f4fee8a96c87cc1b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c921ba3292cb19ee3279ae72e054e12396fa4861
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292791"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615460"
 ---
-# <a name="field2loadfromfile-method-dao"></a>LoadFromFile メソッド (DAO)
+# <a name="field2loadfromfile-method-dao"></a>Field2.LoadFromFile メソッド (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 指定されたファイルをディスクから読み込みます。
 
 ## <a name="version-information"></a>バージョン情報
 
-追加されたバージョン: Access 2007
+追加バージョン: Access 2007
 
 ## <a name="syntax"></a>構文
 
-*式*。LoadFromFile (***FileName***)
+*式* .LoadFromFile(***FileName***)
 
-*式***Field2**オブジェクトを表す変数を取得します。
+*式***Field2** オブジェクトを表す変数。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -46,7 +46,7 @@ ms.locfileid: "32292791"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>

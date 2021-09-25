@@ -1,20 +1,20 @@
 ---
-title: CreateProperty メソッド (DAO)
+title: QueryDef.CreateProperty メソッド (DAO)
 TOCTitle: CreateProperty Method
 ms:assetid: e107b7d0-5556-7b87-f131-95f518893e4c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835663(v=office.15)
 ms:contentKeyID: 48548250
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f33198ac13b6695bfa592e2015aaed84d57f3b2d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: cf05bfbfb95b0a9d4cef831f968463a34a88032f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303032"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565052"
 ---
-# <a name="querydefcreateproperty-method-dao"></a>CreateProperty メソッド (DAO)
+# <a name="querydefcreateproperty-method-dao"></a>QueryDef.CreateProperty メソッド (DAO)
 
 **適用先:** Access 2013、Office 2013
 
@@ -22,9 +22,9 @@ ms.locfileid: "32303032"
 
 ## <a name="syntax"></a>構文
 
-*式*。CreateProperty (***Name***、 ***Type***、 ***Value***、 ***DDL***)
+*式* .CreateProperty(***Name** _, _*_Type_*_, _*_Value_*_, _*_DDL_**)
 
-*式***QueryDef**オブジェクトを表す変数を取得します。
+*expression*: **QueryDef** オブジェクトを表す変数。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -38,15 +38,15 @@ ms.locfileid: "32303032"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Name</em></p></td>
-<td><p>Optional</p></td>
+<td><p><em>名前</em></p></td>
+<td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>新しい <strong>Property</strong> オブジェクトの一意の名前を表す文字列型 ( <strong>String</strong> ) の値。有効な <strong>Property</strong> 名の詳細については、 <strong>Name</strong> プロパティを参照してください。  </p></td>
 </tr>
@@ -58,15 +58,15 @@ ms.locfileid: "32303032"
 </tr>
 <tr class="odd">
 <td><p><em>Value</em></p></td>
-<td><p>Optional</p></td>
+<td><p>オプション</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>初期プロパティ値を格納しているバリアント型 ( <strong>Variant</strong> ) の値。詳細については、 <strong><a href="field-value-property-dao.md">Value</a></strong> プロパティを参照してください。  </p></td>
 </tr>
 <tr class="even">
 <td><p><em>DDL</em></p></td>
-<td><p>Optional</p></td>
+<td><p>オプション</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p><strong>Property</strong> が DDL オブジェクトであるかどうかを示す、サブタイプがブール型 (<strong>Boolean</strong>) であるバリアント型 (<strong>Variant</strong>) の値。 既定では <strong>False です</strong> 。 DDL が<strong>True</strong>の場合、ユーザーは、 <strong>dbsecwritedef</strong>権限を持っていない限り、この<strong>プロパティ</strong>オブジェクトを変更または削除することはできません。</p></td>
+<td><p><strong>Property</strong> が DDL オブジェクトであるかどうかを示す、サブタイプがブール型 (<strong>Boolean</strong>) であるバリアント型 (<strong>Variant</strong>) の値。既定値は <strong>False</strong> です。DDL が <strong>True</strong> の場合、ユーザーは <strong>dbSecWriteDef</strong> 権限を持っていない限り、この <strong>Property</strong> オブジェクトを変更または削除することができません。</p></td>
 </tr>
 </tbody>
 </table>
@@ -82,11 +82,11 @@ ms.locfileid: "32303032"
 
 **CreateProperty** を使用するときに 1 つ以上の省略可能な引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に、適切な代入ステートメントを使用して、対応するプロパティを設定またはリセットできます。オブジェクトをコレクションに追加した後は、一部のプロパティ設定を変更できなくなります。詳細については、 **Name**、 **Type**、および **Value** の各プロパティのトピックを参照してください。
 
-name が既にコレクションのメンバーであるオブジェクトを参照している場合、 **[Append](fields-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。
+name が既にコレクションのメンバーであるオブジェクトを参照している場合 **[、Append](fields-append-method-dao.md)** メソッドを使用すると実行時エラーが発生します。
 
-ユーザー定義の **Property** オブジェクトをコレクションから削除するには、 **[Properties](fields-delete-method-dao.md)** コレクションの **[Delete](properties-collection-dao.md)** メソッドを使用します。 組み込みのプロパティは削除できません。
+ユーザー定義の **Property** オブジェクトをコレクションから削除するには、 **[Properties](fields-delete-method-dao.md)** コレクションの **[Delete](properties-collection-dao.md)** メソッドを使用します。組み込みのプロパティは削除できません。
 
 > [!NOTE]
-> ddl 引数を省略すると、既定では False (非 DDL) になります。 対応する ddl プロパティは公開されていないため、ddl から非 ddl に変更する**property**オブジェクトを削除し、再作成する必要があります。
+> DDL 引数を省略すると、既定値は False (非 DDL) になります。 対応する DDL プロパティは公開されませんので、DDL から非 DDL に変更する **Property** オブジェクトを削除して再作成する必要があります。
 
 

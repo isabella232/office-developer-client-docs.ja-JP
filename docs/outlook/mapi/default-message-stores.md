@@ -1,19 +1,19 @@
 ---
-title: 既定のメッセージ ストア
+title: ����̃��[���̕ۑ��ꏊ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: efa178eb-feb2-443f-8f6b-2ea53a456bf2
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 1ad325c68241c8a3924909b4dbf42c9657e68352
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.openlocfilehash: 6f25fdeb176b2d885a4ba3fbf2bfb8b094de223f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338046"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576416"
 ---
 # <a name="default-message-stores"></a>既定のメッセージ ストア
 
@@ -21,21 +21,21 @@ ms.locfileid: "32338046"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-既定のメッセージ ストアは、クライアント アプリケーションが汎用メッセージング タスクに使用できるものです。既定のメッセージ ストアとしてメッセージ ストア プロバイダーを使用する場合に、メッセージ ストア プロバイダーにとって必要となるいくつかのオプション機能があります。これらは次のようになります。
+A default message store is one that client applications can use for general purpose messaging tasks. There are a number of optional features for message store providers that become required if the message store provider is to be used as the default message store. They are as follows:
   
-- 受信トレイ、送信トレイ、および検索結果フォルダーなどの特別なフォルダーを実装します。
+- Implementing the special folders: the Inbox, Outbox, and search-results folders.
     
-- 開封済みレポートと未読レポートを提供します。
+- �J���� nonread �̃��|�[�g��񋟂��܂��B
     
-- 受信メッセージと送信メッセージの送信を許可します。
+- ���M����є��M�������b�Z�[�W�̑��M������܂��B
     
-- 任意のメッセージ クラスのメッセージの作成を許可します。
+- �N���X�̔C�ӂ̃��b�Z�[�W����b�Z�[�W�̍쐬������܂��B
     
-- 名前付きプロパティと複数値プロパティをサポートします。
+- ���O�t���ƕ����l�̃v���p�e�B��T�|�[�g���܂��B
     
-- メッセージ ストア プロバイダーがトランスポート プロバイダーと密接に結合している場合でも、[IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md) メソッドをサポートします。 
+- Supporting the [IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md) method, even if the message store provider is tightly coupled with a transport provider. 
     
-- 関連するコンテンツ テーブルをサポートします。詳細については、[コンテンツ テーブル](contents-tables.md)を参照してください。
+- �֘A����R���e���c�̃e�[�u����T�|�[�g���܂��B�ڍׂɂ��ẮA [�e�[�u���ȓ�e](contents-tables.md)��Q�Ƃ��Ă��������B
     
 - 送信メッセージ キューにメッセージがある場合に、MAPI スプーラーの通知をサポートします。
     

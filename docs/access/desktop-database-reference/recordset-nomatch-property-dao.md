@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1052889
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: e54f8c51787e51785bdaacaecd28a8d24e2cb5b1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 7e90a7858f6755933e842813f9a4d08e9728474d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300428"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606157"
 ---
 # <a name="recordsetnomatch-property-dao"></a>Recordset.NoMatch プロパティ (DAO)
 

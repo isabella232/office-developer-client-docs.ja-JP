@@ -10,22 +10,22 @@ f1_keywords:
 - ado210.chm1231161
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 9541b2d584728c09ee852f628cdfc35f3d170f04
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4e01b46685f2aef25005007736b138ecd50e8404
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301457"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606479"
 ---
 # <a name="prepared-property-ado"></a>Prepared プロパティ (ADO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 コンパイルされたバージョンのコマンドを実行前に保存するかどうかを示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
 ブール型 (**Boolean**) の値を設定または取得します。**True** に設定されている場合は、コマンドの準備が必要であることを示します。
 

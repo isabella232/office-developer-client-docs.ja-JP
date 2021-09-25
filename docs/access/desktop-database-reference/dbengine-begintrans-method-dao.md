@@ -1,31 +1,31 @@
 ---
-title: DBEngine メソッド (DAO)
+title: DBEngine.BeginTrans メソッド (DAO)
 TOCTitle: BeginTrans Method
 ms:assetid: fdde662f-2472-3af6-67d6-c8ca7fb1dca7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837255(v=office.15)
 ms:contentKeyID: 48548925
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5672d9a202c6615e4bc1f5c367e3910887ddc7a8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f4a4e090d83fd1815f82eceb72bbd7de421e9f71
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294401"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615613"
 ---
-# <a name="dbenginebegintrans-method-dao"></a>DBEngine メソッド (DAO)
+# <a name="dbenginebegintrans-method-dao"></a>DBEngine.BeginTrans メソッド (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 新しいトランザクションを開始します。値の取得および設定が可能です。データベース型 (**Database**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。BeginTrans
+*式* .BeginTrans
 
-*式***DBEngine**オブジェクトを表す変数を取得します。
+*式* **DBEngine** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 

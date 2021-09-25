@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834499(v=office.15)
 ms:contentKeyID: 48547787
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: dbb8ca2e1a63154f17bd814a26fe79ed405765cb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7eb11e7da4a529bd50d81f6dbb697b22fcc8a047
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306980"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576941"
 ---
 # <a name="relationattributeenum-enumeration-dao"></a>RelationAttributeEnum 列挙 (DAO)
 
@@ -42,12 +42,12 @@ ms.locfileid: "32306980"
 </tr>
 <tr class="even">
 <td><p>dbRelationDontEnforce</p></td>
-<td><p>pbm-2</p></td>
+<td><p>2</p></td>
 <td><p>リレーションシップは適用されません (参照整合性なし)。</p></td>
 </tr>
 <tr class="odd">
 <td><p>dbRelationInherited</p></td>
-<td><p>2/4</p></td>
+<td><p>4 </p></td>
 <td><p>リレーションシップは 2 つのリンク テーブルを含むデータベース内に存在します。</p></td>
 </tr>
 <tr class="even">
@@ -62,7 +62,7 @@ ms.locfileid: "32306980"
 </tr>
 <tr class="even">
 <td><p>dbRelationUnique</p></td>
-<td><p>1-d</p></td>
+<td><p>1</p></td>
 <td><p>一対一リレーションシップ。</p></td>
 </tr>
 <tr class="odd">

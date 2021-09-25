@@ -1,5 +1,5 @@
 ---
-title: Unique プロパティ (DAO)
+title: Index.Unique プロパティ (DAO)
 TOCTitle: Unique Property
 ms:assetid: a4486da5-8a1a-b4fc-0e07-e65cd2e726f6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821087(v=office.15)
@@ -10,25 +10,25 @@ f1_keywords:
 - dao360.chm1052990
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 5c94200245b4736ad244cb37beec617a98d6c367
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 45428f15c0bca259703e0f95fb7ad8693d841044
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291693"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615341"
 ---
-# <a name="indexunique-property-dao"></a>Unique プロパティ (DAO)
+# <a name="indexunique-property-dao"></a>Index.Unique プロパティ (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **[Index](index-object-dao.md)** オブジェクトがテーブルの固有 (キー) インデックスを表すかどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*。専用
+*式* .一意
 
-*式***Index**オブジェクトを表す変数を取得します。
+*式* Index オブジェクトを表す **変数** 。
 
 ## <a name="remarks"></a>注釈
 
@@ -36,14 +36,14 @@ ms.locfileid: "32291693"
 
 固有インデックスは、固有の定義済み順序で、テーブル内のすべてのレコードを論理的に配列する 1 つ以上のフィールドで構成されます。固有インデックスが 1 つのフィールドで構成される場合は、そのフィールド内の値はテーブル全体で一意である必要があります。固有インデックスが複数のフィールドで構成される場合は、各フィールドでは値の重複が許されますが、インデックスが設定されたすべてのフィールドの値を組み合わせた結果は一意である必要があります。
 
-**Index** オブジェクトの **Unique** プロパティと **[Primary](index-primary-property-dao.md)** プロパティの両方が **True** に設定されている場合、そのインデックスは、固有の主インデックスとなり、定義済みの論理的な順序でテーブル内のすべてのレコードを一意に識別します。 **Primary** プロパティが **False** に設定されている場合、2 次インデックスとなります。 2 次インデックス (キーと非キーの両方) は、テーブル内のレコードの識別子としては機能せずに、定義済み順序でレコードを論理的に配列します。
+**Index** オブジェクトの **Unique** プロパティと **[Primary](index-primary-property-dao.md)** プロパティの両方が **True** に設定されている場合、そのインデックスは、固有の主インデックスとなり、定義済みの論理的な順序でテーブル内のすべてのレコードを一意に識別します。**Primary** プロパティが **False** に設定されている場合、2 次インデックスとなります。2 次インデックス (キーと非キーの両方) は、テーブル内のレコードの識別子としては機能せずに、定義済み順序でレコードを論理的に配列します。
 
 > [!NOTE]
 > - テーブルにインデックスを作成する必要はありませんが、テーブルが大きくてインデックスが設定されていない場合、特定のレコードへのアクセス時間が長くなる可能性があります。
 > - インデックスのないテーブルからレコードを取得する場合、特定の順序でレコードを取得することはできません。
-> - **index**オブジェクト内の各**[Field](field-object-dao.md)** オブジェクトの**[Attributes](field-attributes-property-dao.md)** プロパティは、レコードの順序を決定するため、その**index**オブジェクトに対して使用するアクセス方法を決定します。
+> - **Index** **[オブジェクト](field-attributes-property-dao.md)** 内の **[各 Field](field-object-dao.md)** オブジェクトの Attributes プロパティは、レコードの順序を決定し、その Index オブジェクトに使用するアクセス手法 **を決定** します。
 > - 固有インデックスは、レコードの検索を最適化するのに便利です。
-> - インデックスは、ベーステーブルの物理的な順序には影響しません。インデックスは、特定のインデックスが選択されたとき、または Microsoft access データベースエンジンが**recordset**オブジェクトを作成するときに、テーブルタイプの**[recordset](recordset-object-dao.md)** オブジェクトによるレコードへのアクセス方法にのみ影響します。
+> - インデックスは、基本テーブルの物理的な順序には影響を与えかねない。インデックスは、特定のインデックスが選択されている場合、または Microsoft Access データベース エンジンが Recordset オブジェクトを作成するときに、テーブル型 **[Recordset](recordset-object-dao.md)** オブジェクトによってレコードがどのようにアクセスされるのかにのみ **影響** します。
 
 ## <a name="example"></a>例
 

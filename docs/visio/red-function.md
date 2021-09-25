@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251487
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a95fd86d-ebc1-66b6-e7d9-9c8ea84d23ab
 description: 色の赤いコンポーネントを返します。
-ms.openlocfilehash: e8c6115ac0441b25ce8333485828e8ef0f615459
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 37d54cb5cb35bb285b92ab31eea8482709410911
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415524"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623139"
 ---
 # <a name="red-function"></a>RED 関数
 
@@ -28,7 +28,7 @@ RED(** *式* ** )
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |必須  <br/> |**さまざま** <br/> |引数として、図面のカラー テーブルにある色のインデックス、ユーザー設定の色を返す式 (RGB や HSL など)、またはカラー インデックスや色の結果を含むセルへの参照を指定します。  <br/> |
+| _expression_ <br/> |必須かどうか  <br/> |**さまざま** <br/> |引数として、図面のカラー テーブルにある色のインデックス、ユーザー設定の色を返す式 (RGB や HSL など)、またはカラー インデックスや色の結果を含むセルへの参照を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

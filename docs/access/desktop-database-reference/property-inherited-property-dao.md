@@ -1,5 +1,5 @@
 ---
-title: プロパティ継承プロパティ (DAO)
+title: Property.Inherited プロパティ (DAO)
 TOCTitle: Inherited Property
 ms:assetid: 10e624db-2301-b9be-beca-6e8caccf7274
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845349(v=office.15)
@@ -10,32 +10,32 @@ f1_keywords:
 - dao360.chm1052991
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: cf3aef6d04c7d7cc573ec1d6efaca7d5238f5125
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 8b7c25638a7cf3c4d9ec03a6e28c59f1fdd2b608
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302927"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606423"
 ---
-# <a name="propertyinherited-property-dao"></a>プロパティ継承プロパティ (DAO)
+# <a name="propertyinherited-property-dao"></a>Property.Inherited プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013 
+**適用先**: Access 2013、Office 2013 
 
 基になるオブジェクトから **[Property](property-object-dao.md)** オブジェクトが継承されるかどうかを示す値を取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*。引き継が
+*式* .継承
 
-*式***Property**オブジェクトを表す変数を取得します。
+*式* Property オブジェクトを表 **す変数** 。
 
 ## <a name="remarks"></a>注釈
 
 定義済みのプロパティを表す組み込みの **Property** オブジェクトの場合、可能な戻り値は **False** のみです。
 
-**Inherited** プロパティを使用すると、対象のオブジェクトに対してユーザー定義の **Property** オブジェクトが作成されたかどうか、または別のオブジェクトから **Property** オブジェクトが継承されたかどうかを調べることができます。 たとえば、**[QueryDef](querydef-object-dao.md)** オブジェクトに対して新しい **Property** オブジェクトを作成し、**QueryDef** オブジェクトから **[Recordset](recordset-object-dao.md)** オブジェクトを開くとします。 この新しい **Property** オブジェクトは **Recordset** オブジェクトの **[Properties](properties-collection-dao.md)** コレクションの一部となりますが、Property オブジェクトは **Recordset** オブジェクトではなく **QueryDef** オブジェクトに対して作成されたため、**Inherited** プロパティは **True** に設定されます。
+**Inherited** プロパティを使用すると、対象のオブジェクトに対してユーザー定義の **Property** オブジェクトが作成されたかどうか、または別のオブジェクトから **Property** オブジェクトが継承されたかどうかを調べることができます。たとえば、**[QueryDef](querydef-object-dao.md)** オブジェクトに対して新しい **Property** オブジェクトを作成し、**QueryDef** オブジェクトから **[Recordset](recordset-object-dao.md)** オブジェクトを開くとします。この新しい **Property** オブジェクトは **Recordset** オブジェクトの **[Properties](properties-collection-dao.md)** コレクションの一部となりますが、Property オブジェクトは **Recordset** オブジェクトではなく **QueryDef** オブジェクトに対して作成されたため、**Inherited** プロパティは **True** に設定されます。
 
 ## <a name="example"></a>例
 

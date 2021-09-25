@@ -3,17 +3,17 @@ title: フォーム構成ファイル [プロパティ] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: f31a08ce-3a56-4c90-9502-5bcb09d8d80f
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 86d2257b821622094ff8d5ad3a5d7b1bfc74942b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fa32c4145292769951500b43f2684b6602552a1c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421292"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576255"
 ---
 # <a name="form-configuration-file-properties-section"></a>フォーム構成ファイル [プロパティ] セクション
 

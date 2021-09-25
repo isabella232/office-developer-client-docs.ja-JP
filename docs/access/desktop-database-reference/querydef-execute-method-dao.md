@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1052884
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 7ef7f61ef632617b8d64a3fd9c34e5887e50065c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: a13db599846ebb851b2eb60de2baf813fabf0907
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302962"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565059"
 ---
 # <a name="querydefexecute-method-dao"></a>QueryDef.Execute メソッド (DAO)
 
@@ -42,7 +42,7 @@ ms.locfileid: "32302962"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/省略可能</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -88,7 +88,7 @@ Options には、次の **[RecordsetOptionEnum](recordsetoptionenum-enumeration-
 </tr>
 <tr class="even">
 <td><p><strong>dbSQLPassThrough</strong></p></td>
-<td><p>SQL パススルー クエリを実行します。 このオプションを設定すると、SQL ステートメントが ODBC データベースに渡されて処理されます (Microsoft Access ワークスペースのみ)。</p></td>
+<td><p>SQL パススルー クエリを実行します。このオプションを設定すると、SQL ステートメントが ODBC データベースに渡されて処理されます (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbFailOnError</strong></p></td>
@@ -122,7 +122,7 @@ Microsoft Access ワークスペースでは、指定した SQL ステートメ�
 
 以前のバージョンの Microsoft Jet データベース エンジンでは、暗黙のトランザクション内に自動的に SQL ステートメントが埋め込まれていました。 **dbFailOnError** を指定して実行したステートメントの一部が失敗した場合は、ステートメント全体がロールバックされました。パフォーマンスを向上するために、バージョン 3.5 以降では、この暗黙のトランザクションが取り除かれました。古いバージョンの DAO コードを更新する場合は、 **Execute** ステートメントの前後で明示的なトランザクションを使用することを検討してください。
 
-Microsoft Access ワークスペース、特にマルチユーザー環境で最高のパフォーマンスを得るには、トランザクション内に **Execute** メソッドをネストします。 現在の**[Workspace](workspace-object-dao.md)** オブジェクトの **[BeginTrans](workspace-begintrans-method-dao.md)** メソッドを使用し、次に **Execute** メソッドを使用し、最後に **Workspace** の **[CommitTrans](workspace-committrans-method-dao.md)** メソッドを使用してトランザクションを完了します。 これにより、変更がディスクに保存され、クエリ実行中に適用されていたロックがすべて解除されます。
+Microsoft Access ワークスペースでのパフォーマンスを最適にする (特にマルチユーザー環境の場合) には、トランザクション内部に **Execute** メソッドをネストします。現在の **[Workspace](workspace-object-dao.md)** オブジェクトの **[BeginTrans](workspace-begintrans-method-dao.md)** メソッドを使用し、次に **Execute** メソッドを使用し、最後に **Workspace** の **[CommitTrans](workspace-committrans-method-dao.md)** メソッドを使用してトランザクションを完了します。これにより、変更がディスクに保存され、クエリ実行中に適用されていたロックがすべて解除されます。
 
 ## <a name="example"></a>例
 
@@ -243,7 +243,7 @@ Microsoft Access ワークスペース、特にマルチユーザー環境で最
 
 <br/>
 
-次の例は、パラメータ クエリを実行する方法を示しています。 Parameters コレクションは、クエリが実行される前に myActionQuery クエリの Organization パラメータを設定するために使用されます。
+次の例は、パラメーター クエリを実行する方法を示します。クエリを実行する前に Parameters コレクションを使用して myActionQuery クエリの Organization パラメーターを設定します。
 
 **サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 

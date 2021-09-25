@@ -3,15 +3,15 @@ title: Windows ユニバーサル アプリからの Office との統合
 manager: soliver
 ms.date: 02/06/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 60b4fa23-0075-4f6a-8bd0-9e53e99432d5
 description: Windows ユニバーサル アプリ プラットフォームのサードパーティ アプリを Excel Mobile、PowerPoint Mobile、Word Mobile と統合できます。ユニバーサル アプリを Office アプリと統合する際には、Windows ファイル ピッカー コントラクト、expando プロパティ、キャッシュ ファイル更新プログラム コントラクト を使います。
-ms.openlocfilehash: ad04ccc3ceb6e0f1d53e4aebc12cf9724ab8ab66
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3c61e5697fad8e79ca8c8a76843880fd79a842c3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299770"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596723"
 ---
 # <a name="integrate-with-office-from-windows-universal-apps"></a>Windows ユニバーサル アプリからの Office との統合
 
@@ -35,7 +35,7 @@ Windows ユニバーサル アプリは、Expando プロパティを使用して
   
 これらのプロパティは、 **System.ExpandoProperties** プロパティ セット内で設定してください。 
   
-|**Property**|**説明**|**型**|**例**|
+|**プロパティ**|**説明**|**型**|**例**|
 |:-----|:-----|:-----|:-----|
 |**AppDisplayName** <br/> |ユーザーに対して表示するプロバイダー名。Office では、最近使用したドキュメントの一覧などの複数の場所に表示されます。  <br/> |String  <br/> |Contoso  <br/> |
 |**MicrosoftOfficeOwnershipType** <br/> |ライセンスの場合、ドキュメント/場所が Personal/Consumer か Work/Business かを示します。使用できる値は 1 (Personal) と 2 (Business) です。たとえば、ユーザーのファイルが Contoso Business に保存される場合は Business の値「2」を使用します。  <br/> |Unit32  <br/> | 1 または 2  <br/> たとえば、ユーザーのファイルが Contoso Business に保存される場合は、このファイルに Business の「2」のマークを付ける必要があります。  <br/> |

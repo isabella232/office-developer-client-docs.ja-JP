@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - automation [infopath 2007], external,automating InfoPath 2007,InfoPath 2007, automating from other applications
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c82daa2d-59d2-44d0-9e82-40483df6dad0
 description: このセクションでは、Microsoft InfoPath プライマリ相互運用機能および XML 相互運用機能アセンブリと、マネージ コードを使用して外部アプリケーションから InfoPath を自動化するためにそれらの型とメンバーがどのように使用されるのかについて説明します。
-ms.openlocfilehash: b6618dbe838446555920bf9e79c07712bc66fdda
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0b1215bd57f8cbe04034c7e38a555bfc3f7c3f86
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434257"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596758"
 ---
 # <a name="automating-infopath-from-other-applications"></a>他のアプリケーションからの InfoPath の自動化
 

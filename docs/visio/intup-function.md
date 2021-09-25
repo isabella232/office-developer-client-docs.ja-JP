@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251446
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ce193ce1-c7fd-6609-ad37-a3a28b30a1bd
 description: 数値を次の整数に切り上げします。
-ms.openlocfilehash: 405345ae1d22d599df85e2a640445c8c681ec2f6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3402429d7037f020b10ac7f28a5fb5bcdeb566e6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416140"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623454"
 ---
 # <a name="intup-function"></a>INTUP 関数
 
@@ -28,7 +28,7 @@ INTUP(** *number* ** )
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number_ <br/> |必須  <br/> |**数値** <br/> |切り上げの対象となる数値を指定します。  <br/> |
+| _number_ <br/> |必須かどうか  <br/> |**数値** <br/> |切り上げの対象となる数値を指定します。  <br/> |
    
 ## <a name="example-1"></a>例 1
 

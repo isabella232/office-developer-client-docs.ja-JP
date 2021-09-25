@@ -3,17 +3,17 @@ title: MAPI のイベント通知
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 7b3b625b-6dea-4b12-99a9-152935bdfe39
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 30d4ad5e0fc1ecdc4c8eb06f75d39e38dd481269
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 64605539d04dcbec1eee53ff6d508d1cf5599b08
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321398"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576311"
 ---
 # <a name="event-notification-in-mapi"></a>MAPI のイベント通知
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193989(v=office.15)
 ms:contentKeyID: 48544870
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0e0c849fc507d535807bc088e667acd74410ddd8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f4dc72f0416094be8f76be846d94818bfc2bc64b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308674"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564892"
 ---
 # <a name="setreturnvar-macro-action"></a>SetReturnVar マクロ アクション
 
@@ -23,7 +23,7 @@ ms.locfileid: "32308674"
 > [!NOTE]
 > "**SetReturnVar**/戻り変数の設定" アクションは、データ マクロでのみ使用できます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "**SetReturnVar/戻り変数の設定**" アクションの引数は次のとおりです。
 
@@ -47,7 +47,7 @@ ms.locfileid: "32308674"
 <td><p>変数の名前を指定する文字列。</p></td>
 </tr>
 <tr class="even">
-<td><p>演算</p></td>
+<td><p>Expression</p></td>
 <td><p>はい</p></td>
 <td><p>An expression that will be used to set the value for this temporary variable. Do not precede the expression with the equal sign (=). You can click the <strong>Build</strong> button to use the <strong>Expression Builder</strong> to set this argument.  </p></td>
 </tr>
@@ -69,7 +69,7 @@ ms.locfileid: "32308674"
 
 ## <a name="example"></a>例
 
-次の例は、 SetReturnVar アクションを使用して名前付きデータ マクロから値を返す方法を示します。 " CurrentServiceRequest" という名前の **ReturnVar** が、名前付きデータ マクロの呼び出し元であるマクロまたは Visual Basic for Applications (VBA) サブルーチンに返されます。
+次の例は、SetReturnVar アクションを使用して名前付きデータ マクロから値を返す方法を示します。"**CurrentServiceRequest**" という名前の ReturnVar が、名前付きデータ マクロの呼び出し元であるマクロまたは Visual Basic for Applications (VBA) サブルーチンに返されます。
 
 **サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 

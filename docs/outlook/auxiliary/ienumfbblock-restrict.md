@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 887cea55-8f1c-45ec-3100-d03e1213d7c9
 description: 列挙を指定した期間に制限します。
-ms.openlocfilehash: e7f7a5d846d13422f9ed79ef26f1b9b0008463f6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0dcb2cb2304323a4d434bb315531190f36e96e96
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431947"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596611"
 ---
 # <a name="ienumfbblockrestrict"></a>IEnumFBBlock::Restrict
 

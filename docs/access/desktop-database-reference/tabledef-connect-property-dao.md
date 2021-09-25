@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1053064
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 2d8aef3c8bdaac93bd84231b3098d98ee896a81f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: e267a739b3bf4187d8a00ce027d3c31262e4b16b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314386"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564835"
 ---
 # <a name="tabledefconnect-property-dao"></a>TableDef.Connect プロパティ (DAO)
 

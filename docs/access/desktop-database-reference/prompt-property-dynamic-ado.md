@@ -1,26 +1,26 @@
 ---
-title: Prompt の動的プロパティ (ADO)
+title: プロンプト動的プロパティ (ADO)
 TOCTitle: Prompt dynamic property (ADO)
 ms:assetid: 6c899b03-1d1f-a81f-dc17-7205a0230af9
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249428(v=office.15)
 ms:contentKeyID: 48545473
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 261ac5640b5239f27ad91e01d1cb23794f88740a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 60a6f6e8ea728466648249d9851b1ee326efed74
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301324"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577074"
 ---
-# <a name="prompt-dynamic-property-ado"></a>Prompt の動的プロパティ (ADO)
+# <a name="prompt-dynamic-property-ado"></a>プロンプト動的プロパティ (ADO)
 
 **適用先:** Access 2013、Office 2013
 
 OLE DB プロバイダーから、ユーザーに対して初期化情報を要求するかどうかを指定します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
 [ConnectPromptEnum](connectpromptenum.md) の値を設定または取得します。
 

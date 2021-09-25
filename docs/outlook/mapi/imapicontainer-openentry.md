@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIContainer.OpenEntry
 api_type:
 - COM
 ms.assetid: 0c46c1fb-dd63-4ac5-960e-80f68e75d8f4
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 9598e0c90c16db14cdc3a46d2b2ae74e0d9a9300
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4dc0784f5dec810abcd8bb763fbf1e1417d3446a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423637"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596373"
 ---
 # <a name="imapicontaineropenentry"></a>IMAPIContainer::OpenEntry
 

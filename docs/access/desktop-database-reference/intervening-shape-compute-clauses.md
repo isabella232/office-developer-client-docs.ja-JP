@@ -1,20 +1,20 @@
 ---
-title: 図形間の COMPUTE 句
+title: Shape COMPUTE 句の介入
 TOCTitle: Intervening Shape COMPUTE clauses
 ms:assetid: 3e9dcef2-776c-0365-4a92-68e325f7dbb5
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249174(v=office.15)
 ms:contentKeyID: 48544380
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 456729bb93d6cfaf2844d71123cd850d7f719844
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: baed73952acd45e8dba9662191a4d0dfb6bdddad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291249"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577263"
 ---
-# <a name="intervening-shape-compute-clauses"></a>図形間の COMPUTE 句
+# <a name="intervening-shape-compute-clauses"></a>Shape COMPUTE 句の介入
 
 
 **適用先:** Access 2013、Office 2013

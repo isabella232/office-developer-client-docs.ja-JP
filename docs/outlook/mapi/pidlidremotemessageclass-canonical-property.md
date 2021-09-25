@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidRemoteMessageClass
 api_type:
 - COM
 ms.assetid: bdc3d9a1-c29c-4fbe-893e-0bc7aaa25edc
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 71bfb1a6fc9f6923f3f1fbdcd7aff20625cd70af
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 759bd5dad55285c003d767f35815cc739d5a98b1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434159"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630223"
 ---
 # <a name="pidlidremotemessageclass-canonical-property"></a>PidLidRemoteMessageClass 標準プロパティ
 

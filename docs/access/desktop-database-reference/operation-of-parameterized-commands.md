@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249456(v=office.15)
 ms:contentKeyID: 48545596
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 145a2ee6c3d3c614eb9660350a0bb8a00d44d04c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 08c290f0eaf6c5dd6787031e688604063970b2b7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288288"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577172"
 ---
 # <a name="operation-of-parameterized-commands"></a>パラメーター化コマンドの操作
 
@@ -20,9 +20,9 @@ ms.locfileid: "32288288"
 
 大きな子 **Recordset** を処理するとき、特に親 **Recordset** のサイズと比べて大きいにもかかわらず、わずかな子チャプターにアクセスするだけの場合は、パラメーター化コマンドを使用する方が効率的です。
 
-*非パラメーター化コマンド*は、親と子の両方の**recordset**全体を取得し、チャプター列を親に追加して、親の各行に関連する子チャプターへの参照を割り当てます。
+パラメーター *化されていない* コマンドは、親レコードセットと子 **Recordsets** の両方を取得し、チャプター列を親に追加し、親行ごとに関連する子チャプターへの参照を割り当てる。
 
-*パラメーター化*されたコマンドは親**recordset**全体を取得しますが、チャプター列にアクセスしたときにはチャプター **recordset**のみを取得します。 This difference in retrieval strategy can yield significant performance benefits.
+パラメーター *化されたコマンドは* 、親 **Recordset** 全体を取得しますが、チャプター列にアクセスすると **チャプター Recordset** のみを取得します。 This difference in retrieval strategy can yield significant performance benefits.
 
 たとえば、次のように指定することができます。
 
@@ -33,7 +33,7 @@ SHAPE {SELECT * FROM customer}
  RELATE cust_id TO PARAMETER 0) 
 ```
 
-親と子のテーブルには、共通の cust\_id の列名があり*ます。* *child-command* には、RELATE 句の参照先 ("...PARAMETER 0") へのプレースホルダー "?" が指定されています。
+親テーブルと子テーブルの列名は、共通の cust \_ id です *。* *child-command* には、RELATE 句の参照先 ("...PARAMETER 0") へのプレースホルダー "?" が指定されています。
 
 > [!NOTE]
 > [!メモ] PARAMETER 句は、Shape コマンドの構文にのみ影響します。ADO の [Parameter](parameter-object-ado.md) オブジェクトまたは [Parameters](parameters-collection-ado.md) コレクションとは関係ありません。
@@ -44,9 +44,9 @@ SHAPE {SELECT * FROM customer}
 
 2.  チャプター列が親 **Recordset** に追加されます。
 
-3.  親の行のチャプター列にアクセスすると、customer の値を使用して*子コマンド*が実行されます\_。 cust id は、パラメーターの値として指定します。
+3.  親行のチャプター列にアクセスすると、パラメーターの値としてcustomer.cust id の値を使用して子コマンド \_ が実行されます。
 
-4.  手順3で作成したデータプロバイダーの行セット内のすべての行を使用して、子**Recordset**にデータを設定します。 この例では、Orders テーブルには、cust\_id が customers\_id の値と等しい行がすべて含まれています。 既定では、親**recordset**への参照がすべて解放されるまで、子**recordset**s はクライアント上にキャッシュされます。 この動作を変更するには、 **Recordset**の[動的プロパティ](ado-dynamic-property-index.md)**キャッシュの子の行**を**False**に設定します。
+4.  手順 3 で作成したデータ プロバイダー行セット内のすべての行を使用して、子 Recordset を設定 **します**。 この例では、cust id が customer.cust id の値と等しい Orders テーブルのすべての行 \_ \_ です。 既定では、親 **Recordset** へのすべての参照が解放されるまで、子 Recordset s は **クライアントにキャッシュ** されます。 この動作を変更するには **、Recordset**[](ado-dynamic-property-index.md)動的プロパティ Cache Child Rows を **False に****設定します**。
 
 5.  取得された子の行への参照 (つまり、子 **Recordset** のチャプター) は、親 **Recordset** のカレント行のチャプター列に配置されます。
 
@@ -71,9 +71,9 @@ Rst1.MovePrevious ' RstChild now holds cached rs, saving round trip.
 
 ## <a name="parameterized-commands-and-complex-parent-child-relations"></a>パラメーター化されたコマンドと複雑な親子関係
 
-パラメーター化されたコマンドを使用すると、等結合タイプの階層のパフォーマンスを向上できるだけでなく、より複雑な親子関係をサポートできます。 \_たとえば、teams (チーム id、チーム\_名) と、その他のゲーム (日付、自宅\_チーム、訪問\_チーム) の2つのテーブルで構成されるちょっとしたリーグデータベースを考えてみます。
+パラメーター化されたコマンドを使用すると、等結合タイプの階層のパフォーマンスを向上できるだけでなく、より複雑な親子関係をサポートできます。 たとえば、チーム (チーム ID、チーム名) と他のゲーム (日付、ホーム チーム、訪問チーム) で構成される 2 つのテーブルを持つ Little League データベースを \_ \_ \_ 検討 \_ します。
 
-非パラメーター化階層を使用する場合、各チームの子 **Recordset** にその完全な日程が含まれるように、チーム テーブルと試合テーブルを関連付けることはできません。 ホームの日程または遠征の日程のいずれかを含むチャプターを作成することはできますが、両方を含むチャプターは作成できません。 これは、RELATE 句では、親子関係が (pc1=cc1) AND (pc2=pc2) 形式に制限されるためです。 \_そのため、「team id からホーム\_チームへのチーム id への\_\_関連付け」というコマンドを使用した場合、チームが自分たちをプレイしていたゲームのみが表示されます。 必要なのは、"(\_チーム id =\_ホームチーム)" また\_は (team\_id = 訪問チーム) "ですが、Shape プロバイダーは OR 句をサポートしていません。
+非パラメーター化階層を使用する場合、各チームの子 **Recordset** にその完全な日程が含まれるように、チーム テーブルと試合テーブルを関連付けることはできません。 ホームの日程または遠征の日程のいずれかを含むチャプターを作成することはできますが、両方を含むチャプターは作成できません。 これは、RELATE 句では、親子関係が (pc1=cc1) AND (pc2=pc2) 形式に制限されるためです。 したがって、コマンドに "RELATE team id TO home \_ team, team id TO visiting team"が含まれている場合は、チームがプレイしているゲームのみを \_ \_ \_ 取得します。 必要なのが "(team \_ id=home \_ team) OR (team \_ id=visiting team)"ですが、Shape プロバイダーは OR 句 \_ をサポートしていない。
 
 必要な結果を取得するには、パラメーター化されたコマンドを使用します。次に例を示します。
 

@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1053054
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: c51f0da8541cf0ba2790827c58a0b017bd6ed875
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 3213cf90bc1f2b07f93f19561d24dbd2ee31dd8e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300981"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576997"
 ---
 # <a name="querydefsql-property-dao"></a>QueryDef.SQL プロパティ (DAO)
 
@@ -39,14 +39,14 @@ ms.locfileid: "32300981"
 
 SQL ステートメントにクエリのパラメーターが含まれている場合、実行の前にこれらのパラメーターを設定する必要があります。パラメーターをリセットしない限り、クエリを実行するたびに同じパラメーター値が適用されます。
 
-Microsoft Access ワークスペースの場合、Microsoft Access データベース エンジンに接続されている ODBC データ ソース上で SQL パススルー操作を実行するには、 **QueryDef** オブジェクトを使用することをお勧めします。 **QueryDef** オブジェクトの **[Connect](querydef-connect-property-dao.md)** プロパティを ODBC データ ソースに設定すると、クエリで外部サーバーに渡す必要がある Microsoft Access データベース以外の SQL を使用できます。 たとえば、それ以外の場合 Microsoft Access データベース エンジンでは処理できない、TRANSACT SQL ステートメントを (Microsoft SQL Server または Sybase SQL Server データベースで) 使用できます。
+Microsoft Access ワークスペースの場合、Microsoft Access データベース エンジンに接続されている ODBC データ ソース上で SQL パススルー操作を実行するには、**QueryDef** オブジェクトを使用することをお勧めします。**QueryDef** オブジェクトの **[Connect](querydef-connect-property-dao.md)** プロパティを ODBC データ ソースに設定すると、クエリで外部サーバーに渡す必要がある Microsoft Access データベース以外の SQL を使用できます。たとえば、それ以外の場合 Microsoft Access データベース エンジンでは処理できない、TRANSACT SQL ステートメントを (Microsoft SQL Server または Sybase SQL Server データベースで) 使用できます。
 
 > [!NOTE]
-> このプロパティを非整数値と連結された文字列に設定し、かつシステム パラメーターでコンマなどのピリオド以外の小数点の記号が指定されている場合に (例: `strSQL = "PRICE > " & lngPrice, and lngPrice = 125,50`)、Microsoft Access データベース エンジンのデータベースで **QueryDef** オブジェクトを実行しようとすると、エラーが発生します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Access の SQL で小数点の記号として使用できるのはピリオドのみであるためです。
+> このプロパティを非整数値と連結された文字列に設定し、かつシステム パラメーターでコンマなどのピリオド以外の小数点の記号が指定されている場合 (たとえば、 `strSQL = "PRICE > " & lngPrice, and lngPrice = 125,50` で )、Microsoft Access データベース エンジンのデータベースで **QueryDef** オブジェクトを実行しようとすると、エラーが発生します。連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Access の SQL で小数点の記号として使用できるのはピリオドのみであるためです。
 
 ## <a name="example"></a>例
 
-次の例では、一時的な **QueryDef** オブジェクトの **SQL** プロパティを設定して変更し、結果を比較することで、**SQL** プロパティの機能を示します。 このプロシージャを実行するには、SQLOutput 関数が必要です。
+次の例では、一時的な **QueryDef** オブジェクトの **SQL** プロパティを設定して変更し、結果を比較することで、 **SQL** プロパティの機能を示します。このプロシージャを実行するには、 SQLOutput 関数が必要です。
 
 ```vb
     Sub SQLX() 
@@ -255,7 +255,7 @@ Microsoft Access ワークスペースの場合、Microsoft Access データベ�
 
 <br/>
 
-次の例は、パラメーター クエリを作成する方法を示しています。 Param1 および Param2 という名前の 2 つのパラメーターを使用して**myQuery**という名前のクエリを作成します。 これを行うには、パラメーターを定義する構造化照会言語 (SQL) ステートメントに、クエリの SQL プロパティを設定します。
+次の例は、パラメーター クエリを作成する方法を示します。Param1 および Param2 という名前の 2 つのパラメーターを使用して **myQuery** という名前のクエリを作成します。これを行うには、クエリの SQL プロパティを、パラメーターを定義する構造化照会言語 (SQL) ステートメントに設定します。
 
 **サンプル コードの提供元:** [Microsoft Access 2010 プログラマー用リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 

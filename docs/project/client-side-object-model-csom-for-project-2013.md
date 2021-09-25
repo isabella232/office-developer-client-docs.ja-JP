@@ -4,27 +4,27 @@ manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
 ms.assetid: 716325eb-b092-4934-921f-84129d0a1f5f
-description: Project Server 2013 のクライアント側オブジェクト モデル (CSOM) は、一般的なサーバー機能を実装しています。 Project Server CSOM には、Microsoft .NET CSOM、Microsoft Silverlight CSOM、Windows Phone 8 CSOM、および JavaScript オブジェクト モデル (JSOM) が含まれます。 さらに、この CSOM には REST インターフェイスを有効にする OData サービスも含まれています。 この REST インターフェイスは、主に iOS や Android などの Windows 以外のプラットフォームでアプリを開発するためのものです。
-localization_priority: Priority
-ms.openlocfilehash: b722e316f5cb2054eb6522297c5c5ef3e75f9fa4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Project Server 2013 のクライアント側オブジェクト モデル (CSOM) は、一般的なサーバー機能を実装します。Project Server CSOM には、Microsoft .NET CSOM、Microsoft Silverlight CSOM、Windows Phone 8 CSOM、および JavaScript オブジェクト モデル (JSOM) が含まれています。また、CSOM には REST インターフェイスを可能にする OData サービスが含まれています。REST のインターフェースは主に iOS や Android など、Windows 以外のプラットフォームでのアプリケーション開発を目的としています。
+ms.localizationpriority: high
+ms.openlocfilehash: 339e5dc9c05402e1be4aed30bf6448bc59b0c422
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355203"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563134"
 ---
 # <a name="client-side-object-model-csom-for-project-2013"></a>Project 2013 のクライアント側オブジェクト モデル (CSOM)
 
-Project Server 2013 のクライアント側オブジェクト モデル (CSOM) は、一般的なサーバー機能を実装しています。 Project Server CSOM には、Microsoft .NET CSOM、Microsoft Silverlight CSOM、Windows Phone 8 CSOM、および JavaScript オブジェクト モデル (JSOM) が含まれます。 さらに、この CSOM には REST インターフェイスを有効にする OData サービスも含まれています。 この REST インターフェイスは、主に iOS や Android などの Windows 以外のプラットフォームでアプリを開発するためのものです。
+Project Server 2013 のクライアント側オブジェクト モデル (CSOM) は、一般的なサーバー機能を実装します。Project Server CSOM には、Microsoft .NET CSOM、Microsoft Silverlight CSOM、Windows Phone 8 CSOM、および JavaScript オブジェクト モデル (JSOM) が含まれています。また、CSOM には REST インターフェイスを可能にする OData サービスが含まれています。REST のインターフェースは主に iOS や Android など、Windows 以外のプラットフォームでのアプリケーション開発を目的としています。
   
 > [!NOTE]
-> Project Online 用のソリューションには CSOM を使用する必要があります。 ただし、オンプレミスのアプリには CSOM と Project Server Interface (PSI) のどちらかを使用できます。 使用する予定の機能が CSOM に含まれている場合、新しいアプリには CSOM を使用することをお勧めします。 
+> Project Online のソリューションでは CSOM を使用する必要があります。ただし、オンプレミスのアプリケーションでは CSOM または Project Server Interface (PSI) を使用できます。使用する予定の機能が CSOM に含まれている場合、新しいアプリケーションには CSOM を使用することをお勧めします。 
   
 CSOM の拡張機能 **ProjectContext** オブジェクトは、サーバー コンテンツと機能へのエントリ ポイントを提供します。 .NET CSOM、Silverlight CSOM、および Windows Phone CSOM は、[Microsoft.ProjectServer.Client.ProjectContext](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.aspx) オブジェクトを使用し、JSOM は **PS.ProjectContext** オブジェクトを使用します。 **ProjectContext** のプロパティは、現在の Project Web App サイト コレクションに含まれる主要な Project Server オブジェクトへの直接アクセスを提供します。 CSOM アセンブリと JavaScript ファイルの場所に関する詳細については、[Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx) を参照してください。 
   
  **アプリとセキュリティ モデル** アプリは、Project Server 2013 および Project Online の CRUD (作成、読み取り、更新、削除) 操作に CSOM を使用する必要があります。 Project アプリは、SharePoint 2013 のアプリ専用の認証モデルを使用しません。 Project Server アプリには、どのユーザーの代わりにコマンドを実行するかを指定する特定のアクセス許可要求のスコープが必要です。 
   
- **REST クエリ** CSOM OData サービスの REST クエリはメタデータを利用することなく作成できます。 一部のサード パーティ製のツールでは、CSOM 対応の .NET アセンブリを使用して、その他のデバイス用アプリを開発できます。 たとえば、「iOS または Android 対応のクロスプラットフォーム .NET 開発ツール」についてインターネットを検索してください。 
+ **REST クエリ** メタデータを使用せずに CSOM OData サービスの REST クエリを作成できます。一部のサードパーティ ツールでは CSOM 用の .NET アセンブリを使用して、他のデバイス向けのアプリケーションを開発できます。たとえば、インターネットで 「iOS または Android 用クロスプラットフォーム .NET 開発ツール」 を検索してみてください。 
   
 > [!NOTE]
 > **ProjectData** レポート サービスの `$metadata` オプションは有効ですが (`https://ServerName/pwaName/_api/ProjectData/$metadata`)、CSOM の **ProjectServer** サービスの `$metadata` オプションは、リリース済みバージョンの Project Server 2013 では削除されています。 REST エンドポイントとして利用可能な CSOM のオブジェクトとメンバーを調べるには、「[Project Server 2013 の JavaScript ライブラリおよび REST リファレンス](javascript-library-and-rest-reference-for-project-server-2013.md)」を参照してください。 

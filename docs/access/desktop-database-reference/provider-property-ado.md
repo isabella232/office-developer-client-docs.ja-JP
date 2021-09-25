@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248953(v=office.15)
 ms:contentKeyID: 48543543
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0e640fb6131919cbdf88fbbf8229c62d0e2e4e13
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e63ec7813a1bc446502900de75369c9c42afd709
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301135"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565080"
 ---
 # <a name="provider-property-ado"></a>Provider プロパティ (ADO)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32301135"
 
 [Connection](connection-object-ado.md) オブジェクトのプロバイダー名を示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
 プロバイダー名を示す文字列型 (**String**) の値を設定または取得します。
 

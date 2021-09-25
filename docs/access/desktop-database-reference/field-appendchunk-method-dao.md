@@ -1,30 +1,30 @@
 ---
-title: フィールド appendchunk メソッド (DAO)
+title: Field.AppendChunk メソッド (DAO)
 TOCTitle: AppendChunk Method
 ms:assetid: f98c6862-fecf-06cb-a7c0-42b0d3150a06
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837014(v=office.15)
 ms:contentKeyID: 48548819
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b1ce1c359582194ce87dfaf4f409be4303486e09
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4ff1dd52a3a1a7a6d82629c958e309577defffd8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293169"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615481"
 ---
-# <a name="fieldappendchunk-method-dao"></a>フィールド appendchunk メソッド (DAO)
+# <a name="fieldappendchunk-method-dao"></a>Field.AppendChunk メソッド (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 文字列式から **[Recordset](field-object-dao.md)** のメモ型 (Memo) またはロング バイナリ型 (Long Binary) の **[Field](recordset-object-dao.md)** オブジェクトにデータを追加します。
 
 ## <a name="syntax"></a>構文
 
-*式*。appendchunk (***Val***)
+*式* .AppendChunk(***Val***)
 
-*式***Field**オブジェクトを表す変数を取得します。
+*expression*: **Field** オブジェクトを表す変数。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -38,7 +38,7 @@ ms.locfileid: "32293169"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>

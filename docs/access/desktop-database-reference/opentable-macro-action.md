@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm149011
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 48a3797c2008f261eda8acc3391b39561fec05f3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fa0a62d24c67e64aeb25db4819df6a35e9fbfbff
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288295"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565213"
 ---
 # <a name="opentable-macro-action"></a>OpenTable マクロ アクション
 
@@ -24,7 +24,7 @@ ms.locfileid: "32288295"
 
 You can use the **OpenTable** action to open a table in Datasheet view, Design view, or Print Preview. You can also select a data entry mode for the table.
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "OpenTable/テーブルを開く" アクションの引数は次のとおりです。
 
@@ -45,7 +45,7 @@ You can use the **OpenTable** action to open a table in Datasheet view, Design v
 <td><p>開くテーブル名を指定します。 [マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>テーブル名</strong>] ボックスには、カレント データベース内のテーブルがすべて表示されます。 この引数は省略できません。 ライブラリ データベースで "OpenTable/テーブルを開く" アクションが定義されているマクロを実行すると、この名前のテーブルが、最初にライブラリ データベースで検索され、次にカレント データベースで検索されます。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>View</strong></p></td>
+<td><p><strong>表示</strong></p></td>
 <td><p>テーブルを開くときのビューを指定します。[<strong>ビュー</strong>] ボックスで、[<strong>データシート ビュー</strong>]、[<strong>デザイン ビュー</strong>]、[<strong>印刷プレビュー</strong>]、[<strong>ピボットテーブル ビュー</strong>]、または [<strong>ピボットグラフ ビュー</strong>] をクリックします。既定値は [<strong>データシート ビュー</strong>] です。</p></td>
 </tr>
 <tr class="odd">

@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249289(v=office.15)
 ms:contentKeyID: 48544949
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5a6f49368def305964119edcb06b5bcc80c278d2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d4446f6577edbdc855596482a19cc44772942b1a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314435"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564842"
 ---
 # <a name="streams-and-persistence"></a>セッションと永続化
 
 
 **適用先:** Access 2013、Office 2013
 
-[recordset](recordset-object-ado.md)オブジェクトの[Save](save-method-ado.md)メソッドは、 **recordset**をファイルに保存または*保持*し、 [Open](open-method-ado-recordset.md)メソッドでそのファイルから**recordset**を復元します。
+[Recordset オブジェクト](recordset-object-ado.md) [Save](save-method-ado.md)メソッドは、ファイル内の **Recordset** を格納または保持し [、Open](open-method-ado-recordset.md)メソッドは Recordset をその **ファイルから復元** します。
 
 ADO 2.5 では、 **Save** メソッドと **Open** メソッドを使用して、 **Recordset** を [Stream](stream-object-ado.md) オブジェクトに永続化することもできます。この機能は、リモート データ サービス (RDS) および Active Server Pages (ASP) と併せて使用すると特に役に立ちます。
 

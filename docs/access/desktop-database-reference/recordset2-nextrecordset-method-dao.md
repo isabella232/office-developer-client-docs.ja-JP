@@ -1,5 +1,5 @@
 ---
-title: NextRecordset メソッド (DAO)
+title: Recordset2.NextRecordset メソッド (DAO)
 TOCTitle: NextRecordset Method
 ms:assetid: 33288131-d4f3-0159-1736-f401346087f3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192318(v=office.15)
@@ -10,24 +10,24 @@ f1_keywords:
 - dao360.chm1053575
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 54d0e49dfbe9dc3fb87eb10af9eefe3aa2f83709
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 89425c64c2c6cf5ebb224709fd3291b9768319a4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307239"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576976"
 ---
-# <a name="recordset2nextrecordset-method-dao"></a>NextRecordset メソッド (DAO)
+# <a name="recordset2nextrecordset-method-dao"></a>Recordset2.NextRecordset メソッド (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*。NextRecordset
+*式* .NextRecordset
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="return-value"></a>戻り値
 
@@ -35,7 +35,7 @@ Boolean
 
 ## <a name="remarks"></a>注釈
 
-ODBCDirect ワークスペースでは、次の例に示すように、 **OpenRecordset**の source 引数に複数の選択クエリを含む**Recordset** 、または select クエリ**[QueryDef](querydef-object-dao.md)** オブジェクトの**[SQL](querydef-sql-property-dao.md)** プロパティを開くことができます。
+ODBCDirect ワークスペースで、次の例のように **、OpenRecordset** の source 引数に複数の select クエリを含む Recordset を開くことができるか、または選択クエリ **[QueryDef](querydef-object-dao.md)** オブジェクトの **[SQL](querydef-sql-property-dao.md)** プロパティを開きます。
 
 ```sql
     SELECT LastName, FirstName FROM Authors 

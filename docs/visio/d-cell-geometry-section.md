@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251753
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5f1fdf59-db58-561c-e187-1af72a8b87f2
 description: 各行に対応する情報を表示します。次の表に、各行で [D] セルが示す内容を説明します。
-ms.openlocfilehash: a76093f028986907b58175bc6b8c81a7056cfe07
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: a36f021096b28e92ff9bd2d78ef089d759cef600
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542500"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586608"
 ---
 # <a name="d-cell-geometry-section"></a>[D] セル ([Geometry] セクション)
 

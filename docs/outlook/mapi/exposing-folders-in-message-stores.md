@@ -1,19 +1,19 @@
 ---
-title: メッセージ ストアのフォルダーの公開
+title: ���b�Z�[�W�̃X�g�A��̃t�H���_�[����J���܂��B
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: d9309e47-2a92-4576-9921-c89cc48472c2
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 457620dd0f805e78d12fc8feba09f8fc8aedc554
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.openlocfilehash: fb6134d462dbe7541e7672b5a684bc6af51a0d86
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341350"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596485"
 ---
 # <a name="exposing-folders-in-message-stores"></a>メッセージ ストアのフォルダーの公開
 
@@ -21,11 +21,11 @@ ms.locfileid: "32341350"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-すべてのメッセージ ストア プロバイダーは、クライアント アプリケーションに最上位の [IMAPIFolder](imapifolderimapicontainer.md) インターフェイスを提示する必要があります。最上位フォルダーは、メッセージ ストア全体に対応し、メッセージ ストアの内容としてユーザーに表示されるフォルダーへのアクセスを提供します。さらに、最上位フォルダーは、IPC メッセージの既定の受信フォルダーや、既読レポートが送信されるフォルダーとしてもよく使用されます。メッセージ ストア プロバイダーはまた、クライアント アプリケーションに IPM メッセージの格納に使用する一連のフォルダーである、IPM サブツリーも提示する必要があります。 
+Every message store provider must present a top-level [IMAPIFolder](imapifolderimapicontainer.md) interface to client applications. The top-level folder corresponds to the entire message store; it provides access to the folders that users see as the contents of the message store. In addition, the top-level folder is often used as the default receive folder for IPC messages and as the folder from which read reports are sent. Message store providers must also present an IPM subtree — a set of folders used to contain IPM messages — to client applications. 
   
 クライアント アプリケーションは、_cbEntryId_、_lpEntryId_ パラメーターにそれぞれ 0、Null 値を指定して [IMsgStore::OpenEntry](imsgstore-openentry.md) メソッドを呼び出し、最上位フォルダーを開くことができます。ただし、ほとんどの場合、クライアント アプリケーションは IPM メッセージが格納された一連のフォルダーを開きます。 
   
-メッセージ ストアの IPM フォルダー ツリーにあるフォルダーのリストを取得するには、次のプロシージャを使用します。
+To get a list of folders in the message store's IPM folder tree, use the following procedure:
   
 1. MAPI セッションを使って、[IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) メソッドを呼び出します。 
     
@@ -33,11 +33,11 @@ ms.locfileid: "32341350"
     
 3. エントリ識別子付きの [IMsgStore::OpenEntry](imsgstore-openentry.md) メソッドを呼び出して、**IMAPIFolder** ポインターを取得します。 
     
-4. [IMAPIContainer::GetHierarchyTable](imapicontainer-gethierarchytable.md) メソッドを呼び出して、フォルダーの目次を取得します。 
+4. �t�H���_�[�̓�e�̃e�[�u����擾����[IMAPIContainer::GetHierarchyTable](imapicontainer-gethierarchytable.md)���\�b�h��Ăяo���܂��B 
     
-5. [IMAPITable::QueryRows](imapitable-queryrows.md) メソッドを呼び出して、最上位フォルダー内のフォルダーを一覧表示します。 
+5. Call the [IMAPITable::QueryRows](imapitable-queryrows.md) method to list the folders in the top-level folder. 
     
-MAPI クライアントは、これらのフォルダーを使用して、メッセージ ストア内の他のフォルダー オブジェクトやメッセージ オブジェクトにアクセスします。**IMAPIFolder** とその親インターフェイスである [IMAPIContainer](imapicontainerimapiprop.md) には、メッセージ ストア プロバイダーがフォルダーにメッセージ オブジェクトを追加し、クライアントの要求に応えてメッセージを処理するうえで、実装する必要のあるメソッドが含まれています。
+MAPI clients use these folders to access other folder objects and message objects in the message store. **IMAPIFolder**, and its parent interface [IMAPIContainer](imapicontainerimapiprop.md), contain the methods your message store provider must implement to populate folders with message objects and respond to client requests to operate on messages.
   
 ## <a name="see-also"></a>関連項目
 

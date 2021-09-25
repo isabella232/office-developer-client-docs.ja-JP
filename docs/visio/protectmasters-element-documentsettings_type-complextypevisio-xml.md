@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: edc46630-c320-6b4e-4747-961075dd5fd7
 description: ユーザーがマスター 図形の作成、編集、または削除を防止するかどうかを指定します。 ユーザーは、この設定に関係なく、マスター図形から新しい図形を作成できます。
-ms.openlocfilehash: 34ace8c873b133f44ea7bd7c9c2e4127a103a760
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: e0919e57bbdda5782548636793ba1ebb3744d788
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540694"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623174"
 ---
 # <a name="protectmasters-element-documentsettings_type-complextype-visio-xml"></a>ProtectMasters 要素 (DocumentSettings_Type complexType) (Visio XML)
 

@@ -3,17 +3,17 @@ title: テーブルの終了を決定する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: c879e972-05f4-4716-8fc2-db5b22f34ca8
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 28892e2d351b8dc9aa864c9eff52c94bb0f20e8f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 91a79512991cc5ece2b2792cecb2e6d9f90c7c41
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420088"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576395"
 ---
 # <a name="determining-a-tables-end"></a>テーブルの終了を決定する
 

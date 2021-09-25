@@ -1,20 +1,20 @@
 ---
-title: Refresh メソッド (DAO)
+title: Indexes.Refresh メソッド (DAO)
 TOCTitle: Refresh Method
 ms:assetid: ffe1bc79-5a56-2a70-c5ac-2f80b683adbb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837325(v=office.15)
 ms:contentKeyID: 48548973
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7e1b2a017342532f3eba1e14ce6097fea8ebffa8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 841936104db21138a1d9d07129edb8bc59a9e01d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291484"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577270"
 ---
-# <a name="indexesrefresh-method-dao"></a>Refresh メソッド (DAO)
+# <a name="indexesrefresh-method-dao"></a>Indexes.Refresh メソッド (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -23,9 +23,9 @@ ms.locfileid: "32291484"
 
 ## <a name="syntax"></a>構文
 
-*式*。更新
+*式* .更新
 
-*式***Indexes**オブジェクトを表す変数を取得します。
+*式* Indexes オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 

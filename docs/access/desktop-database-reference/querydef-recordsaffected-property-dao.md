@@ -1,5 +1,5 @@
 ---
-title: RecordsAffected プロパティ (DAO)
+title: QueryDef.RecordsAffected プロパティ (DAO)
 TOCTitle: RecordsAffected Property
 ms:assetid: 29a864b5-305c-d33f-b2ca-fc9a08baaa5c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192040(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053082
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: ad3759be1bcb60052111a4e7d27419aff08d510a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7b3d97c433750a42f34a65ee49d020aebe11ad50
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300967"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577004"
 ---
-# <a name="querydefrecordsaffected-property-dao"></a>RecordsAffected プロパティ (DAO)
+# <a name="querydefrecordsaffected-property-dao"></a>QueryDef.RecordsAffected プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -27,9 +27,9 @@ ms.locfileid: "32300967"
 
 ## <a name="syntax"></a>構文
 
-*式*。RecordsAffected
+*式* .RecordsAffected
 
-*式***QueryDef**オブジェクトを表す変数を取得します。
+*式* **QueryDef** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 

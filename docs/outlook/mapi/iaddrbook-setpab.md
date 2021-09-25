@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IAddrBook.SetPAB
 api_type:
 - COM
 ms.assetid: 75daf9d4-6975-435f-91e5-1b41e0047ab7
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 29677ce74f405e8ca03f1639f3d98288532e9653
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 60af07525de4ce66a470ad9db80fc3d5392f086d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424617"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576136"
 ---
 # <a name="iaddrbooksetpab"></a>IAddrBook::SetPAB
 

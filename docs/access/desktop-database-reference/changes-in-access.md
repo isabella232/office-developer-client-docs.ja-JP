@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ618413(v=office.15)
 ms:contentKeyID: 49106417
 ms.date: 10/16/2018
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: de2ff21598639b445f5ff84240b115704b484209
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 142dc9e933ff11c8ee942ccd2a66145c52eced5b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296501"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562889"
 ---
-# <a name="changes-in-access"></a>Access の変更点
+# <a name="changes-in-access"></a>Access における変更点
 
-**適用対象:** Access 2013 | Office 2013
+**適用先**: Access 2013 | Office 2013
 
 Access は、Access Data Projects (ADP) をサポートしていません。 Access では、Web ベースの Access アプリを作成できるようにするための新しいアプリケーションの種類が導入されています。 この種類のアプリケーションを使用すると、オンプレミスまたはクラウドで SQL Server の機能を使用する Web ベースのアプリケーションを作成できます。
 
-SharePoint Server 上の Access アプリでは、Access クライアントでテーブル、クエリ、またはデータ マクロを作成するときは、SQL Server データベースにテーブル、ビュー、またはトリガーが作成されます。Access クライアントを使用すると、使用しているデータベースを、SQL Server に接続する他のアプリケーションに対してオープンにすることができます。 これにより、データを共有したり、他のシステムから Access アプリにデータをロードしたりすることが可能になります。
+SharePoint Server 上の Access アプリにおいて、Access クライアントでテーブル、クエリ、またはデータ マクロを作成するときは、SQL Server データベースにテーブル、ビュー、またはトリガーが作成されることになります。Access クライアントを使用すると、使用しているデータベースを、SQL Server に接続する他のアプリケーションに対してオープンにすることができます。これにより、データを共有したり、他のシステムから Access アプリにデータをロードしたりすることが可能になります。
 
 Office 365 と Access を使用すると、ユーザーに配信するアプリケーションを、展開に関する課題、ソフトウェア インストールの問題、オペレーティング システムの互換性などについて心配することなくビルドできます。1 つの場所でアプリをビルドし、それを SQL Azure や SQL Server の機能を活用して Web 上で共有します。
 
@@ -39,7 +39,7 @@ ADP は旧バージョンの Access では引き続き機能します。ADP ア�
 
 - **リンクされたデスクトップ データベースへの変換** - Access では、.accdb ファイル形式のデスクトップ データベースの作成が引き続きサポートされています。 ご使用のアプリケーションを (すべての既存のフォームとレポートを含めて) .accdb 形式に変換し、データは SQL Server に残しておくことができます。 リンク テーブルを使用して SQL Server データベースにリンクできるため、アプリケーションは引き続き同じデータに対して操作を行えます。
 
-- **ハイブリッド アプリケーションの作成** - アプリケーションが大規模で、一度にすべてを変換したくない場合は、Access アプリにデータをインポートし、.accdb から SQL Server データベースにリンクできます。 これは、段階的な移行が可能で、Access アプリの背後にある SQL Server データベースにリンクされたテーブルを使用してクライアント アプリケーションを .accdb として保持しながら、Access アプリに対して徐々にフォームや機能を追加していくことができます。
+- **ハイブリッド アプリケーションの作成** - アプリケーションが大規模で、一度にすべてを変換したくない場合には、Access アプリにデータをインポートし, .accdb から SQL Server データベースにリンクできます。このようにすると、段階的な移行が可能で、Access アプリの背後にある SQL Server データベースにリンクされたテーブルを使用してクライアント アプリケーションを .accdb として保持しながら、Access アプリに対して徐々にフォームや機能を追加していくことができます。
 
 - **.NET Framework へのアップグレード** - アプリケーションが複雑な場合は, .NET Framework などの専門的な開発プラットフォームへの移行を考慮することができます。 SQL Server は、既存のデータベース インフラストラクチャを使用して、大規模なコード書き換えをせずにアプリケーションの機能を簡単に拡張できるように設計されています。
 

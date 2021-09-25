@@ -1,20 +1,20 @@
 ---
-title: Relation メンバー (DAO)
+title: リレーション メンバー (DAO)
 TOCTitle: Relation Members
 ms:assetid: 9ee36e7d-3825-1de8-65fb-64bbcada847c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198338(v=office.15)
 ms:contentKeyID: 48546670
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 84e18afe4a11e53d68397efad71ac6136c779143
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6b44236b61881d8af69a1738b0282d5185b0763a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307038"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564919"
 ---
-# <a name="relation-members-dao"></a>Relation メンバー (DAO)
+# <a name="relation-members-dao"></a>リレーション メンバー (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -59,7 +59,7 @@ Relation オブジェクトは、テーブルまたはクエリのフィール�
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="relation-attributes-property-dao.md">Attributes</a></strong></p></td>
-<td><p><strong>Relation</strong>オブジェクトの1つ以上の特性を示す値を設定または取得します。 値の取得と設定が可能な長整数型 (<strong>Long</strong>) の値です。</p></td>
+<td><p><strong>Relation</strong> オブジェクトの 1 つまたは複数の属性を示す値を設定または取得します。値の取得および設定が可能です。長整数型 ( <strong>Long</strong>) の値を使用します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="relation-fields-property-dao.md">Fields</a></strong></p></td>
@@ -67,7 +67,7 @@ Relation オブジェクトは、テーブルまたはクエリのフィール�
 </tr>
 <tr class="odd">
 <td><p><strong><a href="relation-foreigntable-property-dao.md">ForeignTable</a></strong></p></td>
-<td><p>リレーションシップに含まれる外部キー側のテーブルの名前を設定または取得します (Microsoft access ワークスペースのみ)。 .</p></td>
+<td><p>リレーションシップの外部テーブルの名前を設定または取得します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="relation-name-property-dao.md">Name</a></strong></p></td>

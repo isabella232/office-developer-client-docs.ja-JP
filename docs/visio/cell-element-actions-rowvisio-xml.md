@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5ae2b4db-03f4-1b8a-1274-7eb1521f2f59
 description: ショートカットまたはアクション タグ メニューのカスタム コマンドに関連付けられているアクションの1つのプロパティを指定します。
-ms.openlocfilehash: 8cce85bdfb7d0ce54d968e00cda56e4e6c2455bc
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: aa8630b6cdff50373f99e8a675953943c7a2dcc6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538782"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623482"
 ---
 # <a name="cell-element-actions-row-visio-xml"></a>Cell 要素 (Actions Row) (Visio XML)
 
@@ -66,7 +66,7 @@ ms.locfileid: "34538782"
   
 |**値**|**説明**|**詳細情報**|
 |:-----|:-----|:-----|
-|Action  <br/> |ショートカット メニューまたはアクション タグ メニューのコマンドを選択したときに実行される数式が格納されています。  <br/> |[[Action] セル ([Actions] セクション)](action-cell-actions-section.md) <br/> |
+|アクション  <br/> |ショートカット メニューまたはアクション タグ メニューのコマンドを選択したときに実行される数式が格納されています。  <br/> |[[Action] セル ([Actions] セクション)](action-cell-actions-section.md) <br/> |
 |BeginGroup  <br/> |このアクションのメニューに区切り記号を挿入するかどうかを示します。  <br/> |[[BeginGroup] セル ([Actions] セクション)](begingroup-cell-actions-section.md) <br/> |
 |ButtonFace  <br/> |ショートカット メニューまたはアクション タグ メニューで、項目の横に表示されるアイコンを指定します。  <br/> |[[ButtonFace] セル ([Actions] セクション)](buttonface-cell-actions-section.md) <br/> |
 |Checked  <br/> |ショートカット メニューまたはアクション タグ メニューで項目がチェックされているかどうかを示します。  <br/> |[[Checked] セル ([Actions] セクション)](checked-cell-actions-section.md) <br/> |

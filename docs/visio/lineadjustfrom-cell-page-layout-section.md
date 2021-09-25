@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251887
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6949c717-dc69-1d17-5215-eb6efce56fcb
 description: 複数の動的コネクタが迂回する場合に、線を分離するコネクタを指定します。
-ms.openlocfilehash: 3eb9f5513ee3ce2f5dce96cb47c356bca29a289c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9cd973500652128d6189d1b48fad2fda198c22f0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415188"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623426"
 ---
 # <a name="lineadjustfrom-cell-page-layout-section"></a>[LineAdjustFrom] セル ([Page Layout] セクション)
 

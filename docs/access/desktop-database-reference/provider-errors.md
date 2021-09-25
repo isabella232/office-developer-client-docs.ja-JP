@@ -1,23 +1,23 @@
 ---
-title: プロバイダーエラー (Access デスクトップデータベースリファレンス)
+title: プロバイダー エラー (Access デスクトップ データベースリファレンス)
 TOCTitle: Provider errors
 ms:assetid: 9c39d450-6e67-b2fd-aeb5-849e6b65fd54
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249710(v=office.15)
 ms:contentKeyID: 48546592
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d175cdaa007a354d12304dceff0352a923de2291
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4d2610be0ab206e5bb365b1147e06444ce7bbec7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301128"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606409"
 ---
 # <a name="provider-errors"></a>プロバイダー エラー
 
 
-**適用先:** Access 2013、Office 2013 
+**適用先**: Access 2013、Office 2013 
 
 プロバイダー エラーが発生すると、実行時エラー -2147467259 が返されます。このエラーを受け取った場合は、アクティブな **Connection** オブジェクトの、処理の内容を表す 1 つ以上のエラーが含まれる **Errors** コレクションを調べます。
 
@@ -81,7 +81,7 @@ End Function
 <td><p>発生したエラーを説明するテキストです。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>helpcontext、HelpFile</strong></p></td>
+<td><p><strong>HelpContext, HelpFile</strong></p></td>
 <td><p>発生したエラーの説明を含むヘルプ トピックとヘルプ ファイルを示します。</p></td>
 </tr>
 <tr class="odd">

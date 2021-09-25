@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: da487569-f2f0-404c-b944-38ed1c1b82bb
 description: 'ソーシャル コネクタ (OSC) プロバイダー Outlookサンプルは、OSC プロバイダーを実装するためのフレームワークを提供します。 '
-ms.openlocfilehash: 10fb21ab640e298bc655b8cad554fae789e2ad47
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f13c158179778404ee142ada6ef004e6719cfe1f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425912"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623594"
 ---
 # <a name="applying-a-sample-provider-template"></a>サンプル プロバイダー テンプレートの適用
 

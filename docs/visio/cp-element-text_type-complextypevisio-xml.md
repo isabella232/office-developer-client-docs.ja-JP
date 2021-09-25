@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4edd0a3f-e433-bf54-34cd-3b05fd10a5a5
 description: 対応する Char 要素に従って書式設定された文字プロパティ実行の開始位置を示します。 実行は、テキストの末尾、または次のタグまで定義されます。
-ms.openlocfilehash: 70f7d3f8333ff0f2c109862455fbd8cc3b340bf4
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
-ms.translationtype: HT
+ms.openlocfilehash: 1dde00dc4a3f85d0bfc7389f0797dfce33acb444
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540561"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586636"
 ---
 # <a name="cp-element-text_type-complextype-visio-xml"></a>cp 要素 (Text_Type complexType) (Visio XML)
 

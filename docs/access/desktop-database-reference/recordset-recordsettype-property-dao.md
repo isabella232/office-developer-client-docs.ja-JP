@@ -1,5 +1,5 @@
 ---
-title: RecordsetType プロパティ (DAO)
+title: Recordset.RecordsetType プロパティ (DAO)
 TOCTitle: RecordsetType Property
 ms:assetid: a66d4043-08cc-ead1-f9ff-efc7d7ea21bf
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821178(v=office.15)
@@ -10,23 +10,23 @@ f1_keywords:
 - vbaac10.chm13361
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 64f7dda8bec7806ef510d265deab350dc3cdad6b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fe9106d661567da70299de40f3c93aea45c539c6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307631"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606073"
 ---
-# <a name="recordsetrecordsettype-property-dao"></a>RecordsetType プロパティ (DAO)
+# <a name="recordsetrecordsettype-property-dao"></a>Recordset.RecordsetType プロパティ (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 "**RecordsetType**/レコードセット" プロパティを使用すると、フォームで編集可能なレコードセットの種類を指定できます。値の取得および設定が可能です。バイト型 (**Byte**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。RecordsetType
+*式* .RecordsetType
 
 *式*: **Form** オブジェクトを表す変数。
 
@@ -42,24 +42,24 @@ Microsoft Office Access データベースでは、"**RecordsetType**/レコー�
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Setting</p></th>
+<th><p>設定</p></th>
 <th><p>レコードセットの種類</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>.0</p></td>
-<td><p>ダイナセットタイプ</p></td>
-<td><p>限り1対1のリレーションシップを持つ単一のテーブルに基づいて、連結コントロールを編集できます。 一対多リレーションシップが設定されたテーブルに基づいてフィールドに連結されたコントロールの場合、テーブル間で連鎖更新&quot;が&quot;有効になっていない限り、リレーションシップの一方の結合フィールドのデータを編集することはできません。</p></td>
+<td><p>0</p></td>
+<td><p>ダイナセット</p></td>
+<td><p>(既定)1 対 1 のリレーションシップを持つ 1 つのテーブルまたはテーブルに基づいてバインド されたコントロールを編集できます。 1 対多のリレーションシップを持つテーブルに基づくフィールドにバインドされたコントロールの場合、テーブル間でカスケード更新が有効になっていない限り、リレーションシップの一方の結合フィールドからデータを編集 &quot; &quot; することはできません。</p></td>
 </tr>
 <tr class="even">
-<td><p>1-d</p></td>
+<td><p>1</p></td>
 <td><p>Dynaset (Inconsistent Updates)/ダイナセット (矛盾を許す)</p></td>
 <td><p>フィールドに連結されたすべてのテーブルとコントロールを編集できます。</p></td>
 </tr>
 <tr class="odd">
-<td><p>pbm-2</p></td>
+<td><p>2</p></td>
 <td><p>スナップショット</p></td>
 <td><p>フィールドに連結されたテーブルまたはコントロールは編集できません。</p></td>
 </tr>
@@ -79,19 +79,19 @@ Microsoft Office Access プロジェクト (.adp) では、" **RecordsetType**/�
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Setting</p></th>
+<th><p>設定</p></th>
 <th><p>レコードセットの種類</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>1/3</p></td>
+<td><p>3</p></td>
 <td><p>スナップショット</p></td>
 <td><p>フィールドに連結されたテーブルまたはコントロールは編集できません。</p></td>
 </tr>
 <tr class="even">
-<td><p>2/4</p></td>
+<td><p>4 </p></td>
 <td><p>Updatable Snapshot/更新可能なスナップショット</p></td>
 <td><p>フィールドに連結されたすべてのテーブルとコントロールを編集できます。(既定値)</p></td>
 </tr>

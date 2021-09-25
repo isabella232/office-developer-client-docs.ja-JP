@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm60037
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: feb29b91-0f6e-6353-3dd0-7a280843a517
 description: アクション タグの説明文の文字列を格納します。この説明は、ユーザーがタグの上にポインターを置いたときに、ツール ヒントとして表示されます。
-ms.openlocfilehash: 00c7a4c1547927b8d1a979b8ae074f96f26dc17c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f1e5da6f083d6063403a24df2c980807b441b7b4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415762"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586559"
 ---
 # <a name="description-cell-action-tags-section"></a>[Description] セル ([Action Tags] セクション)
 

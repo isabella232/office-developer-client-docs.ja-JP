@@ -1,22 +1,22 @@
 ---
-title: スペースオブジェクト (RDS)
+title: DataSpace オブジェクト (RDS)
 TOCTitle: DataSpace object (RDS)
 ms:assetid: 7db181d5-422b-49fe-b6af-a20f5da520ff
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249527(v=office.15)
 ms:contentKeyID: 48545862
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f77617d4ddfb0160b8a418f55582a380067fde70
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b5a5aa610483a59976461b6efada64fa4208f31a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294464"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615621"
 ---
-# <a name="dataspace-object-rds"></a>スペースオブジェクト (RDS)
+# <a name="dataspace-object-rds"></a>DataSpace オブジェクト (RDS)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 中間層にあるカスタム ビジネス オブジェクトにクライアント側プロキシを作成します。
 

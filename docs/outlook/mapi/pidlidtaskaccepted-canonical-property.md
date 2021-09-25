@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidTaskAccepted
 api_type:
 - COM
 ms.assetid: 8e31f893-b639-43da-a535-662153c82d82
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0172bf0d69c3f345b592364be754f58c9e7a4420
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 45f745eb32e6b52b271d05cf3a89f2e645b9feb6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331284"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630202"
 ---
 # <a name="pidlidtaskaccepted-canonical-property"></a>PidLidTaskAccepted 標準プロパティ
 
@@ -45,7 +45,7 @@ ms.locfileid: "32331284"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連するプロトコル仕様への参照Exchange Server提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
 [[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   

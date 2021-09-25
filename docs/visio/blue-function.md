@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251402
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: da9fb933-4e2c-3e2a-1879-6e70db0cd830
 description: 色の青いコンポーネントを返します。 戻り値は、0 ~ 255 の範囲の整数です。含まれています。 入力した引数が無効な場合は、0 を返します。
-ms.openlocfilehash: adefbe0f8c2df0ead0f3e50cd5d4945501972865
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: eac92b4b83f63d99f65ba7f70cc2dfdcf2634a76
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439038"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616006"
 ---
 # <a name="blue-function"></a>BLUE 関数
 

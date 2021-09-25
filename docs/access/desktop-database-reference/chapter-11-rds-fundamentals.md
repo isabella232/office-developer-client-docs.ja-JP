@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249044(v=office.15)
 ms:contentKeyID: 48543865
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c38c0fc323c0cbed4ea344fe86cab88a17d669da
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2f75505c37eb094ffbd22764da364fb3e687f545
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296508"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586160"
 ---
 # <a name="chapter-11-rds-fundamentals"></a>第 11 章: RDS の基本事項
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 このセクションに含まれている一連のトピックを、示されている順に読み進んでください。次のトピックがあります。
 
@@ -27,5 +27,5 @@ ms.locfileid: "32296508"
 - [RDS オブジェクト モデルの概要](rds-object-model-summary.md)
 - [RDS シナリオ](rds-scenario.md)
 
-このセクションには、データソースにアクセスして更新する方法と、rds[を使用](chapter-13-rds-usage-and-security.md)することに関する一連のトピック (より高度な rds トピックについて説明しています) について説明する[rds のチュートリアル](chapter-12-rds-tutorial.md)も含まれています。
+このセクションには、データ ソースにアクセスして更新する方法を示す RDS チュートリアルと[、RDS](chapter-13-rds-usage-and-security.md)の使用に関する一連のトピックも含まれています。このトピックでは、より高度な[RDS](chapter-12-rds-tutorial.md)トピックについて説明します。
 

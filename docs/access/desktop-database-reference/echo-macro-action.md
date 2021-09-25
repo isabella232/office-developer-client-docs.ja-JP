@@ -1,29 +1,29 @@
 ---
-title: Echo マクロアクション (Access デスクトップデータベースリファレンス)
+title: Echo マクロ アクション (Access desktop database reference)
 TOCTitle: Echo macro action
 ms:assetid: 38dfb2cf-8db5-44b3-91fa-e490932b940b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192516(v=office.15)
 ms:contentKeyID: 48544227
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7d536ed47c780b7f9f1675a9879e86aeff80b67f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 31e0ce1af8a4943d97197470b13bec3236a80292
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293624"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615579"
 ---
 # <a name="echo-macro-action"></a>Echo マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **Echo** アクションを使用すると、エコーが有効かどうかを指定できます。たとえば、このアクションを使用して、マクロの実行中にその結果を表示または非表示にすることができます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。
+> このアクションは、データベースが信頼されていない場合には許可されません。
 
 **Echo** アクションの引数は次のとおりです。
 
@@ -45,13 +45,13 @@ ms.locfileid: "32293624"
 </tr>
 <tr class="even">
 <td><p><strong>Status Bar Text/ステータス バー テキスト</strong></p></td>
-<td><p>エコーがオフのときにステータス バーに表示されるテキストです。 たとえば、エコーがオフになっている場合は、マクロが&quot;実行中であることをステータスバーに表示できます。&quot;</p></td>
+<td><p>エコーがオフのときにステータス バーに表示されるテキストです。 たとえば、エコーをオフにすると、ステータス バーにマクロが実行 &quot; されている状態を表示できます。&quot;</p></td>
 </tr>
 </tbody>
 </table>
 
 
-マクロを実行すると、通常、マクロの機能に不要な情報が画面更新に表示されます。 **Echo On/エコーの設定** 引数を [ **いいえ** ] に設定すると、画面を更新せずにマクロが実行されます。 マクロが完了すると、エコーが自動的にオンになり、ウィンドウが再描画されます。 **Echo On/エコーの設定** 引数を [ **いいえ** ] に設定しても、マクロの機能またはその結果には影響しません。
+マクロを実行すると、多くの場合、画面の更新には、マクロの機能に不可欠ではない情報が表示されます。 **Echo On/エコーの設定** 引数を [ **いいえ** ] に設定すると、画面を更新せずにマクロが実行されます。 マクロが完了すると、エコーが自動的にオンになり、ウィンドウが再描画されます。 **Echo On/エコーの設定** 引数を [ **いいえ** ] に設定しても、マクロの機能またはその結果には影響しません。
 
 **Echo** アクションでは、エラー メッセージなどの作業ウィンドウ固定 (モーダル) ダイアログ ボックス、またはプロパティ シートなどのポップアップ フォームの表示は抑制されません。エコーがオフの場合でも、ダイアログ ボックスおよびポップアップフォームを使用して、情報を収集または表示することができます。すべてのメッセージまたはダイアログ ボックス (ユーザーが情報を入力する必要があるエラー メッセージ ボックスおよびダイアログ ボックスを除く) が表示されないようにするには、 **SetWarnings** アクションを使用します。
 
@@ -77,24 +77,24 @@ Visual Basic for Applications (VBA) モジュールで **Echo** アクション�
 <tr class="header">
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>Comment</p></th>
+<th><p>コメント</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><strong>Echo</strong></p></td>
-<td><p><strong>Echo On/エコーの設定</strong>: <strong>No/いいえ</strong></p></td>
-<td><p>画面の更新は停止しますが、マクロは実行されています。</p></td>
+<td><p><strong>Echo On/エコーの設定</strong>: <strong>いいえ</strong></p></td>
+<td><p>マクロの実行中に画面の更新を停止します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CloseWindow</strong></p></td>
-<td><p><strong>オブジェクトの種類</strong>: <strong>formobject 名前</strong>: 製品リストの<strong>保存</strong>:<strong>いいえ</strong></p></td>
-<td><p>[製品リスト] フォームを閉じます。</p></td>
+<td><p><strong>オブジェクトの種類</strong>: <strong>フォームオブジェクト名</strong>: 製品リスト<strong>保存</strong>: <strong>いいえ</strong></p></td>
+<td><p>製品/サービス項目の一覧フォームを閉じます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>OpenForm</strong></p></td>
-<td><p><strong>フォーム名</strong>: Products<strong>ビュー</strong>: <strong>formdata mode</strong>: <strong>addwindow mode</strong>: <strong>Normal</strong></p></td>
-<td><p>[製品] フォームを開きます。</p></td>
+<td><p><strong>フォーム名</strong>: 製品<strong>ビュー</strong>: <strong>フォームデータ モード</strong>: <strong>追加ウィンドウ モード</strong>: <strong>標準</strong></p></td>
+<td><p>[商品] フォームを開きます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SetValue</strong></p></td>
@@ -103,7 +103,7 @@ Visual Basic for Applications (VBA) モジュールで **Echo** アクション�
 </tr>
 <tr class="odd">
 <td><p><strong>GoToControl</strong></p></td>
-<td><p><strong>Control Name/コントロール名</strong>: CategoryID</p></td>
+<td><p>"<strong>Control Name/コントロール名</strong>":商品コード</p></td>
 <td><p>[カテゴリ ID] コントロールに移動します。</p></td>
 </tr>
 </tbody>
@@ -126,20 +126,20 @@ Visual Basic for Applications (VBA) モジュールで **Echo** アクション�
 <th><p>条件</p></th>
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>Comment</p></th>
+<th><p>コメント</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>Echo</strong></p></td>
-<td><p><strong>Echo On/エコーの設定</strong>: <strong>No/いいえ</strong></p></td>
-<td><p>画面の更新は停止しますが、マクロは実行されています。</p></td>
+<td><p><strong>Echo On/エコーの設定</strong>: <strong>いいえ</strong></p></td>
+<td><p>マクロの実行中に画面の更新を停止します。</p></td>
 </tr>
 <tr class="even">
 <td><p>IsNull([仕入先コード])</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Message/メッセージ</strong>: 表示する商品を扱う仕入先のレコードに移動し、[商品の参照] ボタンを再度クリックします。 <strong>Beep</strong>: <strong>yestype</strong>: <strong>none title</strong>: 仕入先の選択</p></td>
+<td><p><strong>Message/メッセージ</strong>: 表示する商品を扱う仕入先のレコードに移動し、[商品の参照] ボタンを再度クリックします。 <strong>Beep</strong>: <strong>YesType</strong>: <strong>NoneTitle</strong>: サプライヤーの選択</p></td>
 <td><p>[仕入先] フォームに現在の仕入先が存在しない場合、メッセージを表示します。</p></td>
 </tr>
 <tr class="odd">
@@ -157,13 +157,13 @@ Visual Basic for Applications (VBA) モジュールで **Echo** アクション�
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>OpenForm</strong></p></td>
-<td><p><strong>フォーム名</strong>: 製品リスト<strong>ビュー</strong>: <strong>DatasheetFilter Name</strong>: <strong>Where Condition</strong>: [Supplier ID] = [Forms]![仕入先]!SupplierID<strong>データモード</strong>:<strong>読み取りのみウィンドウモード</strong>:<strong>標準</strong></p></td>
+<td><p><strong>フォーム名</strong>: 製品一 <strong>覧ビュー</strong>: <strong>データシートフィルター名</strong>: <strong>Where Condition</strong>: [Supplier ID] = [Forms]![サプライヤー]![SupplierID] <strong>データ モード</strong>: <strong>読み取り専用Window モード</strong>: <strong>標準</strong></p></td>
 <td><p>[製品リスト] フォームを開き、現在の仕入先の製品を表示します。</p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p><strong>MoveAndSizeWindow</strong></p></td>
-<td><p><strong>Right</strong>: 0.7799&quot; <strong>Down</strong>: 1.8&quot;</p></td>
+<td><p><strong>右</strong>: 0.7799 &quot; <strong>Down</strong>: 1.8&quot;</p></td>
 <td><p>[製品リスト] を [仕入先] フォームの右下に配置します。</p></td>
 </tr>
 </tbody>
