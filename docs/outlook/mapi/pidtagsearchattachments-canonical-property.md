@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 534c3881-e12f-f228-7760-788fe2b72ae8
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 95729474db29fe21f808ec5c8f571bec4600db70
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 252c556d08a9073940f7c734f157d735f0c0962a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336324"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555063"
 ---
 # <a name="pidtagsearchattachments-canonical-property"></a>PidTagSearchAttachments 標準プロパティ
 

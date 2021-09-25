@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e6900ad7-c147-4816-93a9-5773170b115a
 description: WindowとWindowsのインターフェイスは、 OneNote 2013 API は OneNote ウィンドウを操作するユーザーを有効にするオブジェクトです。これらのオブジェクトでは、OneNote ウィンドウの集合を列挙し、特定のウィンドウのプロパティを変更することができます。
-ms.openlocfilehash: efc34312def588ecff54c63b3db84f8bf909352b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a8dd260c1e56da98f2902922cf25dd5735358100
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317037"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572257"
 ---
 # <a name="window-interfaces-onenote"></a>ウィンドウ インターフェイス (OneNote 2013)
 
@@ -34,7 +34,7 @@ OneNote ウィンドウ用に使用できる 4 つの表示モードを次に示
   
 **OneNote のビュー**
 
-![OneNote ビューとウィンドウ](media/ON15Con_views.jpg "OneNoteビュー")
+![OneNote ウィンドウ ビュー](media/ON15Con_views.jpg "OneNote ウィンドウ ビュー")
   
 ## <a name="interfaces"></a>インターフェイス
 

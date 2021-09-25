@@ -3,15 +3,15 @@ title: Avg 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d432e823-a255-4860-9c8b-201b2e0476fd
 description: 指定したフィールドにある値の集合の平均値を計算します。
-ms.openlocfilehash: e67cde12e66f943d3b25fe9cb2fee4fe4aea760f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7b05417328aac255197bba55726a835e58e36fff
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426724"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562896"
 ---
 # <a name="avg-function-access-custom-web-app"></a>Avg 関数 (Access カスタム Web アプリ)
 

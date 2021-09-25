@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IABLogon.CompareEntryIDs
 api_type:
 - COM
 ms.assetid: cb4a38ff-2fdd-40ac-a613-12c3f11a1df9
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 48ddb5a7c4e013c03138b08d9dadcdc0991faeec
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ca5474e56a1a72124e6d49bc67329994e6eec04f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438373"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571921"
 ---
 # <a name="iablogoncompareentryids"></a>IABLogon::CompareEntryIDs
 

@@ -3,17 +3,17 @@ title: アドレス帳のコンテナーを開く
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 89383b27-618c-4ccb-9e16-f66235c98bfe
 description: '最終更新日: 2011 年 11 月 08 日'
-ms.openlocfilehash: 97fa9f9750174c112c431c62f6171f674856fa86
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: df60faa4d28ffbca8fa87c8061c211b219168eda
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436742"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600723"
 ---
 # <a name="opening-an-address-book-container"></a>アドレス帳のコンテナーを開く
 

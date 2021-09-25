@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm60062
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f864c759-ed94-8ab7-d664-cc04b3ed743e
 description: 印刷ページの右余白を指定します。
-ms.openlocfilehash: d30669626fe07379521d61554010ae1bd7b0e83a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 822cdf7fa58a51362b8a67fc4f22c778f522cc8b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33440011"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562924"
 ---
 # <a name="pagerightmargin-cell-print-properties-section"></a>[PageRightMargin] セル ([Print Properties] セクション)
 

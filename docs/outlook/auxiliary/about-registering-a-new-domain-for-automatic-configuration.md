@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a7ab8a50-dd30-4ba5-b6d8-e6d1f482e6f1
 description: Outlookは、自動構成用の新しいメッセージ サービス ドメインを指定し、メッセージ サービス プロバイダーがアカウントを構成する方法を提供します。
-ms.openlocfilehash: bf06ff8d145ed6173e3545f784f8b5b7b5f433be
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c038bf3461a3452b692687b1a2f6f541c2e45092
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316969"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572243"
 ---
 # <a name="about-registering-a-new-domain-for-automatic-configuration"></a>自動構成のための新しいドメインの登録について
 
@@ -24,7 +24,7 @@ Outlookは、自動構成用の新しいメッセージ サービス ドメイ�
   
 キーでは、 `<domain name>` 自動構成のドメインです。 このドメイン名は、先頭でのみ \* ワイルドカードをサポートします。 次の表に、このキーでサポートされる値を示します。 
   
-| 値 | 型 | 説明 |
+| 値 | 種類 | 説明 |
 |:-----|:-----|:-----|
 |フレンドリ名  <br/> |REG_SZ  <br/> |自動構成時にユーザーに表示されるドメイン名。  <br/> |
 |サービス名  <br/> |REG_SZ  <br/> |このドメインをサポートする mapisvc.inf に登録されているメッセージ サービス。  <br/> |

@@ -1,17 +1,17 @@
 ---
 title: 管理性アプリケーションとセキュリティ インストーラー Microsoft 365 Apps クイック実行統合
 manager: lindalu
-ms.date: 09/28/2020
+ms.date: 09/14/2021
 ms.audience: ITPro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c0fa8fed-1585-4566-a9be-ef6d6d1b4ce8
 description: ソフトウェア管理ソリューションとMicrosoft 365 Apps クイック実行インストーラーを統合する方法について説明します。
-ms.openlocfilehash: eccd634f7906acf25b521ed2deb456ca914f37da
-ms.sourcegitcommit: c8c51bd3f51c0a59fe44c014c8e56f1ba7c7aa03
+ms.openlocfilehash: 65f601dc81562a6aad8f19546f22f9948117d1af
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48297315"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554979"
 ---
 # <a name="integrating-manageability-applications-with-microsoft-365-apps-click-to-run-installer"></a>管理性アプリケーションとセキュリティ インストーラー Microsoft 365 Apps クイック実行統合
 
@@ -27,7 +27,7 @@ ms.locfileid: "48297315"
 このインターフェイスを使用するには、管理アプリケーションで COM インターフェイスを起動して、クイック実行インストール サービスと直接通信する公開 API を呼び出します。 
   
 > [!NOTE]
-> [!メモ] Office クイック実行インストーラーは、インストーラーの動作を制御できるパラメーターを指定して、コマンド ラインから実行できます。詳細は、「[クイック実行用 Office 展開ツール](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool)」を参照してください。 
+> [!メモ] Office クイック実行インストーラーは、インストーラーの動作を制御できるパラメーターを指定して、コマンド ラインから実行できます。詳細は、「[クイック実行用 Office 展開ツール](/DeployOffice/overview-office-deployment-tool.md)」を参照してください。 
   
 **次に、COM インターフェイスの概念図を示します**
 
@@ -117,7 +117,7 @@ BSTR contentid;
     
 - パラメーターでは大文字小文字は区別されません。
     
-- [パラメーターのリスト](https://blogs.technet.microsoft.com/odsupport/2014/03/03/the-new-update-now-feature-for-office-2013-click-to-run-for-office365-and-its-associated-command-line-and-switches/)と説明を利用できます。 
+- 詳細については、「インストールの[概要Office クイック実行関連するマルウェア対策アプリケーションについて」を参照してください](/office/troubleshoot/office-suite-issues/office-click-to-run-installation.md)。
     
 - IUpdateNotify2 インターフェイスの概要が含まれるようになりました。
     
@@ -137,7 +137,7 @@ HRESULT Apply([in] LPWSTR pcwszParameters) // Apply update content.
     
 #### <a name="return-results"></a>返される結果
 
-|||
+|**結果**|**説明**|
 |:-----|:-----|
 |**S_OK** <br/> |アクションが、実行のためにクイック実行サービスに正常に送られました。  <br/> |
 |**E_ACCESSDENIED** <br/> |呼び出し元が、昇格された特権で実行していません。  <br/> |
@@ -174,7 +174,7 @@ HRESULT Cancel() // Cancel the download action.
 
 #### <a name="return-results"></a>返される結果
 
-|||
+|**結果**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |アクションが、実行のためにクイック実行サービスに正常に送られました。  <br/> |
 |E_ILLEGAL_METHOD_CALL  <br/> |この時点では、アクションは許可されていません。詳細については、「[注釈 ](#bk_CancelRemarks)」セクションを参照してください。  <br/> |
@@ -205,7 +205,7 @@ HRESULT Download([in] LPWSTR pcwszParameters) // Download update content.
     
 #### <a name="return-results"></a>返される結果
 
-|||
+|**結果**|**説明**|
 |:-----|:-----|
 |**S_OK** <br/> |アクションが、実行のためにクイック実行サービスに正常に送られました。  <br/> |
 |**E_ACCESSDENIED** <br/> |呼び出し元が、昇格された特権で実行していません。  <br/> |
@@ -266,13 +266,13 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
 
 #### <a name="parameters"></a>パラメーター
 
-|||
+|**パラメーター**|**説明**|
 |:-----|:-----|
 | _pUpdateStatusReport_ <br/> |UPDATE_STATUS_REPORT 構造体を指すポインターです。  <br/> |
    
 #### <a name="return-results"></a>返される結果
 
-|||
+|**結果**|**説明**|
 |:-----|:-----|
 |**S_OK** <br/> |**Status** メソッドは、常にこの結果を返します。現在のアクションの状態については、  `UPDATE_STATUS_RESULT` 構造体を調べます。  <br/> |
    
@@ -370,7 +370,7 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
   
 ## <a name="implementing-the-bits-interface"></a>BITS インターフェイスの実装
 
-[Background Intelligent Transfer Service](https://docs.microsoft.com/windows/win32/bits/background-intelligent-transfer-service-portal) (BITS) は、クライアントとサーバーの間でファイルを転送するための Microsoft が提供するサービスです。 BITS は、Office クイック実行インストーラーがコンテンツのダウンロードに使用できるチャネルの 1 つです。 既定では、click-To-Run インストーラー Microsoft 365 Apps BITS の実装に組み込Windowsを使用して、コンテンツをダウンロードします。CDN。 
+[Background Intelligent Transfer Service](/windows/win32/bits/background-intelligent-transfer-service-portal.md) (BITS) は、クライアントとサーバーの間でファイルを転送するための Microsoft が提供するサービスです。 BITS は、Office クイック実行インストーラーがコンテンツのダウンロードに使用できるチャネルの 1 つです。 既定では、click-To-Run インストーラー Microsoft 365 Apps BITS の実装に組み込Windowsを使用して、コンテンツをダウンロードします。CDN。 
   
 カスタマイズされた BITS の実装を **IUpdateNotify** インターフェイスの **download()** メソッドに提供すると、管理ソフトウェアはクライアントがコンテンツをダウンロードする場所と方法を制御できます。 カスタマイズされた BITS インターフェイスは、CDN、IIS サーバー、ファイル共有など、クイック実行 組み込みチャネル以外のカスタム コンテンツ配布チャネルを提供する場合に便利です。 
   
@@ -482,7 +482,7 @@ GET https://config.office.com/api/filelist
 
 この API を呼び出す権限は必要ありません。
 
-オプションのクエリ パラメーター
+省略可能なクエリ パラメーター
 
 |**名前**|**説明**|
 |:-----|:-----|
@@ -492,7 +492,7 @@ GET https://config.office.com/api/filelist
 | lid <br/>| 含める言語ファイルを指定します。 <br/> 省略可能 – 既定値はなし <br/> 複数の言語を指定するには、言語ごとに LID クエリ パラメーターを含めます。 <br/> 言語識別子の形式 (例) を使用します。 'ja-us', 'fr-fr' |
 | alllanguages <br/>| すべての言語ファイルを含める場合に指定します。 <br/> 省略可能 – 既定値は false |
 
-HTTP 応答
+**HTTP 応答**
 
 成功した場合、このメソッドは 200 OK 応答コードと、応答本文内のファイル オブジェクトのコレクションを返します。
 
@@ -553,7 +553,7 @@ Microsoft 365 Apps更新プログラムを使用すると、管理ソフトウ�
 
 次の例では、ファイル リスト API は MoreInfoURL に埋め込まれているので、"ServicePath=" で始まります。
 
-http://go.microsoft.com/fwlink/?LinkId=626090&Ver=16.0.12527.21104&Branch=Insiders&Arch=64&XMLVer=1.6&xmlPath=http://officecdn.microsoft.com/pr/wsus/ofl.cab&xmlFile=O365Client_64bit.xml& ServicePath=https://config.office.com/api/filelist?Channel=Insiders&Version=16.0.12527.21104&Arch=64&AllLanguages=True
+https://go.microsoft.com/fwlink/?LinkId=626090&Ver=16.0.12527.21104&Branch=Insiders&Arch=64&XMLVer=1.6&xmlPath=http://officecdn.microsoft.com/pr/wsus/ofl.cab&xmlFile=O365Client_64bit.xml& ServicePath=https://config.office.com/api/filelist?Channel=Insiders&Version=16.0.12527.21104&Arch=64&AllLanguages=True
   
 ### <a name="additional-metadata-for-automating-content-staging"></a>コンテンツ ステージングを自動化する追加のメタデータ
 

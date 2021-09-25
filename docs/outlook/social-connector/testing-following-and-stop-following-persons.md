@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c603c3c6-62c8-4895-93e1-b2e146dfaa4f
 description: このトピックでは、Outlook ソーシャル コネクタ (OSC) プロバイダーがフレンドをフォローする機能をテストし、ソーシャル ネットワーク上の友人のフォローを停止するシナリオについて説明します。
-ms.openlocfilehash: 06a2bc48fa723f4d4513376cace96a195cef9fa3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7d4051185d62240fd2fe3ca93a7e8bee3a4141d0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432451"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590360"
 ---
 # <a name="testing-following-and-stop-following-persons"></a>フォローおよびフォロー停止のテスト
 

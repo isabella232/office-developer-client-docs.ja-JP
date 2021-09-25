@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagIdentityEntryId
 api_type:
 - HeaderDef
 ms.assetid: 61a9d403-e0e5-45c3-8d18-4d53207ab927
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 099df2211e87e253ab1be520378b3a2b2ca7d4c3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5f019d7175896095ff2ec3be75d1fd573a93fee4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423336"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600044"
 ---
 # <a name="pidtagidentityentryid-canonical-property"></a>PidTagIdentityEntryId 標準プロパティ
 

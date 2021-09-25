@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.DTBLLABEL
 api_type:
 - COM
 ms.assetid: 5837facf-acd3-48fe-9610-f88085d99aef
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: aa3345740c534b5ff156f062e731c98bc6164eed
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1f0bf5445404b80021350fa70c9b21c5bbbe73fd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410687"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601101"
 ---
 # <a name="dtbllabel"></a>DTBLLABEL
 
@@ -41,7 +41,7 @@ typedef struct _DTBLLABEL
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulbLpszLabelName**
   

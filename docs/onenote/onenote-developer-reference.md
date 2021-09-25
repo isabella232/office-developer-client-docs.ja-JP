@@ -5,13 +5,13 @@ ms.date: 05/16/2016
 ms.audience: Developer
 ms.assetid: 4c4ef9e8-6b30-481b-8023-2e1280bcbcc9
 description: このリファレンスには、OneNote 2013 デスクトップ クライアント アプリケーション用のソリューションを開発するときに役立つ概念情報とプログラム関連のリファレンスが含まれています。
-localization_priority: Priority
-ms.openlocfilehash: d2b401a768e62c4b9712b1590bfaf499c2b022ab
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: a47eab584c5a7f530b6a9b7d51305c2fda7cd3b8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317053"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580462"
 ---
 # <a name="onenote-developer-reference"></a>OneNote 開発者用リファレンス
 

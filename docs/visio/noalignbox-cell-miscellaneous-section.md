@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm700
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b2d51f4b-d64e-fd14-4ff1-ed67c69213bc
 description: 選択した図形の選択範囲の表示/非表示を切り替えます。
-ms.openlocfilehash: 2ff9f051df54f4d424589332b9fbaea973552edc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ee97819af8b2b978d6e6c16ab766d911ab539499
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435881"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562994"
 ---
 # <a name="noalignbox-cell-miscellaneous-section"></a>[NoAlignBox] セル ([Miscellaneous] セクション)
 

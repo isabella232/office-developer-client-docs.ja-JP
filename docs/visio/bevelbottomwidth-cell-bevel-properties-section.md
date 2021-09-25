@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eb925eaa-04e1-4191-9b28-f37b229c8a3b
 description: 下部の斜角の幅をポイント単位で指定します。
-ms.openlocfilehash: c4fea7aa99c30558e47115ba0656306a93534236
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d62209dff69bc014b9763b9c3bedb6d05756a1d7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439675"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554916"
 ---
 # <a name="bevelbottomwidth-cell-bevel-properties-section"></a>[BevelBottomWidth] セル ([ベベルのプロパティ] セクション)
 

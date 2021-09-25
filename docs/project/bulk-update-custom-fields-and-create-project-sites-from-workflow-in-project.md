@@ -3,15 +3,15 @@ title: ユーザー設定フィールドを一括更新し、プロジェクト 
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 815131c6-190c-4f29-83bf-c853eee72821
 description: Project Online を最大限に利用し、サービスの拡張性と柔軟性を向上させるために、Project Online アプリとワークフローで使用できる 2 つのメソッドをクライアント側オブジェクト モデルに追加しました。
-ms.openlocfilehash: 4de42471cd8c2f12a982447ccffc27ec8104fa31
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: aadb20a85b97dad42c7158e52b7611609cc23496
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355401"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563204"
 ---
 # <a name="bulk-update-custom-fields-and-create-project-sites-from-a-workflow-in-project-online"></a>Project Online でユーザー設定フィールドを一括更新し、ワークフローからプロジェクト サイトを作成する
 
@@ -57,30 +57,30 @@ REST メソッドは、次のエンドポイントで確認できます。
     
 最終的なエンドツーエンドのワークフローは次のように表示されます。
   
-![エンドツーエンド ワークフロー エンドツーエンド](media/8c0741f9-7f76-409d-8c00-e7a8c3ddb89f.png "ワークフロー")
+![エンド ツー エンドのワークフロー](media/8c0741f9-7f76-409d-8c00-e7a8c3ddb89f.png "エンド ツー エンドのワークフロー")
   
 ### <a name="to-create-a-workflow-that-bulk-updates-custom-fields"></a>ユーザー設定フィールドを一括更新するワークフローを作成するには
 
 1. オプション。 プロジェクトの完全な URL を、ワークフロー全体で使用できる変数に格納します。
     
-    ![プロジェクトの URL を変数に格納](media/a880c5c6-8e7a-44dd-87e9-7e532169d489.png "する プロジェクトの URL を変数に格納する")
+    ![プロジェクトの URL を変数に格納する](media/a880c5c6-8e7a-44dd-87e9-7e532169d489.png "プロジェクトの URL を変数に格納する")
   
 2. [イベント **の待機Project]** アクションをワークフローに追加し、[プロジェクトがチェックイン **された場合] イベントを選択** します。 
     
-    ![[プロジェクトがチェックインされる]のを待つ] でプロジェクト(media/699aa9c7-b3c9-426e-a775-96993a13559c.png "がチェックインされるのを待つ")
+    ![プロジェクトのチェックインを待機する](media/699aa9c7-b3c9-426e-a775-96993a13559c.png "プロジェクトのチェックインを待機する")
   
 3. [辞書の **作成] アクションを** 使用して **requestHeader ディクショナリを作成** します。 このワークフローのすべての Web サービス呼び出しに同じ要求ヘッダーを使用します。 
     
-    ![requestHeader ディクショナリのビルド](media/83b0aa10-9ab7-43dd-800d-a738bb815876.png "requestHeader ディクショナリの作成")
+    ![RequestHeader 辞書の作成](media/83b0aa10-9ab7-43dd-800d-a738bb815876.png "RequestHeader 辞書の作成")
   
 4. 辞書に次の 2 つの項目を追加します。
     
-    |名前|型|値|
+    |名前|種類|値|
     |:-----|:-----|:-----|
     |Accept  <br/> |String  <br/> |application/json;odata=verbose  <br/> |
     |Content-Type  <br/> |文字列  <br/> |application/json;odata=verbose  <br/> |
    
-    ![Accept ヘッダーの追加](media/2f2e2016-3c49-4cac-b1e7-f2b8118b840c.png "Accept ヘッダーの追加")
+    ![Accept ヘッダーを追加する](media/2f2e2016-3c49-4cac-b1e7-f2b8118b840c.png "Accept ヘッダーを追加する")
   
 5. [辞書の **作成]** アクションを使用して **requestBody ディクショナリを作成** します。 この辞書には、適用するフィールド更新プログラムすべてが格納されます。 
     
@@ -94,7 +94,7 @@ REST メソッドは、次のエンドポイントで確認できます。
             
        - 値: SP。KeyValue
     
-       ![ユーザー設定フィールド更新の定義](media/a4423493-6603-42ee-ae50-1ef74c5c59bd.png "ユーザー設定フィールド更新の定義")
+       ![ユーザー設定フィールドの更新を定義する](media/a4423493-6603-42ee-ae50-1ef74c5c59bd.png "ユーザー設定フィールドの更新を定義する")
   
     - **キー** ユーザー設定フィールドの内部名 (*形式:* Custom_ce23fbf43fa0e411941000155d3c8201 
     
@@ -121,7 +121,7 @@ REST メソッドは、次のエンドポイントで確認できます。
        > [!NOTE]
        > これらの値は、説明のみを目的とします。 使用するキーと値の組み合PWAします。 
   
-       |名前|型|値|
+       |名前|種類|値|
        |:-----|:-----|:-----|
        |customFieldDictionary(0)/__metadata/type  <br/> |String  <br/> |SP。KeyValue  <br/> |
        |customFieldDictionary(0)/Key  <br/> |String  <br/> |カスタム \_ ce23fbf43fa0e411941000155d3c8201  <br/> |
@@ -136,43 +136,43 @@ REST メソッドは、次のエンドポイントで確認できます。
        |customFieldDictionary(2)/Value  <br/> |String  <br/> |2015-04-01T00:00:00  <br/> |
        |customFieldDictionary(2)/ValueType  <br/> |String  <br/> |Edm.DateTime  <br/> |
    
-       ![ユーザー設定フィールドを定義する辞書は、ユーザー設定](media/41a1f18f-a6b2-40ff-904b-437baf962621.png "フィールドの更新を定義する辞書を更新します。")
+       ![ユーザー設定フィールドを更新する辞書の定義](media/41a1f18f-a6b2-40ff-904b-437baf962621.png "ユーザー設定フィールドを更新する辞書の定義")
   
 6. [HTTP **Web サービスの呼び出し] アクションを** 追加して、プロジェクトをチェックアウトします。 
     
-    ![Checkout メソッドを呼び出す](media/8ce56014-0317-419b-afa7-229d05c86885.png "Checkout メソッドを呼び出す")
+    ![Checkout メソッドの呼び出し](media/8ce56014-0317-419b-afa7-229d05c86885.png "Checkout メソッドの呼び出し")
   
 7. Web サービス呼び出しのプロパティを編集して、要求ヘッダーを指定します。 [プロパティ] **ダイアログ ボックスを** 開く場合は、アクションを右クリックし、[プロパティ] を **選択します**。
     
-    ![Web サービス呼び出しプロパティで要求ヘッダーを指定]する Web サービス呼び出しプロパティ(media/d81e92b1-43df-42ad-9cd0-a693f93b164e.png "で要求ヘッダーを指定する")
+    ![Web サービス呼び出しのプロパティで要求ヘッダーを指定する](media/d81e92b1-43df-42ad-9cd0-a693f93b164e.png "Web サービス呼び出しのプロパティで要求ヘッダーを指定する")
   
 8. **UpdateCustomFields** メソッドを呼び出す HTTP Web サービスの呼び出しアクションを追加します。  
     
-    ![[HTTP Web サービスの呼び出し] アクションを作成](media/9a73a201-c035-41b4-8798-506ac48b90f8.png "する HTTP Web サービスの呼")び出しアクションを作成する
+    ![HTTP Web サービスを呼び出すアクションの作成](media/9a73a201-c035-41b4-8798-506ac48b90f8.png "HTTP Web サービスを呼び出すアクションの作成")
   
     Web サービス  `/Draft/` URL のセグメントに注意してください。 完全な URL は次のように表示されます。 `https://<site-url>/_api/ProjectServer/Projects('<guid>')/Draft/UpdateCustomFields()`
     
-    ![UpdateCustomFields メソッドを呼び出す](media/03b323f1-8e99-4b18-be18-be505d7cec7e.png "UpdateCustomFields メソッドを呼び出す")
+    ![UpdateCustomFields メソッドの呼び出し](media/03b323f1-8e99-4b18-be18-be505d7cec7e.png "UpdateCustomFields メソッドの呼び出し")
   
 9. Web サービス呼び出しのプロパティを編集して **、RequestHeader** パラメーターと **RequestContent** パラメーターを作成した辞書にバインドします。 ResponseContent を格納する新しい **変数を作成できます**。
     
-    ![辞書を要求ヘッダーとコンテンツに]バインドする 辞書を要求(media/f96bec92-138e-4eab-b1e7-1ab83d0428a5.png "ヘッダーとコンテンツにバインドする")
+    ![要求ヘッダーおよびコンテンツに辞書をバインドする](media/f96bec92-138e-4eab-b1e7-1ab83d0428a5.png "要求ヘッダーおよびコンテンツに辞書をバインドする")
   
 10. オプション。 応答辞書から読み取り、キュー ジョブの状態を確認し、ワークフロー履歴リストに情報を記録します。
     
-    ![ログの設定](media/7d2f4936-61d7-4906-83e8-7478a5935af5.png "ログの設定")
+    ![ログをセットアップする](media/7d2f4936-61d7-4906-83e8-7478a5935af5.png "ログをセットアップする")
   
 11. プロジェクトを発行する発行エンドポイントに Web サービス呼 **び** 出しを追加します。 常に同じ要求ヘッダーを使用します。 
     
-    ![Publish メソッドを呼び出す](media/3b661091-ffae-4d7e-a0bb-5b96a6292731.png "Publish メソッドを呼び出す")
+    ![Publish メソッドの呼び出し](media/3b661091-ffae-4d7e-a0bb-5b96a6292731.png "Publish メソッドの呼び出し")
   
-    ![発行 Web サービス呼び出しのプロパティ](media/6a80a5d3-7e29-4398-993c-f78b3faca8b1.png "Web サービスの発行呼び出しのプロパティ")
+    ![Publish Web サービス呼び出しのプロパティ](media/6a80a5d3-7e29-4398-993c-f78b3faca8b1.png "Publish Web サービス呼び出しのプロパティ")
   
 12. Checkin エンドポイントに最終的な Web サービス呼 **び出しを追加** して、プロジェクトをチェックインします。 
     
-    ![Checkin メソッドを呼び出す](media/430510cb-0774-4911-af7f-b565b83eba0e.png "Checkin メソッドを呼び出す")
+    ![Checkin メソッドの呼び出し](media/430510cb-0774-4911-af7f-b565b83eba0e.png "Checkin メソッドの呼び出し")
   
-    ![Checkin Web サービス呼び出し](media/485f48d6-bbb8-4568-9dc3-aae3218f6bd1.png "のプロパティ Checkin Web サービス呼び出しのプロパティ")
+    ![Checkin Web サービス呼び出しのプロパティ](media/485f48d6-bbb8-4568-9dc3-aae3218f6bd1.png "Checkin Web サービス呼び出しのプロパティ")
 
 <a name="CreateProjectSite"> </a>
 
@@ -184,7 +184,7 @@ REST メソッドは、次のエンドポイントで確認できます。
   
 **前提条件:****CreateProjectSite** を使用する前に **、PWA 設定**> ** Connected SharePoint Sites ** > 設定 でプロジェクト サイトの作成に対して [ユーザーに選択を許可する] 設定を設定する **必要があります**。
   
-![[ユーザーの選択を許可する]]PWA設定(media/6c6c8175-eb10-431d-8056-cea55718fdb4.png "設定 設定")でユーザーが選択PWAする
+![PWA の設定で [ユーザーに選択を許可する] を有効にする](media/6c6c8175-eb10-431d-8056-cea55718fdb4.png "[ユーザーがユーザーの設定で選択PWAする]")
   
 ### <a name="to-create-a-workflow-that-creates-a-project-site"></a>サイトを作成するワークフローをProjectするには
 
@@ -192,28 +192,28 @@ REST メソッドは、次のエンドポイントで確認できます。
     
 2. [辞書の **作成] アクションを** 使用して **requestHeader ディクショナリを作成** します。 
     
-    ![requestHeader ディクショナリのビルド](media/83b0aa10-9ab7-43dd-800d-a738bb815876.png "requestHeader ディクショナリの作成")
+    ![RequestHeader 辞書の作成](media/83b0aa10-9ab7-43dd-800d-a738bb815876.png "RequestHeader 辞書の作成")
   
 3. 辞書に次の 2 つの項目を追加します。
     
-    |名前|型|値|
+    |名前|種類|値|
     |:-----|:-----|:-----|
     |Accept  <br/> |String  <br/> |application/json;odata=verbose  <br/> |
     |Content-Type  <br/> |文字列  <br/> |application/json;odata=verbose  <br/> |
    
-    ![Accept ヘッダーの追加](media/2f2e2016-3c49-4cac-b1e7-f2b8118b840c.png "Accept ヘッダーの追加")
+    ![Accept ヘッダーを追加する](media/2f2e2016-3c49-4cac-b1e7-f2b8118b840c.png "Accept ヘッダーを追加する")
   
 4. [HTTP **Web サービスの呼び出し] アクションを追加** します。 POST を使用する要求 **の種類を** 変更し、次の形式で URL を設定します。
     
     `https://<site-url>/_api/ProjectServer/Projects('<guid>')/CreateProjectSite('New web name')`
     
-    ![CreateProjectSite エンドポイント URI のビルド](media/42a90a5e-8d1b-4667-a933-785175212847.png "CreateProjectSite エンドポイント URI の作成")
+    ![CreateProjectSite エンドポイント URI を作成する](media/42a90a5e-8d1b-4667-a933-785175212847.png "CreateProjectSite エンドポイント URI を作成する")
   
     サイトの名前を文字列Project **CreateProjectSite** メソッドに渡します。 プロジェクト名をサイト名として使用するには、空の文字列を渡します。 作成する次のプロジェクト サイトが機能するには、必ず一意の名前を使用してください。 
     
 5. Web サービス呼び出しのプロパティを編集して **、RequestHeader** パラメーターを作成した辞書にバインドします。 
     
-    ![ディクショナリを要求にバインド](media/61a5a0a8-405f-44eb-b5e7-80b11f7caec3.png "する ディクショナリを要求にバインドする")
+    ![辞書を要求にバインドする](media/61a5a0a8-405f-44eb-b5e7-80b11f7caec3.png "辞書を要求にバインドする")
   
 ## <a name="see-also"></a>関連項目
 

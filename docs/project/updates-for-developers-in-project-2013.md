@@ -3,15 +3,15 @@ title: 開発者向けの更新プログラム (Project
 manager: lindalu
 ms.date: 12/03/2019
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5b2b22cd-6e28-43a8-9092-b411da8bfb53
 description: 新機能には、クライアント側のオブジェクト モデル (CSOM)、REST インターフェイス、レポート用 OData サービス、リモート イベント レシーバー、宣言型ワークフロー、および Project クライアント用作業ウィンドウ アドインなどがあります。
-ms.openlocfilehash: c2bc0b475639a8582422b2091169116428367c60
-ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
+ms.openlocfilehash: 0f9cfc226e7ef4e5c2f81301812578e3ce9e58e9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819281"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555000"
 ---
 # <a name="updates-for-developers-in-project"></a>開発者向けの更新プログラム (Project
 
@@ -24,12 +24,12 @@ Project Server データベースは 1 つのデータベースに統合され�
 Project Server 2013 の主な変更点の図と詳細については、「Project [Server 2013 アーキテクチャ」を参照してください](project-server-2013-architecture.md)。
   
 > [!NOTE]
-> Project Server 2013 は SharePoint Server 2013 プラットフォームに基づいて構築され、Project 2013 には他の Office 2013 アプリケーションと同じインストラクチャが数多く含まれています。 SharePoint アドインのモデル、SharePoint ベースのワークフロー、Web パーツ、他の SharePoint 機能を使用した開発、Office アドインのドキュメントについては[、「SharePoint](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins)アドイン[、Office](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)アドイン、および[SharePoint 2013](https://msdn.microsoft.com/library/jj164084%28office.15%29.aspx)開発の概要」を参照してください。 
+> Project Server 2013 は SharePoint Server 2013 プラットフォームに基づいて構築され、Project 2013 には他の Office 2013 アプリケーションと同じインストラクチャが数多く含まれています。 SharePoint アドイン、SharePoint ベースのワークフロー、Web パーツ、他の SharePoint 機能を使用した開発、Office アドインのドキュメントについては[、「SharePoint](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins)アドイン[、Office](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)アドイン、および[SharePoint 2013 開発の概要](https://msdn.microsoft.com/library/jj164084%28office.15%29.aspx)。 
   
 ## <a name="major-new-features-in-project-2013"></a>Project 2013 の主な新機能
 <a name="pj15_WhatsNew_MajorNewFeatures"> </a>
 
-Project Standard 2013 および Project Professional 2013 の新機能には、他の Office 2013 アプリケーションと一致し、Windows 8 のモダン スタイルのユーザー インターフェイスをサポートする改善されたユーザー インターフェイス、レポートの Office Art オブジェクトとの統合、レポートのバーンダウン レポート、および新しいプログラミング機能が含まれています。 Project Professional 2013 では、SharePoint Server 2013 でのプロジェクトの広範な共有と同期、および Word、Excel、Outlook などの他の Office 2013 アプリケーションにも実装されている作業ウィンドウ アドインが有効になります。
+Project Standard 2013 および Project Professional 2013 の新機能には、他の Office 2013 アプリケーションと一致し、Windows 8 のモダン スタイルのユーザー インターフェイスをサポートする改善されたユーザー インターフェイス、Office Art オブジェクトとの統合によるレポート、バーンダウン レポート、および新機能が含まれます。レポートのプログラミング機能。 Project Professional 2013 では、SharePoint Server 2013 でのプロジェクトの広範な共有と同期、および Word、Excel、Outlook などの他の Office 2013 アプリケーションにも実装されている作業ウィンドウ アドインが有効になります。
   
 サーバー 2013 には多くの新機能Projectがあります。 一部のユーザーには、新しいタイムラインなどの主要なプログラミングストーリー Project Web App。 それらの機能については、Microsoft Office Online の製品のヘルプとエンド ユーザー向けドキュメント、および Microsoft TechNet の管理者と IT 担当者を対象にしたトピックに記載される予定です。 その他にも、タイムシートの向上などの新機能によって、サード パーティの開発者がタイムシートと状態管理を Project Server Interface (PSI) で容易に操作できるようになりました。
   
@@ -49,7 +49,7 @@ Projectサーバー 2013 のパフォーマンスとスケーラビリティは�
   
 Project デスクトップ クライアント用アドインについては、「[Project の作業ウィンドウ アドイン](#pj15_WhatsNew_Agave)」を参照してください。 サーバー 2013 Projectの例については、「Create [a SharePointホストProjectサーバー アドイン」を参照してください](create-a-sharepoint-hosted-project-server-add-in.md)。 Office および SharePoint アドイン[SDK](https://msdn.microsoft.com/library/fp161507.aspx)の記事に加えて[、Office ブログ](https://blogs.office.com/dev/)には、Project および Project Online に関連する投稿が多数含まれています。 
   
-サーバー 2013 Projectアドインは、オンプレミスのインストールとインストールの両方でProject Online。 Project Server アドインには、Web パーツ、リモート イベント レシーバー、およびビジネス ロジックを含めることができます。 アドインでの Project Server オブジェクト モデルへのアクセスは、PSI ではなく CSOM を介して行われます。 データ ストレージには、SQL Azure、Microsoft Business Connectivity Services (BCS) 経由などの外部データ、ローカル データベースを使用した内部、混在などのクラウドベースのストレージを使用できます。
+サーバー 2013 Projectアドインは、オンプレミスのインストールとインストールの両方でProject Online。 Project Server アドインには、Web パーツ、リモート イベント レシーバー、およびビジネス ロジックを含めることができます。 アドインでの Project Server オブジェクト モデルへのアクセスは、PSI ではなく CSOM を介して行われます。 データ ストレージは、SQL Azure、Microsoft Business Connectivity Services (BCS) を介した外部、ローカル データベースを使用した内部、混在などのクラウドベースのストレージを使用できます。
   
 #### <a name="add-in-security"></a>アドインのセキュリティ   通常、アドインが実行可能なアクションは、アドインを実行しているユーザーに代わって実行されます。
 
@@ -65,7 +65,7 @@ Project デスクトップ クライアント用アドインについては、�
 
 **表 1. Project Server アドイン用のアクセス許可リクエストのスコープ**
 
-|範囲|権限|
+|範囲|アクセス許可|
 |:-----|:-----|
 |**Project Server** <br/> |**管理** (Project Server 管理者のアクセス許可が必要)  <br/> |
 |**複数のプロジェクト** <br/> |**読み取り**、**書き込み** (一部の操作にはプロジェクト マネージャーのアクセス許可が必要となり、タスクの割り当てなどの基本の読み取り操作にはプロジェクト チーム メンバーのアクセス許可が必要となります。)  <br/> |
@@ -283,10 +283,10 @@ Project Server をオンプレミスまたは Project Online で使用するか�
 |**レポート** <br/> |- **ProjectData** サービス。OData および REST プロトコル  <br/>- サーバー データベース内のレポート テーブルProjectビュー<br/>- OLAP データベース  <br/> |- **ProjectData** サービス。OData および REST プロトコル  <br/> |
 |**イベント ハンドラー** <br/> |- WCF エンドポイントからアクセス可能なリモート イベント レシーバー<br/>- 完全信頼イベント ハンドラー (ファームにSharePoint)  <br/> | - WCF エンドポイントからアクセス可能なリモート イベント レシーバー  <br/> |
 |**ワークフロー** <br/> |デザイナー 2013 で作成SharePoint宣言型ワークフロー<br/>- 特定のインスタンスでのみProject Web Appする<br/>- ワークフロー デザインを 2013 年Visioできます<br/>- カスタム アクションのインポートと使用が可能<br/><br/> 宣言型ワークフロー (2012 年Visual Studio作成)<br/>- ワークフローを含めるアプリを作成する<br/>- ワークフローをSharePointできるソリューション パッケージ (.wsp) を作成する<br/>- 再利用するワークフロー テンプレートを作成する<br/>- カスタム アクションの作成と使用  <br/><br/>WF3.5 で作成された従来のコンパイル済みワークフローを使用できます (宣言型の WF4 ワークフローへのアップグレードをお勧めします)  <br/> |デザイナー 2013 で作成SharePoint宣言型ワークフロー<br/>- 特定のインスタンスでのみProject Web Appする<br/>- ワークフロー デザインを 2013 年Visioできます<br/>- カスタム アクションのインポートと使用が可能  <br/><br/>宣言型ワークフロー (2012 年Visual Studio作成)<br/>- ワークフローを含めるアプリを作成する  <br/>- ワークフローをSharePointできるソリューション パッケージ (.wsp) を作成する<br/>- 再利用するワークフロー テンプレートを作成する <br/>- カスタム アクションの作成と使用  <br/> |
-|**配布** <br/> |- Office ストア (CSOM ベースのアプリの場合)<br/>- プライベート アプリ カタログ (SharePoint<br/>- イントラネット ファイル共有  <br/> |- Office ストア<br/>- プライベート アプリ カタログ (SharePoint  <br/> |
+|**Distribution** <br/> |- Office ストア (CSOM ベースのアプリの場合)<br/>- プライベート アプリ カタログ (SharePoint<br/>- イントラネット ファイル共有  <br/> |- Office ストア<br/>- プライベート アプリ カタログ (SharePoint  <br/> |
 
    
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>結論
 <a name="pj15_WhatsNew_Conclusion"> </a>
 
 ProjectServer 2013 には、パートナーと顧客が大規模企業や小規模組織における Project Server の機能と機能を拡張するために使用できる豊富な新しい開発機能とシナリオが用意されています。 Office 2013 および SharePoint 2013 のインフラストラクチャを使用すると、Project 2013 のアプリを作成および配布し、カスタム アプリケーションの市場性と使用を大幅に拡張できます。 以前のバージョンの一部の機能拡張機能とプラクティスは、Project 2013 では推奨されていません。特に PSI の ASMX Web サービスと、偽装や直接データベースの変更を伴う機能 (Project Online では使用できません)。

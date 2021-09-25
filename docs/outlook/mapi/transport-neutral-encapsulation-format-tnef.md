@@ -3,17 +3,17 @@ title: Transport-Neutral Encapsulation Format (TNEF)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 98d4fe3c-3908-4cd2-bfdb-ff1874a80b24
 description: '最終更新日: 2013 年 3 月 12 日'
-ms.openlocfilehash: d902039fa1081e30947ddd8f70ead9ae7acec06a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 22ba19f374421656317196080e6a22153700f851
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428691"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590911"
 ---
 # <a name="transport-neutral-encapsulation-format-tnef"></a>Transport-Neutral Encapsulation Format (TNEF)
 

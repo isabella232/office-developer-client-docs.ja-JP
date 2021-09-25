@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAttachSize
 api_type:
 - HeaderDef
 ms.assetid: 768b3215-dd9f-4aa0-b52c-178ca81a7b07
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: f3e4f19ab43a3da7c4840d762d5131813c83d996
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4954ab76923e1d6fd9cabb055b74e305b1dec6d9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32361090"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600436"
 ---
 # <a name="pidtagattachsize-canonical-property"></a>PidTagAttachSize 標準プロパティ
 

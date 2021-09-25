@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f60c65e3-b55f-cb68-746e-d0a8cd862d4d
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 042216df309e98f35ed0ad71742e46300ebb06da
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 68c4fbf9e18906ed993dde30060c49e06a79fc7c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428649"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580196"
 ---
 # <a name="gender"></a>Gender
 

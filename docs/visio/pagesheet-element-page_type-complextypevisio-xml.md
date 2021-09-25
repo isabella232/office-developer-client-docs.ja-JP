@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 99a6549b-099b-1546-cc30-db0010fe3ce1
 description: 図面ページに関連付けられている図面ページのプロパティを指定します。
-ms.openlocfilehash: 2f49d152a0fcb30e3f5aea98cdc251d3b65b8f69
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 26ab066a8539a1c464afb3eebedf59c2f1a54afa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540624"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554237"
 ---
 # <a name="pagesheet-element-page_type-complextype-visio-xml"></a>PageSheet 要素 (Page_Type complexType) (Visio XML)
 

@@ -3,15 +3,15 @@ title: Concat 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 38ad6365-79df-4342-9b76-ca27b8ab8952
 description: 複数の文字列値を結合した結果の文字列を戻します。
-ms.openlocfilehash: b8f52c292e64939f9464bc666ecc4bc341580f94
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 76e303659ea72a244ad83e12342f00d12c23bf09
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423273"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573348"
 ---
 # <a name="concat-function-access-custom-web-app"></a>Concat 関数 (Access カスタム Web アプリ)
 

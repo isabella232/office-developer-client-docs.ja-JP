@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251590
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d375c971-fee2-baa3-dc4f-a26018e70e8a
 description: dstUnit で記述された形式に従って書式設定された文字列として、srcUnit で評価された式の結果を返します。
-ms.openlocfilehash: e341cbcb16cc273f0413f98c195f77ad08946ab1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4572c609ddb6a2a60cf34517531495705752ec7a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430967"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554769"
 ---
 # <a name="formatex-function"></a>FORMATEX 関数
 
@@ -30,10 +30,10 @@ FORMATEX(** *式* **," ** *format* ** ",[ ** *srcUnit* ** ],[ ** *dstUnit* ** ],
 |:-----|:-----|:-----|:-----|
 | _expression_ <br/> |必須  <br/> |**String** <br/> |定数、演算子、関数、およびシェイプシートのセルに対する参照を組み合わせたもので、結果が値となる式です。  <br/> |
 | _format_ <br/> |必須  <br/> |**String** <br/> |文字列の書式設定に使用する図の書式設定。図の書式設定の詳細については、「[図の書式設定](about-format-pictures.md)」を参照してください。<br/> |
-| _srcUnit_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> | 式を評価するために使用する単位 (in、cm など) です。  <br/> |
-| _dstUnit_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |式の結果に使用する単位 (in、cm など) です。  <br/> |
-| _langID_ <br/> |省略可能  <br/> |**数値** <br/> |Microsoft Office system の日付/時間形式の書式設定に使用する言語です。  <br/> |
-| _calID_ <br/> |省略可能  <br/> |**数値** <br/> |Microsoft Office system の日付/時間形式を書式設定するときのカレンダーです。  <br/> |
+| _srcUnit_ <br/> |省略可能  <br/> |**String** <br/> | 式を評価するために使用する単位 (in、cm など) です。  <br/> |
+| _dstUnit_ <br/> |省略可能  <br/> |**String** <br/> |式の結果に使用する単位 (in、cm など) です。  <br/> |
+| _langID_ <br/> |オプション  <br/> |**数値** <br/> |Microsoft Office system の日付/時間形式の書式設定に使用する言語です。  <br/> |
+| _calID_ <br/> |オプション  <br/> |**数値** <br/> |Microsoft Office system の日付/時間形式を書式設定するときのカレンダーです。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

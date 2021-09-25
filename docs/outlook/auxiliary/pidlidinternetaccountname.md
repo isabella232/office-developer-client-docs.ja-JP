@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5acca047-ff2a-716c-8dd4-b676fce1a3cf
 description: メッセージを配信したアカウントの表示名を返します。
-ms.openlocfilehash: 2bd27cc7f868fb3f255a002ed70d0cb9b79516e3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d9ea49525d5941991eb62962191eed00df6ebdbf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327686"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580315"
 ---
 # <a name="pidlidinternetaccountname"></a>PidLidInternetAccountName
 

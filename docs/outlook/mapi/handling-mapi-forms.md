@@ -3,17 +3,17 @@ title: MAPI フォームの処理
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: c1589d49-2ebe-48ce-85c7-b70fb7c1bb67
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 91347f0c34b8d7b76e4e456397a1faa061f3b2c6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 05a1f1b61a8958bc2a32eb31988318cf43a8541b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423056"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580168"
 ---
 # <a name="handling-mapi-forms"></a>MAPI フォームの処理
 
@@ -33,7 +33,7 @@ MAPI フォームは、特定のクラスのメッセージのビューアーで
   
 ## <a name="mapi-form-architecture"></a>MAPI フォームのアーキテクチャ
   
-![MAPI フォーム アーキテクチャ](media/forms01.gif "MAPI フォーム アーキテクチャ")
+![MAPI フォームのアーキテクチャ](media/forms01.gif "MAPI フォームのアーキテクチャ")
   
 クライアントが MAPI フォームの処理を計画している場合は、フォーム マネージャーの [IMAPIFormMgr : IUnknown](imapiformmgriunknown.md) インターフェイスを使用して、次の 5 つの基本的なタスクを実行します。 
   

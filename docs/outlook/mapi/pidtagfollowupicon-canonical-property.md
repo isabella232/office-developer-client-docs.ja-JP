@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagFollowupIcon
 api_type:
 - HeaderDef
 ms.assetid: 374cef41-141a-491b-8dd1-eaf1a2044204
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 205b6ddc2b65297d69a2223aab7b745b223ee553
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8fb1a570f2bad075c69a9328427de53e86fab938
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316283"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563554"
 ---
 # <a name="pidtagfollowupicon-canonical-property"></a>PidTagFollowupIcon 標準プロパティ
 
@@ -44,9 +44,9 @@ ms.locfileid: "32316283"
 |1  <br/> |followupIcon1  <br/> |紫色のフラグ  <br/> |
 |2  <br/> |followupIcon2  <br/> |オレンジ 色のフラグ  <br/> |
 |3  <br/> |followupIcon3  <br/> |緑のフラグ  <br/> |
-|4  <br/> |followupIcon4  <br/> |黄色のフラグ  <br/> |
+|4   <br/> |followupIcon4  <br/> |黄色のフラグ  <br/> |
 |5  <br/> |followupIcon5  <br/> |青いフラグ  <br/> |
-|6  <br/> |followupIcon6  <br/> |赤いフラグ  <br/> |
+|6   <br/> |followupIcon6  <br/> |赤いフラグ  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 

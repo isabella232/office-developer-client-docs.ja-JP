@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagDiscardReason
 api_type:
 - HeaderDef
 ms.assetid: 5004dc1f-6bd3-4764-b83c-d04d83161dba
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 32c81474580dbe4948c40390dadd0445776ab825
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3b84d43c4653c10f8120e77aa98cc68eed3bf545
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434803"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600191"
 ---
 # <a name="pidtagdiscardreason-canonical-property"></a>PidTagDiscardReason 標準プロパティ
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251457
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cb6ec664-6062-75d0-1514-8058b98c2c36
 description: リスト内のサブ文字列キーの場所を示す 0 から始め、ターゲット文字列に区切り記号が含まれている場合は -1 を返します。
-ms.openlocfilehash: 10fc32e6e979ab819246161dedfb1183c2683a99
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 00174504149f13d4e00493f8add4bc7de31089f8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410330"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554370"
 ---
 # <a name="lookup-function"></a>LOOKUP 関数
 
@@ -29,8 +29,8 @@ LOOKUP(" ** *key* ** "," ** *list* ** "[," ** *区切* り文字 ** "])
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _key_ <br/> |必須  <br/> |**String** <br/> |検索する文字列を指定します。  <br/> |
-| _リスト_ <br/> |必須  <br/> |**String** <br/> | 検索するリストを指定します。  <br/> |
-| _delimiter_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> | リスト内で区切り文字として使用する  _文字列_ です。 区切  _り文字_ は、長さが 1 文字以上で、マルチバイト文字を含めることができます。 既定値はセミコロンです。  <br/> |
+| _list_ <br/> |必須  <br/> |**String** <br/> | 検索するリストを指定します。  <br/> |
+| _delimiter_ <br/> |省略可能  <br/> |**String** <br/> | リスト内で区切り文字として使用する  _文字列_ です。 区切  _り文字_ は、長さが 1 文字以上で、マルチバイト文字を含めることができます。 既定値はセミコロンです。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

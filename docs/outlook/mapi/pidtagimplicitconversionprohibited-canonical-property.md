@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagImplicitConversionProhibited
 api_type:
 - HeaderDef
 ms.assetid: c6cb5a86-0105-4743-9f8e-b832e898da52
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: a0e18ef529b65317abd9446408ed73638c792809
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e0983b6bcf2818699023420c4d864724db6cc9d2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420669"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563456"
 ---
 # <a name="pidtagimplicitconversionprohibited-canonical-property"></a>PidTagImplicitConversionProhibited 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "33420669"
 |関連するプロパティ:  <br/> |PR_IMPLICIT_CONVERSION_PROHIBITED  <br/> |
 |識別子:  <br/> |0x0016  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |Server  <br/> |
+|エリア:  <br/> |サーバー  <br/> |
    
 ## <a name="remarks"></a>注釈
 

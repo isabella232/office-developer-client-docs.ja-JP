@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251444
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d8dc1915-f055-e858-1323-9e8c1cb7f2f1
 description: 2 つの線が交差する点の x 座標 (ローカル座標系) を返します。
-ms.openlocfilehash: 857f81d667e33ad9ce79405ef5d59874903098e6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0b8c22357c6eb6ac6b5d0fc43117f0749dd1b106
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418275"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554559"
 ---
 # <a name="intersectx-function"></a>INTERSECTX 関数
 
@@ -30,10 +30,10 @@ INTERSECTX(** *x1* **, ** *y1* **, ** *angle1* **, ** *x2* **, ** *y2* **, ** *a
 |:-----|:-----|:-----|:-----|
 | _x1_ <br/> |必須  <br/> |**数値** <br/> |1  _行_ 目の点の x 座標。  <br/> |
 | _y1_ <br/> |必須  <br/> |**数値** <br/> |1 行目の点の  _y_ 座標。  <br/> |
-| _angle1_ <br/> |必須  <br/> |**数値** <br/> | 1 本目の線の [Angle] セルにある値を指定します。  <br/> |
+| _angle1_ <br/> |必須かどうか  <br/> |**数値** <br/> | 1 本目の線の [Angle] セルにある値を指定します。  <br/> |
 | _x2_ <br/> |必須  <br/> |**数値** <br/> |2  _行_ 目の点の x 座標。  <br/> |
 | _y2_ <br/> |必須  <br/> |**数値** <br/> |2 行目の点の  _y_ 座標。  <br/> |
-| _angle2_ <br/> |必須  <br/> |**数値** <br/> |2 本目の線の [Angle] セルにある値を指定します。  <br/> |
+| _angle2_ <br/> |必須かどうか  <br/> |**数値** <br/> |2 本目の線の [Angle] セルにある値を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

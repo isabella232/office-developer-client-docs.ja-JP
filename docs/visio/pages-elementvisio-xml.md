@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 365e302f-3822-dccd-df8c-6e528d10b22b
 description: ドキュメントの Page 要素を格納します。
-ms.openlocfilehash: 09feb09e6a01187892ba2756fb1c99dd1ef2f845
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: f74e7eb68a4c2f85013cbc2c74a266e0985def74
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538978"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554230"
 ---
 # <a name="pages-element-visio-xml"></a>Pages 要素 (Visio XML)
 

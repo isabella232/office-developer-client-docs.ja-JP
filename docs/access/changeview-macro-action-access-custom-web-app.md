@@ -3,15 +3,15 @@ title: ChangeView マクロ アクション (カスタム Web アプリへのア
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7eb20f21-0218-4a2c-9bbc-90218a1e87bc
 description: ChangeView /ビューの変更アクションを使用して、ビュー間を移動できます。
-ms.openlocfilehash: 0c1e27c264a826d38ec2efbd5be9bc6237ad7437
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e1ff4487408deeafa56a9ca6bba9021c3c1f7769
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425359"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573342"
 ---
 # <a name="changeview-macro-action-access-custom-web-app"></a>ChangeView マクロ アクション (カスタム Web アプリへのアクセス)
 
@@ -26,9 +26,9 @@ ms.locfileid: "33425359"
   
 |**アクションの引数**|**必須**|**説明**|
 |:-----|:-----|:-----|
-|Table  <br/> |はい  <br/> |開くテーブル名を指定します。  <br/> |
-|表示  <br/> |はい  <br/> |開くビューの名前を指定します。  <br/> |
-|ここで  <br/> |いいえ  <br/> |指定した場合は、オブジェクト レコード ソースの Where 条件式を置換します。  <br/> |
+|Table  <br/> |必要  <br/> |開くテーブル名を指定します。  <br/> |
+|表示  <br/> |必要  <br/> |開くビューの名前を指定します。  <br/> |
+|場所  <br/> |いいえ  <br/> |指定した場合は、オブジェクト レコード ソースの Where 条件式を置換します。  <br/> |
 |Order By  <br/> |いいえ  <br/> |レコードを並べ替えるフィールド (複数可) の名前を含む文字列の式です。必要に応じて ASC キーワードまたは DESC キーワードを含めることもできます。既定では、この引数は空白です。  <br/> |
    
 ## <a name="remarks"></a>注釈

@@ -9,15 +9,15 @@ f1_keywords:
 - TempErr12
 keywords:
 - temperr function [excel 2007],TempErr12 function [Excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cf8c26b2-ca2b-4dda-a02d-0ccbeac19106
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 68a0addc36ecf1b4491ab1e4f5b10f359bbc59c3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4b74bfaceab52cb1526ed8abba13e0476f73f0bf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410610"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572369"
 ---
 # <a name="temperrtemperr12"></a>TempErr/TempErr12
 
@@ -39,7 +39,7 @@ LPXLOPER12 TempErr12(BOOL err);
 |**エラー**|**XLCALL.H で定義されたエラー コード**|**同等の 10 進数**|
 |:-----|:-----|:-----|
 |#NULL  <br/> |**xlerrNull** <br/> |0  <br/> |
-|#DIV/0!  <br/> |**xlerrDiv0** <br/> |7  <br/> |
+|#DIV/0!  <br/> |**xlerrDiv0** <br/> |7   <br/> |
 |#VALUE!  <br/> |**xlerrValue** <br/> |15   <br/> |
 |#REF!  <br/> |**xlerrRef** <br/> |23  <br/> |
 |#NAME?  <br/> |**xlerrName** <br/> |29  <br/> |

@@ -3,17 +3,17 @@ title: MAPI プロパティのエラーの処理
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 23d68d8b-b0b6-4c32-8404-6acd23802db0
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 1dc676101d4c39544c9dd1fae94000db9963ea02
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a1c4877dae64ae1890557a40723edbc66e07552b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419080"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580154"
 ---
 # <a name="handling-mapi-property-errors"></a>MAPI プロパティのエラーの処理
 

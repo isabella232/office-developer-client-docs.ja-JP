@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagMessageSecurityLabel
 api_type:
 - HeaderDef
 ms.assetid: aae41f1b-19bb-40c7-8564-0c87a5a4e47c
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: b6900cbacc2bea6c5519efdc4281ca98629b23bf
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6b83c36c18adf4bdf027bf9b4d1c677a30efee13
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425674"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599918"
 ---
 # <a name="pidtagmessagesecuritylabel-canonical-property"></a>PidTagMessageSecurityLabel 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "33425674"
 |関連するプロパティ:  <br/> |PR_MESSAGE_SECURITY_LABEL  <br/> |
 |識別子:  <br/> |0x001E  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Server  <br/> |
+|エリア:  <br/> |サーバー  <br/> |
    
 ## <a name="remarks"></a>注釈
 

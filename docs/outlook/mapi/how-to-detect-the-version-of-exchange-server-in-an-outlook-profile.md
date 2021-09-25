@@ -3,15 +3,15 @@ title: Outlook プロファイルで Exchange Server のバージョンを検出
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e2d8d8a9-7e8f-9cf0-56a8-d8a6281ad589
 description: '最終更新日: 2012 年 7 月 3 日'
-ms.openlocfilehash: c6aaac128e1a3e1a8d77d3fa8b6c50a335348b71
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 03aca0c8f708f94bbf7681f7d3d36b63f4c88d21
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424449"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580077"
 ---
 # <a name="detect-the-version-of-exchange-server-in-an-outlook-profile"></a>Outlook プロファイルで Exchange Server のバージョンを検出する
 

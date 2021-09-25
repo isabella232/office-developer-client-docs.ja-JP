@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagLocation
 api_type:
 - HeaderDef
 ms.assetid: 99dffcd9-83dc-462e-b0ce-e2101e546cc6
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 558db0d89103d02f37297c058384cac96ea9ca26
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3378f053bb9192030885022d42fb9a1473209977
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278786"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599911"
 ---
 # <a name="pidtaglocation-canonical-property"></a>PidTagLocation 標準プロパティ
 

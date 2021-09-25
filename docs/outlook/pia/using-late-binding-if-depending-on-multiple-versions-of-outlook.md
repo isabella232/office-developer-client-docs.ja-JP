@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/office/bb610234(v=office.15)
 ms:contentKeyID: 55119791
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e4cca4d426e5e7e9fd06fa3a0c3af1158b7e6c2f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4e8a22c3b3e231dd77b7179e52a0c40d3336c95c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357471"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590507"
 ---
 # <a name="using-late-binding-if-depending-on-multiple-versions-of-outlook"></a>複数のバージョンの Outlook を使用する場合の遅延バインディングの使用
 

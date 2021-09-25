@@ -3,15 +3,15 @@ title: BETWEEN (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9dcb32c6-ed9b-4a09-9e6a-48cc50063a6f
 description: テストする範囲を指定します。
-ms.openlocfilehash: fd67d1163f6a39779e0202b5ca1ba998ba8650a7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 85fea11c3cf658ef6b5f821cd54304c64aa06743
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429300"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562882"
 ---
 # <a name="between-access-custom-web-app"></a>BETWEEN (Access カスタム Web アプリ)
 
@@ -28,11 +28,11 @@ ms.locfileid: "33429300"
   
 |**引数**|**必須**|**説明**|
 |:-----|:-----|:-----|
-| *test_expression*  <br/> |はい  <br/> |ユーザーとユーザーが定義する範囲内でテスト *begin_expression**式* end_expression。 データ型とデータ型の両方と *同じbegin_expression* 必要 *end_expression。*  <br/> |
+| *test_expression*  <br/> |必要  <br/> |ユーザーとユーザーが定義する範囲内でテスト *begin_expression**式* end_expression。 データ型とデータ型の両方と *同じbegin_expression* 必要 *end_expression。*  <br/> |
 | *NOT*  <br/> |いいえ  <br/> |述部の結果を否定することを指定します。  <br/> |
-| *begin_expression*  <br/> |はい  <br/> |有効な式。 データ型とデータ型の両方と *同じtest_expression* 必要 *end_expression。*  <br/> |
-| *end_expression*  <br/> |はい  <br/> |有効な式。 データ型とデータ型の両方と *同じtest_expression* 必要 *begin_expression。*  <br/> |
-| *AND*  <br/> |はい  <br/> |指定した *test_expression* および指定した範囲内にある必要がある *begin_expressionを**end_expression。*  <br/> |
+| *begin_expression*  <br/> |必要  <br/> |有効な式。 データ型とデータ型の両方と *同じtest_expression* 必要 *end_expression。*  <br/> |
+| *end_expression*  <br/> |必要  <br/> |有効な式。 データ型とデータ型の両方と *同じtest_expression* 必要 *begin_expression。*  <br/> |
+| *AND*  <br/> |必要  <br/> |指定した *test_expression* および指定した範囲内にある必要がある *begin_expressionを**end_expression。*  <br/> |
    
 ## <a name="result-type"></a>結果の型
 

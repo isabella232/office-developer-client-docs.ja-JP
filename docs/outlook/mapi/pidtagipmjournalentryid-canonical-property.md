@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagIpmJournalEntryId
 api_type:
 - HeaderDef
 ms.assetid: a3765b9d-a108-46d7-a97c-a825ae3980be
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: b5dfc378a2558e906bec018608e2d2c776090c06
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5ee344f37d6d6fd39098ca751f979376f1b83b33
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327910"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599967"
 ---
 # <a name="pidtagipmjournalentryid-canonical-property"></a>PidTagIpmJournalEntryId 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "32327910"
 |関連するプロパティ:  <br/> |PR_IPM_JOURNAL_ENTRYID  <br/> |
 |識別子:  <br/> |0x36D2  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Folder  <br/> |
+|エリア:  <br/> |フォルダー  <br/> |
    
 ## <a name="remarks"></a>注釈
 

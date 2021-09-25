@@ -3,17 +3,17 @@ title: 読み込む MAPI の特定のバージョンを選択する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 85539a7f-74b6-4267-86ea-00da2c900c34
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: d353eba55e33b8ab48b3c47d2f31f1b5e0973b58
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b410d53dee76a7f812f270d5f81f15bc691431ec
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344521"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580133"
 ---
 # <a name="choose-a-specific-version-of-mapi-to-load"></a>読み込む MAPI の特定のバージョンを選択する
 
@@ -67,7 +67,7 @@ MAPI を読み込むには、Outlookでレジストリ キーを検索し、 `HK
 
 次の表に、MAPI のカスタム実装のパスを検索するために使用される MFCMAPI の 4 つの関数を示します。
   
-|**Function**|**説明**|
+|**関数**|**説明**|
 |:-----|:-----|
 | `GetMAPIPath` <br/> |MAPI ライブラリ パスを取得します。  <br/> |
 | `GetMailKey` <br/> |MAPI メール レジストリ キーを取得します。  <br/> |

@@ -3,17 +3,17 @@ title: MAPI プロパティの種類の概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: b762f5fb-7c2c-4303-96f7-0b6e657146c9
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 58dd25f09b76d97fd6441915225756a19f4ec3cb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0bdb1c2a631b80015dbc88dbe5a274c0f9b3050b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438198"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600807"
 ---
 # <a name="mapi-property-type-overview"></a>MAPI プロパティの種類の概要
   
@@ -29,7 +29,7 @@ ms.locfileid: "33438198"
   
 **複数値プロパティ**
   
-![複数値のプロパティ](media/amapi_12.gif "複数値のプロパティ")
+![複数値プロパティ](media/amapi_12.gif "複数値プロパティ")
   
 複数値のプロパティのサポートは省略可能ですが、MAPI に準拠したコンポーネント間の相互作用が大きいので、クライアントとサービス プロバイダーは両方の種類のプロパティをサポートする必要があります。
   
@@ -37,7 +37,7 @@ ms.locfileid: "33438198"
   
 **プロパティ タイプ定数**
   
-![プロパティの種類の定数](media/amapi_11.gif "プロパティの種類の定数")
+![プロパティ タイプ定数](media/amapi_11.gif "プロパティ タイプ定数")
   
 プロパティを操作するクライアントとサービス プロバイダーは、次の 2 つの手順に従う必要があります。
   

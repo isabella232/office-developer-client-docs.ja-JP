@@ -4,21 +4,21 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a5204ddd-5af4-4dd8-bc83-af96ac390786
 description: このセクションでは、アカウント管理 API のプロパティについて説明します。
-ms.openlocfilehash: d0b8c06716bd2f3a3bb2941e098bd9f11ab87183
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b3c7a739234b290d0a032f202a13f663912b7009
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416336"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572201"
 ---
 # <a name="properties-account-management-api"></a>プロパティ (アカウント管理 API)
 
 このセクションでは、アカウント管理 API のプロパティについて説明します。
   
-|**Property**|**説明**|
+|**プロパティ**|**説明**|
 |:-----|:-----|
 |[PidTagNextSendAcct](pidtagnextsendacct.md) <br/> |これは、メッセージのセカンダリ アカウント "送信" スタンプです。  <br/> |
 |[PidTagPrimarySendAccount](pidtagprimarysendaccount.md) <br/> |これは、メッセージのプライマリ アカウント "送信" スタンプです。  <br/> |

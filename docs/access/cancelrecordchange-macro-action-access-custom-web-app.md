@@ -3,15 +3,15 @@ title: CancelRecordChange マクロ アクション (Access カスタム Web ア
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cbdbee8c-70d6-45df-a56b-5f7c6e5bdc6d
 description: CancelRecordChange/レコードの変更の取り消しアクションを使用して、変更を確定する前に CreateRecord または EditRecord データ ブロック内でレコードに適用した変更を取り消すことができます。
-ms.openlocfilehash: fe95718e752513c4b8b700f331fec7b78092e553
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 592ff1fae39956c9f1fe638072b5aeda41badb1b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411828"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573300"
 ---
 # <a name="cancelrecordchange-macro-action-access-custom-web-app"></a>CancelRecordChange マクロ アクション (Access カスタム Web アプリ)
 

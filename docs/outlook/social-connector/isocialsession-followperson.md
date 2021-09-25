@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: de7f56e2-c131-4955-b945-0a72043e0f5a
 description: emailAddress パラメーターで識別されたユーザーを、ソーシャル ネットワーク上のログオンユーザーのフレンドとして追加します。
-ms.openlocfilehash: 849085bd40788039a96ac159fd76a5e252395916
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6c0c4d31dd1627a13b15b0b779c2e798ab9fd64b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423259"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590409"
 ---
 # <a name="isocialsessionfollowperson"></a>ISocialSession::FollowPerson
 

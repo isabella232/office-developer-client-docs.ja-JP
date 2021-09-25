@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251441
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 943636a6-e135-a626-7924-11e238156548
 description: 指定したアドレス (ファイル、UNC、または URL パス) に移動します。
-ms.openlocfilehash: 5e4952c3d56eff0cb1e6518928a7b8259f645046
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 9443f30143a3beb19e31519d0dbe0845ddfd5451
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329947"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554706"
 ---
 # <a name="hyperlink-function"></a>HYPERLINK 関数
 
@@ -29,10 +29,10 @@ HYPERLINK(" ** *address* ** "[," ** *subaddress* ** "," ** *extrainfo* ** ", ** 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _address_ <br/> |必須  <br/> |**String** <br/> |完全パスまたは相対パスを指定します。  <br/> |
-| _subaddress_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |リンク先の address 内の位置を指定します。たとえば、address が、Microsoft Visio ファイルの場合は subaddress にページ名を、Microsoft Excel ファイルの場合は subaddress にワークシートまたはワークシート内の範囲を、HTML ページの URL の場合は subaddress にアンカーを指定できます。  <br/> |
-| _extrainfo_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |イメージ マップの座標など、URL の判別に使用する情報を渡します。  <br/> |
+| _subaddress_ <br/> |省略可能  <br/> |**String** <br/> |リンク先の address 内の位置を指定します。たとえば、address が、Microsoft Visio ファイルの場合は subaddress にページ名を、Microsoft Excel ファイルの場合は subaddress にワークシートまたはワークシート内の範囲を、HTML ページの URL の場合は subaddress にアンカーを指定できます。  <br/> |
+| _extrainfo_ <br/> |省略可能  <br/> |**String** <br/> |イメージ マップの座標など、URL の判別に使用する情報を渡します。  <br/> |
 | _ウィンドウ_ <br/> |省略可能  <br/> |**Boolean** <br/> |ハイパーリンクを新しいウィンドウで開くかどうかを指定します。既定値は FALSE です。  <br/> |
-| _フレーム_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> | Microsoft Internet Explorer 3.0 以降などの ActiveX ブラウザーで、ActiveX の図面として Visio の図面を開く場合に、ターゲットとするフレームの名前を指定します。既定では、空の文字列です。  <br/> |
+| _フレーム_ <br/> |省略可能  <br/> |**String** <br/> | Microsoft Internet Explorer 3.0 以降などの ActiveX ブラウザーで、ActiveX の図面として Visio の図面を開く場合に、ターゲットとするフレームの名前を指定します。既定では、空の文字列です。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

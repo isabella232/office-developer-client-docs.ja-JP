@@ -3,17 +3,17 @@ title: 制限の種類
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 0d3bd58b-7100-4117-91ac-27139715c85b
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 28159dfb947b4fb0ea54680627588b7c10bee3b3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3fd12f2bed213bf48db18b8dacafc8d522439140
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416287"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590899"
 ---
 # <a name="types-of-restrictions"></a>制限の種類
 
@@ -35,7 +35,7 @@ ms.locfileid: "33416287"
 |**AND** <br/> |[SAndRestriction](sandrestriction.md) <br/> |2 つ以上の **制限に** 対して論理 AND 操作を実行します。  <br/> |
 |**OR** <br/> |[SOrRestriction](sorrestriction.md) <br/> |2 つ以上の **制限に** 対して論理 OR 操作を実行します。  <br/> |
 |**NOT** <br/> |[SNotRestriction](snotrestriction.md) <br/> |2 つ以上の **制限に対して** 論理 NOT 操作を実行します。  <br/> |
-|コンテンツ  <br/> |[SContentRestriction](scontentrestriction.md) <br/> |指定したデータを検索します。  <br/> |
+|Content  <br/> |[SContentRestriction](scontentrestriction.md) <br/> |指定したデータを検索します。  <br/> |
 |プロパティ  <br/> |[SPropertyRestriction](spropertyrestriction.md) <br/> |一致する条件として特定のプロパティ値を指定します。 たとえば、特定の種類の添付ファイルを検索するために使用できます。  <br/> |
 |Bitmask  <br/> |[SBitMaskRestriction](sbitmaskrestriction.md) <br/> |ビットマスクを PT_LONGプロパティに適用します。通常、特定のフラグが設定されているかどうかを判断します。  <br/> |
 |Size  <br/> |[SSizeRestriction](ssizerestriction.md) <br/> |標準の関係演算子を使用してプロパティのサイズをテストします。  <br/> |

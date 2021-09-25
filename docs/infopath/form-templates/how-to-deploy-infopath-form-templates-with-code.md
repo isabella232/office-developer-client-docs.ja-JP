@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - deploying form templates [infopath 2007],InfoPath 2007, deploying form templates,form templates [InfoPath 2007], deploying,.NET Framework security settings [InfoPath 2007],deployment [InfoPath 2007], form templates
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ab66e26d-74ee-4211-b387-1385183a6803
 description: InfoPath のマネージ コード フォーム テンプレートのフォーム コードは、共通言語ランタイム (CLR) の下で実行されるアセンブリとしてコンパイルされます。これは、フォーム コードを変更するときには、常に、Visual Studio 2012 でプロジェクトを開き、コード エディターで編集し、フォーム テンプレートを再コンパイルして、フォーム テンプレートを再展開する必要があることを意味します。さらに、マネージ コード フォーム テンプレートのプライベート アセンブリは、ホストされる CLR アプリケーション ドメインで実行されるので、完全な信頼を必要とするフォームのセキュリティ設定は、完全な信頼を必要としないフォーム テンプレートとは若干異なります。
-ms.openlocfilehash: ba3629e786a224ea950e78bbec9a9fe94d4499de
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a467352b6537d66d90a1b68cfd145dfff2130e35
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406900"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562007"
 ---
 # <a name="deploy-infopath-form-templates-with-code"></a>コードを含む InfoPath フォーム テンプレートを展開する
 

@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c0e7b788-3198-499c-ae21-b2032f929ed9
 description: ログオン時に使用されるユーザー名を表す文字列を返します。
-ms.openlocfilehash: 6f0d2c68b1af9e7c96f2cd86dc798518e432c7cf
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0155138551d777958ca0f4903bb3d24339a14d56
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437295"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563211"
 ---
 # <a name="isocialsessionloggedonusername"></a>ISocialSession::LoggedOnUserName
 

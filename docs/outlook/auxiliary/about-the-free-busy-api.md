@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 17c5e44e-ae56-8de7-3579-90171d996411
 description: 空き時間情報 API を使用すると、メール プロバイダーは指定した時間範囲内で指定したユーザー アカウントの空き時間情報を提供できます。
-ms.openlocfilehash: 1bcd191b57238771ede6f035216fe3997e82e03a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9b57a2958298098bda119ae260453f56d7cd1fca
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433760"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580434"
 ---
 # <a name="about-the-freebusy-api"></a>空き時間情報 API について
 
@@ -43,7 +43,7 @@ ms.locfileid: "33433760"
     
    `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\14.0\Outlook\SchedulingInformation\FreeBusySupport`
     
-   |名前 |型 |値 |
+   |名前 |種類 |値 |
    |:-----|:-----|:-----|
    |SMTP  |REG_SZ  |{IFreeBusySupport の各実装の CLSID}  |
    

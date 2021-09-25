@@ -3,17 +3,17 @@ title: TNEF の相関関係
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 93d1716d-a0be-45aa-85d2-6c9be65f5fd2
 description: '最終更新日: 2013 年 3 月 12 日'
-ms.openlocfilehash: 8d601bb2bbc65e21c5bc83179cc29e53ddd33876
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6f7c9403990a7950bb2e2c88528477e5a9b90501
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410372"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590910"
 ---
 # <a name="tnef-correlation"></a>TNEF の相関関係
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm3025
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6b385a9a-9294-1703-9d6f-628a11498669
 description: 直線セグメントの終了頂点の x 座標と y 座標を含む。
-ms.openlocfilehash: 570ee677aff07d54fcee22ebba2faa210831fb10
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d8ed89028b494132204b3415d23258f9518f9e19
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404730"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554482"
 ---
 # <a name="lineto-row-geometry-section"></a>[LineTo] 行 ([Geometry] セクション)
 

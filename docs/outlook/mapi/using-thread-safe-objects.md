@@ -3,17 +3,17 @@ title: オブジェクトThread-Safe使用
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: e688db5e-d1a1-4afc-998f-b3d31eb6239b
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 611e0a49f0fd8df8fe40205a33ed5501055c3d45
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 418eb34ee6b66a941a32bc3e4dd7af29965d32c1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425170"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590885"
 ---
 # <a name="using-thread-safe-objects"></a>オブジェクトThread-Safe使用
 

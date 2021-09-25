@@ -5,13 +5,13 @@ ms.date: 04/20/2016
 ms.audience: Developer
 ms.assetid: 1c4937c4-0998-4f81-a994-50d3dd54727c
 description: ソリューションの開発と Office のカスタマイズに関する HowTo コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および技術記事を検索できます。
-localization_priority: Priority
-ms.openlocfilehash: 758d0b25457089de0d611d41fa962e7323985abe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 613984ec8d1175f8c47dcc2dec68768144c517af
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351696"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554951"
 ---
 # <a name="office-shared"></a>Office 共有
 
@@ -44,7 +44,7 @@ ms.locfileid: "32351696"
   
 ### <a name="sharepoint-add-ins"></a>SharePoint アドイン
   
-- [概要](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins)
+- [作業の開始](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins)
   
 ### <a name="code-samples"></a>コード サンプル
   

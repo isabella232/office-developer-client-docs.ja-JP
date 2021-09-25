@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3362639a-8098-47ab-ba94-ee89e4920032
 description: Microsoft Outlook Social Connector (OSC) プロバイダー XML スキーマの friends 要素を使用すると、OSC プロバイダーは、ソーシャル ネットワーク内の Outlook ユーザーに関連付けられたユーザーの一覧に関する情報を指定できます。
-ms.openlocfilehash: df3bf03c5fd1dcdac3096411bc60bcb1eeec661e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a6d8dbe78e40f94ea5fe30e7361b37ef05c46a02
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32361160"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590346"
 ---
 # <a name="xml-for-friends"></a>友だち用 XML
 
@@ -65,16 +65,16 @@ Microsoft  Outlook Social Connector (OSC) プロバイダー XML スキーマの
 
 フレンド スキーマの 2 つのトップ レベル要素を **次に示** します。 
   
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
 |**フレンド** <br/> |ユーザー要素のリストのルート要素を **表** します。 **ISocialPerson::GetFriendsAndColleagues** [、ISocialSession::FindPerson、](isocialsession-findperson.md)**および ISocialSession2::GetPeopleDetails** は **、friends** 要素のスキーマ定義に準拠する XML 文字列を返します。  <br/> |
-|**人物** <br/> |ユーザー要素のリスト内の 1 人のユーザー **を表** します。 [ISocialPerson::GetDetails](isocialperson-getdetails.md)メソッドは、person 要素のスキーマ定義に準拠する XML 文字列を **返** します。  <br/> |
+|**人** <br/> |ユーザー要素のリスト内の 1 人のユーザー **を表** します。 [ISocialPerson::GetDetails](isocialperson-getdetails.md)メソッドは、person 要素のスキーマ定義に準拠する XML 文字列を **返** します。  <br/> |
    
 次の表では、OSC プロバイダー XML スキーマ内の **person** 要素の各子要素について説明します。 
   
 OSC プロバイダー XML スキーマの完全な定義 (必須または省略可能な要素を含む) については、「ソーシャル コネクタ プロバイダー XML スキーマOutlook[を参照してください](outlook-social-connector-provider-xml-schema.md)。
   
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
 |**address** <br/> |人物の物理的な住所。  <br/> |
 |**記念日** <br/> |ユーザーのイベントの記念日。  <br/> |

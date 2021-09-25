@@ -3,15 +3,15 @@ title: Microsoft Project 2013 SDK 著作権情報
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6f041970-780b-48b4-a277-20e8289134cd
 description: このドキュメントは現状のまま提供されます。 このドキュメントに記載されている情報とビュー (URL や他のインターネット Web サイト参照を含む) は、予告なしに変更される場合があります。 使用に伴うリスクは、お客様が負うものとします。
-ms.openlocfilehash: 24a9fd4cdc25f206e8241a9b989724474f290318
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 78f75a3f6e77a8d540f681758d9ccb1c23b8d5ed
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357009"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563127"
 ---
 # <a name="microsoft-project-2013-sdk-copyright-notice"></a>Microsoft Project 2013 SDK 著作権情報
 

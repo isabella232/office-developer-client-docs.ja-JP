@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidAppointmentColor
 api_type:
 - COM
 ms.assetid: 91147e85-f440-4463-850b-efc9bdbd36d1
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1ea0830a06f303da8243f927e4a07cc744951ca9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7efffac9dd3a0b4060cd7c2735f2590712ac6868
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345438"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600709"
 ---
 # <a name="pidlidappointmentcolor-canonical-property"></a>PidLidAppointmentColor 標準プロパティ
 
@@ -33,13 +33,13 @@ ms.locfileid: "32345438"
 |プロパティ セット:  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008214  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |カレンダー  <br/> |
+|エリア:  <br/> |予定表  <br/> |
    
 ## <a name="remarks"></a>注釈
 
 このプロパティは、予定表を表示するときに使用する色を指定します。 クライアントまたはサーバーは、古いクライアントとの下位互換性のためにこの値を設定する必要があります。 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)で指定されている **キーワード**([PidNameKeywords](pidnamekeywords-canonical-property.md)) プロパティの値に基づいてカレンダーが表示される場合があります。 設定する場合、値は次のいずれかを指定する必要があります。
   
-|**値**|**色**|
+|**値**|**Color**|
 |:-----|:-----|
 |0x00000000  <br/> |なし  <br/> |
 |0x00000001  <br/> |赤  <br/> |

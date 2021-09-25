@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagIpmContactEntryId
 api_type:
 - HeaderDef
 ms.assetid: fccbbb15-dd08-4310-83d7-bf57eb3ed5de
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8f0c79fa098b8bca0518921a25d88a229e23e955
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 040c39469329b9b3c894f2c98daf48741110a309
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327903"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600037"
 ---
 # <a name="pidtagipmcontactentryid-canonical-property"></a>PidTagIpmContactEntryId 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "32327903"
 |関連するプロパティ:  <br/> |PR_IPM_CONTACT_ENTRYID  <br/> |
 |識別子:  <br/> |0x36D1  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Folder  <br/> |
+|エリア:  <br/> |フォルダー  <br/> |
    
 ## <a name="remarks"></a>注釈
 

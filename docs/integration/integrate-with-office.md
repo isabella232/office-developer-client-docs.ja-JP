@@ -5,13 +5,13 @@ ms.date: 07/29/2015
 ms.audience: Developer
 ms.assetid: 369b30e3-eadf-4086-b023-abbdd8e810b0
 description: アプリケーションおよび Web ベース環境から Office for iOS、Office for Android、Office Online と Excel、PowerPoint、または Word Mobile を統合できます。これによりユーザーは、サード パーティ ソリューションから Office アプリケーションでの作業にシームレスに移行できます。
-localization_priority: Priority
-ms.openlocfilehash: 332f61f2b7a551516e55e7c966c649a6ee5f7f80
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 6ddf61d336351e1929060fece6fda6e0b7040306
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303144"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572271"
 ---
 # <a name="integrate-with-office"></a>Office との統合
 

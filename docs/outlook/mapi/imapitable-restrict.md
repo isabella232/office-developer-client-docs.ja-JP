@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPITable.Restrict
 api_type:
 - COM
 ms.assetid: a5bfc190-b58f-44c3-893c-8727df14ee58
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6cca6bc12fa6f100885b7bf705d79fa24a2e2f91
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0b13d12d78d9b24174d708778648040b67f69da8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414621"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600870"
 ---
 # <a name="imapitablerestrict"></a>IMAPITable::Restrict
 

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 46712e1f-4e02-974f-c224-85db47666ae1
 description: ドキュメント設定を指定する要素が含まれます。
-ms.openlocfilehash: 0d8e0809afae7b3de059166343577bb58f0eb01b
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 6c7f8e4c8009229664d643d4fcc7408bf3987f38
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540071"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590297"
 ---
 # <a name="documentsettings-element-visiodocument_type-complextype-visio-xml"></a>DocumentSettings 要素 (VisioDocument_Type complexType) (Visio XML)
 

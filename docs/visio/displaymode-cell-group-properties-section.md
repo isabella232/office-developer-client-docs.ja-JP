@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251623
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e6d72529-aa03-e94b-130c-79ed04336299
 description: グループ図形とそのメンバーの表示方法を指定します。
-ms.openlocfilehash: a49d7a38eac75a2845de0ca3ad22f7cbf79a63df
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 22989d22d0e8792e609027662750c4e9f9da73fa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413186"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590339"
 ---
 # <a name="displaymode-cell-group-properties-section"></a>[DisplayMode] セル ([Group Properties] セクション)
 

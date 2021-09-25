@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 90a51150-5c2c-4d5b-8717-5dacc8532744
 description: このトピックでは、メール クライアントが PidTagAttachDataBinary プロパティにアクセスして POP3 アカウントのメッセージダウンロード履歴を取得する方法について説明します。
-ms.openlocfilehash: ae12a044098aa4f42e1c2e5936e82da3d7a128dd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 95ff3c3970efbaf31f27f245fe433b8a779ba088
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321876"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580322"
 ---
 # <a name="locating-the-message-download-history-for-a-pop3-account"></a>POP3 アカウントのメッセージ ダウンロード履歴の検索
 
@@ -41,7 +41,7 @@ Outlook の post Office プロトコル (POP) プロバイダーを使用する�
 |[MAPI 隠しフォルダー](https://msdn.microsoft.com/library/8b3b9c80-f7f4-4f37-bd6b-323469d020f1%28Office.15%29.aspx) <br/> |MAPI を使用すると、メール クライアントは非表示のフォルダーと非表示のメッセージに情報を格納できます。 非表示のフォルダーは、MAPI フォルダーの関連付けられた部分に含まれています。通常、ユーザーが操作する情報ではなく、表示されない情報が含まれます。 クライアントは、非表示のメッセージを非表示フォルダーに格納する形式とコンテンツを決定します。  <br/> |
 |[MAPI メッセージ](https://msdn.microsoft.com/library/417c113f-bd98-4515-85d1-09db7fc3a227%28Office.15%29.aspx) <br/> |MAPI は、クライアントのユーザーに表示される標準 IPM サブツリー、またはサブツリーの外部に表示され、ユーザーには表示されないフォルダーにメッセージを格納します。 メッセージには、ファイル、別のメッセージ、または OLE オブジェクトの形式で、添付ファイルに追加のデータを格納できます。 メッセージのダウンロード履歴の場合、履歴は、別の非表示メッセージに添付されているメッセージのプロパティに格納されます。  <br/> |
 |[メッセージ のプロパティの概要](https://msdn.microsoft.com/library/447f54de-9f0d-4f73-89b6-bed9cfea9c15%28Office.15%29.aspx) <br/> |クライアントがメッセージに情報を格納すると、実際にはメッセージのプロパティに情報が格納されます。 MAPI では、多くのプロパティがサポートされています。一部は常に存在し、クライアントによって設定できます。他のプロパティはオプションです。また、クライアントはそれらを使用可能にしたり、有効な値に設定したりすることはできません。 メッセージのダウンロード履歴は、非表示のメッセージへの添付ファイル **の PidTagAttachDataBinary** プロパティに格納されます。  <br/> |
-|[MAPI プロファイル](https://msdn.microsoft.com/library/493c87a4-317d-47ec-850b-342cac59594b%28Office.15%29.aspx) <br/> |セッションのログオン時に、メール クライアントは、使用するプロバイダーとサービスを説明するプロファイルを選択します。 プロファイルは、プロパティを含むセクションに分かれています。 特に [、PidTagSearchKey](https://msdn.microsoft.com/library/fcab369a-a1f4-4425-a272-e35046914a4d%28Office.15%29.aspx) **(** PR_SEARCH_KEY ) および [PidTagProfileName](https://msdn.microsoft.com/library/13ca726d-ae7a-4da9-9c8e-3db3c479f839%28Office.15%29.aspx) ( PR_PROFILE_NAME ) プロパティ **は** 常に存在します。 プロファイルの検索キーは、すべてのプロファイル間で一意であり、MAPIGUID で定義されている MUID_PROFILE_INSTANCE によって識別 **される** プロファイル セクションに格納されます。H)。 [IMAPISession::OpenProfileSection](https://msdn.microsoft.com/library/e2757028-27e7-4fc0-9674-e8e30737ef1d%28Office.15%29.aspx)を使用してセクションを開き[、IMAPIProp::GetProps](https://msdn.microsoft.com/library/1c7a9cd2-d765-4218-9aee-52df1a2aae6c%28Office.15%29.aspx)を使用してプロパティ値を取得します。  <br/> |
+|[MAPI プロファイル](https://msdn.microsoft.com/library/493c87a4-317d-47ec-850b-342cac59594b%28Office.15%29.aspx) <br/> |セッションのログオン時に、メール クライアントは、使用するプロバイダーとサービスを説明するプロファイルを選択します。 プロファイルは、プロパティを含むセクションに分かれています。 特に [、PidTagSearchKey](https://msdn.microsoft.com/library/fcab369a-a1f4-4425-a272-e35046914a4d%28Office.15%29.aspx) **(** PR_SEARCH_KEY ) および [PidTagProfileName](https://msdn.microsoft.com/library/13ca726d-ae7a-4da9-9c8e-3db3c479f839%28Office.15%29.aspx) ( PR_PROFILE_NAME ) プロパティ **は** 常に存在します。 プロファイルの検索キーは、すべてのプロファイル間で一意であり、MAPIGUID で定義されている MUID_PROFILE_INSTANCE によって識別 **される** プロファイル セクションに格納されます。H). [IMAPISession::OpenProfileSection](https://msdn.microsoft.com/library/e2757028-27e7-4fc0-9674-e8e30737ef1d%28Office.15%29.aspx)を使用してセクションを開き[、IMAPIProp::GetProps](https://msdn.microsoft.com/library/1c7a9cd2-d765-4218-9aee-52df1a2aae6c%28Office.15%29.aspx)を使用してプロパティ値を取得します。  <br/> |
 |[コンテンツ テーブル](https://msdn.microsoft.com/library/7b8efb4e-b5be-41b8-81bb-9aa1da421433%28Office.15%29.aspx) <br/> |メッセージ ストア プロバイダーは、フォルダーのコンテンツ テーブルを実装します。 フォルダーの関連付けられた部分の非表示メッセージの場合、メッセージ ストア プロバイダーは関連付けられたコンテンツ テーブルをサポートし、クライアントは [IMAPIContainer::GetContentsTable](https://msdn.microsoft.com/library/88c7a666-875d-473a-b126-dbbb7009f7d9%28Office.15%29.aspx) メソッドを使用して、関連付けられたコンテンツ テーブルへのポインターを返します。  <br/> |
 |[制限について](https://msdn.microsoft.com/library/e119fa20-08b8-4c8d-93fc-56037220890d%28Office.15%29.aspx) <br/> [制限の種類](https://msdn.microsoft.com/library/0d3bd58b-7100-4117-91ac-27139715c85b%28Office.15%29.aspx) <br/> [制限の作成](https://msdn.microsoft.com/library/12abbd8c-f825-493e-af42-344371d9658e%28Office.15%29.aspx) <br/> [制限コードの例](https://msdn.microsoft.com/library/9b82097c-dbd6-4ba0-a6cb-292301f9402b%28Office.15%29.aspx) <br/> |MAPI では、クライアントは制限を使用してコンテンツ テーブルをフィルター処理し、特定のプロパティが特定の値に設定されているメッセージを表す行を検索できます。 制限は、より特殊な制限構造の共用体を含む [SRestriction](https://msdn.microsoft.com/library/c12b4409-da6f-480b-87af-1e5baea2e8bd%28Office.15%29.aspx) データ構造を使用して定義されます。 [IMAPITable::FindRow](https://msdn.microsoft.com/library/6511368c-9777-497e-9eea-cf390c04b92e%28Office.15%29.aspx)メソッドは、制限を適用し、制限条件に一致するテーブルの最初の行を取得します。  <br/> |
 |[概要 - インデックス作成用のストアの登録](https://msdn.microsoft.com/library/dd2aa06a-96e8-1291-18b5-fc3c40b74e4d%28Office.15%29.aspx) <br/> |[PidTagStoreProvider](https://msdn.microsoft.com/library/6f6cc66f-a08e-4f8e-b33a-d3674319248e%28Office.15%29.aspx) **(** PR_MDB_PROVIDER ) プロパティを使用して、ストア プロバイダーの種類を確認します。 たとえば、ストアが Exchange ストアであるかどうかを確認するには **、PidTagStoreProvider** プロパティは、パブリック ヘッダー ファイル edkmdb.h で定義されている **定数 pbExchangeProviderPrimaryUserGuid** で表される値を返す必要があります。  <br/> |

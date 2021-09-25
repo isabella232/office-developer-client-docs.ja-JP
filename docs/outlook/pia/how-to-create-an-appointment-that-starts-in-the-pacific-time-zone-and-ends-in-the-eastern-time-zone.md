@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb623388(v=office.15)
 ms:contentKeyID: 55119808
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e9a1b9d5f65d8683c08821d4cf0851f599f32030
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: aafc61375f6f752cd5a4e088438138e54c61c44b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349456"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590766"
 ---
 # <a name="create-an-appointment-that-starts-in-the-pacific-time-zone-and-ends-in-the-eastern-time-zone"></a>太平洋タイム ゾーンで開始して東部タイム ゾーンで終了する予定を作成する
 

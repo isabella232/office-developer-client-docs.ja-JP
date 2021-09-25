@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3f0853fc-f9f2-4314-ac55-47fe1e52d019
 description: このトピックでは、ユーザー設定で作成したカスタム アイテムの種類の競合を解決する方法Outlook。
-ms.openlocfilehash: 357dd9182f26c4e9e1e264afdee296859e7b3483
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b134d1fcd48cf1274642798f880af5464b8a8ad0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316948"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580441"
 ---
 # <a name="about-conflict-resolution-for-custom-item-types"></a>ユーザー設定アイテム タイプの競合解決について
 
@@ -57,11 +57,11 @@ ms.locfileid: "32316948"
 |1  <br/> |2003 以降、ユーザーの介入を最小限に抑える一般的OutlookアイテムOutlookです。  <br/> |
 |2  <br/> |メール アイテムに固有の解決。  <br/> |
 |3  <br/> |会議アイテムに固有の解決。  <br/> |
-|4  <br/> |予定アイテムに固有の解決。  <br/> |
+|4   <br/> |予定アイテムに固有の解決。  <br/> |
 |5  <br/> |連絡先アイテムに固有の解決策。  <br/> |
-|6  <br/> |タスク アイテムに固有の解決。  <br/> |
-|7  <br/> |付箋アイテムに固有の解像度。  <br/> |
-|8  <br/> |ジャーナル アイテムに固有の解決。  <br/> |
+|6   <br/> |タスク アイテムに固有の解決。  <br/> |
+|7   <br/> |付箋アイテムに固有の解像度。  <br/> |
+|8   <br/> |ジャーナル アイテムに固有の解決。  <br/> |
    
 アイテム固有の解決スキーム (キー データ 2 ~ 8) のいずれかを指定すると、Outlook はユーザーの介入なしにアイテム固有のフィールド (たとえば、予定アイテムの開始フィールドと終了フィールド) の競合を自動的に解決します。 Outlook が解決によって重要なデータが失われる可能性があると考える場合、Outlook は Conflicts フォルダー内の競合するコピーを保持し、ユーザーは Conflicts フォルダーに移動してこれらのアイテムを手動で再解決し、自動解決を上書きできます。 
   

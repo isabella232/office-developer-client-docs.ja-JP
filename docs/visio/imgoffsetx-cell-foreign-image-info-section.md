@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251308
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c079fb10-4db7-4657-75d2-2fb953c86670
 description: オブジェクトの枠の原点からオブジェクトを水平方向へオフセットする距離を指定します。既定値は 0 です。[トリミング ツール] を使用してオブジェクトをパンすると、この値が変化します。
-ms.openlocfilehash: d9b3e97a07bc1cadc0276905c4199861ab0590ca
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e8b2958f24bb6e8d0f4f48d19e1e412c081070d4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405234"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554622"
 ---
 # <a name="imgoffsetx-cell-foreign-image-info-section"></a>[ImgOffsetX] セル ([Foreign Image Info] セクション)
 

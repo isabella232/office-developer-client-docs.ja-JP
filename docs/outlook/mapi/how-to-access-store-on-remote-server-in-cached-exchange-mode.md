@@ -3,15 +3,15 @@ title: キャッシュ モードの場合、リモート サーバー Outlookス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c6df156-4015-2d0f-26b7-07055a3f7810
 description: '最終更新日: 2012 年 7 月 2 日'
-ms.openlocfilehash: 0d977507f6aff8aa5fbf437b4b718486a71f67dc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b74419367888e6567cadb7f722a455bdddcb9aeb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420732"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580147"
 ---
 # <a name="access-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a>キャッシュ モードの場合、リモート サーバー OutlookストアにExchangeする
  

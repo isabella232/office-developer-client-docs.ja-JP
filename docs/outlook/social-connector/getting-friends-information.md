@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d8a56746-4de4-4f24-af32-e85079c060b8
 description: ソーシャル Outlook (OSC) は、ISocialProvider::GetCapabilities メソッドを呼び出して、ソーシャル ネットワークの OSC プロバイダーの機能を決定します。
-ms.openlocfilehash: 697902631b010afab015e9cfb73fac81ac427d6e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 807a71dbb009a9dd34884c77d6d74c9729a5adc3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428796"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563253"
 ---
 # <a name="getting-friends-information"></a>友だち情報の取得
 

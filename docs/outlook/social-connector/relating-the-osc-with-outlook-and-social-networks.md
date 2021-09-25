@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f33705cc-8add-42be-9d9f-f4e9245d83f5
 description: Outlook ソーシャル コネクタ (OSC) は、同僚、友人、または関連付けられているユーザーの Office 連絡先カードと Outlook ユーザー ウィンドウのアクティビティ、状態、または写真の更新プログラムに表示できます。
-ms.openlocfilehash: 0ee9451e64f12e8ba371c1ba91a1379cff257313
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4193006addd15bdc509fe14cae80c14c107685a1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428012"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555007"
 ---
 # <a name="relating-the-osc-with-outlook-and-social-networks"></a>OSC と Outlook およびソーシャル ネットワークとの関連付け
 

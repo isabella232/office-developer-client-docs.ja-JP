@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagIpmDraftsEntryId
 api_type:
 - HeaderDef
 ms.assetid: 17d64211-6265-41f4-b016-3677d75af966
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: e259c86803147d782469c8d86b23694d8b54e69d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c7ba1d6109b8b96be667b0f177a137eba8e5fc53
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327889"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600030"
 ---
 # <a name="pidtagipmdraftsentryid-canonical-property"></a>PidTagIpmDraftsEntryId 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "32327889"
 |関連するプロパティ:  <br/> |PR_IPM_DRAFTS_ENTRYID  <br/> |
 |識別子:  <br/> |0x36D7  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Folder  <br/> |
+|エリア:  <br/> |フォルダー  <br/> |
    
 ## <a name="remarks"></a>注釈
 

@@ -3,17 +3,17 @@ title: アドレス帳プロバイダーのサンプル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 2ccf1643-5604-4fee-92cc-3d6af00e7f98
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: fa2a447d0757e75c95d7dc3d9b1dd16b8c7a8084
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 66477d096dae5c9243a251d4c592856297d4456d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331109"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580294"
 ---
 # <a name="address-book-provider-sample"></a>アドレス帳プロバイダーのサンプル
 
@@ -69,7 +69,7 @@ ms.locfileid: "32331109"
   
 1. サンプル アドレス帳プロバイダーをダウンロードするには、「MAPI サンプルのダウンロード[Outlookを参照してください](downloading-the-outlook-mapi-samples.md)。
     
-2. MAPI サンプルに保存したフォルダー Outlook探します。 **OutlookMAPISamples- バージョン \< \>** 番号 zip フォルダーを右クリックし、[すべて抽出]**をクリックします**。
+2. MAPI サンプルに保存したフォルダー Outlook探します。 **OutlookMAPISamples- zip フォルダー \<version number\> を右クリック** し、[すべて抽出]**をクリックします**。
     
 3. [ **参照] を** クリックし、サンプルを保存する場所を選択し、[抽出] を **クリックします**。
     

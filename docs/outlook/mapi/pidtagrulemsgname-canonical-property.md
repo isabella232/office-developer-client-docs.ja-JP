@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagRuleMsgName
 api_type:
 - COM
 ms.assetid: eefbcdd4-9841-4742-b976-e85c8e686dda
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: bd47674def00aef5879707d5a37c2ca3c389f386
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 23e3a0ac15dfdb14cbde9f4145e35e834cd38748
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359522"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555070"
 ---
 # <a name="pidtagrulemsgname-canonical-property"></a>PidTagRuleMsgName 標準プロパティ
 

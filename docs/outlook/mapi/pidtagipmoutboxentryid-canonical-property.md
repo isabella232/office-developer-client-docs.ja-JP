@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagIpmOutboxEntryId
 api_type:
 - HeaderDef
 ms.assetid: fa03d819-2621-4990-80ae-4140b83a8a85
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: ec73a456f87b18905c180803d26720ef09254c7e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b6d5aa773dbcabddf01547495c5df6e7826abbc7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405059"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599960"
 ---
 # <a name="pidtagipmoutboxentryid-canonical-property"></a>PidTagIpmOutboxEntryId 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "33405059"
 |関連するプロパティ:  <br/> |PR_IPM_OUTBOX_ENTRYID  <br/> |
 |識別子:  <br/> |0x35E2  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Folder  <br/> |
+|エリア:  <br/> |フォルダー  <br/> |
    
 ## <a name="remarks"></a>注釈
 

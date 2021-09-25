@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIForm.SetViewContext
 api_type:
 - COM
 ms.assetid: a7b10007-42d8-4755-8362-f8ad9a8dad68
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 81d99b2bbe6ef7914a4b7d253a3472026872260d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ae2e03464ec60392d6d8afaf008f6f38d46cf9a6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350947"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580000"
 ---
 # <a name="imapiformsetviewcontext"></a>IMAPIForm::SetViewContext
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm51105
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0ab4044e-2d77-1fbe-ef20-5d029bc064ba
 description: 線の最初の頂点に対して、矢印を付けるか、または別の書式の端点を適用するかを指定します。0 ～ 45 の数値を入力するか、またはユーザーが設定した線の端点名を使用して USE 関数を入力します。[線] ダイアログ ボックスを使用することもできます。
-ms.openlocfilehash: cf5a512dabd0e6296b83fa7bfd2a2a6134143d50
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9ad6aa363e54f9c11b6f5c9fc9b38ab52d6cb7a9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410295"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554923"
 ---
 # <a name="beginarrow-cell-line-format-section"></a>[BeginArrow] セル ([Line Format] セクション)
 

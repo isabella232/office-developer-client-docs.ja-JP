@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - msxml 相互運用機能 [infopath 2007],InfoPath 2007,XML プライマリ相互運用機能アセンブリ,InfoPath XML 相互運用機能アセンブリ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fb28659b-8a71-4f43-9121-2c748fb2c5e1
 description: InfoPath XML 相互運用機能アセンブリは、マネージ コードと、InfoPath を自動化する外部のアプリケーションからの Microsoft XML Core Services (MSXML) が公開する COM サーバーとの間の相互運用性をサポートするために提供されます。
-ms.openlocfilehash: 8d47fb58c5133fa14ac78aa8fb29278b70c26abb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: bae183892569652a41e62b302518fb43b933a370
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303781"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572348"
 ---
 # <a name="about-the-infopath-xml-interop-assembly"></a>InfoPath XML 相互運用機能アセンブリについて
 

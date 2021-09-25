@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff424478(v=office.15)
 ms:contentKeyID: 55119923
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 07b0ba7a1d488dc1c7e1fcf0e9ae487b04b88755
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 03dfddac8190d6ce209ec29346a101a5cf9549ed
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335372"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590647"
 ---
 # <a name="use-instant-search-to-search-all-folders-and-all-stores-for-a-phrase-in-the-subject"></a>クイック検索を使用して、すべてのフォルダーとすべてのストアから件名の特定の語句を検索する
 

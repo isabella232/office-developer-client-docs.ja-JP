@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidFax2EmailType
 api_type:
 - COM
 ms.assetid: db8c3014-fa17-4b76-8a76-e352a0be8233
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 24aad8ede7ef52162ce977b20fc1981b31548352
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 529c3defaee2a61dc2b3dc94fb4e54c458df9cba
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331767"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600674"
 ---
 # <a name="pidlidfax2emailtype-canonical-property"></a>PidLidFax2EmailType 標準プロパティ
 

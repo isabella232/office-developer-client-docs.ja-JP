@@ -3,17 +3,17 @@ title: MAPI 文字列のプロパティ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 63d7360a-e3a3-4365-9d46-50df1c715bde
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 9720b649eadecc73d84d98926674a1786796ba70
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c6a8594e0849a500146842254feb95ee6ffc2c27
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431394"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600800"
 ---
 # <a name="mapi-string-properties"></a>MAPI 文字列のプロパティ
 

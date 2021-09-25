@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagCommonViewsEntryId
 api_type:
 - HeaderDef
 ms.assetid: cd9e6a46-2112-4663-891e-5e57b22c0950
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: e22b8905901f16606614ac918896f3afe0093752
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d4d4de75d6d001584ea5cd6d833dc85f12913081
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437344"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600401"
 ---
 # <a name="pidtagcommonviewsentryid-canonical-property"></a>PidTagCommonViewsEntryId 標準プロパティ
 

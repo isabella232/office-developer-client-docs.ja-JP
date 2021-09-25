@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d83e39f0-b259-4c33-8f3e-e03e94c2403d
 description: このトピックは、 OneNote 2013では、[クイック ファイリング] ダイアログ ボックスをプログラムでカスタマイズするのに使用できるインターフェイスについて説明します。
-ms.openlocfilehash: dd6b28ae6cb2acb007bae26ea661facaf1f8d4be
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c820765f1a4a19c4576ac8e6ed0bbf6cc140f1dc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425338"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572264"
 ---
 # <a name="quick-filing-dialog-box-interfaces-onenote"></a>クイック ファイリング ダイアログ ボックス インタ フェース (OneNote 2013)
 
@@ -24,7 +24,7 @@ ms.locfileid: "33425338"
   
 **図 1。クイック ファイリング] ダイアログ ボックスのカスタマイズなし**
 
-![カスタマイズなしの [クイック ファイリング] ダイアログ ボックス カスタマイズ]なしの [クイック ファイリング](media/ON15Con_quick_filing_dialog.jpg "ダイアログ ボックス")
+![カスタマイズされていない [クイック入力] ダイアログ ボックス](media/ON15Con_quick_filing_dialog.jpg "カスタマイズされていない [クイック入力] ダイアログ ボックス")
   
 ユーザー、ダイアログ ボックス内の特定の場所、または、テキスト ボックスに入力することによって、OneNote ツリー構造の検索をすべてのノートブックの階層を移動できます。カスタマイズ可能なダイアログ ボックスの側面には、タイトル、説明、最近の結果のリスト、チェック ボックスのテキストと状態、ツリーの深さ、ボタン、および選択可能な場所の種類が含まれます。
 
@@ -50,7 +50,7 @@ ms.locfileid: "33425338"
 |**SelectedItem** <br/> |string  <br/> |ダイアログ ボックスを閉じたときに、ユーザーが選択した OneNote の場所のオブジェクト ID を取得します。オブジェクトが設定されている場合は、ユーザーが **[キャンセル**] ボタンをクリックすると、null にします。 <br/> |
 |**PressedButton** <br/> |ulong  <br/> |ダイアログ ボックスが閉じるときにクリックしてされたボタンを取得します。 **[キャンセル**] ボタンがクリックしてされた場合は、このプロパティは-1 を返します。他のすべてのボタンがダイアログ ボックスに追加のボタンごとに 1 ずつインクリメントされます、0 から整数値が割り当てられます。既定の **[ok]** ボタンの整数の値は 0 です。 <br/> |
    
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>Methods
 
 **SetRecentResults**
 
@@ -197,7 +197,7 @@ ms.locfileid: "33425338"
   
 このインターフェイスを継承するクラスを定義するのには。
   
-### <a name="methods"></a>メソッド
+### <a name="methods"></a>Methods
 
 次のセクションは以前詳細なインターフェイスに関連付けられたメソッドについて説明します。
   

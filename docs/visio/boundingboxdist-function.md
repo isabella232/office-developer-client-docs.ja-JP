@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8a2490f2-48c4-5df3-a3b3-40e8e0c80479
 description: 図形の境界ボックスの、指定した部分の測定値を返します。
-ms.openlocfilehash: a62d5b82c310e7b99e16b70982b75a68172b7fd8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7a3da5917f38596ff3d277fc01d145752b6bda32
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428278"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554818"
 ---
 # <a name="boundingboxdist-function"></a>BOUNDINGBOXDIST 関数
 
@@ -47,9 +47,9 @@ BOUNDINGBOXDIST(** *Index* ** )
 |Height  <br/> |1  <br/> |
 |左端から図形のピンまでの距離  <br/> |2  <br/> |
 |図形のピンから右端までの距離  <br/> |3  <br/> |
-|図形のピンから上端までの距離  <br/> |4  <br/> |
+|図形のピンから上端までの距離  <br/> |4   <br/> |
 |下端から図形のピンまでの距離  <br/> |5  <br/> |
-|境界ボックスの中心から PinX までの距離  <br/> |6  <br/> |
-|境界ボックスの中心から PinY までの距離  <br/> |7  <br/> |
+|境界ボックスの中心から PinX までの距離  <br/> |6   <br/> |
+|境界ボックスの中心から PinY までの距離  <br/> |7   <br/> |
    
 

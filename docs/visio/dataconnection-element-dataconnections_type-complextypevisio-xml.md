@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6aab8be3-b236-029b-1df3-b6860d4f4586
 description: 1 つ以上の DataRecordset 要素と XML 以外のデータ ソースとの間の通信を抽象化します。
-ms.openlocfilehash: 619f3b4e3d9c93831cc23bc38fba3670107b2b51
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: c37c1076444febdc292fa91933b31f56413bc19e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538404"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563092"
 ---
 # <a name="dataconnection-element-dataconnections_type-complextype-visio-xml"></a>DataConnection 要素 (DataConnections_Type complexType) (Visio XML)
 
