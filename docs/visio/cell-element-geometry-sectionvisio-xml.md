@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 82dcad38-d5fa-4892-91d9-1f3f25f1e600
 description: '[図形座標] セクションを構成する線や円弧に関する、書式設定および動作プロパティを決定するプロパティを定義します。'
-ms.openlocfilehash: 93cc7e204d97a813fea2db4b84c36dedf19cf5f2
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 838b7f20eab82718c2f8df21ae0b0037e76961db
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539808"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628704"
 ---
 # <a name="cell-element-geometry-section-visio-xml"></a>Cell 要素 (Geometry セクション) (Visio XML)
 

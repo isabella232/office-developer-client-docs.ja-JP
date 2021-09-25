@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248930(v=office.15)
 ms:contentKeyID: 48543457
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0a520ae6a2480bec2220cc590c90058739737339
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 73309f2c310776807a8506da3c201cd6a8737215
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288568"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589345"
 ---
 # <a name="nextrecordset-method-example-vj"></a>NextRecordset メソッドの使用例 (VJ++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、3 つの別個の [SELECT](nextrecordset-method-ado.md) ステートメントから成る複合コマンド ステートメントを使用するレコードセット内のデータを、 **NextRecordset** メソッドを使用して表示します。
 

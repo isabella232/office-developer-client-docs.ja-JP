@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidNameSubject
 api_type:
 - COM
 ms.assetid: d7bae17b-f1f3-4a29-bfa6-0a0658234eec
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 805dad5b86acd3a07742e4a5f6c9fda34f0781fe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7bd2ff20daf757631274adc9994bc1f1fc92b3df
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314967"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609979"
 ---
 # <a name="pidnamesubject-canonical-property"></a>PidNameSubject 標準プロパティ
 
@@ -31,7 +31,7 @@ ms.locfileid: "32314967"
 |:-----|:-----|
 |分名:  <br/> |なし  <br/> |
 |プロパティ セット:  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|プロパティ名:  <br/> |Subject  <br/> |
+|プロパティ名:  <br/> |件名  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
 |エリア:  <br/> |共通  <br/> |
    

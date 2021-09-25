@@ -6,22 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248792(v=office.15)
 ms:contentKeyID: 48542966
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: bfc9ef5229fe230ad0c83ebde7a887e0fac0c233
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d5e9782fa9ff94c8fe40f10ed4a73aa1362d5c03
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308492"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568363"
 ---
 # <a name="stayinsync-property-ado"></a>StayInSync プロパティ (ADO)
 
 
 **適用先:** Access 2013、Office 2013
 
-親の行の位置が変更されたときに、基になる子のレコード (つまり、*チャプター*) への参照を変更するかどうかを、階層[Recordset](recordset-object-ado.md)オブジェクト内に示します。
+階層的な [Recordset](recordset-object-ado.md) オブジェクトで、親行の位置が変更された場合に基になる子レコード (つまり *チャプター)* への参照が変更されるかどうかを示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
 ブール型 (**Boolean**) の値を設定または取得します。既定値は **True** です。**True** の場合は、親の **Recordset** オブジェクトの行位置が変更されるとチャプターが更新されます。**False** の場合は、親の **Recordset** オブジェクトの行位置が変更されても、チャプターは以前のチャプターのデータを参照し続けます。
 

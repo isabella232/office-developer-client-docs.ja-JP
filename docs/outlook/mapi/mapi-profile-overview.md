@@ -3,17 +3,17 @@ title: MAPI プロファイルの概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: d6c57be6-2397-4ab1-a912-028454dffc44
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: e196800b717ce2528da4b9871bad7425f3a2c326
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 2353b8e5da09f57607e10d65efb032a0b6f530c0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328167"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610224"
 ---
 # <a name="mapi-profile-overview"></a>MAPI プロファイルの概要
 

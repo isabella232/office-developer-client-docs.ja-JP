@@ -1,5 +1,5 @@
 ---
-title: ConflictTable プロパティ (DAO)
+title: TableDef.ConflictTable プロパティ (DAO)
 TOCTitle: ConflictTable Property
 ms:assetid: 0db8b975-eb6d-19c6-cfb7-6ce01230ebe4
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845218(v=office.15)
@@ -10,26 +10,26 @@ f1_keywords:
 - dao360.chm1053356
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 0189a5163dd5e225ad34841264cf84e85785d7fb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 81a28d566abf4225bbb7560cdba11639451f8a16
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308429"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589009"
 ---
-# <a name="tabledefconflicttable-property-dao"></a>ConflictTable プロパティ (DAO)
+# <a name="tabledefconflicttable-property-dao"></a>TableDef.ConflictTable プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 2 つのレプリカの同期中に競合したデータベース レコードを含む競合テーブルの名前を取得します (Microsoft Access ワークスペースのみ)。値の取得のみ可能です。文字列型 ( **String** ) の値を使用します。  
 
 ## <a name="syntax"></a>構文
 
-*式*。ConflictTable
+*式* .ConflictTable
 
-*式***TableDef**オブジェクトを返すオブジェクト式を指定します。
+*式* TableDef オブジェクトを **返す式** 。
 
 ## <a name="remarks"></a>注釈
 
@@ -41,5 +41,5 @@ ms.locfileid: "32308429"
 
 同期メカニズムは、変更が正常に行われたらテーブルに配置されたはずの情報を含む競合テーブルを作成することで、レコードの競合を処理します。これらの競合テーブルを調べ、1 行ずつ作業し、適切になるように修正します。
 
-すべての競合テーブルはテーブル\_の名前が競合しています。 table はテーブルの元の名前で、テーブル名の最大長に切り詰められます。
+すべての競合テーブルは、テーブルの競合という名前で、テーブルはテーブルの元の名前で、最大テーブル名の長 \_ さに切り捨てられて表示されます。
 

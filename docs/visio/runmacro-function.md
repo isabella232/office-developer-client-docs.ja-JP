@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1033809
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 86b0f071-5e0b-56de-ff5b-63c114ad823a
 description: Microsoft Visual Basic for Applications (VBA) プロジェクトでマクロを呼び出します。
-ms.openlocfilehash: 77045bd67fe9be9aab14e73199b33b93c6d70c2c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b3d84f672913841d609320a3af7e3b9734291117
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428089"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598186"
 ---
 # <a name="runmacro-function"></a>RUNMACRO 関数
 
@@ -29,7 +29,7 @@ RUNMACRO (** *macroname* ** [, **** projname_opt ** ])
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _macroname_ <br/> |必須  <br/> |**String** <br/> |呼び出すマクロの名前を指定します。  <br/> |
-| _projname_opt_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> | マクロが含まれるプロジェクトを指定します。  <br/> |
+| _projname_opt_ <br/> |省略可能  <br/> |**String** <br/> | マクロが含まれるプロジェクトを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

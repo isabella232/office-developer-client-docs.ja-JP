@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 keywords:
 - known issues [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3dfecc0b-a91c-448e-8721-5d3486b625fa
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 34784f6895386efe7e6c3ca7ec213c7d71931058
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.openlocfilehash: d44a006802bfbb2e86d04e672253c1ad26a71b1d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304005"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568174"
 ---
 # <a name="known-issues-in-excel-xll-development"></a>Excel アドイン (XLL) 開発における既知の問題
 
@@ -24,7 +24,7 @@ ms.locfileid: "32304005"
   
 ## <a name="unregistering-xll-commands-and-functions"></a>XLL のコマンドおよび関数を登録解除する
 
-XLL で関数やコマンドを登録すると、Excel 上で新しいリソース名が作成され、そのリソース名を持つ DLL 関数の参照と関連付けられます。このリソース名は、[xlfRegister](xlfregister-form-1.md) 関数の 4 番目の引数である *pxFunctionText* から取得されます。このリソース名は、ワークシート名を管理するための通常のダイアログ ボックスには表示されません。関数やコマンドを登録解除するには、[xlfSetName](xlfsetname.md) 関数を使用してリソース名を削除する必要があります。この際、リソース名を渡しますが、定義は渡しません。ただし、バグがあると、この関数ウィザードの一覧からリソース名を削除することができません。 
+When an XLL registers a function or command, Excel creates a new name for the resource and associates a reference to the DLL function with that name. The name is taken from the fourth argument,  *pxFunctionText*  , of the [xlfRegister](xlfregister-form-1.md) function. This name is hidden from the normal dialog boxes for managing worksheet names. To unregister a function or command, you must delete the name by using the [xlfSetName](xlfsetname.md) function, passing the name but not passing a definition. However, a bug prevents this from removing the name from the Function Wizard lists. 
   
 ## <a name="argument-description-string-truncation-in-the-function-wizard"></a>関数ウィザードにおける引数の説明文字列の切り捨て
 
@@ -36,7 +36,7 @@ XLL で関数やコマンドを登録すると、Excel 上で新しいリソー�
   
 ## <a name="xlset-and-workbooks-with-array-formulas"></a>xlSet と配列数式を含むワークブック
 
-Excel 2003 以前のバージョンにおいて、作業中ではないワークシートの範囲に値を割り当てようとすると、[xlSet 関数](xlset.md) はエラーになり、作業中のシート上の同等範囲に配列数式が入ります。この場合、「配列の一部を変更できません」というメッセージが表示されます。この問題は、Excel 2007 で修正されました。 
+In Excel 2003 and earlier versions, the [xlSet function](xlset.md) fails if you try to assign values to a range on a worksheet that is not the active worksheet, where the equivalent range on the active sheet contains an array formula. In this case, Excel displays the message "You cannot change part of an array." This was fixed in Excel 2007. 
   
 ## <a name="circular-references-are-tolerated-in-data-tables"></a>データ テーブルで循環参照が可能
 

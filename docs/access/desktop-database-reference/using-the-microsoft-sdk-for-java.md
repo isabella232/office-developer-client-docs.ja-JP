@@ -6,24 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249116(v=office.15)
 ms:contentKeyID: 48544152
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d297d019602cef7b6fbc4f5b0125b87ef642213f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 03916c546d76fd9317729ea1a316d14cbabdbe3d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32305996"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588883"
 ---
 # <a name="using-the-microsoft-sdk-for-java"></a>Microsoft SDK for Java の使用
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 Microsoft SDK for Java は、Microsoft Internet Explorer 環境用の開発キットです。JDK 1.1 および Microsoft Win32 仮想マシン (Microsoft VM) に基づく Java プログラムやアプレットの開発に役立つツール、情報、およびサンプルが提供されています。Microsoft SDK for Java は、Microsoft Visual J++ には含まれていません。
 
 Jactivex.exe ユーティリティは、タイプ ライブラリからクラスを生成しますが、コマンド ラインからのみ実行できます。この機能は、Visual J++ 開発環境には統合されていません。[Java Type Library ウィザード](using-the-java-type-library-wizard.md)で生成されるクラスと異なり、SDK で作成されるクラス ラッパーにステップ インすることができます。そのため、コードでの ADO ラッパー クラスの使用方法をデバッグするときに便利です。
 
-この機能は、ADO タイプ ライブラリを読み取り、アプリケーション内でインスタンス化できるクラスを生成します。 これらのクラスは、次の場所に\\ \<生成さ\>\\れ\\ます。\\windows ディレクトリ Java trustlib msado15.dll。
+この機能は、ADO タイプ ライブラリを読み取り、アプリケーション内でインスタンス化できるクラスを生成します。 これらのクラスは \\ \<windows directory\> \\ \\ 、trustlib \\ msado15 という場所Java生成します。
 
 Microsoft SDK for Java を使用して ADO アプリケーションを Java で作成する方法は、ソース コードから見ると、Java Type Library ウィザードを使用する方法と基本的に同じです。コード例については、「[ADO Java クラス ラッパー](ado-java-class-wrappers.md)」を参照してください。以下の手順で示すように、唯一の大きな違いは、最初にラッパー クラスを生成する方法です。
 
@@ -43,5 +43,5 @@ Microsoft SDK for Java を使用して ADO アプリケーションを Java で�
     jvc /g:t c:\<windows>\Java\trustlib\msado15\*.Java 
     ```
 
-3.  To use these files, open your project in Visual J++. From the **Project** menu, choose **Add To Project**. [**ファイル**] を選択し、すべてのを追加します。trustlib\\msado15.dll directory でプロジェクトに生成された JAVA ファイル。
+3.  To use these files, open your project in Visual J++. From the **Project** menu, choose **Add To Project**. [ファイル **] を** 選択し、すべてのファイルを追加します。プロジェクトの trustlib \\ msado15 ディレクトリで生成された JAVA ファイル。
 

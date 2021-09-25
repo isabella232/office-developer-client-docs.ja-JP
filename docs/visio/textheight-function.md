@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251504
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5a10892f-c8fa-c127-2f5a-564009ce5411
 description: テキスト行が最大幅を超えない図形の構成されたテキストの高さを返します。
-ms.openlocfilehash: 7455f58f14f9a4a0ae1fcd5375dba5d5860d3852
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2d6425aa3003ccee3cd5441f7408074256acf8b4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427410"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597878"
 ---
 # <a name="textheight-function"></a>TEXTHEIGHT 関数
 
@@ -29,7 +29,7 @@ TEXTHEIGHT(** *shapename!TheText* ** *** [,maximumwidth]* ** )
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _shapename!theText_ <br/> |必須  <br/> |**String** <br/> |ターゲットとなる図形の [TheText] セルに対する参照を指定します。  _shapename!_ は、テキストを取得する図形の名前です。  <br/> |
-| _maximumwidth_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |テキスト ブロックの最大幅を指定します。  <br/> |
+| _maximumwidth_ <br/> |オプション  <br/> |**数値型 (Numeric)** <br/> |テキスト ブロックの最大幅を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

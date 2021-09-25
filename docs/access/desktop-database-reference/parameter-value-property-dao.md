@@ -1,30 +1,30 @@
 ---
-title: パラメーター Value プロパティ (DAO)
+title: Parameter.Value プロパティ (DAO)
 TOCTitle: Value Property
 ms:assetid: 7058f3cd-9102-c711-bc83-b1565a8b001c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195733(v=office.15)
 ms:contentKeyID: 48545556
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d4e7f3976b934c407a038f321953259fd63a6f60
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4663a9dcdc31107e674cfe0e039e37240a81b0eb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287992"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568748"
 ---
-# <a name="parametervalue-property-dao"></a>パラメーター Value プロパティ (DAO)
+# <a name="parametervalue-property-dao"></a>Parameter.Value プロパティ (DAO)
 
 **適用先:** Access 2013、Office 2013
 
-オブジェクトの値を設定または取得します。 値の取得と設定が可能なバリアント型 (**Variant**) の値です。
+オブジェクトの値を設定します。値の取得および設定が可能です。バリアント型 ( **Variant**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。金額
+*式* .値
 
-*式***Parameter**オブジェクトを表す変数を指定します。
+*式* Parameter オブジェクトを表 **す変数** 。
 
 ## <a name="remarks"></a>注釈
 

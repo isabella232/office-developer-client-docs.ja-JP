@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3e29af0d-4183-41d1-8b0f-96450089f882
 description: 図形の上端のベベルの種類を指定します。
-ms.openlocfilehash: 225600a3e39ec58622bcd8597e1115a52cb62a3f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 316cd207dcb48bed3d51cded8afccc312117ae7e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421495"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628802"
 ---
 # <a name="beveltoptype-cell-bevel-properties-section"></a>[BevelTopType] セル ([ベベルのプロパティ] セクション)
 
@@ -24,12 +24,12 @@ ms.locfileid: "33421495"
 |1  <br/> |円ベベル  <br/> |
 |2  <br/> |額縁風ベベル  <br/> |
 |3  <br/> |クロス ベベル  <br/> |
-|4  <br/> |クール スラント ベベル  <br/> |
+|4   <br/> |クール スラント ベベル  <br/> |
 |5  <br/> |アングル ベベル  <br/> |
-|6  <br/> |ソフト ラウンド ベベル  <br/> |
-|7  <br/> |凸面ベベル  <br/> |
-|8  <br/> |スロープ ベベル  <br/> |
-|9  <br/> |切り込みベベル  <br/> |
+|6   <br/> |ソフト ラウンド ベベル  <br/> |
+|7   <br/> |凸面ベベル  <br/> |
+|8   <br/> |スロープ ベベル  <br/> |
+|9   <br/> |切り込みベベル  <br/> |
 |10  <br/> |スケール ベベル  <br/> |
 |11  <br/> |ハード エッジ ベベル  <br/> |
 |12   <br/> |アール デコ ベベル  <br/> |

@@ -3,17 +3,17 @@ title: MAPI 戻り値のドキュメント
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: c32ee53c-b063-4a00-a6bf-75ce5e07f56a
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5bbafe9fda479d951bb20175ab904dc6e241226a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8c746b85716af43ac5a65be62d087822a88d5482
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429692"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610196"
 ---
 # <a name="mapi-return-value-documentation"></a>MAPI 戻り値のドキュメント
 

@@ -10,15 +10,15 @@ f1_keywords:
 - VBA
 keywords:
 - vba、プロジェクト オブジェクト モデル、Project、プログラミング性、Project VBA、Visual Basic for Applications、Project オブジェクト モデル、VBA、オブジェクト モデル、VBA、Visual Basic for Applications
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0ad49ff6-8dff-4379-a52c-d292c53c2bc0
 description: Project 2013 デスクトップ クライアント アプリケーション (Project Standard 2013 および Project Professional 2013) は、VBA を使用してマクロを記述することでカスタマイズおよび拡張できます。 2012 Visual Studioを使用して、リボン のユーザー インターフェイスをカスタマイズし、複雑なアドインを作成できます。Officeアドインを使用すると、2013 年の一般的なプラットフォーム上に構築Project作業ウィンドウの新しい機能拡張モデルをOfficeできます。 Project Standard 2013 および Project Professional 2013 では、一般的な Office アドインを実行し、Project 用に特別に開発された作業ウィンドウ アドインを使用して、SharePoint、他の Web サイトや Web アプリケーション、および外部データと統合できます。
-ms.openlocfilehash: cc345f0ff91dfb573dd86c256e89df478edd4924
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 952646dd27310b2fe2e999d87474055a76045c45
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301513"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629019"
 ---
 # <a name="project-client-programming"></a>Project クライアントのプログラミング
 
@@ -33,7 +33,7 @@ Project 2013 デスクトップ クライアント アプリケーション (Pro
   
 Office と SharePoint の作業ウィンドウ アドインおよび他のアドインは、Project Online とオンプレミスの両方のインストールで使用するために、Office ストア (参照) で販売できます。 [https://office.microsoft.com/store/](https://office.microsoft.com/en-us/store/) VBA マクロVSTOアドインは、Office ストアにOfficeできません。これらは、ローカルで使用するために設計され、Project StandardとProject Professional。 VBA マクロは、プロジェクト内で配布できます。MPP ファイル、コンピューターの Global.MPT ファイルにインストールするか、またはサーバー 2013 のエンタープライズ グローバル テンプレートに配布Projectします。 VSTO展開を通じて、より安全にアドインを配布ClickOnce更新が[](https://msdn.microsoft.com/library/t71a733d.aspx)容易になります。 
   
-## <a name="reference"></a>参照
+## <a name="reference"></a>リファレンス
 
 [Project VBA 開発者向けリファレンス](https://msdn.microsoft.com/library/ee861523%28office.15%29.aspx)入門および VBA のヘルプ記事が含まれる。 
   

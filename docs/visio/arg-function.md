@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 781369e1-fade-ec10-7c51-0f921b5c3b76
 description: 呼び出し元のセルがカスタム関数に渡す引数と、呼び出し元のセルが引数の値を渡していない場合にカスタム関数によって返される既定値を指定します。 呼び出し元のセルと一致する argName パラメーターで指定された値を返します。
-ms.openlocfilehash: 3cde7fe55d7bc60d15f32d7ad954443e545af914
-ms.sourcegitcommit: 939bd9686ba41a8f94b82e004ed84b9054d9c7cf
+ms.openlocfilehash: df1e3106eb624064be48bed76201dae6fe40e3cf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48293486"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628858"
 ---
 # <a name="arg-function"></a>ARG 関数
 
@@ -20,7 +20,7 @@ ms.locfileid: "48293486"
   
 ## <a name="syntax"></a>構文
 
-ARG(***argName***,[ ***defaultValue*** ]) 
+ARG(***argName** _,[ _ *_defaultValue_** ]) 
   
 ### <a name="parameters"></a>パラメーター
 

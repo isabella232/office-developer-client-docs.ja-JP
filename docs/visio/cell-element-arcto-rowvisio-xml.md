@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 69f1a0cc-90fe-4b49-653c-bba4a1a2b1b2
 description: 円弧の x 座標、y 座標、または弓形が含まれます。
-ms.openlocfilehash: 6d744366cda7db0f3950ed0962c7ba5bd01b8e36
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 1fd5bd3bb74c1c4b387e8fede3a576f2d816696d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538824"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628718"
 ---
 # <a name="cell-element-arcto-row-visio-xml"></a>Cell 要素 (ArcTo Row) (Visio XML)
 

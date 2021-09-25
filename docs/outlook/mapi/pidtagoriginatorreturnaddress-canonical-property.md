@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagOriginatorReturnAddress
 api_type:
 - COM
 ms.assetid: 1884d83a-826e-494a-a643-c58fa9bdf812
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 49705c3c56c1268b03e09b9a95a9aa86adb2e16a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 80855d9abf1e22381a1c8c216be0760cff845b9e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406830"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619807"
 ---
 # <a name="pidtagoriginatorreturnaddress-canonical-property"></a>PidTagOriginatorReturnAddress 標準プロパティ
 

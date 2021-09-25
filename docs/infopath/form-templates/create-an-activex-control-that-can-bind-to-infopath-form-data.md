@@ -3,15 +3,15 @@ title: InfoPath フォームのデータにバインドできる ActiveX コン�
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a0d62047-bf08-9f70-de00-7f81ef1331f1
 description: InfoPath エディターで開くように設計された InfoPath フォームの中で、ActiveX コントロールをホストできます。これらのコントロールは、既存のもの (いくつかの制約があります) を利用するか、または InfoPath 用に特別に作成できます。
-ms.openlocfilehash: 70ac6a16b305403ffa99d8fe840a165913642f57
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8a5d19da95e9342182760256891e5701b2ab8a41
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300190"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568160"
 ---
 # <a name="create-an-activex-control-that-can-bind-to-infopath-form-data"></a>InfoPath フォームのデータにバインドできる ActiveX コントロールを作成する
 

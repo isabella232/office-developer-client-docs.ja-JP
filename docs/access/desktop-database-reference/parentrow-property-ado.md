@@ -1,20 +1,20 @@
 ---
-title: parentrow プロパティ (ADO)
+title: ParentRow プロパティ (ADO)
 TOCTitle: ParentRow property (ADO)
 ms:assetid: c7520353-9428-9c8f-9d21-ff42e30e1193
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249971(v=office.15)
 ms:contentKeyID: 48547638
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2844f7c93164c4b384a895cd32a13bd682154ce3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 372ae0fb41887a3b4bf7203070530d9e00215ccb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287739"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568671"
 ---
-# <a name="parentrow-property-ado"></a>parentrow プロパティ (ADO)
+# <a name="parentrow-property-ado"></a>ParentRow プロパティ (ADO)
 
 **適用先:** Access 2013、Office 2013
 
@@ -24,17 +24,17 @@ OLE DB **Row** オブジェクトのコンテナーを **ADORecordConstruction**
 
 ## <a name="syntax"></a>構文
 
-HRESULT put\_parentrow (\[\] IUnknown\* pparent)。
+HRESULT は \_ ParentRow( in \[ \] IUnknown \* pParent) を置く。
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
-|*pparent* |行のコンテナー。|
+|*pParent* |行のコンテナー。|
 
 ## <a name="return-values"></a>戻り値
 
-このプロパティメソッドは、S\_OK および E\_FAIL を含む標準の HRESULT 値を返します。
+このプロパティ メソッドは、標準の HRESULT 値 (S \_ OK、E FAIL など) を返 \_ します。
 
 ## <a name="applies-to"></a>適用対象
 

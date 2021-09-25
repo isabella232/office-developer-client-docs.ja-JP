@@ -1,7 +1,7 @@
 ---
 title: ActiveX データ オブジェクトを使う
 TOCTitle: Use ActiveX Data Objects
-description: Microsoft access では、Visual Basic を使用して access データベースとその関連データを作成、保守、および管理するための3つのオブジェクトモデルを使用できます。
+description: Microsoft Access には、Access データベースとその関連データの作成、管理、管理に使用する 3 つのオブジェクト モデルが用意Visual Basic。
 ms:assetid: 64055c45-7a27-2296-468a-015362898329
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194969(v=office.15)
 ms:contentKeyID: 48545279
@@ -11,31 +11,31 @@ f1_keywords:
 - vbaac10.chm5285627
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 3b530db43a816e66b9fbef254984142aadf0b841
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7f17eb51a0cd1e7dbbafb145d64b2f66716d88f8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32312741"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588939"
 ---
 # <a name="use-activex-data-objects"></a>ActiveX データ オブジェクトを使う
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-Microsoft access では、Visual Basic を使用して access データベースとその関連データを作成、保守、および管理するための3つのオブジェクトモデルを使用できます。
+Microsoft Access には、Access データベースとその関連データの作成、管理、管理に使用する 3 つのオブジェクト モデルが用意Visual Basic。
 
 ## <a name="microsoft-activex-data-objects-ado"></a>ADO (ActiveX データ オブジェクト)
 
 ADO には、指定されたデータソースからレコードを作成、保守、および削除するために必要なオブジェクトが含まれてます。
 
-## <a name="microsoft-ado-ext-for-ddl-and-security-adox"></a>DDL およびセキュリティのための Microsoft ADO ext (ADOX)
+## <a name="microsoft-ado-ext-for-ddl-and-security-adox"></a>Microsoft ADO ext. for DDL and security (ADOX)
 
-ADOX には、セキュリティを管理するために必要なオブジェクトに加えて、新しいデータベースおよびその中に含まれるオブジェクトを作成するために必要なデータ定義言語 (DDL) オブジェクトが用意されています。
+ADOX は、セキュリティを管理するために必要なオブジェクトに加えて、新しいデータベースとその格納されているオブジェクトを作成するために必要なデータ定義言語 (DDL) オブジェクトを提供します。
 
-### <a name="microsoft-jet-and-replication-objects-25-library-jro"></a>Microsoft Jet および Replication オブジェクト2.5 ライブラリ (JRO)
+### <a name="microsoft-jet-and-replication-objects-25-library-jro"></a>Microsoft Jet オブジェクトとレプリケーション オブジェクト 2.5 ライブラリ (JRO)
 
-ADO オブジェクトは Microsoft Jet データベースに加えて多くのデータベースで動作するように設計されているため、jet 固有の機能が JRO ライブラリに分割されています。
+ADO オブジェクトは Microsoft Jet データベースに加えて多くのデータベースで動作するように設計されていたため、Jet 固有の機能が JRO ライブラリに組み込まれています。
 
 次の表は、各機能を DAO と比較したものです。
 
@@ -54,26 +54,26 @@ ADO オブジェクトは Microsoft Jet データベースに加えて多くの�
 <th><p>ADO1</p></th>
 <th><p>ADOX2</p></th>
 <th><p>JRO<br />
-(mdb のみ)</p></th>
+(MDB のみ)</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>レコードセットを作成します。</p></td>
+<td><p>Recordsets を作成します。</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>スタートアッププロパティを編集します。</p></td>
+<td><p>[スタートアップ のプロパティの編集] をクリックします。</p></td>
 <td><p>X</p></td>
-<td><p>X * *</p></td>
+<td><p>X**</p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>ANSI92 SQL. * * * をサポートします。</p></td>
+<td><p>ANSI92 SQL.*** をサポートする</p></td>
 <td><p></p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -90,28 +90,28 @@ ADO オブジェクトは Microsoft Jet データベースに加えて多くの�
 <td><p>新しいデータベースを作成します。</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
-<td><p>エックス</p></td>
+<td><p>X*</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>既存の表のプロパティを編集します。</p></td>
+<td><p>既存のテーブル プロパティを編集します。</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
 <td><p>X</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>テーブルのリレーションシップを作成します。</p></td>
+<td><p>テーブルリレーションシップを作成します。</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
-<td><p>エックス</p></td>
+<td><p>X*</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>セキュリティ設定を編集します。</p></td>
+<td><p>セキュリティ設定の編集。</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
-<td><p>エックス</p></td>
+<td><p>X*</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
@@ -122,17 +122,17 @@ ADO オブジェクトは Microsoft Jet データベースに加えて多くの�
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>保存された基本的な SQL クエリまたはビューを編集します。</p></td>
+<td><p>保存されている基本的なクエリSQLビューを編集します。</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
-<td><p>エックス</p></td>
+<td><p>X*</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>コードでのみアクセス可能なパーマネント クエリの作成</p></td>
 <td><p></p></td>
 <td><p></p></td>
-<td><p>エックス</p></td>
+<td><p>X*</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
@@ -143,28 +143,28 @@ ADO オブジェクトは Microsoft Jet データベースに加えて多くの�
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>データベースの最適化/エンコードを行います。</p></td>
+<td><p>データベースをコンパクト/エンコードします。</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>X4</p></td>
 </tr>
 <tr class="even">
-<td><p>キャッシュを更新します。</p></td>
+<td><p>キャッシュの更新。</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="odd">
-<td><p>データベースをレプリケート可能にします。</p></td>
+<td><p>データベースを複製可能にする。</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>X3</p></td>
 </tr>
 <tr class="even">
-<td><p>データベースのレプリカを作成します。</p></td>
+<td><p>データベース レプリカを作成します。</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -178,21 +178,21 @@ ADO オブジェクトは Microsoft Jet データベースに加えて多くの�
 <td><p>X3</p></td>
 </tr>
 <tr class="even">
-<td><p>データベースのプロパティを編集します。</p></td>
+<td><p>データベース のプロパティを編集します。</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>カスタムデータベースプロパティを作成します。</p></td>
+<td><p>カスタム データベース プロパティを作成します。</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>テーブルの列のプロパティを編集します。</p></td>
+<td><p>テーブル列のプロパティを編集します。</p></td>
 <td><p>X</p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -206,18 +206,18 @@ ADO オブジェクトは Microsoft Jet データベースに加えて多くの�
 
 \*\* Access プロジェクトを操作するときのみ使用できます。
 
-\*\*\*Access データベースエンジンはいくつかの ANSI 92 SQL をサポートしていますが、完全に ANSI92 に準拠しているわけではありません。
+\*\*\*Access データベース エンジンは一部の ANSI 92 SQLサポートしますが、まだ ANSI92 に完全に準拠していません。
 
-1は**Connection**オブジェクトを使用してデータベースを参照します。
+1 Connection オブジェクト **を使用** してデータベースを参照します。
 
-2は、 **Catalog**オブジェクトを使用してデータベースを参照します。
+2 Catalog **オブジェクトを使用** してデータベースを参照します。
 
-3データベースを参照するのには、 **Replica**オブジェクトを使用します。
+3 レプリカ オブジェクト **を使用** してデータベースを参照します。
 
-4 **JetEngine**オブジェクトを使用してデータベースを参照します。
+4 **JetEngine オブジェクトを使用** してデータベースを参照します。
 
 
 > [!NOTE]
-> DAO とは異なり、ADO および ADOX オブジェクトは、Jet 以外のデータベースでマークされたアクションを実行できます。これらのデータベースのプロバイダーがそのアクションをサポートしている場合に限ります。
+> DAO とは異なり、ADO オブジェクトと ADOX オブジェクトは、それらのデータベースのプロバイダーがアクションをサポートしている限り、Jet 以外のデータベースでマークされたアクションを実行できます。
 
 

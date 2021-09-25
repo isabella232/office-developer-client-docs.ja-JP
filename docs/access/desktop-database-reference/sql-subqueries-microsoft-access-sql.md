@@ -12,13 +12,13 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 7beda04d1f18014101f00078de1d125c1fd67a69
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 292522cd40fe66951d9c68671fde90449672a2f6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314568"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589072"
 ---
 # <a name="sql-subqueries-microsoft-access-sql"></a>SQL サブクエリ (Microsoft Access SQL)
 

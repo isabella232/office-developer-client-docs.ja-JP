@@ -10,22 +10,22 @@ f1_keywords:
 - vbaac10.chm198223
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 1e37d72754531fc4dd51427eefb355a057d08073
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3752d0455d51d17108475e767380d2b1f0c2ef5d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306399"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589079"
 ---
 # <a name="startnewworkflow-macro-action"></a>StartNewWorkflow マクロ アクション
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 You can use the **StartNewWorkflow** action to start a new workflow for an item in a linked Microsoft SharePoint Foundation list.
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "StartNewWorkflow/新しいワークフローの開始" アクションの引数は次のとおりです。
 
@@ -43,7 +43,7 @@ You can use the **StartNewWorkflow** action to start a new workflow for an item 
 <tbody>
 <tr class="odd">
 <td><p><strong>Record Number/レコード番号</strong></p></td>
-<td><p>SharePoint Foundation リスト内の項目の位置。リストの最初の項目は<strong>1</strong>で、2番目の項目は<strong>2</strong>になります。 この引数の式を入力することもできます。</p></td>
+<td><p>SharePoint Foundation リスト内のアイテムの位置(リストの最初のアイテムは<strong>1、2</strong>番目のアイテムは<strong>2</strong>など)。 また、この引数の式を入力できます。</p></td>
 </tr>
 </tbody>
 </table>

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 90ace659-d979-43e1-ac64-25af3ec5d666
 description: 図形の影のぼかしのサイズをポイント (0.00 ~ 100.00) で指定します。
-ms.openlocfilehash: ae559cbb183266dbba3ed0e98c98d24db71f3b58
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4d42e4ff1ed5ae3bd1c168f7cb5b6b13ff3c75bc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424988"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598137"
 ---
 # <a name="shapeshdwblur-cell-fill-format-section"></a>[ShapeShdwBlur] セル ([塗りつぶしの書式設定] セクション)
 

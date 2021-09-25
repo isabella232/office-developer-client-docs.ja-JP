@@ -3,17 +3,17 @@ title: MAPI メッセージ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 417c113f-bd98-4515-85d1-09db7fc3a227
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: f1d1895cc6f9e65929781cb0e966873d2bce197c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e6c716595819e4f51d540d88cf528e0ac88313d6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423378"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610294"
 ---
 # <a name="mapi-messages"></a>MAPI メッセージ
 

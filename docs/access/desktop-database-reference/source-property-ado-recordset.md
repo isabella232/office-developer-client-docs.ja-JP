@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249269(v=office.15)
 ms:contentKeyID: 48544843
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 26f41181f1233931f24ff091b3009dfa7a5d6ff3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: aa6ef3bb28fbd9a4c44d45f1e503ab14021c8b9f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306413"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568405"
 ---
 # <a name="source-property-ado-recordset"></a>Source プロパティ (ADO Recordset)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32306413"
 
 [Recordset](recordset-object-ado.md) オブジェクトのデータ ソースを示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
 文字列型 (**String**) の値または [Command](command-object-ado.md) オブジェクトへの参照を設定し、**Recordset** のソースを示す文字列型 (**String**) の値のみを返します。
 

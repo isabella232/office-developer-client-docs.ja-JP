@@ -1,5 +1,5 @@
 ---
-title: QueryDef timeout プロパティ (DAO)
+title: QueryDef.ODBCTimeout プロパティ (DAO)
 TOCTitle: ODBCTimeout Property
 ms:assetid: b251c4fb-64a8-aa95-deed-64425df3e00c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822019(v=office.15)
@@ -10,30 +10,30 @@ f1_keywords:
 - dao360.chm1053052
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 2d34aee30e649b1c25ddc6af8078da2af9dd3b84
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a79f403d49db1137d8b67d2dc7fb27b3ea140fc3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301002"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589240"
 ---
-# <a name="querydefodbctimeout-property-dao"></a>QueryDef timeout プロパティ (DAO)
+# <a name="querydefodbctimeout-property-dao"></a>QueryDef.ODBCTimeout プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ODBC データベースに対して **[QueryDef](querydef-object-dao.md)** を実行したときに、タイムアウト エラーが発生するまでの待ち時間を秒単位で示します。
 
 ## <a name="syntax"></a>構文
 
-*式*。ODBCTimeout
+*式* .ODBCTimeout
 
-*式***QueryDef**オブジェクトを表す変数を取得します。
+*式* **QueryDef** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
-**odbctimeout**プロパティを-1 に設定すると、タイムアウトは既定で、 **QueryDef**を含む**[Connection](connection-object-dao.md)** または**[Database](database-object-dao.md)** オブジェクトのプロパティの現在の設定になります。 **[](database-querytimeout-property-dao.md)** **ODBCTimeout** プロパティを 0 に設定すると、タイムアウト エラーは発生しません。
+**ODBCTimeout** プロパティを -1 に設定すると、既定では **、QueryDef** を含む **[Connection](connection-object-dao.md)** オブジェクトまたは **[Database](database-object-dao.md)** オブジェクトの **[QueryTimeout](database-querytimeout-property-dao.md)** プロパティの現在の設定がタイムアウトになります。 **ODBCTimeout** プロパティを 0 に設定すると、タイムアウト エラーは発生しません。
 
 Microsoft SQL Server などの ODBC データベースを使用している場合、ネットワーク トラフィックや ODBC サーバーに対する負荷の増大のために、遅延が発生することがあります。無限に待機しないように、エラーが返されるまでの待ち時間を指定できます。
 

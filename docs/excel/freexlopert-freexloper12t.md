@@ -9,15 +9,15 @@ f1_keywords:
 - FreeXLOperT
 keywords:
 - freexlopert function [excel 2007],FreeXLOper12T function [Excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8fb3fdfd-8a43-4c50-82ff-e701fed3d83f
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 0b604cbe5cb24ac7d8de28278dfbcf0d4fd92c7d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 182b933585902154d2211ceeaadddb6846938f05
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421523"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568181"
 ---
 # <a name="freexlopertfreexloper12t"></a>FreeXLOperT/FreeXLOper12T
 

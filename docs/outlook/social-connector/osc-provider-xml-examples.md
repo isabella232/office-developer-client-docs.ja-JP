@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 65d0c111-b090-4b1b-a747-44285b7c16b2
 description: このセクションには、Outlook Social Connector (OSC) プロバイダー XML スキーマに準拠した機能、フレンド、activityFeed XML 要素を使用する XML の例が含まれています。
-ms.openlocfilehash: fe8d88d70a8fc593016f4aa6ac5acb0c79fcbf30
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4557d9033fda4c752f15cf18448bd45eb70c3937
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405927"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629053"
 ---
 # <a name="osc-provider-xml-examples"></a>OSC プロバイダーの XML の例
 

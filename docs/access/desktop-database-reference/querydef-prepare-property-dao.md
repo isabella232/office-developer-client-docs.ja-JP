@@ -1,5 +1,5 @@
 ---
-title: Prepare プロパティ (DAO)
+title: QueryDef.Prepare プロパティ (DAO)
 TOCTitle: Prepare Property
 ms:assetid: d5a285c4-bd00-028b-b785-f1890db29bab
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835035(v=office.15)
@@ -10,23 +10,23 @@ f1_keywords:
 - dao360.chm1101187
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: ac05510a218d1cf4cf925acc2ca8908b7bcbcd03
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fa4d794ce0cd75cf373d7e56e6aec9de3361315c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303270"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568629"
 ---
-# <a name="querydefprepare-property-dao"></a>Prepare プロパティ (DAO)
+# <a name="querydefprepare-property-dao"></a>QueryDef.Prepare プロパティ (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*。作る
+*式* .準備
 
-*式***QueryDef**オブジェクトを表す変数を取得します。
+*式* **QueryDef** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
@@ -34,7 +34,7 @@ ms.locfileid: "32303270"
 
 ストアド プロシージャを作成すると初期操作の速度は低下する可能性がありますが、それ以降のクエリに対するすべての参照のパフォーマンスが向上します。ただし、一部のクエリは、ストアド プロシージャの形式で実行できません。これらのクエリに対しては、 **Prepare** プロパティを **dbQUnprepare** に設定する必要があります。
 
-**prepare**が**dbqprepare**に設定されている場合、 **[Execute](querydef-execute-method-dao.md)** メソッドの options 引数を**dbqprepare**に設定して、クエリの実行時にこれをオーバーライドできます。
+Prepare **が** **dbQPrepare** に設定されている場合 **[、Execute](querydef-execute-method-dao.md)** メソッドの options 引数を **dbExecDirect** に設定することで、クエリの実行時に上書きできます。
 
 > [!NOTE]
 > [!メモ] ODBC **SQLPrepare** API は、DAO **[SQL](querydef-sql-property-dao.md)** プロパティを設定した直後に呼び出されます。このため、 **dbQUnprepare** オプションを使用してパフォーマンスを向上させる場合は、 **SQL** プロパティを設定する前に **Prepare** プロパティを設定する必要があります。

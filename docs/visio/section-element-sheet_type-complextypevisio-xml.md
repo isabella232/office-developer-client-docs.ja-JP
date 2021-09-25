@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2e7e5dcc-f667-a08c-caa0-4b81e3126ef9
 description: 関連するプロパティのコレクションを指定します。
-ms.openlocfilehash: 2862d2ccf10d235996c2a6fb26691d498bdfdbcf
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: c2d6fdcb39bd99f3ea6bb564794f068dd98e34cd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539034"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598158"
 ---
 # <a name="section-element-sheet_type-complextype-visio-xml"></a>Section 要素 (Sheet_Type complexType) (Visio XML)
 
@@ -45,7 +45,7 @@ ms.locfileid: "34539034"
 |[DocumentSheet](documentsheet-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSheet_Type](documentsheet_type-complextypevisio-xml.md) <br/> |図面のプロパティを指定します。  <br/> |
 |[PageSheet](pagesheet-element-page_type-complextypevisio-xml.md) <br/> |[PageSheet_Type](pagesheet_type-complextypevisio-xml.md) <br/> |図面内のページのプロパティを指定します。  <br/> |
 |[PageSheet](pagesheet-element-master_type-complextypevisio-xml.md) <br/> |[Master_Type complexType](master_type-complextypevisio-xml.md) <br/> |マスターに関連付けられた図面ページのプロパティを指定します。  <br/> |
-|[図形](shape-element-shapes_type-complextypevisio-xml.md) <br/> |[ShapeSheet_Type](shapesheet_type-complextypevisio-xml.md) <br/> |図形に関連付けられたプロパティのコレクションを指定します。  <br/> |
+|[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |[ShapeSheet_Type](shapesheet_type-complextypevisio-xml.md) <br/> |図形に関連付けられたプロパティのコレクションを指定します。  <br/> |
 |[Sheet](shape-element-shapes_type-complextypevisio-xml.md) <br/> |[Sheet_Type](sheet_type-complextypevisio-xml.md) <br/> |スタイル、図面、図面ページ、図形に関連付けられたプロパティのコレクションを指定します。  <br/> |
 |[StyleSheet](stylesheet-element-stylesheets_type-complextypevisio-xml.md) <br/> |[StyleSheet_Type](stylesheet_type-complextypevisio-xml.md) <br/> |スタイル シートを指定します。  <br/> |
    
@@ -54,7 +54,7 @@ ms.locfileid: "34539034"
 |**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
 |[Cell](cell-elementvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |1 つのプロパティを指定します。  <br/> |
-|[行](https://msdn.microsoft.com/library/c978e3eb-b895-8fb7-e2ba-88c50e57b3db%28Office.15%29.aspx) <br/> |[Row_Type](row_type-complextypevisio-xml.md) <br/> |要素のコレクションを **Cell_Type** します。  <br/> |
+|[Row](https://msdn.microsoft.com/library/c978e3eb-b895-8fb7-e2ba-88c50e57b3db%28Office.15%29.aspx) <br/> |[Row_Type](row_type-complextypevisio-xml.md) <br/> |要素のコレクションを **Cell_Type** します。  <br/> |
    
 ### <a name="attributes"></a>属性
 
@@ -70,13 +70,13 @@ ms.locfileid: "34539034"
   
 |**値**|**説明**|**詳細情報**|
 |:-----|:-----|:-----|
-|Actions  <br/> |数式の評価に使用されるプロパティのコレクション。 この要素には、親 **ShapeSheet_Type** または **PageSheet_Type** する必要があります。  <br/> |[[Actions] セクション](actions-section.md) <br/> |
+|アクション  <br/> |数式の評価に使用されるプロパティのコレクション。 この要素には、親 **ShapeSheet_Type** または **PageSheet_Type** する必要があります。  <br/> |[[Actions] セクション](actions-section.md) <br/> |
 |ActionTag  <br/> |数式の評価にのみ使用されるプロパティのコレクション。 この要素には、親 **ShapeSheet_Type** または **PageSheet_Type** する必要があります。  <br/> |[[操作タグ] セクション](action-tag-section.md) <br/> |
-|Connections  <br/> |数式の評価にのみ使用されるプロパティのコレクション。 この要素には、親 **ShapeSheet_Type** 必要があります。  <br/> ||
+|接続  <br/> |数式の評価にのみ使用されるプロパティのコレクション。 この要素には、親 **ShapeSheet_Type** 必要があります。  <br/> ||
 |コントロール  <br/> |数式の評価にのみ使用されるプロパティのコレクション。 この要素には、親 **ShapeSheet_Type** 必要があります。  <br/> |[[Controls] セクション](controls-section.md) <br/> |
 |Hyperlink  <br/> |図形のハイパーリンクを指定する関連プロパティのコレクション。 この要素には、親 **ShapeSheet_Type** 必要があります。  <br/> |[[Hyperlinks] セクション](hyperlinks-section.md) <br/> |
 |ShapeData  <br/> |図形データを指定する関連プロパティのコレクション。 この要素には、親 **ShapeSheet_Type** 必要があります。  <br/> |[[Shape Data] セクション](shape-data-section.md) <br/> |
-|User  <br/> |数式の評価に使用されるプロパティのコレクション。 この要素には、親DocumentSheet_Type、PageSheet_Type、**またはShapeSheet_Type** する必要があります。  <br/> |[[User-defined Cells] セクション](user-defined-cells-section.md) <br/> |
+|ユーザー  <br/> |数式の評価に使用されるプロパティのコレクション。 この要素には、親DocumentSheet_Type、PageSheet_Type、**またはShapeSheet_Type** する必要があります。  <br/> |[[User-defined Cells] セクション](user-defined-cells-section.md) <br/> |
    
 この **Section 要素** の IX 属性は **、ShapeSheet** セルに対応する制限された値のセット **の 1 つである必要** があります。 次の表を参照して、この Section 要素で許可される **IX** 属性の値を **決定** します。 
   
@@ -84,8 +84,8 @@ ms.locfileid: "34539034"
 |:-----|:-----|:-----|
 |Annotation  <br/> |ドキュメント ページに挿入されたコメントに関する情報を含むプロパティのコレクション。  <br/> |[[Annotation] セクション](annotation-section.md) <br/> |
 |文字  <br/> |図形のテキストの文字プロパティを指定する関連プロパティのコレクション。 親要素または親 **ShapeSheet_Type****要素をStyleSheet_Type** する必要があります。  <br/> |[[Character] セクション](character-section.md) <br/> |
-|Connections  <br/> |数式の評価にのみ使用されるプロパティのコレクション。 この要素には、親 **ShapeSheet_Type** 必要があります。  <br/> |[[Connection Points] セクション](connection-points-section.md) <br/> |
-|Field  <br/> |図形のテキスト フィールドを指定する関連プロパティのコレクション。 この要素には、親 **ShapeSheet_Type** 必要があります。  <br/> |[[Text Fields] セクション](text-fields-section.md) <br/> |
+|接続  <br/> |数式の評価にのみ使用されるプロパティのコレクション。 この要素には、親 **ShapeSheet_Type** 必要があります。  <br/> |[[Connection Points] セクション](connection-points-section.md) <br/> |
+|フィールド  <br/> |図形のテキスト フィールドを指定する関連プロパティのコレクション。 この要素には、親 **ShapeSheet_Type** 必要があります。  <br/> |[[Text Fields] セクション](text-fields-section.md) <br/> |
 |FillGradient  <br/> |図形の塗りつぶしの色のグラデーションを指定するプロパティのコレクション。 この要素には、親 **ShapeSheet_Type** または **StyleSheet_Type** する必要があります。  <br/> |[[塗りつぶしのグラデーション] セクション](fill-gradient-section.md) <br/> |
 |Geometry  <br/> |ジオメトリの視覚エフェクトを指定する関連プロパティのコレクション。 この要素には、親 **ShapeSheet_Type** 必要があります。 この要素 **Row_Type** 子要素の最初の要素は、MoveTo、RelMoveTo、楕円、または InfiniteLine 型である必要があります。  <br/> |[[Geometry] セクション](geometry-section.md) <br/> |
 |Layers  <br/> |図面ページで定義されているすべてのレイヤーを表示するプロパティのコレクション。 これは、要素の子 **PageSheet_Type** 必要があります。  <br/> |[[Layers] セクション](layers-section.md) <br/> |

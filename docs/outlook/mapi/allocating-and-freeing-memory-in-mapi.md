@@ -3,17 +3,17 @@ title: MAPI でのメモリの割り当てと解放
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: e238f6bc-e9f6-4ea4-a2e4-ff5da2a04bd5
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 68250c5cbeaa366ed4555bb469c4e68d62302f28
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5a0d6dd27d36c6631e5a66e522fb1f0fe6223e11
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419668"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567866"
 ---
 # <a name="allocating-and-freeing-memory-in-mapi"></a>MAPI でのメモリの割り当てと解放
 
@@ -27,7 +27,7 @@ MAPI は、メモリの割り当ておよび解放方法を指定する以外に
   
 これらの種類のパラメーターのメモリを割り当て、解放するルールについて、次の表で説明します。
   
-|**Type**|**メモリ割り当て**|**メモリの解放**|
+|**種類**|**メモリ割り当て**|**メモリの解放**|
 |:-----|:-----|:-----|
 |Input  <br/> |呼び出し元は責任を負い、任意のメカニズムを使用できます。  <br/> |呼び出し元は責任を負い、任意のメカニズムを使用できます。  <br/> |
 |出力  <br/> |呼び出された関数は責任を負い **、MAPIAllocateBuffer を使用する必要があります**。 詳細については [、「MAPIAllocateBuffer」を参照してください](mapiallocatebuffer.md)。  <br/> |呼び出し元は責任を負い **、MAPIFreeBuffer を使用する必要があります**。 詳細については [、「MAPIFreeBuffer」を参照してください](mapifreebuffer.md)。  <br/> |

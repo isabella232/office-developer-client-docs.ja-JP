@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3f44fc18-4757-7aba-8778-a474ab93a78d
 description: x 座標または y 座標、水平方向と垂直方向を含み、図形上の 1 つの接続ポイントを入力します。
-ms.openlocfilehash: eb32030e89d3ac77adfdc64e2d20a5fb954dbb53
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 394b6a21b9ec2d9afbbec6e5540bbf1c6d237092
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541765"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598305"
 ---
 # <a name="row-element-connection-section-visio-xml"></a>Row 要素 (Connection Section) (Visio XML)
 

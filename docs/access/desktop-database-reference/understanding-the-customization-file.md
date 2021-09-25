@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249686(v=office.15)
 ms:contentKeyID: 48546507
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b977fc4273068ac52efe8960761a9e28a6234e2e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 97d4def23493bcbc881fa0a6df5166aba1e116c4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314071"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588904"
 ---
 # <a name="understanding-the-customization-file"></a>カスタマイズ ファイルの概要
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-カスタマイズファイルの各セクションヘッダーは、type と parameter を**\[** 含む角かっこ () で構成されています。 4つのセクションの種類は、リテラル文字列**connect**、 **sql**、 **userlist**、または**logs**で示されます。 パラメーターは、リテラル文字列、既定値、ユーザー指定の識別子、または何も指定されていません。
+カスタマイズ ファイル内の各セクション ヘッダーは、型とパラメーターを含む角かっこ ( **\[\]** ) で構成されます。 4 つのセクションの種類は、リテラル文字列の接続 **、sql、userlist、** または **ログ** によって示 **されます**。 パラメーターは、リテラル文字列、既定、ユーザー指定の識別子、または何もありません。
 
 つまり、各セクションは以下のセクション ヘッダーのいずれかで示されます。
 
@@ -48,7 +48,7 @@ ms.locfileid: "32314071"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>結び付ける</strong></p></td>
+<td><p><strong>connect</strong></p></td>
 <td><p>接続文字列を変更するリテラル文字列です。</p></td>
 </tr>
 <tr class="even">
@@ -86,7 +86,7 @@ ms.locfileid: "32314071"
 
 各セクションは次の状況下で使用されます。
 
-  - connect **** セクションは、クライアントの connect 文字列キーワードの値の部分が "**Data Source = * * * value*" で、 **connect**セクションの識別子と一致する場合に使用され*ます。*
+  - 接続 **セクションは** 、クライアント接続文字列キーワード **"Data Source=**_value_"の値部分が接続セクション識別子と一致 **する場合に** 使用されます *。*
 
   - **sql** セクションは、クライアントのコマンド文字列が **sql** セクションの識別子と一致する文字列を含んでいる場合に使用されます。
 

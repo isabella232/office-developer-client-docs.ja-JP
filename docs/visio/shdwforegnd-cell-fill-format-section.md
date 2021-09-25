@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251244
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ea153390-631d-79fd-c1ba-4c281239a24e
 description: 図形の影付きの塗りつぶしパターンに対して、前景 (ストローク) に使用する色を指定します。
-ms.openlocfilehash: 602df83dcb88d4137b0609f9a8b1084a40148a10
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6f2d639a9df03d51c7d82dedd8cfbec2456a55db
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422251"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598109"
 ---
 # <a name="shdwforegnd-cell-fill-format-section"></a>[ShdwForegnd] セル ([Fill Format] セクション)
 

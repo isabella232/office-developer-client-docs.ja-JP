@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0872b1b9-c21f-4bba-8cf1-4b010d8d7fb6
 description: Outlook ソーシャル コネクタ (OSC) プロバイダー XML スキーマは、ネットワークの OSC プロバイダーを介してソーシャル ネットワークから OSC に渡される大量の情報の形式を定義します。
-ms.openlocfilehash: 2346e23beb2de1664ec90263a8f5db5d46c54e6f
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 45a9fcc2aab435b4b82e42b80e6601ca2ef2f7f1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539256"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629180"
 ---
 # <a name="developing-a-provider-with-the-osc-xml-schema"></a>OSC XML スキーマによるプロバイダーの開発
 
@@ -34,7 +34,7 @@ Outlook ソーシャル コネクタ (OSC) プロバイダー XML スキーマ�
     
 - [アクティビティの XML](xml-for-activities.md): OSC プロバイダーから **activityFeed** XML で表されるアクティビティ情報を取得するために OSC が使用する API の例を示します。 このセクションでは、OSC プロバイダーがアクティビティ フィードを指定できる OSC プロバイダー XML スキーマの XML 要素について説明します。 アクティビティ フィードには、アクティビティ フィード アイテムが発生したネットワーク、各アクティビティ フィード アイテムの詳細 (アクティビティの所有者、種類、発行日など)、アクティビティを表示するテンプレートが含まれます。 
     
-## <a name="reference"></a>参照
+## <a name="reference"></a>リファレンス
 
 - [Outlookソーシャル コネクタ プロバイダーリファレンス](outlook-social-connector-provider-reference-0.md)
   

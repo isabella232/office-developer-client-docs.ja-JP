@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9eac3b8c-532c-4312-935d-fe8b63bcaf75
 description: 使用中のテーマから値を取得します。
-ms.openlocfilehash: ba95b8a920174ee44c0349d7227258d3ee8a843c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: af46d000c8a7513cf961573d20d71e28c1c66915
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415755"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597850"
 ---
 # <a name="themeval-function"></a>THEMEVAL 関数
 
@@ -31,8 +31,8 @@ ms.locfileid: "33415755"
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _"theme_value"_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |値を取得するテーマの定義内のセルの名前。  <br/> |
-| _default_ <br/> |省略可能  <br/> |各種  <br/> |ドキュメントにテーマがない (テーマの定義がない) 場合の既定値。  <br/> |
+| _"theme_value"_ <br/> |省略可能  <br/> |**String** <br/> |値を取得するテーマの定義内のセルの名前。  <br/> |
+| _default_ <br/> |オプション  <br/> |各種  <br/> |ドキュメントにテーマがない (テーマの定義がない) 場合の既定値。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

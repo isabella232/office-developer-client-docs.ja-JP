@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 939f8f90-dee5-4175-b32a-e2964eb40681
 description: スケッチ効果を使用する場合の図形の図形の塗りつぶしのランダム化の量を、セクションの長さに対する割合で指定します。 [SketchFillChange] セルの値が 0% に設定されている場合、図形の塗りつぶしの境界ジオメトリは図形のジオメトリと一致します。 値が 100% の場合、図形の塗りつぶしの境界ジオメトリは図形のジオメトリに従います。
-ms.openlocfilehash: 8726e9dd6ca6257fb8dbbbef3dce1d4ec344e28b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8f3b566743c650f930a3c0163e89bfe32b77cabb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408076"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598032"
 ---
 # <a name="sketchfillchange-cell-additional-effect-properties-section"></a>[SketchFillChange] セル ([追加効果のプロパティ] セクション)
 

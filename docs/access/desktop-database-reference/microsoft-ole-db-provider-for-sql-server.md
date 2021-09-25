@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248868(v=office.15)
 ms:contentKeyID: 48543282
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c4faa664ed9001c1c06906f58c7d873faf75a5d0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1ff202fa68af3bc31df7c5402e61a8b340eb511a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288891"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568818"
 ---
 # <a name="microsoft-ole-db-provider-for-sql-server"></a>Microsoft OLE DB Provider for SQL Server
 
@@ -111,7 +111,7 @@ User ID=userName;Password=userPassword;"
 </tr>
 <tr class="even">
 <td><p>Network Library</p></td>
-<td><p>SQL Server との通信に使用するネットワーク ライブラリ (ダイナミック リンク ライブラリ) の名前を示します。 この名前には、パスやファイル名拡張子 .dll を含めないでください。 既定値は、SQL Server クライアントの構成によって提供されます。</p></td>
+<td><p>SQL Server との通信に使用するネットワーク ライブラリ (ダイナミック リンク ライブラリ) の名前を示します。 この名前には、パスやファイル名拡張子 .dll を含めないでください。 既定値は、クライアント構成SQL Server提供されます。</p></td>
 </tr>
 <tr class="odd">
 <td><p>Use Procedure for Prepare</p></td>
@@ -526,7 +526,7 @@ Microsoft OLE DB Provider for SQL Server は、開かれていない [Connection
 <td><p>DBPROP_IConnectionPointContainer</p></td>
 </tr>
 <tr class="odd">
-<td><p>iconverttype</p></td>
+<td><p>IConvertType</p></td>
 <td><p>DBPROP_IConvertType</p></td>
 </tr>
 <tr class="even">
@@ -822,7 +822,7 @@ Microsoft OLE DB Provider for SQL Server は、開かれていない [Connection
 <td><p>DBPROP_IConnectionPointContainer</p></td>
 </tr>
 <tr class="even">
-<td><p>iconverttype</p></td>
+<td><p>IConvertType</p></td>
 <td><p>DBPROP_IConvertType</p></td>
 </tr>
 <tr class="odd">

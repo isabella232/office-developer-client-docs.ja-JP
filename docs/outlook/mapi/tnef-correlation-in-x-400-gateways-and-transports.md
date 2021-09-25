@@ -3,17 +3,17 @@ title: X.400 ゲートウェイとトランスポートの TNEF 相関
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 0ffa0802-bfdd-4993-b4a3-142e5d15bfb4
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: e08f16ff60a282f1be3adf93d858471e38d19957
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8fb07f403bad4c88190d277b586baae6ce8cf860
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406375"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619653"
 ---
 # <a name="tnef-correlation-in-x400-gateways-and-transports"></a>X.400 ゲートウェイとトランスポートの TNEF 相関
 

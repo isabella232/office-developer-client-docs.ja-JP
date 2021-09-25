@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAuthorizingUsers
 api_type:
 - HeaderDef
 ms.assetid: d291777e-c0c6-4de2-9bf5-5c1d95f3db6c
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 74ae66a4f9b8eb1c80251009441739efbd844901
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0cc76e21b51c88e04e1e8969d3d0f723205f5a2f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437463"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609888"
 ---
 # <a name="pidtagauthorizingusers-canonical-property"></a>PidTagAuthorizingUsers 標準プロパティ
 

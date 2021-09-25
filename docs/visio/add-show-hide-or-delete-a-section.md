@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm2165
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1470248e-be1c-fcb0-1d6b-0a5f60365924
 description: シェイプシートでセクションを追加、表示、非表示、削除できます。
-ms.openlocfilehash: 1f1aa5cc20418fa3fc588c50d5e7a94bd9763774
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 237147a22932bf56fffd42018dd16e070f7ef243
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341682"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628900"
 ---
 # <a name="add-show-hide-or-delete-a-section"></a>セクションの追加、表示、非表示、または削除
 

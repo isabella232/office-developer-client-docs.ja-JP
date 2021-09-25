@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - windowscollection [infopath 2007],フォーム ウィンドウ [InfoPath 2007],Window クラス [InfoPath 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 32ae2427-882b-45f8-8754-0e8c27fc23ba
 description: InfoPath フォームをプログラムから操作するときは、フォームのウィンドウにアクセスするコードを記述し、ウィンドウに含まれるアイテムの一部をカスタマイズすることができます。Microsoft.Office.InfoPath 名前空間によって提供される InfoPath オブジェクト モデルでは、Window クラスを WindowCollection クラスと共に使用した、フォームのウィンドウへのアクセスがサポートされています。
-ms.openlocfilehash: 018357519e27629c29b2611bd0a88b8d64f0a1eb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7edb5f4e1530b64251ea89f0f41ad6926a11f2ad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431065"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568104"
 ---
 # <a name="work-with-form-windows"></a>フォーム ウィンドウを操作する
 

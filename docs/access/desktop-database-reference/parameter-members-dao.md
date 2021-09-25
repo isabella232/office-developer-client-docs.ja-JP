@@ -1,24 +1,24 @@
 ---
-title: Parameter メンバー (DAO)
+title: パラメーター メンバー (DAO)
 TOCTitle: Parameter Members
 ms:assetid: 38e19de8-5318-6077-13b1-10653069aaeb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192517(v=office.15)
 ms:contentKeyID: 48544228
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 25eae70d88307331c44983c4e7cbbcce3fe9d309
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 66215908f402ac74225c968fd4b6623f9a61ecd7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288113"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568769"
 ---
-# <a name="parameter-members-dao"></a>Parameter メンバー (DAO)
+# <a name="parameter-members-dao"></a>パラメーター メンバー (DAO)
 
 **適用先:** Access 2013、Office 2013
 
-Parameter オブジェクトは、クエリに指定する値を表します。 パラメーターは、パラメーター クエリを基に作成した QueryDef オブジェクトに関連付けられています。
+Parameter オブジェクトは、クエリに指定する値を表します。パラメーターは、パラメーター クエリを基に作成した QueryDef オブジェクトに関連付けられています。
 
 ## <a name="properties"></a>プロパティ
 
@@ -35,13 +35,13 @@ Parameter オブジェクトは、クエリに指定する値を表します。 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="parameter-direction-property-dao.md">Direction</a></strong></p></td>
-<td><p><strong>注</strong>: ODBCDirect ワークスペースは、Microsoft access 2013 ではサポートされていません。 Microsoft Office Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
+<td><p><strong><a href="parameter-direction-property-dao.md">方向</a></strong></p></td>
+<td><p><strong>注</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Access データベース エンジンを使用せずに外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
 <p><strong><a href="parameter-object-dao.md">Parameter</a></strong> オブジェクトが入力パラメーター、出力パラメーター、その両方、またはプロシージャからの戻り値のいずれを表すかを示す値を設定または取得します (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="parameter-name-property-dao.md">Name</a></strong></p></td>
-<td><p>指定したオブジェクトの名前を返します。 読み取り専用 <strong>文字列</strong> です。</p></td>
+<td><p>指定したオブジェクトの名前を返します。読み取り専用 <strong>文字列</strong> です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="parameter-properties-property-dao.md">Properties</a></strong></p></td>
@@ -49,7 +49,7 @@ Parameter オブジェクトは、クエリに指定する値を表します。 
 </tr>
 <tr class="even">
 <td><p><strong><a href="parameter-type-property-dao.md">種類</a></strong></p></td>
-<td><p>オブジェクトの操作の種類またはデータ型を示す値を設定または取得します。 読み取り/書き込みの <strong>整数</strong> です。</p></td>
+<td><p>オブジェクトの操作の種類またはデータ型を示す値を設定または取得します。値の取得および設定が可能です。整数型 (<strong>Integer</strong>) の値を使用します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="parameter-value-property-dao.md">Value</a></strong></p></td>

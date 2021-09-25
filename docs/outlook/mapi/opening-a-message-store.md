@@ -3,17 +3,17 @@ title: メッセージ ストアを開く
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 43b23fd7-999a-42c0-8f4d-47f5de266bdb
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 665c14b285db166e4f2a421d46e57f23e2f7ad52
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 428b5b59a5f1a73ae440e4406a5a2971fed26b39
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432374"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610098"
 ---
 # <a name="opening-a-message-store"></a>メッセージ ストアを開く
 

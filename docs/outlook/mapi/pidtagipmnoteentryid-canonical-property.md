@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagIpmNoteEntryId
 api_type:
 - HeaderDef
 ms.assetid: c003f7b9-b0cd-4656-98fa-3466fda6832c
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3d465bfeb30d4f2964254b1d1f524f964fde7239
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 538df52cb4373a7c311e592e146accba14571762
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59620038"
 ---
 # <a name="pidtagipmnoteentryid-canonical-property"></a>PidTagIpmNoteEntryId 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "32327874"
 |関連するプロパティ:  <br/> |PR_IPM_NOTE_ENTRYID  <br/> |
 |識別子:  <br/> |0x36D3  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Folder  <br/> |
+|エリア:  <br/> |フォルダー  <br/> |
    
 ## <a name="remarks"></a>注釈
 

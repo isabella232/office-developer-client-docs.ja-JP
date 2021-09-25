@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm200
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f0e4c644-c646-9649-c697-82feb02f5e29
 description: ビットマップ イメージのコントラストを調整します。0 ～ 49% の範囲で値を入力するとイメージのコントラストが下がります。51 ～ 100% の範囲で値を入力するとイメージのコントラストが上がります。既定値は 50% です。
-ms.openlocfilehash: f0a27090ea1ec96bf11726ae641ff918dd581e2f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8e75daa36658cffa9f6c4dd26b2543d74086c4c9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404926"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628571"
 ---
 # <a name="contrast-cell-image-properties-section"></a>[Contrast] セル ([Image Properties] セクション)
 
@@ -26,7 +26,7 @@ ms.locfileid: "33404926"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | Contrast  <br/> |
+| セル名:  <br/> | コントラスト  <br/> |
    
 プログラムから、インデックスによって [Contrast] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

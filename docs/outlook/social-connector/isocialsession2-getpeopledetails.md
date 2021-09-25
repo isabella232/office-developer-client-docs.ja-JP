@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8733aab9-3a8e-4924-b62f-4e871d991c72
 description: personsAddresses パラメーターで指定されたユーザーの人物と画像の詳細のコレクションを含む文字列を返します。
-ms.openlocfilehash: 08b6eca193da59bbdc3c9d21d4dc9b6d0e0c884f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 88fef14135718e7b054cf85f7e12bb7b0f9c0478
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404534"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629152"
 ---
 # <a name="isocialsession2getpeopledetails"></a>ISocialSession2::GetPeopleDetails
 
@@ -35,7 +35,7 @@ _personsCollection_
     
 ## <a name="remarks"></a>注釈
 
-OUTLOOK Social Connector (OSC) は、OSC プロバイダーがフレンドとフレンド以外のオンデマンドまたはハイブリッド同期をサポートしている場合に **GetPeopleDetails** を呼び出します。 
+この Outlook ソーシャル コネクタ (OSC) は、OSC プロバイダーがフレンドとフレンド以外のオンデマンドまたはハイブリッド同期をサポートしている場合に **GetPeopleDetails** を呼び出します。 
   
 _personsAddresses パラメーター_ は、OSC プロバイダーの拡張性のスキーマで定義されている **hashedAddresses** のスキーマ定義に準拠している必要があります。 _personsAddresses 文字列_ は、People Pane に表示される各ユーザーのハッシュ化された SMTP アドレスのセットを表します。 ユーザーは [、ISocialSession::LoggedOnUserName](isocialsession-loggedonusername.md) プロパティで表されるログオン ユーザーのフレンドである必要があります。 ハッシュされた SMTP アドレスは、プロバイダーの機能 XML の **hashFunction** 要素で指定されたハッシュ関数を **使用して暗号化** されます。 OSC は **、personAddresses** コレクション内の各ハッシュされた  _Addressを index_ 要素で **識別** します。 プロバイダーは **、GetPeopleDetails** のフレンド **XML** を返す際に、index 要素を使用して受信者 **の個人** XML を識別する必要があります。  受信者がソーシャル ネットワーク上の登録ユーザーではない場合、プロバイダーは、その受信者 **の任意の** ユーザー XML を返す必要があります。 ユーザー **XML で** 表される各ネットワークユーザーの index 要素は _、personsAddresses_ の受信者の **index** 要素に対応します。
   

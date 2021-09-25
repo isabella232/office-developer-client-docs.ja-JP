@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm1005
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2d63768e-afdb-4b3f-de49-f9ba69ae5391
 description: 図形のテキストまたはテキストの構成が変更されたときに評価されるイベント セルです。
-ms.openlocfilehash: 6aa5e14f339d0030d8421eaae62b0e481be91fc7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3acd52a3712dd5ab28e643a458ba1eccd3fb0dd1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435167"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597843"
 ---
 # <a name="thetext-cell-events-section"></a>[TheText] セル ([Events] セクション)
 

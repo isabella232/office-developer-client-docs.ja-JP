@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: decdd8fc-2184-4d97-b918-3ef6ab1ab40b
 description: 指定した文字列が指定したパターンと一致するかどうかを判定します。 パターンには、標準文字とワイルドカード文字を含めることができます。パターン検索時、標準文字は文字列に指定された文字と正確に一致する必要があります。ワイルドカード文字は文字列の任意の部分と一致することができます。 = や != などの文字列比較演算子を使用する場合と比べて、ワイルドカード文字を使用する方がより柔軟に LIKE 演算子を使用できます。
-ms.openlocfilehash: 02d1e4f8fc61335e828a1f77579c14b1c7577485
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0ad520b8bf9acd10134f73c016c5ddc984e9e51a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406116"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568230"
 ---
 # <a name="like-access-custom-web-app"></a>LIKE (Access custom Web app)
 
@@ -30,7 +30,7 @@ ms.locfileid: "33406116"
 |**引数名**|**必須**|**説明**|
 |:-----|:-----|:-----|
 | *Expression*  <br/> |はい  <br/> |有効な式。  <br/> |
-| *Pattern*  <br/> |はい  <br/> |式 で検索する特定の文字の  *文字列*  です。 ワイルドカード文字を含めることができます。 有効なワイルドカード文字については、「解説」を参照してください。  <br/> |
+| *Pattern*  <br/> |必要  <br/> |式 で検索する特定の文字の  *文字列*  です。 ワイルドカード文字を含めることができます。 有効なワイルドカード文字については、「解説」を参照してください。  <br/> |
 | *EscapeChar*  <br/> |いいえ  <br/> |ワイルドカード文字をワイルドカードではなく標準文字として解釈するために、ワイルドカードの前に配置する文字です。  *EscapeChar*  は、既定値を持たず、1 つの文字にのみ評価する必要がある文字式です。  <br/> |
    
 ## <a name="remarks"></a>注釈

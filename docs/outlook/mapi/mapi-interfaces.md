@@ -5,17 +5,17 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 34a66cf0-b4e0-4fd5-b937-cd157888961d
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4f5d6a5d2dbb48a86363896bf14b61ed28118330
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1b8d0fb625270422eb1910154afcada906b8dccd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422664"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610287"
 ---
 # <a name="mapi-interfaces"></a>MAPI のインターフェイス
 
@@ -39,7 +39,7 @@ ms.locfileid: "33422664"
   
 各インターフェイス トピックの後、インターフェイスのメソッドはアルファベット順に文書化されます。 各メソッドについて、ドキュメントには簡単な目的のステートメント、構文ブロック、および次の情報が含まれています。
   
-|**見出し**|**Content**|
+|**見出し**|**コンテンツ**|
 |:-----|:-----|
 |パラメーター  <br/> |メソッド内の各パラメーターの説明。  <br/> |
 |戻り値  <br/> |メソッドが返す一意の値の説明。 これらは、呼び出し元がコードでチェックする必要がある値です。  <br/> |

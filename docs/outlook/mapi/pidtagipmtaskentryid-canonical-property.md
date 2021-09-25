@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagIpmTaskEntryId
 api_type:
 - HeaderDef
 ms.assetid: ec8b7486-b547-4a4e-96e5-1fc825b23f3d
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: c3845c745dcd2c18525f147308233b94fbce70d4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 91b22cff3b0fae1e7a6115a658f801d465c73fa7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327850"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59620031"
 ---
 # <a name="pidtagipmtaskentryid-canonical-property"></a>PidTagIpmTaskEntryId 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "32327850"
 |関連するプロパティ:  <br/> |PR_IPM_TASK_ENTRYID  <br/> |
 |識別子:  <br/> |0x36D4  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Folder  <br/> |
+|エリア:  <br/> |フォルダー  <br/> |
    
 ## <a name="remarks"></a>注釈
 

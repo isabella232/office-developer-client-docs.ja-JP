@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ece6c889-9291-40ea-b55a-072acdcb8a52
 description: 図形に影を表示するかどうかを、0 から 2 の整数で決定します。
-ms.openlocfilehash: 1da52c20acaa19eab79970a751fad2c225e212ae
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 29e7d2a7c900518d933899cedc35a00dcc046e65
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422118"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598123"
 ---
 # <a name="shapeshdwshow-cell-fill-format-section"></a>[ShapeShdwShow] セル ([塗りつぶしの書式設定] セクション)
 

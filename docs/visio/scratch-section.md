@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm2125
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 144dd06f-7225-57db-fd19-a58d6bccf0e1
 description: 他のセルが参照する数式の入力およびテストを実行するための作業領域です。
-ms.openlocfilehash: a7d2c6762e96fc19986521c2ba164666b925c928
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 331831b28fd5b06d685639822e7c46268f40abad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411604"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598165"
 ---
 # <a name="scratch-section"></a>[Scratch] セクション
 

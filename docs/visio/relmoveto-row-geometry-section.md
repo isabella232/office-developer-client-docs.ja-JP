@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 04a0ba9f-48dd-488f-9c87-3890a12adf89
 description: 図形の最初の頂点の x 座標と y 座標、またはパス内のブレーク後の最初の頂点の x 座標と y 座標を、図形の高さと幅に対して格納します。
-ms.openlocfilehash: 488945dbeeea177514770da57b5f26ac947053a3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1878a8663ef72fbb5f248a160c0abd0d20458baa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414201"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598389"
 ---
 # <a name="relmoveto-row-geometry-section"></a>[RelMoveTo] 行 ([図形座標] セクション)
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagMessageRecipients
 api_type:
 - HeaderDef
 ms.assetid: 7f8b0d96-99d6-4f1c-8ac4-4dbb83626382
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: d30088ba7398669228a18be825323afa800ec536
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3de07cb20d760a335f90ecacbea3bcc8b0a39512
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355686"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619954"
 ---
 # <a name="pidtagmessagerecipients-canonical-property"></a>PidTagMessageRecipients 標準プロパティ
 
@@ -46,7 +46,7 @@ ms.locfileid: "32355686"
   
 プロパティ **PR_MESSAGE_ATTACHMENTS** プロパティ [(PidTagMessageAttachments)](pidtagmessageattachments-canonical-property.md)プロパティと、このプロパティは使用法で似ています。 複数の MAPI プロパティを使用すると、テーブルにアクセスできます。 
   
-|**Property**|**表**|
+|**プロパティ**|**Table**|
 |:-----|:-----|
 |**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))  <br/> |コンテンツ テーブル  <br/> |
 |**PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md))  <br/> |階層テーブル  <br/> |

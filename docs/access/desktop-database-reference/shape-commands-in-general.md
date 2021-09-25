@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249814(v=office.15)
 ms:contentKeyID: 48547039
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 399836158084f07b30b06a9fb099da74527d0cb0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 19717ba09664798c8e3ac73c2d03502ec2222620
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308653"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568468"
 ---
 # <a name="shape-commands-in-general"></a>一般的な Shape コマンド
 
@@ -40,11 +40,11 @@ ms.locfileid: "32308653"
 </tr>
 <tr class="even">
 <td><p>チャプター</p></td>
-<td><p><em>チャプター</em>と呼ばれる別の<strong>Recordset</strong>への参照。 チャプター列を使用すると、親がチャプター列<strong></strong>を含む<strong>レコードセット</strong>であり、<em>子</em>がチャプターで表される recordset である場合に、<em>親と子</em>のリレーションシップを定義できるようになります。 <em></em></p></td>
+<td><p>チャプターと呼ばれる <strong>別の Recordset</strong>への <em>参照</em>。 チャプター列を使用すると、親が<em></em>チャプター列を含む<em></em><strong>Recordset</strong>であり、子がチャプターで表される<em></em><strong>Recordset</strong>である親子関係を定義できます。</p></td>
 </tr>
 <tr class="odd">
-<td><p>統計</p></td>
-<td><p>列の値は、子<strong>Recordset</strong>のすべての行または1つの列に対して<em>集計関数</em>を実行することによって導出されます。 (次のトピック、<a href="aggregate-functions-the-calc-function-and-the-new-keyword.md">集計関数、CALC 関数、および NEW キーワード</a>の集計関数を参照してください)。</p></td>
+<td><p>aggregate</p></td>
+<td><p>列の値は、すべての行または子 Recordset<em></em>のすべての行の列に対して集計関数を実行することで派生<strong>します</strong>。 (次のトピック「集計関数、CALC 関数、および NEW キーワード」の「集計関数 <a href="aggregate-functions-the-calc-function-and-the-new-keyword.md">」を参照</a>してください)。</p></td>
 </tr>
 <tr class="even">
 <td><p>演算式</p></td>

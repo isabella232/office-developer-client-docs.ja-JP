@@ -6,20 +6,20 @@ ms.audience: Developer
 ms.topic: reference
 ms.assetid: 550fc235-f0b9-4d8e-805b-ce467821a8c9
 description: 指定されたパターンに従って書式設定された値を返します。
-localization_priority: Priority
-ms.openlocfilehash: 5331df30f276a7edd0571e9bf24c759d57ec6a54
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 22d56077571405f3b79040cc6739dbd5c77ea405
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308205"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568258"
 ---
 # <a name="format-function-access-custom-web-app"></a>Format 関数 (Access カスタム Web アプリ)
 
 指定されたパターンに従って書式設定された値を返します。
   
 > [!NOTE]
-> この記事で説明されているクラウド ストレージ機能は、Office 2013 および Office 2016 ではサポートされなくなっているため、次のエラーが発生する可能性があります。 >  *申し訳ございません。サーバーで問題が発生しているため、現在 \<サービス\> を追加できません。後でもう一度お試しください。* > Office Online、Office for iOS、Office for Android のクラウド ストレージについて、[Office クラウド ストレージ パートナー プログラム](https://dev.office.com/programs/officecloudstorage)でお調べいただけます。 
+> この記事で説明されているクラウド ストレージ機能は、Office 2013 および Office 2016 ではサポートされなくなっているため、次のエラーが発生する可能性があります: >  *申し訳ありません。サーバーに問題があるため、現在 \<service\> を追加できません。後でもう一度お試しください。* > Office Online、Office for iOS、Office for Android のクラウド ストレージについて、[Office クラウド ストレージ パートナー プログラム](https://dev.office.com/programs/officecloudstorage)でお調べいただけます。 
   
 ## <a name="syntax"></a>構文
 

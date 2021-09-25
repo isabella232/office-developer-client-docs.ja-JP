@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SzFindSz
 api_type:
 - COM
 ms.assetid: f4584569-1246-4ac9-a404-48284e4920d7
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9fc21a27cb6c9041bdd8976ce5f030f0ab9eb57f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 464c6ed3ce2c56339d38ec21648922618d1a4ad9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435223"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619646"
 ---
 # <a name="szfindsz"></a>SzFindSz
 

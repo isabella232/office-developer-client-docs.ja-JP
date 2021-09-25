@@ -3,17 +3,17 @@ title: ホスト アドレス帳プロバイダーとして機能する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: f06a1034-ee49-4a09-831e-9752713228a8
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 202d4b4391de7553e39e50dc527df5502ebcefb3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2e6bd9f2370b086ad3b53dd9db35116da374655e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406466"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567901"
 ---
 # <a name="acting-as-a-host-address-book-provider"></a>ホスト アドレス帳プロバイダーとして機能する
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidUseTnef
 api_type:
 - COM
 ms.assetid: 954048d6-e2eb-43e7-b52c-c2f047bb84a4
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 56f6e2355ee2e64cc766bafe27cd59454e210ab6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d5d38f98402c0804633d3bcb0f9ca196fa15795f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315422"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610056"
 ---
 # <a name="pidlidusetnef-canonical-property"></a>PidLidUseTnef 標準プロパティ
 
@@ -39,7 +39,7 @@ ms.locfileid: "32315422"
 
 このプロパティは、メッセージが TNEF から MIME または SMTP 形式に変換される場合に、TNEF をメッセージに含めるかどうかを指定します。 このプロパティが存在しない場合、TNEF をメッセージに含めません。
   
-このプロパティは、メッセージが POP3/SMTP メール アカウントから送信される場合にのみ適用され、メッセージが他のプロバイダー (Microsoft Exchange Server など) によって送信された場合は適用されません。
+このプロパティは、メッセージが POP3/SMTP メール アカウントから送信された場合にのみ適用され、メッセージが他のプロバイダー (Microsoft Exchange Server など) によって送信された場合には適用されません。
   
 投票ボタンが有効になっている場合や、OLE 埋め込みオブジェクトがメッセージに添付されている場合など、特定の状況では、Outlook は TNEF を強制的に使用するためにこのプロパティを設定できます。
   
@@ -53,7 +53,7 @@ ms.locfileid: "32315422"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連するプロトコル仕様への参照Exchange Server提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   

@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c103d48d-53ca-4b19-b16f-2862379587ef
 description: activityDetails 要素は、1 つのアクティビティ フィード アイテムの生データを格納します。 各アクティビティ フィード アイテムには、独自の activityDetails 要素が必要です。 activityDetails 要素のデータは、name 要素を使用してアクティビティ テンプレートで参照されます。
-ms.openlocfilehash: fd9c2136e8e2b687fa281ecda71039809848f63c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a9249f3480d1cd72b01d52af15a843bb88b4625f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434873"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629173"
 ---
 # <a name="activitydetails-element"></a>activityDetails 要素
 
@@ -21,7 +21,7 @@ ms.locfileid: "33434873"
   
 次の表に **、activityDetails** 要素で必要な 6 つの要素について説明します。 
   
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
 |**ownerID** <br/> |このアクティビティ フィード アイテムを生成したソーシャル ネットワーク上のユーザーの ID。  <br/> |
 |**objectID** <br/> |重複するフィード アイテムを検出するアクティビティ フィード アイテムの一意の文字列。  <br/> |

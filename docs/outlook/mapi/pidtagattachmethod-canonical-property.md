@@ -5,19 +5,19 @@ ms.date: 9/7/2016
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAttachMethod
 api_type:
 - HeaderDef
 ms.assetid: 32089213-ef7b-4152-84ab-b44e9911332b
 description: '最終更新日: 2016 年 9 月 7 日'
-ms.openlocfilehash: b84549ab31c939b4e6115795916ebd3520a96dbd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b4e6aa70b793fafc08d0b975641f5bc0d07bc831
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327259"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609902"
 ---
 # <a name="pidtagattachmethod-canonical-property"></a>PidTagAttachMethod 標準プロパティ
 

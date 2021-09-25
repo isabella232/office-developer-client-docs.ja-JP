@@ -1,20 +1,20 @@
 ---
-title: Property オブジェクト (DAO)
+title: プロパティ オブジェクト (DAO)
 TOCTitle: Property Object
 ms:assetid: a1ecb0db-bb93-a7b5-23c3-0b73f275dfe0
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff820932(v=office.15)
 ms:contentKeyID: 48546744
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e26bc59221b4ff55c943b6a9a0c87ac5c0dd936b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 706f846b2f1e2aa173a059ffa0431e0392fb6eb8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301191"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568643"
 ---
-# <a name="property-object-dao"></a>Property オブジェクト (DAO)
+# <a name="property-object-dao"></a>プロパティ オブジェクト (DAO)
 
 **適用先:** Access 2013、Office 2013
 
@@ -37,7 +37,7 @@ To add a user-defined property, use the **CreateProperty** method to create a **
 > [!NOTE]
 > [!メモ] ユーザー定義の **Property** オブジェクトは、1 つのオブジェクトの特定のインスタンスにのみ関連付けられます。プロパティは、選択した種類のオブジェクトのすべてのインスタンスに定義されるわけではありません。
 
-オブジェクトの **Properties** コレクションを使用して、オブジェクトの組み込みおよびユーザー定義のプロパティを列挙することができます。 この操作を行うために、既存のプロパティの種類や属性 (**Name** プロパティや **Type** プロパティ) をあらかじめ知っている必要はありません。 ただし、値の取得のみ可能なプロパティ ( **Workspace** オブジェクトの **Password** プロパティなど) の読み取り、または不適切なコンテキストでのプロパティの読み取り/書き込み ( **TableDef** オブジェクトの **Fields** コレクションの **Field** オブジェクトの **Value** プロパティの設定など) を実行しようとすると、エラーが発生します。
+オブジェクトの **Properties** コレクションを使用して、オブジェクトの組み込みおよびユーザー定義のプロパティを列挙することができます。この操作を行うために、既存のプロパティの種類や属性 (**Name** プロパティや **Type** プロパティ) をあらかじめ知っている必要はありません。ただし、値の取得のみ可能なプロパティ (**Workspace** オブジェクトの **Password** プロパティなど) の読み取り、または不適切なコンテキストでのプロパティの読み取り/書き込み (**TableDef** オブジェクトの **Fields** コレクションの **Field** オブジェクトの **Value** プロパティの設定など) を実行しようとすると、エラーが発生します。
 
 **Property** オブジェクトには、次の 4 つの組み込みプロパティもあります。
 
@@ -51,18 +51,18 @@ To add a user-defined property, use the **CreateProperty** method to create a **
 
 コレクション内の組み込みの **Property** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-- * object ***.プロパティ**(0)
+- *object***.プロパティ**(0)
 
-- *オブジェクト ***。プロパティ**("* name *")
+- *object***.プロパティ**("* name*")
 
-- *オブジェクト ***。** プロパティ\!* 名 *\]
+- *object***.** \! プロパティ \[* 名*\]
 
 組み込みプロパティの場合、次の構文を使用することもできます。
 
-- *オブジェクト*。*名前*
+- *object*.*name*
 
 > [!NOTE]
-> ユーザー定義のプロパティの場合は、完全なオブジェクト * を使用する必要があり***ます。プロパティ**("* name *") の構文。
+> ユーザー定義プロパティの場合は、完全なオブジェクト* を使用 *する必要があります **。プロパティ**("* name*") 構文。
 
 同じ構文を使って、 **Property** オブジェクトの **Value** プロパティを参照することもできます。 **Property** オブジェクト自身と **Property** オブジェクトの **Value** プロパティのいずれを参照するかは、参照のコンテキストで決まります。
 

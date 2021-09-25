@@ -1,31 +1,31 @@
 ---
-title: Recordset プロパティ (DAO)
+title: Recordset.CacheSize プロパティ (DAO)
 TOCTitle: CacheSize Property
 ms:assetid: 8632f5fb-6e5d-5a3e-1bd7-81e1270e9531
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196807(v=office.15)
 ms:contentKeyID: 48546079
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 369ff9192bb592c96e17920c9771c10b70dc233b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4b8d81fdcf6f49532730c5afa8eed4ec4475ac32
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300596"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568531"
 ---
-# <a name="recordsetcachesize-property-dao"></a>Recordset プロパティ (DAO)
+# <a name="recordsetcachesize-property-dao"></a>Recordset.CacheSize プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
 
-ローカルにキャッシュされる ODBC データソースから取得したレコード数を設定または取得します。 値の取得と設定が可能な長整数型 (**Long**) の値です。
+ローカルにキャッシュされる ODBC データ ソースから取得するレコード数を設定または取得します。値の取得および設定が可能です。長整数型 ( **Long**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。CacheSize
+*式* .CacheSize
 
-*式***Recordset**オブジェクトを表す変数を取得します。
+*expression*: **Recordset** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
@@ -45,7 +45,7 @@ Microsoft Access データベース エンジンは、キャッシュ領域内�
 
 ## <a name="example"></a>例
 
-次の例では、 **CreateTableDef** メソッドと **FillCache** メソッド、および **CacheSize**、 **CacheStart**、 **SourceTableName** の各プロパティを使用して、リンクされたテーブルのレコードを 2 回列挙します。その後、50 レコードのキャッシュを使用してレコードを 2 回列挙します。さらに、リンクされたテーブルの処理にキャッシュを使用しなかった場合と使用した場合のパフォーマンス統計を表示します。
+この例では、**CreateTableDef** メソッドと **FillCache** メソッド、および **CacheSize**、**CacheStart**、**SourceTableName** の各プロパティを使用して、リンクされたテーブルのレコードを 2 回列挙します。その後、50 レコードのキャッシュを使用してレコードを 2 回列挙します。さらに、リンクされたテーブルの処理にキャッシュを使用しなかった場合と使用した場合のパフォーマンスの統計を表示します。
 
 ```vb
     Sub ClientServerX3() 

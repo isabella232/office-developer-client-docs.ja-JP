@@ -3,17 +3,17 @@ title: MAPI サービス プロバイダー オブジェクト
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: f8ade454-2450-49e6-a76f-93801055a7e5
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0976e986a33d8b96366a84527f227bd05ef7845e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ef29ad25d08358f8791734e76d770f07e9eef9dd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432269"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610154"
 ---
 # <a name="mapi-service-provider-objects"></a>MAPI サービス プロバイダー オブジェクト
 
@@ -29,7 +29,7 @@ ms.locfileid: "33432269"
 |添付ファイル  <br/> |メッセージに関連付けられる追加のデータ (ファイルや OLE オブジェクトなど) が含まれる。  <br/> |
 |コントロール  <br/> |ボタンを有効または無効にし、ボタンをクリックすると処理を開始します。  <br/> |
 |配布リスト  <br/> |個々のメッセージ受信者のグループ化について説明します。  <br/> |
-|Folder  <br/> |メッセージと他のメッセージ コンテナーが含まれます。  <br/> |
+|フォルダー  <br/> |メッセージと他のメッセージ コンテナーが含まれます。  <br/> |
 |Logon  <br/> |サービス プロバイダーのイベント通知とクライアント要求を処理します。  <br/> |
 |メッセージング ユーザー  <br/> |メッセージの個々の受信者について説明します。  <br/> |
 |メッセージ  <br/> |1 つ以上の受信者に送信できる情報が含まれる。  <br/> |

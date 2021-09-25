@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAttachLongPathname
 api_type:
 - HeaderDef
 ms.assetid: 3262cf95-48b5-4764-a96e-d752ce35b2dc
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: d8fe8525cf4fc11ac17ed6d73fb5d97e4f2d003e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7183b878646a4f7171de71b042305ede8d90dab6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339369"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609944"
 ---
 # <a name="pidtagattachlongpathname-canonical-property"></a>PidTagAttachLongPathname 標準プロパティ
 

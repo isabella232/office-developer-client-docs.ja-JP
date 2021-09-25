@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm16614
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: fe61a3368813ba3420920909f818beee2029d993
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: cda7c774e6af9f40d529fe809c49506a57c73c2b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308681"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568474"
 ---
 # <a name="setmenuitem-macro-action"></a>SetMenuItem マクロ アクション
 
@@ -27,7 +27,7 @@ You can use the **SetMenuItem** action to set the state of menu items (enabled o
 > [!NOTE]
 > The **SetMenuItem** action works only with custom and global menus created by using menu macros. The **SetMenuItem** action is included in Microsoft Access only for compatibility with previous versions. It does not work with the command bar functionality. However, you can use the **Enabled** and **State** properties in a Visual Basic for Applications (VBA) module to disable or enable and select or unselect items on shortcut menus or custom or global menus.
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "SetMenuItem/メニューの設定" アクションの引数は次のとおりです。
 
@@ -45,7 +45,7 @@ You can use the **SetMenuItem** action to set the state of menu items (enabled o
 <tbody>
 <tr class="odd">
 <td><p><strong>Menu Index/メニュー インデックス</strong></p></td>
-<td><p>状態を設定するコマンドを含むメニューのインデックスを指定します。 ユーザー設定またはグローバルメニューの目的のメニューのインデックスとして、0から始まる整数値を入力します。 [マクロビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションで、 <strong>[メニューインデックス</strong>] ボックスにインデックス値を入力します。 インデックスは、ユーザー設定またはグローバルメニューのメニューマクロにおけるメニューの位置を基準にしたものです (メニューマクロのこのメニューの " <strong>AddMenu</strong> /メニューの設定" アクションの0からカウント)。 メニューの表示は、メニューマクロで条件式を使用してユーザー設定メニュー項目を表示または非表示にできるため、多少異なる場合があります。 この引数は省略できません。 この引数でメニューを選択し、"Command Index/コマンド インデックス" 引数と "Subcommand Index/サブコマンド インデックス" 引数を空白にすると、メニュー名自体を有効または無効にすることができます。 ただし、メニュー名のチェックマークを付けたり外したりすることはできません (Access では、メニュー名の "Flag/フラグ" 引数の [チェックマーク表示] と [チェックマーク非表示] の設定は無視されます)。</p></td>
+<td><p>状態を設定するコマンドを含むメニューのインデックス。 カスタム メニューまたはグローバル メニューの目的のメニューのインデックスに 0 から始まる整数値を入力します。 [マクロ ビルダー] ウィンドウの <strong>[アクション引数</strong> ] セクションの [ <strong>メニュー</strong> インデックス] ボックスにインデックス値を入力します。 インデックスは、カスタム またはグローバル メニューのメニュー マクロ内のメニューの位置を基準にしています (メニュー マクロ内のこのメニューの <strong>AddMenu</strong> アクションの位置は 0 からカウントされます)。 メニュー マクロで条件式を使用してカスタム メニュー項目を非表示または表示できるので、メニューの表示が多少異なる場合があります。 これは必須の引数です。 この引数でメニューを選択し、"Command Index/コマンド インデックス" 引数と "Subcommand Index/サブコマンド インデックス" 引数を空白にすると、メニュー名自体を有効または無効にすることができます。 ただし、メニュー名のチェックマークを付けたり外したりすることはできません (Access では、メニュー名の "Flag/フラグ" 引数の [チェックマーク表示] と [チェックマーク非表示] の設定は無視されます)。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Command Index/コマンド インデックス</strong></p></td>

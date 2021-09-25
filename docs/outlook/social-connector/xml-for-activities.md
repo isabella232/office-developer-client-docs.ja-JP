@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: acc4a555-a3bf-4a79-86dc-aba6477733b8
 description: このトピックでは、OSC プロバイダーが実装する Outlook Social Connector (OSC) プロバイダー拡張 API 呼び出しと、OSC がアクティビティ情報を取得するために行う呼び出しを示すシナリオの例を示します。 情報は、OSC プロバイダー XML スキーマに準拠した XML 文字列で表されます。
-ms.openlocfilehash: a4f1c6ce1f33b59811f6a6fecb737cd1f737946b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e3b82ca77ecb3e5fa93a86aac840a8a791380b46
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409630"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629047"
 ---
 # <a name="xml-for-activities"></a>アクティビティ用 XML
 

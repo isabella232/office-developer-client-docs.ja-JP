@@ -3,15 +3,15 @@ title: InfoPath フォームのデータにデジタル署名する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7b396d9f-9a47-3170-367f-5d1f0144f927
 description: デジタル署名は、マクロまたはドキュメント上にあり、電子的で暗号化ベースの、セキュリティで保護された認証のスタンプです。有効なデジタル署名では、そのデータが署名者からのものであり、署名されてから変更されていないことを確認できます。ドキュメントまたはドキュメント内の特定のデータに署名すると、署名が計算されてドキュメントに追加されます。このようにして、署名は常に署名済みデータと共に移動します。
-ms.openlocfilehash: 6c1f5a1c14c15bc88839dc44d9a5a595d8b52893
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 69ffc248da087aeeea90a905f6dbb34e91083237
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425100"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568139"
 ---
 # <a name="digitally-signing-data-in-infopath-forms"></a>InfoPath フォームのデータにデジタル署名する
 

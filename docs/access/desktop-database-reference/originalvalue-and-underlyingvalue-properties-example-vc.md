@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249869(v=office.15)
 ms:contentKeyID: 48547246
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: db524a8107563b465dbb56fe2bc5bb051fdc899a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4963e702f6a1d488aa5863c67cd825a1aa63db88
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288176"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589301"
 ---
 # <a name="originalvalue-and-underlyingvalue-properties-example-vc"></a>OriginalValue プロパティと UnderlyingValue プロパティの使用例 (VC++)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、[OriginalValue](originalvalue-property-ado.md) プロパティと [UnderlyingValue](underlyingvalue-property-ado.md) プロパティを使用して、 [Recordset](recordset-object-ado.md) の一括更新中にレコードの基になるデータが変更された場合にメッセージを表示します。
 
@@ -231,7 +231,7 @@ void PrintComError(_com_error &e)
 
 <br/>
 
-**originalvaluex**
+**OriginalValueX.h**
 
 ```cpp 
  

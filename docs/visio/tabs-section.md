@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm2145
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6c6485c6-629c-9aef-d3da-117f34e71cde
 description: タブの停止位置や配置を制御する、図形およびスタイルのセルを格納します。
-ms.openlocfilehash: a543d0a96be8ad3aee485f4171ab3efcdb53d8d7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f75627dc9fb43e5c7886e3f3fb543fe74a0fb9b4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414369"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597969"
 ---
 # <a name="tabs-section"></a>[Tabs] セクション
 

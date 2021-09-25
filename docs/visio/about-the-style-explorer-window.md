@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 f1_keywords:
 - Vis_DSS.chm60119
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bfdc1a63-c355-c759-bdfa-ce27e3ad10e7
 description: '[スタイル エクスプローラー] ウィンドウでは、特定のスタイルから継承される図形セル、または特定のセルがその値を継承するスタイルを、図形作成者が即座に決定できます。'
-ms.openlocfilehash: 55800b692443bae3720b433e5a6178f2709d3675
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bc68dcec0b86a66c3e70b4d9502ce718fbb0c6a2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431786"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628907"
 ---
 # <a name="about-the-style-explorer-window"></a>[スタイル エクスプローラー] ウィンドウについて
 

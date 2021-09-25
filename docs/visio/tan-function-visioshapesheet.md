@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251502
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c820cb95-92e8-5d56-22d7-0a984acc6c59
 description: 角度のタンジェントを返します。
-ms.openlocfilehash: 9ece28baa29f1fdc7d7d31938dc83d8f68f8982d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ac7a2d842e5b13094ff53ec6e62fcfd0dce37f50
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438016"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597913"
 ---
 # <a name="tan-function-visioshapesheet"></a>TAN 関数 (VisioShapeSheet)
 
@@ -28,7 +28,7 @@ TAN(** *angle* ** )
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _angle_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |接線を取得する角度。  <br/> |
+| _angle_ <br/> |必須かどうか  <br/> |**数値型 (Numeric)** <br/> |接線を取得する角度。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
