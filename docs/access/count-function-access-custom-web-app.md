@@ -3,15 +3,15 @@ title: Count 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d931535b-428f-4300-93bf-cfe0ebcc2ac9
 description: クエリまたはテーブルに含まれるレコードの数が返されます。
-ms.openlocfilehash: 98dbed393bf2f6dc401119f6c5dc7ab6b5ff7864
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5eb0bb9f97184a5250b19d5c291d97a029005ab1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419143"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577683"
 ---
 # <a name="count-function-access-custom-web-app"></a>Count 関数 (Access カスタム Web アプリ)
 

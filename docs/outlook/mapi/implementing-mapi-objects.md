@@ -3,17 +3,17 @@ title: MAPI オブジェクトの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: b1ee2533-8077-4976-846b-d42d148bf8c6
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: c0d67d10d54591de926724cbf594a44f17e9ea14
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 64ea298fc078e2848093182bce2bf85f9b3bfc23
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310172"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584256"
 ---
 # <a name="implementing-mapi-objects"></a>MAPI オブジェクトの実装
 

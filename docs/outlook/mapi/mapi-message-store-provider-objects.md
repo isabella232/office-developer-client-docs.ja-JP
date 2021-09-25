@@ -3,17 +3,17 @@ title: MAPI メッセージ ストア プロバイダー オブジェクト
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 87a452e6-dedf-414d-b7cf-07c8b02dd94a
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 55220927206692822593fefb1502a3101b777ccc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 539b5648652be3d29e514f5bd540820142566b8a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413298"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584144"
 ---
 # <a name="mapi-message-store-provider-objects"></a>MAPI メッセージ ストア プロバイダー オブジェクト
   
@@ -23,7 +23,7 @@ ms.locfileid: "33413298"
   
 次の図は、対応するインターフェイスを持つ各メッセージ ストア オブジェクトと、それを使用する MAPI コンポーネントを示しています。
   
-![メッセージ ストア プロバイダーがメッセージ ストア プロバイダーが実装](media/amapi_63.gif "するオブジェクトを実装するオブジェクト")
+![メッセージ ストア プロバイダーが実装するオブジェクト](media/amapi_63.gif "メッセージ ストア プロバイダーが実装するオブジェクト")
   
 ## <a name="see-also"></a>関連項目
 

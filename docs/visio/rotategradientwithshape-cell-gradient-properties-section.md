@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6aada005-3403-4666-9779-7ccb5b83b74a
 description: 塗りつぶしのグラデーションが 2D 回転で図形に合わせて回転するかどうかを、ブール演算型で決定します。
-ms.openlocfilehash: 76a76a4a97128c81710269f75e9e17db90827377
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ac3f5bee458a20f94539f3c2077286c6bb4b3b56
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412220"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570163"
 ---
 # <a name="rotategradientwithshape-cell-gradient-properties-section"></a>[RotateGradientWithShape] セル ([グラデーションのプロパティ] セクション)
 

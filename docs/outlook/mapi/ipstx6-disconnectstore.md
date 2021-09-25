@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IPSTX6.DisconnectStore
 api_type:
 - COM
 ms.assetid: d840aac9-f572-958b-2e1c-aea5c01c42b2
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 69379922b0b6535d965c37a4b97a05947c5ee668
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2f5264239ae351bf3b9affc75a4ea26fd5fe0632
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409819"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584249"
 ---
 # <a name="ipstx6disconnectstore"></a>IPSTX6::DisconnectStore
 

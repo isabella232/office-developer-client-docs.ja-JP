@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm152112
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: dae5718e7b4cb609cb50bd65ee6e2486f4ebaab6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 32fcab6018adcdb40af56788a036154ce99a8ca6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294030"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553124"
 ---
 # <a name="deleteobject-macro-action"></a>DeleteObject マクロ アクション
 
@@ -25,9 +25,9 @@ ms.locfileid: "32294030"
 **DeleteObject** アクションを使用すると、指定したデータベース オブジェクトを削除できます。
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 **DeleteObject** アクションの引数は次のとおりです。
 
@@ -44,7 +44,7 @@ ms.locfileid: "32294030"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Object Type/オブジェクトの種類</strong></p></td>
+<td><p><strong>オブジェクトの種類</strong></p></td>
 <td><p>削除するオブジェクトの種類を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>オブジェクトの種類</strong>] ボックスの一覧で [ <strong>テーブル</strong>]、[ <strong>クエリ</strong>]、[ <strong>フォーム</strong>]、[ <strong>レポート</strong>]、[ <strong>マクロ</strong>]、[ <strong>モジュール</strong>]、[ <strong>データ アクセス ページ</strong>]、[ <strong>サーバー ビュー</strong>]、[ <strong>ダイアグラム</strong>]、[ <strong>ストアド プロシージャ</strong>]、[ <strong>関数</strong>] のいずれかをクリックします。ナビゲーション ウィンドウで選択したオブジェクトを削除する場合は、この引数を指定しません。  </p></td>
 </tr>
 <tr class="even">

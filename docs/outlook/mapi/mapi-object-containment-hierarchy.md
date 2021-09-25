@@ -3,17 +3,17 @@ title: MAPI オブジェクトの格納階層
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 33747835-6eeb-4e07-8f92-3cfa81eecd0f
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: f5faf3a3d4971b01509d0ff0cfa59451015ba205
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 321510daf0a978ad369965be983e4001970e24a7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426927"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584137"
 ---
 # <a name="mapi-object-containment-hierarchy"></a>MAPI オブジェクトの格納階層
   
@@ -31,7 +31,7 @@ ms.locfileid: "33426927"
   
 **MAPI 含有階層**
   
-![MAPI 格納階層](media/amapi_41.gif "MAPI 格納階層")
+![MAPI 含有階層](media/amapi_41.gif "MAPI 含有階層")
   
 ## <a name="see-also"></a>関連項目
 

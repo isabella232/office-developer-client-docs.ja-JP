@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.HrComposeEID
 api_type:
 - COM
 ms.assetid: 8aba90d8-ea1f-4636-af80-17bfeadbdfa0
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7de4fdefee67c79fb15ac28f821b015cdda6708d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ad7152106faaf604f2ea5306fce894a7117a06fa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429048"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584557"
 ---
 # <a name="hrcomposeeid"></a>HrComposeEID
 

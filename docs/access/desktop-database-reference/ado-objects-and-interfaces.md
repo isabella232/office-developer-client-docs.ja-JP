@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249927(v=office.15)
 ms:contentKeyID: 48547471
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 539feb1918877189548d0e7cff6ceb28e50abddc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 92599e81fcaf1303bd1c77c1d6f09acfe5dd63a2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283262"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553236"
 ---
 # <a name="ado-objects-and-interfaces"></a>ADO のオブジェクトとインターフェイス
 
 **適用先:** Access 2013、Office 2013
 
-これらのオブジェクト間のリレーションシップは、ActiveX Data objects (ADO) オブジェクトモデルで表されます。
+これらのオブジェクト間の関係は、データ オブジェクト (ADO) ActiveXモデルで表されます。
 
-各オブジェクトは、対応するコレクションに格納できます。 たとえば、[Error](error-object-ado.md) オブジェクトは [Errors](errors-collection-ado.md) コレクションに格納できます。 詳細については、「 [ADO コレクション](ado-collections.md)」または「特定のコレクションのトピック」を参照してください。
+各オブジェクトは、対応するコレクションに格納できます。 たとえば、[Error](error-object-ado.md) オブジェクトは [Errors](errors-collection-ado.md) コレクションに格納できます。 詳細については [、「ADO コレクションまたは特定のコレクションの](ado-collections.md) トピック」を参照してください。
 
 <br/>
 
@@ -31,7 +31,7 @@ ms.locfileid: "32283262"
 </colgroup>
 <tbody>
 <tr class="even">
-<th>Object</th>
+<th>オブジェクト</th>
 <th>説明</th>
 </tr>
 <tr class="odd">
@@ -51,7 +51,7 @@ ms.locfileid: "32283262"
 <td><p>データ ソースに対して開かれている接続を表します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="error-object-ado.md">Error</a></p></td>
+<td><p><a href="error-object-ado.md">エラー</a></p></td>
 <td><p>プロバイダーを含む単一の操作に関連して発生した、データ アクセス エラーの詳細情報を格納しています。</p></td>
 </tr>
 <tr class="even">
@@ -63,7 +63,7 @@ ms.locfileid: "32283262"
 <td><p>パラメーター クエリまたはストアド プロシージャに基づく、<strong>Command</strong> オブジェクトに関連付けられたパラメーターまたは引数を表します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="property-object-ado.md">Property</a></p></td>
+<td><p><a href="property-object-ado.md">プロパティ</a></p></td>
 <td><p>プロバイダーで定義される ADO オブジェクトの動的特性を表します。</p></td>
 </tr>
 <tr class="odd">

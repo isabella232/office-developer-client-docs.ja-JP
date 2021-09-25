@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagManagerName
 api_type:
 - HeaderDef
 ms.assetid: 564c01fa-a0df-4095-8e87-e75a409c67eb
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: de94ef72e7415092bd336a6cd4721f327990564d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8a7d6237424c5744338a798a657ea5f0c7050077
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342827"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595246"
 ---
 # <a name="pidtagmanagername-canonical-property"></a>PidTagManagerName 標準プロパティ
 

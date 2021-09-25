@@ -5,20 +5,20 @@ ms.date: 08/18/2017
 ms.audience: Developer
 ms.assetid: f7d15fe6-bdad-4f1f-aa18-12a21fc111c4
 description: カスタムの書式設定を作成して、日付または時刻の表示方法を制御する方法を説明します。
-localization_priority: Priority
-ms.openlocfilehash: 76ba7361be4f7902a3ee4a1a8d6e51211ad114bd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 2428bfa165e7d83f1792ec5ce4a53a97dec1de13
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282209"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577676"
 ---
 # <a name="custom-date-and-time-formats-for-the-format-function-access-custom-web-app"></a>Format 関数 (カスタム web アプリケーションのアクセス) のユーザー設定の日付と時刻の書式を設定します。
 
 カスタムの書式を作成して、日付または時刻の表示方法を制御する方法について説明します。
   
 > [!IMPORTANT]
-> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-JP/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="format-specifications"></a>書式指定
 

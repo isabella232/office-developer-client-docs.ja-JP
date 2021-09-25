@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ae4cbe4b-a0cb-c3c5-cf2e-d396b4acb68f
 description: このメンバーはプレースホルダーであり、サポートされていません。
-ms.openlocfilehash: af5bc0b8599fa9f90faa5287938642dbb9a9f78b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bffc842a00300b64216aa91007aeb901015e393b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411205"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576584"
 ---
 # <a name="ifreebusydataplaceholder2"></a>IFreeBusyData::Placeholder2
 

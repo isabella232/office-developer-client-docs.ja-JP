@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.NOTIFICATION
 api_type:
 - COM
 ms.assetid: 01b6e695-a649-4efd-a893-7586b476467e
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: a3235c2305d61318f482943167e5f307e5da0d70
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: eff140179865d662545d0e21ca3789a6e8c2643b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432878"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583977"
 ---
 # <a name="notification"></a>NOTIFICATION
  
@@ -46,7 +46,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 **ulEventType**
   

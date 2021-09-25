@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidAddressBookProviderArrayType
 api_type:
 - COM
 ms.assetid: ca4eb6c2-98e9-4dbc-9f5a-f0f257456ead
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 68396f210aab465da9cec4a74a3c24cc4e8578a5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: bcbfe2a09d91f1f6c43ec6ddf1dfdec6592994dd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348441"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583994"
 ---
 # <a name="pidlidaddressbookproviderarraytype-canonical-property"></a>PidLidAddressBookProviderArrayType 標準プロパティ
 

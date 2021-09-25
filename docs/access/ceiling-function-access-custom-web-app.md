@@ -3,15 +3,15 @@ title: Ceiling 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0245c820-6c60-47e2-8afa-3e56679454a3
 description: 指定した数値式より大きい、または等しい最小の整数を戻します。
-ms.openlocfilehash: 28d75ae3db535223566c39819dd3f5482b43002c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2c3ce19766b74ae9963da9a7a75c1708385fc953
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414208"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577767"
 ---
 # <a name="ceiling-function-access-custom-web-app"></a>Ceiling 関数 (Access カスタム Web アプリ)
 

@@ -8,15 +8,15 @@ f1_keywords:
 - HookExcelWindow
 keywords:
 - hookexcelwindow function [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 13f0ae5e-9951-4e89-a245-7cf68c6f6724
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 4103bf3a95388d20efeb74fcd736aeb5520d0845
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4ded29045ae66d4f4a73b68bc74d695ca8059449
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413508"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576710"
 ---
 # <a name="hookexcelwindow"></a>HookExcelWindow
 

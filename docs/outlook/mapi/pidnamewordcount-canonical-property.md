@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidNameWordCount
 api_type:
 - COM
 ms.assetid: 84d63bb7-e688-47e4-935f-1c851708eea1
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 256f114c1ced1511d1a698ba3e6e38265ec5af5f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 859831f8a87dff403e85b916a0ab6366bbfaacc3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319454"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595351"
 ---
 # <a name="pidnamewordcount-canonical-property"></a>PidNameWordCount 標準プロパティ
 

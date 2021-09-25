@@ -3,17 +3,17 @@ title: MAPI テーブル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 7974cae1-10f1-42e9-8be4-c02f2bd86714
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 840c34a64cd0478be8f208799653b9916f50079d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 23f847e525cbfd5d6bc54b54010f09677ec1028c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437085"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595771"
 ---
 # <a name="mapi-tables"></a>MAPI テーブル
   
@@ -31,7 +31,7 @@ MAPI テーブルは、特定の種類の他の MAPI オブジェクトに属す
   
 次の表に、テーブル ビューの列セットを構成するプロパティを示します。
   
-|**Property**|**説明**|
+|**プロパティ**|**説明**|
 |:-----|:-----|
 |**PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md))  <br/> |送信者名  <br/> |
 |**PR_ORIGINAL_DELIVERY_TIME** ([PidTagOriginalDeliveryTime](pidtagoriginaldeliverytime-canonical-property.md))  <br/> |メッセージが送信された日時  <br/> |
@@ -41,7 +41,7 @@ MAPI テーブルは、特定の種類の他の MAPI オブジェクトに属す
   
 **テーブルを使用してフォルダーの内容を表示**
   
-![テーブルを使用してフォルダーの内容を表示する](media/amapi_54.gif "テーブルを使用してフォルダーの内容を表示する")
+![テーブルを使用してフォルダーの内容を表示](media/amapi_54.gif "テーブルを使用してフォルダーの内容を表示")
   
 テーブルを操作するには、次の 2 つのインターフェイスがあります。
   

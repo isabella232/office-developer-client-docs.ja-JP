@@ -8,15 +8,15 @@ f1_keywords:
 - ConvertXLRef12ToXLRef
 keywords:
 - convertxlref12toxlref function [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b620ed21-73ef-489b-9c00-7be12bb41214
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 0a12052a93d030088feb548449955129ff5bdc0f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 15f4576bd988668b2f9e06ca7790afa27dd97aad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432654"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576731"
 ---
 # <a name="convertxlref12toxlref"></a>ConvertXLRef12ToXLRef
 

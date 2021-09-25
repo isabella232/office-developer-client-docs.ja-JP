@@ -3,17 +3,17 @@ title: トランスポート プロバイダーTNEF-Enabled開発する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 7525eee1-4016-49b8-9509-5ebbe1db819f
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 282b1866699b695c647caedd130ce5abc1bcbc2c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 30b61b1cd8645aa0fa0bc67e89507f1827ea8e95
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439003"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584606"
 ---
 # <a name="developing-a-tnef-enabled-transport-provider"></a>トランスポート プロバイダーTNEF-Enabled開発する
 

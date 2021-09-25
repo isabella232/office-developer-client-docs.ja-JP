@@ -3,17 +3,17 @@ title: MAPI フォーム サーバー
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 855292b8-028e-4c1e-87ed-3f20b9ba584a
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 3c95f6a1d4d50dd6552c6e786d17c40da14f3f3c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 10c71c9cebcc66542846c0631be31d6a893d82f2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419108"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561243"
 ---
 # <a name="mapi-form-servers"></a>MAPI フォーム サーバー
 

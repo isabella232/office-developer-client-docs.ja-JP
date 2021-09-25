@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidPostRssChannel
 api_type:
 - COM
 ms.assetid: 249966ee-0d00-4d2d-89b0-fb7525a89735
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 84ff8a5303a15dd73d8f3157a087c57c486fec27
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 688724daa93f342a3975d3a51b86f055b457f707
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315982"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595470"
 ---
 # <a name="pidlidpostrsschannel-canonical-property"></a>PidLidPostRssChannel 標準プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "32315982"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Atom フィードまたは RSS チャネルの XML のタイトル \< \> フィールド \< の内容 \> を格納 \< します \> 。
+Atom または RSS の \<title\> XML からのフィールドの内容を \<feed\> 格納します \<channel\> 。
   
 |||
 |:-----|:-----|

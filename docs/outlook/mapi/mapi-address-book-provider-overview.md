@@ -3,17 +3,17 @@ title: MAPI アドレス帳プロバイダーの概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: ead51434-ae19-4c34-aa7a-bdeeccca5bd9
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: ee628f4b11cb174c05a16ca60c9ec830a0e9abbe
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 262b32b2ee95c3f9eb0a83db00f37bcb78c23b88
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426542"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584151"
 ---
 # <a name="mapi-address-book-provider-overview"></a>MAPI アドレス帳プロバイダーの概要
   
@@ -27,7 +27,7 @@ ms.locfileid: "33426542"
   
 **アドレス帳の構造**
   
-![アドレス帳組織](media/amapi_04.gif "アドレス帳の組織")
+![アドレス帳の構造](media/amapi_04.gif "アドレス帳の構造")
   
 MAPI は、インストールされているアドレス帳プロバイダーによって提供される情報を 1 つのアドレス帳に統合し、クライアント アプリケーションに統合ビューを表示します。 統合リストには、インストールされている各アドレス帳プロバイダーによって表示されるトップ レベルのコンテナーが表示されます。 ほとんどのアドレス帳プロバイダーは、MAPI 統合アドレス帳のトップ レベルに含める場合、トップ レベルで少数のコンテナー (通常は 1 ~ 3 個) のみを公開します。 たとえば、アドレス帳プロバイダーは、"All Users" と "Local Users" を 2 つのコンテナーとしてトップ レベルで使用できます。
   

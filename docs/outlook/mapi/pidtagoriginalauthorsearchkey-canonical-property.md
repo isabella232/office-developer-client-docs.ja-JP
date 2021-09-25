@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagOriginalAuthorSearchKey
 api_type:
 - COM
 ms.assetid: 4a10cf99-c5e6-4a24-b531-3aebb7800bfe
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 09331e1201b6f6e45bb9e26e618ee59e67efbf8d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 098fc9b44f694ffbc7e7f2240500fe3bc7f1093a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409581"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595183"
 ---
 # <a name="pidtagoriginalauthorsearchkey-canonical-property"></a>PidTagOriginalAuthorSearchKey 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "33409581"
 |関連するプロパティ:  <br/> |PR_ORIGINAL_AUTHOR_SEARCH_KEY  <br/> |
 |識別子:  <br/> |0x0056  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Server  <br/> |
+|エリア:  <br/> |サーバー  <br/> |
    
 ## <a name="remarks"></a>注釈
 

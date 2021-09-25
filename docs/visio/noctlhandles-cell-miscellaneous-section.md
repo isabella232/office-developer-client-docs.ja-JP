@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251319
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4345b3e5-f522-e300-307c-4f8992a3ddce
 description: 選択した図形のコントロール ハンドルの表示/非表示を切り替えます。
-ms.openlocfilehash: cbe4d6a8b6fdd4b66acf064884d20999ff7e3b4f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f4817fffd602bf55bbc9c1a8fc29cdeee7213340
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416126"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577837"
 ---
 # <a name="noctlhandles-cell-miscellaneous-section"></a>[NoCtlHandles] セル ([Miscellaneous] セクション)
 

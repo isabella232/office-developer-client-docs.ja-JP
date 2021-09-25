@@ -3,17 +3,17 @@ title: 定期的なアイテムのパターンを読み取って解析する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 75113097-b3ae-4d20-9796-85c62a592ef0
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: c226fe79fd002cda3c557fc8416c25f98ad33626
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6c5b7addd9a62e8f87bee1435f1c73ae61e34333
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345928"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561692"
 ---
 # <a name="read-and-parse-a-recurrence-pattern"></a>定期的なアイテムのパターンを読み取って解析する
   

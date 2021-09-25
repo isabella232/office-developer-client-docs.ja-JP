@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidNameExchangeJunkEmailMoveStamp
 api_type:
 - COM
 ms.assetid: 7a52f46c-371c-46d0-8d66-e154482e8269
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 098261cd71631e4816d22272e1b1bef1d5932a94
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: aa003be238b178f1d99628a24fa345d49057e9e4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540946"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595365"
 ---
 # <a name="pidnameexchangejunkemailmovestamp-canonical-property"></a>PidNameExchangeJunkEmailMoveStamp 標準プロパティ
 

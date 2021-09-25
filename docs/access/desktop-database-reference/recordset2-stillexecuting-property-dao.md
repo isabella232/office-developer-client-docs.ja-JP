@@ -1,29 +1,29 @@
 ---
-title: StillExecuting プロパティ (DAO)
+title: Recordset2.StillExecuting プロパティ (DAO)
 TOCTitle: StillExecuting Property
 ms:assetid: f051c350-0451-44fe-0e47-b152bae4b481
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836546(v=office.15)
 ms:contentKeyID: 48548601
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: aa94622374990ce48c857e9ad45c3531975bb9a8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4816415d0f835a9f8a5b40e79ee9ed57f1b4741a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307218"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552606"
 ---
-# <a name="recordset2stillexecuting-property-dao"></a>StillExecuting プロパティ (DAO)
+# <a name="recordset2stillexecuting-property-dao"></a>Recordset2.StillExecuting プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*。StillExecuting
+*式* .StillExecuting
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 

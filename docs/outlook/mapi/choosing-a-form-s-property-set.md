@@ -3,17 +3,17 @@ title: フォームのプロパティ セットの選択
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 5680fed2-b2e7-4c4b-9ba8-2c497b9c433c
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: d983b71c7c92c395740a8ae6f6d3666a8bc2c0c7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b18ac45fe04f1e299199e4a51bf952856d5bd85d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407194"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584725"
 ---
 # <a name="choosing-a-forms-property-set"></a>フォームのプロパティ セットの選択
 

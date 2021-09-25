@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAdditionalRenEntryIdsEx
 api_type:
 - HeaderDef
 ms.assetid: b5e896e7-c0c6-4ad1-bf91-9daba3a1e4d4
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 57ab68d4c53693c769a4aadf8737f57ef5e73fcd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b364ab23fe3c5dd966b412603d9948a74039d765
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335204"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560985"
 ---
 # <a name="pidtagadditionalrenentryidsex-canonical-property"></a>PidTagAdditionalRenEntryIdsEx 標準プロパティ
 
@@ -40,7 +40,7 @@ ms.locfileid: "32335204"
   
 **PersistData ブロック**
 
-|**名前**|**Type**|**[サイズ]**|**説明**|
+|**名前**|**型**|**サイズ**|**説明**|
 |:-----|:-----|:-----|:-----|
 |**PersistID** <br/> |WORD  <br/> |2  <br/> |この PersistData エントリの識別子 **の値を入力** します。 有効な値の一覧については、「PersistBlockType Values」テーブルを参照してください。  <br/> |
 |**DataElementsSize** <br/> |WORD  <br/> |2  <br/> |**DataElements** フィールドのサイズ (バイト単位)。  <br/> |
@@ -65,7 +65,7 @@ ms.locfileid: "32335204"
   
 **PersistElementBlock**
 
-|**名前**|**Type**|**[サイズ]**|**説明**|
+|**名前**|**型**|**サイズ**|**説明**|
 |:-----|:-----|:-----|:-----|
 |**ElementID** <br/> |WORD  <br/> |2  <br/> |この PersistElement ブロックの型識別子 **の値を指定** します。 有効な値の一覧については、「PersistElementType Values」の表を参照してください。  <br/> |
 |**ElementDataSize** <br/> |WORD  <br/> |2  <br/> |ElementData フィールドのサイズをバイト単位 **で指定** します。  <br/> |

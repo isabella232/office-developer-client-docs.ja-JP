@@ -1,22 +1,22 @@
 ---
-title: テーブル定義プロパティ (DAO)
+title: TableDefs プロパティ (DAO)
 TOCTitle: Properties
 ms:assetid: a565e9c7-36ef-47b7-a476-56333cc7f2a2
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn142529(v=office.15)
 ms:contentKeyID: 52073767
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ed9d244fb79d1a3fc485f6675a10e7b680a2cc9f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fc94b2a5ca389596ca79d34dbb86bdfc20bf59ef
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314120"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552389"
 ---
-# <a name="tabledefs-properties-dao"></a>テーブル定義プロパティ (DAO)
+# <a name="tabledefs-properties-dao"></a>TableDefs プロパティ (DAO)
 
 **適用先:** Access 2013、Office 2013
 
-- [Count プロパティ (DAO)](tabledefs-count-property-dao.md)
+- [TableDefs.Count プロパティ (DAO)](tabledefs-count-property-dao.md)
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.HrSetOneProp
 api_type:
 - COM
 ms.assetid: 14ae3242-fddf-4199-a9a7-4ab153b31064
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9fae06b9e9d5ef4885d798825659fa3486ec9e72
-ms.sourcegitcommit: fb521c23df785c9c3aefa5062272b2630a32e587
+ms.openlocfilehash: 50335f864001cd5698e93b1f2df50b9a6e2512c6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52589181"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561587"
 ---
 # <a name="hrsetoneprop"></a>HrSetOneProp
 
@@ -54,7 +54,7 @@ HRESULT HrSetOneProp(
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [IMAPIProp::SetProps](imapiprop-setprops.md)メソッドとは異なり **、HrSetOneProp** 関数は警告を返しません。 プロパティは 1 つしか設定しないので、単に成功または失敗します。 複数のプロパティを設定または変更する場合 **、SetProps の方が** 高速です。 
   

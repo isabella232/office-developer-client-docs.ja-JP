@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 f1_keywords:
 - Vis_DSS.chm82251812
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f750223f-165c-8c2f-457b-724817b062b3
 description: '[シェイプシート] ウィンドウでセルからセルへ移動するには、方向キーおよび Tab キーを使用します。セルをクリックしてアクティブにするか、アクティブなセルを変更しないでシェイプシートのセルをスクロールします。'
-ms.openlocfilehash: a6e71852f20bfeb889161c245859b458ad0debfb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 324d74b0a5652ac0839813dbcde224ebf9171beb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430820"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577863"
 ---
 # <a name="move-around-a-shapesheet-window"></a>[シェイプシート] ウィンドウ内を移動する
 

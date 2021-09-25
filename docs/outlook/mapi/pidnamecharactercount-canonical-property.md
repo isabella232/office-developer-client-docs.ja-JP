@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidNameCharacterCount
 api_type:
 - COM
 ms.assetid: 6c7960a9-ccfa-4872-9729-e707bfd9b68e
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 28afbf58d41caa05178c9556fbb7b279b3d34c14
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a2805838572627e23f4a985cb72128eb5f6d7971
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357569"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595372"
 ---
 # <a name="pidnamecharactercount-canonical-property"></a>PidNameCharacterCount 標準プロパティ
 

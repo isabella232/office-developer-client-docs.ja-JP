@@ -3,15 +3,15 @@ title: コメント マクロ ブロック (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1d8977a0-e787-415f-adc0-2e0c53a364a4
 description: Comment ステートメントを使用して、マクロに説明コメントを指定できます。
-ms.openlocfilehash: 93404f24750fd63d42127f71d3593d863c2bf1ba
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bdb46d7f3cf2c9f31a39941e279f1b844afba90d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418926"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577732"
 ---
 # <a name="comment-macro-block-access-custom-web-app"></a>コメント マクロ ブロック (Access カスタム Web アプリ)
 

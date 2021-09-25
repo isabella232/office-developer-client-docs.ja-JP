@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidCategories
 api_type:
 - COM
 ms.assetid: 6ad2aedc-405b-475e-ac76-7ecbbef28f73
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: b2047f04f3f4a8d2b3e58e07a71e7e2463eff9cf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 568349edc056db11298668b942130a4e91a8ff3a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344976"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561132"
 ---
 # <a name="pidlidcategories-canonical-property"></a>PidLidCategories 標準プロパティ
 
@@ -47,7 +47,7 @@ ms.locfileid: "32344976"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様Exchange Server提供します。
     
 [[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   

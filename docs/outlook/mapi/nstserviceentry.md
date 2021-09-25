@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5ada6363-2406-4c0a-8326-a299a8bbefe1
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 96c04a242c477204ea1447fb78c31d189eeac59a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d68efa728b2cd62aca4ffbce02d2ea894ff74c35
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280055"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595638"
 ---
 # <a name="nstserviceentry"></a>NSTServiceEntry
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm3055
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8e327e00-0844-efa4-900b-6954d3b009bb
 description: スプラインの 2 番目のコントロール ポイント、2 番目のノット、最初のノット、最後のノット、スプラインの角度の x 座標と y 座標を含む。
-ms.openlocfilehash: 2ec06619770af4e5dbcc1a763595b6e01a39052b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 26ef4d10af7dff9376ac214123f1391b38f84dd5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417477"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569945"
 ---
 # <a name="splinestart-row-geometry-section"></a>[SplineStart] 行 ([Geometry] セクション)
 

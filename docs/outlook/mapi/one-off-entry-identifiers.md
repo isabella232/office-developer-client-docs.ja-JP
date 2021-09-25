@@ -3,17 +3,17 @@ title: 一時エントリ識別子
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 741d21ae-f14a-4b7f-80aa-91d0f0ff3f34
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: abe52cb45e13e6713d28fffe379e245e2483bffa
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: befb72506ee8b31628b10567996a92db6de3f89b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411044"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584012"
 ---
 # <a name="one-off-entry-identifiers"></a>一時エントリ識別子
   
@@ -23,7 +23,7 @@ ms.locfileid: "33411044"
   
 **一時エントリ識別子の形式**
   
-![1 回のエントリ識別子の形式](media/amapi_69.gif "1 回のエントリ識別子の形式")
+![一時エントリ識別子の形式](media/amapi_69.gif "一時エントリ識別子の形式")
   
 最初のフィールドは、カスタム受信者を表すエントリ識別子を識別する特別な [MAPIUID](mapiuid.md) 構造です。 この **MAPIUID** 構造体は、定数に設定する必要MAPI_ONE_OFF_UID。 MAPI_ONE_OFF_UIDは、ヘッダー ファイル MAPIDEFS.H で定義されます。 
   

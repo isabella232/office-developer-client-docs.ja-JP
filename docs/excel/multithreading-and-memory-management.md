@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6f7e052a-4270-4b83-b1ed-feabf6dbeaa2
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: f387d5ddb184c681ab5e005a6eb24058f6f52f9a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9e233d6db482c4671ee25cfb046e730a3d0e2376
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414467"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576717"
 ---
 # <a name="multithreading-and-memory-management"></a>マルチスレッド処理とメモリ管理
 

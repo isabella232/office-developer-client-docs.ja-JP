@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f216afb5-4393-6e1c-54c2-3c184a26d934
 description: 塗りつぶしグラデーションについて、グラデーションの分岐点の色、透過性、および位置を格納します。
-ms.openlocfilehash: d9f3661d91b43bca7ff809c4e41a0c1257660e66
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: db9e223f6cd43b09682b13d127ab3d2885c79c15
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538621"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570149"
 ---
 # <a name="row-element-fill-gradient-section-visio-xml"></a>Row 要素 (Fill Gradient Section) (Visio XML)
 

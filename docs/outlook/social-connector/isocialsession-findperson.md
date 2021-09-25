@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a86cb847-5d49-44b8-b2bc-0e35e70395b4
 description: userID パラメーターに一致する 1 人または複数のユーザーを表す文字列を取得します。
-ms.openlocfilehash: 1aa6478126e509c8d707d6a8d11b2c8428177bbd
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 789f98dcc8e4b09a230d148644f60a2fbf1c3328
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434796"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594917"
 ---
 # <a name="isocialsessionfindperson"></a>ISocialSession::FindPerson
 

@@ -3,17 +3,17 @@ title: 新しい MAPI プロパティの定義
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 1a2325ea-ddfa-480f-b65f-f5b20471fb40
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 666ee413319765e39e25d586208f764afc93ae6b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b0f28efea6e7ba05dc399565ee866cf2e34572bc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425016"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584634"
 ---
 # <a name="defining-new-mapi-properties"></a>新しい MAPI プロパティの定義
 

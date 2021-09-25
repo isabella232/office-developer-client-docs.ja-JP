@@ -8,15 +8,15 @@ f1_keywords:
 - TempStr
 keywords:
 - tempstr function [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b21b4868-babe-4255-9093-503172efa045
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 4ccb6f3c764371c35bac12c8c78fede54234a7d6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 49c4ccdd3b386fb7d573748ab81e833f34e8a0e5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418044"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576668"
 ---
 # <a name="tempstr"></a>TempStr
 

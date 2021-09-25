@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6c893bfa-c2ca-48fa-8a3e-fd5ba3681a18
 description: 2 つの数を減算します。この減算演算子では、日付から数 (日数) を減算することもできます。
-ms.openlocfilehash: 07f0f555f19e20179066443eba5f16dd747beae1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8ae94b263a40f07355bb34cd9c72567c0e0d01b2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433515"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576752"
 ---
 # <a name="--subtract-access-custom-web-app"></a>- (減算) (Access カスタム Web アプリ)
 

@@ -3,17 +3,17 @@ title: ���[���̕ۑ��ꏊ�Ńt�H���_�[������
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: f643800e-0ae5-41a3-93da-3fa39dea1633
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f2963379e6c670cc97a902f113d896bf2dda5591
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: aefb67a399e7cf313845d82237fe85bc1ca03dbd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424911"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584277"
 ---
 # <a name="implementing-folders-in-message-stores"></a>���[���̕ۑ��ꏊ�Ńt�H���_�[��������܂��B
 

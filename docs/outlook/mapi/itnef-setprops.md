@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ITnef.SetProps
 api_type:
 - COM
 ms.assetid: 09e4b427-316b-4630-9f3d-81e74f040d7b
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: f7372830624d774fb914ae956e86a9e4476cf487
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: beb4a8357e5170298078ea5f52b8585f28d14486
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430792"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561321"
 ---
 # <a name="itnefsetprops"></a>ITnef::SetProps
 

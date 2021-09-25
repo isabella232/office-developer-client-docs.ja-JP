@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1a51a5ca-6b68-d2d8-befb-2b1d9cda1b8e
 description: '[フィールド] ダイアログ ボックスを使用して、図形のテキストに挿入された関数と数式を表示します。'
-ms.openlocfilehash: b3bae89d20a4defed591e95ce0155f70d806e6f2
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: fffa97458b083edc7df33c4a559fa987f2bb1bf9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540057"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594896"
 ---
 # <a name="cell-element-field-section-visio-xml"></a>Cell 要素 (Field Section) (Visio XML)
 
@@ -66,10 +66,10 @@ ms.locfileid: "34540057"
   
 |**値**|**説明**|**詳細情報**|
 |:-----|:-----|:-----|
-|カレンダー  <br/> |データ型が Date の場合にテキスト フィールドに使用されるカレンダーを指定します。  <br/> |[[Calendar] セル ([Text Fields] セクション)](calendar-cell-text-fields-section.md) <br/> |
-|Format  <br/> |テキスト フィールドの書式を指定します。文字列、数値、日付/時刻、期間、または通貨を指定できます。  <br/> |[[Format] セル ([Text Fields] セクション)](format-cell-text-fields-section.md) <br/> |
+|予定表  <br/> |データ型が Date の場合にテキスト フィールドに使用されるカレンダーを指定します。  <br/> |[[Calendar] セル ([Text Fields] セクション)](calendar-cell-text-fields-section.md) <br/> |
+|フォーマット  <br/> |テキスト フィールドの書式を指定します。文字列、数値、日付/時刻、期間、または通貨を指定できます。  <br/> |[[Format] セル ([Text Fields] セクション)](format-cell-text-fields-section.md) <br/> |
 |ObjectKind  <br/> |テキスト フィールドの種類を示します。  <br/> |[[ObjectKind] セル ([Text Fields] セクション)](objectkind-cell-text-fields-section.md) <br/> |
-|型  <br/> |テキスト フィールドの値に対してデータの種類を指定します。  <br/> |[[Type] セル ([Text Fields] セクション)](type-cell-text-fields-section.md) <br/> |
+|種類  <br/> |テキスト フィールドの値に対してデータの種類を指定します。  <br/> |[[Type] セル ([Text Fields] セクション)](type-cell-text-fields-section.md) <br/> |
 |UICat  <br/> |挿入されたフィールドのカテゴリを決定します。 このセルは、[フィールド] ダイアログ ボックスと [データ形式] ダイアログ ボックスで、フィールドおよびカテゴリ情報を決定するために使用されます。  <br/> |[[UICategory] セル ([Text Fields] セクション)](uicategory-cell-text-fields-section.md) <br/> |
 |UICod  <br/> |挿入されたフィールドのコードを決定します。 このセルは、[フィールド] ダイアログ ボックスと [データ形式] ダイアログ ボックスで、フィールドおよびカテゴリ情報を決定するために使用されます。  <br/> |[[UICode] セル ([Text Fields] セクション)](uicode-cell-text-fields-section.md) <br/> |
 |UIFmt  <br/> |挿入されたフィールドの形式を指定します。 このセルは、[フィールド] ダイアログ ボックスと [データ形式] ダイアログ ボックスで使用され、フィールドと  <br/> |[[UIFormat] セル ([Text Fields] セクション)](uiformat-cell-text-fields-section.md) <br/> |

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 keywords:
 - xlrunningoncluster
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7662f255-4184-4af0-97f5-9a89347a201a
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: f5c630c73899b07e2727a7d42b18eb1891797bab
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a5c8a231a1b3dbb7288999f0ac782a89c2b6a943
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418289"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576612"
 ---
 # <a name="xlrunningoncluster"></a>xlRunningOnCluster
 

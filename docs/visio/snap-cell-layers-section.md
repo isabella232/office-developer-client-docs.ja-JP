@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251355
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c1b24e45-6f08-686b-b53d-e85fb9087a50
 description: レイヤーに割り当てられた図形に他の図形をスナップできるかどうかを指定します。レイヤーに割り当てられた図形に他の図形をスナップすることはできますが、他の図形にレイヤーに割り当てられた図形をスナップすることはできません。
-ms.openlocfilehash: 87e7e7500469fb7f8c7fdd4771a0225d0e4fc993
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8292e6e6f04363aae31161b9eaa431cb3255c30f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434845"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570037"
 ---
 # <a name="snap-cell-layers-section"></a>[Snap] セル ([Layers] セクション)
 
@@ -33,7 +33,7 @@ ms.locfileid: "33434845"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |レイヤー。スナップ[ *i* ] ここで *、i* = <1>、2、3..  <br/> |
+|セル名:  <br/> |Layers.Snap[ *i*  ] ここで  *、i*  = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Snap] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

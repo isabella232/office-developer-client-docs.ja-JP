@@ -9,15 +9,15 @@ f1_keywords:
 - TempBool12
 keywords:
 - tempbool function [excel 2007],TempBool12 function [Excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0cf1fa58-416f-4692-a2e3-422473c19492
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: c8c917f0004fe091413ea670f1cc562f1d701fa0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 47c86ac41c49ae1e3de9a5f065294215f95822db
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433718"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576675"
 ---
 # <a name="tempbooltempbool12"></a>TempBool/TempBool12
 

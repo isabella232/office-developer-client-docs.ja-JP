@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251412
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2b6c5375-c543-ff2f-f20a-6d92fd65717a
 description: システムの地域情報の短い日付スタイルに従って書式設定された年、月、および日で表される日付を設定。 年、月、および日の値は、グレゴリオ暦を反映します。
-ms.openlocfilehash: 0175c1f06ec3dbdf89774759546c65994d38105e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 820329bbe9283cae540625d4232d4095c6a1a530
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360334"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577907"
 ---
 # <a name="date-function-visioshapesheet"></a>DATE 関数 (VisioShapeSheet)
 

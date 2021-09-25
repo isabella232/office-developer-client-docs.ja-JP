@@ -3,17 +3,17 @@ title: 一時アドレス
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 9224c694-b26f-42c7-9404-ee2dd832cfbb
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: e6bda55951d8df5c5da272750c631ec105b2ccf2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1fccf0f3e72cb2619566e074cde3dbb52c539ef2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409112"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583982"
 ---
 # <a name="one-off-addresses"></a>一時アドレス
 
@@ -29,12 +29,12 @@ ms.locfileid: "33409112"
   
 |**コンポーネント**|**使用法**|**説明**|
 |:-----|:-----|:-----|
-|表示名  <br/> |省略可能  <br/> |存在しない場合 **、IAddrBook::ResolveName は** 電子メール アドレスの表示部分を表示名として使用します。 空白が含まれる場合があります。 詳細については [、「IAddrBook::ResolveName」を参照してください](iaddrbook-resolvename.md)。  <br/> |
-|[  <br/> |必須  <br/> |型とアドレスの情報の開始を示します。  <br/> |
-|]  <br/> |必須  <br/> |型とアドレスの情報の末尾を示します。 空白以外の文字が続く場合、エントリはカスタム受信者として扱われます。  <br/> |
-|アドレスの種類  <br/> |必須  <br/> |アドレスの種類。は、特定のアドレス形式にマップされます。 詳細については、「MAPI アドレスの [種類」を参照してください](mapi-address-types.md)。  <br/> |
-|:  <br/> |必須  <br/> |アドレスの種類と電子メール アドレスを分離します。  <br/> |
-|メール アドレス  <br/> |必須  <br/> |��M�҂̃A�h���X�ł��B 空白が含まれる場合があります。  <br/> |
+|表示名  <br/> |オプション  <br/> |存在しない場合 **、IAddrBook::ResolveName は** 電子メール アドレスの表示部分を表示名として使用します。 空白が含まれる場合があります。 詳細については [、「IAddrBook::ResolveName」を参照してください](iaddrbook-resolvename.md)。  <br/> |
+|[  <br/> |必須かどうか  <br/> |型とアドレスの情報の開始を示します。  <br/> |
+|]  <br/> |必須かどうか  <br/> |型とアドレスの情報の末尾を示します。 空白以外の文字が続く場合、エントリはカスタム受信者として扱われます。  <br/> |
+|アドレスの種類  <br/> |必須かどうか  <br/> |アドレスの種類。は、特定のアドレス形式にマップされます。 詳細については、「MAPI アドレスの [種類」を参照してください](mapi-address-types.md)。  <br/> |
+|:  <br/> |必須かどうか  <br/> |アドレスの種類と電子メール アドレスを分離します。  <br/> |
+|メール アドレス  <br/> |必須かどうか  <br/> |��M�҂̃A�h���X�ł��B 空白が含まれる場合があります。  <br/> |
    
 MAPI では、特定の引用符付き文字セットを使用して、アドレスにコンマ (,,)、左かっこ ([)、コロン (:)) などの特殊文字を含めることができます。改行や改行などの型指定できない文字や、他の 16 進数に相当する文字があります。 引用文字は円記号 ( です \) 。 したがって、クライアントまたはプロバイダーがアドレスに円記号を挿入する必要がある場合は、引用文字 (" ") を使用して、バックスラッシュを事前に設定する必要 \\ があります。
   

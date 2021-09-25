@@ -3,17 +3,17 @@ title: ADRLIST および SRowSet 構造のためのメモリ管理
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: d009f6b6-d151-4d52-b7cc-a15127142354
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: a5636cad7cad23bb5114bdbd34aff48c3639773b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ad3a05a2556512ad06ab52abda29d4bb66fbd605
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407866"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561279"
 ---
 # <a name="managing-memory-for-adrlist-and-srowset-structures"></a>ADRLIST および SRowSet 構造体のメモリを管理する"
 
@@ -31,7 +31,7 @@ ms.locfileid: "33407866"
   
 **ADRLIST メモリの割り当て**
   
-![ADRLIST メモリ割り当て](media/amapi_52.gif "ADRLIST メモリ割り当て")
+![ADRLIST メモリの割り当て](media/amapi_52.gif "ADRLIST メモリの割り当て")
   
 ## <a name="see-also"></a>関連項目
 

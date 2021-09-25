@@ -3,15 +3,15 @@ title: CharIndex 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 340ed9a8-6f82-4aa8-a951-2c453b3d1ac4
 description: あるテキスト式を他のテキスト式内で検索して、それが見つかった場合はその開始位置を戻します。
-ms.openlocfilehash: dc6906f70bc5bb17e12855d69946281909962988
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bd0b14210a4e4ac73cbbca6198fa86d823853f88
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423133"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577718"
 ---
 # <a name="charindex-function-access-custom-web-app"></a>CharIndex 関数 (Access カスタム Web アプリ)
 
@@ -26,8 +26,8 @@ ms.locfileid: "33423133"
   
 |**引数名**|**必須**|**説明**|
 |:-----|:-----|:-----|
-| *TextExpression*  <br/> |はい  <br/> |検索するテキストを含むテキスト式。  <br/> |
-| *WithinText*  <br/> |はい  <br/> |検索するテキスト式。  <br/> |
+| *TextExpression*  <br/> |必要  <br/> |検索するテキストを含むテキスト式。  <br/> |
+| *WithinText*  <br/> |必要  <br/> |検索するテキスト式。  <br/> |
 | *Start*  <br/> |いいえ  <br/> |検索を開始する  *WithinText*  の場所を指定する整数。 Start  *が*  指定されていない場合、負の数値、または 0 の場合、検索は WithinText の先頭から  *始まります*  。  <br/> |
    
 ## <a name="remarks"></a>注釈

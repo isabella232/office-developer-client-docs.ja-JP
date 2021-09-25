@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1046253
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d4f0cf7a-ac4b-c914-7887-e1d65e9d59fa
 description: Visio 2013 は、カスタム図面ソリューションに強力な単一プラットフォームを提供します。 新しいシェイプシートのセルと関数、およびオートメーションのオブジェクト、プロパティ、メソッド、イベントを使用すると、ソリューションで要素の動作を定義および制御するときに、より多くのオプションが利用できるようになります。
-ms.openlocfilehash: 9ab1c447e7cfdf41b8c88a85438ac2904b1395cf
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 554ebc4d6622a00155639b860250b49d3e43f843
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413326"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569784"
 ---
 # <a name="whats-new-for-visio-shapesheet-developers"></a>Visio ShapeSheet 開発者向け新機能
 
@@ -58,10 +58,10 @@ Visio 2013 は、カスタム図面ソリューションに強力な単一プラ
 |[LineGradientAngle](linegradientangle-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
 |[LineGradientDir](linegradientdir-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
 |[LineGradientEnabled](linegradientenabled-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
-|[LockReplace](lockreplace-cell-protection-section.md) <br/> |Protection  <br/> |
-|[LockThemeConnectors](lockthemeconnectors-cell-protection-section.md) <br/> |Protection  <br/> |
-|[LockThemeFonts](lockthemefonts-cell-protection-section.md) <br/> |Protection  <br/> |
-|[LockThemeIndex](lockthemeindex-cell-protection-section.md) <br/> |Protection  <br/> |
+|[LockReplace](lockreplace-cell-protection-section.md) <br/> |保護  <br/> |
+|[LockThemeConnectors](lockthemeconnectors-cell-protection-section.md) <br/> |保護  <br/> |
+|[LockThemeFonts](lockthemefonts-cell-protection-section.md) <br/> |保護  <br/> |
+|[LockThemeIndex](lockthemeindex-cell-protection-section.md) <br/> |保護  <br/> |
 |[NoCoauth](nocoauth-cell-document-properties-section.md) <br/> |ドキュメントのプロパティ  <br/> |
 |[PageLockReplace](pagelockreplace-cell-page-properties-section.md) <br/> |Page Properties  <br/> |
 |[Perspective](perspective-cell-3-d-rotation-properties-section.md) <br/> |3-D 回転のプロパティ  <br/> |

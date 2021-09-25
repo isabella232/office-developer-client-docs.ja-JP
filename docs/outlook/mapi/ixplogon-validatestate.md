@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IXPLogon.ValidateState
 api_type:
 - COM
 ms.assetid: c3649daa-cba1-48e3-9ffb-069c1bcf8228
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: a3469e6baacb52938b870ca87d824bf640a8a88f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4da8ae8d05a06c6e377d48a42298e74724674d5e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439486"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561307"
 ---
 # <a name="ixplogonvalidatestate"></a>IXPLogon::ValidateState
 

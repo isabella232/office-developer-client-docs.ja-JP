@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagProcessed
 api_type:
 - COM
 ms.assetid: 44884f60-7e36-45b2-9712-4f9821a0dc1f
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5d84e9cb693cbe732295ee1891b4219450eb09ae
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d5ca2c0dad26a6de05104692a6562373d8785ca4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351437"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595078"
 ---
 # <a name="pidtagprocessed-canonical-property"></a>PidTagProcessed 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "32351437"
 |関連するプロパティ:  <br/> |PR_PROCESSED  <br/> |
 |識別子:  <br/> |0x7D01  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |カレンダー  <br/> |
+|エリア:  <br/> |予定表  <br/> |
    
 ## <a name="remarks"></a>注釈
 

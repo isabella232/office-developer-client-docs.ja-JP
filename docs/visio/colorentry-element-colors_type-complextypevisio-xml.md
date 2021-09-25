@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3f325ad8-bbc7-28bf-9e48-1fde4fbdbdc0
 description: カラー テーブル エントリが含まれます。
-ms.openlocfilehash: f2221d8d32823e5eec4a100eaf4e8f62b914df28
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
-ms.translationtype: HT
+ms.openlocfilehash: 147b9a6ce1f3bcf6b4db2b4efffbe3a1156f8841
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540183"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594784"
 ---
 # <a name="colorentry-element-colors_type-complextype-visio-xml"></a>ColorEntry 要素 (Colors_Type complexType) (Visio XML)
 

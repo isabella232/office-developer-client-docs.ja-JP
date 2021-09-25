@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b3b2a08f-07a0-5f1c-4910-503229927816
 description: 図形の最初の頂点に対する x 座標または y 座標を格納します。または、パスを切断した後の最初の頂点に対する x または y 座標を表します。
-ms.openlocfilehash: f0cbe7170bf4462b9aece211a149af396c132766
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 7193d38b55dc38485756e63cd429d1e7fb8a846c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539517"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594840"
 ---
 # <a name="cell-element-moveto-row-visio-xml"></a>Cell 要素 (MoveTo Row) (Visio XML)
 

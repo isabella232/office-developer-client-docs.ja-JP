@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 31f43ebe-3758-4fd9-83b5-775041c5890f
 description: マスター シェイプ内の指定したセルの値が、図形の置換操作中に置換される値 (ローカル値を含む) に優先するかどうかを示します。ReplaceLockText は、マスターに表示されるテキストが、置換される図形のテキストに優先するかを決定します。
-ms.openlocfilehash: 299bd571ad935886879abb11108c3d0bd28e3183
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f0ddee2e50750ec91c811d409d507767258f45f4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411919"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570184"
 ---
 # <a name="replacelocktext-cell-change-shape-behavior-section"></a>[ReplaceLockText] セル ([図形の動作の変更] セクション)
 

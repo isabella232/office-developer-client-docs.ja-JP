@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f9896839-ca36-b82b-7412-e57195d4b8e2
 description: レイヤーまたはページのプロパティのいずれか 1 つを指定します。
-ms.openlocfilehash: 119c82f84c76f735a5d9b73b4bea8beda0a7e476
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 9dd15521f54837b4203778472d6545b50c01d34e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539758"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594875"
 ---
 # <a name="cell-element-layer-section-visio-xml"></a>Cell 要素 (Layer Section) (Visio XML)
 
@@ -74,7 +74,7 @@ ms.locfileid: "34539758"
 |名前  <br/> |レイヤーの名前。  <br/> |なし。  <br/> |
 |NameUniv  <br/> |レイヤーの汎用名を指定します。  <br/> |なし。  <br/> |
 |印刷  <br/> |図面の印刷時に、レイヤーに属する図形を印刷するかどうかを指定します。  <br/> |なし。  <br/> |
-|スナップ  <br/> |他の図形をレイヤーに割り当てられた図形にスナップできるかどうかを指定します。  <br/> |なし。  <br/> |
+|Snap  <br/> |他の図形をレイヤーに割り当てられた図形にスナップできるかどうかを指定します。  <br/> |なし。  <br/> |
 |状態  <br/> |レイヤーがドキュメントの有効なレイヤーであるかどうかを指定します。  <br/> |なし。  <br/> |
 |Visible  <br/> |レイヤーに属している図形が図面ページに表示されるかどうかを指定します。  <br/> |なし。  <br/> |
    

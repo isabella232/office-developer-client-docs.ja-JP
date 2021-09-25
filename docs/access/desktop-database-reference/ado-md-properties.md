@@ -1,18 +1,18 @@
 ---
-title: ActiveX Data Objects (ADO) MD プロパティ
+title: ActiveXデータ オブジェクト (ADO) MD プロパティ
 TOCTitle: ADO MD properties
 ms:assetid: 401085e7-758e-92c8-6f8d-cc8af3ce954c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249180(v=office.15)
 ms:contentKeyID: 48544416
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3ac650d54d08b77bd0ba3311c1ac7c3005d75dfe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: cbcf8433c9676aed568eb75a566f4c29048bec90
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283290"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553250"
 ---
 # <a name="ado-md-properties"></a>ADO MD のプロパティ
 
@@ -71,11 +71,11 @@ ms.locfileid: "32283290"
 <td><p>現在のセルセットのフィルター情報を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="item-property-ado-md-cellset.md">Item</a></p></td>
+<td><p><a href="item-property-ado-md-cellset.md">項目</a></p></td>
 <td><p>座標を使用して、セルセットからセルを取得します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="item-property-ado.md">Item</a></p></td>
+<td><p><a href="item-property-ado.md">項目</a></p></td>
 <td><p>名前またはインデックスを使用してコレクションの特定のメンバーを返します。</p></td>
 </tr>
 <tr class="odd">
@@ -91,7 +91,7 @@ ms.locfileid: "32283290"
 <td><p>メンバーの属するレベル名を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="name-property-ado-md.md">Name</a></p></td>
+<td><p><a href="name-property-ado-md.md">名前</a></p></td>
 <td><p>オブジェクトの名前を示します。</p></td>
 </tr>
 <tr class="odd">
@@ -119,7 +119,7 @@ ms.locfileid: "32283290"
 <td><p>セルセットの現在の状態を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="type-property-ado-md.md">Type</a></p></td>
+<td><p><a href="type-property-ado-md.md">種類</a></p></td>
 <td><p>現在のメンバーの種類を示します。</p></td>
 </tr>
 <tr class="even">
