@@ -5,23 +5,20 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMsgStore.StoreLogoff
 api_type:
 - COM
 ms.assetid: 3773c98e-531e-4bdc-a39a-2c3bb7378cd3
-description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: be11c536804682d1baec8188b6d7487c71d411e1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d5a5b25dd41238cf27bf4a7224bb4d5d1eeb1469
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424337"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604839"
 ---
 # <a name="imsgstorestorelogoff"></a>IMsgStore::StoreLogoff
-
-  
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
@@ -59,7 +56,7 @@ LOGOFF_QUIET
   
 > トランスポート プロバイダーのアクティビティが行われる場合、ログオフは発生しません。
     
-    The following flags are valid on output:
+次のフラグは出力時に有効です
     
 LOGOFF_INBOUND 
   

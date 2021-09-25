@@ -3,15 +3,15 @@ title: iOS ドキュメント ピッカーのための Office for iOS のサポ�
 manager: soliver
 ms.date: 02/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 802224ef-6eea-4929-824c-507da1c073a5
 description: ドキュメント プロバイダー拡張機能を使用して Office for iOS を iOS ドキュメント ピッカーと統合することにより、別のドキュメント プロバイダーによって保存されたファイルを Office で開けるようになります。
-ms.openlocfilehash: e3a3374c7fd33bb00ed076075eb6199c24eec923
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 88b1b90f15af608bf0264ffb2a30ba7574d5c1ca
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410666"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625813"
 ---
 # <a name="office-for-ios-support-for-the-ios-document-picker"></a>iOS ドキュメント ピッカーのための Office for iOS のサポート
 

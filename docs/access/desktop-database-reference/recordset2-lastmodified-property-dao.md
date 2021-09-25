@@ -1,31 +1,31 @@
 ---
-title: Recordset2 プロパティ (DAO)
+title: Recordset2.LastModified プロパティ (DAO)
 TOCTitle: LastModified Property
 ms:assetid: 1c13cb43-23b5-73b6-af00-a3676cc37cc7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845726(v=office.15)
 ms:contentKeyID: 48543557
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c3d9337c36a2b126f4ce6d9a27ae6d26712a7b6a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 55e4a4586d718747eb5b332074c83331e6e75591
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309429"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626114"
 ---
-# <a name="recordset2lastmodified-property-dao"></a>Recordset2 プロパティ (DAO)
+# <a name="recordset2lastmodified-property-dao"></a>Recordset2.LastModified プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 最後に追加または変更したレコードを示すブックマークを取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*。LastModified
+*式* .LastModified
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 
@@ -33,7 +33,7 @@ ms.locfileid: "32309429"
 
 ## <a name="example"></a>例
 
-この例では、 **LastModified** プロパティを使用して、カレント レコードを参照するポインターを、変更したレコードおよび新しく作成したレコードの両方に移動します。
+この例では、**LastModified** プロパティを使用して、カレント レコードを参照するポインターを、変更したレコードおよび新しく作成したレコードの両方に移動します。
 
 ```vb
     Sub LastModifiedX() 

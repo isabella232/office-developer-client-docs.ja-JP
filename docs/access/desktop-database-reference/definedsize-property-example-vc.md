@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250192(v=office.15)
 ms:contentKeyID: 48548474
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 59ca2013f9cc3551d73ea21d8a6af610e0d159d1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: af62fc8fce6626656f0bbd9088a7157370a488af
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294114"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594350"
 ---
 # <a name="definedsize-property-example-vc"></a>DefinedSize プロパティの使用例 (VC++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-ここでは、[Column](column-object-adox.md) の [DefinedSize](definedsize-property-adox.md) プロパティの使用例を示します。このコードでは、*Northwind* データベースの **Employees** テーブルにある FirstName 列のサイズを再定義します。次に、**Employees** テーブルに基づいた[レコードセット](recordset-object-ado.md)の FirstName [フィールド](field-object-ado.md)の値の変更が表示されます。既定では、**DefinedSize** プロパティを再定義すると、FirstName フィールドがスペースで埋められます。
+ここでは、[Column](column-object-adox.md) の [DefinedSize](definedsize-property-adox.md) プロパティの使用例を示します。このコードでは、*Northwind* データベースの **Employees** テーブルにある FirstName 列のサイズを再定義します。次に、**Employees** テーブルに基づいた [レコードセット](recordset-object-ado.md)の FirstName [フィールド](field-object-ado.md)の値の変更が表示されます。既定では、**DefinedSize** プロパティを再定義すると、FirstName フィールドがスペースで埋められます。
 
 ```cpp 
  

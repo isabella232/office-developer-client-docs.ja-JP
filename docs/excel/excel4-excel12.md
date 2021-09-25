@@ -9,15 +9,15 @@ f1_keywords:
 - Excel4
 keywords:
 - excel4 関数 [excel 2007]、Excel12 関数 [Excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2404f10d-8641-4ee6-a909-1c5a26610f80
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 7c3af5f380ae4144890b1f7b486a61a05c19de74
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5c296fabc0a77fed446cc35afb5926672c90218c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429447"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625953"
 ---
 # <a name="excel4excel12"></a>Excel4、Excel12
 
@@ -63,8 +63,8 @@ int Excel12(int iFunction, LPXLOPER12 pxRes, int iCount, LPXLOPER12 argument1, .
 |0  <br/> |**xlretSuccess** <br/> |関数は正常に呼び出されました。 これは、この関数が Excel のエラー値を返さなかったという意味ではありません。それを判断するには、結果の _pxRes_ パラメーターの種類と値を調べる必要があります。  <br/> |
 |1  <br/> |**xlretAbort** <br/> |コマンドまたは関数が異常終了しました (内部アボート)。これは、XLM マクロ シートが **CLOSE** を呼び出すことによってそれ自体を閉じた場合、またはExcel がメモリ不足になる場合に起こります。Excel がこのエラーを返す場合、呼び出し元の関数は即座に終了する必要があります。DLL が **xlFree** を呼び出すことが許可されるのは、終了前のみです。C API に対するそれ以外のすべての呼び出しは許可されません。ユーザーは、**[ファイル]** メニューの **[保存]** コマンドを使用して、対話形式で任意の作業を保存できます。<br/> |
 |2  <br/> |**xlretInvXlfn** <br/> |指定された関数の数が正しくありません。Xlcall.h ヘッダー ファイルの定数を使用している場合、実行中の Excel のバージョンでサポートされていない何かを呼び出さない限り、これが起こることはありません。  <br/> |
-|4  <br/> |**xlretInvCount** <br/> |入力された引数の数が正しくありません。 Excel 2003 までのバージョンでは、すべての関数の引数の最大数は 30 です。 Excel 2007 以降では、最大数は 255 です。 引数の数が固定されている場合もありますし、最小値が必要な場合もあります。  <br/> |
-|8  <br/> |**xlretInvXloper** <br/> |関数に渡された **XLOPER** または **XLOPER12** が正しくないか、使用された引数の種類が間違っています。  <br/> |
+|4   <br/> |**xlretInvCount** <br/> |入力された引数の数が正しくありません。 Excel 2003 までのバージョンでは、すべての関数の引数の最大数は 30 です。 Excel 2007 以降では、最大数は 255 です。 引数の数が固定されている場合もありますし、最小値が必要な場合もあります。  <br/> |
+|8   <br/> |**xlretInvXloper** <br/> |関数に渡された **XLOPER** または **XLOPER12** が正しくないか、使用された引数の種類が間違っています。  <br/> |
 |16   <br/> |**xlretStackOvfl** <br/> |スタック オーバーフローが発生しました。**xlStack** を使用して、スタックの残容量を監視します。大規模なローカル (自動) の配列や構造をスタック上で割り当てることを避け、可能な場合にはそれらを静的にします。(スタック オーバーフローが、検出されることなく発生する場合があることにご注意ください。)<br/> |
 |32  <br/> |**xlretFailed** <br/> |コマンドと等価の関数が失敗しました。これは、[マクロ エラーの警告] ダイアログボックスを表示するマクロ コマンドと等価です。  <br/> |
 |64  <br/> |**xlretUncalced** <br/> |現在のセルの後に再計算するようスケジュールされているために、まだ計算されていないセルを逆参照しようとしました。この場合、DLL は制御を即時に Excel に戻す必要があります。DLL が **xlFree** を呼び出すのが許可されるのは、終了する前のみです。C API に対するそれ以外のすべての呼び出しは許可されません。再計算されていないセルの値にアクセスできる関数とできない関数についての詳細は、「[Excel のコマンド、関数、および状態](excel-commands-functions-and-states.md)」を参照してください。<br/> |

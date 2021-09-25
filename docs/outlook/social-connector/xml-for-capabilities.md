@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: edad1223-a55f-4e4a-8e90-3471f2f559ac
 description: (OSC) プロバイダー XML スキーマの capabilities 要素を使用すると、OSC プロバイダーは機能を指定できます。 このような機能には、次の機能が含まれます。
-ms.openlocfilehash: ff6abbd4d99eb542a11e3d64a2015fc0585fca79
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6b46567853a2f8a37ff5f9479c9eb8e4f4da7ccf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435006"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582982"
 ---
 # <a name="xml-for-capabilities"></a>機能の XML
 
@@ -29,7 +29,7 @@ ms.locfileid: "33435006"
   
 **ISocialProvider::GetCapabilities** メソッドの出力パラメーターとして OSC プロバイダーの機能を指定するには、OSC プロバイダー拡張 XML スキーマに準拠する必要があります。 次の図は、機能 **XML 構造を** 示しています。 
   
-**図 1. \<機能 \> XML 構造**
+**図 1. \<capabilities\> XML 構造**
 
 ![機能 XML の構造](media/ol14oscref_Specifyingxmlforcapabilities_image1.gif)
   

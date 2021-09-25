@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249495(v=office.15)
 ms:contentKeyID: 48545756
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4c0753a53a2001a6c5c96ae2ceb801ee6eb75a5e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ac892137852742f53411b7d24add16473501b7b2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296473"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594469"
 ---
 # <a name="chapter-13-rds-usage-and-security"></a>第 13 章: RDS の使用とセキュリティ
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ここでは、サーバーをセットアップしてすばやく RDS を使う方法について説明します。RDS の実装時に必要になることがある固有の構成手順や、RDS と他の技術との主要な関係について説明し、RDS ソリューションのセットアップ時に発生する問題の解決法を見いだすのに役立つ情報を提供します。
 
@@ -25,16 +25,16 @@ ms.locfileid: "32296473"
 - [DataFactory をセーフ モードまたは無制限モードに設定する](configuring-datafactory-for-safe-or-unrestricted-modes.md)
 - [RDS を構成する](configuring-rds.md)
 - [IIS での仮想サーバーの構成](configuring-virtual-servers-on-iis.md)
-- [DataFactory のカスタマイズ (ADO)](datafactory-customization.md)
+- [DataFactory カスタマイズ (ADO)](datafactory-customization.md)
 - [DCOM で実行する DLL の有効化](enabling-a-dll-to-run-on-dcom.md)
-- [web サーバーコンピューターへのゲスト権限の付与RDS ゲスト特権\[ADO\]](granting-guest-privileges-to-a-web-server-computer;-rds-guest-privileges.md)
+- [Web サーバー コンピューターにゲスト特権を付与する。RDS ゲスト特権 \[ ADO\]](granting-guest-privileges-to-a-web-server-computer;-rds-guest-privileges.md)
 - [スクリプト実行に安全なビジネス オブジェクトとしてマークする](marking-business-objects-as-safe-for-scripting.md)
 - [DCOM を使用できるようにクライアント上にビジネス オブジェクトを登録する](registering-business-objects-on-the-client-for-use-with-dcom.md)
 - [RDS アプリケーションのセキュリティによる保護](securing-rds-applications.md)
 - [DCOM ストリーム マーシャリング形式の設定](setting-dcom-stream-marshaling-format.md)
 - [IIS でのプロセッサごとのスレッドの指定](specifying-threads-per-processor-on-iis.md)
 - [RDS のトラブルシューティング (ADO)](troubleshooting-rds.md)
-- [RDS で関連するテクノロジを使用する (ADO)](using-related-technologies-with-rds.md)
+- [RDS (ADO) で関連テクノロジを使用する](using-related-technologies-with-rds.md)
 
 
 

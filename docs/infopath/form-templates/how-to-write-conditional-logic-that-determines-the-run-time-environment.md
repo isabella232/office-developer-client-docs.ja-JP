@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - infopath での実行 [infopath 2007],実行時環境 [InfoPath 2007],ブラウザーでの実行 [InfoPath 2007],InfoPath 2007,実行時環境を決定する
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1a43bbdc-666b-47ef-a5e3-cb477a4deb04
 description: Application クラスの Environment プロパティは、Environment オブジェクトへの参照を取得します。これを使用すると、どの実行時の環境 (InfoPath、Web ブラウザー、またはモバイル ブラウザー) を使ってフォームが開かれたかを判断することができます。
-ms.openlocfilehash: 31bfd8dcd05d52d6c6e162d4aa4838e423d97e0b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 347633f0dc13b8b001ca146cd56aa734c0edc8b6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408601"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625820"
 ---
 # <a name="write-conditional-logic-that-determines-the-run-time-environment"></a>実行時環境を決定する条件付きロジックを書く
 

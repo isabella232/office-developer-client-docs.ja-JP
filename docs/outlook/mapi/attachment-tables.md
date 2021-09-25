@@ -3,17 +3,17 @@ title: 添付ファイル テーブル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 92a07f7b-d34c-4085-ab11-eadcd918fa1b
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4aa800b504e7ffb07d94ace6d8dc30c1463ed637
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3c21c8a27d8cf7fa65951e8ef784a203dafbd057
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427444"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605189"
 ---
 # <a name="attachment-tables"></a>添付ファイル テーブル
 

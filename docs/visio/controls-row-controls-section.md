@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1024624
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a57bdcd9-566b-5054-7458-7d84cbb78d23
 description: 図形に対して定義された各コントロール ハンドルの x 座標と y 座標と動作を定義するセルが含まれる。 図形には、コントロール ハンドルごとに 1 つの Controls 行が含まれます。
-ms.openlocfilehash: dd5a96fe297cb62996ac2ab4d2974b8d1ae61a14
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d839eb8818263ae630895cc4e3bee0c8a2ec99cb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438191"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582947"
 ---
 # <a name="controls-row-controls-section"></a>[Controls] 行 ([Controls] セクション)
 

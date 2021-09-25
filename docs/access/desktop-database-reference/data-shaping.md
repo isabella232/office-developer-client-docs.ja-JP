@@ -1,28 +1,28 @@
 ---
-title: データシェイプ (Access デスクトップデータベースリファレンス)
+title: データ シェーピング (Access デスクトップ データベースリファレンス)
 TOCTitle: Data shaping
 ms:assetid: 650571cc-6874-2cdb-dd76-0804d1cc4e38
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249390(v=office.15)
 ms:contentKeyID: 48545305
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ad507ac8c963f1d6ead7bc3bf444e694d83f90e3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: abf6d5cd03addcbd658e6ae02b1dc139dd6b8824
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295038"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594364"
 ---
 # <a name="data-shaping"></a>データ シェイプ
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 データ シェイプにより、シェイプされた **Recordset** の列や、列によって表されるエンティティ間の関連付け、および **Recordset** にデータを入力するときの方法を定義できるようになります。
 
 シェイプされた **Recordset** の列には、Microsoft SQL Server などのデータ プロバイダーからのデータ、他の **Recordset** への参照、 **Recordset** の 1 つの行での計算から導き出される値、 **Recordset** 全体にわたる 1 つの列に対する操作から導き出される値などを含めることができます。また、新規に作成された空の列も含めることができます。
 
-When you retrieve the value of a column that contains a reference to another **Recordset**, ADO automatically returns the actual **Recordset** represented by the reference. A **Recordset** that contains another **Recordset** is called a hierarchical recordset. 階層 recordset は*親と子*の関係を示しています。*親*は recordset に含まれており、*子*は包含された recordset です。 **Recordset**への参照は、実際には、 *chapter*と呼ばれる子のサブセットへの参照です。 A single parent may reference more than one child **Recordset**.
+When you retrieve the value of a column that contains a reference to another **Recordset**, ADO automatically returns the actual **Recordset** represented by the reference. A **Recordset** that contains another **Recordset** is called a hierarchical recordset. 階層レコードセットは、親が含まれているレコードセットであり、子が含まれているレコードセットである親子関係を示します。  **Recordset** への参照は、実際にはチャプターと呼ばれる子のサブセットへの *参照です*。 A single parent may reference more than one child **Recordset**.
 
 Shape コマンド構文によって、シェイプされた **Recordset** をプログラムで作成できます。その後、プログラムから、または適切なビジュアル コントロールによって、 **Recordset** のコンポーネントにアクセスできます。シェイプ コマンドは、他の ADO コマンド テキストと同じように発行されます。
 

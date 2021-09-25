@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d82986c1-3a1e-48de-b6c9-b4bc64a88ee2
 description: SMTP アカウントにセキュリティで保護されたパスワード認証 (SPA) を使用するかどうかを指定します。
-ms.openlocfilehash: b1f2ba9b7568361ad25147a94966bf42b98eda40
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f4e799003aa94e980b8da66b1146f2e8b32e0d61
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418555"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605287"
 ---
 # <a name="prop_smtp_use_spa"></a>PROP_SMTP_USE_SPA
 

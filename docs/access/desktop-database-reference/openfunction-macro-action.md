@@ -10,24 +10,24 @@ f1_keywords:
 - vbaac10.chm89179
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: b13d21ef1bd8a95587eb78cd448f19f9fd0c24c0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d083336e4a67188d654bb95a585c898cde3b112f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288365"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617910"
 ---
 # <a name="openfunction-macro-action"></a>OpenFunction マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 In an Access project, you can use the **OpenFunction** action to open a user-defined function in Datasheet view, inline function Design view, SQL Text Editor view (for a scalar or table user-defined function), or Print Preview. This action runs the user-defined function when opened in Datasheet view. You can also select the data entry mode for the user-defined function and restrict the records that the user-defined function displays.
 
 > [!NOTE]
 > このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 "OpenFunction/関数を開く" アクションの引数は次のとおりです。
 
@@ -45,10 +45,10 @@ In an Access project, you can use the **OpenFunction** action to open a user-def
 <tbody>
 <tr class="odd">
 <td><p><strong>Function Name/関数名</strong></p></td>
-<td><p>開くユーザー定義関数の名前を指定します。 [マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>関数名</strong>] ボックスには、カレント データベース内のユーザー定義関数がすべて表示されます。 これは必須の引数です。ライブラリデータベースで<strong>function</strong>アクションを含むマクロを実行すると、最初にライブラリデータベースでこの名前の関数が検索され、次にカレントデータベースで検索されます。</p></td>
+<td><p>開くユーザー定義関数の名前を指定します。 [マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>関数名</strong>] ボックスには、カレント データベース内のユーザー定義関数がすべて表示されます。 これは必須の引数です。ライブラリ データベースで Function アクション<strong></strong>を含むマクロを実行すると、まずライブラリ データベースでこの名前の関数が検索され、次に現在のデータベースで検索されます。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>View</strong></p></td>
+<td><p><strong>表示</strong></p></td>
 <td><p>ユーザー定義関数を開くときのビューを指定します。[<strong>ビュー</strong>] ボックスで、[<strong>データシート ビュー</strong>]、[<strong>デザイン ビュー</strong>]、[<strong>印刷プレビュー</strong>]、[<strong>ピボットテーブル ビュー</strong>]、または [<strong>ピボットグラフ ビュー</strong>] をクリックします。既定値は [<strong>データシート ビュー</strong>] です。</p></td>
 </tr>
 <tr class="odd">

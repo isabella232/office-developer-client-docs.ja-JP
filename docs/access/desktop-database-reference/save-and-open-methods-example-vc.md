@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249574(v=office.15)
 ms:contentKeyID: 48546019
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 54fb42ade164ce49cd09ce5a71b342342026a0a2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 16fcea9411d846ed793ce80c6a238407178917ee
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308975"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626100"
 ---
 # <a name="save-and-open-methods-example-vc"></a>Save メソッドと Open メソッドの使用例 (VC++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 次の 3 つの例では、[Save](save-method-ado.md) メソッドと **Open** メソッドを組み合わせて使用する方法を示します。
 

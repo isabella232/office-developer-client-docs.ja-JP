@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 04e00e49-c12d-4517-8574-410741d0fa06
 description: Outlookユーザーは、スパムからアカウントを保護するために、各アカウントの設定を指定できます。 このようなスパム対策設定は、ユーザーのプロファイル内のそのアカウントに指定されたセクションに保存されます。
-ms.openlocfilehash: cf9bce058e9e0bd1c8f6f14637ae0af73f155940
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d316df2cfc94f3dbb23dcaea68dd9a20e0b282a2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316962"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625799"
 ---
 # <a name="about-anti-spam-settings"></a>迷惑メール対策の設定について
 
@@ -29,7 +29,7 @@ Outlookユーザーは、スパムからアカウントを保護するために�
 |なし  <br/> |0xFFFFFFFF  <br/> |
 |低い  <br/> |0x00000006  <br/> |
 |中  <br/> |0x00000005  <br/> |
-|高い  <br/> |0x00000003  <br/> |
+|高  <br/> |0x00000003  <br/> |
    
 - [PidTagSpamTrustedRecipients](https://msdn.microsoft.com/library/59f43316-3ff6-4ed0-bc29-b31039192b08%28Office.15%29.aspx)—ユーザーがアカウントの信頼できる受信者として指定した電子メール アドレスとドメインのセミコロンで区切られたリストを指定します。
     

@@ -1,23 +1,23 @@
 ---
-title: データを永続化する (Access デスクトップデータベースリファレンス)
+title: データの永続化 (デスクトップ データベース参照へのアクセス)
 TOCTitle: Persisting data
 ms:assetid: cb8a32f7-2cdc-26ed-c6d4-dd93c1ac37ba
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250010(v=office.15)
 ms:contentKeyID: 48547715
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f5788216a20e62cfc39fd2081f4f672bc4f9b808
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 00caf30375df8ad09fb52c93a4ac45a94864ce03
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287602"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617854"
 ---
 # <a name="persisting-data"></a>データの永続化
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ポータブル コンピューター (ラップトップなど) の場合、接続状態と切断状態の両方で実行できるアプリケーションが必要です。ADO では、クライアント カーソル **Recordset** をディスクに保存し、後で再読み込みできる機能を開発者に提供することで、このような状況をサポートしています。
 

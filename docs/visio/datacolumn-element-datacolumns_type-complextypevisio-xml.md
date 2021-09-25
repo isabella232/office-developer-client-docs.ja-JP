@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 92469c2f-f809-dff2-d0ee-b3b8f75083d2
 description: Visio ユーザー インターフェイスの [外部データ] ウィンドウにデータ列を表示する方法を定義し、データ型と書式を定義することで列内のデータを修飾します。
-ms.openlocfilehash: 021e7ffd154f1e124b9eb163acc27260b90c23eb
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: d218762be73b4bebcfbb500d2c1cb9519179b394
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541226"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582863"
 ---
 # <a name="datacolumn-element-datacolumns_type-complextype-visio-xml"></a>DataColumn 要素 (DataColumns_Type complexType) (Visio XML)
 

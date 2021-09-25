@@ -3,17 +3,17 @@ title: 単純な定期的作業アイテムを作成する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: e9ee8865-0983-439e-8405-7946c5ec8762
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: be765915b729824b8c8b4209f125f354b02bad2b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 09db0785b8a5d7a895d4d284603a318c623bfcae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345473"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604923"
 ---
 # <a name="create-a-simple-recurrent-task-item"></a>単純な定期的作業アイテムを作成する
 
@@ -42,7 +42,7 @@ MAPI を使用して、タスク アイテムを作成するために作成で�
   
 関数  `AddTask` の一覧を以下に示します。 関数に  _渡される lpFolder_ パラメーターは、新しいタスクが作成されるフォルダーを表す  `AddTask` [IMAPIFolder](imapifolderimapicontainer.md) インターフェイスへのポインターです。 _IMAPIFolder インターフェイス_ を表す **lpFolder** を指定すると、このコードは [IMAPIFolder::CreateMessage メソッドを呼び出](imapifolder-createmessage.md)します。 **CreateMessage メソッド** は、成功コードと IMessage インターフェイスへのポインター **を返** します。 ほとんどの関数コード  `AddTask` は [、IMAPIProp::SetProps](imapiprop-setprops.md) メソッドを呼び出す準備としてプロパティを指定する作業を処理します。 **SetProps** メソッドの呼び出しが成功すると [、IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドが呼び出され、変更をストアにコミットし、新しいタスク アイテムを作成します。 
   
-関数  `AddTask` は、名前付きプロパティの数を設定します。 名前付きプロパティの詳細と作成方法については [、「USING MAPI to Create Outlook 2007 Items」を参照してください](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)。 タスク アイテムに使用される名前付きプロパティは複数のプロパティ セットを占めるので [、IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) メソッドに渡すパラメーターを構築する場合は注意が必要です。 
+関数  `AddTask` は、名前付きプロパティの数を設定します。 名前付きプロパティの詳細と作成方法については[、「Using MAPI to Create to Create Outlook 2007 Items](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)」を参照してください。 タスク アイテムに使用される名前付きプロパティは複数のプロパティ セットを占めるので [、IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) メソッドに渡すパラメーターを構築する場合は注意が必要です。 
   
 この  `AddTask` 関数はヘルパー  `BuildWeeklyTaskRecurrencePattern` 関数を使用して **、dispidTaskRecur** プロパティを設定するためのタスクの定期的な構造を構築します。 関数がビルドするタスクの繰り返し構造の詳細については  `BuildWeeklyTaskRecurrencePattern` [、「PidLidTaskRecurrence 標準プロパティ](pidlidtaskrecurrence-canonical-property.md) 」および [「PidLidRecurrencePattern 標準プロパティ」を参照してください](pidlidrecurrencepattern-canonical-property.md)。 
 
@@ -178,5 +178,5 @@ HRESULT AddTask(LPMAPIFOLDER lpFolder,
 
 ## <a name="see-also"></a>関連項目
 
-- [MAPI を使用して Outlook 2007 アイテムを作成する](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
+- [MAPI を使用して 2007 Outlookアイテムを作成する](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
 

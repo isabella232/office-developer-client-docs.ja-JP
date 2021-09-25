@@ -3,17 +3,17 @@ title: 小さなテーブルの QueryRows の呼び出し
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 8c38bb0f-de0b-4d70-9f6d-db652445e137
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 8b38dcc485e75f94ccf4f4c3c8c9a57d314465a6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0628d2fcd014b902855cefafb3c2a0603e9157fe
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404177"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605133"
 ---
 # <a name="calling-queryrows-for-small-tables"></a>小さなテーブルの QueryRows の呼び出し
 

@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fc2972da-80e9-50e2-10b3-585eb63e9103
-ms.openlocfilehash: 241babe45b543fb00c0d2756a2e846303a1717b2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a663305653df1732cd4fc61daa8bd81354946c18
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322156"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625673"
 ---
 # <a name="iolkaccounthelper"></a>IOlkAccountHelper
 
@@ -22,7 +22,7 @@ ms.locfileid: "32322156"
 |||
 |:-----|:-----|
 |継承元:  <br/> |[IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) <br/> |
-|提供元:  <br/> |クライアント  <br/> |
+|提供元:  <br/> |Client  <br/> |
 |インターフェイス識別子:  <br/> |IID_IOlkAccountHelper  <br/> |
    
 ## <a name="vtable-order"></a>Vtable の順序

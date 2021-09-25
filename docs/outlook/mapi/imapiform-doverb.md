@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIForm.DoVerb
 api_type:
 - COM
 ms.assetid: 8b582571-b448-4476-91d9-4cc94dbec710
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 60a8c89afe0d70a1737c6ce694c66359fd6aae4f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 91c78852092e6f6de9d64574e0b8369a63f6d3a6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329462"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596317"
 ---
 # <a name="imapiformdoverb"></a>IMAPIForm::DoVerb
 

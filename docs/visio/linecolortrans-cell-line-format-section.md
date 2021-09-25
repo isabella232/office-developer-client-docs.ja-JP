@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm50120
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b68054b5-7efd-1156-9dc1-5ec94e18d227
 description: 図形の線の色の透過性レベルを指定します。
-ms.openlocfilehash: 555ea15de0279a37bcf67de7374d922b8692ce02
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fe36c5f372015ca70b2e40f71fa0b7cf39027a04
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414439"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582590"
 ---
 # <a name="linecolortrans-cell-line-format-section"></a>[LineColorTrans] セル ([Line Format] セクション)
 

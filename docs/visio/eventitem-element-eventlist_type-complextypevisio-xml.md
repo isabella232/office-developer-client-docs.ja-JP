@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6b347117-a1c1-d090-0d71-ea8528ac70c6
 description: イベント コードをカプセル化します。
-ms.openlocfilehash: 0db88a175d3e0330cb648f870559d9d2bd4dc1d8
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 7a7c1c3ba86971f0711ef01173f8704fb6989430
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541842"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582764"
 ---
 # <a name="eventitem-element-eventlist_type-complextype-visio-xml"></a>EventItem 要素 (EventList_Type complexType) (Visio XML)
 
@@ -52,9 +52,9 @@ ms.locfileid: "34541842"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|Action  <br/> |xsd:unsignedShort  <br/> |必須  <br/> |親 EventItem 要素のアクション コード **を指定** します。  <br/> |xsd:unsignedShort 型の値。  <br/> |
+|アクション  <br/> |xsd:unsignedShort  <br/> |必須  <br/> |親 EventItem 要素のアクション コード **を指定** します。  <br/> |xsd:unsignedShort 型の値。  <br/> |
 |有効  <br/> |xsd:boolean  <br/> |省略可能  <br/> |イベントが有効または無効かどうかを示すフラグを表します。  <br/> |xsd:boolean 型の値。  <br/> |
-|EventCode  <br/> |xsd:unsignedShort  <br/> |必須  <br/> |アドオンをトリガーするイベントを示すコード。  <br/> |xsd:unsignedShort 型の値。  <br/> |
+|EventCode  <br/> |xsd:unsignedShort  <br/> |必須出席者  <br/> |アドオンをトリガーするイベントを示すコード。  <br/> |xsd:unsignedShort 型の値。  <br/> |
 |ID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |イベントの ID。  <br/> |xsd:unsignedInt 型の値。  <br/> |
 |Target  <br/> |xsd:string  <br/> |必須  <br/> |イベントのターゲットを指定します。  <br/> |xsd:string 型の値。  <br/> |
 |TargetArgs  <br/> |xsd:string  <br/> |必須  <br/> |イベントのターゲットに送信する引数を含む文字列を指定します。  <br/> |xsd:string 型の値。  <br/> |

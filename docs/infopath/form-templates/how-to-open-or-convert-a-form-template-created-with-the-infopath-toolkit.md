@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - converting form templates [infopath 2007],InfoPath Toolkit, opening form templates from,form templates [InfoPath 2007], opening,InfoPath 2007, converting InfoPath Toolkit form templates,opening form templates [InfoPath 2007],form templates [InfoPath 2007], converting,script [InfoPath 2007], converting to managed code
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: af8eca2e-ba9a-4c37-94af-662815fff518
 description: InfoPath 2003 Toolkit for Visual Studio に含まれるツールキットを使用して InfoPath 2003 マネージ コード フォーム テンプレートを作成した場合に、InfoPath 2003 との互換性を維持するには、Microsoft InfoPath および Visual Studio 2012 でフォーム テンプレート プロジェクト開きます。これにより、引き続きそのフォーム テンプレート プロジェクトを使用して開発を進めることができます。
-ms.openlocfilehash: 0acbfab4a83a71d94a1c70a667a963056f5b9a38
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8a8b4f35857d2ae55c60429c00803eadfdada091
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428586"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625848"
 ---
 # <a name="open-or-convert-a-form-template-created-with-the-infopath-toolkit"></a>InfoPath Toolkit で作成したフォーム テンプレートを開くか変換する
 

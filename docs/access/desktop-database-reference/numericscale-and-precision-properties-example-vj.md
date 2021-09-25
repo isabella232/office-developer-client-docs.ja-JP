@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249707(v=office.15)
 ms:contentKeyID: 48546574
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 373aa8a8a2f69ff9d15891b953aac796f7f4da50
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: afe193d444cfaddeec130c5dda82e48d9e3001e8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288561"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617938"
 ---
 # <a name="numericscale-and-precision-properties-example-vj"></a>NumericScale プロパティと Precision プロパティの使用例 (VJ++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-この例では、[NumericScale](numericscale-property-ado.md) プロパティと [Precision](precision-property-ado.md) プロパティを使って、***Pubs*** データベースの ***Discounts*** テーブル内にあるフィールドの小数点以下の桁数と精度を表示します。
+この例では [、NumericScale](numericscale-property-ado.md) プロパティと [Precision](precision-property-ado.md) プロパティを使用して、_ **Pubs*** データベースの **_Discounts_* _ テーブルにフィールドの数値スケールと精度を表示します。
 
 ```java 
  

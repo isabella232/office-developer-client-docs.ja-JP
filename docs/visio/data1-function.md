@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251599
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2b09eed1-1b01-e18e-d28e-674b8fc105fd
 description: 図形の [図形名] ダイアログ ボックスの [データ 1] ボックスのテキストを文字列として返します ([開発] タブの [図形名] をクリックします)。
-ms.openlocfilehash: 608a61f478e95c309051d5dc47919d6e68c7cb43
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e04243d603187f7c19afde81bede479799b0e2ce
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416273"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582884"
 ---
 # <a name="data1-function"></a>DATA1 関数
 

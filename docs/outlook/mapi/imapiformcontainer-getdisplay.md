@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIFormContainer.GetDisplay
 api_type:
 - COM
 ms.assetid: 6829e273-4a75-4278-b58a-ae7543e075ac
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 994041d050df56fd3fa3c0e599542e05a202ad65
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2164a117b4a7119761f21ee0e4692cd8284ae211
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416133"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596310"
 ---
 # <a name="imapiformcontainergetdisplay"></a>IMAPIFormContainer::GetDisplay
 

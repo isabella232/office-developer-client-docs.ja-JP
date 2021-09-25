@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f157db03-e7d0-d39f-cbde-2a22f45b40ed
-ms.openlocfilehash: f0fd618cc2a86d3695d0d6f6c446f118475ffc1f
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: d294e826b90fe490bdf68cb12fae86e8f676aec6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541793"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582744"
 ---
 # <a name="eventitem_type-complextype-visio-xml"></a>EventItem_Type complexType (xml Visio)
 
@@ -66,9 +66,9 @@ ms.locfileid: "34541793"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|Action  <br/> |xsd:unsignedShort  <br/> |必須  <br/> ||xsd:unsignedShort 型の値。  <br/> |
+|アクション  <br/> |xsd:unsignedShort  <br/> |必須  <br/> ||xsd:unsignedShort 型の値。  <br/> |
 |有効  <br/> |xsd:boolean  <br/> |省略可能  <br/> ||xsd:boolean 型の値。  <br/> |
-|EventCode  <br/> |xsd:unsignedShort  <br/> |必須  <br/> ||xsd:unsignedShort 型の値。  <br/> |
+|EventCode  <br/> |xsd:unsignedShort  <br/> |必須出席者  <br/> ||xsd:unsignedShort 型の値。  <br/> |
 |ID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> ||xsd:unsignedInt 型の値。  <br/> |
 |Target  <br/> |xsd:string  <br/> |必須  <br/> ||xsd:string 型の値。  <br/> |
 |TargetArgs  <br/> |xsd:string  <br/> |必須  <br/> ||xsd:string 型の値。  <br/> |

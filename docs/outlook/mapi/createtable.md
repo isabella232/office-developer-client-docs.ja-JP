@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateTable
 api_type:
 - HeaderDef
 ms.assetid: 106ce3d8-d0bf-4a0e-9a15-dc8988d0eb58
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: e8c399569e68b8cb55d803733ed93105ea0be799
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: da2cce7a36c37ee226aa3fc1d49cea84b19d741c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435013"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605084"
 ---
 # <a name="createtable"></a>CreateTable
 
@@ -71,7 +71,7 @@ SCODE CreateTable(
     
  _ulTableType_
   
-> [in] [IMAPITable::GetStatus](imapitable-getstatus.md) の一部としてクライアント アプリケーションまたはサービス プロバイダーが使用できるテーブルの種類は、そのテーブル ビューのデータを返します。 使用可能な値は次のいずれかです。 
+> [in] [IMAPITable::GetStatus](imapitable-getstatus.md) の一部としてクライアント アプリケーションまたはサービス プロバイダーが使用できるテーブルの種類は、そのテーブル ビューのデータを返します。 使用可能な値は次のとおりです。 
     
 TBLTYPE_DYNAMIC 
   

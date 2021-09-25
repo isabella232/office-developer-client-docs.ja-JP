@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - ビュー クラス [infopath 2007],InfoPath 2007,ビューを操作する,ビュー [InfoPath 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 947b33c3-2acc-45d2-a89d-a712b6bc53df
 description: InfoPath フォーム テンプレートで作業する場合、フォームのビューにアクセスし、ビューに含まれるデータにさまざまな操作を行うコードを書くことができます。Microsoft.Office.InfoPath 名前空間によって提供される InfoPath オブジェクト モデルでは、View クラスのメンバーを使用して、フォームのビューにアクセスできます。
-ms.openlocfilehash: 829375a87513634ef0b38b6d92de9f33a605e89f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ac870441f2e8e6f780eaaa45dc0ee26e7c3cf25a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406298"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625834"
 ---
 # <a name="work-with-views"></a>ビューを操作する
 

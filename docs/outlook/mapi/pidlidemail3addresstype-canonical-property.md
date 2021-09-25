@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidEmail3AddressType
 api_type:
 - COM
 ms.assetid: c2bf94d9-0524-4a9d-8e30-1adbecd8f3dd
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1f8c151d2d43423ba10773320c51912ef7fbda09
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8fe1d2586c6a9612925da5ef614a965c0126554a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338095"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604699"
 ---
 # <a name="pidlidemail3addresstype-canonical-property"></a>PidLidEmail3AddressType 標準プロパティ
 
@@ -45,7 +45,7 @@ ms.locfileid: "32338095"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連するプロトコル仕様への参照Exchange Server提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   

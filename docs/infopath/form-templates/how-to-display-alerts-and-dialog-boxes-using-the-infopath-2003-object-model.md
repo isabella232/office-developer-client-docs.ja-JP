@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - infopath 2003 互換フォーム テンプレート、 表示ダイアログ ボックス、フォーム テンプレート [InfoPath 2007]、ダイアログ ボックス、通知の表示、InfoPath 2003 互換フォーム テンプレート、ダイアログ ボックスの表示、InfoPath 2003 互換フォーム テンプレートでの表示、InfoPath 2003 互換フォーム テンプレート、通知の表示
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 721ac58e-56d9-4e3b-93f1-849e0c94d010
 description: InfoPath 2003 オブジェクト モデルを使用するフォーム テンプレートの機能を拡張するためのコードを書く際、ユーザーにダイアログ ボックス形式で情報を表示すると便利な場合があります。
-ms.openlocfilehash: 12088747250037e53a3b7d8d0577936e30d6292c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5c779e570560877cbde05dd9d7dd33d02ce2783d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409483"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625855"
 ---
 # <a name="display-alerts-and-dialog-boxes-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用して警告とダイアログ ボックスを表示する
 
@@ -26,7 +26,7 @@ InfoPath 2003 オブジェクト モデルを使用するフォーム テンプ�
 |名前|説明|
 |:-----|:-----|
 |[アラート](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Alert.aspx) <br/> |指定したメッセージ文字列を含む単純なメッセージ ボックスを表示します。このメソッドは、ユーザーからの入力が必要なく、メッセージを表示する必要がある場合にのみ使用します。表示されるダイアログ ボックスは、[**OK**] ボタンをクリックして閉じることができます。<br/> |
-|[Confirm](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Confirm.aspx) <br/> |ユーザーが入力可能なメッセージ ボックスをいくつかのボタンと共に表示します。 返される値は [、XdConfirmChoice](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XdConfirmChoice.aspx) 列挙定数の 1 つです。  <br/> |
+|[確認](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Confirm.aspx) <br/> |ユーザーが入力可能なメッセージ ボックスをいくつかのボタンと共に表示します。 返される値は [、XdConfirmChoice](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XdConfirmChoice.aspx) 列挙定数の 1 つです。  <br/> |
 |[SetSaveAsDialogFileName](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.SetSaveAsDialogFileName.aspx) <br/> |[**名前を付けて保存**] ダイアログ ボックスにフォームの既定のファイル名を設定します。  <br/> |
 |[SetSaveAsDialogLocation](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.SetSaveAsDialogLocation.aspx) <br/> |[**名前を付けて保存**] ダイアログ ボックスが開いたときに参照を開始する場所を設定します。  <br/> |
 |[ShowMailItem](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowMailItem.aspx) <br/> |既定の電子メール アプリケーションに新しい電子メール メッセージを作成し、現在開いているフォームをメッセージに添付します。  <br/> |
@@ -51,7 +51,7 @@ thisXDocument.UI.Alert("The email message has been created.")
 
 ## <a name="using-the-showmodaldialog-method"></a>ShowModalDialog メソッドの使用
 
-この例では[、UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx)インターフェイスの[ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx)メソッドを使用して、HTML ファイル l で定義されているカスタム ダイアログ ボックスを表示するshow.htmします。 
+次の使用例は[、UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx)インターフェイスの[ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx)メソッドを使用して、HTML ファイルに定義されているカスタム ダイアログ ボックスを表示する方法を示show.html。 
   
 ```cs
 public void CTRL1_5_OnClick(DocActionEvent e)
@@ -72,7 +72,7 @@ End Sub
 
 ```
 
-Visual C#と Visual Basic の両方のサンプルは[、ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx)メソッドによって呼び出されるダイアログ ボックスを定義する "show.html" という名前の HTML ファイルに依存します。 この HTML ファイルは、フォームからのデータを表示し、ユーザーが値を入力するためのテキスト ボックスを表示します。 テキスト ボックス内の値は、ダイアログ ボックスが閉じたときにフォームに返されます。 
+サンプルVisual C#Visual Basicは[、ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx)メソッドによって呼び出されるダイアログ ボックスを定義する "show.html" という名前の HTML ファイルに依存します。 この HTML ファイルは、フォームからのデータを表示し、ユーザーが値を入力するためのテキスト ボックスを表示します。 テキスト ボックス内の値は、ダイアログ ボックスが閉じたときにフォームに返されます。 
   
 ```html
 <HTML>

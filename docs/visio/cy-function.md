@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82253223
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: abb27f90-21b4-08cd-6995-9520fbcebd78
 description: 通貨の値を返します。
-ms.openlocfilehash: 65c88d69669e2fa7f708402d9d50dfe035456edb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a94be94db24d9e9f34acf7289878295d4b35c66d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433557"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594665"
 ---
 # <a name="cy-function"></a>CY 関数
 
@@ -28,8 +28,8 @@ CY(** *value* **, ** *cyID* ** )
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _value_ <br/> |省略可能  <br/> |**Number または String** <br/> |通貨固有の書式を含む数値または文字列。 指定しない場合、通貨の値は、システムの [地域] および [言語] 設定の通貨スタイルに従って書式設定されます。  <br/> |
-| _cyID_ <br/> |省略可能  <br/> |**数値** <br/> |ISO 4217 省略形の数値通貨 ID または 3 文字の引用符で囲まれた文字列。  <br/> |
+| _value_ <br/> |オプション  <br/> |**Number または String** <br/> |通貨固有の書式を含む数値または文字列。 指定しない場合、通貨の値は、システムの [地域] および [言語] 設定の通貨スタイルに従って書式設定されます。  <br/> |
+| _cyID_ <br/> |オプション  <br/> |**数値** <br/> |ISO 4217 省略形の数値通貨 ID または 3 文字の引用符で囲まれた文字列。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
