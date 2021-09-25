@@ -8,15 +8,15 @@ f1_keywords:
 - xlAutoRegister
 keywords:
 - xlautoregister function [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: aa4673cf-8e97-4678-b8d4-6a74426334f9
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: f043558f3f642001e9ba11ee5b18a2721c3dddfb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c43a6248e3d9bb06bcc07c1629846d135b909f5f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421166"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557583"
 ---
 # <a name="xlautoregisterxlautoregister12"></a>xlAutoRegister/xlAutoRegister12
 

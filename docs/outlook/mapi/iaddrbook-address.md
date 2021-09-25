@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IAddrBook.Address
 api_type:
 - COM
 ms.assetid: ef2112c7-35cd-4106-ad18-a45e1dbe07d6
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: c2546fc990169526361f2c452c50212123d8284d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1c4516c081fdd4cd41b1675a41d42957d6d4dd03
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407908"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592474"
 ---
 # <a name="iaddrbookaddress"></a>IAddrBook::Address
 
@@ -25,7 +25,7 @@ ms.locfileid: "33407908"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[Outlook アドレス帳] ダイアログ ボックスを表示します。 
+[アドレスOutlook] ダイアログ ボックスを表示します。 
   
 ```cpp
 HRESULT Address(
@@ -57,7 +57,7 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-_lpAdrParms_ パラメーターの **ulFlags** メンバーが出力時のモードレス ダイアログ ボックスのウィンドウ ハンドルの戻り値を予期して DIALOG_SDI に設定されている場合、Outlook では無視されます。ダイアログのモーダル バージョンは常に Outlook 以外のクライアントに表示されます。 
+_lpAdrParms_ パラメーターの **ulFlags** メンバーが、出力時のモードレス ダイアログ ボックスのウィンドウ ハンドルの戻り値を予期して DIALOG_SDI に設定されている場合、Outlook では無視されます。モーダル バージョンのダイアログは、常にクライアント以外のクライアントOutlookされます。 
   
 _LppAdrList_ パラメーターを介して呼び出し元に MAPI によって渡される **ADRLIST** 構造体には [、ADRENTRY](adrentry.md)構造体の配列が含まれています。受信者ごとに 1 つの構造です。 _lpMods_ パラメーターで送信メッセージの [IMessage::ModifyRecipients](imessage-modifyrecipients.md)メソッドに渡された場合 **、ADRLIST** 構造を使用して受信者リストを更新できます。 
   
@@ -75,9 +75,9 @@ ADRLIST 構造体 **内の** 各 **ADRENTRY** 構造には、受信者に設定�
     
 呼 **び出し元が渡す ADRLIST** 構造は、MAPI が返す構造とは異なるサイズである可能性があります。 MAPI は、より大きな **ADRLIST** 構造を返す必要がある場合、元の構造を解放し、新しい構造を割り当てる必要があります。 **ADRLIST** 構造体のメモリを割り当てる場合は **、SPropValue** 構造体ごとに個別にメモリを割り当てる必要があります。 ADRLIST 構造体を割り当て、解放する方法の詳細については **、「ADRLIST** および SRowSet 構造体のメモリの管理」 [を参照してください。](managing-memory-for-adrlist-and-srowset-structures.md)
   
-  _lpAdrParms_ パラメーター DIALOG_SDI **ADRPARM** 構造体の **ulFlags** メンバーにフラグが設定されている場合、アドレスは直ちに返します。 Outlook DIALOG_SDIの場合、このフラグは無視されます。 このDIALOG_SDIを無視すると、モーダル バージョンのダイアログが表示され  _、lpulUIParam_ でハンドルへのポインターを予期しない必要があります。
+  _lpAdrParms_ パラメーター DIALOG_SDI **ADRPARM** 構造体の **ulFlags** メンバーにフラグが設定されている場合、アドレスは直ちに返します。 非DIALOG_SDIクライアントでは、このフラグはOutlookされません。 このDIALOG_SDIを無視すると、モーダル バージョンのダイアログが表示され  _、lpulUIParam_ でハンドルへのポインターを予期しない必要があります。
   
- アドレスは _、lpAdrParms_ パラメーターの ADRPARM の **ulFlags** メンバーで AB_UNICODEUI が指定されている場合 **、ADRPARM** 構造体の Unicode 文字文字列をサポートし **、ADRLIST** で Unicode 文字文字列をサポートします。  Unicode 文字列は、Outlook アドレス帳ダイアログ ボックスに表示される前に、マルチバイト文字列 (MBCS) 形式に変換されます。
+ アドレスは _、lpAdrParms_ パラメーターの ADRPARM の **ulFlags** メンバーで AB_UNICODEUI が指定されている場合 **、ADRPARM** 構造体の Unicode 文字文字列をサポートし **、ADRLIST** で Unicode 文字文字列をサポートします。  Unicode 文字列は、アドレス帳の [アドレス帳] ダイアログ ボックスに表示される前に、マルチバイト文字文字列 (MBCS) Outlook変換されます。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 

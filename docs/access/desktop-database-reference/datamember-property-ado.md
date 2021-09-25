@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250263(v=office.15)
 ms:contentKeyID: 48548787
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 410f11af8daf3912dca9dc78a1cb9216ff8f8dd1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: acdfe44352b85644c0c27e624b1dbb07afb235b8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294492"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565535"
 ---
 # <a name="datamember-property-ado"></a>DataMember プロパティ (ADO)
 
@@ -20,13 +20,13 @@ ms.locfileid: "32294492"
 
 [DataSource](datasource-property-ado.md) プロパティによって参照されるオブジェクトから取得するデータ メンバーの名前を示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
-**String** の値を設定または取得します。 名前の大文字と小文字は区別されません。
+**String** の値を設定または取得します。名前の大文字と小文字は区別されません。
 
 ## <a name="remarks"></a>注釈
 
-This property is used to create data-bound controls with the Data Environment. データ環境には、 [Recordset](recordset-object-ado.md)オブジェクトとして表される名前付きオブジェクト (*データメンバー*) を含むデータのコレクション (データソース) が保持されて*います。*
+This property is used to create data-bound controls with the Data Environment. Data Environment は、Recordset オブジェクトとして表される名前付きオブジェクト *(データ* メンバー) を含むデータ (データ ソース) のコレクション [を保持](recordset-object-ado.md) します *。*
 
 **DataMember** プロパティと **DataSource** プロパティは組み合わせて使用する必要があります。
 

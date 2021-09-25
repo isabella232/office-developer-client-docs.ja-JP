@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ITnef
 api_type:
 - COM
 ms.assetid: eddca896-9497-4425-9904-87ef3cbae298
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1f815a914deb5e21f3d913abe46a84cc7a32b4ee
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bbb1af4676586c1dc5df353c6410436cb3d995df
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428516"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613759"
 ---
 # <a name="itnef--iunknown"></a>ITnef : IUnknown
 

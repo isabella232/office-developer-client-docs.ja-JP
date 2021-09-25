@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ITableData.HrInsertRow
 api_type:
 - COM
 ms.assetid: e5ae37ea-81a5-49c7-9ad0-0bfac518426c
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 2709ac612fc9e2edaa57b280d52c0a5229ee9978
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b1cb53ae3e4f38e202105ef8989257babfe4b456
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435440"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613773"
 ---
 # <a name="itabledatahrinsertrow"></a>ITableData::HrInsertRow
 
@@ -54,7 +54,7 @@ MAPI_E_INVALID_PARAMETER
   
 > 挿入する行と同じインデックス列の値を持つ行は、テーブルに既に存在します。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **ITableData::HrInsertRow** メソッドは、特定の位置にあるテーブルに行を挿入します。 新しい行は  _、uliRow_ パラメーターで指定された位置にある行の後に挿入されます。 
   

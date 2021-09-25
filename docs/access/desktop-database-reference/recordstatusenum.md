@@ -1,18 +1,18 @@
 ---
-title: recordstatusenum (Access デスクトップデータベースリファレンス)
+title: RecordStatusEnum (Access デスクトップ データベース リファレンス)
 TOCTitle: RecordStatusEnum
 ms:assetid: 302915b8-494d-0be2-6dce-eaf91a0ea8ae
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249080(v=office.15)
 ms:contentKeyID: 48544022
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a83de7730224c5ecd5080c795d38cf2e9a3305a9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c86a7038fdcabfc5a30eaf79ddf87521b68d8f58
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309381"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557898"
 ---
 # <a name="recordstatusenum"></a>RecordStatusEnum
 
@@ -37,13 +37,13 @@ ms.locfileid: "32309381"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adreccanceled</strong></p></td>
+<td><p><strong>adRecCanceled</strong></p></td>
 <td><p>0x100</p></td>
 <td><p>操作が取り消されたため、レコードが保存されなかったことを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adreccantrelease</strong></p></td>
-<td><p>解像度</p></td>
+<td><p><strong>adRecCantRelease</strong></p></td>
+<td><p>0x400</p></td>
 <td><p>既存のレコードがロックされていたため、新しいレコードが保存されなかったことを示します。</p></td>
 </tr>
 <tr class="odd">
@@ -52,12 +52,12 @@ ms.locfileid: "32309381"
 <td><p>オプティミスティック同時実行制御が使用されていたため、レコードが保存されなかったことを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adrecdbdeleted</strong></p></td>
+<td><p><strong>adRecDBDeleted</strong></p></td>
 <td><p>0x40000</p></td>
 <td><p>レコードは既にデータ ソースから削除されていることを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adrecdeleted</strong></p></td>
+<td><p><strong>adRecDeleted</strong></p></td>
 <td><p>0x4</p></td>
 <td><p>レコードが削除されたことを示します。</p></td>
 </tr>
@@ -67,7 +67,7 @@ ms.locfileid: "32309381"
 <td><p>ユーザーが整合性制約に違反したため、レコードが保存されなかったことを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adrecinvalid</strong></p></td>
+<td><p><strong>adRecInvalid</strong></p></td>
 <td><p>0x10</p></td>
 <td><p>ブックマークが無効なため、レコードが保存されなかったことを示します。</p></td>
 </tr>
@@ -77,17 +77,17 @@ ms.locfileid: "32309381"
 <td><p>保留中の変更が多すぎたため、レコードが保存されなかったことを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adrecmodified</strong></p></td>
+<td><p><strong>adRecModified</strong></p></td>
 <td><p>0x2</p></td>
 <td><p>レコードが変更されたことを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adrec乗算の加え</strong></p></td>
+<td><p><strong>adRecMultipleChanges</strong></p></td>
 <td><p>0x40</p></td>
 <td><p>複数のレコードに影響が及ぶため、レコードが保存されなかったことを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adrecnew</strong></p></td>
+<td><p><strong>adRecNew</strong></p></td>
 <td><p>0x1</p></td>
 <td><p>レコードが新しいことを示します。</p></td>
 </tr>
@@ -98,7 +98,7 @@ ms.locfileid: "32309381"
 </tr>
 <tr class="odd">
 <td><p><strong>adRecOK</strong></p></td>
-<td><p>.0</p></td>
+<td><p>0</p></td>
 <td><p>レコードが正常に更新されたことを示します。</p></td>
 </tr>
 <tr class="even">
@@ -107,22 +107,22 @@ ms.locfileid: "32309381"
 <td><p>メモリ不足のためにレコードが保存されなかったことを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adrecpendingchanges</strong></p></td>
+<td><p><strong>adRecPendingChanges</strong></p></td>
 <td><p>0x80</p></td>
 <td><p>保留中の挿入を参照しているため、レコードが保存されなかったことを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adrecpermissiondenied</strong></p></td>
-<td><p>「その他」</p></td>
+<td><p><strong>adRecPermissionDenied</strong></p></td>
+<td><p>0x10000</p></td>
 <td><p>ユーザーの権限不足により、レコードが保存されなかったことを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adrecschemaviolation</strong></p></td>
+<td><p><strong>adRecSchemaViolation</strong></p></td>
 <td><p>0x20000</p></td>
 <td><p>基になるデータベースの構造に違反するので、レコードが保存されなかったことを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adrecunmodified 変更</strong></p></td>
+<td><p><strong>adRecUnmodified</strong></p></td>
 <td><p>0x8</p></td>
 <td><p>レコードが変更されなかったことを示します。</p></td>
 </tr>
@@ -132,7 +132,7 @@ ms.locfileid: "32309381"
 
 ### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
-AdoEnums 状態。
+AdoEnums.RecordStatus。
 
 パッケージ: **com.ms.wfc.data**
 
@@ -147,58 +147,58 @@ AdoEnums 状態。
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums の状態。取り消し</p></td>
+<td><p>AdoEnums.RecordStatus.CANCELED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums の状態。 cantrelease</p></td>
+<td><p>AdoEnums.RecordStatus.CANTRELEASE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums CONCURRENCYVIOLATION</p></td>
+<td><p>AdoEnums.RecordStatus.CONCURRENCYVIOLATION</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums が削除されました</p></td>
+<td><p>AdoEnums.RecordStatus.DBDELETED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums の状態を削除しました。</p></td>
+<td><p>AdoEnums.RecordStatus.DELETED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums INTEGRITYVIOLATION</p></td>
+<td><p>AdoEnums.RecordStatus.INTEGRITYVIOLATION</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums の状態が無効です。</p></td>
+<td><p>AdoEnums.RecordStatus.INVALID</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums MAXCHANGESEXCEEDED</p></td>
+<td><p>AdoEnums.RecordStatus.MAXCHANGESEXCEEDED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums の状態。変更</p></td>
+<td><p>AdoEnums.RecordStatus.MODIFIED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums の各レコードの状態の設定</p></td>
+<td><p>AdoEnums.RecordStatus.MULTIPLECHANGES</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums の状態。新しい</p></td>
+<td><p>AdoEnums.RecordStatus.NEW</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums ado</p></td>
+<td><p>AdoEnums.RecordStatus.OBJECTOPEN</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums 状態。 OK</p></td>
+<td><p>AdoEnums.RecordStatus.OK</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums OUTOFMEMORY</p></td>
+<td><p>AdoEnums.RecordStatus.OUTOFMEMORY</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums の状態の変更</p></td>
+<td><p>AdoEnums.RecordStatus.PENDINGCHANGES</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums が拒否されました</p></td>
+<td><p>AdoEnums.RecordStatus.PERMISSIONDENIED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums の状態のスキーマ</p></td>
+<td><p>AdoEnums.RecordStatus.SCHEMAVIOLATION</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums の状態を変更しません。</p></td>
+<td><p>AdoEnums.RecordStatus.UNMODIFIED</p></td>
 </tr>
 </tbody>
 </table>

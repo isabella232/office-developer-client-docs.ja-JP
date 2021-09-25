@@ -3,17 +3,17 @@ title: コード サンプルとしての MFCMAPI
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: f98eb842-fe76-4f60-b5e2-d2217d1a66ad
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: d72c224db8b3ae4bb6fee3d34f73d9949cda6b8d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e3cd4a473d38b2a006602ad21a9dca0de0df4e85
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356862"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613668"
 ---
 # <a name="mfcmapi-as-a-code-sample"></a>コード サンプルとしての MFCMAPI
  
@@ -37,7 +37,7 @@ MFCMAPI サンプルでは、メッセージング API を使用して、グラ�
     
 5. [ダウンロードの **完了] ダイアログ ボックス** で、[フォルダーを開く] **をクリックします**。 [閉じる] **をクリック** してダイアログ ボックスを閉じ、保存したフォルダー内の圧縮されたソース ファイルを検索することもできます。 
     
-6. MFCMAPI- バージョン番号ファイルを右クリック.zip、[すべて展開]**をクリックします**。 **\< \>** 表示されるダイアログ ボックスで、[抽出] **を** クリックして、表示されるフォルダーにファイルを抽出します。 [参照] をクリック **して** 別のフォルダーを選択または作成することもできます。 
+6. **MFCMAPI- ファイルを右クリック \<version number\>.zip、[** すべて展開]**をクリックします**。 表示されるダイアログ ボックスで、[抽出] **を** クリックして、表示されるフォルダーにファイルを抽出します。 [参照] をクリック **して** 別のフォルダーを選択または作成することもできます。 
     
 7. 管理者Visual Studio 2008 を実行します。
     

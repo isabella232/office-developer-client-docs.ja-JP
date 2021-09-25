@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8f92b2c7-9f47-4c84-874b-fec1a2a5b555
 description: Outlook ソーシャル コネクタ (OSC) は、Office クライアント アプリケーションが共有する Office 機能で、ソーシャル ネットワークやビジネス ネットワークに接続し、ユーザーが Office を離れることなくネットワーク内のユーザーと連絡を取り合える機能です。
-ms.openlocfilehash: 77759db34f63239473e0682cfaca720860e96768
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d45928fe371a69f5fa47a7b78cb2da7a9e49249b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422811"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566123"
 ---
 # <a name="outlook-social-connector-provider-interfaces"></a>Outlookソーシャル コネクタ プロバイダー インターフェイス
 

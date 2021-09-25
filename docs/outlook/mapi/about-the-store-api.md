@@ -3,15 +3,15 @@ title: ストア API について
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 166a8e60-e09d-7473-b61b-35d78a863192
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: fb9b0a4c8ac1a2f41a0fddcd746dba5fc4bae1a2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: deba8ea99e53d3bc20267d4beb92952af14adfaa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405556"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592747"
 ---
 # <a name="about-the-store-api"></a>ストア API について
 

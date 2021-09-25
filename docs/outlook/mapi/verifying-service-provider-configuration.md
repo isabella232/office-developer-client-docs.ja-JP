@@ -3,17 +3,17 @@ title: サービス プロバイダー構成の検証
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: dc23dc61-7b51-43ab-a184-ce0bdac91d03
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 381e2c9ec84811b69d666017a568e7b9cca21755
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 40da25cd271214c93f894e6540ebb39f362e02b7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418849"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566214"
 ---
 # <a name="verifying-service-provider-configuration"></a>サービス プロバイダー構成の検証
   
@@ -47,7 +47,7 @@ MAPI が表示を禁止するフラグを設定していない場合は、プロ
   
 **構成検証のフローチャート**
   
-![構成検証フローチャート](media/amapi_62.gif "構成検証フローチャート")
+![構成検証のフローチャート](media/amapi_62.gif "構成検証のフローチャート")
   
 ## <a name="see-also"></a>関連項目
 

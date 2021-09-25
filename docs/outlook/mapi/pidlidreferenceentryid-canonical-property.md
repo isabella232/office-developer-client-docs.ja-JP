@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidReferenceEntryId
 api_type:
 - COM
 ms.assetid: 42e7c3ac-1a04-4e3f-bf99-ef3f8fc45892
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: f5bad81f6317522430b92324ff497754376e0f19
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e033455e2f939136132dcd4c0e9c5480a24bae55
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315926"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583724"
 ---
 # <a name="pidlidreferenceentryid-canonical-property"></a>PidLidReferenceEntryId 標準プロパティ
 

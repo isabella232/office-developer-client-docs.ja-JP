@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagFtpSite
 api_type:
 - HeaderDef
 ms.assetid: d94087c2-a996-45b0-b5ed-0293d8a47d9b
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 78e8688a80fa5f1f7d0ac0f63526b5c49d66863e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a4b506797d566d73a19d2e74cd655e7721bda4f7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316143"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613509"
 ---
 # <a name="pidtagftpsite-canonical-property"></a>PidTagFtpSite 標準プロパティ
 

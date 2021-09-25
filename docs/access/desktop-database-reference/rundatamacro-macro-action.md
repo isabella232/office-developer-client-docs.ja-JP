@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm168493
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 32945f0822682a9432d75ed1ac59117dde3cc0e9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d24cf33bd9b5ced31ec7a71ce67efc70b26b5e02
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306812"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557793"
 ---
 # <a name="rundatamacro-macro-action"></a>RunDataMacro マクロ アクション
 
@@ -24,7 +24,7 @@ ms.locfileid: "32306812"
 
 "RunDataMacro/データマクロの実行" アクションを使用して、名前付きデータ マクロを実行できます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "RunDataMacro/データマクロの実行" アクションの引数は次のとおりです。
 
@@ -50,9 +50,9 @@ ms.locfileid: "32306812"
 
 ## <a name="remarks"></a>注釈
 
-**RunDataMacro**アクションは、マクロ、マクロの名前付きデータマクロ、およびマクロイベントの終了後**[](after-delete-macro-event.md)**、マクロイベントの**[挿入](after-insert-macro-event.md)** 後、および更新後**[マクロイベント](after-update-macro-event.md)** の後に使用できます。
+マクロ、名前付きデータ マクロ、および次のマクロ イベントで **RunDataMacro** アクション **[](after-delete-macro-event.md)** を使用できます。マクロ **[](after-insert-macro-event.md)** イベントの削除後、マクロの挿入後イベント、および更新後マクロ **[イベント](after-update-macro-event.md)** です。
 
-データマクロの名前には、追加先のテーブルを含める必要があります (たとえば、addcomment だけではなく****、**コメント**など)。
+データ マクロの名前には、アタッチするテーブル **(AddComment ではなく Comments.AddComment** など) を含める **必要があります**。
 
 マクロ デザイナーで実行するデータ マクロを選択すると、そのデータ マクロにパラメーターが必要であるかどうかが自動的に判断されます。パラメーターが必要な場合は、引数を入力するテキストボックスが表示されます。
 
@@ -60,7 +60,7 @@ When you run a macro that contains the **RunDataMacro** action and it reaches th
 
 ## <a name="example"></a>例
 
-次の例は、名前付きデータマクロにパラメーターを渡す方法を示しています。 tblServiceRequests テーブルの dmGetCurrentServiceRequest data マクロは、RunDataMacro アクションを使用して呼び出されます。 dmGetCurrentServiceRequest が完了すると、CurrentServiceRequest 変数が返された形式で、データマクロが txtcurrentsr テキストボックスに書き込まれます。
+次の例は、名前付きデータ マクロにパラメーターを渡す方法を示しています。 tblServiceRequests テーブルの dmGetCurrentServiceRequest データ マクロは、RunDataMacro アクションを使用して呼び出されます。 dmGetCurrentServiceRequest が終了すると、データ マクロが txtCurrentSR テキスト ボックスに書き込まれた CurrentServiceRequest 変数が返されます。
 
 **サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 

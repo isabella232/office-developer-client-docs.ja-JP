@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IProviderAdmin.DeleteProvider
 api_type:
 - COM
 ms.assetid: 0065b50f-95f6-4af1-81c2-a73e5111eecf
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 28dbbb98c9810bb688b9ecdd730ef6c4ada5f60b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: de399f12e95c94560ad5bd65cdd0a111871f0766
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404863"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592257"
 ---
 # <a name="iprovideradmindeleteprovider"></a>IProviderAdmin::DeleteProvider
 

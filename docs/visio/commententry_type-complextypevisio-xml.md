@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6d9e99b8-fcd6-f36b-960e-bcf3a23afe04
-ms.openlocfilehash: 840f660d72acbda052d4729846d8a26686d82b2a
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 156177b5b97881180b6135c4495daac573b0e489
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540127"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566032"
 ---
 # <a name="commententry_type-complextype-visio-xml"></a>CommentEntry_Type complexType (Visio XML)
 
@@ -79,7 +79,7 @@ ms.locfileid: "34540127"
 |AuthorID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> ||xsd:unsignedInt 型の値。  <br/> |
 |AutoCommentType  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> ||xsd:unsignedInt 型の値。  <br/> |
 |CommentID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> ||xsd:unsignedInt 型の値。  <br/> |
-|日付  <br/> |xsd:dateTime  <br/> |必須  <br/> ||xsd:dateTime type 型の値。  <br/> |
+|日付  <br/> |xsd:dateTime  <br/> |必須出席者  <br/> ||xsd:dateTime type 型の値。  <br/> |
 |完了  <br/> |xsd:boolean  <br/> |省略可能  <br/> ||xsd:boolean 型の値。  <br/> |
 |EditDate  <br/> |xsd:dateTime  <br/> |省略可能  <br/> ||xsd:dateTime type 型の値。  <br/> |
 |PageID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> ||xsd:unsignedInt 型の値。  <br/> |

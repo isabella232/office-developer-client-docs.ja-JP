@@ -1,20 +1,20 @@
 ---
-title: querydeftypeenum 列挙 (DAO)
+title: QueryDefTypeEnum 列挙 (DAO)
 TOCTitle: QueryDefTypeEnum Enumeration
 ms:assetid: 4327af31-daa1-88a2-fef5-8894181eee8c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192931(v=office.15)
 ms:contentKeyID: 48544495
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8ef030ff22bd323fbbb9b080c84878f98c587fcd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2df24234a33fffada6e84957db4939bac641bf0a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300918"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558017"
 ---
-# <a name="querydeftypeenum-enumeration-dao"></a>querydeftypeenum 列挙 (DAO)
+# <a name="querydeftypeenum-enumeration-dao"></a>QueryDefTypeEnum 列挙 (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -36,48 +36,48 @@ ms.locfileid: "32300918"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>dbqaction</p></td>
+<td><p>dbQAction</p></td>
 <td><p>240</p></td>
 <td><p>アクション クエリ</p></td>
 </tr>
 <tr class="even">
-<td><p>dbqappend</p></td>
+<td><p>dbQAppend</p></td>
 <td><p>64</p></td>
 <td><p>追加クエリ</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbqcompound</p></td>
+<td><p>dbQCompound</p></td>
 <td><p>160</p></td>
 <td><p>複合クエリ</p></td>
 </tr>
 <tr class="even">
-<td><p>dbqcrosstab 集計</p></td>
-<td><p>16</p></td>
+<td><p>dbQCrosstab</p></td>
+<td><p>16 </p></td>
 <td><p>クロス集計クエリ</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbqddl</p></td>
+<td><p>dbQDDL</p></td>
 <td><p>96</p></td>
 <td><p>DDL (データ定義言語) クエリ</p></td>
 </tr>
 <tr class="even">
-<td><p>dbqdelete</p></td>
+<td><p>dbQDelete</p></td>
 <td><p>32</p></td>
 <td><p>削除クエリ</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbqmaketable</p></td>
+<td><p>dbQMakeTable</p></td>
 <td><p>80</p></td>
 <td><p>テーブル作成クエリ</p></td>
 </tr>
 <tr class="even">
-<td><p>dbqprocedure</p></td>
+<td><p>dbQProcedure</p></td>
 <td><p>224</p></td>
 <td><p>ストアド プロシージャを実行する SQL プロシージャ</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbqselect</p></td>
-<td><p>.0</p></td>
+<td><p>dbQSelect</p></td>
+<td><p>0</p></td>
 <td><p>選択クエリ</p></td>
 </tr>
 <tr class="even">
@@ -86,12 +86,12 @@ ms.locfileid: "32300918"
 <td><p>結合クエリ</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbqsptbulk</p></td>
+<td><p>dbQSPTBulk</p></td>
 <td><p>144</p></td>
 <td><p>一括操作クエリ</p></td>
 </tr>
 <tr class="even">
-<td><p>dbqsqlpassthrough</p></td>
+<td><p>dbQSQLPassThrough</p></td>
 <td><p>112</p></td>
 <td><p>SQL パススルー クエリ</p></td>
 </tr>

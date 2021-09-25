@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82253253
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c42d4d2e-f8f0-bc5b-6018-4bb4ffa81b64
 description: 図形の影に対して、塗りつぶしパターンの前景 (ストローク部分) に適用される色の透過性レベルを指定します。
-ms.openlocfilehash: 0ef3ce525edcce4ccd61f36649ead512545eef58
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 362e4271d44cc44741ef90dc04392b6dda908e51
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435041"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607683"
 ---
 # <a name="shdwforegndtrans-cell-fill-format-section"></a>[ShdwForegndTrans] セル ([Fill Format] セクション)
 

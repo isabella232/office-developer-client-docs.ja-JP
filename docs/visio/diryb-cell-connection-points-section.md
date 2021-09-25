@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm240
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d951c57d-2c22-0289-35af-44e3c2877b2c
 description: 一致する接続ポイントの必要な配置ベクトルの y -component を決定します。 動的コネクタに付いている脚の向きを揃える場合にも使用されます。 このセルでは浮動小数値が使用されます。
-ms.openlocfilehash: b0dc3c9f7e1a9e87b2ecdace21c8fa1658b1388d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: af2801f32533d5b82b9f3133dbc700444f04ff43
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417092"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574420"
 ---
 # <a name="diry--b-cell-connection-points-section"></a>[DirY / B] セル ([Connection Points] セクション)
 

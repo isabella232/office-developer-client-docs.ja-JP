@@ -1,20 +1,20 @@
 ---
-title: querydefstateenum 列挙 (DAO)
+title: QueryDefStateEnum 列挙 (DAO)
 TOCTitle: QueryDefStateEnum Enumeration
 ms:assetid: edfa3085-f8b4-b813-0828-2ba2a9dc0b9d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836359(v=office.15)
 ms:contentKeyID: 48548549
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0ca9923b1604b17c1d7f64d2d968378fec4a8c24
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: afed37a05b4598c1f57399162a68f430941d9e93
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303319"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558031"
 ---
-# <a name="querydefstateenum-enumeration-dao"></a>querydefstateenum 列挙 (DAO)
+# <a name="querydefstateenum-enumeration-dao"></a>QueryDefStateEnum 列挙 (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -37,12 +37,12 @@ ms.locfileid: "32303319"
 <tbody>
 <tr class="odd">
 <td><p>dbQPrepare</p></td>
-<td><p>1-d</p></td>
+<td><p>1</p></td>
 <td><p>(既定値) ステートメントが準備されます (つまり、ODBC SQLPrepare API が呼び出されます)。</p></td>
 </tr>
 <tr class="even">
 <td><p>dbQUnprepare</p></td>
-<td><p>pbm-2</p></td>
+<td><p>2</p></td>
 <td><p>ステートメントが準備されません (つまり、ODBC SQLExecDirect API が呼び出されます)。</p></td>
 </tr>
 </tbody>

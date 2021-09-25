@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidToDoTitle
 api_type:
 - COM
 ms.assetid: 94cf031f-4c78-441d-9c01-55905b4974e0
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7ed69d9bab84a5c572026bb9480249c1212e3376
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b93ff05c13ab9801e9830e36aeecdf942e53d233
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339943"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583640"
 ---
 # <a name="pidlidtodotitle-canonical-property"></a>PidLidToDoTitle 標準プロパティ
 
@@ -51,7 +51,7 @@ ms.locfileid: "32339943"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連するプロトコル仕様に対するプロパティ セットの定義Exchange Serverを提供します。
+> プロパティ セットの定義と関連するプロトコル仕様への参照Exchange Server提供します。
     
 [[MS-OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   

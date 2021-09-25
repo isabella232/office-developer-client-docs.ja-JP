@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251486
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e83343c5-df5f-bf74-f854-6380176693a2
 description: x と y に関連付けられた四角形のセクターを計算し、セクターを示す 0 ~ 4 の整数を返します。
-ms.openlocfilehash: 442ec0d614589c709a097ba314abad044d470df6
-ms.sourcegitcommit: 41f2ee16badd6009bab642d68a61eaaccb91c3ec
+ms.openlocfilehash: 73e7e3aa440d67eed2a6a2706321092ec101cfdf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45160273"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607914"
 ---
 # <a name="rectsect-function"></a>RECTSECT 関数
 
@@ -22,7 +22,7 @@ ms.locfileid: "45160273"
   
 ## <a name="syntax"></a>構文
 
-RECTSECT(***width***, ***height***, ***x***, ***y***, ***option*** ) 
+RECTSECT(***width** _, _*_height_*_, _*_x_*_, _*_y_*_, _ *_option_** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -32,7 +32,7 @@ RECTSECT(***width***, ***height***, ***x***, ***y***, ***option*** )
 | _height_ <br/> |必須  <br/> |**String** <br/> |四角形の高さを指定します。  <br/> |
 | _x_ <br/> |必須  <br/> |**String** <br/> |x 座標を指定します。  <br/> |
 | _y_ <br/> |必須  <br/> |**String** <br/> |y 座標を指定します。  <br/> |
-| _option_ <br/> |必須  <br/> |**Boolean** <br/> |対角線上の点の処理方法を指定します。対角線上の点に対して左右のセクターを使用するには、値を 0 に設定します。対角線上の点に対して上下のセクターを使用するには、値を 1 に設定します。  <br/> |
+| _option_ <br/> |必須  <br/> |**ブール型 (Boolean)** <br/> |対角線上の点の処理方法を指定します。対角線上の点に対して左右のセクターを使用するには、値を 0 に設定します。対角線上の点に対して上下のセクターを使用するには、値を 1 に設定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

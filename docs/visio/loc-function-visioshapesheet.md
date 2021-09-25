@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251455
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7db7a8ed-50a9-8495-b978-42a2fddb466a
 description: 1 つの図形のローカル座標で定義された点を取得し、数式に関連付けられた図形のローカル座標で表される同等の点を返します。
-ms.openlocfilehash: 4728e5f8301c6ef10ddb0c14b6c0868a7a48b2a7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 82a399a3e50aa94a9d158260bd9292a026af4017
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422426"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565976"
 ---
 # <a name="loc-function-visioshapesheet"></a>LOC 関数 (VisioShapeSheet)
 

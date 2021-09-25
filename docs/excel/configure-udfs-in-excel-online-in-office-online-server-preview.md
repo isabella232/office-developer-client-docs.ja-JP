@@ -3,15 +3,15 @@ title: '[オンライン] で UDF Excelを構成Office Online Server'
 manager: lindalu
 ms.date: 12/03/2019
 ms.audience: ITPro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3e0ca274-e9cd-48a1-8cfc-9d5053738972
 description: カスタム関数を呼び出す場合は、Excelのユーザー Office Online Server関数 (UDF) を使用します。
-ms.openlocfilehash: e1b005079c03ae3028ba6bf9ee1156c6ae2eae80
-ms.sourcegitcommit: 007aa2ceb4f569201c3f4372de5c83b6c61f8875
+ms.openlocfilehash: caaf2eb4d0be74423759eaa25bb6499a0350006f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43102934"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601388"
 ---
 # <a name="configure-udfs-in-excel-online-in-office-online-server"></a>[オンライン] で UDF Excelを構成Office Online Server
 
@@ -52,7 +52,7 @@ UDF を有効にするには、Web Apps サーバー ファームWindows PowerSh
 
 UDF を有効にした後に、UDF を含むバイナリの定義を作成する必要があります。 UDF バイナリの定義を作成するには、Office Online Server **New-OfficeWebAppsExcelUserDefinedFunction コマンドレットを使用** します。 このコマンドレットには、次のパラメーターが含まれます。 
   
-- **アセンブリ**
+- **Assembly**
     
 - **AssemblyLocation**
     

@@ -8,15 +8,15 @@ f1_keywords:
 - xlGetHwnd
 keywords:
 - xlgethwnd function [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: be33b097-812b-4f5c-81be-4d9673e95b0b
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: ab4ac1bc040ef2ea9bca182624111e03722c5200
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7698404927e11adec70341e791eacf389aafa4f0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425457"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557604"
 ---
 # <a name="xlgethwnd"></a>xlGetHwnd
 

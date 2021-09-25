@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagProofOfDelivery
 api_type:
 - COM
 ms.assetid: e5036638-8350-464f-ab44-19c4a1bf50b3
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: cb82d139caf0f868a12ab669e10f89b8a7430d8c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 11530eb5a16122a6b8543d8f76119a2de4477ac9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423840"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574896"
 ---
 # <a name="pidtagproofofdelivery-canonical-property"></a>PidTagProofOfDelivery 標準プロパティ
 

@@ -1,22 +1,22 @@
 ---
-title: ADOX メソッド (Access デスクトップデータベースリファレンス)
+title: ADOX メソッド (Access デスクトップ データベース リファレンス)
 TOCTitle: ADOX methods
 ms:assetid: 1a2eed52-2b09-e528-2cdc-134df3c9441f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248947(v=office.15)
 ms:contentKeyID: 48543516
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 40c4ca85e28813f9827d959ff202e0036e379e96
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d2b418b1b80b3a529e6661763016cf8f342a6713
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32270008"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607501"
 ---
 # <a name="adox-methods"></a>ADOX のメソッド
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 <br/>
 
@@ -73,15 +73,15 @@ ms.locfileid: "32270008"
 <td><p>新しいカタログを作成します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="delete-method-adox-collections.md">Delete</a></p></td>
+<td><p><a href="delete-method-adox-collections.md">削除</a></p></td>
 <td><p>コレクションからオブジェクトを削除します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="getobjectowner-method-adox.md">getobjectowner メソッド</a></p></td>
+<td><p><a href="getobjectowner-method-adox.md">GetObjectOwner</a></p></td>
 <td><p>カタログ内のオブジェクトの所有者を返します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="getpermissions-method-adox.md">getpermissions メソッド</a></p></td>
+<td><p><a href="getpermissions-method-adox.md">GetPermissions</a></p></td>
 <td><p>オブジェクトに対するグループまたはユーザーの権限を返します。</p></td>
 </tr>
 <tr class="even">

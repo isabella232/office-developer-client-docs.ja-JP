@@ -1,18 +1,18 @@
 ---
-title: ActiveX Data Objects (ADO) イベント
+title: ActiveXデータ オブジェクト (ADO) イベント
 TOCTitle: ADO events
 ms:assetid: 84ca9525-99cb-4ba6-2a4d-172414b8f0cc
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249576(v=office.15)
 ms:contentKeyID: 48546041
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: cc2ef73798dca18e00c42768fde78da2abdb56a3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 911ac9e1388f1027ea9f0eab1a817c8e8735c73d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283339"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553362"
 ---
 # <a name="ado-events"></a>ADO イベント
 
@@ -31,11 +31,11 @@ ms.locfileid: "32283339"
 <th>説明</th>
 </tr>
 <tr class="odd">
-<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">begintranscomplete イベント</a></p></td>
+<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">BeginTransComplete</a></p></td>
 <td><p><strong>BeginTrans</strong> の操作が終了した後に呼び出されます。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">committranscomplete イベント</a></p></td>
+<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">CommitTransComplete</a></p></td>
 <td><p><strong>CommitTrans</strong> の操作が終了した後に呼び出されます。</p></td>
 </tr>
 <tr class="odd">
@@ -108,7 +108,7 @@ ms.locfileid: "32283339"
 </tr>
 <tr class="even">
 <td><p><a href="willmove-and-movecomplete-events-ado.md">WillMove</a></p></td>
-<td><p>イベント<strong></strong>は、保留中の操作によって<strong>Recordset</strong>内の現在の位置が変更さ<em>れる前に</em>呼び出されます。</p></td>
+<td><p>保留中の操作が Recordset の<em>現在の位置</em>を変更する前に<strong>、WillMove</strong>イベントが呼び出<strong>されます</strong>。</p></td>
 </tr>
 </tbody>
 </table>

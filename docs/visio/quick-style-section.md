@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3fa79e60-934b-46fd-a305-03fe9428a2c9
 description: 線の色とスタイル、塗りつぶしの色とスタイル、影の色、効果、フォント、スタイルの種類など、図形に適用されている現在のクイック スタイル書式の値を表示します。
-ms.openlocfilehash: e56d14473077381d331574f0ab098beab0cbe50e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3a0cd6aa6cb0905d67d9d2298f096e95569a5ce7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418100"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607961"
 ---
 # <a name="quick-style-section"></a>[クイック スタイル] セクション
 

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e3b58a19-9f1a-4f2b-9fe2-45cbb7ec6898
 description: 図の背景と対照的な色を使用して、テキスト、線、塗りつぶしの色 (またはそれらのプロパティの組み合わせ) の数式と値を上書きするかどうかを決定します。 値は、0、1、2、4、および 8 のビット形式の OR です。
-ms.openlocfilehash: 736e2287c00c24774ef8b677613235d642697f4b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 19936c4c1211c4202f52d1c8446d6b45ff5cbe83
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433795"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607935"
 ---
 # <a name="quickstylevariation-cell-quick-style-section"></a>[QuickStyleVariation] セル ([クイック スタイル] セクション)
 
@@ -23,8 +23,8 @@ ms.locfileid: "33433795"
 |0  <br/> |図形のテキスト、線、塗りつぶしの色 (またはそれらのプロパティの任意の組み合わせ) を変更して、テーマの特定の背景色に対して表示されたままにしない。  <br/> |
 |1  <br/> |図形のテキスト、線、塗りつぶしの色 (またはそれらのプロパティの任意の組み合わせ) を変更して、テーマの特定の背景色に対して表示されたままにしない。  <br/> |
 |2  <br/> |必要に応じて、図形のテキストの色を変更して、テーマの指定された背景色に対して表示されたままにします。  <br/> |
-|4  <br/> |必要に応じて図形の線の色を変更して、テーマの指定された背景色に対して表示されたままにします。  <br/> |
-|8  <br/> |必要に応じて、図形の塗りつぶしの色を変更して、テーマの指定された背景色に対して表示されたままにします。  <br/> |
+|4   <br/> |必要に応じて図形の線の色を変更して、テーマの指定された背景色に対して表示されたままにします。  <br/> |
+|8   <br/> |必要に応じて、図形の塗りつぶしの色を変更して、テーマの指定された背景色に対して表示されたままにします。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

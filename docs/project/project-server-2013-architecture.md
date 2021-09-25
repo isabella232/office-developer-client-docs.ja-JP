@@ -5,13 +5,13 @@ ms.date: 05/17/2019
 ms.audience: Developer
 ms.assetid: 2cfa5a6e-2f5c-440c-b35a-bc7a34648f9c
 description: Project Server 2013 は、SharePoint ファーム全体のプロジェクト管理機能を統合し、クライアント側オブジェクト モデル (CSOM) とレポート データ用の OData インターフェイスを持つ Project Online の使用を可能にします。
-localization_priority: Priority
-ms.openlocfilehash: fd940c9ae74e04587cdfa83354b6ee71da21073c
-ms.sourcegitcommit: e2cff03cb13d6c500942897b234db00476a72f18
+ms.localizationpriority: high
+ms.openlocfilehash: 51e106cb31ee7b4d385baf45082638998a3eeae5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34100896"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566130"
 ---
 # <a name="project-server-architecture"></a>Project Server のアーキテクチャ
 
@@ -80,7 +80,7 @@ Project Server がサイト コレクションと関連付けられていて、�
     
 **図 2. フル コントロールを使用してプロジェクト サイトを管理する**
 
-![プロジェクト サイトを管理モードで使用する](media/pj15_Architecture_ManagedMode.gif "プロジェクト サイトを管理モードで使用する")
+![管理モードでのプロジェクト サイトの使用](media/pj15_Architecture_ManagedMode.gif "管理モードでのプロジェクト サイトの使用")
   
 ## <a name="general-architecture"></a>アーキテクチャの概要
 <a name="pj15_Architecture_General"> </a>
@@ -91,7 +91,7 @@ Project Server がサイト コレクションと関連付けられていて、�
   
 **図 3. Project Server 2013 アーキテクチャの概要**
 
-![Project Server アーキテクチャ](media/pj15_Architecture_ProjectServiceApp_WFE.gif "Project Server アーキテクチャ")
+![Project Server のアーキテクチャ](media/pj15_Architecture_ProjectServiceApp_WFE.gif "Project Server のアーキテクチャ")
 
 <br/>
 
@@ -120,11 +120,11 @@ Project Server がサイト コレクションと関連付けられていて、�
     > [!NOTE]
     > **ProjectData** レポート サービスの `$metadata` オプションは有効ですが、CSOM の **ProjectServer** サービスの `$metadata` オプションは、リリース済みバージョンの Project Server 2013 では削除されています。 CSOM 用の REST クエリの詳細については、「[Client-side object model (CSOM) for Project Server](client-side-object-model-csom-for-project-2013.md)」を参照してください。 
   
-- **PSI フォワーダー:** 異なる WFE の PSI へのプログラムによるアクセスは PSI フォワーダーを経由して行われ、これには WCF フォワーダーと Web サービス フォワーダーが含まれます。 ASMX インターフェイスを使用するクライアントでは、Web サービス フォワーダーを経由して PSI にアクセスします。 WCF インターフェイスを使用するクライアントでは、WCF フォワーダーを経由して PSI にアクセスします。 プログラムによる CSOM、OData、および REST へのアクセスは、WCF フォワーダー経由でパイプされます。 
+- **PSI フォワーダー:** 別の WFE 上の PSI へのプログラムによるアクセスは、WCF フォワーダーや Web サービス フォワーダーを含む PSI フォワーダーを通じて行われます。ASMX インターフェイスを使用するクライアントは、Web サービス フォワーダーを通じて PSI にアクセスします。WCF インターフェイスを使用するクライアントは、WCF フォワーダーを通じて PSI にアクセスします。CSOM、OData、および REST を介したプログラムによるアクセスは、WCF フォワーダーを通じてパイプされます。 
     
 - **ワークフロー:** 宣言型ワークフロー (SharePoint Designer 2013 で定義されたワークフロー) の処理は、ワークフロー マネージャー クライアント 1.0 にオフロードされます。 ワークフロー マネージャー クライアント 1.0 は、SharePoint ファームの別のサーバー、クラウドの Microsoft Azure、または単一の Project Server コンピューターで実行して、テストまたはデモンストレーションできます。 Visual Studio 2012 で開発された、コード化されたワークフローは、Project Server 2010 と同様に SharePoint 内のワークフロー ランタイムで処理されます。 詳細については、「[Project Server ワークフロー開発の作業開始](getting-started-developing-project-server-workflows.md)」を参照してください。
     
-- **境界ネットワーク (DMZ):** 図 3 では、境界ネットワーク ("非武装地帯" または DMZ とも呼ばれます) にファイアウォールを追加することでオンプレミスの WFE サーバーを分離できることは示されていません。 境界ネットワークでは、インターネット クライアントがファイアウォールを越えて SharePoint および Project Server にアクセスできます。 
+- **境界ネットワーク (DMZ):** 図 3 では、境界ネットワーク ("非武装地帯" または DMZ とも呼ばれます) にファイアウォールを追加することでオンプレミス WFE サーバーを分離できることは示されていません。境界ネットワークでは、インターネット クライアントがファイアウォールを越えて SharePoint および Project Server にアクセスできます。 
     
 - **SharePoint Web サービス:** 図 3 では、SharePoint Server 2013 に含まれるバックエンド SharePoint Web サービス アプリケーションなどの SharePoint インフラストラクチャは示されていません。 Project Server のインストール時に Project サービス アプリケーションが SharePoint Web サービスに追加されます。 
     
@@ -141,7 +141,7 @@ Project Server の Project Web App コンポーネントは、プロジェクト
   
 - リモート クライアントからの PSI への呼び出しを最適化します。
     
-- Project Server Queue Service を必要とする PSI 呼び出しと必要としない PSI 呼び出しを区別します。 非同期 PSI メソッドの名前は、**QueueCreateProject** のように Queue で始まります。
+- Project Server Queue Service を必要とする PSI の呼び出しと、必要としない呼び出しを区別します。非同期 PSI メソッドの名前は Queue で始まります (**QueueCreateProject** など)。
     
 - 登録されているローカルのイベント ハンドラーを呼び出す PSI 呼び出しを識別します。
     
@@ -156,7 +156,7 @@ Project Web App は、ASP.NET 4.0 を使用して開発されています。 .as
 ### <a name="the-csom-and-the-project-server-interface"></a>CSOM と Project Server Interface
 <a name="pj15_Architecture_PSI"> </a>
 
-PSI は、**プロジェクト**、**リソース**、**CustomField**、および**状態管理**などの 22 の公開サービスに盛り込まれています。 PSI には、内部使用のための非公開サービスが 7 つ含まれています。 PSI は Project Server の基本的な API で、Project Server の機能を、CSOM および外部のアプリケーションに公開します。 CSOM には、最もよく使用される PSI クラスにアクセスするクラスおよびサード パーティ製のアプリケーションで使用されるメンバーが含まれています。 Project Server 2013 では、**管理**、**予定表**、 **PortfolioAnalyses**、および**セキュリティ**サービスなどの Project Server の一部の機能は CSOM で利用できません。 
+PSI は、**プロジェクト**、**リソース**、**CustomField**、および **状態管理** などの 22 の公開サービスに盛り込まれています。 PSI には、内部使用のための非公開サービスが 7 つ含まれています。 PSI は Project Server の基本的な API で、Project Server の機能を、CSOM および外部のアプリケーションに公開します。 CSOM には、最もよく使用される PSI クラスにアクセスするクラスおよびサード パーティ製のアプリケーションで使用されるメンバーが含まれています。 Project Server 2013 では、**管理**、**予定表**、 **PortfolioAnalyses**、および **セキュリティ** サービスなどの Project Server の一部の機能は CSOM で利用できません。 
   
 Project Professional 2013 および Project Web App は、PSI を使用して Project データベースの下書き、発行済み、アーカイブのテーブルおよびビューの Project Server データにアクセスします。 WCF サービスまたは ASMX Web サービスのいずれかの場合、プロキシ ファイルまたはプロキシ アセンブリを通じて PSI サービスにアクセスできます。
   
@@ -165,20 +165,20 @@ Project Professional 2013 および Project Web App は、PSI を使用して Pr
   
 Project Server 2010 用に開発された一部の基幹業務 (LOB) アプリケーションやその他のサードパーティ アプリケーションでは、まだ CSOM で表現されていない PSI サービスが必要です。 PSI サービスの対象が Project Server のオンプレミス インストールのみの場合、アプリケーションでは引き続き PSI の WCF インターフェイスまたは ASMX インターフェイスを使用できます。
   
-クライアント アプリケーションでは、サービス プロキシを通して PSI を呼び出します。 WCF インターフェイスを使用するクライアントでは、`https://ServerName/ProjectServerName/_vti_bin/psi/ProjectServer.svc`からのすべての PSI サービスにアクセスします。 ASMX Web サービス インターフェイスを使用するクライアントでは、このサービスのために Project Web App の URL を使用します。 たとえば、**リソース**サービスは、`https://ServerName/ProjectServerName/_vti_bin/psi/resource.asmx?wsdl` から利用できます。 アプリケーションが Project Server にイントラネット アクセスできない場合、アプリケーションは境界ネットワーク内の Project Web App サーバーを使用することができます (図 3 には表示されていません)。
+クライアント アプリケーションでは、サービス プロキシを通して PSI を呼び出します。 WCF インターフェイスを使用するクライアントでは、`https://ServerName/ProjectServerName/_vti_bin/psi/ProjectServer.svc`からのすべての PSI サービスにアクセスします。 ASMX Web サービス インターフェイスを使用するクライアントでは、このサービスのために Project Web App の URL を使用します。 たとえば、**リソース** サービスは、`https://ServerName/ProjectServerName/_vti_bin/psi/resource.asmx?wsdl` から利用できます。 アプリケーションが Project Server にイントラネット アクセスできない場合、アプリケーションは境界ネットワーク内の Project Web App サーバーを使用することができます (図 3 には表示されていません)。
   
 図 4 は、SharePoint Server 2013 の単一サーバーインストール、Project Server 2013、および ワークフロー マネージャー クライアント 1.0 のローカルのワークフロー管理サイトでの、**インターネット インフォメーション サービス (IIS) マネージャー** の [**接続**] ウィンドウを示しています。 SharePoint サイト コレクション (A) では、フロント エンド PSI サービスは `_vti_bin\PSI` 仮想サブディレクトリに含まれています。 SharePoint Web サービス アプリケーション (B) では、Project Service アプリケーションのバック エンド PSI サービスは `508c23fb7dfd4c83a8919fae24bc68c5/PSI` 仮想サブディレクトリに含まれています。 GUID は、この Project Server のインストールでの Project Service アプリケーションのインスタンスの名前です。 
   
 **図 4. フロント エンド PSI (A) とバック エンド PSI (B) を示す IIS マネージャー**
 
-![フロント エンド PSI とバック エンド PSI](media/pj15_Architecture_PSI_IIS.gif "フロント エンド PSI とバック エンド PSI")
+![フロントエンド PSI とバックエンド PSI](media/pj15_Architecture_PSI_IIS.gif "フロントエンド PSI とバックエンド PSI")
   
-クライアント アプリケーションは、バック エンド Project Service アプリケーションの PSI 用の WCF サービスに直接アクセスできません。 クライアント アプリケーションが Project Online にアクセスする必要がない場合、クライアント アプリケーションおよび LOB アプリケーションのコンポーネントは PSI でプロキシを使用できます。 例えば、図 4 の**リソース**サービスの WCF インターフェイスのバックエンド URL は `https://ServerName:32843/508c23fb7dfd4c83a8919fae24bc68c5/psi/resource.svc` になります。 ポート 32843 は、SharePoint Web サービス アプリケーションの既定の HTTP ポートです (32844 は HTTPS 通信用のポートです)。 ただし、Project Web App の web.config ファイルは、バック エンド PSI サービスへの直接のアクセスをブロックします。
+クライアント アプリケーションは、バック エンド Project Service アプリケーションの PSI 用の WCF サービスに直接アクセスできません。 クライアント アプリケーションが Project Online にアクセスする必要がない場合、クライアント アプリケーションおよび LOB アプリケーションのコンポーネントは PSI でプロキシを使用できます。 例えば、図 4 の **リソース** サービスの WCF インターフェイスのバックエンド URL は `https://ServerName:32843/508c23fb7dfd4c83a8919fae24bc68c5/psi/resource.svc` になります。 ポート 32843 は、SharePoint Web サービス アプリケーションの既定の HTTP ポートです (32844 は HTTPS 通信用のポートです)。 ただし、Project Web App の web.config ファイルは、バック エンド PSI サービスへの直接のアクセスをブロックします。
   
 > [!NOTE]
 > Project 2013 SDK ダウンロードには、WCF サービスと ASMX サービス用の PSI プロキシ ファイルと、それらのファイルをプロキシ アセンブリにコンパイルする手順が含まれています。 > WCF インターフェイスを使用する更新版の PSI プロキシ ファイルを作成するには、Project Server コンピューター上で直接 svcutil.exe ユーティリティまたは Visual Studio を使用する必要があります。 
   
-通常、PSI サービスのメンバーは、ビジネス オブジェクトと情報を交換するための手段として、型指定された **DataSet** オブジェクトを作成または使用します。 また、PSI 開発ではいくつかの異なるモデルが使用されます。 たとえば、**リソース**、**CustomFields**、および **LookupTable** といった PSI サービスでは**DataSet** 操作で XML フィルター オブジェクトが使用されますが、他のサービスでは使用されません。また、_changeXml_ パラメーターは**状態管理**サービスの一部のメソッドで使用されますが、他のメソッドやサービスでは使用されません。 CSOM はデータセットを使用しません。 CSOM のプログラミング モデルは PSI のものと異なり、.NET アセンブリまたは JavaScript のいずれも使用できますが、一般的には、CSOM を使用する開発は PSI を使用する開発に比べてより簡単で一貫生があります。 
+通常、PSI サービスのメンバーは、ビジネス オブジェクトと情報を交換するための手段として、型指定された **DataSet** オブジェクトを作成または使用します。 また、PSI 開発ではいくつかの異なるモデルが使用されます。 たとえば、**リソース**、**CustomFields**、および **LookupTable** といった PSI サービスでは **DataSet** 操作で XML フィルター オブジェクトが使用されますが、他のサービスでは使用されません。また、_changeXml_ パラメーターは **状態管理** サービスの一部のメソッドで使用されますが、他のメソッドやサービスでは使用されません。 CSOM はデータセットを使用しません。 CSOM のプログラミング モデルは PSI のものと異なり、.NET アセンブリまたは JavaScript のいずれも使用できますが、一般的には、CSOM を使用する開発は PSI を使用する開発に比べてより簡単で一貫生があります。 
   
 PSI に関する詳細については、「[プロジェクト PSI リファレンスの概要](project-psi-reference-overview.md)」を参照してください。 CSOM に関する詳細については、「[Client-side object model (CSOM) for Project Server 2013](client-side-object-model-csom-for-project-2013.md)」を参照してください。
   
@@ -189,11 +189,11 @@ Project Server の内部オブジェクト モデルには、プロジェクト�
   
 ビジネス オブジェクトはサードパーティの開発者に公開されません。PSI が API とビジネス オブジェクトのマッピングを処理し、CSOM が API と PSI をマッピングします。ビジネス オブジェクトの論理エンティティは、3 種類に分類できます。
   
-- **コア エンティティ**は、プロジェクト、タスク、割り当て、リソース、カレンダーなどのオブジェクトです。コア エンティティには、権限や名前付け規則などの基本的なビジネス ロジックが含まれます。 
+- **コア エンティティ** は、プロジェクト、タスク、割り当て、リソース、カレンダーなどのオブジェクトです。コア エンティティには、権限や名前付け規則などの基本的なビジネス ロジックが含まれます。 
     
-- **ビジネス エンティティ**は、タイムシート、プロジェクト ポートフォリオ、モデルなどのオブジェクトです。ビジネス エンティティは追加のビジネス ロジックを含み、通常はコア エンティティの組み合わせから構築されます。 
+- **ビジネス エンティティ** は、タイムシート、プロジェクト ポートフォリオ、モデルなどのオブジェクトです。ビジネス エンティティは追加のビジネス ロジックを含み、通常はコア エンティティの組み合わせから構築されます。 
     
-- **サポート エンティティ**は、セキュリティや検証などのオブジェクトです。 
+- **サポート エンティティ** は、セキュリティや検証などのオブジェクトです。 
     
 Project Server 2010 では、すべてのビジネス オブジェクトは、Project Service アプリケーションで実装しています。 Project Server 2013 では、同期メソッドを処理するビジネス オブジェクトや Project Calculation Service を必要としないビジネス オブジェクトの多くが WFE でホストされます。 **DeleteProject** や **ReadAssignments** などの同期型の PSI メソッドは Project Server Queue Service を使用しません。  PSI の非同期メソッドには、**QueueCreateProjec** や **QueueUpdateTimesheet** などの `Queue` で始まる名前が付いています。 非同期メソッドは Project Server Queue Service にメッセージを送信し、メソッドの処理をスケジュールするとともに、制御をユーザーに戻します。
   

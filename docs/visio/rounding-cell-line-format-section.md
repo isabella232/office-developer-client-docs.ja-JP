@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm860
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c44457ca-997a-5315-44dd-4218e4203550
 description: 1 つのパス上で接する 2 つの連続したセグメントに適用される、円弧の半径を示します。たとえば、このセルを使用すると、四角形の角を丸くできます。丸みを設定するには、値と単位を入力します (数値と単位を組み合わせる)。
-ms.openlocfilehash: d64d3266e3dd2b0a3998955efe271aab04905fbf
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8012422c654b3090ee2c007ce8911e53eef28cfd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427011"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607795"
 ---
 # <a name="rounding-cell-line-format-section"></a>[Rounding] セル ([Line Format] セクション)
 

@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IABContainer.ResolveNames
 api_type:
 - COM
 ms.assetid: 27474af2-29a2-4cfb-b94f-72eb91562dac
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: fac4978bef94650f85ac3179acd3858602f933ec
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4430388382b867ece21209e48a7cc4b647df1674
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405815"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614046"
 ---
 # <a name="iabcontainerresolvenames"></a>IABContainer::ResolveNames
 

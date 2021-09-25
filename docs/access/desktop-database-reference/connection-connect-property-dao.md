@@ -1,20 +1,20 @@
 ---
-title: Connect プロパティ (DAO)
+title: 接続。Connect プロパティ (DAO)
 TOCTitle: Connect Property
 ms:assetid: 58b514a2-91cd-7918-cba5-15d71c2457a6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194335(v=office.15)
 ms:contentKeyID: 48545001
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e44ce5b4acf58f3f9d9e887d0136baed64c8e227
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 39576c39546e3f02652a0d997044fc2afac80010
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295927"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565766"
 ---
-# <a name="connectionconnect-property-dao"></a>Connect プロパティ (DAO)
+# <a name="connectionconnect-property-dao"></a>接続。Connect プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -23,9 +23,9 @@ ms.locfileid: "32295927"
 
 ## <a name="syntax"></a>構文
 
-*式*。結び付ける
+*式* . Connect
 
-*式***Connection**オブジェクトを表す変数を取得します。
+*式***Connection** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 
@@ -35,7 +35,7 @@ Microsoft Access データベース ファイルにリンクしているテー�
 
 リンク テーブルを表す **TableDef** オブジェクトの場合、 **Connect** プロパティの設定値は、1 つまたは 2 つの部分 (データベースの種類の識別子とそのデータベースへのパス) で構成され、それぞれの末尾にセミコロンが付けられています。
 
-次の表に示すように、パスは、データベース ファイルのあるディレクトリへの完全なパスを表し、このパスの前に識別子 DATABASE= を付ける必要があります。 Microsoft Excel や Microsoft Access データベース エンジン データベースと同じように、場合によってはデータベース パスの引数に特定のファイル名を含める必要があります。
+次の表に示すように、パスは、データベース ファイルのあるディレクトリへの完全なパスを表し、このパスの前に識別子 DATABASE= を付ける必要があります。Microsoft Excel や Microsoft Access データベース エンジン データベースと同じように、場合によってはデータベース パスの引数にファイル名を明示する必要があります。
 
 次の表は、使用できるデータベースの種類と、それに対応するデータベース識別子および **Connect** プロパティの設定値のパスを示しています。
 
@@ -48,7 +48,7 @@ Microsoft Access データベース ファイルにリンクしているテー�
 <thead>
 <tr class="header">
 <th><p>データベースの種類</p></th>
-<th><p>識別子</p></th>
+<th><p>指定子</p></th>
 <th><p>例</p></th>
 </tr>
 </thead>
@@ -91,37 +91,37 @@ Microsoft Access データベース ファイルにリンクしているテー�
 <tr class="even">
 <td><p>Microsoft Excel 3.0</p></td>
 <td><p>Excel 3.0;</p></td>
-<td><p>ドライブ: \ path\filename.xls</p></td>
+<td><p>drive:\path\filename.xls</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Excel 4.0</p></td>
 <td><p>Excel 4.0;</p></td>
-<td><p>ドライブ: \ path\filename.xls</p></td>
+<td><p>drive:\path\filename.xls</p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft Excel 5.0 または Microsoft Excel 95</p></td>
 <td><p>Excel 5.0;</p></td>
-<td><p>ドライブ: \ path\filename.xls</p></td>
+<td><p>drive:\path\filename.xls</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Excel 97</p></td>
 <td><p>Excel 8.0;</p></td>
-<td><p>ドライブ: \ path\filename.xls</p></td>
+<td><p>drive:\path\filename.xls</p></td>
 </tr>
 <tr class="even">
 <td><p>Lotus 1-2-3 WKS および WK1</p></td>
 <td><p>Lotus WK1;</p></td>
-<td><p>ドライブ: \ path\filename.wk1</p></td>
+<td><p>drive:\path\filename.wk1</p></td>
 </tr>
 <tr class="odd">
 <td><p>Lotus 1-2-3 WK3</p></td>
 <td><p>Lotus WK3;</p></td>
-<td><p>ドライブ: \ path\filename.wk3</p></td>
+<td><p>drive:\path\filename.wk3</p></td>
 </tr>
 <tr class="even">
 <td><p>Lotus 1-2-3 WK4</p></td>
 <td><p>Lotus WK4;</p></td>
-<td><p>ドライブ: \ path\filename.wk4</p></td>
+<td><p>drive:\path\filename.wk4</p></td>
 </tr>
 <tr class="odd">
 <td><p>HTML インポート</p></td>
@@ -145,7 +145,7 @@ Microsoft Access データベース ファイルにリンクしているテー�
 </tr>
 <tr class="odd">
 <td><p>Microsoft Exchange</p></td>
-<td><p>Exchange 4.0MAPILEVEL = folderpath、[TABLETYPE = {0 | 1}];[profile = profile;][PWD = password;][database = database;]</p></td>
+<td><p>Exchange 4.0; MAPILEVEL=フォルダー パス; [TABLETYPE={ 0 | 1 }];[PROFILE=プロファイル;] [PWD=パスワード;] [DATABASE=データベース;]</p></td>
 <td><p>drive:\path\filename</p></td>
 </tr>
 </tbody>
@@ -166,7 +166,7 @@ Microsoft Access ワークスペースの **QueryDef** オブジェクトの場�
 
 
 > [!NOTE]
-> - 先に **Connect** プロパティを設定してから、 **ReturnsRecords** プロパティを設定する必要があります。
+> - **ReturnsRecords** プロパティを設定する前に、**Connect** プロパティを設定する必要があります。
 > - アクセスするデータベース サーバーがインストールされているコンピューターに対するアクセス権限を持っている必要があります。
 
 

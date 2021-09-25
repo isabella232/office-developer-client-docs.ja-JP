@@ -3,17 +3,17 @@ title: 表示テーブルと関連する構造体の作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: a8548040-13ed-4a9f-a7ca-de610f94d7df
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 350272324c3827f4630f0cf35e3ade0ff213ac4d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 853a8db028d0e902f785cc3198e7994404af3ef1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416245"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592677"
 ---
 # <a name="creating-display-tables-and-related-structures"></a>表示テーブルと関連する構造体の作成
   
@@ -43,7 +43,7 @@ DTPAGE **構造体内** の **各 DTCTL** 構造には、コントロールの�
   
 **表示テーブルの構造**
   
-![表示テーブル構造](media/dtstruct.gif "テーブル構造の表示")
+![表示テーブルの構造](media/dtstruct.gif "表示テーブルの構造")
   
 ## <a name="see-also"></a>関連項目
 

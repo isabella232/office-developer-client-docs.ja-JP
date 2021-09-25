@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 keywords:
 - Excel のハンドルへのアクセス,ハンドル [Excel 2007], アクセス,Excel インスタンス, アクセス,ウィンドウのハンドル [Excel 2007], アクセス
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 21e1dbdc-06fa-4514-9437-c4cffc3b4621
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 4b71ccd428e60c9ba2e59fea0e56eb2fc61390db
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.openlocfilehash: 98535a729c17ac74ee2dcd18143753aa673b1b6d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310760"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601290"
 ---
 # <a name="access-excel-instance-and-main-window-handles"></a>Excel インスタンスと メイン ウィンドウ ハンドルへのアクセス
 

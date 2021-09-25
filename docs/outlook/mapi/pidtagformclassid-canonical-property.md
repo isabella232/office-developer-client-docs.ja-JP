@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagFormClassId
 api_type:
 - HeaderDef
 ms.assetid: ca2bbfab-6f4f-4a9a-b3ef-61d7c41e4767
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7e3ee8abcf15c8b7697a29e844d838891fe22310
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 96c55c279de1a58ddd9454af48055965143f13e3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404758"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613528"
 ---
 # <a name="pidtagformclassid-canonical-property"></a>PidTagFormClassId 標準プロパティ
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251757
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b78a993f-4165-438d-39cf-9461b2877f17
 description: ポリラインの最後の点の x 座標と y 座標、およびポリライン数式を含む。
-ms.openlocfilehash: 13e5bd7138103094f0f00ad0512e33e9e6ad5e7f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bd4456109bfd313d67e4778d73b92b9335a99d13
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439465"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608047"
 ---
 # <a name="polylineto-row-geometry-section"></a>[PolylineTo] 行 ([Geometry] セクション)
 

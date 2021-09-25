@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IConverterSession.SetCharSet
 api_type:
 - COM
 ms.assetid: a9624d3f-a636-0267-5cbd-de0db42f9c22
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5a81e04d112e0adf201dcacf03673daac77a04ab
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7d1862f7aeae4c4bf2d1f6d1fb249a4ce90e18e2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341301"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613934"
 ---
 # <a name="iconvertersessionsetencoding"></a>IConverterSession::SetEncoding
 
@@ -53,7 +53,7 @@ E_INVALIDARG
 
 [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)を使用して変換を実行する前に **、SetEncoding** を呼び出します。 
   
-**SetEncoding を使用** して、メール アイテムの最も外側のメッセージ本文のエンコードのみを設定します。 Microsoft Outlook 2010 Microsoft Outlook 2013 では、個々の添付ファイルのエンコードを選択します。 
+**SetEncoding を使用** して、メール アイテムの最も外側のメッセージ本文のエンコードのみを設定します。 Microsoft Outlook 2010とMicrosoft Outlook 2013添付ファイルのエンコードを選択します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 

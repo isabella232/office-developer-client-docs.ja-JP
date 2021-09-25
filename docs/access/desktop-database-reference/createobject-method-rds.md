@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248905(v=office.15)
 ms:contentKeyID: 48543360
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 47ad61495bcc96b3099af6273796626e9442cbf0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e5e3fb18aad122d7e4ef5174b724c9fce5a3f729
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295374"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565654"
 ---
 # <a name="createobject-method-rds"></a>CreateObject メソッド (RDS)
 
@@ -37,20 +37,20 @@ RDS は、HTTP、HTTPS (HTTP over Secure Socket Layer)、DCOM、およびイン�
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>プロトコル</p></td>
-<td><p><em>オブジェクト</em> = の<em>スペース</em>を設定します。CreateObject (&quot;<em>ProgId</em>&quot; &quot; <em>https://awebsrvr</em>, &quot;)</p></td>
+<td><p>HTTP</p></td>
+<td><p>オブジェクト<em></em>  =  <em>DataSpace を設定します</em>。CreateObject( &quot; <em>ProgId</em> &quot; , &quot; <em>https://awebsrvr</em> &quot; )</p></td>
 </tr>
 <tr class="even">
 <td><p>HTTPS</p></td>
-<td><p><em>オブジェクト</em> = の<em>スペース</em>を設定します。CreateObject (&quot;<em>ProgId</em>&quot; &quot; <em>https://awebsrvr</em>, &quot;)</p></td>
+<td><p>オブジェクト<em></em>  =  <em>DataSpace を設定します</em>。CreateObject( &quot; <em>ProgId</em> &quot; , &quot; <em>https://awebsrvr</em> &quot; )</p></td>
 </tr>
 <tr class="odd">
 <td><p>DCOM</p></td>
-<td><p><em>オブジェクト</em> = の<em>スペース</em>を設定します。CreateObject (&quot;<em>ProgId</em>&quot;、 &quot; <em>computername</em>&quot;)</p></td>
+<td><p>オブジェクト<em></em>  =  <em>DataSpace を設定します</em>。CreateObject( &quot; <em>ProgId</em> &quot; , &quot; <em>computername</em> &quot; )</p></td>
 </tr>
 <tr class="even">
 <td><p>インプロセス</p></td>
-<td><p><em>オブジェクト</em> = の<em>スペース</em>を設定します。CreateObject (&quot;<em>ProgId</em>&quot;, &quot; &quot;)</p></td>
+<td><p>オブジェクト<em></em>  =  <em>DataSpace を設定します</em>。CreateObject( &quot; <em>ProgId</em> &quot; , &quot; &quot; )</p></td>
 </tr>
 </tbody>
 </table>
@@ -63,9 +63,9 @@ RDS は、HTTP、HTTPS (HTTP over Secure Socket Layer)、DCOM、およびイン�
 |*Object* |*ProgID* に指定された種類のオブジェクトに評価されるオブジェクト変数を指定します。|
 |*DataSpace* |新規オブジェクトのインスタンスの作成に使用される [RDS.DataSpace](dataspace-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。|
 |*ProgID* |アプリケーションのビジネス ルールを適用する、サーバー側のビジネス オブジェクトを指定するプログラム ID を含む文字列型 ( **String** ) の値を指定します。|
-|*awebsrvr* または *computername* |サーバービジネスオブジェクトのインスタンスが作成されるインターネットインフォメーションサービス (IIS) web サーバーを識別する URL を表す**文字列型 (String** ) の値を指定します。|
+|*awebsrvr* または *computername* |サーバー ビジネス オブジェクトのインスタンスが作成インターネット インフォメーション サービス(IIS) Web サーバーを識別する URL を表す文字列型 **(String)** の値。|
 
 ## <a name="remarks"></a>注釈
 
-*HTTP プロトコル*は標準の web プロトコルです。*HTTPS*はセキュリティで保護された web プロトコルです。 HTTP を使用せずにローカルエリアネットワークを実行している場合は、 *DCOM プロトコル*を使用します。 *インプロセス*プロトコルは、ローカルのダイナミックリンクライブラリ (DLL) です。ネットワークを使用しません。
+*HTTP プロトコルは* 標準の Web プロトコルです。*HTTPS* はセキュリティで保護された Web プロトコルです。 HTTP なしでローカル エリア ネットワークを実行する場合は *、DCOM* プロトコルを使用します。 イン *プロセス プロトコルは* 、ローカルのダイナミック リンク ライブラリ (DLL) です。ネットワークは使用しない。
 

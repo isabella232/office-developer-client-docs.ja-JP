@@ -1,30 +1,30 @@
 ---
-title: ADO イベントモデルの使用例 (VC + +)
+title: ADO イベント モデルの例 (VC++)
 TOCTitle: ADO Events Model example (VC++)
 ms:assetid: 3785406b-844c-419f-e6ac-78aa8c4e78b2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249132(v=office.15)
 ms:contentKeyID: 48544197
-ms.date: 09/18/2015
+ms.date: 09/18/2021
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8e47e8961436be44a78596498754e01e3b0677d1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4f16c7367350d3728a893ee58e657f41075d0c2f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283353"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607613"
 ---
-# <a name="ado-events-model-example-vc"></a>ADO イベントモデルの使用例 (VC + +)
+# <a name="ado-events-model-example-vc"></a>ADO イベント モデルの例 (VC++)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-「[ADO イベントのインスタンス化 (言語別)](https://docs.microsoft.com/office/client-developer/access/desktop-database-reference/ado-event-instantiation-by-language-ado)」の Visual C++ のセクションには、ADO イベント モデルのインスタンスを作成する方法についての一般的な説明があります。 以下に、 ** \#import**ディレクティブによって作成された環境内でイベントモデルをインスタンス化する具体的な例を示します。
+「[ADO イベントのインスタンス化 (言語別)](/office/client-developer/access/desktop-database-reference/ado-event-instantiation-by-language-ado.md)」の Visual C++ のセクションには、ADO イベント モデルのインスタンスを作成する方法についての一般的な説明があります。 import ディレクティブによって作成された環境内でイベント モデルをインスタンス化する具体的な例を次 **\# に示** します。
 
-一般的な説明では、メソッド シグネチャの参照として **adoint.h** を使います。 ただし、 ** \#import**ディレクティブを使用した結果として、一般的な説明の一部の詳細が若干変更されています。
+一般的な説明では、メソッド シグネチャの参照として **adoint.h** を使います。 ただし、インポート ディレクティブを使用した結果、一般的な説明のいくつかの詳細が若干 **\# 変更** されます。
 
-- ** \#import**ディレクティブは、 **typedef**、メソッドシグネチャのデータ型、およびそれらの基本形式への修飾子を解決します。
+- import **\# ディレクティブ** は **、typedef** のデータ型とメソッド署名データ型と修飾子を基本フォームに解決します。
 
-- 上書きする必要がある純粋仮想メソッドには、すべて "**raw\_**" というプレフィックスが付いています。
+- 上書きする必要がある純粋な仮想メソッドは、すべて "raw" というプレフィックス **です \_**。
 
 コードの一部は、単にコーディングのスタイルを示します。
 
@@ -34,19 +34,19 @@ ms.locfileid: "32283353"
 
 - QueryInterface、AddRef、および Release に関して、より強固な実装をコーディングすることもできます。
 
-- ** \_ \_uuidof ()** ディレクティブは、インターフェイス id を取得するために広く使用されています。
+- **\_ \_ uuidof()** ディレクティブは、インターフェイスの ID を取得するために広く使用されます。
 
 最後に、例には動作可能なコードが含まれています。
 
 - 例は、コンソール アプリケーションとして記述されています。
 
-- 独自のコードをコメントの下に挿入する必要があります。 "//処理を行う"。
+- コメントの下に独自のコードを挿入する必要があります。
 
 - 既定では、すべてのイベント ハンドラーは、何も実行しないで後続の通知を取り消します。ユーザーは、アプリケーションに適したコードを挿入し、必要に応じて通知を利用してください。
 
 <!-- end list -->
 
-```cpp 
+```cpp
  
 // eventmodel.cpp : Defines the entry point for the console application. 
 // 
@@ -551,4 +551,3 @@ int main(int argc, char* argv[])
  return 1; 
 } 
 ```
-

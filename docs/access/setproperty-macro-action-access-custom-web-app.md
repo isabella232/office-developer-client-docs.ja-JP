@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1e97dd95-23f6-4f49-b3b9-2c7261b3a70d
 description: SetProperty/プロパティの設定アクションを使用して、ビュー上のコントロールのプロパティを設定できます。
-ms.openlocfilehash: 1876be32606d66e0570c9e69206a508b8888b157
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1f72d038d522b9ed6e1b1c6d27dd948d8ee7352a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438030"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601493"
 ---
 # <a name="setproperty-macro-action-access-custom-web-app"></a>SetProperty マクロ アクション (Access カスタム Web アプリ)
 
@@ -28,7 +28,7 @@ ms.locfileid: "33438030"
 |**アクションの引数**|**説明**|
 |:-----|:-----|
 | _コントロール名_ <br/> |プロパティ値を設定する対象のフィールドまたはコントロールの名前を指定します。ビューのプロパティを設定する場合は、この引数を指定しないでください。  <br/> |
-| _Property_ <br/> |設定するプロパティを選択します。このアクションを使用して設定できるプロパティの一覧については、この記事の「解説」セクションを参照してください。<br/> |
+| _プロパティ_ <br/> |設定するプロパティを選択します。このアクションを使用して設定できるプロパティの一覧については、この記事の「解説」セクションを参照してください。<br/> |
 | _値_ <br/> |プロパティに対して設定する値を入力します。値が [はい] または [いいえ] のどちらかになるプロパティでは、[はい] の場合は「-1」、[いいえ] の場合は「0」を入力します。<br/> |
    
 ## <a name="remarks"></a>注釈

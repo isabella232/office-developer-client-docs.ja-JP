@@ -1,30 +1,30 @@
 ---
-title: Append メソッド (DAO)
+title: TableDefs.Append メソッド (DAO)
 TOCTitle: Append Method
 ms:assetid: f951a3c4-dade-c1ef-3bfc-6b2a60e12adc
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837001(v=office.15)
 ms:contentKeyID: 48548811
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 31eca3f4ca5993a401bd85a4b04299a8697c16e2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: cdd3fbeec41c6d1ac730cf6e90a03dafebce3997
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314379"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601661"
 ---
-# <a name="tabledefsappend-method-dao"></a>Append メソッド (DAO)
+# <a name="tabledefsappend-method-dao"></a>TableDefs.Append メソッド (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 新しい **TableDef** を **TableDefs** コレクションに追加します。
 
 ## <a name="syntax"></a>構文
 
-*式*。Append (***Object***)
+*expression* .Append(***Object***)
 
-*式***テーブル定義**オブジェクトを表す変数を取得します。
+*式* TableDefs オブジェクトを **表す変数** 。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -38,7 +38,7 @@ ms.locfileid: "32314379"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>

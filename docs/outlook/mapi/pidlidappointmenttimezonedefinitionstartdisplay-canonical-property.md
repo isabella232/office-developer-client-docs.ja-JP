@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidAppointmentTimeZoneDefinitionStartDispl
 api_type:
 - COM
 ms.assetid: 08239670-3211-420c-99d7-0056ed967cb8
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 504dc4b1cecb9798590e4a15968acc3aa98fe4a6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 9e49e2e2b880f16011cfbf976aeb16ca640704e2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345018"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583920"
 ---
 # <a name="pidlidappointmenttimezonedefinitionstartdisplay-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionStartDisplay 標準プロパティ
 
@@ -33,7 +33,7 @@ ms.locfileid: "32345018"
 |プロパティ セット:  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x0000825E  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |カレンダー  <br/> |
+|エリア:  <br/> |予定表  <br/> |
    
 ## <a name="remarks"></a>注釈
 

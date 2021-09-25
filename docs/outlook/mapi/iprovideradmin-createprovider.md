@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IProviderAdmin.CreateProvider
 api_type:
 - COM
 ms.assetid: 80c1449a-6cd9-4b93-a300-395979894b71
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 72dddca5a8079374600e05b96a24cbbc25e7f7f9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bf8ec09bc58934e9fb4195a3bd838dc2d7f849df
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430806"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592264"
 ---
 # <a name="iprovideradmincreateprovider"></a>IProviderAdmin::CreateProvider
 

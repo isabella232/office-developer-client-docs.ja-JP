@@ -1,5 +1,5 @@
 ---
-title: validateonset property プロパティ (DAO)
+title: Field.ValidateOnSet プロパティ (DAO)
 TOCTitle: ValidateOnSet Property
 ms:assetid: 00245a8a-a78f-b0a8-3eb3-11dd27873984
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844720(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052929
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 2d8fb358ab757d826bcfcd335aada8825e3ba980
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 384a67fa280bbfdd3d88742d921579522678f4be
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292959"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565381"
 ---
-# <a name="fieldvalidateonset-property-dao"></a>validateonset property プロパティ (DAO)
+# <a name="fieldvalidateonset-property-dao"></a>Field.ValidateOnSet プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -27,9 +27,9 @@ ms.locfileid: "32292959"
 
 ## <a name="syntax"></a>構文
 
-*式*。ValidateOnSet
+*式* .ValidateOnSet
 
-*式***Field**オブジェクトを表す変数を取得します。
+*expression*: **Field** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 

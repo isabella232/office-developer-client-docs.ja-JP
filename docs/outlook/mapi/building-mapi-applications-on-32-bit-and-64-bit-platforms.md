@@ -7,13 +7,13 @@ api_type:
 - COM
 ms.assetid: d218ba2d-7a2e-4c33-a09b-a8c7e27f9726
 description: '最終更新日: 2015 年 3 月 9 日'
-localization_priority: Priority
-ms.openlocfilehash: 74f321d2c6c8b5159191d4dcdb62e0db21132435
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 6c6ba946c0428b13394f304a21683d9a7f56dc24
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326471"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556911"
 ---
 # <a name="building-mapi-applications-on-32-bit-and-64-bit-platforms"></a>32 ビットおよび 64 ビットのプラットフォームでの MAPI アプリケーションのビルド
 
@@ -49,7 +49,7 @@ MAPI アプリケーションには、Microsoft Communicator や MFCMAPI など�
   
 ### <a name="32-bit-mapi-application-and-32-bit-outlook"></a>32 ビット MAPI アプリケーションと 32 ビット Outlook
 
-32 ビット版の Outlook (Microsoft Outlook 2013 より前のバージョンを含む) で利用可能な 32 ビット MAPI サブシステム用にコンパイルした MAPI アプリケーションは、32 ビット Outlook と 32 ビットまたは 64 ビット Windows オペレーティング システムがインストールされたコンピューターで引き続きサポートされます。 アプリケーション開発者に必要な特定の操作はありません。
+32 ビット版の Outlook (Microsoft Outlook 2013 より前のバージョンを含む) で利用可能な 32 ビット MAPI サブシステム用にコンパイルした MAPI アプリケーションは、32 ビット Outlook と 32 ビットまたは 64 ビット Windows オペレーティング システムがインストールされたコンピューターで引き続きサポートされます。アプリケーション開発者に必要な特定の操作はありません。
   
 ### <a name="32-bit-mapi-application-and-64-bit-outlook"></a>32 ビット MAPI アプリケーションと 64 ビット Outlook
 
@@ -65,7 +65,7 @@ MAPI アプリケーションには、Microsoft Communicator や MFCMAPI など�
   
 ### <a name="exception-mapisendmail"></a>例外: MAPISendMail
 
-一般に、32 ビット MAPI アプリケーションは、前もって 64 ビット アプリケーションとしてリビルドすることなく 64 ビット プラットフォーム (64 ビット Windows 上の 64 ビット Outlook) で実行することはできません。また、64 ビット MAPI アプリケーションは、前もって 32 ビットアプリケーションとしてリビルドすることなく 32 ビット Outlook と 32 ビットまたは 64 ビット Windows がインストールされたコンピューターで実行することはできません。 図 1 は、これらのシナリオのどちらかが発生した場合に表示される警告ダイアログ ボックスを示しています。
+一般に、32 ビット MAPI アプリケーションは、前もって 64 ビット アプリケーションとしてリビルドすることなく 64 ビット プラットフォーム (64 ビット Windows 上の 64 ビット Outlook) で実行することはできません。また、64 ビット MAPI アプリケーションは、前もって 32 ビットアプリケーションとしてリビルドすることなく 32 ビット Outlook と、32 ビットまたは 64 ビット Windows がインストールされたコンピューターで実行することはできません。図 1 は、これらのシナリオのどちらかが発生した場合に表示される警告ダイアログ ボックスを示しています。
   
 **図 1. 通常の異ビット間 MAPI 呼び出しに対するエラー メッセージ**
 

@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5a250d68-7583-406e-84e3-0b03bba97234
 description: 2 つの式を比較します。null 以外の式を比較したときに、左のオペランドに右のオペランドよりも大きい値が含まれる場合、結果は TRUE になり、それ以外の場合、結果は FALSE になります。
-ms.openlocfilehash: aac3ee7ef575e5a982d55d2003c77cb667cc903d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 61188ffa5a02ed7320b432e58d0d3fdbd4e05f33
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407740"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601563"
 ---
 # <a name="greater-than-access-custom-web-app"></a>より大きい (Access カスタム Web アプリ)
 

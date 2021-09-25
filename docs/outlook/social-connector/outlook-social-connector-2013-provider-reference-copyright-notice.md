@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1425b9f2-606a-4522-b97c-0875d45eb175
 description: このドキュメントは現状のまま提供されます。 このドキュメントに記載されている情報とビュー (URL や他のインターネット Web サイト参照を含む) は、予告なしに変更される場合があります。 使用に伴うリスクは、お客様が負うものとします。
-ms.openlocfilehash: 6d01020fc4d4081e5f55de5f64f361ac3ae8a0b0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: de42731c3165f40748488a47a0ee2df880b899de
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359886"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566158"
 ---
 # <a name="outlook-social-connector-2013-provider-reference-copyright-notice"></a>OutlookSocial Connector 2013 プロバイダー参照著作権に関する通知
 

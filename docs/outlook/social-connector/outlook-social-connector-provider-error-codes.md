@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0799243e-ba92-44c4-b687-182e50b57cb7
 description: プロバイダーは、次の表に示すエラー コードのいずれかを使用して、呼び出し元にエラーを返す必要があります。
-ms.openlocfilehash: 22a6e8d4ebf87157eaee630cc47f9f363150e839
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7b5dfc05f3b27549c7801cab5565838302532c4e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425352"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566144"
 ---
 # <a name="outlook-social-connector-provider-error-codes"></a>Outlookソーシャル コネクタ プロバイダーのエラー コード
 

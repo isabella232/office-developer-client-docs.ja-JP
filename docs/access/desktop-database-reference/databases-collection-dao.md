@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197944(v=office.15)
 ms:contentKeyID: 48546493
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: dbaa0fe7aaa50c8aec582e2f03cd2849268816b9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f93c9dbaf4bca487785084b570efaf0bb482ab68
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294646"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565626"
 ---
 # <a name="databases-collection-dao"></a>Databases コレクション (DAO)
 
@@ -28,18 +28,18 @@ Microsoft Access ワークスペースでは、データベースの " **Name**/
 
 コレクション内の **Database** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-- **データベース**.0
+- **データベース**(0)
 
-- **データベース**("*name*")
+- **データベース**("*名前*")
 
-- ****\!データベース\[*名*\]
+-  \! データベース \[*name*\]
 
 > [!NOTE]
-> [!メモ] **Databases** コレクションに重複する名前を作成して同じデータ ソースまたはデータベースを複数回開くことができます。 **Database** オブジェクトをオブジェクト変数に割り当てて変数名で参照する必要があります。
+> 同じデータ ソースまたはデータベースを複数回開いて、**Databases** コレクションに重複する名前を作成できます。**Database** オブジェクトをオブジェクト変数に割り当て、変数名で参照する必要があります。
 
 ## <a name="example"></a>例
 
-この例では、新しい **Database** オブジェクトを作成し、既定の **Workspace** オブジェクト内にある既存の **Database** オブジェクトを開きます。次に、 **Databases** コレクションおよび各 **Database** オブジェクトの **Properties** コレクションを列挙します。
+この例では、新しい **Database** オブジェクトを作成し、既定の **Workspace** オブジェクト内にある既存の **Database** オブジェクトを開きます。次に、**Databases** コレクションおよび各 **Database** オブジェクトの  **Properties** コレクションを列挙します。
 
 ```vb 
 Sub DatabaseObjectX() 
@@ -86,7 +86,7 @@ End Sub
 
 <br/>
 
-この例では、 **CreateDatabase** メソッドを使用して、暗号化された新しい **Database** オブジェクトを作成します。
+この例では、**CreateDatabase** メソッドを使用して、暗号化された新しい **Database** オブジェクトを作成します。
 
 ```vb
     Sub CreateDatabaseX() 

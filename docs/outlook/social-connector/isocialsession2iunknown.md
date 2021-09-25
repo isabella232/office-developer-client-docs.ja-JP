@@ -5,30 +5,30 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f516e86e-0158-472b-9711-fe7491b24404
 description: キャッシュされた資格情報を使用して、フレンドの追加、フレンドのオンデマンドまたはハイブリッド同期、アクティビティのオンデマンド同期、またはソーシャル ネットワークへのログオンをサポートします。
-ms.openlocfilehash: 6dc581bb812408d7e01f94c375671783445616a1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4c6b34b01092c215cca5c18d332c3ec6e28647fd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408832"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574504"
 ---
 # <a name="isocialsession2--iunknown"></a>ISocialSession2 : IUnknown
 
 キャッシュされた資格情報を使用して、フレンドの追加、フレンドのオンデマンドまたはハイブリッド同期、アクティビティのオンデマンド同期、またはソーシャル ネットワークへのログオンをサポートします。
   
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 次の表に **、ISocialSession2** インターフェイスで使用できるメンバーを示します。 
   
 |**名前**|**メンバーの種類**|**説明**|
 |:-----|:-----|:-----|
-|[FollowPersonEx](isocialsession2-followpersonex.md) <br/> |メソッド  <br/> |_emailAddresses_ パラメーターと _displayName_ パラメーターで識別されるユーザーを、ソーシャル ネットワーク上のログオンユーザーのフレンドとして追加します。  <br/> |
-|[GetActivitiesEx](isocialsession2-getactivitiesex.md) <br/> |メソッド  <br/> |_hashedAddresses_ パラメーターで指定されたユーザーのアクティビティのコレクションを表す文字列を取得します。  <br/> |
-|[GetPeopleDetails](isocialsession2-getpeopledetails.md) <br/> |メソッド  <br/> |_personsAddresses_ パラメーターで指定されたユーザーの人物と画像の詳細のコレクションを含む文字列を返します。  <br/> |
-|[LogonCached](isocialsession2-logoncached.md) <br/> |メソッド  <br/> |キャッシュされた資格情報を使用してソーシャル ネットワーク サイトにログオンします。  <br/> |
+|[FollowPersonEx](isocialsession2-followpersonex.md) <br/> |Method  <br/> |_emailAddresses_ パラメーターと _displayName_ パラメーターで識別されるユーザーを、ソーシャル ネットワーク上のログオンユーザーのフレンドとして追加します。  <br/> |
+|[GetActivitiesEx](isocialsession2-getactivitiesex.md) <br/> |Method  <br/> |_hashedAddresses_ パラメーターで指定されたユーザーのアクティビティのコレクションを表す文字列を取得します。  <br/> |
+|[GetPeopleDetails](isocialsession2-getpeopledetails.md) <br/> |Method  <br/> |_personsAddresses_ パラメーターで指定されたユーザーの人物と画像の詳細のコレクションを含む文字列を返します。  <br/> |
+|[LogonCached](isocialsession2-logoncached.md) <br/> |Method  <br/> |キャッシュされた資格情報を使用してソーシャル ネットワーク サイトにログオンします。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

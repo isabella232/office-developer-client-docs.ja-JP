@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidAppointmentTimeZoneDefinitionRecur
 api_type:
 - COM
 ms.assetid: 52fd57a0-9e34-4452-9ecd-2acb454446c9
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: e5e9b06178a1517fc1c8652b0d667faf1afc77cc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 83e72d3862ef38d93dace38b91e7a8a70ecb538c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345354"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583934"
 ---
 # <a name="pidlidappointmenttimezonedefinitionrecur-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionRecur 標準プロパティ
 
@@ -33,11 +33,11 @@ ms.locfileid: "32345354"
 |プロパティ セット:  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008260  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |カレンダー  <br/> |
+|エリア:  <br/> |予定表  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-Microsoft Office Outlook 2007 以降の Microsoft Outlook のバージョンと、Outlook または Exchange Server カレンダー更新ツールを実行したコラボレーション データ オブジェクト (CDO) 1.2.1 に基づくソリューションでは **、dispidApptTZDefRecur** プロパティと **dispidTimeZoneStruct** [(PidLidTimeZoneStruct)](pidlidtimezonestruct-canonical-property.md)プロパティを使用して、タイム ゾーンのルールが変更された場合に定期的な会議を調整するかどうかを決定します。 古いクライアントが **dispidTimeZoneStruct** プロパティを操作する場合もありますので、これらのプロパティを同期する必要があります。 2 つのプロパティが同期されているかどうかを検出するには **、dispidTimeZoneStruct** に一致するルールの **wFlags** メンバーに、TZRULE_FLAG_RECUR_CURRENT_TZREGフラグが設定されている必要があります。 このフラグが設定されていない場合、または設定され **、dispidTimeZoneStruct** プロパティのルールがマークされたルールと一致しない場合は **、dispidApptTZDefRecur** プロパティを破棄し、代わりに **dispidTimeZoneStruct** を使用する必要があります。 
+Microsoft Office Outlook 2007 以降の Microsoft Outlook のバージョン、および Outlook または Exchange Server カレンダー更新ツールを実行したコラボレーション データ オブジェクト (CDO) 1.2.1 に基づくソリューションでは **、dispidApptTZDefRecur** プロパティと **dispidTimeZoneStruct** [(PidLidTimeZoneStruct)](pidlidtimezonestruct-canonical-property.md)プロパティを使用して、次の操作を実行します。タイム ゾーンのルールが変更された場合に定期的な会議を調整するかどうかを決定します。 古いクライアントが **dispidTimeZoneStruct** プロパティを操作する場合もありますので、これらのプロパティを同期する必要があります。 2 つのプロパティが同期されているかどうかを検出するには **、dispidTimeZoneStruct** に一致するルールの **wFlags** メンバーに、TZRULE_FLAG_RECUR_CURRENT_TZREGフラグが設定されている必要があります。 このフラグが設定されていない場合、または設定され **、dispidTimeZoneStruct** プロパティのルールがマークされたルールと一致しない場合は **、dispidApptTZDefRecur** プロパティを破棄し、代わりに **dispidTimeZoneStruct** を使用する必要があります。 
   
 **dispidApptTZDefRecur** プロパティと **dispidTimeZoneStruct** プロパティの両方を新しい定期的な会議に書き込む場合、または **dispidTimeZoneStruct** プロパティを使用する任意の選択を行う場合は、(Windows レジストリに従って) タイム ゾーンの現在の定義を使用する必要があります。 
   

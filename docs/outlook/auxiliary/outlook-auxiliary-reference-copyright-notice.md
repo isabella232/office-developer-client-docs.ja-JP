@@ -1,21 +1,19 @@
 ---
-title: Outlook参照著作権に関する通知
+title: Outlook 2013 補助参照の著作権
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 94e13811-04ec-e381-99ff-cb8f42d4bf1e
-description: このドキュメントは現状のまま提供されます。 このドキュメントに記載されている情報とビュー (URL や他のインターネット Web サイト参照を含む) は、予告なしに変更される場合があります。 使用に伴うリスクは、お客様が負うものとします。
-ms.openlocfilehash: 7f72ed0fc580fa62baaeb88d4366c68a3b7ac279
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5eded3dab632e2546540f93265032bd89e08c649
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327791"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601241"
 ---
-# <a name="outlook-auxiliary-reference-copyright-notice"></a>Outlook参照著作権に関する通知
+# <a name="outlook-2013-auxiliary-reference-copyright-notice"></a>Outlook 2013 補助参照著作権に関する通知
 
 このドキュメントは "現状のまま" 提供されます。このドキュメントで説明されている情報およびビューは、URL および他のインターネット Web サイトの参照を含めて、予告なく変更されることがあります。このドキュメントの使用に伴うリスクはお客様が負うものとします。
   
@@ -26,5 +24,4 @@ ms.locfileid: "32327791"
 © 2013 Microsoft Corporation. All rights reserved.
   
 Microsoft、Access、ActiveX、ClearType、Excel、FrontPage、InfoPath、IntelliSense、JScript、MSDN、MS-DOS、MSN、OneNote、Outlook、PowerPoint、SharePoint、Silverlight、SmartArt、SQL Server、Visio、Visual Basic、Visual C#、Visual C++、Visual Studio、Win32、Windows、Windows PowerShell、Windows Server、および Windows Vista は、Microsoft グループ企業の商標です。その他すべての商標は、各社のものです。
-  
 

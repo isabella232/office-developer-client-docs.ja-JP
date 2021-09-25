@@ -1,31 +1,31 @@
 ---
-title: Databases プロパティ (DAO)
+title: Databases.Count プロパティ (DAO)
 TOCTitle: Count Property
 ms:assetid: 7c542b17-9806-e00e-8cbd-58d6d17e98c4
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196364(v=office.15)
 ms:contentKeyID: 48545831
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: cd8908492721315202c5bdf26109753c88905a07
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 02afe712b1db6ccbd0f959ebbc03ccac29296c6d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294625"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565584"
 ---
-# <a name="databasescount-property-dao"></a>Databases プロパティ (DAO)
+# <a name="databasescount-property-dao"></a>Databases.Count プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
 
-指定したコレクション内のオブジェクトの数を取得します。 読み取り専用です。
+指定したコレクション内のオブジェクトの数を取得します。値の取得のみ可能です。
 
 ## <a name="syntax"></a>構文
 
-*式*。量
+*式* .Count
 
-*式***Databases**オブジェクトを表す変数を取得します。
+*式* Databases オブジェクトを表 **す変数** 。
 
 ## <a name="remarks"></a>注釈
 

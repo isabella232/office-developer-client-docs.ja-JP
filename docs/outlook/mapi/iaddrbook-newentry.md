@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IAddrBook.NewEntry
 api_type:
 - COM
 ms.assetid: 8d2d786b-e621-456d-b087-3373df6f8ac5
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 285da82d143524d2b2cf73ed3e5f1e3aeef6f9b3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bbf86646322497c7d475589a5fac0e86572c4486
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405101"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613976"
 ---
 # <a name="iaddrbooknewentry"></a>IAddrBook::NewEntry
 

@@ -10,13 +10,13 @@ f1_keywords:
 - ado210.chm1231124
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 9d44bc8fae0143b183ef54120cdaaf91337f36f8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b4edc56b5d0a11158e36bfc3797c9e6dea3a0bfc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296130"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565801"
 ---
 # <a name="commandtimeout-property-ado"></a>CommandTimeout プロパティ (ADO)
 
@@ -25,9 +25,9 @@ ms.locfileid: "32296130"
 
 実行しようとしたコマンドを中止して、エラーを生成するまでの待機時間を示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
-コマンドが実行されるまでの待機時間を秒単位で示す長整数型 ( **Long** ) の値を設定または取得します。 既定値は 30 です。
+コマンドが実行されるまでの待機時間を秒単位で示す長整数型 ( **Long** ) の値を設定または取得します。既定値は 30 です。
 
 ## <a name="remarks"></a>注釈
 

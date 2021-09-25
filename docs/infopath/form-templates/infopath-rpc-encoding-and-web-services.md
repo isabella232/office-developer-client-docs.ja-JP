@@ -3,15 +3,15 @@ title: InfoPath、RPC エンコード、および Web サービス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f8d7b944-a8fd-9c5f-8f66-0f1b628b7c6e
 description: Web サービスは、WSDL (Web サービス記述言語) コントラクトの指定で、Web メソッドへのバインドのために 2 つのスタイル (Document または RPC) のどちらかを公開できます。
-ms.openlocfilehash: 0eacf013c9cdf74f18f3de1d4412ca4ca165a960
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 66f915ac299f20e91f7e2ed1404f65ac44af0afd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303529"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601269"
 ---
 # <a name="infopath-rpc-encoding-and-web-services"></a>InfoPath、RPC エンコード、および Web サービス
 

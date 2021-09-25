@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251203
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 49816e46-fa83-3ee4-1451-9c85fbd0f519
 description: 図形に対して現在設定されているサイズ変更の動作の方法を示します。
-ms.openlocfilehash: 7e9080fcd4604e2dbdc1dae31992f05e5b512213
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5893e01d7d66d7c9dfad6544c83b7299709ccf1c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421964"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607802"
 ---
 # <a name="resizemode-cell-shape-transform-section"></a>[ResizeMode] セル ([Shape Transform] セクション)
 

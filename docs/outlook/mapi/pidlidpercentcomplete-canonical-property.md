@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidLidPercentComplete
 api_type:
 - COM
 ms.assetid: e63792b1-9580-4702-a6d7-dd3ae5007a4a
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 870b4e0edb360ac36525f94b0605af930eee8fa3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c7b1642acd2ce413f55d86aaf3413662f376d662
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357975"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583731"
 ---
 # <a name="pidlidpercentcomplete-canonical-property"></a>PidLidPercentComplete 標準プロパティ
 

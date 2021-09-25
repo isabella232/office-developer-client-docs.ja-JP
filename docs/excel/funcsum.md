@@ -8,15 +8,15 @@ f1_keywords:
 - FuncSum
 keywords:
 - funcsum function [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 934192ef-8a89-4dbb-bd37-01e92ba24256
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 14db5812165812161cf7031f75338a981251dfd2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 449886c9f0be9adad6af5dc6c6163eb8f0f64a4f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406942"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557681"
 ---
 # <a name="funcsum"></a>FuncSum
 

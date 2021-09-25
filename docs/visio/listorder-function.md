@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 55ffcfa8-57fd-dbce-e551-8584660e33fa
 description: リスト内の図形の 1 からベースの位置を返します。
-ms.openlocfilehash: 21f2057c4027735902a127ef16f94d6ed3f69568
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 57793d2fa9716af5ea292e9559c9f3b5b1a99748
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423931"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565969"
 ---
 # <a name="listorder-function"></a>LISTORDER 関数
 

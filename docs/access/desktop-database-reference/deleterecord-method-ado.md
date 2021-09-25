@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249895(v=office.15)
 ms:contentKeyID: 48547370
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8d6ecd408bc2141ef9ff4bec8f6469a70e09bbe1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 8d8107acb9a4335bf0635117bb57626f6a971e24
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293995"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565514"
 ---
 # <a name="deleterecord-method-ado"></a>DeleteRecord メソッド (ADO)
 
@@ -22,7 +22,7 @@ ms.locfileid: "32293995"
 
 ## <a name="syntax"></a>構文
 
-*Record*. **DeleteRecord * * * ソース*,*非同期*
+*Record*.**DeleteRecord**_Source_, *Async*
 
 ## <a name="parameters"></a>パラメーター
 
@@ -35,9 +35,9 @@ ms.locfileid: "32293995"
 
 このメソッドの終了後、**Record** で表されているオブジェクトに対する操作が失敗する場合があります。**DeleteRecord** を呼び出した後は **Record** を閉じる必要があります。これは、プロバイダーがデータ ソースで **Record** をいつ更新するかにより、**Record** の動作が予期できなくなることがあるためです。
 
-If this **Record** was obtained from a [Recordset](recordset-object-ado.md), then the results of this operation will not be reflected immediately in the **Recordset**. recordset を最新の情報に更新するには、**レコードセット**をいったん閉じてから開き直すか、または**recordset**の再[クエリ](requery-method-ado.md)を実行するか、 [Update](update-method-ado.md)メソッドと[Resync](resync-method-ado.md)メソッドを実行します。
+If this **Record** was obtained from a [Recordset](recordset-object-ado.md), then the results of this operation will not be reflected immediately in the **Recordset**. Recordset **を閉** じ、開き替え、または Recordset [Requery](requery-method-ado.md)メソッドまたは Update メソッドと [Resync](resync-method-ado.md)メソッドを実行して **、Recordset** を更新します。 [](update-method-ado.md)
 
 > [!NOTE]
-> [!メモ] http スキームを使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、「[絶対 url と相対 url](absolute-and-relative-urls.md)」を参照してください。
+> [!メモ] http スキームを使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、「絶対 URL と [相対 URL」を参照してください](absolute-and-relative-urls.md)。
 
 

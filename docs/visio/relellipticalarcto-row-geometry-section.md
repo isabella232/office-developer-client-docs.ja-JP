@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9b7da082-5e55-411d-b109-7fb6fa8f6e8e
 description: 図形の幅と高さに対する楕円円弧の端点の x 座標と y 座標、図形の幅と高さに対する円弧上のコントロール ポイントの x 座標と y 座標、x 軸から楕円の長軸への角度、楕円の長軸と短軸の比率を含む。
-ms.openlocfilehash: e38f5f2baf6bb9ade31c2778799a3ece968147f4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ce97c531e199acc74c0b3581dcf24e72dbf2899b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409098"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607823"
 ---
 # <a name="relellipticalarcto-row-geometry-section"></a>[RelEllipticalArcTo] 行 ([図形座標] セクション)
 

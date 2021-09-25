@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 366550fa-e787-4ca0-bfe1-a7890dfc27c6
 description: アクティビティ フィードは、ソーシャル ネットワーク上で発生する 1 つ以上のアクティビティで構成されます。 各アクティビティ フィードは activityFeed 要素で表され、次の 3 つの情報が特徴です。
-ms.openlocfilehash: 971c54cf69a65bebbe4fd04e8608e88b89145bb4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 528a7e2c32c7a5c4c2947bfad864accd92fcc419
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439948"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566116"
 ---
 # <a name="overview-of-xml-for-an-activity-feed-item"></a>アクティビティ フィード アイテムのための XML の概要
 

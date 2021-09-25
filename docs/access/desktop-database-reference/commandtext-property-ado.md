@@ -10,13 +10,13 @@ f1_keywords:
 - ado210.chm1231123
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 66797accb24cead7d7ba5732f0a9c58ee31049e5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c2fd60d7e14b840a11d12069dbd72879167c3bae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296137"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565808"
 ---
 # <a name="commandtext-property-ado"></a>CommandText プロパティ (ADO)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32296137"
 
 プロバイダーに対して発行するコマンド文字列を示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
 SQL ステートメント、テーブル名、相対 URL、またはストアド プロシージャの呼び出しなど、プロバイダーのコマンドを含む文字列型 ( **String** ) の値を設定または取得します。既定値は "" (長さ 0 の文字列) です。
 
@@ -41,6 +41,6 @@ SQL ステートメント、テーブル名、相対 URL、またはストアド
 
 
 > [!NOTE]
-> [!メモ] http スキームを使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、「[絶対 url と相対 url](absolute-and-relative-urls.md)」を参照してください。
+> [!メモ] http スキームを使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、「絶対 URL と [相対 URL」を参照してください](absolute-and-relative-urls.md)。
 
 

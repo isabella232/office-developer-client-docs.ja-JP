@@ -1,24 +1,24 @@
 ---
-title: ActiveX Data Objects (ADO) タスクテーブル
+title: ActiveXデータ オブジェクト (ADO) タスク テーブル
 TOCTitle: ADO task table
 ms:assetid: 39671d86-72ac-a7b0-53d2-7a17429b15ad
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249141(v=office.15)
 ms:contentKeyID: 48544245
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ffb9ece91d674e3447f43ae17e2ea9415e2339ac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 05c377775e5da09f1d81e3e31b00e5d3939d423d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283248"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607571"
 ---
 # <a name="ado-task-table"></a>ADO のタスク表
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-次の表は、 *ADO プログラマガイド*に含まれるプログラミングタスクと、各タスクのリファレンスを示しています。 These references can be textual descriptions or code examples in which you can find information about the ADO feature that performs the task.
+次の表に *、ADO* プログラマ ガイドに含まれるプログラミング タスクの一覧と、各タスクの参照を示します。 These references can be textual descriptions or code examples in which you can find information about the ADO feature that performs the task.
 
 <table>
 <colgroup>
@@ -28,7 +28,7 @@ ms.locfileid: "32283248"
 <thead>
 <tr class="header">
 <th><p>ADO タスク</p></th>
-<th><p>References</p></th>
+<th><p>関連情報</p></th>
 </tr>
 </thead>
 <tbody>

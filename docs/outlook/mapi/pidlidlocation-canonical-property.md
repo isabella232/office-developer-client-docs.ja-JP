@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidLocation
 api_type:
 - COM
 ms.assetid: c0db4b9e-ab84-4f45-9dbf-9514d306119c
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6b6bac5eccd2461424bc99268378da5a28fa4505
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5b36cad53759e518ad1aa1619bdf2361c65d16f8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315408"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583773"
 ---
 # <a name="pidlidlocation-canonical-property"></a>PidLidLocation 標準プロパティ
 
@@ -33,7 +33,7 @@ ms.locfileid: "32315408"
 |プロパティ セット:  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008208  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|エリア:  <br/> |カレンダー  <br/> |
+|エリア:  <br/> |予定表  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
@@ -41,7 +41,7 @@ ms.locfileid: "32315408"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様Exchange Server提供します。
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f0baa310-7a53-07ee-0a7d-33dd1fb465c2
 description: 指定したユーザーごとに、時間範囲内のデータの空き時間情報ブロックを列挙するインターフェイスを返します。
-ms.openlocfilehash: e55f902117a20bfefaa5d9a2f3a067cb78ec86cb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 51875b12244a6e2fb427c27d7fece6fae9833c03
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411233"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601248"
 ---
 # <a name="ifreebusysupportloadfreebusydata"></a>IFreeBusySupport::LoadFreeBusyData
 

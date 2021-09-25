@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidNameXSharingRemoteType
 api_type:
 - COM
 ms.assetid: 74ed968b-c7bb-41a4-a6f1-9ceba8cdc703
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1dcf23d481e5b5b9bd40b2e26f3f6d848bb14987
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a7287edc022cfbb029f1fd5932fb851b49fe9ef2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315849"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583605"
 ---
 # <a name="pidnamexsharingremotetype-canonical-property"></a>PidNameXSharingRemoteType 標準プロパティ
 

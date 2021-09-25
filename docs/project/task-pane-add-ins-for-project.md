@@ -3,15 +3,15 @@ title: Project 用の作業ウィンドウ アドイン
 manager: soliver
 ms.date: 09/10/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 44712b7c-aead-433d-8c0e-76407264166c
 description: Project Standard 2013 および 2013 Project Professionalは、両方ともアドインの作業ウィンドウOfficeをサポートします。作業ウィンドウ アドインを使用すると、プロジェクト内のプロジェクト、タスク、リソース、およびビュー データを他の Office 2013 クライアント アプリケーション、SharePoint アプリケーション、Web パーツ、その他の Web ページ、および外部データと統合できます。
-ms.openlocfilehash: 26942cab1d1b127872a230a46fbc6242ab27b754
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 826009a2359dd5d9b97a702674206f3a533b6a51
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32330017"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566081"
 ---
 # <a name="task-pane-add-ins-for-project"></a>Project 用の作業ウィンドウ アドイン
 
@@ -30,7 +30,7 @@ Office 2013 のアドインの詳細については、「OfficeアドインShare
 
 アドインのOfficeおよびSharePointの開発者向けドキュメントには、包括的な記事と参照が含まれています。 Project Professional 2013 および他の Office クライアント アプリケーション用のアドインの開発の概要、および JavaScript リファレンスと XML マニフェストリファレンスについては[、「Office](https://msdn.microsoft.com/library/office/apps/jj220060%28v=office.15%29)アドイン」を参照してください。
   
-Project 2013 SDK のダウンロードには、**タスク**、リソース、ビューの GUID を取得する方法、アクティブなプロジェクトのプロパティを取得する方法、およびタスク、リソース、またはビューの選択変更イベント ハンドラーを設定する方法を示す Project OM Test サンプル アドインが含まれています。 SDK とサンプルを展開し、Project2013SDK.msiファイルにインストールする場合は、サブディレクトリと  `\Samples\Apps\Copy_to_AppSource_FileShare` サブディレクトリを  `\Samples\Apps\Copy_to_AppManifests_FileShare` 参照してください。 この JSOMCall.htmサンプルでは、ダウンロードに含まれる office.js ファイルと project-15.js ファイルの JavaScript 関数を使用します。 対応するデバッグ ファイル (office.debug.js および project-15.debug.js) を使用すると、これらの関数を検証できます。 
+Project 2013 SDK のダウンロードには、**タスク**、リソース、ビューの GUID を取得する方法、アクティブなプロジェクトのプロパティを取得する方法、およびタスク、リソース、またはビューの選択変更イベント ハンドラーを設定する方法を示す Project OM Test サンプル アドインが含まれています。 SDK とサンプルを展開し、Project2013SDK.msiファイルにインストールする場合は、サブディレクトリと  `\Samples\Apps\Copy_to_AppSource_FileShare` サブディレクトリを  `\Samples\Apps\Copy_to_AppManifests_FileShare` 参照してください。 このJSOMCall.htmlは、ダウンロードに含まれる office.jsファイルと project-15.jsファイルの JavaScript 関数を使用します。 対応するデバッグ ファイル (office.debug.js および project-15.debug.js) を使用すると、これらの関数を検証できます。 
   
 2013 **HelloProject_OData** 2013 のサンプル アドインProject Professional 2012 年に開発Visual Studioしました。 アドインは **ProjectData** サービスの REST クエリを使用して、プロジェクト コストなどの情報のレポート データを取得し、現在のプロジェクトと Project Web App のすべてのプロジェクトの平均値を比較します。 
   

@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f61960f7-e018-4d2e-8e32-426ed46d9064
 description: このセクションでは、OSC プロバイダー Outlook実装する OSC プロバイダー拡張インターフェイスのメンバーの Outlook ソーシャル コネクタ (OSC) の一般的な呼び出しシーケンスについて説明します。
-ms.openlocfilehash: f7829b710d6840ccd1fa0f990d6e03b2eb879431
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5106bc31cab1854cba07d5188a5888ea5f382d50
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413613"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566179"
 ---
 # <a name="osc-typical-calling-sequences"></a>OSC の典型的な呼び出しシーケンス
 

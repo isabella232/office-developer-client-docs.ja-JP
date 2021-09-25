@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249210(v=office.15)
 ms:contentKeyID: 48544545
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 18275ed4f62e6bad4d6addd796a9f421df0904b4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 8eb5f4f16df64e448360f9bbe1f72ee93032d74a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308772"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557765"
 ---
 # <a name="section-iv-ado-extensions-for-data-definition-language-and-security-adox"></a>セクション IV: データ定義言語およびセキュリティの ADO 拡張機能 (ADOX)
 

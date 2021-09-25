@@ -1,5 +1,5 @@
 ---
-title: Excel �̃R�}���h�A�֐��A����я��
+title: Excel のコマンド、関数、および状態
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,13 +8,13 @@ keywords:
 - states [excel 2007],commands [Excel 2007],worksheet functions [Excel 2007],macro-sheet functions [Excel 2007],Excel states
 ms.assetid: 20f19aa4-f184-47be-bcdd-7ded78778974
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: c941ba7445f1f0598bf044b5f177ad576df0137c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: a26a1bd43c67f0fcb2b7f916db8ba3f7cb9b389f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310970"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601395"
 ---
 # <a name="excel-commands-functions-and-states"></a>Excel のコマンド、関数、および状態
 

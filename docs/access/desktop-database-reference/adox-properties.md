@@ -1,22 +1,22 @@
 ---
-title: ADOX プロパティ (Access デスクトップデータベースリファレンス)
+title: ADOX プロパティ (Access デスクトップ データベース リファレンス)
 TOCTitle: ADOX properties
 ms:assetid: 7559af18-83a4-dc7f-015f-6a7c55c520d8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249480(v=office.15)
 ms:contentKeyID: 48545675
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0056764d80b5cfa19bf8e229d33c2c84c8b08c28
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c16858e6ec8e86cc71fcbf8b66a1b3be630e5b45
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285252"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607487"
 ---
 # <a name="adox-properties"></a>ADOX のプロパティ
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 <br/>
 
@@ -73,11 +73,11 @@ ms.locfileid: "32285252"
 <td><p>インデックス フィールドの Null 値を持つレコードがインデックスへのエントリを持つかどうかを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="item-property-ado.md">Item</a></p></td>
+<td><p><a href="item-property-ado.md">項目</a></p></td>
 <td><p>コレクションの特定のメンバーを名前またはコレクションで付けられたインデックスで示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="name-property-adox.md">Name</a></p></td>
+<td><p><a href="name-property-adox.md">名前</a></p></td>
 <td><p>オブジェクトの名前を示します。</p></td>
 </tr>
 <tr class="odd">

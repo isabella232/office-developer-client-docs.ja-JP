@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm12836
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 2d1fb13d04691b7bf5e0aafcc484cfc4f471e1e1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 19e003f1576405d4bc36c8365603c7871e1541c4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295493"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565675"
 ---
 # <a name="copyobject-macro-action"></a>CopyObject マクロ アクション
 
@@ -27,7 +27,7 @@ ms.locfileid: "32295493"
 > [!NOTE]
 > このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 **CopyObject** アクションの引数は次のとおりです。
 
@@ -45,7 +45,7 @@ ms.locfileid: "32295493"
 <tbody>
 <tr class="odd">
 <td><p><strong>Destination Database/コピー先データベース</strong></p></td>
-<td><p>コピー先データベースのパスとファイル名を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>コピー先データベース</strong>] ボックスに、パスとファイル名を入力します。この引数を指定しない場合は、カレント データベースにコピーされます。  </p><p><strong>注</strong>: この引数は、Access データベース環境でのみ使用できます。 When using this action in an Access project environment (.adp), the Destination Database argument must be blank.</p>
+<td><p>コピー先データベースのパスとファイル名を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>コピー先データベース</strong>] ボックスに、パスとファイル名を入力します。この引数を指定しない場合は、カレント データベースにコピーされます。  </p><p><strong>注</strong>: この引数は Access データベース環境でのみ使用できます。 When using this action in an Access project environment (.adp), the Destination Database argument must be blank.</p>
 <p>If you run a macro containing the <strong>CopyObject</strong> action in a library database and leave this argument blank, Microsoft Office Access 2007 will copy the object into the library database.</p></td>
 </tr>
 <tr class="even">
@@ -66,7 +66,7 @@ ms.locfileid: "32295493"
 
 ## <a name="remarks"></a>注釈
 
-**Destination Database/コピー先データベース**引数と **New Name/新しい名前**引数の少なくとも一方には必ず値を入力する必要があります。
+**Destination Database/コピー先データベース** 引数と **New Name/新しい名前** 引数の少なくとも一方には必ず値を入力する必要があります。
 
 **Source Object Type/ソース オブジェクトの種類** 引数と **Source Object Name/ソース オブジェクト名** 引数を指定しないと、ナビゲーション ウィンドウで選択したオブジェクトがコピーされます。ナビゲーション ウィンドウでオブジェクトを選択するには、 **SelectObject** アクションの "In Navigation Pane/ナビゲーション ウィンドウから" 引数を [ **はい** ] に設定します。
 

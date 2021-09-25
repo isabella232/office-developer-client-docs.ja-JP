@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.CbNewMTSID
 api_type:
 - COM
 ms.assetid: fd5ef226-39e6-4604-a751-2f6cc49c4895
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8ffff7958ab405e488ac2ce45bae43b78da7b0f4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 427cbd5bbfdd6200648e4dc9282d9ca810bb4c70
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428103"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592647"
 ---
 # <a name="cbnewmtsid"></a>CbNewMTSID
 

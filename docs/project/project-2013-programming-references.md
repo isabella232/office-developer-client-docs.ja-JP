@@ -14,15 +14,15 @@ f1_keywords:
 - VBA object model
 keywords:
 - プロジェクト サーバー インターフェイス、Project Server、エラー コード、VBA、Project オブジェクト モデル、Project 2013、プラットフォーム、Visual Basic for Applications、Project オブジェクト モデル、オブジェクト モデル、Project VBA、Project Server、PSI リファレンス、PSI
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 79c78c44-1e08-4c9b-a7fe-a5089e666055
 description: Project Server Interface (PSI) リファレンスの概要、ASMX インターフェイスと PSI の WCF インターフェイスの使い方、Project Server エラー コードに関する情報、および ProjectData OData サービスの参照について説明します。
-ms.openlocfilehash: 27b2eb27d62ec1abdb1a835b5d874e211e7e793e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 85ec462e811dc4ea37857993949f2ddc09b75232
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357037"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574462"
 ---
 # <a name="project-2013-programming-references"></a>Project 2013 プログラミング リファレンス
 

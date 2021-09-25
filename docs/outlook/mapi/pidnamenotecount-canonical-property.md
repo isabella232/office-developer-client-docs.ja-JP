@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidNameNoteCount
 api_type:
 - COM
 ms.assetid: 0c38a59f-597c-4f1b-bdbb-788d4f8b1c9c
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 20b36400fc0e181ab0b2b22a05685495d5b6c804
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d096710905e6c695aba6dd11aa2b1bd917f55e03
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335253"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583612"
 ---
 # <a name="pidnamenotecount-canonical-property"></a>PidNameNoteCount 標準プロパティ
 
