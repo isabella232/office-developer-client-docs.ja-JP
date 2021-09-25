@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIFormMgr.LoadForm
 api_type:
 - COM
 ms.assetid: 5ca500c3-c737-45a5-b0fc-473b75c1d68d
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7e445646477ad1fc56b41141b541358d9b9f9616
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0ecdf85aa388a183b3adc34004f0ed1cc78ee77f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418786"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576010"
 ---
 # <a name="imapiformmgrloadform"></a>IMAPIFormMgr::LoadForm
 

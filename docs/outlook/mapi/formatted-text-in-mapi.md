@@ -3,17 +3,17 @@ title: MAPI の書式付きテキスト
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 4d0ff834-253b-4e8c-a5be-6e4745a2a66c
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 7f37d65e4beb328c2c92cf0c2ab28586af6bee45
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 139eec84a6ea76b7328fc7fe42c648e56f861d75
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408090"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614186"
 ---
 # <a name="formatted-text-in-mapi"></a>MAPI の書式付きテキスト
 

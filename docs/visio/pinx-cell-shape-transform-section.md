@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm790
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dd88fb8d-3ec3-476a-870d-6642b191496f
 description: 図形のピンの x 座標 (回転の中心) を、親の原点との関係で表します。
-ms.openlocfilehash: de12b379d5f345209a468298174634ff4f9cd639
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 35aa20d4b41d00bfb61a4d437dc0b4b06f5ed005
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404821"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608073"
 ---
 # <a name="pinx-cell-shape-transform-section"></a>[PinX] セル ([Shape Transform] セクション)
 

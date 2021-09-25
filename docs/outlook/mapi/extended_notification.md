@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.EXTENDED_NOTIFICATION
 api_type:
 - COM
 ms.assetid: f01fce7b-a038-4002-8bad-0e6a51ae9d05
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: a8b49d0b80102f6295f3f717fb123a6581854d5a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 814bd8866863794740aafd553047c6443f192b04
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415720"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614221"
 ---
 # <a name="extended_notification"></a>EXTENDED_NOTIFICATION
 
@@ -41,7 +41,7 @@ typedef struct _EXTENDED_NOTIFICATION
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulEvent**
   

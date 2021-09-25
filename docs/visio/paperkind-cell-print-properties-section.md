@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm60067
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b2c9616f-a144-eb99-54b6-b53745c7b4d6
 description: ページを印刷する用紙の種類を指定します。
-ms.openlocfilehash: 694aa1fb8b52f5ae323c47e9aab8715b4a48dfb0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ccf0118cc5e951a441f904e9920bfa32ef9a251e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408447"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608117"
 ---
 # <a name="paperkind-cell-print-properties-section"></a>[PaperKind] セル ([Print Properties] セクション)
 

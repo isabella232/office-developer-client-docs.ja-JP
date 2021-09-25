@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPISupport.SpoolerYield
 api_type:
 - COM
 ms.assetid: f5c6ba8f-4ef5-4d60-b4e6-5b9160ec4e99
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: f6cdebf82d8b84ada3d029865867c5192af90b0d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6cc11912b721a624b065c6d21169056843ceac0e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409910"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575730"
 ---
 # <a name="imapisupportspooleryield"></a>IMAPISupport::SpoolerYield
 

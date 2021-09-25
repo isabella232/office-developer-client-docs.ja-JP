@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 245166ce-1cb6-634b-c763-bb717a940eec
 description: このナビゲーション ページには、Visio でのプログラミングの概要に関するトピックへのリンクが含まれています。 次のリンクをクリックするか、または、目次を使用して次のトピックを表示してください。
-ms.openlocfilehash: fef26adf718b883ef2dbc75fc1f3b9cf1b143386
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 37a25d595b382f9b8d4dded761880369d64b90fe
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438898"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608411"
 ---
 # <a name="concepts-visio-shapesheet"></a>概念 (Visioシェイプシート)
 

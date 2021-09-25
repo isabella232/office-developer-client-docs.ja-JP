@@ -6,25 +6,25 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249724(v=office.15)
 ms:contentKeyID: 48546656
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 296e05118054ec045c23cd92a399afdc3cddd9a1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6d3160a8cc0c21c8aa0a4714d48a5e1d16b62256
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32313973"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593496"
 ---
 # <a name="the-ado-family-of-libraries"></a>ライブラリの ADO ファミリ
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ADO ファミリは、ADO (RDS を含む)、ADO MD、および ADOX という 3 つの主要ライブラリで構成されています。
 
 ## <a name="ado"></a>ADO
 
-ADO により、クライアント アプリケーションが、OLE DB プロバイダーを通じてデータベース サーバーのデータにアクセスし、これを処理できるようになります。 ADO の主な利点は、使用が簡単で、高速に動作し、メモリのオーバーヘッドが小さく、ディスクの使用量が少ないことです。 ADO は、クライアント/サーバーおよび web ベースのアプリケーションを構築するための主な機能をサポートしています。
+ADO により、クライアント アプリケーションが、OLE DB プロバイダーを通じてデータベース サーバーのデータにアクセスし、これを処理できるようになります。 ADO の主な利点は、使用が簡単で、高速に動作し、メモリのオーバーヘッドが小さく、ディスクの使用量が少ないことです。 ADO では、クライアント/サーバー アプリケーションおよび Web ベース アプリケーションを構築するための重要な機能がサポートされています。
 
-ADO には、リモートデータサービス (RDS) もあります。これにより、サーバーからクライアントアプリケーションまたは web ページにデータを移動したり、クライアント上のデータを操作したり、サーバーに対する更新を1回のラウンドトリップで返すことができます。
+ADO は、リモート データ サービス (RDS) の機能も備えています。これにより、データをサーバーからクライアント アプリケーションまたは Web ページへ移動し、クライアント側でデータを操作し、更新をサーバーに送り返すという操作を、1 回の往復処理で実行できます。
 
 ## <a name="ado-md"></a>ADO MD
 

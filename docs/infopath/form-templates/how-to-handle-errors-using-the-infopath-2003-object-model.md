@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - infopath 2003-compatible form templates, handling errors,InfoPath 2003-compatible form templates, error handling,form templates [InfoPath 2007], error handling,error handling [InfoPath 2007], InfoPath 2003-compatible form templates
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eeb05205-d6f4-4931-b9a9-55a663bb1a25
 description: カスタム アプリケーションを作成する際、開発者はしばしばエラー ハンドリングを行わなければなりません。これには、アプリケーションで発生したエラーをチェックするプログラム コードや、カスタム エラーを作成して発生させるプログラム コードの記述などの作業が伴います。InfoPath 2003 互換オブジェクト モデルでは、ErrorObject オブジェクトと ErrorsCollection コレクションを組み合わせて使用することによるエラー ハンドリングがサポートされています。
-ms.openlocfilehash: 93991e33d8867f89454bec08b41ba83e98ab0a17
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0f2e4e527d9f1599428e926bf278720b3aa2a22c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439479"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584893"
 ---
 # <a name="handle-errors-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してエラーを処理する
 

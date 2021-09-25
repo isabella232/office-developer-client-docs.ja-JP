@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SRow
 api_type:
 - COM
 ms.assetid: 369c2d5c-8c2b-4314-9cb2-aaa89580aa2b
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2e75bc6f8e14258787a6c9d80dfbf6334ec698b4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c88cb2425e44844de4fc127a1b97ad5dc9ed851a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410435"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566494"
 ---
 # <a name="srow"></a>SRow
 
@@ -39,7 +39,7 @@ typedef struct _SRow
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 **ulAdrEntryPad**
   
@@ -81,7 +81,7 @@ typedef struct _SRow
   
 **SRow と SRowSet の関係**
   
-![SRow と SRowSet の SRow と SRowSet](media/amapi_17.gif "")のリレーションシップ
+![SRow と SRowSet の関係](media/amapi_17.gif "SRow と SRowSet の関係")
   
 **SRow** 構造体は [ADRENTRY 構造体と同じ定義](adrentry.md) です。 したがって、受信者テーブルの行とアドレス一覧内のエントリを同じように処理できます。 
   

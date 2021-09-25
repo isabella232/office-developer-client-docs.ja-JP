@@ -1,5 +1,5 @@
 ---
-title: owneraccess OPTION 宣言 (Microsoft access SQL)
+title: WITH OWNERACCESS OPTION 宣言 (Microsoft Access SQL)
 TOCTitle: WITH OWNERACCESS OPTION declaration (Microsoft Access SQL)
 ms:assetid: 82e51071-12b2-e97e-07b4-27ffceda831e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196724(v=office.15)
@@ -12,15 +12,15 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 0882f143f13f6bd6d66c894f242a9cd50ebf9489
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 70420fd67047e2473e1e298dac75085915d83e3e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302507"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585033"
 ---
-# <a name="with-owneraccess-option-declaration-microsoft-access-sql"></a>owneraccess OPTION 宣言 (Microsoft access SQL)
+# <a name="with-owneraccess-option-declaration-microsoft-access-sql"></a>WITH OWNERACCESS OPTION 宣言 (Microsoft Access SQL)
 
 
 **適用先:** Access 2013、Office 2013
@@ -29,7 +29,7 @@ ms.locfileid: "32302507"
 
 ## <a name="syntax"></a>構文
 
-*sqlstatement*OWNERACCESS オプション付き
+*sqlstatement* OWNERACCESS オプションを使用する
 
 ## <a name="remarks"></a>注釈
 

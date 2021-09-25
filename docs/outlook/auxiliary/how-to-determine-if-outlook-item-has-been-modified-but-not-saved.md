@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 65fba557-5fb0-42de-8715-eccda1f3c648
 description: このトピックは、項目が変更されているし、保存されていないかどうかを確認するのには、Outlook アイテムに対応するプロパティを呼び出し、 dispidFDirtyのディスパッチ ID を使用する方法を示します。
-ms.openlocfilehash: 5dc20a45342e0434ab19d7c2347e98dec27b61b8
-ms.sourcegitcommit: 007aa2ceb4f569201c3f4372de5c83b6c61f8875
+ms.openlocfilehash: 7ea75ee2a8b0fad63e31357718c936f4e7bbc1b6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43102948"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592796"
 ---
 # <a name="determine-if-an-outlook-item-has-been-modified-but-not-saved-outlook-auxiliary-reference"></a>アイテムが変更Outlook保存されていないかどうかを確認する (補助Outlook参照)
 

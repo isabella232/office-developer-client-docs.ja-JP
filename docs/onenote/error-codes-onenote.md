@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 390df5ce-e730-470d-b6e9-0de4a3e904f8
 description: このトピックは、 OneNote 2013オブジェクト モデルでは、エラー コードを示します。
-ms.openlocfilehash: 83f8ad3d686693c82db1e57b8e37fa21ad140ab9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8b9433ae6b1bf87721b3de7c21f92b677d2c95ed
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409427"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614494"
 ---
 # <a name="error-codes-onenote"></a>エラー コード (OneNote 2013)
 

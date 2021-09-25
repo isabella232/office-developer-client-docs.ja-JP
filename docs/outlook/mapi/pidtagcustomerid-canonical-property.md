@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagCustomerId
 api_type:
 - HeaderDef
 ms.assetid: 85d1c44d-caab-48dc-a6a0-ad201cc365f7
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: e03f6f9ed4155743d9ca89e0b90243f3ea40c907
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ee375808c064f29b7c23ccaa260d9f2a28a7a7df
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326916"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566753"
 ---
 # <a name="pidtagcustomerid-canonical-property"></a>PidTagCustomerId 標準プロパティ
 

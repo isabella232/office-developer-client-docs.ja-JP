@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.MSGSERVICEENTRY
 api_type:
 - COM
 ms.assetid: 655774a6-588c-44c7-903b-4497b7eccbc2
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 56a5f153dbd563397b9216af32a715692d0876d7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8cfd9e655a9690ac2207a36849fe1b6c63d99719
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427879"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575359"
 ---
 # <a name="msgserviceentry"></a>MSGSERVICEENTRY
 

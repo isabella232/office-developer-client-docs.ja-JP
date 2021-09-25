@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIProp.OpenProperty
 api_type:
 - COM
 ms.assetid: e400e6cc-4e36-43fc-9304-b688a0a7fd77
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7bf1d6912e44319c36e288cd3870218e8c4e45ff
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: f344bcb32fea5ee651fa1d4b6c2430a005ed50f0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319811"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575884"
 ---
 # <a name="imapipropopenproperty"></a>IMAPIProp::OpenProperty
 
@@ -109,7 +109,7 @@ MAPI_E_INVALID_PARAMETER
   
 |**添付ファイルの種類**|**使用するインターフェイス識別子**|
 |:-----|:-----|
-|バイナリ  <br/> |IID_IStream  <br/> |
+|Binary  <br/> |IID_IStream  <br/> |
 |String  <br/> |IID_IStream  <br/> |
 |メッセージ  <br/> |IID_IMessage  <br/> |
 |OLE 2.0  <br/> |IID_IStreamDocfile  <br/> |

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2de5c77c-3fac-cfb6-3719-68df4013cf11
 description: 予定の再処理の完了を報告します。
-ms.openlocfilehash: 9fab0d06bf0b9856b9a968f5c0db1bb15b0fe0bd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 49061cf21f4a6ffd3218bac2470a1afc6e2ebf81
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328323"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614333"
 ---
 # <a name="rebasetaskcomplete"></a>RebaseTaskComplete
 

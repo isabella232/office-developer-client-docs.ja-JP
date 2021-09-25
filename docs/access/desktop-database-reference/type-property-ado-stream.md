@@ -6,22 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249203(v=office.15)
 ms:contentKeyID: 48544505
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: bb4cebdb8b4aff1413ec60fe4ebb1e05931f6476
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e075a1380ee2716107d74cea81569e510214ab35
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306252"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593419"
 ---
 # <a name="type-property-ado-stream"></a>Type プロパティ (ADO Stream)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 [Stream](stream-object-ado.md) (バイナリまたはテキスト) に格納されているデータの種類を示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
 [Stream](streamtypeenum.md) オブジェクトに格納されたデータの種類を示す **StreamTypeEnum** 値を設定または取得します。既定値は **adTypeText** です。ただし、バイナリ データが新しい空の **Stream** に書き込まれる場合、 **Type** は **adTypeBinary** に変更されます。
 

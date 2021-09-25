@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidExceptionReplaceTime
 api_type:
 - COM
 ms.assetid: c3aae4f5-7f00-45bf-b007-370041ba360e
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: b364fb91bda7e895b546f9a281ef14ce33b073f9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b96ca4f5e0aa759b681d3bd60a3db04d14241562
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337983"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566949"
 ---
 # <a name="pidlidexceptionreplacetime-canonical-property"></a>PidLidExceptionReplaceTime 標準プロパティ
 
@@ -33,7 +33,7 @@ ms.locfileid: "32337983"
 |プロパティ セット:  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008228  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|エリア:  <br/> |カレンダー  <br/> |
+|エリア:  <br/> |予定表  <br/> |
    
 ## <a name="remarks"></a>注釈
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm140
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d51a1dd8-678a-a34d-658d-bd7a027dd379
 description: 各行に対応する情報を表示します。次の表に、各行で [C] セルが示す内容を説明します。
-ms.openlocfilehash: 0284fea02c7eb890b56b6c865a69eb36662d8ae6
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 0eb4e933e8d27bdc440ce7e386388b37f2108f5d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541891"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608607"
 ---
 # <a name="c-cell-geometry-section"></a>[C] セル ([Geometry] セクション)
 

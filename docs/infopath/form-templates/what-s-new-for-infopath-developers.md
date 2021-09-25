@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - what's new [infopath 2007],developer features [InfoPath 2007],InfoPath 2007, what's new,new features [InfoPath 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d0ad3111-bd41-4f35-8a34-62c17f20fc19
 description: InfoPath を使用すると、Microsoft SharePoint Server プラットフォームで充実したフォーム ベースのアプリケーションを簡単に構築できます。Microsoft SharePoint Server 2013 および InfoPath Forms Services と連携する Microsoft InfoPath 2013 には、開発者向けのさまざまな機能が用意されています。SharePoint Server 2013 で利用できる InfoPath Forms Services により、InfoPath フォーム テンプレートを SharePoint Server に展開できるため、InfoPath リッチ クライアントをインストールしていないユーザーは Web ブラウザーで InfoPath フォームを開いて入力できます。
-ms.openlocfilehash: 5d469dfb99290054008271867f24d947a42efeee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 61bbf2deba2ccaa91873e83c80f0d8385d97dd41
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303193"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614515"
 ---
 # <a name="whats-new-for-infopath-developers"></a>InfoPath 開発者向けの新機能
 

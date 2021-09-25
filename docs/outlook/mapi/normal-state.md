@@ -3,17 +3,17 @@ title: 標準状態
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 8b2acad7-5ef8-44db-911f-3bd2a7ca2778
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: d7b50a92c58dd7ab1f03cb4cf84acc2d4a2b404b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5dcd536ef7781d00869be30324f58ee7f4ed9d5f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335744"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575366"
 ---
 # <a name="normal-state"></a>標準状態
 
@@ -23,7 +23,7 @@ ms.locfileid: "32335744"
   
 Normal 状態は、フォーム オブジェクトがほとんどの時間を費やし、クライアント アプリケーションが変更の保存やフォームの終了などのアクションを開始するのを待つ状態です。 次の表に、Normal 状態からの移行を許可する方法を示します。
   
-|**IPersistMessage メソッド**|**Action**|**新しい状態**|
+|**IPersistMessage メソッド**|**操作**|**新しい状態**|
 |:-----|:-----|:-----|
 |[IPersistMessage::Save](ipersistmessage-save.md)(_pMessage ==_ NULL,  _fSameAsLoad ==_ TRUE)  <br/> または  <br/> **IPersistMessage::Save**(_pMessage !=_ NULL,  _fSameAsLoad ==_ FALSE)  <br/> |変更された埋め込み OLE オブジェクトを再帰的に保存します。 メッセージ データをメッセージ オブジェクトに保存します。 後で  _使用する fSameAsLoad_ フラグを [NoScribble 状態に格納](noscribble-state.md) します。  <br/> |NoScribble  <br/> |
 |**IPersistMessage::Save**(_pMessage !=_ NULL,  _fSameAsLoad ==_ TRUE)  <br/> |これは、前のケースと同じですが、このSave 呼び出しはメモリ不足の状況で使用され、メモリ不足のために失敗しはしません。  <br/> |NoScribble  <br/> |

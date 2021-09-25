@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251246
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f5afe93a-9217-a9ec-76ce-daf12afbb0f7
 description: フォント、色、テキストのスタイル、大文字/小文字、上下位置の調整、およびポイント サイズなど、図形のテキストについての書式設定属性を表示します。
-ms.openlocfilehash: 4ff7dfce0ec25f3db0738bc63014f2cf4321ac2e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2db649853344078b901ef950ad3d323847875b4c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416840"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608495"
 ---
 # <a name="character-section"></a>[Character] セクション
 

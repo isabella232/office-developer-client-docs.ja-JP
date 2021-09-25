@@ -3,17 +3,17 @@ title: Status Table オブジェクトと Status オブジェクト
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 203765c1-4b08-4032-a5bf-18f3e752a899
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 3eb190069b43ea1960c3b6edf30a9e0b782d2c41
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b982b6ba528091e574e927edc8ab5cc9f8233e6d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425177"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566375"
 ---
 # <a name="status-table-and-status-objects"></a>Status Table オブジェクトと Status オブジェクト
 

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6421c9a2-07f7-4deb-aa43-c50d82cb0002
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 096f57335572c3788fdf129dd3bcf4a76cf62b01
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f02b20c5a8355f68a937ad96cf4106c37f3a767a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433012"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614620"
 ---
 # <a name="calludf"></a>CallUDF
 

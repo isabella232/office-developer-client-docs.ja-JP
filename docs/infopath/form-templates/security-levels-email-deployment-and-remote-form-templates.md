@@ -3,15 +3,15 @@ title: セキュリティ レベル、メール展開、リモート フォー�
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7fc438ad-ae26-3632-3444-371537eaecb3
 description: Microsoft InfoPath では、フォーム テンプレートをある場所から別の場所に移動し、添付ファイルとして電子メール メッセージに送信し、デジタル署名またはインストールされた完全信頼フォーム テンプレートを作成できます。
-ms.openlocfilehash: 799f2b19bfc4daa4a177d789a811d20ca09e7153
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3980563547796ff22942fba7177e051221535199
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299854"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614599"
 ---
 # <a name="security-levels-email-deployment-and-remote-form-templates"></a>セキュリティ レベル、メール展開、リモート フォーム テンプレート
 

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6b452591-cf0c-9e1c-c203-e9cf608d3cc3
 description: フォント、色、スタイル、大文字と小文字、ベースラインに相対する位置、またはポイント サイズなどの図形のテキスト実行の書式属性を指定します。
-ms.openlocfilehash: a7d67aa3c53f3a4c673151afc991202904f0557b
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 1dea1b40afad75f59eb171b02dd102a9bcc97fb7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540085"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608544"
 ---
 # <a name="cell-element-character-section-visio-xml"></a>Cell 要素 (Character Section) (Visio XML)
 
@@ -74,7 +74,7 @@ ms.locfileid: "34540085"
 |ComplexScriptSize  <br/> |複雑なスクリプト文字で構成されるテキスト実行の書式設定に使用されるフォントのサイズ。  <br/> |[[ComplexScriptSize] セル ([Character] セクション)](complexscriptsize-cell-character-section.md) <br/> |
 |DblUnderline  <br/> |テキストの実行範囲の下に二重の下線が付くかどうかを指定します。  <br/> |[[DoubleULine] セル ([Character] セクション)](doubleuline-cell-character-section.md) <br/> |
 |DoubleStrikethrough  <br/> |テキストの実行が二重取り消し線として書式設定されているかどうかを指定します。  <br/> |[[DoubleStrikethrough] セル ([Character] セクション)](doublestrikethrough-cell-character-section.md) <br/> |
-|Font  <br/> |テキストの実行の書式設定に使用するフォントの数を表します。  <br/> |[[Font] セル ([Character] セクション)](font-cell-character-section.md) <br/> |
+|フォント  <br/> |テキストの実行の書式設定に使用するフォントの数を表します。  <br/> |[[Font] セル ([Character] セクション)](font-cell-character-section.md) <br/> |
 |FontScale  <br/> |フォント幅を指定します。  <br/> |なし。  <br/> |
 |LangID  <br/> |テキストの実行が入力された言語を示します。  <br/> |[[LangID] セル ([Character] セクション)](langid-cell-character-section.md) <br/> |
 |Letterspace  <br/> |2 つ以上の文字の間のスペースの量を指定します。 間隔は、1/20 ポイント単位で増減できます。  <br/> |なし。  <br/> |
@@ -82,6 +82,6 @@ ms.locfileid: "34540085"
 |Pos  <br/> |基準線を基準に図形のテキストの実行位置を決定します。  <br/> |[[Pos] セル ([Character] セクション)](pos-cell-character-section.md) <br/> |
 |Size  <br/> |図形のテキスト ブロックで実行されるテキストのサイズを指定します。  <br/> |[[Size] セル ([Character] セクション)](size-cell-character-section.md) <br/> |
 |Strikethru  <br/> |テキストの実行が取り消し線として書式設定されているかどうかを指定します。  <br/> |[[Strikethru] セル ([Character] セクション)](strikethru-cell-character-section.md) <br/> |
-|Style  <br/> |図形のテキスト ブロックで実行されるテキストの範囲に適用される文字の書式設定を表示します。  <br/> |[[Style] セル ([Character] セクション)](style-cell-character-section.md) <br/> |
+|スタイル  <br/> |図形のテキスト ブロックで実行されるテキストの範囲に適用される文字の書式設定を表示します。  <br/> |[[Style] セル ([Character] セクション)](style-cell-character-section.md) <br/> |
    
 

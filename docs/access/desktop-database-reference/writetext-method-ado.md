@@ -6,23 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248963(v=office.15)
 ms:contentKeyID: 48543574
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 92983163a909e72c3da142ebcf63b7e0723e96af
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b61687a933ff7a9b52ebd10958aa080aa383723b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308268"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593216"
 ---
 # <a name="writetext-method-ado"></a>WriteText メソッド (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 指定されたテキスト文字列を [Stream](stream-object-ado.md) オブジェクトに書き込みます。
 
 ## <a name="syntax"></a>構文
 
-*ストリーム*。WriteText*データ*、*オプション*
+*Stream*.WriteText *Data*, *Options*
 
 ## <a name="parameters"></a>パラメーター
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1225
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c6fd0aba-7c33-b77f-207b-ba704b3e0756
 description: コントロール ハンドルを使用して図形を操作するときに、どの図形を親図形にするかを指定します。このセルの値は、図面ページ上にあるすべての図形の動作に適用されます。
-ms.openlocfilehash: a530c48156043bec0cd58d79aead1a403c17ddce
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c662407838baa7276e7fedb23c1f5ff63821c855
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422622"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608348"
 ---
 # <a name="ctrlasinput-cell-page-layout-section"></a>[CtrlAsInput] セル ([Page Layout] セクション)
 

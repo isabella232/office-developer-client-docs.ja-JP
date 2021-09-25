@@ -3,17 +3,17 @@ title: MAPI レポート メッセージ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 824eb670-16b7-49bf-9992-39fe0586a552
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: aab5c76fb268729f1a50a33e4764905fe3d53405
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 383c673a7313bb3a91e35f109399be92f98e215f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405766"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575681"
 ---
 # <a name="mapi-report-messages"></a>MAPI レポート メッセージ
 
@@ -57,7 +57,7 @@ ms.locfileid: "33405766"
   
 |**レポートの種類**|**メッセージ クラスで使用される定数**|
 |:-----|:-----|
-|Read  <br/> |IPNRN  <br/> |
+|読み取り  <br/> |IPNRN  <br/> |
 |Nonread  <br/> |IPNNRN  <br/> |
 |Delivery  <br/> |DR  <br/> |
 |Nondelivery  <br/> |NDR  <br/> |

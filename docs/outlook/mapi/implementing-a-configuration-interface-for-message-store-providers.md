@@ -3,17 +3,17 @@ title: メッセージ ストア プロバイダーの構成インターフェ�
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 508e6950-d483-4cbe-b817-8016f4aa5cd8
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: c349a03b0be465ed1262712372b6ee17a9812abd
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 56ef4e25ad432acc42959aa1b6034ad0c02add31
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415888"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575653"
 ---
 # <a name="implementing-a-configuration-interface-for-message-store-providers"></a>メッセージ ストア プロバイダーの構成インターフェイスの実装
 

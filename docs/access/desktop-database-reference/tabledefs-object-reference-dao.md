@@ -1,25 +1,25 @@
 ---
-title: テーブル定義オブジェクト参照 (DAO)
+title: TableDefs オブジェクト参照 (DAO)
 TOCTitle: TableDefs
 ms:assetid: cb4f57ac-3615-4853-a972-365e3d0f08f9
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn161389(v=office.15)
 ms:contentKeyID: 52074355
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4c7a5759e6ca39f59a030f1d591f82843d98c7ee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 94a6f975fd1474c3efe19a29ffb186efbdb5b135
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314141"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593503"
 ---
-# <a name="tabledefs-object-reference-dao"></a>テーブル定義オブジェクト参照 (DAO)
+# <a name="tabledefs-object-reference-dao"></a>TableDefs オブジェクト参照 (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-- [テーブル定義コレクション (DAO)](tabledefs-collection-dao.md)
-- [テーブル定義メンバー (DAO)](tabledefs-members-dao.md)
-- [テーブル定義プロパティ (DAO)](tabledefs-properties-dao.md)
-- [テーブル定義メソッド (DAO)](tabledefs-methods-dao.md)
+- [TableDefs コレクション (DAO)](tabledefs-collection-dao.md)
+- [TableDefs メンバー (DAO)](tabledefs-members-dao.md)
+- [TableDefs プロパティ (DAO)](tabledefs-properties-dao.md)
+- [TableDefs メソッド (DAO)](tabledefs-methods-dao.md)
 

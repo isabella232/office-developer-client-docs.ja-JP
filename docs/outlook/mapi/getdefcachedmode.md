@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 325b6b47-b6a6-503e-e9bb-65ef7b73d659
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8e8a6ac07e14af52337b6e280fa58274df453c65
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 174320928f94992c010e5c4349ba66e2ec6457cf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412745"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614165"
 ---
 # <a name="getdefcachedmode"></a>GetDefCachedMode
 
@@ -28,7 +28,7 @@ ms.locfileid: "33412745"
 |||
 |:-----|:-----|
 |次の方法でエクスポートされます。  <br/> |msmapi32.dll  <br/> |
-|呼び出し元:  <br/> |クライアント  <br/> |
+|呼び出し元:  <br/> |Client  <br/> |
 |実装元:  <br/> |Outlook  <br/> |
    
 ```cpp

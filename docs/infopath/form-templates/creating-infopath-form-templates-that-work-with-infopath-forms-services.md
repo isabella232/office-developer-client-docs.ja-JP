@@ -5,15 +5,15 @@ ms.date: 03/20/2015
 ms.audience: Developer
 keywords:
 - browser-compatible form templates [infopath 2007],forms [InfoPath 2007], browser-compatible,browser-compatible forms [InfoPath 2007],form templates [InfoPath 2007], browser-compatible,InfoPath 2007, browser-compatible forms,business logic, InfoPath Forms Services,InfoPath Forms Services, creating forms,InfoPath Forms Services, supported object model members,InfoPath Forms Services, supported classes and members
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7bd4fbbb-49c6-46a1-9584-895e5aa9a772
 description: Microsoft SharePoint Server 2013 と InfoPath Forms Services に展開されるブラウザー互換フォームでは、大部分の InfoPath フォーム使用シナリオで利用される機能とコントロールをサポートしています。しかし、InfoPath Forms Services で提供されるブラウザー互換フォームでは、InfoPath 機能をすべてサポートしているわけではありません。一部の機能とコントロールはサーバーに実装されません。また、サーバーには対応する機能がないこともあります。
-ms.openlocfilehash: e2db35dc535af58b5f5116448f346cd7a527b681
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 043171f917720997cc01947ce451661b8d286a48
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437106"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592970"
 ---
 # <a name="creating-infopath-form-templates-that-work-with-infopath-forms-services"></a>InfoPath Forms Services で動作する InfoPath フォーム テンプレートを作成する
 

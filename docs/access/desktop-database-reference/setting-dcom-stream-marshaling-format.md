@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249346(v=office.15)
 ms:contentKeyID: 48545162
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 09463552faff9c4b74b73379385ab8ba55b4f62c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 677ed1502d31cc6004c297814b1c85dc48b176db
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308667"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585327"
 ---
 # <a name="setting-dcom-stream-marshaling-format"></a>DCOM ストリーム マーシャリング形式の設定
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 RDS 1.5 以前のコンポーネントを使っているクライアント コンピューターは、RDS 2.0 以降のコンポーネントを使っているサーバーとは互換性がありません。基になるプロトコルとして DCOM を使っている場合は、RDS 2.0 以降をサポートする方が [Recordset](recordset-object-ado.md) オブジェクトの転送において効率的です。クライアントで RDS 1.5 以前のコンポーネントを実行している場合は、サーバーを古い RDS サポート (RDS 1.0) または新しい RDS サポート (RDS 2.0 以降) で動作するように設定できます。次のいずれかのレジストリ エントリを設定してください。
 
@@ -29,7 +29,7 @@ RDS 1.5 以前のコンポーネントを使っているクライアント コ�
  \ADTGOptions]"MarshalFormat"="RDS10" 
 ```
 
-\-や
+\-or-
 
 ```vb 
  

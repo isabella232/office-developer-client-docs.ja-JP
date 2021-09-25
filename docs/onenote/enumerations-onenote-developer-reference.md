@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 62912d6e-c39e-4f8b-8cdb-ae9b6376cbc0
 description: このトピックでは、2013 オブジェクト モデルのOneNoteについて説明します。
-ms.openlocfilehash: 3338e444e5b0bfd0239e363c3161aeb1914b2d53
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3c902c05053d3edf9e9edeba56baef3c340b232e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410337"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614487"
 ---
 # <a name="enumerations-onenote-developer-reference"></a>列挙 (OneNote開発者向け参照)
 
@@ -41,7 +41,7 @@ Window インターフェイスを使用して、OneNote 2013 ウィンドウの
 |**dlLeft** <br/> |1  <br/> |ウィンドウOneNoteデスクトップの左側にドッキングされます。  <br/> |
 |**dlRight** <br/> |2  <br/> |ウィンドウOneNoteデスクトップの右側にドッキングされます。  <br/> |
 |**dlTop** <br/> |3  <br/> |ウィンドウOneNoteデスクトップの上部にドッキングされます。  <br/> |
-|**dlBottom** <br/> |4  <br/> |ウィンドウOneNoteデスクトップの下部にドッキングされます。  <br/> |
+|**dlBottom** <br/> |4   <br/> |ウィンドウOneNoteデスクトップの下部にドッキングされます。  <br/> |
    
 ## <a name="filinglocation"></a>FilingLocation
 <a name="odc_CreateFileType"> </a>
@@ -54,7 +54,7 @@ Window インターフェイスを使用して、OneNote 2013 ウィンドウの
 |**flContacts** <br/> |1  <br/> |連絡先をOutlookする場所を設定します。  <br/> |
 |**flTasks** <br/> |2  <br/> |タスクをOutlookする場所を設定します。  <br/> |
 |**flMeetings** <br/> |3  <br/> |会議をOutlookする場所を設定します。  <br/> |
-|**flWebContent** <br/> |4  <br/> |コンテンツをInternet Explorerする場所を設定します。  <br/> |
+|**flWebContent** <br/> |4   <br/> |コンテンツをInternet Explorerする場所を設定します。  <br/> |
 |**flPrintOuts** <br/> |5  <br/> |プリンターからの印刷OneNoteする場所を設定します。  <br/> |
    
 ## <a name="filinglocationtype"></a>FilingLocationType
@@ -67,7 +67,7 @@ Window インターフェイスを使用して、OneNote 2013 ウィンドウの
 |**fltNamedSectionNewPage** <br/> |0  <br/> |指定したセクションの新しいページにファイルするコンテンツを設定します。  <br/> |
 |**fltCurrentSectionNewPage** <br/> |1  <br/> |現在のセクションの新しいページにファイルするコンテンツを設定します。  <br/> |
 |**fltCurrentPage** <br/> |2  <br/> |現在のページにファイルするコンテンツを設定します。  <br/> |
-|**fltNamedPage** <br/> |4  <br/> |指定したページにファイルするコンテンツを設定します。  <br/> |
+|**fltNamedPage** <br/> |4   <br/> |指定したページにファイルするコンテンツを設定します。  <br/> |
    
 ## <a name="hierarchyelement"></a>HierarchyElement
 <a name="odc_CreateFileType"> </a>
@@ -79,8 +79,8 @@ Window インターフェイスを使用して、OneNote 2013 ウィンドウの
 |**heNone** <br/> |0  <br/> |要素なしを参照します。  <br/> |
 |**heNotebooks** <br/> |1  <br/> |Notebook 要素を参照します。  <br/> |
 |**heSectionGroups** <br/> |2  <br/> |セクション グループ要素を参照します。  <br/> |
-|**heSections** <br/> |4  <br/> |Section 要素を参照します。  <br/> |
-|**hePages** <br/> |8  <br/> |Page 要素を参照します。  <br/> |
+|**heSections** <br/> |4   <br/> |Section 要素を参照します。  <br/> |
+|**hePages** <br/> |8   <br/> |Page 要素を参照します。  <br/> |
    
 ## <a name="hierarchyscope"></a>HierarchyScope
 <a name="odc_HierarchyScope"> </a>
@@ -93,7 +93,7 @@ Window インターフェイスを使用して、OneNote 2013 ウィンドウの
 |**hsChildren** <br/> |1  <br/> |開始ノードの直下の子ノードを取得し、上位または下位のサブセクション グループの子孫を取得します。  <br/> |
 |**hsNotebooks** <br/> |2  <br/> |スタート ノードまたはルートの下のすべてのノートブックを取得します。  <br/> |
 |**hsSections** <br/> |3  <br/> |開始ノードの下のすべてのセクション (セクション グループとサブセクション グループのセクションを含む) を取得します。  <br/> |
-|**hsPages** <br/> |4  <br/> |セクション グループおよびサブセクション グループ内のすべてのページを含む、スタート ノードの下のすべてのページを取得します。  <br/> |
+|**hsPages** <br/> |4   <br/> |セクション グループおよびサブセクション グループ内のすべてのページを含む、スタート ノードの下のすべてのページを取得します。  <br/> |
    
 ## <a name="newpagestyle"></a>NewPageStyle
 <a name="odc_HierarchyScope"> </a>
@@ -115,8 +115,8 @@ QFD オブジェクト **の NotebookFilterOut** メソッドに渡す場合は 
 |:-----|:-----|:-----|
 |**nfoLocal** <br/> |1  <br/> |ローカル ノートブックのみを許可します。  <br/> |
 |**nfoNetwork** <br/> |2  <br/> |UNC またはノートブックSharePoint許可します。  <br/> |
-|**nfoWeb** <br/> |4  <br/> |ノートブックOneDrive許可します。  <br/> |
-|**nfoNoWacUrl** <br/> |8  <br/> |Web クライアントを持つ場所のノートブック。  <br/> |
+|**nfoWeb** <br/> |4   <br/> |ノートブックOneDrive許可します。  <br/> |
+|**nfoNoWacUrl** <br/> |8   <br/> |Web クライアントを持つ場所のノートブック。  <br/> |
    
 ## <a name="pageinfo-updated-for-onenote-2013"></a>PageInfo (2013 OneNote更新)
 <a name="odc_PageInfo"> </a>
@@ -129,10 +129,10 @@ QFD オブジェクト **の NotebookFilterOut** メソッドに渡す場合は 
 |**piBinaryData** <br/> |1  <br/> |選択マークアップを含め、すべてのバイナリ データを含むページ コンテンツを返します。  <br/> |
 |**piSelection** <br/> |2  <br/> |選択マークアップを持つページ コンテンツを返しますが、バイナリ データはありません。  <br/> |
 |**piBinaryDataSelection** <br/> |3  <br/> |選択マークアップとすべてのバイナリ データを含むページ コンテンツを返します。  <br/> |
-|**piFileType** <br/> |4  <br/> |バイナリ データ オブジェクトのファイルの種類情報を含むページ コンテンツを返します。  <br/> |
+|**piFileType** <br/> |4   <br/> |バイナリ データ オブジェクトのファイルの種類情報を含むページ コンテンツを返します。  <br/> |
 |**piBinaryDataFileType** <br/> |5  <br/> |バイナリ データ オブジェクトおよびバイナリ データ オブジェクトのファイルの種類情報を含むページ コンテンツを返します。  <br/> |
-|**piSelectionFileType** <br/> |6  <br/> |バイナリ データの選択マークアップとファイルの種類情報を含むページ コンテンツを返します。  <br/> |
-|**piAll** <br/> |7  <br/> |すべてのページ コンテンツを返します。  <br/> |
+|**piSelectionFileType** <br/> |6   <br/> |バイナリ データの選択マークアップとファイルの種類情報を含むページ コンテンツを返します。  <br/> |
+|**piAll** <br/> |7   <br/> |すべてのページ コンテンツを返します。  <br/> |
    
 ## <a name="publishformat"></a>PublishFormat
 <a name="odc_PublishFormat"> </a>
@@ -145,11 +145,11 @@ Publish メソッドに **渡す** 場合は、発行されたページが表示
 |**pfOneNotePackage** <br/> |1  <br/> |発行済みページは .onepkg 形式です。  <br/> |
 |**pfMHTML** <br/> |2  <br/> |発行済みページは .mht 形式です。  <br/> |
 |**pfPDF** <br/> |3  <br/> |発行済みページは、.pdf形式です。  <br/> |
-|**pfXPS** <br/> |4  <br/> |発行済みページは .xps 形式です。  <br/> |
+|**pfXPS** <br/> |4   <br/> |発行済みページは .xps 形式です。  <br/> |
 |**pfWord** <br/> |5  <br/> |発行済みページは、.docまたは.docx形式です。  <br/> |
-|**pfEMF** <br/> |6  <br/> |発行されたページは、拡張メタファイル (.emf) 形式です。  <br/> |
-|**pfHTML** <br/> |7  <br/> |発行済みページは、.html形式です。 このメンバーは、2013 年OneNoteです。  <br/> |
-|**pfOneNote2007** <br/> |8  <br/> |発行済みページは 2007 .one 形式です。 このメンバーは、2013 年OneNoteです。  <br/> |
+|**pfEMF** <br/> |6   <br/> |発行されたページは、拡張メタファイル (.emf) 形式です。  <br/> |
+|**pfHTML** <br/> |7   <br/> |発行済みページは、.html形式です。 このメンバーは、2013 年OneNoteです。  <br/> |
+|**pfOneNote2007** <br/> |8   <br/> |発行済みページは 2007 .one 形式です。 このメンバーは、2013 年OneNoteです。  <br/> |
    
 ## <a name="recentresulttype"></a>RecentResultType
 <a name="odc_RecentResultType"> </a>

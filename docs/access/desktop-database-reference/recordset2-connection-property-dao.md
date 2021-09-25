@@ -1,29 +1,29 @@
 ---
-title: Connection プロパティ (DAO)
+title: Recordset2.Connection プロパティ (DAO)
 TOCTitle: Connection Property
 ms:assetid: bbb7b9cd-efec-02e8-50a9-d3b1305c4f9f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822709(v=office.15)
 ms:contentKeyID: 48547400
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f1b769d23ecbfe7f8d748d24cd58813e55d312f8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 85fd0fe2f23173f4eed908d053190426495b9c35
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307372"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601976"
 ---
-# <a name="recordset2connection-property-dao"></a>Connection プロパティ (DAO)
+# <a name="recordset2connection-property-dao"></a>Recordset2.Connection プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-データベースに対応する **[Connection](connection-object-dao.md)** オブジェクトを返します。
+データベースに対応する **[Connection](connection-object-dao.md)** オブジェクトを取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*。接続
+*式* .接続
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 

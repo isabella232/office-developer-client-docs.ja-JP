@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 38b342d9-ab10-04b6-5490-9a45f847a60f
 description: このトピックでは、春と秋の間のこの期間を DST 期間と呼ばれます。
-ms.openlocfilehash: 8d9a0ffda89ee9d8847cde59181747588a50e947
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: fba3238543630d3960e41abae427a9757c387639
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316955"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614473"
 ---
 # <a name="about-rebasing-calendars-programmatically-for-daylight-saving-time"></a>夏時間に合わせてプログラムにより予定表を調整することについて
 

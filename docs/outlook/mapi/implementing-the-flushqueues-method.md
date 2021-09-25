@@ -3,17 +3,17 @@ title: FlushQueues メソッドの実装
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 8719f8aa-a537-4253-b67d-c4d38c40472b
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1e5c78c71f7fddb04d3517aca0a34efa151ece08
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a2e2476582f4b8ca5b9e0ee819f5eb610344ae4a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411779"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575667"
 ---
 # <a name="implementing-the-flushqueues-method"></a>FlushQueues メソッドの実装
 
@@ -28,7 +28,7 @@ MAPI スプーラーは [、IXPLogon::FlushQueues](ixplogon-flushqueues.md) メ�
 |**手順**|**コンポーネント**|**実装**|
 |:-----|:-----|:-----|
 |1.  <br/> |MAPI スプーラー  <br/> |ユーザーのプロファイルのトランスポートの順序でリストされている最初のトランスポート プロバイダーの **FlushQueues** メソッドを呼び出し、要求されたフラグを  _ulFlags_ パラメーターに渡します。 **FlushQueues は、** アップロードおよびダウンロード操作全体に対してすべてのフラグが設定された 1 回呼び出されます。  <br/> |
-|2。  <br/> |トランスポート プロバイダー  <br/> |FlushQueues 呼び出しから戻る前に、多くの **ことを行う必要** があります。 以前に送信されたメッセージが延期されている場合は [、IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md) メソッドを呼び出し、NOTIFY_SENT_DEFERREDする必要があります。 MAPI スプーラーは、トランスポート プロバイダーがメッセージの処理を終了する前に延期されたメッセージを取り消す可能性があります。  <br/> トランスポート プロバイダーがモデムなどの外部リソースを使用する場合は、外部リソースへの接続を確立する必要があります。  <br/> トランスポート プロバイダー STATUS_OUTBOUND_FLUSH行の **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) プロパティのビットは [、IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) メソッドを使用して設定する必要があります。  <br/> その後、トランスポート プロバイダーは **FlushQueues S_OKを返す必要** があります。  <br/> |
+|2.  <br/> |トランスポート プロバイダー  <br/> |FlushQueues 呼び出しから戻る前に、多くの **ことを行う必要** があります。 以前に送信されたメッセージが延期されている場合は [、IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md) メソッドを呼び出し、NOTIFY_SENT_DEFERREDする必要があります。 MAPI スプーラーは、トランスポート プロバイダーがメッセージの処理を終了する前に延期されたメッセージを取り消す可能性があります。  <br/> トランスポート プロバイダーがモデムなどの外部リソースを使用する場合は、外部リソースへの接続を確立する必要があります。  <br/> トランスポート プロバイダー STATUS_OUTBOUND_FLUSH行の **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) プロパティのビットは [、IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) メソッドを使用して設定する必要があります。  <br/> その後、トランスポート プロバイダーは **FlushQueues S_OKを返す必要** があります。  <br/> |
 |3。  <br/> |MAPI スプーラー  <br/> |トランスポート プロバイダーの状態行で STATUS_OUTBOUND_FLUSH ビットを確認し、キュー内の最初のメッセージに対して [IXPLogon::SubmitMessage](ixplogon-submitmessage.md) を呼び出します。  <br/> |
 |4.  <br/> |トランスポート プロバイダー  <br/> |メッセージを処理し **、SubmitMessage 呼び出しから返** します。  <br/> |
 |5.  <br/> |MAPI スプーラー  <br/> |トランスポート プロバイダーが **SubmitMessage** から S_OKを返す場合、MAPI スプーラーは通常のメッセージ送信と同様に、メッセージの [IXPLogon::EndMessage](ixplogon-endmessage.md) を呼び出します。  <br/> トランスポート プロバイダーが **SubmitMessage** から S_OK 以外の値を返す場合、MAPI スプーラーは EndMessage を呼び出す前、または **SubmitMessage** を再度呼び出す前に値を適切に処理します。   <br/> |

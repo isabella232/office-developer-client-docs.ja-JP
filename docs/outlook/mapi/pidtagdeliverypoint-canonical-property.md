@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagDeliveryPoint
 api_type:
 - HeaderDef
 ms.assetid: 715a9dbd-78f8-41e1-a76e-29448d06ec19
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: e18b08bcbd76cacf7dbb5b5fd36d80d5f266364d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 736d98fd779d9e22553ac076f7f6a4deaacc1597
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439423"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566739"
 ---
 # <a name="pidtagdeliverypoint-canonical-property"></a>PidTagDeliveryPoint 標準プロパティ
 

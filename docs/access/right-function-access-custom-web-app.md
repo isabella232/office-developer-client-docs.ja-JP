@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 74cefaa2-3ac4-4a65-af0b-2ee4d9644a93
 description: 文字列の右側の部分を、指定された文字数分だけ返します。
-ms.openlocfilehash: eb87f6d238802a950a4858bae942f75fdefc1d5b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 14d10be183a0c183c0332c9d09a478d17aa4c3b5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439955"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593076"
 ---
 # <a name="right-function-access-custom-web-app"></a>Right Function (Access custom Web app)
 

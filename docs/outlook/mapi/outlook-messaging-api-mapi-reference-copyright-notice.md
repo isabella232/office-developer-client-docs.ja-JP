@@ -3,15 +3,15 @@ title: '[Outlook ���b�Z��W���O API (MAPI) �Q�ƒ��쌠�
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e3538355-8ce9-4c79-9970-aea828818d26
 description: '最終更新日: 2012 年 6 月 22 日'
-ms.openlocfilehash: ae04e6a7a3e359f9d2620417a2d00513bb94679a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c740a6fa0683bfca9db6d989f67cea042754518e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407355"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575331"
 ---
 # <a name="outlook-messaging-api-mapi-reference-copyright-notice"></a>[Outlook ���b�Z��W���O API (MAPI) �Q�ƒ��쌠�\��
 
@@ -25,7 +25,7 @@ ms.locfileid: "33407355"
   
 c 2012 Microsoft Corporation. All rights reserved.
   
-Microsoft、Access、ActiveX、ClearType、Excel、FrontPage、InfoPath、IntelliSense、JScript、MSDN、MS-DOS、 MSN、OneNote、Outlook、PowerPoint、SharePoint、Silverlight、SmartArt、SQL Server、Visio、Visual Basic、Visual C#、Visual C++、Visual Studio、Win32、Windows、Windows PowerShell、Windows Server、Windows Vista は、米国および/または他の国の Microsoft Corporation の登録商標または商標です。
+Microsoft、Access、ActiveX、ClearType、Excel、FrontPage、InfoPath、IntelliSense、JScript、MSDN、MS-DOS、 MSN、OneNote、Outlook、PowerPoint、SharePoint、Silverlight、SmartArt、SQL Server、Visio、Visual Basic、Visual Basic、Visual C#、Visual C++、Visual Studio、Win32、Windows、Windows PowerShell、Windows Server、Windows Vista は、米国および他の国における Microsoft Corporation の登録商標または商標です。.
   
 Macintosh は Apple Inc. の登録商標です。
   

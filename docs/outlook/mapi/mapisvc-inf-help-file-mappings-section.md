@@ -3,17 +3,17 @@ title: MapiSvc.inf [ヘルプ ファイル マッピング] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 62aee641-b73f-4f53-9e8d-adf010c9ea1a
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 4760c9965975bb5d950e51b707d28bee647ef99a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2192421ddcde6771fa0eb342fc07aa28a65ddc51
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407558"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575443"
 ---
 # <a name="mapisvcinf-help-file-mappings-section"></a>MapiSvc.inf [ヘルプ ファイル マッピング] セクション
 

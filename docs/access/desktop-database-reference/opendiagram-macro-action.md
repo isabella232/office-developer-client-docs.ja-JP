@@ -10,24 +10,24 @@ f1_keywords:
 - vbaac10.chm154095
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: f4273d6858ad98b723d66ba32fe3b9aa7c902d31
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5334c23603fbc90dc3736236a60dd256bc50c11c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288358"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602102"
 ---
 # <a name="opendiagram-macro-action"></a>OpenDiagram マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 In an Access project, you can use the **OpenDiagram** action to open a database diagram in Design view.
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 "OpenDiagram/ダイアグラムを開く" アクションの引数は次のとおりです。
 

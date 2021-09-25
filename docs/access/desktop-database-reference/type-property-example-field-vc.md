@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250045(v=office.15)
 ms:contentKeyID: 48547858
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f4646326469b4db688277885c31b5629aba8d408
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 868fd8a513a830c23ffb75724d9a3873dfe1dd23
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314093"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593398"
 ---
 # <a name="type-property-example-field-vc"></a>Type プロパティの使用例 (Field) (VC++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-この例では、***Employees*** テーブルにあるすべての [Field](field-object-ado.md) オブジェクトの [Type](type-property-ado.md) プロパティの値に対応する定数の名前を表示することによって、**Type** プロパティの機能を示します。 このプロシージャを実行するには、FieldType 関数が必要です。
+この例では [、Employees](type-property-ado.md) テーブル内のすべての Field オブジェクトの **Type** プロパティの値に対応する定数の名前を表示して [、Type](field-object-ado.md) プロパティ **_を示_** します。 このプロシージャを実行するには、FieldType 関数が必要です。
 
 ```cpp 
  

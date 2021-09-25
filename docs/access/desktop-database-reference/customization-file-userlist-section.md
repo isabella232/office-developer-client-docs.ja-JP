@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249873(v=office.15)
 ms:contentKeyID: 48547263
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ecaf77765051a202925449d0221f0a68a2a06622
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9da8cac1450e8ce1d7def2ed9049bdfe53e0f626
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295157"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558570"
 ---
 # <a name="customization-file-userlist-section"></a>カスタマイズ ファイルの UserList セクション
 
@@ -21,13 +21,13 @@ ms.locfileid: "32295157"
 
 **userlist** セクションは、同じセクションの *identifier* パラメーターによって、**connect** セクションと関連付けられています。
 
-このセクションには、指定されたユーザーのアクセス権を指定する*ユーザーアクセスエントリ*を含めることができます。また、一致する**connect**セクションの*既定*の*アクセスエントリ*を上書きします。
+このセクションには、指定 *したユーザー* のアクセス権を指定し、一致する接続セクションの既定のアクセス エントリを上書きするユーザー アクセス エントリを **含** めできます。
 
 ## <a name="syntax"></a>構文
 
 ユーザー アクセス エントリの形式は、次のとおりです。
 
-*userName * * * =* accessrights * * *
+*userName***=* accessRights***
 
 <table>
 <colgroup>
@@ -43,7 +43,7 @@ ms.locfileid: "32295157"
 <tbody>
 <tr class="odd">
 <td><p><em>userName</em></p></td>
-<td><p>この接続を使用しているユーザーの "ユーザー名"。 有効なユーザー名は IIS の [サービス マネージャー] ダイアログ ボックスで設定されます。</p></td>
+<td><p>この接続を使用しているユーザーの "ユーザー名"。有効なユーザー名は IIS の [サービス マネージャー] ダイアログ ボックスで設定されます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><em>accessRights</em></strong></p></td>

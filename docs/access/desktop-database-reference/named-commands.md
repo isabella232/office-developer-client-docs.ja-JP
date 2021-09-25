@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248948(v=office.15)
 ms:contentKeyID: 48543518
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 40ce95c5879f5da9615c66d132d6c4847fae1569
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0bdafc34ae7a79a17c5b0cef7fb70647347078e0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288645"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602130"
 ---
 # <a name="named-commands"></a>名前付きコマンド
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **Command** オブジェクトに **Name** プロパティを設定すると、その名前を呼び出すことにより、**Command** オブジェクトの **ActiveConnection** プロパティ上のメソッドのように実行できます。この方法を、*GetCustomers* という名前をコマンドに付けている次の使用例に示します。宣言されインスタンス化された **Recordset** オブジェクトが、コードにより GetCustomers "メソッド" に渡されます。**Command** にパラメーターが必要な場合、"メソッド" にパラメーターを渡すこともできます。
 

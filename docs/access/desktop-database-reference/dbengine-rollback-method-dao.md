@@ -1,5 +1,5 @@
 ---
-title: DBEngine (Rollback) メソッド (DAO)
+title: DBEngine.Rollback メソッド (DAO)
 TOCTitle: Rollback Method
 ms:assetid: da7e2fe0-c837-7b1e-d35c-98e6cb0a7bbe
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835327(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053424
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 378baa8cd2923366a453a6cf23d51af0ab0df5ee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: faac22b235b9ac988cdde5198bc925b25d1a945f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294205"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558430"
 ---
-# <a name="dbenginerollback-method-dao"></a>DBEngine (Rollback) メソッド (DAO)
+# <a name="dbenginerollback-method-dao"></a>DBEngine.Rollback メソッド (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -27,9 +27,9 @@ ms.locfileid: "32294205"
 
 ## <a name="syntax"></a>構文
 
-*式*。戻す
+*式* .ロールバック
 
-*式***DBEngine**オブジェクトを表す変数を取得します。
+*式* **DBEngine** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 

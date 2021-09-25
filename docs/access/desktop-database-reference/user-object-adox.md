@@ -1,23 +1,23 @@
 ---
-title: User オブジェクト (ADOX-Access デスクトップデータベースリファレンス)
+title: User Object (ADOX - Access desktop database reference)
 TOCTitle: User object (ADOX)
 ms:assetid: e88b9a8a-e70f-c7ca-cb8c-bd274ff24948
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250178(v=office.15)
 ms:contentKeyID: 48548426
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3299a6c0742e7fcbbd26532f3522fdc96b7956b2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 8bd62da5b813985c725703cca80a75aabbac73fb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32313161"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593356"
 ---
-# <a name="user-object-adox"></a>User オブジェクト (ADOX)
+# <a name="user-object-adox"></a>ユーザー オブジェクト (ADOX)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 保護されているデータベースへの権限を持つユーザー アカウントを表します。
 

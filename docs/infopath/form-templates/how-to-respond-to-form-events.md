@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - イベントの順序 [infopath 207],イベント [InfoPath 2007],応答,イベント [InfoPath 2007],順序,InfoPath 2007,イベントに応答する,EventArgs クラス [InfoPath 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 754db64b-179f-4385-8dd9-c20c9407b186
 description: ユーザーがフォームに入力する際に発生する各種イベントに応答するコードを書くことができます。InfoPath 内でイベントの作業を実行するには、デザイン モードのフォーム テンプレートの作業中にイベント ハンドラーを追加します。
-ms.openlocfilehash: 0db3209dfe005f2a87ad65f3fc89b1714ec7d95c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fdc099e65365eecfc114642760734e7a48c3c5ca
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407684"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592852"
 ---
 # <a name="respond-to-form-events"></a>フォーム イベントに応答する
 

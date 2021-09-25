@@ -1,5 +1,5 @@
 ---
-title: Database. designmasterid プロパティ (DAO)
+title: Database.DesignMasterID プロパティ (DAO)
 TOCTitle: DesignMasterID Property
 ms:assetid: c0545561-d44f-5479-8ae0-e3955db91761
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822824(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053417
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a189d16880fccdc34c169aee61c6781e1d86afa8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c19eb8e76765ddf2a9a8e4a52bd4f7e20d0f17ea
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294933"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558507"
 ---
-# <a name="databasedesignmasterid-property-dao"></a>Database. designmasterid プロパティ (DAO)
+# <a name="databasedesignmasterid-property-dao"></a>Database.DesignMasterID プロパティ (DAO)
 
 **適用先:** Access 2013、Office 2013
 
@@ -26,9 +26,9 @@ ms.locfileid: "32294933"
 
 ## <a name="syntax"></a>構文
 
-*式*。DesignMasterID
+*式* .DesignMasterID
 
-*式***Database**オブジェクトを表す変数を取得します。
+*式* **Database** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 

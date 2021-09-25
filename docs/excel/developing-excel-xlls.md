@@ -1,5 +1,5 @@
 ---
-title: Excel XLL �̊J��
+title: Excel XLL の開発
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,13 +8,13 @@ keywords:
 - アドイン - [excel 2007],XLL の開発 - [Excel 2007],XLL - [Excel 2007],開発
 ms.assetid: dd27ae4d-ef97-47db-885c-ddd955816900
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: d05041f2629694c4a96240ea83b6e84b17f9be38
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: c255e973afa7b8a1ae8fa58b567f980b158a82e1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301660"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614606"
 ---
 # <a name="developing-excel-xlls"></a>Excel XLL の開発
 

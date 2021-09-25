@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm78430
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: b55fc51f70bcc2c9d2f7e93cf9c79228cd2fe440
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a1f5882119a52c0c3f73d4d4da96e4e8ec8f8377
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296634"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558598"
 ---
 # <a name="cancelevent-macro-action"></a>CancelEvent マクロ アクション
 
@@ -24,7 +24,7 @@ ms.locfileid: "32296634"
 
 " **CancelEvent/イベントのキャンセル** " アクションを使用して、このアクションが定義されたマクロが Access で実行される原因となったイベントを取り消すことができます。" **BeforeUpdate/更新前処理** "、" **OnOpen/開く時** "、" **OnUnload/読み込み解除時** "、" **OnPrint/印刷時** " などのイベント プロパティに、このマクロ名を設定します。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "CancelEvent/イベントのキャンセル" アクションには、引数はありません。
 
@@ -106,18 +106,18 @@ To carry out the **CancelEvent** action in a Visual Basic for Applications (VBA)
 <th><p>条件</p></th>
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>Comment</p></th>
+<th><p>コメント</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>IsNull ([都道府県])</p></td>
+<td><p>IsNull([CountryRegion])</p></td>
 <td><p>StopMacro</p></td>
 <td><p></p></td>
 <td><p>If CountryRegion is <strong>Null</strong>, postal code can't be validated.</p></td>
 </tr>
 <tr class="even">
-<td><p>地域In (&quot;フランス&quot;、&quot;イタリア&quot;、&quot;スペイン&quot;) および Len ([郵便番号]) &lt; &gt; 5</p></td>
+<td><p>[CountryRegion]In ( &quot; France , Italy , Spain ) and &quot; &quot; &quot; &quot; &quot; Len([Postal Code]) &lt; &gt; 5</p></td>
 <td><p>MessageBox</p></td>
 <td><p>"Message/メッセージ": 郵便番号は 7 文字である必要があります。 "Beep/警告音": <strong>はい</strong> Type/メッセージの種類: <strong>情報</strong> Title/メッセージ タイトル: 郵便番号エラー  </p></td>
 <td><p>郵便番号が 7 文字でない場合にメッセージを表示します。</p></td>
@@ -135,7 +135,7 @@ To carry out the **CancelEvent** action in a Visual Basic for Applications (VBA)
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>地域In (&quot;オーストラリア&quot;、&quot;シンガポール&quot;) および Len ([郵便番号]) &lt; &gt; 4</p></td>
+<td><p>[CountryRegion]In ( &quot; Australia , Singapore ) and &quot; &quot; &quot; Len([郵便番号]) &lt; &gt; 4</p></td>
 <td><p>MessageBox</p></td>
 <td><p>"Message/メッセージ": 郵便番号は 7 文字である必要があります。 "Beep/警告音": <strong>はい</strong> Type/メッセージの種類: <strong>情報</strong> Title/メッセージ タイトル: 郵便番号エラー  </p></td>
 <td><p>郵便番号が 7 文字でない場合にメッセージを表示します。</p></td>
@@ -153,7 +153,7 @@ To carry out the **CancelEvent** action in a Visual Basic for Applications (VBA)
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>([都道府県] = &quot;カナダ&quot;)And ([郵便番号] Not Like&quot;[0-9] [0-9] [0-9] [0-9] ([a-z] [0-9]&quot;)</p></td>
+<td><p>([CountryRegion] = &quot;カナダ &quot; ) と ([郵便番号] Not Like &quot; [A-Z][0-9][A-Z] [0-9][A-Z][0-9] &quot; )</p></td>
 <td><p>MessageBox</p></td>
 <td><p>"Message/メッセージ": 郵便番号が無効です。たとえば、広島県の郵便番号の上 3 桁は 720 ～ 739 です。 Beep/警告音: <strong>はい</strong> Type/メッセージの種類: <strong>情報</strong> Title/メッセージ タイトル: 郵便番号エラー  </p></td>
 <td><p>[都道府県] が広島県で、郵便番号の上 3 桁が 720 ～ 739 でない場合にメッセージを表示します。</p></td>

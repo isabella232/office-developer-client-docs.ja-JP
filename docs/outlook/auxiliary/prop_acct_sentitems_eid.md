@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f199a97f-55d6-9297-adc4-e9f7b4b5f58b
 description: アカウントの送信されたアイテムの既定のフォルダーのエントリ ID を表します。
-ms.openlocfilehash: 24bb4714a4f4964ac3d84ea7a792e64da67599df
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e9073a5b113ddd1181cb46ce44ac238833893636
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431842"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614347"
 ---
 # <a name="prop_acct_sentitems_eid"></a>PROP_ACCT_SENTITEMS_EID
 

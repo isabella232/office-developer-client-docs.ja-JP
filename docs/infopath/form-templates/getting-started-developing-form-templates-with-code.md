@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - form templates [infopath 2007], getting started,managed code form templates [InfoPath 2007], getting started,InfoPath 2007, getting started
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 66468447-2012-4497-b371-c61f64a8bb49
 description: ここでは、Microsoft.Office.InfoPath 名前空間のメンバーから提供される InfoPath オブジェクト モデルを使用するマネージ コード フォーム テンプレートを作成する作業の始め方を説明します。
-ms.openlocfilehash: 59167533eba6dd3537b6c5c0170ef32b795b02cc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5c4487930fa55e55110ab066c76dfb0e4507f6fb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437988"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592950"
 ---
 # <a name="getting-started-developing-form-templates-with-code"></a>コードを含むフォーム テンプレートの開発作業を開始する
 

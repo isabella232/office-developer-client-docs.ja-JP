@@ -3,15 +3,15 @@ title: SharePoint オブジェクト モデルのメンバーを使用する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8cbafca3-7831-4231-8e61-38330b5ad61b
 description: InfoPath フォーム テンプレート内で実行されるコードから、SharePoint オブジェクト モデルのメンバーに対してプログラミングを行う場合は、事前に、フォームの Visual Studio 2012 プロジェクトで Microsoft.SharePoint.dll アセンブリを参照する必要があります。そのためには、Microsoft SharePoint Server 2010 のライセンス コピーのファイル システム、または Microsoft SharePoint Foundation 2010 を実行するサーバーのファイル システムにアクセスして、Microsoft.SharePoint.dll アセンブリのコピーを取得する必要があります。
-ms.openlocfilehash: e29725450a6a1bdcba99215e337493f8686491e3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 487900d890edb0aaa8549f2c875a0ec4dd554781
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431660"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584830"
 ---
 # <a name="use-sharepoint-object-model-members"></a>SharePoint オブジェクト モデルのメンバーを使用する
 

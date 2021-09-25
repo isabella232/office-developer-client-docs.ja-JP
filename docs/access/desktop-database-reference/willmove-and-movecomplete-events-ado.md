@@ -1,20 +1,20 @@
 ---
-title: イベントの移動と MoveComplete (ADO)
+title: WillMove イベントと MoveComplete イベント (ADO)
 TOCTitle: WillMove and MoveComplete events (ADO)
 ms:assetid: fe7eb823-b388-6b3d-1ae9-056018032ef5
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250307(v=office.15)
 ms:contentKeyID: 48548937
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e663e18a13803097d490e0e315d139e6e15400da
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b61fc2affe707b03b5415acd1777fbf0b7dc750e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306056"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585040"
 ---
-# <a name="willmove-and-movecomplete-events-ado"></a>イベントの移動と MoveComplete (ADO)
+# <a name="willmove-and-movecomplete-events-ado"></a>WillMove イベントと MoveComplete イベント (ADO)
 
 **適用先:** Access 2013、Office 2013
 
@@ -22,24 +22,24 @@ ms.locfileid: "32306056"
 
 ## <a name="syntax"></a>構文
 
-移動*adReason*、 *adstatus*、 *precordset*
+WillMove *adReason*, *adStatus*, *pRecordset*
 
-MoveComplete*adReason*、 **、 *adstatus*、 *precordset*
+MoveComplete *adReason*, *pError*, *adStatus*, *pRecordset*
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
 |*adReason* |このイベントの原因を示す [EventReasonEnum](eventreasonenum.md) 値です。値は **adRsnMoveFirst** 、 **adRsnMoveLast** 、 **adRsnMoveNext** 、 **adRsnMovePrevious** 、 **adRsnMove** 、または **adRsnRequery** です。|
-|*の場合* |[Error](error-object-ado.md) オブジェクトです。 *adStatus* の値が **adStatusErrorsOccurred** の場合は、発生したエラーを示します。それ以外の場合は設定されません。|
-|*adStatus* |[eventstatusenum](eventstatusenum.md)。 **WillMove** が呼び出されたとき、イベントを発生させた操作が成功した場合、このパラメーターは **adStatusOK** に設定されます。 保留中の操作の取り消しをこのイベントが要求できない場合、このパラメーターは **adStatusCantDeny** に設定されます。 <br/><br/>**MoveComplete** が呼び出されたとき、このパラメーターは、イベントを発生させた操作が成功した場合は **adStatusOK** 、失敗した場合は **adStatusErrorsOccurred** に設定されます。 <br/><br/>**WillMove** から制御が戻る前に、保留中の操作の取り消しを要求するには、このパラメーターを **adStatusCancel** に設定し、後続の通知が行われないようにするには、このパラメーターを adStatusUnwantedEvent に設定します。 <br/><br/>**MoveComplete** から制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。|
-|*precordset* |[Recordset](recordset-object-ado.md) オブジェクト。このイベントが発生した **Recordset** オブジェクトです。|
+|*pError* |[Error](error-object-ado.md) オブジェクトです。 *adStatus* の値が **adStatusErrorsOccurred** の場合は、発生したエラーを示します。それ以外の場合は設定されません。|
+|*adStatus* |[EventStatusEnum](eventstatusenum.md). **WillMove** が呼び出されたとき、イベントを発生させた操作が成功した場合、このパラメーターは **adStatusOK** に設定されます。 保留中の操作の取り消しをこのイベントが要求できない場合、このパラメーターは **adStatusCantDeny** に設定されます。 <br/><br/>**MoveComplete** が呼び出されたとき、このパラメーターは、イベントを発生させた操作が成功した場合は **adStatusOK** 、失敗した場合は **adStatusErrorsOccurred** に設定されます。 <br/><br/>**WillMove** から制御が戻る前に、保留中の操作の取り消しを要求するには、このパラメーターを **adStatusCancel** に設定し、後続の通知が行われないようにするには、このパラメーターを adStatusUnwantedEvent に設定します。 <br/><br/>**MoveComplete** から制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。|
+|*pRecordset* |[Recordset](recordset-object-ado.md) オブジェクト。このイベントが発生した **Recordset** オブジェクトです。|
 
 ## <a name="remarks"></a>注釈
 
-次**** の**Recordset**の操作によって、 **MoveComplete**イベントが発生することがあります。
+**WillMove** または **MoveComplete** イベントは、次の Recordset 操作のために **発生する可能性** があります。
 
-- [Open](open-method-ado-recordset.md)
+- [開く](open-method-ado-recordset.md)
 - [Move](move-method-ado.md)
 - [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)
 - [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)
@@ -48,7 +48,7 @@ MoveComplete*adReason*、 **、 *adstatus*、 *precordset*
 - [AddNew](addnew-method-ado.md)
 - [Requery](requery-method-ado.md)
 
-これらのイベントは、次のプロパティによって発生する可能性があります。
+これらのイベントは、次のプロパティのために発生する可能性があります。
 
 - [Filter](filter-property-ado.md)
 - [インデックス](index-property-ado.md)

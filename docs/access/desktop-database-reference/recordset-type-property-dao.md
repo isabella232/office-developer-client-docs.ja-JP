@@ -1,31 +1,31 @@
 ---
-title: Recordset プロパティ (DAO)
+title: Recordset.Type プロパティ (DAO)
 TOCTitle: Type Property
 ms:assetid: d841b088-50bf-16d9-33e0-2140050e1ac6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835080(v=office.15)
 ms:contentKeyID: 48548030
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4a55af8aaa5cfb3d87e13125871a6ccbe1e7f2dd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d494c444d26e472ce13630f6abe0a09e1f8bfcff
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307554"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601990"
 ---
-# <a name="recordsettype-property-dao"></a>Recordset プロパティ (DAO)
+# <a name="recordsettype-property-dao"></a>Recordset.Type プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 オブジェクトの操作の種類またはデータ型を示す値を設定または取得します。値の取得のみ可能です。整数型 (**Integer**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。種類
+*expression* .Type
 
-*式***Recordset**オブジェクトを表す変数を取得します。
+*expression*: **Recordset** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
@@ -50,11 +50,11 @@ ms.locfileid: "32307554"
 <tr class="even">
 <td><p><strong>dbOpenDynamic</strong></p></td>
 <td><p>動的 (ODBCDirect ワークスペースのみ)</p>
-<p><strong>注</strong>: ODBCDirect ワークスペースは、Microsoft access 2013 ではサポートされていません。 Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p></td>
+<p><strong>注</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Access データベース エンジンを使用せずに外部データ ソースにアクセスする場合は、ADO を使用してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbOpenDynaset</strong></p></td>
-<td><p>ダイナセットタイプ</p></td>
+<td><p>ダイナセット</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbOpenSnapshot</strong></p></td>
@@ -62,7 +62,7 @@ ms.locfileid: "32307554"
 </tr>
 <tr class="odd">
 <td><p><strong>dbOpenForwardOnly</strong></p></td>
-<td><p>前方のみ</p></td>
+<td><p>転送のみ</p></td>
 </tr>
 </tbody>
 </table>

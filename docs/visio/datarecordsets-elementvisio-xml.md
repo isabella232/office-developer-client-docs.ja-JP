@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c75b3233-9ac5-d29c-a658-d554e86e6be4
 description: ドキュメント内のすべての DataRecordset 要素を格納します。
-ms.openlocfilehash: efa7d58eabc1b1192862dbbe090ddd5008947c1d
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 2465739067d0103e6e90cbb18c1cef6fc251732e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542444"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608264"
 ---
 # <a name="datarecordsets-element-visio-xml"></a>DataRecordSets 要素 (xml Visio)
 

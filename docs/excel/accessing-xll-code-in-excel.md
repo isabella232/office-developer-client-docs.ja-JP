@@ -8,13 +8,13 @@ keywords:
 - accessing xll code [excel 2007],XLLs [Excel 2007], accessing code,commands [Excel 2007], registration,functions [Excel 2007], registration,calling XLLs from Excel,registering commands [Excel 2007],registering functions [Excel 2007]
 ms.assetid: 6e4bf1f3-8eca-4be5-9632-75355ac31d61
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: d1332b0dffc052404c75c4ec51d94879457c3da0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 9f228432da71e406bbff40d760bc3dd38d5d4ee3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304187"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593020"
 ---
 # <a name="accessing-xll-code-in-excel"></a>Excel での XLL コードへのアクセス
 

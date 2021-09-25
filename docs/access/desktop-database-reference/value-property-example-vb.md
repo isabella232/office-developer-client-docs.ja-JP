@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249947(v=office.15)
 ms:contentKeyID: 48547547
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 78743d4046950383de6d84fb2a616408158cd23f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d325c4b986fab7fb8424ef2683f2ea971fa360fb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32312111"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593314"
 ---
 # <a name="value-property-example-vb"></a>Value プロパティの使用例 (VB)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、[Field](field-object-ado.md) オブジェクトや [Property](property-object-ado.md) オブジェクトで [Value](value-property-ado.md) プロパティを使用して、***Employees*** テーブルのフィールドとプロパティの値を表示します。
 

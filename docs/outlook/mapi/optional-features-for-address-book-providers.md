@@ -3,17 +3,17 @@ title: アドレス帳プロバイダーのオプション機能
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: f1558259-7f0b-4731-80d2-88e51e203df0
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9f5d8f0cd1b21f58e4e5c7d7ccd6cb19f3626c38
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3c1e3e80cf7c3f3f2b7608b1c57079353ac7338e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414572"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567131"
 ---
 # <a name="optional-features-for-address-book-providers"></a>アドレス帳プロバイダーのオプション機能
 

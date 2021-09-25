@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a4572cd2-0dc1-439a-a265-0195766a4013
 description: Outlook 2013 の補助リファレンスで使用可能な Api を使用するサンプル タスクを示します。
-ms.openlocfilehash: 790b6ca3f1432b801044176acd9cebebfcb1dcee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: be492d55e143267d20369463511c6e4a69b37710
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326398"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614319"
 ---
 # <a name="sample-tasks"></a>サンプル タスク (英語)
 

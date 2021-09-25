@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 08121e33-7820-4a31-b6da-06a4a54ec43f
 description: PidTagConversationId に基づいてメール アイテムに対して送信後の分類を実行します。
-ms.openlocfilehash: 675f308093eea30084271abc66c1fa66e2ad6828
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 45f1aa9dbab683fb6765d637b8495d77d899fbe2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32318901"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614456"
 ---
 # <a name="hrprocessconvactionforsentitem"></a>HrProcessConvActionForSentItem
 
@@ -23,7 +23,7 @@ ms.locfileid: "32318901"
 |||
 |:-----|:-----|
 |次の方法でエクスポートされます。  <br/> |Outlook.exe  <br/> |
-|呼び出し元:  <br/> |クライアント  <br/> |
+|呼び出し元:  <br/> |Client  <br/> |
 |実装元:  <br/> |Outlook  <br/> |
    
 ```cpp

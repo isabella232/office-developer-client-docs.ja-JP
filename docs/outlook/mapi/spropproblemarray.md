@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SPropProblemArray
 api_type:
 - COM
 ms.assetid: 3fbaa77a-be43-4fce-af67-1826ee101799
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: f78e0ed939e190a9855ea4b040d18c01cfecc91d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f68d703a9bdab23f07f5f53af0f35b69384526cd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406858"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566557"
 ---
 # <a name="spropproblemarray"></a>SPropProblemArray
 
@@ -41,7 +41,7 @@ typedef struct _SPropProblemArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cProblem**
   

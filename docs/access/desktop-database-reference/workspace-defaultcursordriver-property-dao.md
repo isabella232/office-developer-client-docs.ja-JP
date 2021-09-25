@@ -1,5 +1,5 @@
 ---
-title: Workspace. defaultカーソルドライバープロパティ (DAO)
+title: Workspace.DefaultCursorDriver プロパティ (DAO)
 TOCTitle: DefaultCursorDriver Property
 ms:assetid: 15a8356d-7ae0-3c8e-fbb7-2d8ad6d9a582
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845499(v=office.15)
@@ -10,25 +10,25 @@ f1_keywords:
 - dao360.chm1053582
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 73567aae9bc332c7113f9128dedc1e2cc8893cab
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 84e34f22338e97e88b67e0bffae07cc011276f6b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32305930"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593272"
 ---
-# <a name="workspacedefaultcursordriver-property-dao"></a>Workspace. defaultカーソルドライバープロパティ (DAO)
+# <a name="workspacedefaultcursordriver-property-dao"></a>Workspace.DefaultCursorDriver プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 
 ## <a name="syntax"></a>構文
 
-*式*。DefaultCursorDriver
+*式* .DefaultCursorDriver
 
-*式***Workspace**オブジェクトを表す変数を取得します。
+*expression*: **Workspace** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 

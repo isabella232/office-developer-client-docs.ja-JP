@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidContacts
 api_type:
 - COM
 ms.assetid: 709e701f-b24e-4cd5-8c55-3f9e67f67a4a
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 10dd12522a635098908285f1a9ee16c93d96f728
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 16b36986cd6272bddd014583b670325eefbd452e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319461"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566991"
 ---
 # <a name="pidlidcontacts-canonical-property"></a>PidLidContacts 標準プロパティ
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidFax1RichTextFormat
 api_type:
 - COM
 ms.assetid: 2ee78458-7b51-4092-9c30-22ecafb5ce37
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: b0a1a88e2a828d0d0a51036c9d67e6af2c804af5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8913f6a43e7622162edf8beeeff4dddb5282c4a5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328764"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575128"
 ---
 # <a name="pidlidfax1richtextformat-canonical-property"></a>PidLidFax1RichTextFormat 標準プロパティ
 
@@ -41,7 +41,7 @@ ms.locfileid: "32328764"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様Exchange Server提供します。
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   

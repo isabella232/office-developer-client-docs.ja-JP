@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248893(v=office.15)
 ms:contentKeyID: 48543328
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 23cb90161e5e0728aa652ae5d496216676f781a5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c3b3b189f97cfc7aa338614d06c75437eb3b24df
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309207"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601836"
 ---
 # <a name="running-business-objects-in-component-services"></a>コンポーネント サービスでのビジネス オブジェクトの実行
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ビジネス オブジェクトには、実行可能ファイル (.exe) とダイナミック リンク ライブラリ (.dll) があります。ビジネス オブジェクトを実行するために使う構成は、そのオブジェクトが .dll ファイルであるか .exe ファイルであるかによって異なります。
 
@@ -26,11 +26,11 @@ ms.locfileid: "32309207"
 
 
 > [!NOTE]
-> 中間層のビジネスオブジェクトがコンポーネントサービスコンポーネント ( **getobjectcontext**、 **SetComplete**、および**SetAbort**を使用) として実装されている場合は、コンポーネントサービス (または、Windows NT を使用している場合は MTS) を使用して、コンテキストオブジェクトを複数のクライアント呼び出し間で状態を維持します。 このシナリオは、通常は信頼関係のあるクライアントとサーバー (イントラネット) 間で実装される DCOM でも可能です。 
+> 中間層のビジネス オブジェクトがコンポーネント サービス コンポーネント **(GetObjectContext、SetComplete、****および SetAbort** を使用) として実装されている場合、コンポーネント サービス (または Windows NT) コンテキスト オブジェクトを使用すると、複数のクライアント呼び出しで状態を維持できます。  このシナリオは、通常は信頼関係のあるクライアントとサーバー (イントラネット) 間で実装される DCOM でも可能です。 
 >
 > その場合、クライアント側の [RDS.DataSpace](dataspace-object-rds.md) オブジェクトと [CreateObject](createobject-method-rds.md) メソッドはトランザクション コンテキスト オブジェクトと **CreateInstance** メソッド ( **ITransactionContext** インターフェイスによって提供) に置き換えられ、コンポーネント サービスによって実装されます。
 
 
 ## <a name="see-also"></a>関連項目
 
-- [コンポーネントサービスでのビジネスオブジェクトの実行 (SQL Server)](https://docs.microsoft.com/sql/ado/guide/remote-data-service/running-business-objects-in-component-services?view=sql-server-2017)
+- [コンポーネント サービスでのビジネス オブジェクトの実行 (SQL Server)](https://docs.microsoft.com/sql/ado/guide/remote-data-service/running-business-objects-in-component-services?view=sql-server-2017)

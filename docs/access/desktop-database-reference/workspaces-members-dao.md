@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194667(v=office.15)
 ms:contentKeyID: 48545141
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6be2aba5ab072e40193aff11ab6be54ba6c94f34
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5f001a49f3bb47a56191dde4aa2330eb426f7bf2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302605"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584970"
 ---
 # <a name="workspaces-members-dao"></a>Workspaces メンバー (DAO)
 
@@ -36,7 +36,7 @@ Workspaces コレクションには、DBEngine オブジェクトの、表示さ
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="workspaces-append-method-dao.md">追加</a></strong></p></td>
+<td><p><strong><a href="workspaces-append-method-dao.md">Append</a></strong></p></td>
 <td><p>新しい <strong>Workspace</strong> を <strong>Workspaces</strong> コレクションに追加します。</p></td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ Workspaces コレクションには、DBEngine オブジェクトの、表示さ
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="workspaces-count-property-dao.md">Count</a></strong></p></td>
-<td><p>指定したコレクション内のオブジェクトの数を取得します。 値の取得のみ可能です。</p></td>
+<td><p>指定したコレクション内のオブジェクトの数を取得します。値の取得のみ可能です。</p></td>
 </tr>
 </tbody>
 </table>

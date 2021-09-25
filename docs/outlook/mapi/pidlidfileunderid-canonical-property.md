@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidFileUnderId
 api_type:
 - COM
 ms.assetid: 917431a9-fd90-4b4d-b042-886e3dbf47c0
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7af30866a5fd2846327223b7a58c6de91f5fef7a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 216f927629349b482da874adb07a470b45dd1242
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355707"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575107"
 ---
 # <a name="pidlidfileunderid-canonical-property"></a>PidLidFileUnderId 標準プロパティ
 
@@ -44,22 +44,22 @@ ms.locfileid: "32355707"
 |****dispidFileUnderId** プロパティの値**|****dispidFileUnder プロパティの** 説明**|
 |:-----|:-----|
 |0x00000000  <br/> |空PT_UNICODE。  <br/> |
-|0x00003001  <br/> |" \< PidTagDisplayName \> "  <br/> |
-|0x00003A06  <br/> |" \< PidTagGivenName \> "  <br/> |
-|0x00003A11  <br/> |" \< PidTagSurname \> "  <br/> |
-|0x00003A16  <br/> |" \< PidTagCompanyName \> "  <br/> |
-|0x00008017  <br/> |" \< PidTagSurname \> , space \< \> \< PidTagGivenName space \> \< \> \< PidTagMiddleName \> "  <br/> |
-|0x00008018  <br/> |" \< PidTagCompanyName \>\r\n\< \> PidTagSurname 、 space \< \> \< PidTagGivenName \> \< スペース \> \< PidTagMiddleName \> "  <br/> |
-|0x00008019  <br/> |" \< PidTagSurname \> 、 space \< \> \< PidTagGivenName スペース \> \< \> \< PidTagMiddleName\r\n\> \< PidTagCompanyName \> "  <br/> |
-|0x00008030  <br/> |" \< PidTagSurname \> \< PidTagGivenName \> \< スペース \> \< PidTagMiddleName \> "  <br/> |
-|0x00008031  <br/> |" \< PidTagSurname \> \< スペース \> \< PidTagGivenName \> \< スペース \> \< PidTagMiddleName \> "  <br/> |
-|0x00008032  <br/> |" \< PidTagCompanyName \>\r\n\< PidTagSurname \> \< \> \< \> \< PidTagGivenName スペース PidTagMiddleName \> "  <br/> |
-|0x00008033  <br/> |" \< PidTagCompanyName \>\r\n\< \> \< PidTagSurname スペース \> \< \> \< \> \< PidTagGivenName スペース PidTagMiddleName \> "  <br/> |
-|0x00008034  <br/> |" \< PidTagSurname \> \< PidTagGivenName \> \< スペース \> \< PidTagMiddleName\r\n\> \< PidTagCompanyName \> "  <br/> |
-|0x00008035  <br/> |" \< PidTagSurname \> \< スペース \> \< PidTagGivenName \> \< スペース \> \< PidTagMiddleName\r\n\> \< PidTagCompanyName \> "  <br/> |
-|0x00008036  <br/> |" \< PidTagSurname \> \< スペース \> \< PidTagGivenName \> \< スペース \> \< PidTagMiddleName スペース \> \< \> \< PidTagGeneration \> "  <br/> |
-|0x00008037  <br/> |" \< PidTagGivenName \> \< スペース \> \< PidTagMiddleName \> \< スペース \> \< PidTagSurname スペース \> \< \> \< PidTagGeneration \> "  <br/> |
-|0x00008038  <br/> |" \< PidTagSurname \> \< PidTagGivenName \> \< スペース \> \< PidTagMiddleName \> \< スペース \> \< PidTagGeneration \> "  <br/> |
+|0x00003001  <br/> |"\<PidTagDisplayName\>"  <br/> |
+|0x00003A06  <br/> |"\<PidTagGivenName\>"  <br/> |
+|0x00003A11  <br/> |"\<PidTagSurname\>"  <br/> |
+|0x00003A16  <br/> |"\<PidTagCompanyName\>"  <br/> |
+|0x00008017  <br/> |"\<PidTagSurname\>,\<space\>\<PidTagGivenName\>\<space\>\<PidTagMiddleName\>"  <br/> |
+|0x00008018  <br/> |" \<PidTagCompanyName\>\r\n\<PidTagSurname\> 、 \<space\> \<PidTagGivenName\> \<space\> \<PidTagMiddleName\> "  <br/> |
+|0x00008019  <br/> |" \<PidTagSurname\> 、\r\n\<space\> \<PidTagGivenName\> \<space\> \<PidTagMiddleName\> \<PidTagCompanyName\> "  <br/> |
+|0x00008030  <br/> |"\<PidTagSurname\>\<PidTagGivenName\>\<space\>\<PidTagMiddleName\>"  <br/> |
+|0x00008031  <br/> |"\<PidTagSurname\>\<space\>\<PidTagGivenName\>\<space\>\<PidTagMiddleName\>"  <br/> |
+|0x00008032  <br/> |" \<PidTagCompanyName\>\r\n\<PidTagSurname\> \<PidTagGivenName\> \<space\> \<PidTagMiddleName\> "  <br/> |
+|0x00008033  <br/> |" \<PidTagCompanyName\>\r\n\<PidTagSurname\> \<space\> \<PidTagGivenName\> \<space\> \<PidTagMiddleName\> "  <br/> |
+|0x00008034  <br/> |" \<PidTagSurname\> \<PidTagGivenName\> \<space\> \<PidTagMiddleName\>\r\n\<PidTagCompanyName\> "  <br/> |
+|0x00008035  <br/> |" \<PidTagSurname\> \<space\> \<PidTagGivenName\> \<space\> \<PidTagMiddleName\>\r\n\<PidTagCompanyName\> "  <br/> |
+|0x00008036  <br/> |"\<PidTagSurname\>\<space\>\<PidTagGivenName\>\<space\>\<PidTagMiddleName\>\<space\>\<PidTagGeneration\>"  <br/> |
+|0x00008037  <br/> |"\<PidTagGivenName\>\<space\>\<PidTagMiddleName\>\<space\>\<PidTagSurname\>\<space\>\<PidTagGeneration\>"  <br/> |
+|0x00008038  <br/> |"\<PidTagSurname\>\<PidTagGivenName\>\<space\>\<PidTagMiddleName\>\<space\>\<PidTagGeneration\>"  <br/> |
 |0xfffffffd  <br/> |連絡先を表示するときに、アプリケーションが **dispidFileUnder** および他の連絡先プロパティの現在の値を使用して **、dispidFileUnderId** をこの表の前の値の 1 つに対して "最適な一致" を見つける必要があります。  <br/> |
 |0xfffffffe  <br/> |連絡先を表示するときに、アプリケーションが **dispidFileUnderId** の適切な既定値 (言語ロケールに従って) を選択し、選択に一致する **dispidFileUnder** を更新する必要があります。  <br/> |
 |0xffffffff  <br/> |**dispidFileUnder** はユーザー提供のPT_UNICODEであり、別の連絡先名プロパティが変更された場合は変更できません。  <br/> |

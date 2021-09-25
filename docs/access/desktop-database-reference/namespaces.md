@@ -1,22 +1,22 @@
 ---
-title: 名前空間 (Access デスクトップデータベースリファレンス)
+title: 名前空間 (Access デスクトップ データベースリファレンス)
 TOCTitle: Namespaces
 ms:assetid: e39f003c-3d16-1fae-48c5-304593c41f2f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250158(v=office.15)
 ms:contentKeyID: 48548318
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 905edba502fcc2994be6f6b8e50a7200b66a82b8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f380ea60ea9d4676f1174884ef8331c0fef0462c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288626"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602109"
 ---
 # <a name="namespaces"></a>名前空間
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ADO での XML の保存形式には、次の 4 つの名前空間が使用されます。
 
@@ -34,14 +34,14 @@ ADO での XML の保存形式には、次の 4 つの名前空間が使用さ�
 <tbody>
 <tr class="odd">
 <td><p>s</p></td>
-<td><p>現在の<strong>Recordset</strong>のスキーマを&quot;定義する要素と属性を含む&quot;XML データ名前空間を参照します。</p></td>
+<td><p>現在の &quot; Recordset のスキーマを定義する要素と属性を含む XML-Data 名前空間 &quot; を <strong>参照します</strong>。</p></td>
 </tr>
 <tr class="even">
 <td><p>dt</p></td>
 <td><p>データ型定義の仕様を表します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>clr</p></td>
+<td><p>rs</p></td>
 <td><p>ADO の <strong>Recordset</strong> プロパティおよび属性に固有の要素と属性を含む名前空間を表します。</p></td>
 </tr>
 <tr class="even">

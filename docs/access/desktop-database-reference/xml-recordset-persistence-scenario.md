@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248825(v=office.15)
 ms:contentKeyID: 48543107
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5bae48f3e9b2b5c3967b955c41ba01c634546164
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 99f8216c64b24328140aa5a0cc1b117c3008aee1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302597"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593160"
 ---
 # <a name="xml-recordset-persistence-scenario"></a>XML レコードセットの永続化シナリオ
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 このシナリオでは、 **Response** オブジェクトの内容を Active Server Pages (ASP) の **Response** オブジェクトに直接保存する ASP アプリケーションを作成します。
 
@@ -34,9 +34,9 @@ ms.locfileid: "32302597"
 
 ## <a name="step-1-set-up-the-application"></a>手順 1: アプリケーションをセットアップする
 
-1. 「スクリプト権限を使用して**xmlpersist** 」という名前の IIS 仮想ディレクトリを作成します。 
+1. スクリプトのアクセス許可を持つ **XMLPersist という名前の IIS** 仮想ディレクトリを作成します。 
 
-2. 仮想ディレクトリをポイントするフォルダーに2つの新しいテキストファイルを作成します。このファイルには、 **xmlresponse**という名前の、もう1つの**default.htm**という名前が付けられます。
+2. 仮想ディレクトリがポイントするフォルダーに **、XMLResponse.asp** という名前の 2 つの新しいテキスト ファイルを作成し、もう 1 つは xmlResponse.asp という名前 **Default.htm。**
 
 
 ## <a name="step-2-get-the-data"></a>手順 2: データを取得する
@@ -68,7 +68,7 @@ ms.locfileid: "32302597"
         adoRec.Open strSQL, adoCon, adOpenStatic, adLockOptimistic, adCmdText 
    ```
 
-2. 必ず、strcon のデータソースパラメーターの値を Microsoft SQL Server コンピュータの名前に変更してください。
+2. strCon の Data Source パラメーターの値を、必ずコンピューターの名前Microsoft SQL Serverしてください。
 
 3. ファイルを開いたままで、次の手順に進みます。
 
@@ -92,15 +92,15 @@ ms.locfileid: "32302597"
     %> 
    ```
 
-   ASP **Response**オブジェクトは、 **Recordset** [Save](save-method-ado.md)メソッドの宛先として指定されていることに注意してください。 **Save** メソッドの保存先には、 **IStream** インターフェイスをサポートする任意のオブジェクト (ADO の [Stream](stream-object-ado.md) オブジェクトなど)、または、 **Recordset** の保存先の完全なパスを含むファイル名を指定できます。
+   ASP Response オブジェクトが **Recordset Save** メソッドの **宛先として指定**[](save-method-ado.md)されています。 **Save** メソッドの保存先には、 **IStream** インターフェイスをサポートする任意のオブジェクト (ADO の [Stream](stream-object-ado.md) オブジェクトなど)、または、 **Recordset** の保存先の完全なパスを含むファイル名を指定できます。
 
-2. XMLResponse.asp を保存して閉じ、次の手順に進みます。 また、\\adovbs.inc ファイルを C: Program Files\\Common Files\\System\\Ado フォルダーから xmlresponse .asp ファイルと同じフォルダーにコピーします。
+2. XMLResponse.asp を保存して閉じ、次の手順に進みます。 また、adovbs.inc ファイルを C: Program Files Common Files System Ado フォルダーから \\ \\ \\ \\ 、XMLResponse.asp ファイルがある同じフォルダーにコピーします。
 
-## <a name="step-4-receive-and-display-the-data"></a>手順 4: データを受信して表示する
+## <a name="step-4-receive-and-display-the-data"></a>手順 4: データの受信と表示
 
-この手順では、埋め込みの RDS を含む HTML ファイルを作成し[ます。](datacontrol-object-rds.md) **Recordset**を取得するために xmlresponse .asp ファイルをポイントする DataControl オブジェクト。 
+この手順では、RDS が埋め込まれた HTML ファイル [を作成します。XmlResponse.asp](datacontrol-object-rds.md) ファイルをポイントして Recordset を取得する **DataControl オブジェクト**。 
 
-1. Windows メモ帳などのテキストエディターを使用して default.htm を開き、次のコードを追加します。 URL の "sqlserver" は、実際に使用するサーバー コンピューターの名前に置き換えてください。
+1. [default.htm] などのテキスト エディターでWindows メモ帳を開き、次のコードを追加します。 URL の "sqlserver" は、実際に使用するサーバー コンピューターの名前に置き換えてください。
 
    ```html 
     
@@ -125,9 +125,9 @@ ms.locfileid: "32302597"
 
 2. Close the default.htm file and save it to the same folder where you saved XMLResponse.asp. 
 
-3. Internet Explorer 4.0 以降を使用して、URL `https://<sqlserver>/XMLPersist/default.htm`を開き、結果を確認します。 The data is displayed in a bound DHTML table. 
+3. 4.0 以降Internet Explorerを使用して、URL を開いて `https://<sqlserver>/XMLPersist/default.htm` 結果を確認します。 The data is displayed in a bound DHTML table. 
 
-4. 次に、URL `https://<sqlserver>/XMLPersist/XMLResponse.asp`を開いて結果を確認します。 The XML is displayed.
+4. 次に、URL を開 `https://<sqlserver>/XMLPersist/XMLResponse.asp` き、結果を確認します。 The XML is displayed.
 
 
 

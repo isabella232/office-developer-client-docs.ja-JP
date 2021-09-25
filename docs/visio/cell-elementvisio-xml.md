@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3131bfbb-9bf6-d15d-c6ca-2f15bd038f39
 description: DocumentSheet、StyleSheet、PageSheet、または ShapeSheet に含まれるセル要素を指定します。
-ms.openlocfilehash: 2b76abeb83fb7251bf492e92d8dd1a81feeab092
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: b701431880d7609f6c8cbb265f953c0f0dc7cf36
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542311"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608509"
 ---
 # <a name="cell-element-visio-xml"></a>Cell 要素 (Visio XML)
 
@@ -102,9 +102,9 @@ DocumentSheet、StyleSheet、PageSheet、または ShapeSheet に含まれるセ
 |Blur  <br/> |ビットマップ イメージをぼかしたり、色をやわらげたりします。既定値は 0% です。  <br/> |[[Blur] セル ([Image Properties] セクション)](blur-cell-image-properties-section.md) <br/> |
 |BottomMargin  <br/> |テキスト ブロックの下の枠線からそのテキスト ブロックに含まれるテキストの最終行までの距離を指定します。  <br/> |[[BottomMargin] セル ([Text Block Format] セクション)](bottommargin-cell-text-block-format-section.md) <br/> |
 |Brightness  <br/> |ビットマップ イメージの明るさを調整します。  <br/> |[[明るさ] セル ([画像のプロパティ] セクション)](brightness-cell-image-properties-section.md) <br/> |
-|カレンダー  <br/> |セル数式が Date 情報を含むときに使用するカレンダーを指定します。  <br/> |[[Calendar] セル ([Miscellaneous] セクション)](calendar-cell-miscellaneous-section.md) <br/> |
-|カレンダー  <br/> |データ型が Date の場合に図形データに使用される予定表を指定します。  <br/> |[[Calendar] セル ([Shape Data] セクション)](calendar-cell-shape-data-section.md) <br/> |
-|カレンダー  <br/> |データ型が Date の場合にテキスト フィールドに使用されるカレンダーを指定します。  <br/> |[[Calendar] セル ([Text Fields] セクション)](calendar-cell-text-fields-section.md) <br/> |
+|予定表  <br/> |セル数式が Date 情報を含むときに使用するカレンダーを指定します。  <br/> |[[Calendar] セル ([Miscellaneous] セクション)](calendar-cell-miscellaneous-section.md) <br/> |
+|予定表  <br/> |データ型が Date の場合に図形データに使用される予定表を指定します。  <br/> |[[Calendar] セル ([Shape Data] セクション)](calendar-cell-shape-data-section.md) <br/> |
+|予定表  <br/> |データ型が Date の場合にテキスト フィールドに使用されるカレンダーを指定します。  <br/> |[[Calendar] セル ([Text Fields] セクション)](calendar-cell-text-fields-section.md) <br/> |
 |CenterX  <br/> |図面ページをプリンター ページの左右の中央に揃えるかどうかを指定します。  <br/> |[[CenterX] セル ([Print Properties] セクション)](centerx-cell-print-properties-section.md) <br/> |
 |CenterY  <br/> |図面ページをプリンター ページの上下の中央に揃えるかどうかを指定します。  <br/> |[[CenterY] セル ([Print Properties] セクション)](centery-cell-print-properties-section.md) <br/> |
 |ClippingPath  <br/> |イメージを限定しているパスの図形座標への参照を格納します。  <br/> |[[ClippingPath] セル ([外部画像情報] セクション)](clippingpath-cell-foreign-image-info-section.md) <br/> |
@@ -119,7 +119,7 @@ DocumentSheet、StyleSheet、PageSheet、または ShapeSheet に含まれるセ
 |ConLineJumpStyle  <br/> |動的コネクタの飛び越し点のスタイルを指定します。  <br/> |[[ConLineJumpStyle] セル ([Shape Layout] セクション)](conlinejumpstyle-cell-shape-layout-section.md) <br/> |
 |ConLineRouteExt  <br/> |コネクタの外観を指定します。  <br/> |[[ConLineRouteExt] セル ([Shape Layout] セクション)](conlinerouteext-cell-shape-layout-section.md) <br/> |
 |ConnectorSchemeIndex  <br/> |図形に適用されるテーマのコネクタ スキームを整数で指定します。  <br/> |[[ConnectorSchemeIndex] セル ([テーマのプロパティ] セクション)](connectorschemeindex-cell-theme-properties-section.md) <br/> |
-|Contrast  <br/> |ビットマップ イメージのコントラストを調整します。  <br/> |[[Contrast] セル ([Image Properties] セクション)](contrast-cell-image-properties-section.md) <br/> |
+|コントラスト  <br/> |ビットマップ イメージのコントラストを調整します。  <br/> |[[Contrast] セル ([Image Properties] セクション)](contrast-cell-image-properties-section.md) <br/> |
 |著作権  <br/> |人間が読み取り可能な著作権ステートメントを表す文字列を含む  <br/> ||
 |CtrlAsInput  <br/> |コントロール ハンドルを使用して図形を操作するときに、どの図形を親図形にするかを指定します。このセルの値は、図面ページ上にあるすべての図形の動作に適用されます。  <br/> |[[CtrlAsInput] セル ([Page Layout] セクション)](ctrlasinput-cell-page-layout-section.md) <br/> |
 |DefaultTabStop  <br/> |テキスト ブロックの既定のタブ位置の間隔を指定します。  <br/> |[[DefaultTabstop] セル ([Text Block Format] セクション)](defaulttabstop-cell-text-block-format-section.md) <br/> |

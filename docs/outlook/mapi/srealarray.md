@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SRealArray
 api_type:
 - COM
 ms.assetid: 95be07bf-5732-4775-9e0f-fec47e99d9b7
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8439d6609ebece75699a1150a9d0c1a41277fd52
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8c6fc32463fda6589f1cf8b2508c826bbcab1560
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566522"
 ---
 # <a name="srealarray"></a>SRealArray
 
@@ -40,7 +40,7 @@ typedef struct _SRealArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cValues**
   

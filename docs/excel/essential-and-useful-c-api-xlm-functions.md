@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 keywords:
 - functions [excel 2007], c api xlm
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dc80cb3d-0d7e-4cb9-9870-3acc84eeca82
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: d6acd5bb171fb2494f2adb23584f4e7f088e1b83
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6aff86a29f22331e4e40e878a7c5e2541e5b3b34
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434516"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592999"
 ---
 # <a name="essential-and-useful-c-api-xlm-functions"></a>重要で役に立つ C API XLM 関数
 

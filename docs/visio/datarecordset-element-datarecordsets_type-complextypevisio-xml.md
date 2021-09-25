@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: aa182f04-0899-ee0e-79e1-b74832933e83
 description: Microsoft Visio のデータベースからクエリしたデータを保存、書式設定、更新、および公開します。
-ms.openlocfilehash: e478593f370968db5fe9a65329cb1928c0f7c6ea
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
-ms.translationtype: HT
+ms.openlocfilehash: 41390699788b9606bf72473c17683c32b5a3744e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539678"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608271"
 ---
 # <a name="datarecordset-element-datarecordsets_type-complextype-visio-xml"></a>DataRecordSet 要素 (DataRecordSets_Type complexType) (Visio XML)
 

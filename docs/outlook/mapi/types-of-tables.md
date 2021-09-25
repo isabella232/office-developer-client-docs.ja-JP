@@ -3,17 +3,17 @@ title: テーブルの種類
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: a1fc4f20-511f-4721-8f09-ec2a5fd0ccb0
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 732b3d724c855d978250afff3d05c7f19909a5b2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6a6fb115d3a3105777b1b0e68595c960df0a92b2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426465"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566249"
 ---
 # <a name="types-of-tables"></a>テーブルの種類
 
@@ -31,7 +31,7 @@ ms.locfileid: "33426465"
   
 MAPI テーブルとその実装者とユーザーは次のとおりです。
   
-|**表**|**実装者**|
+|**Table**|**実装者**|
 |:-----|:-----|
 |添付ファイル  <br/> |メッセージ ストア プロバイダーによって実装されます。 クライアントとトランスポート プロバイダーによって使用されます。  <br/> |
 |コンテンツ  <br/> |メッセージ ストアとアドレス帳プロバイダーによって実装されます。 クライアントによって使用されます。  <br/> |
@@ -44,7 +44,7 @@ MAPI テーブルとその実装者とユーザーは次のとおりです。
 |プロファイル  <br/> |MAPI によって実装されます。 クライアントによって使用されます。  <br/> |
 |プロバイダー  <br/> |MAPI によって実装されます。 クライアントによって使用されます。  <br/> |
 |�t�H���_�[���\������܂��B  <br/> |メッセージ ストア プロバイダーによって実装されます。 クライアントによって使用されます。  <br/> |
-|受信者  <br/> |メッセージ ストア プロバイダーによって実装されます。 クライアントとトランスポート プロバイダーによって使用されます。  <br/> |
+|Recipient  <br/> |メッセージ ストア プロバイダーによって実装されます。 クライアントとトランスポート プロバイダーによって使用されます。  <br/> |
 |状態  <br/> |MAPI およびサービス プロバイダーによって実装されます。 クライアントによって使用されます。  <br/> |
    
 ## <a name="see-also"></a>関連項目

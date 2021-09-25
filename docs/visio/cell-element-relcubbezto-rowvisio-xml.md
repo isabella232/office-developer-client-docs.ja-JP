@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: daa5c527-65fe-a1e4-ab3e-24e77bdb522b
 description: 図形の幅と高さに相対する 3 次ベジエ曲線の端点の x 座標または y 座標、図形の幅と高さに相対する曲線の始点のコントロール ポイントの x 座標または y 座標、または図形の幅と高さに相対する曲線の終点のコントロール ポイントの x 座標または y 座標を格納します。
-ms.openlocfilehash: c52b0108cc6ed753c0e494d2bce72025cabb1c93
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 9dc19d4ac2059a31cc8be48a0a49ae8e9f53ca90
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539440"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608516"
 ---
 # <a name="cell-element-relcubbezto-row-visio-xml"></a>Cell 要素 (RelCubBezTo Row) (Visio XML)
 

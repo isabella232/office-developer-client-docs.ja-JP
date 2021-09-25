@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7cafaa31-c56b-ebb0-3bfb-c339cc93038e
 description: 図形上にある単一の接続ポイントに関する、x 座標または y 座標、水平方向または垂直方向、または種類を格納します。
-ms.openlocfilehash: 0c8177767d5c85d505ba8a2a430946fd29cf44aa
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 645272faca5afe580314039cfc66a88e66f0c359
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541877"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608530"
 ---
 # <a name="cell-element-connection-row-visio-xml"></a>Cell 要素 (Connection Row) (Visio XML)
 
@@ -70,7 +70,7 @@ ms.locfileid: "34541877"
 |DirX  <br/> |対応する接続ポイントに必要な整列ベクトルの x コンポーネントを指定します。  <br/> |[[DirX / A] セル ([Connection Points] セクション)](dirxa-cell-connection-points-section.md) <br/> |
 |DirY  <br/> |対応する接続ポイントに必要な整列ベクトルの y コンポーネントを指定します。  <br/> |[[DirY / B] セル ([Connection Points] セクション)](diryb-cell-connection-points-section.md) <br/> |
 |プロンプト  <br/> |この属性は、将来使用するために予約されています。  <br/> |なし。  <br/> |
-|型  <br/> |接続ポイントの種類を指定します。  <br/> |[[Type / C] セル ([Connection Points] セクション)](typec-cell-connection-points-section.md) <br/> |
+|種類  <br/> |接続ポイントの種類を指定します。  <br/> |[[Type / C] セル ([Connection Points] セクション)](typec-cell-connection-points-section.md) <br/> |
 |X  <br/> |接続ポイントの x 座標をローカル座標で表します。  <br/> |[[X] セル ([Connection Points] セクション)](x-cell-connection-points-section.md) <br/> |
 |Y  <br/> |ローカル座標の接続点の y 座標を決定します。  <br/> |[[Y] セル ([Connection Points] セクション)](y-cell-connection-points-section.md) <br/> |
    

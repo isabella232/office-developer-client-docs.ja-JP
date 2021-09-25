@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197067(v=office.15)
 ms:contentKeyID: 48546153
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: fc60e36abbb353a178864b488a738fcf3247e1a1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: afa1880b97c2e5442f8c9833640e3ca8c001dd0e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306973"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601920"
 ---
 # <a name="relations-collection-dao"></a>Relations コレクション (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **Relations** コレクションには、 **Database** オブジェクトの、格納された **Relation** オブジェクトが含まれます (Microsoft Access データベース エンジンのデータベースのみ)。
 
@@ -29,9 +29,9 @@ ms.locfileid: "32306973"
 
 **Relations**(0)
 
-**関係**("name")
+**リレーション**("name")
 
-****\!リレーション\[名\]
+ \! リレーション \[name\]
 
 ## <a name="example"></a>例
 
@@ -96,7 +96,7 @@ ms.locfileid: "32306973"
 
 <br/>
 
-次の使用例は、 **CreateRelation** メソッドを使用して、Employees テーブルの **TableDef** オブジェクトと Departments と呼ばれる新しい **TableDef** オブジェクトの間に **Relation** オブジェクトを作成します。 また、新しい**リレーション**を作成することで、必要な**インデックス**が外部テーブル (Employees テーブルの DepartmentsEmployees インデックス) に作成されることも示します。
+次の使用例は、 **CreateRelation** メソッドを使用して、Employees テーブルの **TableDef** オブジェクトと Departments と呼ばれる新しい **TableDef** オブジェクトの間に **Relation** オブジェクトを作成します。 また、新しい Relation を作成すると、外部テーブル **(Employees** テーブルの DepartmentsEmployees インデックス) に必要なインデックスが作成される方法も示します。
 
 ```vb
     Sub CreateRelationX() 

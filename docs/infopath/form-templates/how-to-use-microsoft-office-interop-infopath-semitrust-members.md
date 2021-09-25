@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - infopath 2007 機能を使用した infopath 2003 互換フォーム テンプレート
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d082f3a3-387a-4db1-bbad-495c326b8ee3
 description: Microsoft によって提供されるオブジェクト モデル。Office.Interop.InfoPath.SemiTrust 名前空間には、Office InfoPath 2007 および InfoPath に追加された新しい機能を提供するオブジェクトとメンバーが含まれています。
-ms.openlocfilehash: 45f7607aec8ccfd653780a550df0823730835a86
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f4986a89a07295014aae9e29797ddb0fe1bc94af
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415342"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584879"
 ---
 # <a name="use-microsoftofficeinteropinfopathsemitrust-members-not-compatible-with-infopath"></a>Microsoft を使用します。Office.Interop.InfoPath.SemiTrust メンバーは InfoPath と互換性がありません
 

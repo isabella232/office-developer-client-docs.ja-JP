@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidFax3OriginalEntryId
 api_type:
 - COM
 ms.assetid: afccacf1-0b8b-410c-b701-bf1bd8dcca99
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2a77ab1fcebd729f6463a3480f1b217cd6e6041c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ac7e6d8e9a2dbdf638f674c67a85a34dfe9aa79b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355875"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566935"
 ---
 # <a name="pidlidfax3originalentryid-canonical-property"></a>PidLidFax3OriginalEntryId 標準プロパティ
 
@@ -45,7 +45,7 @@ ms.locfileid: "32355875"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様Exchange Server提供します。
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   

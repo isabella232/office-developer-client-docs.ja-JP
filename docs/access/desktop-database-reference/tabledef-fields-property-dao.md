@@ -1,5 +1,5 @@
 ---
-title: TableDef プロパティ (DAO)
+title: TableDef.Fields プロパティ (DAO)
 TOCTitle: Fields Property
 ms:assetid: ca85be33-c872-309d-b1f0-d1ffb6951547
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834348(v=office.15)
@@ -10,24 +10,24 @@ f1_keywords:
 - dao360.chm1052902
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: e4e9ab3fc79ff4684da37d7c108891b90c5e71d8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 973d9678f6a1d1969ed101cefe87e48f9f83d05e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308401"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585201"
 ---
-# <a name="tabledeffields-property-dao"></a>TableDef プロパティ (DAO)
+# <a name="tabledeffields-property-dao"></a>TableDef.Fields プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
 
-指定されたオブジェクト用に保存されているすべての **Field** オブジェクトを表す **Fields** コレクションを取得します。 読み取り専用です。
+指定されたオブジェクト用に保存されているすべての **Field** オブジェクトを表す **Fields** コレクションを取得します。値の取得のみ可能です。  
 
 ## <a name="syntax"></a>構文
 
-*式*。項目
+*式* .フィールド
 
-*式***TableDef**オブジェクトを表す変数を取得します。
+*式***TableDef** オブジェクトを表す変数。
 

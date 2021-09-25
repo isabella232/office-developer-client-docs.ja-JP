@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 09/23/2016
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1a8bbe0c-17d1-9349-4c63-f257faf4edda
 description: ユーザーのデータの空き時間情報ブロックの列挙の事前設定された時間範囲を取得します。
-ms.openlocfilehash: 26951ea6a885f8d0e5e6a2fb5bcf9a63069c7f44
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2480d781d5889515cbfe91c53a08a43436ed1d48
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430078"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614457"
 ---
 # <a name="ifreebusydatagetfbpublishrange"></a>IFreeBusyData::GetFBPublishRange
 

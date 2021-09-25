@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249325(v=office.15)
 ms:contentKeyID: 48545087
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0dec30715d1eb4e31d7490db4cedd015ecf3c040
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ffb7d6990c19dd0abb0efc572eadb95bdfb7f9c0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294471"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558465"
 ---
 # <a name="datasource-property-ado"></a>DataSource プロパティ (ADO)
 
@@ -23,7 +23,7 @@ ms.locfileid: "32294471"
 
 ## <a name="remarks"></a>注釈
 
-This property is used to create data-bound controls with the Data Environment. データ環境には、 **Recordset**オブジェクトとして表される名前付きオブジェクト (*データメンバー*) を含むデータのコレクション (データソース) が保持されて*います。*
+This property is used to create data-bound controls with the Data Environment. Data Environment は、Recordset オブジェクトとして表される名前付きオブジェクト *(データ* メンバー) を含むデータ (データ ソース) のコレクション **を保持** します *。*
 
 [DataMember](datamember-property-ado.md) プロパティと **DataSource** プロパティは組み合わせて使用する必要があります。
 

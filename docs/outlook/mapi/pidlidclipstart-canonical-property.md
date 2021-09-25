@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidClipStart
 api_type:
 - COM
 ms.assetid: d348988d-a84e-4318-8d48-62e4982ebaf1
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4a466b31b5411b1c0467896c031c6560d6c5c880
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: aa609bce3f6d74e31f47bc18b97b99dd2a1bc30b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349246"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575219"
 ---
 # <a name="pidlidclipstart-canonical-property"></a>PidLidClipStart 標準プロパティ
 
@@ -33,7 +33,7 @@ ms.locfileid: "32349246"
 |プロパティ セット:  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008235  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|エリア:  <br/> |カレンダー  <br/> |
+|エリア:  <br/> |予定表  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192304(v=office.15)
 ms:contentKeyID: 48544077
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1175e3903e54fd3420be43dfd9e3652d9990468b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1af4ce2684caec80d4cb8bb163ff9f824c5ce54f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289157"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558262"
 ---
 # <a name="messagebox-macro-action"></a>MessageBox マクロ アクション
 
@@ -20,7 +20,7 @@ ms.locfileid: "32289157"
 
 " **MessageBox/メッセージボックス** " アクションを使用すると、警告または情報メッセージが含まれるメッセージ ボックスを表示できます。たとえば、" **MessageBox/メッセージボックス** " アクションは入力検査マクロで使用できます。コントロールまたはレコードがマクロの入力検査の条件に適合しない場合は、メッセージ ボックスが表示され、エラー メッセージと入力できるデータの種類に関する説明が示されます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 **MessageBox/メッセージボックス** アクションの引数は次のとおりです。
 
@@ -45,12 +45,12 @@ ms.locfileid: "32289157"
 <td><p>メッセージが表示されるときにコンピューターのスピーカーから警告音を鳴らすかどうかを指定します。[<strong>はい</strong>] (警告音を鳴らす) または [<strong>いいえ</strong>] (警告音を鳴らさない) をクリックします。既定値は [<strong>はい</strong>] です。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Type</strong></p></td>
-<td><p>メッセージ ボックスの種類を指定します。 種類ごとにアイコンが異なります。 [<strong>なし</strong>]、[<strong>警告</strong>]、[<strong>注意?</strong>]、[<strong>注意!</strong>]、または [<strong>情報</strong>] をクリックします。 既定値は [<strong>なし</strong>] です。</p></td>
+<td><p><strong>種類</strong></p></td>
+<td><p>メッセージ ボックスの種類を指定します。種類ごとにアイコンが異なります。[<strong>なし</strong>]、[<strong>警告</strong>]、[<strong>注意?</strong>]、[<strong>注意!</strong>]、または [<strong>情報</strong>] をクリックします。既定値は [<strong>なし</strong>] です。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Title</strong></p></td>
-<td><p>メッセージ ボックスのタイトル バーに表示されるテキストです。 たとえば、タイトルバーに顧客 ID の検証&quot;&quot;を表示させることができます。 この引数を空白のままに&quot;すると&quot; 、Microsoft access が表示されます。</p></td>
+<td><p>メッセージ ボックスのタイトル バーに表示されるテキストです。 たとえば、タイトル バーに [顧客 ID 検証] &quot; を表示できます &quot; 。 この引数を空白のままにすると &quot; 、Microsoft Access が &quot; 表示されます。</p></td>
 </tr>
 </tbody>
 </table>
@@ -64,9 +64,9 @@ ms.locfileid: "32289157"
 
 " **Message/メッセージ** " 引数に次の文字列を入力します。
 
-**ボタンが\!正しくない @This ボタンが機能しません。別のボタンを @Try。**
+**[間 \! 違@This] ボタンが別work.@Try表示されます。**
 
-Visual Basic for Applications (VBA) モジュールでは " **MessageBox/メッセージボックス** " アクションを実行することはできません。 代わりに **MsgBox** 関数を使用します。
+Visual Basic for Applications (VBA) モジュールでは " **MessageBox/メッセージボックス** " アクションを実行することはできません。代わりに **MsgBox** 関数を使用します。
 
 ## <a name="examples"></a>例
 
@@ -86,20 +86,20 @@ Visual Basic for Applications (VBA) モジュールでは " **MessageBox/メッ�
 <th><p>条件</p></th>
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>Comment</p></th>
+<th><p>コメント</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>Echo</strong></p></td>
-<td><p><strong>Echo On/エコーの設定</strong>: <strong>No/いいえ</strong></p></td>
-<td><p>画面の更新は停止しますが、マクロは実行されています。</p></td>
+<td><p><strong>Echo On/エコーの設定</strong>: <strong>いいえ</strong></p></td>
+<td><p>マクロの実行中に画面の更新を停止します。</p></td>
 </tr>
 <tr class="even">
-<td><p>IsNull ([仕入先コード])</p></td>
+<td><p>IsNull([SupplierID])</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Message/メッセージ</strong>: 表示する商品を扱う仕入先のレコードに移動し、[商品の参照] ボタンを再度クリックします。 <strong>Beep</strong>: <strong>yestype</strong>: <strong>none title</strong>: 仕入先の選択</p></td>
+<td><p><strong>Message/メッセージ</strong>: 表示する商品を扱う仕入先のレコードに移動し、[商品の参照] ボタンを再度クリックします。 <strong>Beep</strong>: <strong>YesType</strong>: <strong>NoneTitle</strong>: サプライヤーの選択</p></td>
 <td><p>[仕入先] フォームに現在の仕入先が存在しない場合、メッセージを表示します。</p></td>
 </tr>
 <tr class="odd">
@@ -117,13 +117,13 @@ Visual Basic for Applications (VBA) モジュールでは " **MessageBox/メッ�
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>OpenForm</strong></p></td>
-<td><p><strong>フォーム名</strong>: 製品リスト<strong>ビュー</strong>: <strong>DatasheetFilter Name</strong>: <strong>Where Condition</strong>: [仕入先コード] = [Forms]![仕入先]!SupplierID<strong>データモード</strong>:<strong>読み取りのみウィンドウモード</strong>:<strong>標準</strong></p></td>
+<td><p><strong>フォーム名</strong>: 製品一 <strong>覧ビュー</strong>: <strong>データシートフィルター名</strong>: <strong>条件</strong>: [SupplierID] = [Forms]![サプライヤー]![SupplierID] <strong>データ モード</strong>: <strong>読み取り専用Window モード</strong>: <strong>標準</strong></p></td>
 <td><p>[製品リスト] フォームを開き、現在の仕入先の製品を表示します。</p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p><strong>MoveAndSizeWindow</strong></p></td>
-<td><p><strong>Right</strong>: 0.7799&quot; <strong>Down</strong>: 1.8&quot;</p></td>
+<td><p><strong>右</strong>: 0.7799 &quot; <strong>Down</strong>: 1.8&quot;</p></td>
 <td><p>[製品リスト] を [仕入先] フォームの右下に配置します。</p></td>
 </tr>
 </tbody>
@@ -146,20 +146,20 @@ Visual Basic for Applications (VBA) モジュールでは " **MessageBox/メッ�
 <th><p>条件</p></th>
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>Comment</p></th>
+<th><p>コメント</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>IsNull ([都道府県])</p></td>
+<td><p>IsNull([CountryRegion])</p></td>
 <td><p><strong>StopMacro</strong></p></td>
 <td><p></p></td>
 <td><p>[都道府県] の値が <strong>Null</strong> の場合は、郵便番号を検証できません。</p></td>
 </tr>
 <tr class="even">
-<td><p>地域In (&quot;フランス&quot;、&quot;イタリア&quot;、&quot;スペイン&quot;) および Len ([郵便番号] &lt; &gt; ) 5</p></td>
+<td><p>[CountryRegion]In ( &quot; France , Italy , Spain ) and &quot; &quot; &quot; &quot; &quot; Len([PostalCode]) &lt; &gt; 5</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Message/メッセージ</strong>: 郵便番号は 7 文字である必要があります。 <strong>Beep</strong>: <strong>yestype</strong>: 情報<strong>タイトル</strong>: 郵便番号のエラー</p></td>
+<td><p><strong>Message/メッセージ</strong>: 郵便番号は 7 文字である必要があります。 <strong>Beep</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: 郵便番号エラー</p></td>
 <td><p>郵便番号が 7 文字でない場合にメッセージを表示します。</p></td>
 </tr>
 <tr class="odd">
@@ -175,9 +175,9 @@ Visual Basic for Applications (VBA) モジュールでは " **MessageBox/メッ�
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>地域In (&quot;オーストラリア&quot;、&quot;シンガポール&quot;) および Len ([郵便番号] &lt; &gt; ) 4</p></td>
+<td><p>[CountryRegion]In ( &quot; Australia , Singapore ) and &quot; &quot; &quot; Len([PostalCode]) &lt; &gt; 4</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Message/メッセージ</strong>: 郵便番号は 7 文字である必要があります。 <strong>Beep</strong>: <strong>yestype</strong>: 情報<strong>タイトル</strong>: 郵便番号のエラー</p></td>
+<td><p><strong>Message/メッセージ</strong>: 郵便番号は 7 文字である必要があります。 <strong>Beep</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: 郵便番号エラー</p></td>
 <td><p>郵便番号が 7 文字でない場合にメッセージを表示します。</p></td>
 </tr>
 <tr class="even">
@@ -193,9 +193,9 @@ Visual Basic for Applications (VBA) モジュールでは " **MessageBox/メッ�
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>([都道府県] = &quot;カナダ&quot;)And ([郵便番号]&quot;[0-9] [0-9] [0-9] [0-9] [0-9]&quot;)。</p></td>
+<td><p>([CountryRegion] = &quot;カナダ &quot; ) と ([PostalCode] Not Like &quot; [A-Z][0-9][A-Z] [0-9][A-Z][0-9] &quot; )</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Message</strong>: 郵便番号が無効です。 カナダコードの例: H1J 1c3 <strong>Beep</strong>: <strong>yestype</strong>: <strong>informationtitle</strong>: 郵便番号エラー</p></td>
+<td><p><strong>メッセージ</strong>: 郵便番号が無効です。 カナダのコードの例: H1J 1C3 <strong>ビー</strong>プ音 : <strong>YesType</strong>: <strong>InformationTitle</strong>: 郵便番号エラー</p></td>
 <td><p>[都道府県] が広島県で、郵便番号の上 3 桁が 720 ～ 739 でない場合にメッセージを表示します。</p></td>
 </tr>
 <tr class="odd">

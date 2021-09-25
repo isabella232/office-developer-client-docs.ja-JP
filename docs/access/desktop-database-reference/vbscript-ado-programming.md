@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249019(v=office.15)
 ms:contentKeyID: 48543764
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4aff2c8b3394321367851ad82e4e7efe98badff8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 781019e44248866f6926e58bb3f75e9b044c4e4e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306028"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593307"
 ---
 # <a name="vbscript-ado-programming"></a>VBScript ADO プログラミング
 
 
-**適用先:** Access 2013、Office 2013 
+**適用先**: Access 2013、Office 2013 
 
 ## <a name="creating-an-ado-project"></a>ADO プロジェクトの作成
 
@@ -25,11 +25,11 @@ Microsoft Visual Basic Scripting Edition では、タイプ ライブラリを�
 
 ただし、ADO では、VBScript 用の次の定義を納めた 2 つのインクルード ファイルを用意しています。
 
-  - サーバー側スクリプトでは adovbs.inc を使用します。これは、既定で c\\: Program\\Files Common\\Files\\System\\ ado フォルダーにインストールされます。
+  - サーバー側スクリプトでは、既定で c: Program Files Common Files System ado フォルダーにインストールされている Adovbs.inc \\ \\ \\ \\ \\ を使用します。
 
-  - クライアント側スクリプトの場合、adcvbs を使用します。これは、既定で\\c:\\Program Files\\Common\\Files System\\ msdac フォルダーにインストールされます。
+  - クライアント側スクリプトでは、既定で c: Program Files Common Files System msdac フォルダーにインストールされている Adcvbs.inc \\ \\ \\ \\ \\ を使用します。
 
-定数定義は、これらのファイルから ASP ページにコピーして貼り付けるか、またはサーバー側スクリプトを実行している場合は、adovbs.inc ファイルを web サイト上のフォルダーにコピーして、次のように asp ページから参照します。
+これらのファイルから定数定義をコピーして ASP ページに貼り付けるか、サーバー側スクリプトを実行している場合は、Adovbs.inc ファイルを Web サイトのフォルダーにコピーし、ASP ページから参照します。
 
 ```vb 
  
@@ -76,7 +76,7 @@ Response.Write("Success!")
 </HTML> 
 ```
 
-VBScript のより具体的な例については、ADO のマニュアルを参照してください。 詳細については、「 [Microsoft Visual Basic Scripting Edition での ADO コードの例](ado-code-examples-in-microsoft-visual-basic-scripting-edition.md)」を参照してください。
+VBScript のより具体的な例については、ADO のマニュアルを参照してください。 詳細については[、「Microsoft Visual Basic Scripting Edition の ADO コード例」を参照してください](ado-code-examples-in-microsoft-visual-basic-scripting-edition.md)。
 
 ## <a name="differences-between-vbscript-and-visual-basic"></a>VBScript と Visual Basic の違い
 
@@ -84,7 +84,7 @@ VBScript のより具体的な例については、ADO のマニュアルを参�
 
 - VBScript は、さまざまな種類のデータを格納できるバリアント型 (Variant) だけをサポートしています。バリアント データ型で必要なデータを保存しても、そのデータは VBScript によってキャストされるので正しく機能します。VBScript は ADO に必要な型を認識し、値をバリアント型に変換します。
 
-- VBScript 内で`on error goto <label>`は使用できません。
+- `on error goto <label>`VBScript 内では使用できません。
 
 - VBScript は、 **Msgbox** 、 **Date** 、および **IsNumeric** などの組み込み Visual Basic 関数をサポートしています。ただし、VBScript は Visual Basic のサブセットなので、すべての組み込み関数をサポートしているわけではありません。たとえば、VBScript は **Format** 関数とファイル入出力関数はサポートしていません。
 

@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249438(v=office.15)
 ms:contentKeyID: 48545518
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5dc6035569abd42cd6a5f4ce44fcf0da550bf809
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 53810b9737970ab270acb470e0fc5842833158ab
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314470"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585243"
 ---
 # <a name="supports-method-example-vb"></a>Supports メソッドの使用例 (VB)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例は、[Supports](supports-method-ado.md) メソッドを使用して、各種カーソルで開かれたレコードセットによりサポートされるオプションを表示します。このプロシージャを実行するには、DisplaySupport プロシージャが必要です。
 

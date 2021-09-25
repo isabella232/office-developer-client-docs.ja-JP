@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249065(v=office.15)
 ms:contentKeyID: 48543938
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4585679688929532d7f50be9efc71b2830bb6587
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f5b72c3e801ce746f406685f27cbeccd481d3925
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296627"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558609"
 ---
 # <a name="cancelupdate-method-ado"></a>CancelUpdate メソッド (ADO)
 
@@ -23,9 +23,9 @@ ms.locfileid: "32296627"
 
 ## <a name="syntax"></a>構文
 
-*recordset*。CancelUpdate
+*recordset*.CancelUpdate
 
-*レコード*。*フィールド*。CancelUpdate
+*record*.*フィールド*。CancelUpdate
 
 ## <a name="remarks"></a>注釈
 

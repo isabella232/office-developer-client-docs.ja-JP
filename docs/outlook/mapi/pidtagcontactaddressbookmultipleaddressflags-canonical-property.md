@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagContactAddressBookMultipleAddressFlags
 api_type:
 - HeaderDef
 ms.assetid: ed3bc585-13f6-46a5-9e71-9c8513ddfc0a
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: ecd795490d953f1aa237dfbd77585ba79c8b3234
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 72cf1ee919ce9bc49792712f9e0b441d23f1ae01
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429251"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566844"
 ---
 # <a name="pidtagcontactaddressbookmultipleaddressflags-canonical-property"></a>PidTagContactAddressBookMultipleAddressFlags 標準プロパティ
 

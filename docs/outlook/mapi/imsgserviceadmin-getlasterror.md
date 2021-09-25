@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMsgServiceAdmin.GetLastError
 api_type:
 - COM
 ms.assetid: 9e3c8d6e-74be-46a7-94ed-74a969caf165
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 302aebd0be78c833acf4f82d2bb815ba46ae6f77
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3189e5adedbcc04693b911315f0569916bba6321
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412143"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575632"
 ---
 # <a name="imsgserviceadmingetlasterror"></a>IMsgServiceAdmin::GetLastError
 

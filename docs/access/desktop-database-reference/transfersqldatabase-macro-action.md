@@ -10,24 +10,24 @@ f1_keywords:
 - vbaac10.chm111536
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 5ed20555726d0a6f63f0e48fb154cedb411ef8cd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 645dc3b4f098be2cd3f758c216c5606dff3ba9b9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306847"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593433"
 ---
 # <a name="transfersqldatabase-macro-action"></a>TransferSQLDatabase マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-In an Access project, you can use the **TransferSQLDatabase** action to transfer a Microsoft SQL Server 7.0 or later database to another SQL Server 7.0 or later database. データベースの転送の詳細については、SQL Server のドキュメントを参照してください。
+In an Access project, you can use the **TransferSQLDatabase** action to transfer a Microsoft SQL Server 7.0 or later database to another SQL Server 7.0 or later database. データベースの転送の詳細については、次のドキュメントSQL Serverしてください。
 
 > [!NOTE]
 > このアクションは、データベースが信頼されていない場合には許可されません。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 "TransferSQLDatabase/SQLデータベースの転送" アクションの引数は次のとおりです。
 
@@ -53,7 +53,7 @@ In an Access project, you can use the **TransferSQLDatabase** action to transfer
 </tr>
 <tr class="odd">
 <td><p><strong>Use Trusted Connection/セキュリティ接続を使用する</strong></p></td>
-<td><p>SQL Server への信頼された接続があるかどうかを指定します。 <strong>[はい]</strong>に設定すると、信頼された接続があり、 <strong>Login</strong>および<strong>Password</strong>引数は必須ではありません。 <strong>No</strong>に設定されている場合、 <strong>Login</strong>および<strong>Password</strong>引数は必須です。 既定値は [ <strong>はい</strong>] です。 信頼された接続を使用すると、SQL Server のセキュリティが Windows オペレーティングシステムのセキュリティと統合され、ネットワークおよびデータベースに対して単一のログオンが提供されます。</p></td>
+<td><p>アプリケーションへの信頼できる接続が確立されているかどうかを指定SQL Server。 [はい <strong>] に設定</strong>すると、信頼できる接続が確立され <strong>、Login</strong> 引数と <strong>Password</strong> 引数は必要ありません。 [いいえ]<strong>に設定すると</strong><strong>、Login 引数と</strong> <strong>Password</strong>引数が必要になります。 既定値は [ <strong>はい</strong>] です。 信頼できる接続を使用する場合、SQL Server セキュリティは Windows オペレーティング システム のセキュリティと統合され、ネットワークとデータベースに 1 つのログオンを提供します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ログイン</strong></p></td>

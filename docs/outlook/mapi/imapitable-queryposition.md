@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPITable.QueryPosition
 api_type:
 - COM
 ms.assetid: 510b2e21-ba27-47dd-87cb-2a549e31fa28
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 2e44d824bbb5cc96c51d7ca91eb639001bc52a71
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 856b1f1ee17d776f5d1dfab1c87937fbd8f378f6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415664"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575772"
 ---
 # <a name="imapitablequeryposition"></a>IMAPITable::QueryPosition
 

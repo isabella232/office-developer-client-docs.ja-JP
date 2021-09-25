@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 265028b7-a583-f6ba-0214-5a4322f98f35
 description: IOlkApptRebaser オブジェクトを初期化して、予定表の予定を再Outlookします。
-ms.openlocfilehash: 33ad47d59ee2ca1b2461f730494f3466b9f8b54a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8c9b8e2081904f9e37916a13b904d1595fc108a1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317613"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592782"
 ---
 # <a name="hrcreateapptrebaser"></a>HrCreateApptRebaser
 
@@ -120,7 +120,7 @@ _ppApptRebase_
 
 [GetProcAddress](https://msdn.microsoft.com/library/a0d7fc09-f888-4f46-a571-d3719a627597%28Office.15%29.aspx)を使用してこの関数のアドレスを検索する場合は **tzmovelib.dllプロシージャHrCreateApptRebaser@44** として指定します。 すべてのフラグが互いに組み合わせて有効な場合ではありません。 
   
-さまざまなオプションの詳細については、KB [931667](https://support.microsoft.com/kb/931667/en-us)の「Outlook タイム ゾーン データ更新ツールのコマンド ライン オプションの用語集」を参照してください。Microsoft Office Outlook のタイム ゾーン データ更新ツールを使用してタイム ゾーンの変更に対処する方法。
+さまざまなオプションの詳細については、「kb 931667: Microsoft Office Outlook のタイム ゾーン データ更新ツールを使用してタイム ゾーンの変更に対処する方法」のセクション「Outlook タイム ゾーン データ更新ツールのコマンド ライン オプションの用語集」を[参照](https://support.microsoft.com/kb/931667/en-us)してください。
   
 ## <a name="see-also"></a>関連項目
 

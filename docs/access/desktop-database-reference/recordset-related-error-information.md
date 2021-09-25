@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249136(v=office.15)
 ms:contentKeyID: 48544222
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 12a67657d5543aac22a49690256b0410a2b901bd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7947eecd4d639279d05c875774d7d2c28a0b43f9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307617"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602067"
 ---
 # <a name="recordset-related-error-information"></a>レコードセットに関連するエラー情報
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 バッチ処理中に、 **Recordset** オブジェクトの **Status** プロパティにより、 **Recordset** 内の個別のレコードに関する情報が表示されます。 バッチ更新が行われる前に、 **Recordset** の **Status** プロパティには、追加、変更、および削除されるレコードに関する情報が反映されます。 
 

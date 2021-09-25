@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - previewing form templates [infopath 2007],debugging form templates [InfoPath 2007],form templates [InfoPath 2007], previewing,debugging [InfoPath 2007], managed-code form templates,form templates [InfoPath 2007], debugging,InfoPath 2007, debugging form templates,InfoPath 2007, previewing form templates
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c8387f1c-b34c-490e-8bf9-d824bf98d826
 description: Microsoft InfoPath (Visual Studio 2012 インストール済み) では、フォーム コードをプレビュー モードで実行してデバッグすることができます。フォーム コードのデバッグを開始すると、プロジェクトがコンパイルされて、InfoPath の [プレビュー] ウィンドウにフォームが表示されます。ブレークポイントが設定されたコード行が見つかるとコード エディターにフォーカスが移動し、ブレークポイントを過ぎると [プレビュー] ウィンドウにフォーカスが戻ります。[プレビュー] ウィンドウを閉じるとデバッグが停止します。
-ms.openlocfilehash: 8f9ff97fdd5b4b016d96129304fa6f994d7b4561
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 186d4db9bad84788cceeb7d0d8c2b677a0d09414
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405241"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584886"
 ---
 # <a name="preview-and-debug-infopath-form-templates-with-code"></a>コードを含む InfoPath フォーム テンプレートをプレビューおよびデバッグする
 

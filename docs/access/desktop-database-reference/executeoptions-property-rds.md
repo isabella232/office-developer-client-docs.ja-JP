@@ -1,27 +1,27 @@
 ---
-title: executeoptions プロパティ (RDS)
+title: ExecuteOptions プロパティ (RDS)
 TOCTitle: ExecuteOptions property (RDS)
 ms:assetid: fb244cbd-9a03-9128-1373-694c9061c9da
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250285(v=office.15)
 ms:contentKeyID: 48548864
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9cf773090ccb37bf4cad4aff41499ad01f966479
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c316893e29856169b4176ef5f1f5f3fc11e78178
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293253"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558374"
 ---
-# <a name="executeoptions-property-rds"></a>executeoptions プロパティ (RDS)
+# <a name="executeoptions-property-rds"></a>ExecuteOptions プロパティ (RDS)
 
 
 **適用先:** Access 2013、Office 2013
 
 非同期実行が有効かどうかを示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
 次のいずれかの値を設定または取得します。
 
@@ -38,12 +38,12 @@ ms.locfileid: "32293253"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adcexecsync</strong></p></td>
+<td><p><strong>adcExecSync</strong></p></td>
 <td><p>次回の <a href="recordset-object-ado.md">Recordset</a> の更新を同期的に実行します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adcExecAsync</strong></p></td>
-<td><p>既定値です。 次回の <strong>Recordset</strong> の更新を非同期的に実行します。</p></td>
+<td><p>既定値です。次回の <strong>Recordset</strong> の更新を非同期的に実行します。</p></td>
 </tr>
 </tbody>
 </table>

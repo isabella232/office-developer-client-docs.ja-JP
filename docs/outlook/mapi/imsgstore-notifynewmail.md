@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMsgStore.NotifyNewMail
 api_type:
 - COM
 ms.assetid: d0d003b0-f12f-4422-b71f-26886169461f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a8ec06fd0401a129e08a06acdb1c18785f90d4a0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ddc2af722a6cf0535236a2b78d5c01488973bfb0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431779"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575687"
 ---
 # <a name="imsgstorenotifynewmail"></a>IMsgStore::NotifyNewMail
 
