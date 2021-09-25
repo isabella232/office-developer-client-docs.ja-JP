@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMsgStore.Advise
 api_type:
 - COM
 ms.assetid: 8c57e743-a798-4e39-a61a-46dff8b1ac7c
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3b4abef731541e308b2c2ebc6f4aaddf4458e257
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4dc842416200ae6a65011e994689e2792642750c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317326"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564107"
 ---
 # <a name="imsgstoreadvise"></a>IMsgStore::Advise
 

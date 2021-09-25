@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e3835fc6-0ae6-b8c3-b1d0-bf893d4a9470
 description: ユーザーが LockSelect 要素が 1 に設定されている図形を選択しないかどうかを指定します。
-ms.openlocfilehash: f022c5a0be37f18c0cf0c10dbf18e6a90065e911
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 0fff9ac9b1b1a9f6edde698ff7f8ac264c9f9ef6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540666"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573685"
 ---
 # <a name="protectshapes-element-documentsettings_type-complextype-visio-xml"></a>ProtectShapes 要素 (DocumentSettings_Type complexType) (Visio XML)
 

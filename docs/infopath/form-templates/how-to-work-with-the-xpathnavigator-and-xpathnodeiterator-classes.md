@@ -5,15 +5,15 @@ ms.date: 12/07/2015
 ms.audience: Developer
 keywords:
 - xpathnodeiterator class [infopath 2007],XPathNavigator class [InfoPath 2007],form XML data [InfoPath 2007], accessing,XML DOM [InfoPath 2007],converting MSXML5 script [InfoPath 2007],MSXML5 script [InfoPath 2007], converting
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 72fb3ee5-f18e-4f9c-adc6-698ac037b79d
 description: フォーム テンプレートのデータ ソースの XML データにアクセスして操作するには、Microsoft.Office.InfoPath 名前空間によって提供されるマネージ コード オブジェクト モデルの多くのメンバーは、System.Xml.XPath 名前空間の XPathNavigator クラスのインスタンスを作成するか、そのインスタンスが渡されます。InfoPath オブジェクト モデルのメンバーから返される XPathNavigator オブジェクトにアクセスした後、XPathNavigator クラスのプロパティとメソッドを使用してデータを操作できます。
-ms.openlocfilehash: f34f2e1a1cbdb8d9e389c864a9b979be20726e6b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 498b2a1a8595bca56304809e4f71ce9478d96703
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303550"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580539"
 ---
 # <a name="work-with-the-xpathnavigator-and-xpathnodeiterator-classes"></a>XPathNavigator クラスおよび XPathNodeIterator クラスを操作する
 

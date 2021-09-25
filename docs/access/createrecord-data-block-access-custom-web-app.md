@@ -3,15 +3,15 @@ title: CreateRecord Data Block (Access custom Web app)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9dd73bae-a8d5-4d8b-b356-01ac72f7e5d9
 description: CreateRecord データ ブロックを使用して、指定したテーブルに新しいレコードを作成できます。
-ms.openlocfilehash: d89b62180dbe50a0c7dab862b70062a47558c25a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7d604d80f1ba71c975151a9a46f38b3995c64bae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421376"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573363"
 ---
 # <a name="createrecord-data-block-access-custom-web-app"></a>CreateRecord Data Block (Access custom Web app)
 
@@ -23,7 +23,7 @@ You can use the **CreateRecord** data block to create a new record in the specif
 > [!NOTE]
 > **CreateRecord** データ ブロックはデータ マクロでのみ使用できます。 
   
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 **CreateRecord** データ ブロックの引数は次のとおりです。 
   
@@ -31,7 +31,7 @@ You can use the **CreateRecord** data block to create a new record in the specif
   
 |**引数名**|**必須**|**説明**|
 |:-----|:-----|:-----|
-|**Create a Record In**/レコードの作成先 <br/> |はい  <br/> |新しいレコードを作成するテーブルの名前。  <br/> |
+|**Create a Record In**/レコードの作成先 <br/> |必要  <br/> |新しいレコードを作成するテーブルの名前。  <br/> |
 |**Alias** <br/> |いいえ  <br/> |レコードを識別する文字列。レコードの別名を使用できます。  <br/> |
    
 ## <a name="remarks"></a>注釈

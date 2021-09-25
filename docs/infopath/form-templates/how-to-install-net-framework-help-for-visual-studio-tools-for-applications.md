@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - アプリケーション用 visual studio ツール、.net framework ヘルプのインストール、VSTA、.NET Framework ヘルプのインストール、.NET Framework ヘルプのインストール [InfoPath 2007]、InfoPath 2007、.NET Framework ヘルプのインストール
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 69b293ac-8ddf-4ba6-92c8-37ed51358232
 description: .NET Framework 2.0 SDK ドキュメントのローカル コピーをダウンロードしてインストールし、そのドキュメントを Visual Studio 2012 の開発環境に統合するために必要な手順を実行します。
-ms.openlocfilehash: 9a9bad10e6e2fb585a8d134be4097277ef1bfc64
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 59f2617a46f40e7376fceff02636d970511fb969
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300449"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580567"
 ---
 # <a name="install-local-net-framework-help-for-visual-studio-tools-for-applications"></a>Visual Studio Tools for Applications の .NET Framework ヘルプをローカルにインストールする
 

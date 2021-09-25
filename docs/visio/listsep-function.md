@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251882
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 73dc5981-2c8c-e76e-e4bd-e65a7c8db242
 description: 現在のユーザー ロケールのリスト区切り文字列を返します。
-ms.openlocfilehash: 901442a3c2af8509855b8b038057e7f813634ea1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5538d8e101ceffe86d33cd4a2e334789203840bc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431408"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574007"
 ---
 # <a name="listsep-function"></a>LISTSEP 関数
 

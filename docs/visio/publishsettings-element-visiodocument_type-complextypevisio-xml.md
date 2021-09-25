@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d0a41494-ffad-c56c-2074-135b3d0bffb9
 description: 2013 年 2013 年に Visio サービスを使用してダイアグラムを開Microsoft SharePoint Serverします。
-ms.openlocfilehash: 611dfe477228995bca6aedff27b468a2d57e7e85
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 2635b16c851e88909e7714a6bf048eabcc2d2d9a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541359"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573664"
 ---
 # <a name="publishsettings-element-visiodocument_type-complextype-visio-xml"></a>PublishSettings 要素 (VisioDocument_Type complexType) (Visio XML)
 

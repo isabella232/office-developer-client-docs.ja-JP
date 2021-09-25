@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1027314
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 910f0297-d588-2048-f308-03f3c2389bba
 description: 指定した文字数に基づいて、テキスト文字列の最後の文字または文字を返します。
-ms.openlocfilehash: faf14ef55b34e51bac11129d6857e381d07357c7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4b4a2cb68f6e15989fade7088e887f852ac4eee8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411457"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573517"
 ---
 # <a name="right-function-visioshapesheet"></a>RIGHT 関数 (VisioShapeSheet)
 
@@ -29,7 +29,7 @@ RIGHT(** *text* ** [, ** *num_chars_opt* ** ])
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _text_ <br/> |必須  <br/> |**String** <br/> | 抽出する文字を含む文字列を指定します。  <br/> |
-| _num_chars_opt_ <br/> |省略可能  <br/> |**数値** <br/> |抽出する文字数を指定します。既定値は 1 です。  <br/> |
+| _num_chars_opt_ <br/> |オプション  <br/> |**数値** <br/> |抽出する文字数を指定します。既定値は 1 です。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

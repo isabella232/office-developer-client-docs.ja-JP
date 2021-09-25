@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251489
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f6b9f65c-6752-16cb-7eb1-44e1ce56e80b
 description: ドキュメントのカラー パレット内のインデックスを表す値を返します。 赤、緑、青の各成分で色を指定します。各コンポーネントは、0 ~ 255 の範囲の数値、またはそのような数値に評価される式です。
-ms.openlocfilehash: 34f9c2f2043afe6144feba561e545dc7be35a5a2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9705d0e4c881a2d98e176a9982bbc7a95140755c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426304"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573524"
 ---
 # <a name="rgb-function-visioshapesheet"></a>RGB 関数 (VisioShapeSheet)
 
@@ -28,9 +28,9 @@ RGB(** *red* **, ** *green* **, ** *blue* ** )
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _red_ <br/> |必須  <br/> |**数値** <br/> |赤のコンポーネントを指定します。  <br/> |
-| _green_ <br/> |必須  <br/> |**数値** <br/> |緑のコンポーネントを指定します。  <br/> |
-| _blue_ <br/> |必須  <br/> |**Nmber** <br/> |青のコンポーネントを指定します。  <br/> |
+| _red_ <br/> |必須かどうか  <br/> |**数値** <br/> |赤のコンポーネントを指定します。  <br/> |
+| _green_ <br/> |必須かどうか  <br/> |**数値** <br/> |緑のコンポーネントを指定します。  <br/> |
+| _blue_ <br/> |必須かどうか  <br/> |**Nmber** <br/> |青のコンポーネントを指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
@@ -42,7 +42,7 @@ RGB(** *red* **, ** *green* **, ** *blue* ** )
   
 次の表は、標準色とその色に対する赤、緑、青コンポーネントの値の一覧です。
   
-|**色**|**赤の値**|**緑の値**|**青の値**|
+|**Color**|**赤の値**|**緑の値**|**青の値**|
 |:-----|:-----|:-----|:-----|
 |黒  <br/> |0  <br/> |0  <br/> |0  <br/> |
 |青  <br/> |0  <br/> |0  <br/> |255  <br/> |

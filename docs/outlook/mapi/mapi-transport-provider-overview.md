@@ -3,17 +3,17 @@ title: MAPI トランスポート プロバイダーの概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: b193e819-749e-4642-8afc-dbc47b17b617
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 20b03f7c52ec86d1fb554bf69c53947c3dda4f36
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 42c41bd3f09a62c940a9b8b598a7adcd7dfccf08
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404576"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556099"
 ---
 # <a name="mapi-transport-provider-overview"></a>MAPI トランスポート プロバイダーの概要
 

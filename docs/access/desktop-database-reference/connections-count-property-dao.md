@@ -1,20 +1,20 @@
 ---
-title: Count プロパティ (DAO)
+title: Connections.Count プロパティ (DAO)
 TOCTitle: Count Property
 ms:assetid: 9b2f0aaa-785a-7fe7-15c3-aea37fdacd12
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198023(v=office.15)
 ms:contentKeyID: 48546563
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a286bf992116dc4ddfa71a9be8231e70b717aaa3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f1c1d467ef3bdd2e05c710df31570c6af1b8fe8f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295759"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581729"
 ---
-# <a name="connectionscount-property-dao"></a>Count プロパティ (DAO)
+# <a name="connectionscount-property-dao"></a>Connections.Count プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -23,7 +23,7 @@ ms.locfileid: "32295759"
 
 ## <a name="syntax"></a>構文
 
-*式*。量
+*式* .Count
 
 *式*: **Connections** オブジェクトを表す変数。
 

@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - ソリューション [infopath 2007], オフライン,オフライン ソリューション [InfoPath 2007], InfoPath 2003 互換のフォーム テンプレート,InfoPath 2003 互換のフォーム テンプレート, オフライン ソリューション
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 634ccd8c-0b5f-4161-875c-0e546a517377
 description: InfoPath 2003 互換オブジェクト モデルに用意されている Application オブジェクトの MachineOnlineState プロパティを使用すると、ユーザーのコンピューターがネットワークに接続されているかどうかをフォーム コードで確認できます。
-ms.openlocfilehash: 452eb0d92b09dc0c3f9b2c247f7cda243dc8eb13
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5ac33120d3f88cdff0a0aa3eb8bdffe81962d095
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429244"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580574"
 ---
 # <a name="work-with-offline-solutions-using-the-infopath-object-model"></a>InfoPath オブジェクト モデルを使用してオフライン ソリューションを操作する
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidTaskAssigner
 api_type:
 - COM
 ms.assetid: f7047e4e-0fb3-476b-9568-8f1135e6d970
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: ef5f78fa36632227311d037ee61085c677920fb1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 0c93afbd8634b0c6c5653f447593e089f569625b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32340090"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555560"
 ---
 # <a name="pidlidtaskassigner-canonical-property"></a>PidLidTaskAssigner 標準プロパティ
 

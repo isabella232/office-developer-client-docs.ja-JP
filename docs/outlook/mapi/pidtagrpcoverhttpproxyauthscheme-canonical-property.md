@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6da78f1a-6423-460c-b3a9-fd6441df9cef
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: ea4b90bf1190fd71701f82d43aaee384c7987ed0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 91804402fd00b2671fa797113059074d4557075b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331312"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555140"
 ---
 # <a name="pidtagrpcoverhttpproxyauthscheme-canonical-property"></a>PidTagRpcOverHttpProxyAuthScheme 標準プロパティ
 

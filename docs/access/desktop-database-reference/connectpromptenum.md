@@ -1,18 +1,18 @@
 ---
-title: ConnectPromptEnum (Access デスクトップデータベースリファレンス)
+title: ConnectPromptEnum (Access デスクトップ データベース リファレンス)
 TOCTitle: ConnectPromptEnum
 ms:assetid: 81dff685-b2e4-467e-75cc-b8c5bf80fb75
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249561(v=office.15)
 ms:contentKeyID: 48545965
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 54643a66316d7f534553c20ecc3aafdf755fb857
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a6719f9eff7a6df6baba9ed79bd3e57437b50c77
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295668"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581666"
 ---
 # <a name="connectpromptenum"></a>ConnectPromptEnum
 
@@ -37,23 +37,23 @@ ms.locfileid: "32295668"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adpromptalways</strong></p></td>
-<td><p>1-d</p></td>
+<td><p><strong>adPromptAlways</strong></p></td>
+<td><p>1</p></td>
 <td><p>常に要求します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adpromptcomplete</strong></p></td>
-<td><p>pbm-2</p></td>
+<td><p><strong>adPromptComplete</strong></p></td>
+<td><p>2</p></td>
 <td><p>さらに情報が必要な場合に要求します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adPromptCompleteRequired</strong></p></td>
-<td><p>1/3</p></td>
+<td><p>3</p></td>
 <td><p>さらに情報が必要だが、任意のパラメーターが禁止されている場合に要求します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adpromptnever</strong></p></td>
-<td><p>2/4</p></td>
+<td><p><strong>adPromptNever</strong></p></td>
+<td><p>4 </p></td>
 <td><p>要求しません。</p></td>
 </tr>
 </tbody>
@@ -75,16 +75,16 @@ ms.locfileid: "32295668"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums。常に</p></td>
+<td><p>AdoEnums.ConnectPrompt.ALWAYS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums の完全なメッセージ</p></td>
+<td><p>AdoEnums.ConnectPrompt.COMPLETE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums COMPLETEREQUIRED</p></td>
+<td><p>AdoEnums.ConnectPrompt.COMPLETEREQUIRED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums のメッセージを表示しない</p></td>
+<td><p>AdoEnums.ConnectPrompt.NEVER</p></td>
 </tr>
 </tbody>
 </table>

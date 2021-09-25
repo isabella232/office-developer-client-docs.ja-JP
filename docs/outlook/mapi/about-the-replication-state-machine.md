@@ -3,15 +3,15 @@ title: レプリケーション状態のマシンについて
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cf36c6cb-57b4-7b2b-e23d-e0bc8696de96
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: a0644e4bf5c6847d61cc59e203d50f61ad142e84
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c0f0f61c53fa868bfabd29cdb3cfaf278bcd846d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416483"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564485"
 ---
 # <a name="about-the-replication-state-machine"></a>レプリケーション状態のマシンについて
 
@@ -50,7 +50,7 @@ ms.locfileid: "33416483"
 |[アイドル状態](idle-state.md) <br/> | *なし*  <br/> |**LR_SYNC_IDLE** <br/> | *なし*  <br/> |
 |[同期状態](synchronize-state.md) <br/> |フォルダーまたはアイテム  <br/> |**LR_SYNC** <br/> |**[SYNC](sync.md)** <br/> |
 |[アップロード階層の状態](upload-hierarchy-state.md) <br/> |Folders  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**[UPHIER](uphier.md)** <br/> |
-|[アップロードの状態](upload-folder-state.md) <br/> |Folder  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**[UPFLD](upfld.md)** <br/> |
+|[アップロードの状態](upload-folder-state.md) <br/> |フォルダー  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**[UPFLD](upfld.md)** <br/> |
 |[コンテンツの状態を同期する](synchronize-contents-state.md) <br/> |アイテム  <br/> |**LR_SYNC_CONTENTS** <br/> |**[SYNCCONT](synccont.md)** <br/> |
 |[アップロード状態](upload-table-state.md) <br/> |アイテム  <br/> |**LR_SYNC_UPLOAD_TABLE** <br/> |**[UPTBL](uptbl.md)** <br/> |
 |[アップロード状態](upload-message-state.md) <br/> |アイテム  <br/> |**LR_SYNC_UPLOAD_MESSAGE** <br/> |**[UPMSG](upmsg.md)** <br/> |
@@ -74,7 +74,7 @@ ms.locfileid: "33416483"
 |:-----|:-----|:-----|:-----|
 |**手順** <br/> |**操作** <br/> |**State** <br/> |**関連するデータ構造** <br/> |
 |1.  <br/> |クライアントは **、IOSTX::SyncBeg を使用して階層アップロードを開始します**。  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
-|2。  <br/> |Outlook 2013 または Outlook 2010 は **、UPHIER** にクライアントの情報を設定します。 これには、[out] パラメーターの初期化が含まれます  *。iEnt*  は 0 に設定され  *、cEnt*  はアップロードが必要な階層内のフォルダーの数に設定されます。  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
+|2.  <br/> |Outlook 2013 または Outlook 2010 は **、UPHIER** にクライアントの情報を設定します。 これには、[out] パラメーターの初期化が含まれます  *。iEnt*  は 0 に設定され  *、cEnt*  はアップロードが必要な階層内のフォルダーの数に設定されます。  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
 |3。  <br/> |クライアントは、実際の階層アップロードを実行します。 たとえば  *、cEnt*  が 10 の場合、10 フォルダーごとに、クライアントは **IOSTX::SyncBeg** を呼び出し、フォルダーをアップロードする適切な状態識別子とデータ構造を指定します。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
 |4.  <br/> |Outlook 2013 または Outlook 2010 は、フォルダーのアップロード理由、フォルダー オブジェクトへのポインター、フォルダーのエントリ ID など、その [out] パラメーターを初期化することで **UPFLD** を設定します。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
 |5.  <br/> |クライアントは、指定したフォルダーをアップロードします。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |

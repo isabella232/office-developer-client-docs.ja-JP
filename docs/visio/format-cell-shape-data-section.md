@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251340
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c36fc895-5577-59f6-0ff5-5892ca81a58f
 description: 図形データ項目の書式を指定します。文字列、固定リスト、数値、可変リスト、日付/時刻、期間、または通貨を指定できます。
-ms.openlocfilehash: bb02cfefd6dc93798ca5e2b0c657e4616515fd0e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e57e23525219ea1db515f303830464e7da363876
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415363"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574210"
 ---
 # <a name="format-cell-shape-data-section"></a>[Format] セル ([Shape Data] セクション)
 
@@ -27,10 +27,10 @@ ms.locfileid: "33415363"
 | String  <br/> | 0  <br/> | データの種類に適した書式形式を指定します。  <br/> |
 | 固定リスト  <br/> | 1  <br/> | リストに表示する項目をセミコロンで区切って指定します。  <br/> |
 | 番号  <br/> | 2  <br/> | データの種類に適した書式形式を指定します。  <br/> |
-| 可変リスト  <br/> | 4  <br/> | リストに表示する項目をセミコロンで区切って指定します。  <br/> |
+| 可変リスト  <br/> | 4   <br/> | リストに表示する項目をセミコロンで区切って指定します。  <br/> |
 | 日付/時刻  <br/> | 5  <br/> | データの種類に適した書式形式を指定します。  <br/> |
-| Duration  <br/> | 6  <br/> | データの種類に適した書式形式を指定します。  <br/> |
-| 通貨  <br/> | 7  <br/> | データの種類に適した書式形式を指定します。  <br/> |
+| 期間  <br/> | 6   <br/> | データの種類に適した書式形式を指定します。  <br/> |
+| 通貨  <br/> | 7   <br/> | データの種類に適した書式形式を指定します。  <br/> |
    
 データの種類に適した書式形式に、"# #/4 UU" という形式を使用した場合、「12.43 in」という数値を指定すると "12 2/4 インチ" と表示されます。書式形式の指定の詳細については、「[書式形式について](about-format-pictures.md)」を参照してください。
   

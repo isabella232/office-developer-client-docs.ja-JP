@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f06bf063-fc95-46f9-b5fa-3f127a59ebda
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: ead7c9c33c92240ba5e458b68635b766caaa9760
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3e948b4085e002832df9657d61c87962af9b9fdb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359564"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555154"
 ---
 # <a name="pidtagroamingbinary-canonical-property"></a>PidTagRoamingBinary 標準プロパティ
 
@@ -21,7 +21,7 @@ ms.locfileid: "32359564"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-uriation クラスのサブクラスに関連付けられた **メッセージ ストリームIPM.Configします** 。 
+IPM のサブクラスに関連付けられたメッセージ ストリームが **含まれます。構成** クラス。 
   
 |||
 |:-----|:-----|
@@ -32,7 +32,7 @@ uriation クラスのサブクラスに関連付けられた **メッセージ �
    
 ## <a name="remarks"></a>注釈
 
-このプロパティには、特定の uration メッセージ クラス メッセージに関連IPM.Config **データ** ストリームが含まれます。 ストリームの形式は、メッセージ クラスによって異なります。 たとえば、クラスの種類のメッセージは、IPM.Config **します。オートコンプリートは** オートコンプリート ストリームとして [書式設定されます](autocomplete-stream.md)。
+このプロパティには、IPM に関連付けられたデータ ストリーム **が含まれます。構成** メッセージ クラス メッセージ。 ストリームの形式は、メッセージ クラスによって異なります。 たとえば、クラスの種類 **IPM のメッセージです。Configuration.Autocomplete** はオートコンプリート ストリームとして [書式設定されます](autocomplete-stream.md)。
   
 ## <a name="related-resources"></a>関連リソース
 

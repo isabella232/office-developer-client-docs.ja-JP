@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 41250e47-404c-40e7-99be-9bb8c1ed5ba2
 description: 図形の塗りつぶしで使用するテーマの色を 0 ~ 7 の整数で指定します。
-ms.openlocfilehash: 3ace0de7e3bfc878a2101eaca3847ef079b8f919
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3e3ca1f38f968dea2e62fd50945e4e46d1de2964
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407964"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573629"
 ---
 # <a name="quickstylefillcolor-cell-quick-style-section"></a>[QuickStyleFillColor] セル ([クイック スタイル] セクション)
 
@@ -25,10 +25,10 @@ ms.locfileid: "33407964"
 |1  <br/> |図形の塗りつぶしの色は、[ライト] テーマの色を継承します。  <br/> |
 |2  <br/> |図形の塗りつぶしの色は、[アクセント 1] テーマの色を継承します  <br/> |
 |3  <br/> |図形の塗りつぶしの色は、[アクセント 2] テーマの色を継承します  <br/> |
-|4  <br/> |図形の塗りつぶしの色は、[アクセント 3] テーマの色を継承します  <br/> |
+|4   <br/> |図形の塗りつぶしの色は、[アクセント 3] テーマの色を継承します  <br/> |
 |5  <br/> |図形の塗りつぶしの色は、[アクセント 4] テーマの色を継承します  <br/> |
-|6  <br/> |図形の塗りつぶしの色は、[アクセント 5] テーマの色を継承します  <br/> |
-|7  <br/> |図形の塗りつぶしの色は、[アクセント 6] テーマの色を継承します  <br/> |
+|6   <br/> |図形の塗りつぶしの色は、[アクセント 5] テーマの色を継承します  <br/> |
+|7   <br/> |図形の塗りつぶしの色は、[アクセント 6] テーマの色を継承します  <br/> |
    
 ## <a name="remarks"></a>注釈
 

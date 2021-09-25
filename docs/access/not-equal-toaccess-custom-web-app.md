@@ -6,13 +6,13 @@ ms.audience: Developer
 ms.topic: reference
 ms.assetid: 687a4200-380d-48ef-85d0-0a2a10d9d87b
 description: 2 つの式を比較します。null 以外の式を比較したときに、左のオペランドが右のオペランドと異なる場合、結果は TRUE になり、それ以外の場合、結果は FALSE になります。
-localization_priority: Priority
-ms.openlocfilehash: 42273a92a8492ea69e7633275454fa7c9ea52b3b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 17f41c161e498fc9933c60af871ce0c469b0ace8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308128"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564737"
 ---
 # <a name="not-equal-to-access-custom-web-app"></a>等しくない (Access カスタム Web アプリ)
 
@@ -27,7 +27,7 @@ ms.locfileid: "32308128"
 
 *expression*  \<\>  *expression* 
   
-*expression* は任意の有効な式。いずれの式も、暗黙的に変換可能なデータ型である必要があります。変換は、データ型の優先順位の規則に依存します。 
+*expression*  Is any valid expression. Both expressions must have implicitly convertible data types. The conversion depends on the rules of data type precedence. 
   
 ## <a name="return-type"></a>戻り値の型
 

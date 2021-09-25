@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251758
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7e47acfe-5ec0-3689-eb89-0168f596a739
 description: x 座標と y 座標、2 番目から最後のノットの位置、最後の重み付け位置、最初のノットの位置、最初の重み付け位置、および非ユニフォーム有理 B スプライン (NURBS) の数式を格納します。
-ms.openlocfilehash: a5fc83f9581277580d076c2a850bfe937602aef0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 82de180eb691b86dae678c4de71a5eaaf4b36d2f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404716"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573825"
 ---
 # <a name="nurbsto-row-geometry-section"></a>[NURBSTo] 行 ([Geometry] セクション)
 

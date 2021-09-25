@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidTaskDueDate
 api_type:
 - COM
 ms.assetid: 69ed3d48-3741-4a9a-8f98-51382b850c27
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2e21d164cbb9403d3fa1dc05cf474359a517d64b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: f163fbd80ebe6cf60c50929585995053473d377b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303326"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555518"
 ---
 # <a name="pidlidtaskduedate-canonical-property"></a>PidLidTaskDueDate 標準プロパティ
 
@@ -45,7 +45,7 @@ ms.locfileid: "32303326"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連するプロトコル仕様への参照Exchange Server提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
 [[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   

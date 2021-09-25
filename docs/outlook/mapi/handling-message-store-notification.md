@@ -3,17 +3,17 @@ title: メッセージ ストア通知の処理
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 3e0cc2f9-a88d-4cec-bef5-b60f2ec80f1c
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: d370603dc7cfc015fe7b2757d1cf0525b3092c5e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e8a312db93f3bd8e27c8c1e993bb7d3381f9159e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428026"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564380"
 ---
 # <a name="handling-message-store-notification"></a>メッセージ ストア通知の処理
   
@@ -35,7 +35,7 @@ MAPI を使用すると、プロバイダーが通知をサポートする方法
     
 メッセージ ストア プロバイダーのイベント通知を実装する方法を説明する厳密なガイドラインはないので、クライアントは一貫した動作を期待できません。 MAPI では、メッセージ ストア プロバイダーがイベント通知を実装する方法について推奨事項を示し、次の表でこれらの推奨事項の概要を示します。 次のように表を読み取ります。最初の列で操作を実行した後、3 番目の列にリストされているオブジェクトをその型に登録している場合は、2 番目の列にリストされている型の通知を受け取る必要があります。 たとえば、フォルダーを作成した後、メッセージ ストアで  _fnevObjectCreated_ 通知に登録している場合にのみ  _、fnevObjectCreated_ 通知を受け取ります。 
   
-|**操作**|**イベントの種類**|**ソースのアドバイス**|
+|**操作名**|**イベントの種類**|**ソースのアドバイス**|
 |:-----|:-----|:-----|
 |フォルダーの作成  <br/> | _fnevObjectCreated_ <br/> |メッセージ ストア  <br/> |
 |フォルダーの削除  <br/> | _fnevObjectDeleted_ <br/> |メッセージ ストア 削除済みフォルダー  <br/> |

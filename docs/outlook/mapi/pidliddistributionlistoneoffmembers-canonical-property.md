@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidDistributionListOneOffMembers
 api_type:
 - COM
 ms.assetid: 0b92e654-9e2d-4c2e-9a63-d5fac603b0c0
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: fed4395274cb790ab8ab7ecf0456d4ecb9ec0134
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: f11d83e57b212d2da05f61aea8b571ac8167dd46
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335050"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555854"
 ---
 # <a name="pidliddistributionlistoneoffmembers-canonical-property"></a>PidLidDistributionListOneOffMembers 標準プロパティ
 
@@ -49,7 +49,7 @@ ms.locfileid: "32335050"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連するプロトコル仕様への参照Exchange Server提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   

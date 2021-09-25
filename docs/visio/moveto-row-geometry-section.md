@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm3030
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c5b20257-676c-279d-f730-1b6fbbe98305
 description: 図形の最初の頂点の x 座標と y 座標、またはパスのブレーク後の最初の頂点の x 座標と y 座標を表します。
-ms.openlocfilehash: fc414093348b8da04fa3503053584395976982dd
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 77328e6a8b08099d42703034beb32c3835e2cb8c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429699"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573881"
 ---
 # <a name="moveto-row-geometry-section"></a>[MoveTo] 行 ([Geometry] セクション)
 

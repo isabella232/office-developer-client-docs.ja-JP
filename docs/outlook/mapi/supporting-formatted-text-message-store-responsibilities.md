@@ -3,17 +3,17 @@ title: 書式設定されたテキスト メッセージ ストアの責任を�
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: a97993c2-52e4-4b71-ac03-2c02d82447d8
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 502ba82279664638c8e7e4ae68f74df74758918d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 698a21901030ded8063753638df3501e5dc5cf78
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435517"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590997"
 ---
 # <a name="supporting-formatted-text-message-store-responsibilities"></a>書式設定されたテキストのサポート: メッセージ ストアの責任
 
@@ -45,6 +45,6 @@ ms.locfileid: "33435517"
 |:-----|:-----|
 |低い  <br/> |メッセージ ストア プロバイダーは、変更がメッセージに保存されるたびに **RTFSync** を呼び出し、PR_RTF_COMPRESSED から **PR_BODY** プロパティのデータを抽出します **。** データ **PR_BODY** と **PR_RTF_COMPRESSED** が格納されます。  <br/> |
 |Middle  <br/> |メッセージ ストア プロバイダーは、必要に応 **じてPR_RTF_COMPRESSEDプロパティ** のみをPR_BODY **格納します** 。  <br/> |
-|高い  <br/> |メッセージ ストア プロバイダーは、PR_BODY **RTF** プロパティも格納されません。 **RTFSync** は、メッセージ テキストが変更され、書式設定が変更されていない場合、またはトランスポート プロバイダーによって新しいメッセージがダウンロードされた場合に呼び出されます。  <br/> |
+|高  <br/> |メッセージ ストア プロバイダーは、PR_BODY **RTF** プロパティも格納されません。 **RTFSync** は、メッセージ テキストが変更され、書式設定が変更されていない場合、またはトランスポート プロバイダーによって新しいメッセージがダウンロードされた場合に呼び出されます。  <br/> |
    
 

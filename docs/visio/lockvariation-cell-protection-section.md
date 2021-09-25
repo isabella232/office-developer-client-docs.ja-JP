@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 36acb95d-5d3b-4d8b-9b6c-effbc78c84c2
 description: ページまたは図形に適用するテーマのバリエーションを変更できるかどうかを、ブール演算型で決定します。
-ms.openlocfilehash: 69c991e3da7a96d6c59dc825dfb78fdad3d432e7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: eac661fd88e53fa42999ba5e1e23af8bc113e4bf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427928"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573923"
 ---
 # <a name="lockvariation-cell-protection-section"></a>[LockVariation] セル ([保護] セクション)
 

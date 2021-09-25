@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 151cdd13-d00b-249c-7ebd-1ae9c4042b03
 description: 対応するマスター XML を持つパーツとの関係を指定します。
-ms.openlocfilehash: 032c1ef4a94bb6acf18587a1257fe82285124e87
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 7c98b82df470dbd1049dde194bd16a73ec10dfa9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542801"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573594"
 ---
 # <a name="rel-element-master_type-complextype-visio-xml"></a>Rel 要素 (Master_Type complexType) (Visio XML)
 
@@ -52,7 +52,7 @@ ms.locfileid: "34542801"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|r:id  <br/> |xsd:string  <br/> 注釈を参照してください。  <br/> |必須  <br/> |パーツとの関係を指定します。  <br/> |"rId#"  <br/> 注釈を参照してください。  <br/> |
+|r:id  <br/> |xsd:string  <br/> 注釈を参照してください。  <br/> |必須出席者  <br/> |パーツとの関係を指定します。  <br/> |"rId#"  <br/> 注釈を参照してください。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

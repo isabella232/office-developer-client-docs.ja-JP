@@ -3,15 +3,15 @@ title: PackedAnsiString ストリーム構造
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ada86f04-e81b-4f97-b9c1-1c8ec5e1a5dd
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 3e48e57deba5c274982eeb515d27f203ec5ac7fc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 053983e7909c850bd18e023af43bb5a7acd52e6a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404506"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555903"
 ---
 # <a name="packedansistring-stream-structure"></a>PackedAnsiString ストリーム構造
 

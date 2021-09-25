@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4aa3a1c9-dec9-5eb0-5743-0534c0b3bb5f
 description: カスタム関数を含むセルへの参照と、引数としてカスタム関数に渡す 1 つ以上の名前と値のペアを取得します (省略可能)。 指定した引数と値を指定したカスタム関数の計算結果を返します。
-ms.openlocfilehash: 4ad6645862d620a36b90e4f46d09588d7e83fcc1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 17378fee5d2e0abdaece930d3f454871989a997f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418905"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574294"
 ---
 # <a name="evalcell-function"></a>EVALCELL 関数
 
@@ -27,10 +27,10 @@ EVALCELL(** *cellRef* **,,[ ** *arg1Name,arg1* ** ],[ ** *arg2Name,arg2* ** ]),.
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _cellRef_ <br/> |必須  <br/> |**String** <br/> |ユーザー設定関数を含むセルへの参照です。 シートの相互参照が可能です。  <br/> |
-| _arg1Name_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |ユーザー設定関数に渡す 1 番目の引数の名前です。スペースを使用できます。  <br/> |
-| _arg1_ <br/> |省略可能  <br/> |**さまざま** <br/> |_arg1 パラメーターの_ 値。  <br/> |
-| _arg2Name_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |カスタム関数に渡す 2 番目の引数の名前。 スペースを使用できます。  <br/> |
-| _arg2_ <br/> |省略可能  <br/> |**さまざま** <br/> |_arg2 パラメーターの_ 値。  <br/> |
+| _arg1Name_ <br/> |省略可能  <br/> |**String** <br/> |ユーザー設定関数に渡す 1 番目の引数の名前です。スペースを使用できます。  <br/> |
+| _arg1_ <br/> |オプション  <br/> |**さまざま** <br/> |_arg1 パラメーターの_ 値。  <br/> |
+| _arg2Name_ <br/> |省略可能  <br/> |**String** <br/> |カスタム関数に渡す 2 番目の引数の名前。 スペースを使用できます。  <br/> |
+| _arg2_ <br/> |オプション  <br/> |**さまざま** <br/> |_arg2 パラメーターの_ 値。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

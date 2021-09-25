@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2b273958-1997-7c63-4a61-d231f023a81f
 description: 図形を構成する直線と円弧の頂点の座標を一覧表示する行を格納します。
-ms.openlocfilehash: 6dbf18b749ed072645c4941922729010f74fc0ae
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: cf04e8fad2ccccc135b70d530799cc93f2c42fb3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540855"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573447"
 ---
 # <a name="row-element-geometry-section-visio-xml"></a>Row 要素 (Geometry セクション) (Visio XML)
 
@@ -49,7 +49,7 @@ ms.locfileid: "34540855"
 > [!NOTE]
 > Cell 要素は、この要素の唯一の子です。 この要素の "T" 属性によって、Cell 要素の意味は異なります。 次の表では、要素名の寄生テキストは、トピックが適用される "T" 値に対応しています。 
   
-|**要素**|**型**|**説明**|
+|**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
 |[Cell 要素 ([ArcTo] 行)](arcto-row-geometry-section.md) <br/> |[Cell_Type](https://msdn.microsoft.com/library/6f23bcc4-af93-4023-a380-3e78a228e166%28Office.15%29.aspx) <br/> |円弧の x 座標と y 座標、および弧を格納します。  <br/> |
 |[Cell 要素 ([Ellipse] 行)](ellipse-row-geometry-section.md) <br/> |[Cell_Type](https://msdn.microsoft.com/library/6f23bcc4-af93-4023-a380-3e78a228e166%28Office.15%29.aspx) <br/> |楕円の中心点および楕円上の 2 つの点に対する x 座標と y 座標を格納します。  <br/> |

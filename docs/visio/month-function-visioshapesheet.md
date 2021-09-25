@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251467
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e099dbb3-c591-d934-5cfd-7728b10bd8dc
 description: 月を表す 1 ~ 12 の整数を返します。
-ms.openlocfilehash: 71ecc7992839c871780e9b703377db37279246e1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 44e033ab2719a45b6ddfba48ac53b4a4e9606d3b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431975"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573888"
 ---
 # <a name="month-function-visioshapesheet"></a>MONTH 関数 (VisioShapeSheet)
 
@@ -30,7 +30,7 @@ MONTH(" ** *datetime* ** "|** *式* ** [, ** *lcid* ** ])
 |:-----|:-----|:-----|:-----|
 | _datetime_ <br/> |必須  <br/> |**String** <br/> |日付および時刻として一般的に認識される任意の文字列、または日付および時刻を含んだセルに対する参照を指定します。  <br/> |
 | _expression_ <br/> |必須  <br/> |**String** <br/> | 日付および時刻を算出する式を指定します。  <br/> |
-| _lcid_ <br/> |省略可能  <br/> |**数値** <br/> |現地以外の日時を計算するときに使用するロケール識別子を指定します。ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
+| _lcid_ <br/> |オプション  <br/> |**数値** <br/> |現地以外の日時を計算するときに使用するロケール識別子を指定します。ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

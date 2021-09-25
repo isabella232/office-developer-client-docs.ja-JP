@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251480
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d14a735c-0278-922f-7823-79adf6cb1e64
 description: 座標 x と y で表される点を 1 つの値として返します。
-ms.openlocfilehash: c0a12aa18f4c766ea1f5b0fa1d827804d766713c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b6c0c9b15aa6b6fb640d433dd866e1977191f872
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435713"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573748"
 ---
 # <a name="pnt-function"></a>PNT 関数
 
@@ -28,7 +28,7 @@ PNT(** *x,y* ** )
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _x,y_ <br/> |必須  <br/> |**数値型 (Number),数値型 (Number)** <br/> |現在の図形の座標系にある点の座標を指定します。  <br/> |
+| _x,y_ <br/> |必須かどうか  <br/> |**数値型 (Number),数値型 (Number)** <br/> |現在の図形の座標系にある点の座標を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

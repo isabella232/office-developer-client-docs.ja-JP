@@ -3,17 +3,17 @@ title: 文字列を使用してフォルダーに名前を付ける
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: ec3c023b-7c99-489c-8217-78b303dc10df
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 49ffe6b45002aec6660130132321559fc07c01c3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 23fb125218923f823593c8d40694eb1337366289
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428313"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556022"
 ---
 # <a name="naming-folders-by-using-character-strings"></a>文字列を使用してフォルダーに名前を付ける
 

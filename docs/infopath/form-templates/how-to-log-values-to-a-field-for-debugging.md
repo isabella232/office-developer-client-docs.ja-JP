@@ -3,15 +3,15 @@ title: デバッグのために値のログをフィールドに記録する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5874dc28-1b10-48a3-8287-9474db0b7435
 description: InfoPath フォーム テンプレートをデバッグするときは、通常、フォーム内のフィールドに値のログを直接記録し、フォームのテスト セッション中にデバッグ データのレコードを作成すると有効です。次の手順では、マルチライン フィールドを作成し、ヘルパー関数 (フィールドにデバッグ データのログを記録する関数) をフォーム コードに追加する方法について説明します。
-ms.openlocfilehash: 28f2a1ad3c13aefd9f898bdf397c9103df98d3c9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e971ecc6a82cb5a0b5594a458544fe619c27abea
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431814"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564618"
 ---
 # <a name="log-values-to-a-field-for-debugging"></a>デバッグのために値のログをフィールドに記録する
 

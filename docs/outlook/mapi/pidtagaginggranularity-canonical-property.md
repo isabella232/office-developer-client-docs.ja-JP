@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAgingGranularity
 api_type:
 - HeaderDef
 ms.assetid: b79ec87d-d97c-4e6c-899b-78ebf1b485a7
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: b4006b62758b32598a64eaa4eb333c7ce5b12605
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 95c80df020308d115f4cd790b2c75105232ab4ff
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325586"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563939"
 ---
 # <a name="pidtagaginggranularity-canonical-property"></a>PidTagagingGranularity 標準プロパティ
 

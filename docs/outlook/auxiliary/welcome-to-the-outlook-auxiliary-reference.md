@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 09/10/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2e48a625-b3f7-9fd0-253e-fe12a1aca446
 description: Outlook補助リファレンスには、4 組の API、コード サンプル、および再頒布可能なインストーラーの概念的なコンテンツとリファレンス ドキュメントが含まれています。開発者は Outlook と拡張して統合できます。 この参照の API は、Outlookモデルの外部で、機能拡張Outlook公開されます。
-ms.openlocfilehash: 445d35c12e4c8984d47adcef3ecf50ebd881875b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 478dbf3057972b01a453d2dda105135c25517607
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328984"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564491"
 ---
 # <a name="welcome-to-the-outlook-auxiliary-reference"></a>外部補助Outlookへようこそ
 

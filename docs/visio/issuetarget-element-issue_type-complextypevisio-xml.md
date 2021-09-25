@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bd9a5d5f-16fe-29b4-5af0-913b14d2be16
 description: 親の検証の問題の対象に応じて、親の検証の問題に関連付けられているページ、またはページと図形の両方を指定します。 親の検証の問題の対象がドキュメントの場合は、IssueTarget はページと図形のどちらも指定しません。
-ms.openlocfilehash: 686f37afee43d9cee3f58979d5856602f571eec8
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
-ms.translationtype: HT
+ms.openlocfilehash: dd85f62e35d4940da433f365e8c586689315fa9b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542955"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574070"
 ---
 # <a name="issuetarget-element-issue_type-complextype-visio-xml"></a>IssueTarget 要素 (Issue_Type complexType) (Visio XML)
 

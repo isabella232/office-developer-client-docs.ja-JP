@@ -1,28 +1,28 @@
 ---
 title: imapiinitmonitor-beginwait
 manager: lindalu
-ms.date: 04/26/2021
+ms.date: 04/27/2021
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIINITMONITOR.BeginWait
 api_type:
 - COM
 ms.assetid: 71f565a9-651c-42b5-9102-91b728b681ae
 description: IMAPIInitMonitor::BeginWait"
-Last modified: April 26, 2021
-ms.openlocfilehash: 43a88507cbfc23b3b842f51e69eb4bd791bcfda8
-ms.sourcegitcommit: 289cececd9fa38a3f4b8a0d7fd1f86adb6be9689
+Last modified: April 27, 2021
+ms.openlocfilehash: beda62b375ce39283030409149c7130ffbcfd517
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52062019"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564240"
 ---
 # <a name="imapiinitmonitorbeginwait"></a>IMAPIInitMonitor::BeginWait
   
-**適用対象 :** Outlook 2016 |2019
+**適用対象 :** Outlook 2016 |Outlook 2019
   
 MAPI の初期化または指定した経過時間 (ミリ秒単位) の待機を開始します。 これにより、IMAPIWaitResult::End を呼び出して待機を開始する必要がある **IMAPIWaitResult** インターフェイスが返されます。 これにより、呼び出し元は、待機中にブロックされるスレッドを制御できます。
 
@@ -42,10 +42,10 @@ S_OK
 >待機操作が正常に開始されました。
 
 E_OUTOFMEMORY
->新しいオブジェクトを作成するのに十分なメモリがなかった
+>新しいオブジェクトを作成するのに十分なメモリがなかった。
 
 ## <a name="remarks"></a>注釈
-この API は、呼び出し元にインターフェイス (スレッド セーフ) を提供し、MAPI 初期化のブロック待機を開始できます。 これにより、コンシューマーはアプリケーションを待つ最も良い待ち時間を取りやめできます。   IMAPIWaitResult::End を呼び出す動作は、IMAPIInitMonitor::Wait の呼び出しと同じです。
+この API は、呼び出し元にインターフェイス (スレッド セーフ) を提供し、MAPI 初期化のブロック待機を開始できます。 これにより、コンシューマーはアプリケーションを待つ最も良い待ち時間を取りやめできます。 IMAPIWaitResult::End を呼び出す動作は、IMAPIInitMonitor::Wait の呼び出しと同じです。
 
 ## <a name="see-also"></a>関連項目
 
@@ -55,6 +55,6 @@ E_OUTOFMEMORY
 
 [IMAPIInitMonitor::Wait](imapiinitmonitor-wait.md)
 
-[CreateMAPIInitializationMonitor](createmapiinitializationmonitor.md)
-
 [IMAPIWaitResult](imapiwaitresultiunknown.md)
+
+[CreateMAPIInitializationMonitor](createmapiinitializationmonitor.md)

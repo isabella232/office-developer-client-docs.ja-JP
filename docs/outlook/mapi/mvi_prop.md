@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.MVI_PROP
 api_type:
 - COM
 ms.assetid: d7f07524-6935-4a60-aaf3-3f753ea8d86a
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 087d38face72e1e067350b1959b37313ebbd7c44
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 22521bce4bec39c3d7c21cb7c69d1e1e20cdb0d6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410680"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556036"
 ---
 # <a name="mvi_prop"></a>MVI_PROP
 
@@ -38,7 +38,7 @@ MVI_PROP (tag)
 
 ## <a name="parameters"></a>パラメーター
 
- _tag_
+ _タグ_
   
 > 変更するプロパティ タグ。
     

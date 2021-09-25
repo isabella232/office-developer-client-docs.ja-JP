@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagContentLength
 api_type:
 - HeaderDef
 ms.assetid: c9ceca01-9c4e-4b59-8171-a4c2d6aca45d
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: f2110682be9296a874e6f42d40a375b69d201431
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: db1ada868e0b237be74e1bedbd602129478ee307
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435153"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563736"
 ---
 # <a name="pidtagcontentlength-canonical-property"></a>PidTagContentLength 標準プロパティ
 

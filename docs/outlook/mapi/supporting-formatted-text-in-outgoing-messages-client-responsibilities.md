@@ -3,17 +3,17 @@ title: 送信メッセージの書式設定されたテキストのサポート 
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 7238b1a9-01ed-46a0-a625-26763323317d
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 01d5ae3fd06d570e15336fad9538f01e586cd0f3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b5cf44ddaafcfd30637516e90ef9a62caf265ed8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431604"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591011"
 ---
 # <a name="supporting-formatted-text-in-outgoing-messages-client-responsibilities"></a>送信メッセージでの書式設定されたテキストのサポート: クライアントの責任
 

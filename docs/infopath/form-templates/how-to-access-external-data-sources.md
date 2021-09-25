@@ -5,15 +5,15 @@ ms.date: 12/07/2015
 ms.audience: Developer
 keywords:
 - data connection classes [infopath 2007],secondary data sources [InfoPath 2007],data [InfoPath 2007], secondary,DataSource class [InfoPath 2007],accessing external data sources [InfoPath 2007],DataSourceCollection class [InfoPath 2007],DataConnectionCollection class [InfoPath 2007],DataConnection class [InfoPath 2007],InfoPath 2007, accessing external data,data [InfoPath 2007], external sources
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: db7c2521-a1ad-4802-b398-79575d3d310a
 description: InfoPath フォーム テンプレートで作業しているときに、フォームのセカンダリ データ ソースにアクセスしてそこに含まれるデータを操作するコードを書くことができます。
-ms.openlocfilehash: f6957c561231eef0e3e4df6deb09ae89f85afcc5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2119564d31766e318434324fc553394c73d82f83
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408314"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564639"
 ---
 # <a name="access-external-data-sources"></a>外部データ ソースにアクセスする
 

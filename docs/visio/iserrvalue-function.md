@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251453
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c7feec6f-f47a-60ee-b056-7b2dc51ed9a9
 description: セル参照の値がエラー型の場合は true を#VALUE式の引数が間違った型です。 ISERRVALUE 関数は、別のセルを参照する論理式で使用されます。
-ms.openlocfilehash: 62058522dc8a2387aec9867e4892da740aba9b44
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0186b0b51e89fad3106bb1df034615ce9e512060
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404429"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574098"
 ---
 # <a name="iserrvalue-function"></a>ISERRVALUE 関数
 

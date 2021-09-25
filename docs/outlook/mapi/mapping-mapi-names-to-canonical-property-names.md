@@ -3,17 +3,17 @@ title: MAPI 名を標準プロパティ名にマッピングする
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 38376abb-60de-40f1-9bc9-d8c4f9e3368b
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: ddc753891ad9ee0fa60c9ac4d3b2014eea4a0301
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: bc60b74510f7ed22f8353767b9f89f70a5b805f5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542703"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564072"
 ---
 # <a name="mapping-mapi-names-to-canonical-property-names"></a>MAPI 名を標準プロパティ名にマッピングする
 
@@ -317,7 +317,7 @@ ms.locfileid: "34542703"
 |カテゴリ  <br/> |[PidNameCategory](pidnamecategory-canonical-property.md) <br/> |
 |CharCount  <br/> |[PidNameCharacterCount](pidnamecharactercount-canonical-property.md) <br/> |
 |コメント  <br/> |[PidNameComments](pidnamecomments-canonical-property.md) <br/> |
-|会社名  <br/> |[PidNameCompany](pidnamecompany-canonical-property.md) <br/> |
+|Company  <br/> |[PidNameCompany](pidnamecompany-canonical-property.md) <br/> |
 |Content-Base  <br/> |[PidNameContentBase](pidnamecontentbase-canonical-property.md) <br/> |
 |Content-Class  <br/> |[PidNameContentClass](pidnamecontentclass-canonical-property.md) <br/> |
 |Content-Transfer-Encoding  <br/> |[PidNameContentTransferEncoding](pidnamecontenttransferencoding-canonical-property.md) <br/> |
@@ -342,9 +342,9 @@ ms.locfileid: "34542703"
 |RevNumber  <br/> |[PidNameRevisionNumber](pidnamerevisionnumber-canonical-property.md) <br/> |
 |セキュリティ  <br/> |[PidNameSecurity](pidnamesecurity-canonical-property.md) <br/> |
 |SlideCount  <br/> |[PidNameSlideCount](pidnameslidecount-canonical-property.md) <br/> |
-|Subject  <br/> |[PidNameSubject](pidnamesubject-canonical-property.md) <br/> |
+|件名  <br/> |[PidNameSubject](pidnamesubject-canonical-property.md) <br/> |
 |テンプレート  <br/> |[PidNameTemplate](pidnametemplate-canonical-property.md) <br/> |
-|タイトル  <br/> |[PidNameTitle](pidnametitle-canonical-property.md) <br/> |
+|Title  <br/> |[PidNameTitle](pidnametitle-canonical-property.md) <br/> |
 |UMAudioNotes  <br/> |[PidNameAudioNotes](pidnameaudionotes-canonical-property.md) <br/> |
 |WordCount  <br/> |[PidNameWordCount](pidnamewordcount-canonical-property.md) <br/> |
 |X-Sharing-Capabilities  <br/> |[PidNameXSharingCapabilities](pidnamexsharingcapabilities-canonical-property.md) <br/> |

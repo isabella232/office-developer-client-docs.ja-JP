@@ -8,15 +8,15 @@ f1_keywords:
 - xlFree
 keywords:
 - xlfree function [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8ce2eef2-0138-495d-b6cb-bbb727a3cda4
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: de1c75ad65acacd44644e9bfb111b30abd0a578e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 99e3305d81f383c5b532828736b42aa5a146b9ed
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424715"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564667"
 ---
 # <a name="xlfree"></a>xlFree
 
