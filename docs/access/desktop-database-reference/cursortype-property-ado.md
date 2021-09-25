@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250239(v=office.15)
 ms:contentKeyID: 48548682
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7cdb32bb8ff9bb6e0556a87de0efe82cd919dbe2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6c94012224a75d52d7e9e096c8c98873fbf4a6a8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295185"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581568"
 ---
 # <a name="cursortype-property-ado"></a>CursorType プロパティ (ADO)
 
@@ -21,9 +21,9 @@ ms.locfileid: "32295185"
 
 [Recordset](recordset-object-ado.md) オブジェクトで使用されているカーソルの種類を示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
-[CursorTypeEnum](cursortypeenum.md) の値を設定または取得します。 既定値は **adOpenForwardOnly** です。
+[CursorTypeEnum](cursortypeenum.md) の値を設定または取得します。既定値は **adOpenForwardOnly** です。
 
 ## <a name="remarks"></a>注釈
 
@@ -52,8 +52,8 @@ ms.locfileid: "32295185"
 <td><p>none</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adopenkeyset</strong></p></td>
-<td><p><strong>adbookmark</strong>、 <strong>adHoldRecords</strong>、 <strong>adMovePrevious</strong>、 <strong>adbookmark</strong></p></td>
+<td><p><strong>adOpenKeyset</strong></p></td>
+<td><p><strong>adBookmark</strong>, <strong>adHoldRecords</strong>, <strong>adMovePrevious</strong>, <strong>adResync</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adOpenDynamic</strong></p></td>
@@ -61,7 +61,7 @@ ms.locfileid: "32295185"
 </tr>
 <tr class="even">
 <td><p><strong>adOpenStatic</strong></p></td>
-<td><p><strong>adbookmark</strong>、 <strong>adHoldRecords</strong>、 <strong>adMovePrevious</strong>、 <strong>adbookmark</strong></p></td>
+<td><p><strong>adBookmark</strong>, <strong>adHoldRecords</strong>, <strong>adMovePrevious</strong>, <strong>adResync</strong></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,5 +72,5 @@ ms.locfileid: "32295185"
 
 **CursorType** プロパティは、 **Recordset** が閉じているときは読み取り/書き込み可能で、開いているときは読み取り専用になります。
 
-**リモートデータサービスの使用状況**クライアント側の Recordset オブジェクトで使用する場合、 **CursorType**プロパティは**adopenstatic**にのみ設定できます。
+**リモート データ サービスの使用状況** クライアント側の Recordset オブジェクトで使用する場合 **、CursorType** プロパティは **adOpenStatic にのみ設定できます**。
 

@@ -3,17 +3,17 @@ title: TNEF ストリーム構文
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 1353d494-c266-4715-afe7-14543a1bbe1b
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 12d2a92ff80897456707c7ab8af8f704605c85d0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 841404f5f7cb13fadd964f13174dc25c493e0015
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423028"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609328"
 ---
 # <a name="tnef-stream-syntax"></a>TNEF ストリーム構文
 

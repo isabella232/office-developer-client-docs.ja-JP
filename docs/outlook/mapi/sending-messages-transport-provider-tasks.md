@@ -3,17 +3,17 @@ title: ���b�Z�[�W�̑��M �g�����X�|�[�g �v�
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: bd722f48-b166-4670-8dba-897ac50caf37
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 431e3d2f66616db2c586b76387a8521832ed985f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fa25f575e55eb3d0446148d75de314a8883a4170
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426549"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591179"
 ---
 # <a name="sending-messages-transport-provider-tasks"></a>メッセージの送信: トランスポート プロバイダーのタスク
 

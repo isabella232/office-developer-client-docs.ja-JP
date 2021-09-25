@@ -1,22 +1,22 @@
 ---
-title: Column プロパティ、メソッド、およびイベント (ADOX)
+title: 列のプロパティ、メソッド、およびイベント (ADOX)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: 3cfb6eaf-399a-1678-45bd-6fe692d8bd81
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249162(v=office.15)
 ms:contentKeyID: 48544330
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 13310d816208f1faf54873142a67471f12a12006
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ef1b696b39e2b3fe1d9227aba3b0688f4855d0be
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296242"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602914"
 ---
-# <a name="column-properties-methods-and-events-adox"></a>Column プロパティ、メソッド、およびイベント (ADOX)
+# <a name="column-properties-methods-and-events-adox"></a>列のプロパティ、メソッド、およびイベント (ADOX)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 
 ## <a name="propertiescollections"></a>プロパティ/コレクション

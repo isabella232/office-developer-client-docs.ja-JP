@@ -1,5 +1,5 @@
 ---
-title: DBEngine プロパティ (DAO)
+title: DBEngine.Errors プロパティ (DAO)
 TOCTitle: Errors Property
 ms:assetid: 594a8752-1f15-0690-b01c-9254951f16f6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194384(v=office.15)
@@ -10,24 +10,24 @@ f1_keywords:
 - dao360.chm1053176
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: ba143109746b8457be679800dcca13d4efabf8c4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a1e78ac96df889f30812f07415ceb2e54e4acda5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294317"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581477"
 ---
-# <a name="dbengineerrors-property-dao"></a>DBEngine プロパティ (DAO)
+# <a name="dbengineerrors-property-dao"></a>DBEngine.Errors プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
 
-指定したオブジェクトの、すべての保存された **Error** オブジェクトを含む **Errors** コレクションを返します。 読み取り専用です。
+指定したオブジェクトの、すべての保存された **Error** オブジェクトを含む **Errors** コレクションを返します。値の取得のみ可能です。
 
 ## <a name="syntax"></a>構文
 
-*式*。ミス
+*式* .エラー
 
-*式***DBEngine**オブジェクトを表す変数を取得します。
+*式* **DBEngine** オブジェクトを表す変数です。
 

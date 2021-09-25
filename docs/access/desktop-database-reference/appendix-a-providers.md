@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249857(v=office.15)
 ms:contentKeyID: 48547207
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e4549c8817361cfb5b9fa730ee37ca6a07edc98b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 452c6f91ed2899dbc7a31b67d02d9ff100dbf359
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297061"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558920"
 ---
 # <a name="appendix-a-providers"></a>付録 A: プロバイダー
 
@@ -43,7 +43,7 @@ Microsoft から現在入手可能な各データ プロバイダーの詳細に
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>項目</p></th>
+<th><p>分野</p></th>
 <th><p>トピック</p></th>
 </tr>
 </thead>
@@ -96,13 +96,13 @@ Microsoft から現在入手可能な各データ プロバイダーの詳細に
 
 - [Microsoft OLE DB Remoting Provider (ADO サービス プロバイダー)](microsoft-ole-db-remoting-provider-ado-service-provider.md)
 
-## <a name="service-components"></a>サービスコンポーネント
+## <a name="service-components"></a>サービス コンポーネント
 
 [Cursor Service for OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) サービス コンポーネントは、データ プロバイダーのカーソル サポート機能を補完します。また、サービス コンポーネントはキーワードを必要とし、動的プロパティを持ちます。
 
 プロバイダーの詳細については、Microsoft Data Access Components SDK の Microsoft OLE DB のマニュアルまたは「[データ プラットフォーム デベロッパー センター](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017)」を参照してください。
 
-## <a name="provider-commands"></a>プロバイダーコマンド
+## <a name="provider-commands"></a>プロバイダー コマンド
 
-ここにリストされている各プロバイダーについて、アプリケーションでユーザーがプロバイダーコマンドとして SQL ステートメントを入力できるようにする場合は、常にユーザー入力を検証して、のような潜在的な危険な sql ステートメントを使用したハッカー攻撃を受ける可能性があります (など)。ユーザー入力。
+ここに示すプロバイダーごとに、アプリケーションでユーザーがプロバイダー コマンドとして SQL ステートメントを入力できる場合は、常にユーザー入力を検証し、ユーザー入力の一部として潜在的に危険な SQL ステートメント (など) を使用したハッカー攻撃の可能性を警戒する必要があります。
 

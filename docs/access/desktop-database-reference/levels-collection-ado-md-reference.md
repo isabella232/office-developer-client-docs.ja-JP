@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249872(v=office.15)
 ms:contentKeyID: 48547262
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 02904c5b3b5c5973ec0dac47901fc9bf7009d986
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3240e04e7a068149ac6fcf12e3f8b854d138f42b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290058"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602347"
 ---
 # <a name="levels-collection-ado-md-reference"></a>Levels コレクション (ADO MD リファレンス)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 - [Levels コレクション (ADO MD)](levels-collection-ado-md.md)
 - [Levels コレクションのプロパティ、メソッド、およびイベント (ADO MD)](levels-collection-properties-methods-and-events-ado-md.md)

@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250030(v=office.15)
 ms:contentKeyID: 48547807
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7fb5302d1c2b8e4eebb6dbe1a5906459834b8e41
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f4fe606c204727fe08ab3fae960733abacc44f9b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281868"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603094"
 ---
 # <a name="address-book-data-binding-object"></a>アドレス帳のデータバインディング オブジェクト
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 Address Book アプリケーションでは、[RDS.DataControl](datacontrol-object-rds.md) オブジェクトを使って、SQL Server データベースのデータをクライアントの HTML ページに表示されるオブジェクト (この場合は DHTML テーブル) にバインドします。イベントドリブン型の VBScript プログラム ロジックでは、 [RDS.DataControl](datacontrol-object-rds.md) を使って次の処理を行います。
 
@@ -89,10 +89,10 @@ OBJECT タグで、 **RDS.DataControl** コンポーネントをプログラム�
 <tbody>
 <tr class="odd">
 <td><p><a href="server-property-rds.md">SERVER</a></p></td>
-<td><p>HTTP を使用している場合、値はサーバーコンピューターの名前で、その後に https://が付加されます。</p></td>
+<td><p>HTTP を使用している場合、値はサーバー コンピューターの名前の前にサーバー コンピューターの名前を https://。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="connect-property-rds.md">結び付ける</a></p></td>
+<td><p><a href="connect-property-rds.md">CONNECT</a></p></td>
 <td><p>SQL Server に接続するために <strong>RDS.DataControl</strong> に必要な接続情報を指定します。</p></td>
 </tr>
 <tr class="odd">

@@ -10,13 +10,13 @@ f1_keywords:
 - jetsql40.chm5277478
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 4357099f8bcb9b2308b5cda3543949765b8c3420
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 977fe06ce2d42616f9212fc8095ba5807aecaf86
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292133"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568937"
 ---
 # <a name="grant-statement-microsoft-access-sql"></a>GRANT ステートメント (Microsoft Access SQL)
 
@@ -26,9 +26,9 @@ ms.locfileid: "32292133"
 
 ## <a name="syntax"></a>構文
 
-付与 {*特権*\[,*特権*,...\]} {table *table* |object*オブジェクト*|
+GRANT {*privilege* \[ , *privilege*, ... \] }ON{TABLE *テーブル*|OBJECT *オブジェクト*|
 
-container *container* } TO {*authorizationname*\[, *authorizationname*,...\]}
+CONTAINER *コンテナー* } TO {*authorizationname* \[ , *authorizationname*, ... \] }
 
 GRANT ステートメントには、次の指定項目があります。
 
@@ -45,8 +45,8 @@ GRANT ステートメントには、次の指定項目があります。
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>オペレーター</em></p></td>
-<td><p>権限を与えます。 権限は、SELECT、DELETE、INSERT、UPDATE、DROP、selectsecurity、UPDATESECURITY、dbpassword、UPDATEIDENTITY、CREATE、selectsecurity、schema、および updateowner の各キーワードを使用して指定します。</p></td>
+<td><p><em>特権</em></p></td>
+<td><p>権限を与えます。 特権は、SELECT、DELETE、INSERT、UPDATE、DROP、SELECTSECURITY、UPDATESECURITY、DBPASSWORD、UPDATEIDENTITY、CREATE、SELECTSCHEMA、SCHEMA、および UPDATEOWNER を使用して指定されます。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>tablename</em></p></td>
@@ -54,10 +54,10 @@ GRANT ステートメントには、次の指定項目があります。
 </tr>
 <tr class="odd">
 <td><p><em>object</em></p></td>
-<td><p>テーブル以外のどのオブジェクトも指定できます。 たとえば、ストアド クエリ (ビューまたはプロシージャ) を指定できます。</p></td>
+<td><p>テーブル以外のどのオブジェクトも指定できます。たとえば、ストアド クエリ (ビューまたはプロシージャ) を指定できます。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>格納</em></p></td>
+<td><p><em>コンテナー</em></p></td>
 <td><p>有効なコンテナーの名前。</p></td>
 </tr>
 <tr class="odd">

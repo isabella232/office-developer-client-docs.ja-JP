@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm3050
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9fbae27d-4f1b-c5f7-aacb-16f359331e83
 description: スプラインのコントロール ポイントとスプラインのノットの x 座標と y 座標を含む。
-ms.openlocfilehash: 432b714772d96e0ab0861bbfb62075258404e607
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e2fb84bbd269768e3bd7f85874bb8f8865ea8d94
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407418"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559462"
 ---
 # <a name="splineknot-row-geometry-section"></a>[SplineKnot] 行 ([Geometry] セクション)
 

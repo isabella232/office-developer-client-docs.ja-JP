@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251344
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f3a83496-fccc-9d6a-02b9-60ebaf4911ea
 description: 図形に関連付けられた、単一の図形データ項目の情報を格納します。図形には、各図形データ項目に対して 1 つの [Shape Data] 行があります。[Shape Data] 行の名前は Prop.name で、次のセルが含まれます。詳細については、各セルに関連する項目を参照してください。
-ms.openlocfilehash: 058f8f180a2eca4736d06dfcc533d81f45150c86
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d488c181912f924a49ed7a42bf0e25a66fa16b7d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415398"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559571"
 ---
 # <a name="shape-data-row-shape-data-section"></a>[Shape Data] 行 ([Shape Data] セクション)
 
@@ -24,7 +24,7 @@ ms.locfileid: "33415398"
 |:-----|:-----|
 |[Label](label-cell-shape-data-section.md) <br/> |[**図形データ**] ダイアログ ボックスまたはウィンドウに表示されるラベルを指定します。  <br/> |
 |[Prompt](prompt-cell-shape-data-section.md) <br/> |項目を選択したときに [**図形データ**] ダイアログ ボックスまたはウィンドウに表示される説明または手順を示すテキストを指定します。  <br/> |
-|[Type](type-cell-shape-data-section.md) <br/> |図形データ項目値のデータ型を指定します。データ型には、文字列 (0)、固定リスト (1)、数値 (2)、ブール演算型 (3)、可変リスト (4)、日付/時刻 (5)、期間 (6)、通貨 (7) があります。  <br/> |
+|[種類](type-cell-shape-data-section.md) <br/> |図形データ項目値のデータ型を指定します。データ型には、文字列 (0)、固定リスト (1)、数値 (2)、ブール演算型 (3)、可変リスト (4)、日付/時刻 (5)、期間 (6)、通貨 (7) があります。  <br/> |
 |[Format](format-cell-shape-data-section.md) <br/> |図形データ項目の書式を指定します。  <br/> |
 |[値](value-cell-shape-data-section.md) <br/> |[**図形データ**] ダイアログ ボックスまたはウィンドウに入力した項目の値が格納されています。  <br/> |
 |[SortKey](sortkey-cell-shape-data-section.md) <br/> |[**図形データ**] ダイアログ ボックスまたはウィンドウの項目を一覧表示する場合に使用するキーを指定します。  <br/> |

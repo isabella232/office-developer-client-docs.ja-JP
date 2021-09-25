@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm60113
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1ecfdb05-2533-470a-006b-e554026944d8
 description: ユーザー インターフェイス (UI) またはオートメーションのアクションに起因する更新された値を別のセルにリダイレクトします。
-ms.openlocfilehash: c4f5fe94aba90ce0a69983d6637a5399b6e42707
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2010cd324d87f9dbcfbfa2c71762ffc94a5484c9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416805"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559591"
 ---
 # <a name="setatref-function"></a>SETATREF 関数
 
@@ -29,7 +29,7 @@ SETATREF(** *reference* ** [, ** *set_expression* ** [, **** ignore_eval ** ])
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _reference_ <br/> |必須  <br/> |**String** <br/> |更新された値をリダイレクトするセルに対する参照を指定します。  <br/> |
-| _set_expression_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |参照に割り当てられている  _式_ です。  <br/> |
+| _set_expression_ <br/> |省略可能  <br/> |**String** <br/> |参照に割り当てられている  _式_ です。  <br/> |
 | _ignore_eval_ <br/> |省略可能  <br/> |**Boolean** <br/> |TRUE の場合、SETATREF 関数は (0) ゼロに評価されます。FALSE (既定値) の場合、SETATREF 関数は参照の値に評価  _されます_。  <br/> |
    
 ## <a name="remarks"></a>注釈

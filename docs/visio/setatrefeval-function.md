@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1042150
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b3f3a0a0-7b14-0b71-d247-ada81b93b66b
 description: SETATREF 関数の set_expression パラメーターで使用して、SETATREF の参照パラメーターに割りset_expression前に評価する必要があるかどうかを示します。
-ms.openlocfilehash: a11a7485e04d4deb31e9497476bb198d675bc68f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2ce7cd796e97a658911d01f667b538b9294ee4a7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432983"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559588"
 ---
 # <a name="setatrefeval-function"></a>SETATREFEVAL 関数
 
@@ -28,7 +28,7 @@ SETATREFEVAL(** *expr* ** )
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _expr_ <br/> |必須  <br/> |**さまざま** <br/> | SETATREF 関数が別のセルにリダイレクトするときに _set_expression式。_  <br/> |
+| _expr_ <br/> |必須かどうか  <br/> |**さまざま** <br/> | SETATREF 関数が別のセルにリダイレクトするときに _set_expression式。_  <br/> |
    
 ## <a name="remarks"></a>注釈
 

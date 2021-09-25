@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 f1_keywords:
 - Vis_DSS.chm82251822
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f403890d-4a3a-bacc-53d7-1b9920b23639
 description: Microsoft Visio のすべての要素 (図面、ページ、スタイル、図形、グループ、グループ内の図形やオブジェクト、マスター シェイプ、別のプログラムのオブジェクト、ガイド、ガイド点) には、それぞれのシェイプシートというスプレッドシートがあり、各オブジェクトについての情報が格納されています。このスプレッドシートには、高さ、幅、角度、色など、図形の外観や動作を決定する属性が含まれています。
-ms.openlocfilehash: 37b2ae10b1f511197af5ccf739de91edb74e7819
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6247aa8effe036493cc1bd59b0decf3c5cef8b10
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345174"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616160"
 ---
 # <a name="about-the-shapesheet-spreadsheet"></a>シェイプシートのスプレッドシートについて
 

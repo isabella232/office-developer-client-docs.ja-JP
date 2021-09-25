@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249023(v=office.15)
 ms:contentKeyID: 48543786
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1ec0bc0bc2bcb355a2d9d3e37f94c50b7620e60b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 32b86296de5c5a1c4d168c4e66caf06824faed2d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281861"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603075"
 ---
 # <a name="addnew-method-example-vj"></a>AddNew メソッドの使用例 (VJ++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、 [AddNew](addnew-method-ado.md) メソッドを使用して、指定した名前を持つ新しいレコードを作成します。
 

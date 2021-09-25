@@ -3,15 +3,15 @@ title: 需要管理用の Project Server ワークフローの作成
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b0e4a3b3-d1df-454d-b74c-b980b0b456f6
 description: この記事では、Designer 2013 で簡単なワークフローを作成するSharePoint説明します。
-ms.openlocfilehash: bbefc5d30ccb508a24c32fe41e733e6e8187ecd9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a4aa2dc748976b3f6f5710e3ab8e90c057e52702
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355563"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616223"
 ---
 # <a name="create-a-project-server-workflow-for-demand-management"></a>需要管理用の Project Server ワークフローの作成
 
@@ -105,17 +105,17 @@ Visio 2013 および SharePoint Designer 2013 を使用して、Project Server 2
 
     **図 1.PDP Projectフィールド Web パーツの編集**
 
-    ![PDP Projectフィールド Web]パーツの編集 PDP Project(media/pj15_CreateWorkflowSPD_EditPDP.gif "フィールド Web パーツを編集する")
+    ![PDP Projectフィールド Web パーツの編集](media/pj15_CreateWorkflowSPD_EditPDP.gif "PDP Projectフィールド Web パーツの編集")
 
     **図 2. 提案のコスト ユーザー設定フィールドを含む編集後の PDP**
 
-    ![編集した PDP には、[提案コスト] フィールドが含まれます]。編集された(media/pj15_CreateWorkflowSPD_EditedPDP.gif "PDP には [提案コスト] フィールドが含まれます。")
+    ![[提案のコスト] フィールドを含む編集後の PDP](media/pj15_CreateWorkflowSPD_EditedPDP.gif "[提案のコスト] フィールドを含む編集後の PDP")
   
 4. **ワークフロー ステージ** ワークフローの各フェーズに必要なステージを作成します。 [サーバーの設定] ページで [**ワークフロー ステージ**] を選択し、[**新しいワークフロー ステージ**] を選択します。 図 3 では、[ワークフロー ステージの追加] ページの一部を示します。
     
     **図 3. Project Web App でのワークフロー ステージの追加**
 
-    ![ワークフロー ステージの追加 (Project Web App](media/pj15_CreateWorkflowSPD_AddWorkflowStage.gif "ワークフロー ステージの追加Project Web App")
+    ![Project Web App でのワークフロー ステージの追加](media/pj15_CreateWorkflowSPD_AddWorkflowStage.gif "Project Web App でのワークフロー ステージの追加")
   
     分岐ワークフローの例では、表 1 に示す 4 つのステージを使用します。 [ワークフロー **ステージ設定ページProject** ページの [詳細ページの表示] セクション (図 3 に示されていない) では、値は省略可能です。[ワークフローの状態] ページで詳細を提供します。 たとえば、最初の提案の詳細 PDP にはユーザー入力が必要なので **、[Project** 詳細ページには注意が必要です] チェック ボックスをオンにし、[この PDP のプロジェクト名とコストを設定する] などの特定の説明を追加できます。
     
@@ -123,16 +123,16 @@ Visio 2013 および SharePoint Designer 2013 を使用して、Project Server 2
     
     **表 1. 分岐ワークフローのステージ**
 
-    |名前|説明|提出の説明|フェーズ|表示される PDP|ユーザー設定フィールド|
+    |名前|説明|提出の説明|段階|表示される PDP|ユーザー設定フィールド|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |初期段階の提案の詳細  <br/> |プロジェクト名とコストを設定します。  <br/> |提案としてプロジェクトを提出します。  <br/> |作成する  <br/> |プロジェクト情報  <br/> プロジェクトの詳細  <br/> |提案のコスト (必須)  <br/> |
-    |プロジェクトの詳細  <br/> |提案されるプロジェクトの詳細を提供します。  <br/> |詳細を提出してプロジェクトを続行します。  <br/> |作成する  <br/> |プロジェクト情報  <br/> プロジェクトの詳細  <br/> |提案のコスト (読み取り専用)  <br/> |
-    |自動的に却下  <br/> |提供された情報に基づいて提案を拒否します。  <br/> | <br/> |作成する  <br/> |プロジェクト情報  <br/> |提案のコスト (読み取り専用)  <br/> |
+    |初期段階の提案の詳細  <br/> |プロジェクト名とコストを設定します。  <br/> |提案としてプロジェクトを提出します。  <br/> |Create  <br/> |プロジェクト情報  <br/> プロジェクトの詳細  <br/> |提案のコスト (必須)  <br/> |
+    |プロジェクトの詳細  <br/> |提案されるプロジェクトの詳細を提供します。  <br/> |詳細を提出してプロジェクトを続行します。  <br/> |Create  <br/> |プロジェクト情報  <br/> プロジェクトの詳細  <br/> |提案のコスト (読み取り専用)  <br/> |
+    |自動的に却下  <br/> |提供された情報に基づいて提案を拒否します。  <br/> | <br/> |Create  <br/> |プロジェクト情報  <br/> |提案のコスト (読み取り専用)  <br/> |
     |実行  <br/> |提案を受け入れ、プロジェクト管理できる状態にします。  <br/> | <br/> |管理  <br/> |プロジェクト情報  <br/> プロジェクトの詳細  <br/> |提案のコスト (読み取り専用)  <br/> |
    
     **図 4. Project Web App でのワークフロー ステージの一覧**
 
-    ![[ワークフロー ステージの一覧] Project Web App]ワークフロー ステージの一(media/pj15_CreateWorkflowSPD_WorkflowStages.gif "覧Project Web App")
+    ![Project Web App でのワークフロー ステージの一覧](media/pj15_CreateWorkflowSPD_WorkflowStages.gif "Project Web App でのワークフロー ステージの一覧")
   
 #### <a name="3-construct-the-workflow-in-the-text-based-designer"></a>3. デザイナーでワークフローをText-Basedします。
 
@@ -142,13 +142,13 @@ Visio 2013 および SharePoint Designer 2013 を使用して、Project Server 2
     
     **図 5. Project Server サイト ワークフローの作成**
 
-    ![サーバー サイト Projectの作成](media/pj15_CreateWorkflowSPD_CreateSiteWorkflow.gif "サーバー サイト ワークフロー Project作成する")
+    ![Project Server サイト ワークフローの作成](media/pj15_CreateWorkflowSPD_CreateSiteWorkflow.gif "Project Server サイト ワークフローの作成")
   
 2. [**分岐ワークフロー**] タブを選択します。次に、リボンの [**ワークフロー**] タブで、[**管理**] グループの [**ビュー**] ドロップダウン リストの [**テキストベース デザイナー**] を選択します。点滅するオレンジ色の挿入行をビューに表示するには (図 6 を参照)、ビューの内部をクリックします。
     
     **図 6. ワークフロー用のテキストベース デザイナー ビューの使用**
 
-    ![[デザイナー] Text-Basedの使用]デザイナー ビュー(media/pj15_CreateWorkflowSPD_TextBasedDesigner.gif "Text-Based使用する")
+    ![[テキストベース デザイナー] ビューの使用](media/pj15_CreateWorkflowSPD_TextBasedDesigner.gif "[テキストベース デザイナー] ビューの使用")
   
 3. **テキストベース デザイナー** ビューで、ワークフローが使用するステージを追加します。リボンの [**ワークフロー**] タブで、[**挿入**] グループの  [**ステージ**] ドロップダウン リストにある [**作成**] の [**初期段階の提案の詳細**] を選択します。
     
@@ -156,7 +156,7 @@ Visio 2013 および SharePoint Designer 2013 を使用して、Project Server 2
     
     **図 7. SharePoint デザイナーでのワークフローへのステージの追加**
 
-    ![SPD でのワークフローへのステージの追加 SPD]のワークフローへのステージ(media/pj15_CreateWorkflowSPD_AddStageInSPD.gif "の追加")
+    ![SPD でのワークフローへのステージの追加](media/pj15_CreateWorkflowSPD_AddStageInSPD.gif "SPD でのワークフローへのステージの追加")
   
 4. 各ステージにワークフローのステップとロジックを追加します。 
     
@@ -181,7 +181,7 @@ Visio 2013 および SharePoint Designer 2013 を使用して、Project Server 2
     
        **図 9. 初期段階の提案の詳細ステージの完成したロジック**
 
-       ![最初の提案の詳細の完了ロジック]最初の提案の(media/pj15_CreateWorkflowSPD_InitialStageLogic.gif "詳細の完了ロジック")
+       ![[初期段階の提案の詳細] の完成したロジック](media/pj15_CreateWorkflowSPD_InitialStageLogic.gif "[初期段階の提案の詳細] の完成したロジック")
   
     6. **自動的に却下** ステージでは、ワークフローを一時停止して PDP に何らかのデータを表示するのでない限り、最初のセクションは空のままにします。[**ステージに移動**] セクションには遷移が含まれている必要があります。却下に続く他のステージはないため、ステートメントとして「Go to End of Workflow」と入力します。 
     
@@ -193,7 +193,7 @@ Visio 2013 および SharePoint Designer 2013 を使用して、Project Server 2
     
     **図 10. SharePoint デザイナーでのワークフローのエラーの確認**
 
-    ![ワークフロー内のエラーのチェック](media/pj15_CreateWorkflowSPD_SPDCheckForErrors.gif "ワークフロー内のエラーのチェック")
+    ![ワークフローでのエラー チェック](media/pj15_CreateWorkflowSPD_SPDCheckForErrors.gif "ワークフローでのエラー チェック")
   
 6. (オプション) リボンの [**管理**] グループで、[**ビュー**] ドロップダウン メニューの [**ビジュアル デザイナー**] を選択します。図 11 では、ビューを 50% に縮小表示しています。
     
@@ -201,7 +201,7 @@ Visio 2013 および SharePoint Designer 2013 を使用して、Project Server 2
     
     **図 11. ワークフロー用のビジュアル デザイナーの使用**
 
-    ![ワークフローのVisioビューを]使用(media/pj15_CreateWorkflowSPD_SwitchView.gif "する ワークフローのVisioビューを使用する")
+    ![ワークフローの Visio デザイン ビューの使用](media/pj15_CreateWorkflowSPD_SwitchView.gif "ワークフローの Visio デザイン ビューの使用")
   
     ワークフローが Visual Designer ビューにある場合は、ワークフローを Visio 2013 (.vsdx) ファイルにバックアップとして保存するか、後で使用するために保存するには、[エクスポート] を選択して [Visio]**を選択します**。
     
@@ -215,7 +215,7 @@ Visio 2013 および SharePoint Designer 2013 を使用して、Project Server 2
     
     **図 12. ワークフローへの EPT の追加**
 
-    ![ワークフローの EPT の追加](media/pj15_CreateWorkflowSPD_EPTs.gif "ワークフローの EPT の追加")
+    ![ワークフローへの EPT の追加](media/pj15_CreateWorkflowSPD_EPTs.gif "ワークフローへの EPT の追加")
   
     > [!NOTE]
     > エンタープライズ プロジェクトの種類のテーブルで、[**SharePoint タスク リスト プロジェクト**] 列の [**はい**] の値は、SharePoint タスク一覧を作成する EPT を参照しています。タスク一覧は Project Web App に表示されますが、SharePoint がプロジェクトの制御権を維持します。SharePoint タスクの一覧としてプロジェクトを管理する方法の詳細については、「[Project Server 2013 architecture](project-server-2013-architecture.md)」を参照してください。 
@@ -224,13 +224,13 @@ Visio 2013 および SharePoint Designer 2013 を使用して、Project Server 2
     
     **図 13. 分岐ワークフローのテスト EPT でのプロジェクトの作成**
 
-    ![EPT を使用してプロジェクトを作成する EPT]を使用して(media/pj15_CreateWorkflowSPD_NewProject.gif "プロジェクトを作成する")
+    ![EPT によるプロジェクトの作成](media/pj15_CreateWorkflowSPD_NewProject.gif "EPT によるプロジェクトの作成")
   
 3. ワークフローで [**プロジェクトの情報**] PDP が表示されたら、プロジェクトのフィールドにデータを追加します。 たとえば、提案コストの **値を** 30000 と入力します。 U.S. 英語バージョンの Project Server では、フィールドの表示が $30,000 に変わります (図 14 を参照)。
     
     **図 14. 編集後のプロジェクトの情報 PDP の使用**
 
-    ![編集された情報 PDP Project編集](media/pj15_CreateWorkflowSPD_NewProjectStage1.gif "された情報")PDP を使用Project使用する
+    ![編集後のプロジェクトの情報 PDP の使用](media/pj15_CreateWorkflowSPD_NewProjectStage1.gif "編集後のプロジェクトの情報 PDP の使用")
   
 4. リボンの [**プロジェクト**] タブの [**プロジェクト**] グループで、[**保存**] を選択します。 Project Server は PDP 内のデータをプロジェクトに追加してから、[ワークフローの状態] ページを表示します (図 15 を参照)。ワークフローの状態図で初期段階の提案の詳細ステージの完全な説明を表示するには、ワークフロー ビジュアライゼーション ダイアグラム内のステージの上にポインターを移動します。
     
@@ -238,7 +238,7 @@ Visio 2013 および SharePoint Designer 2013 を使用して、Project Server 2
     
     **図 15. 初期段階の提案の詳細ステージでの [ワークフローの状態] ページの使用**
 
-    ![最初のステージの後の [ワークフローの](media/pj15_CreateWorkflowSPD_NewProjectStage1Status.gif "")状態] ページ
+    ![最初のステージ以降のワークフローの状態ページ](media/pj15_CreateWorkflowSPD_NewProjectStage1Status.gif "最初のステージ以降のワークフローの状態ページ")
   
     ワークフロー ビジュアライゼーション ダイアグラムに現在のステージが緑色で示されます。[**作成**] フェーズで、初期段階の提案の詳細ステージが現在のステージです。 
     
@@ -251,19 +251,19 @@ Visio 2013 および SharePoint Designer 2013 を使用して、Project Server 2
     
     **図 16. 自動却下ステージでワークフローが完了**
 
-    ![[自動拒否] でワークフローが完了](media/pj15_CreateWorkflowSPD_AutomatedRejectionCompleted.gif "したワークフローは、[自動拒否] で完了します。")
+    ![自動却下でワークフローが完了](media/pj15_CreateWorkflowSPD_AutomatedRejectionCompleted.gif "自動却下でワークフローが完了")
   
     図 17 は、テスト **2 -** 分岐という名前のプロジェクト提案を含む別のテストを示しています。ここで、Project詳細ステージは Create フェーズで現在の状態です。 [管理] フェーズは淡い青色で表示されます。これは、フェーズがまだアクティブでなっていない状態を示します。
     
     **図 17. コストが $25,000 より少ない場合はワークフローはプロジェクトの詳細ステージへ続行**
 
-    ![[詳細] ステージProjectの]ワークフローの(media/pj15_CreateWorkflowSPD_ProjectDetailsStage.gif "状態 (Project詳細ステージ)")
+    ![プロジェクトの詳細ステージでのワークフローの状態](media/pj15_CreateWorkflowSPD_ProjectDetailsStage.gif "プロジェクトの詳細ステージでのワークフローの状態")
   
 6. プロジェクトの詳細ステージに進む場合、既定ページに追加する追加はありません。[**提出**] を再度選択して実行ステージに進みます (図 18 を参照)。 
     
     **図 18. ワークフローは実行ステージで管理の準備完了**
 
-    ![[実行] ステージの [実行] ステージ](media/pj15_CreateWorkflowSPD_ExecutionStage.gif "のワークフローの状態")
+    ![Execution ステージでのワークフローの状態](media/pj15_CreateWorkflowSPD_ExecutionStage.gif "Execution ステージでのワークフローの状態")
   
 プロジェクトの詳細ステージではワークフローは提出イベントを待機しません。[プロジェクトの詳細] PDP に追加の必須フィールドがある場合は、Project Server はフィールドにデータが追加されるのを待ってから、実行ステージに進みます。分岐ワークフローで定義されているように、実行ステージも提出イベントを待機しません。実行ステージでは、プロジェクト マネージャーとしてプロジェクトを編集する、またはリボンの [**プロジェクト**] タブで [**閉じる**] を選択することができます。[**閉じる**] を選択した場合は、プロジェクトにチェックイン して、それを後で編集することも、プロジェクトをチェックアウトしたままにすることもできます。
 
@@ -302,7 +302,7 @@ Visio 2013 でワークフローを作成または編集し、ファイルを Sh
     
       **図 19. Visio ワークフロー図でのステージ図形と条件図形の接続**
 
-      ![[ワークフロー ダイアグラムの作成] Visio](media/pj15_CreateWorkflowSPD_NewVisioWorkflow.gif "ワークフロー ダイアグラムを作成するVisio")
+      ![Visio でのワークフロー図の作成](media/pj15_CreateWorkflowSPD_NewVisioWorkflow.gif "Visio でのワークフロー図の作成")
   
    4. 2 つのステージ図形をさらに条件図形の右側にドラッグします。これらの図形に **Stage 2** と **Stage 3** という名前が付けられます。
     
@@ -314,7 +314,7 @@ Visio 2013 でワークフローを作成または編集し、ファイルを Sh
     
       **図 20. Visio でのワークフローの完了**
 
-      ![[ワークフローの完了] Visio](media/pj15_CreateWorkflowSPD_CompletedVisioWorkflow.gif "ワークフローの完了Visio")
+      ![Visio でのワークフローの完了](media/pj15_CreateWorkflowSPD_CompletedVisioWorkflow.gif "Visio でのワークフローの完了")
   
    8. リボンの [**プロセス**] タブの [**図の検証**] グループで、[**図面のチェック**] を選択します。 すべてのエラーを修正してから、図面を保存します。 たとえば、ファイルに Test workflow from Visio.vsdx という名前を付けます。
     
@@ -334,7 +334,7 @@ Visio 2013 でワークフローを作成または編集し、ファイルを Sh
     
    **図 21. SharePoint Designer でのステージ プロパティの設定**
 
-   ![インポートされたワークフローのプロパティを設定](media/pj15_CreateWorkflowSPD_ImportFromVisio1.gif "する インポートされたワークフローのプロパティを設定する")
+   ![インポートされたワークフローでのプロパティの設定](media/pj15_CreateWorkflowSPD_ImportFromVisio1.gif "インポートされたワークフローでのプロパティの設定")
   
    2 つ目のステージに対して、[**プロジェクト ステージ**] プロパティを [**自動的に却下**] に設定します。3 つ目のステージに対して、[**プロジェクト ステージ**] プロパティを [**実行**] に設定します。
     

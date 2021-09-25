@@ -1,28 +1,28 @@
 ---
-title: filtercolumn プロパティ (RDS)
+title: FilterColumn プロパティ (RDS)
 TOCTitle: FilterColumn property (RDS)
 ms:assetid: fb5d9f23-b62a-8131-d6ff-8b7ed8bb825c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250287(v=office.15)
 ms:contentKeyID: 48548868
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d29c591c88de4b53535c26430bf369cbd3f53284
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 23fbdbc8c546d99456a5e898ea835d3b157e7728
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292441"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602627"
 ---
-# <a name="filtercolumn-property-rds"></a>filtercolumn プロパティ (RDS)
+# <a name="filtercolumn-property-rds"></a>FilterColumn プロパティ (RDS)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 フィルター条件を評価する列を示します。
 
 ## <a name="syntax"></a>構文
 
-*DataControl*。filtercolumn = *String*
+*DataControl*.FilterColumn = *String*
 
 ## <a name="parameters"></a>パラメーター
 

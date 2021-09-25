@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249146(v=office.15)
 ms:contentKeyID: 48544268
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: aac4d6371b9b34142698c91812e8cdba37551fdd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6de2017ff38d9c7e09eb5657786163d9d5100d91
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283220"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559249"
 ---
 # <a name="ado-technology-table"></a>ADO テクノロジ表
 
 **適用先:** Access 2013、Office 2013
 
-次の表は、「 *ADO プログラマーズガイド*」に記載されている Microsoft 製品、ツール、およびテクノロジを示しています。 このオンライン ヘルプ内の該当するトピックへのリンクも提供します。
+次の表に、ADO プログラマ ガイドで説明されている Microsoft 製品、ツール、 *およびテクノロジの一覧を示します*。 このオンライン ヘルプ内の該当するトピックへのリンクも提供します。
 
 <table>
 <colgroup>
@@ -28,7 +28,7 @@ ms.locfileid: "32283220"
 <thead>
 <tr class="header">
 <th><p>マイクロソフト製品またはテクノロジ</p></th>
-<th><p>References</p></th>
+<th><p>関連情報</p></th>
 </tr>
 </thead>
 <tbody>
@@ -45,7 +45,7 @@ ms.locfileid: "32283220"
 <td><p><a href="prerequisites-ado-introduction.md">前提条件</a><br/><br/><a href="marking-business-objects-as-safe-for-scripting.md">ビジネス オブジェクトに対してスクリプト作成の安全性を明示する</a><br/><br/><a href="registering-business-objects-on-the-client-for-use-with-dcom.md">DCOM を使用してビジネス オブジェクトをクライアントに登録する</a><br/><br/><a href="setting-dcom-stream-marshaling-format.md">DCOM ストリーム マーシャリング形式を設定する</a><br/><br/><a href="enabling-a-dll-to-run-on-dcom.md">DCOM で DLL を実行できるようにする</a><br/><br/><a href="running-business-objects-in-component-services.md">コンポーネント サービスでのビジネス オブジェクトの実行</a><br/><br/></p></td>
 </tr>
 <tr class="even">
-<td><p>microsoft</p></td>
+<td><p>FrontPage</p></td>
 <td><p><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</a><br/><br/></p></td>
 </tr>
 <tr class="odd">
@@ -58,7 +58,7 @@ ms.locfileid: "32283220"
 </tr>
 <tr class="odd">
 <td><p>インターネット インフォメーション サービス</p></td>
-<td><p><a href="chapter-10-records-and-streams.md">10 章: レコードとストリーム</a><br/><br/><a href="streams-and-persistence.md">ストリームと永続性</a><br/><br/><a href="using-ado-for-internet-publishing.md">インターネット発行に ADO を使用する</a><br/><br/><a href="solutions-for-remote-data-access.md">リモート データ アクセスのソリューション</a><br/><br/><a href="configuring-virtual-servers-on-iis.md">IIS で仮想サーバーを構成する</a><br/><br/><a href="specifying-threads-per-processor-on-iis.md">IIS でプロセッサごとにスレッドを指定する</a><br/><br/><a href="securing-rds-applications.md">RDS アプリケーションをセキュリティ保護する</a><br/><br/><a href="internet-server-error-access-denied.md">&quot;インターネットサーバーエラー: アクセスが拒否されました&quot;</a><br/><br/><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</a><br/><br/><a href="internet-information-services-error-codes.md">インターネット インフォメーション サービスのエラー コード</a><br/><br/></p></td>
+<td><p><a href="chapter-10-records-and-streams.md">10 章: レコードとストリーム</a><br/><br/><a href="streams-and-persistence.md">ストリームと永続性</a><br/><br/><a href="using-ado-for-internet-publishing.md">インターネット発行に ADO を使用する</a><br/><br/><a href="solutions-for-remote-data-access.md">リモート データ アクセスのソリューション</a><br/><br/><a href="configuring-virtual-servers-on-iis.md">IIS で仮想サーバーを構成する</a><br/><br/><a href="specifying-threads-per-processor-on-iis.md">IIS でプロセッサごとにスレッドを指定する</a><br/><br/><a href="securing-rds-applications.md">RDS アプリケーションをセキュリティ保護する</a><br/><br/><a href="internet-server-error-access-denied.md">&quot;インターネット サーバー エラー: アクセスが拒否されました&quot;</a><br/><br/><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</a><br/><br/><a href="internet-information-services-error-codes.md">インターネット インフォメーション サービスのエラー コード</a><br/><br/></p></td>
 </tr>
 <tr class="even">
 <td><p>JScript</p></td>

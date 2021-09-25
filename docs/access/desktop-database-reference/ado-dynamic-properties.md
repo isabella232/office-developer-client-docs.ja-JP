@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249782(v=office.15)
 ms:contentKeyID: 48546915
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: fae0df2a4cc5c9de585d2b101e9fa31cb6a0a545
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3f6c3692749e0915fc9e26faf55fc948ee1c96ff
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281716"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602963"
 ---
 # <a name="ado-dynamic-properties"></a>ADO の動的プロパティ
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 動的プロパティは、[Connection](properties-collection-ado.md) オブジェクト、 [Command](connection-object-ado.md) オブジェクト、または [Recordset](command-object-ado.md) オブジェクトの [Properties](recordset-object-ado.md) コレクションに追加できます。これらの動的プロパティのソースは、 [OLE DB Provider for SQL Server](microsoft-ole-db-provider-for-sql-server.md) などのデータ プロバイダー、または [Microsoft Cursor Service for OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) などのサービス プロバイダーです。各動的プロバイダーの詳細については、それぞれのデータ プロバイダーまたはサービス プロバイダーのマニュアルを参照してください。
 
@@ -54,7 +54,7 @@ ms.locfileid: "32281716"
 </tr>
 <tr class="odd">
 <td><p><a href="unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md">Unique Table、Unique Schema、Unique Catalog</a></p></td>
-<td><p><strong>Unique table</strong> -更新、挿入、および削除が許可されるベーステーブルの名前を指定します。<br/><br/><strong>Unique schema</strong> -スキーマ、またはテーブルの所有者の名前を指定します。<br/><br/><strong>Unique catalog</strong> -カタログ、またはそのテーブルを含むデータベースの名前を指定します。</p></td>
+<td><p><strong>Unique Table</strong> — 更新、挿入、および削除を許可するベース テーブルの名前を指定します。<br/><br/><strong>一意のスキーマ</strong> : テーブルの所有者のスキーマまたは名前を指定します。<br/><br/><strong>一意のカタログ</strong> : テーブルを含むデータベースのカタログまたは名前を指定します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="update-resync-property-dynamic-ado.md">Update Resync</a></p></td>

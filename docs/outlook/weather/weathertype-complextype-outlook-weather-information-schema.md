@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b94d848e-868a-5d5e-ad82-39ed9bd5b357
 description: 場所の気象条件を指定します。
-ms.openlocfilehash: ac7b8f37e71da203db0f6aefc8e20b29e810c3cf
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 56d4364e521cadd9a3a7062a0caf2cb82dcbd079
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542948"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616188"
 ---
 # <a name="weathertype-complextype-outlook-weather-information-schema"></a>weatherType complexType (Outlook天気予報スキーマ)
 
@@ -64,11 +64,11 @@ ms.locfileid: "34542948"
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
 |属性  <br/> |xs:string  <br/> |必須  <br/> |天気予報情報のソースを指定します。  <br/> |xs:string 型の値  <br/> |
-|degreetype  <br/> |xs:string  <br/> |必須  <br/> |場所の温度 (摂氏など) の単位を指定します。  <br/> |C、F  <br/> |
+|degreetype  <br/> |xs:string  <br/> |必須出席者  <br/> |場所の温度 (摂氏など) の単位を指定します。  <br/> |C、F  <br/> |
 |imagerelativeurl  <br/> |xs:string  <br/> |必須  <br/> |場所のイメージの URL を指定します。  <br/> |xs:string 型の値  <br/> |
-|timezone  <br/> |xs:integer  <br/> |必須  <br/> |GMT オフセットを指定します。  <br/> |-11 ~ 12 の値  <br/> |
+|timezone  <br/> |xs:integer  <br/> |必須出席者  <br/> |GMT オフセットを指定します。  <br/> |-11 ~ 12 の値  <br/> |
 |url  <br/> |xs:string  <br/> |必須  <br/> |指定した場所の天気予報情報を含む天気予報サービスの Web ページの URL を指定します。  <br/> |xs:string 型の値  <br/> |
-|weatherlocationcode  <br/> |xs:string  <br/> |必須  <br/> |同じ名前を持つ複数の場所を区別するために使用する場所に関連付けられているコードを指定します。  <br/> |xs:string 型の値  <br/> |
-|weatherlocationname  <br/> |xs:string  <br/> |必須  <br/> |ドロップダウン コントロールに表示される場所の名前を指定します。  <br/> |xs:string 型の値  <br/> |
+|weatherlocationcode  <br/> |xs:string  <br/> |必須出席者  <br/> |同じ名前を持つ複数の場所を区別するために使用する場所に関連付けられているコードを指定します。  <br/> |xs:string 型の値  <br/> |
+|weatherlocationname  <br/> |xs:string  <br/> |必須出席者  <br/> |ドロップダウン コントロールに表示される場所の名前を指定します。  <br/> |xs:string 型の値  <br/> |
    
 

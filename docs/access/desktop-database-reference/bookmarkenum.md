@@ -1,18 +1,18 @@
 ---
-title: BookmarkEnum (Access デスクトップデータベースリファレンス)
+title: BookmarkEnum (Access desktop database reference)
 TOCTitle: BookmarkEnum
 ms:assetid: 75cf5edd-bcb6-ab61-8703-73775cce91de
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249482(v=office.15)
 ms:contentKeyID: 48545681
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: df80ff40a83c6aab1fc4657ac23d2e0ec1b28b01
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e05ed858b0fb03417e54a3044e296d0da662c264
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296781"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558717"
 ---
 # <a name="bookmarkenum"></a>BookmarkEnum
 
@@ -38,17 +38,17 @@ ms.locfileid: "32296781"
 <tbody>
 <tr class="odd">
 <td><p><strong>adBookmarkCurrent</strong></p></td>
-<td><p>.0</p></td>
+<td><p>0</p></td>
 <td><p>現在のレコードから開始します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adBookmarkFirst</strong></p></td>
-<td><p>1-d</p></td>
+<td><p>1</p></td>
 <td><p>最初のレコードから開始します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adBookmarkLast</strong></p></td>
-<td><p>pbm-2</p></td>
+<td><p>2</p></td>
 <td><p>最後のレコードから開始します。</p></td>
 </tr>
 </tbody>
@@ -70,13 +70,13 @@ ms.locfileid: "32296781"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums</p></td>
+<td><p>AdoEnums.Bookmark.CURRENT</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums</p></td>
+<td><p>AdoEnums.Bookmark.FIRST</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums</p></td>
+<td><p>AdoEnums.Bookmark.LAST</p></td>
 </tr>
 </tbody>
 </table>

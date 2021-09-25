@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb612664(v=office.15)
 ms:contentKeyID: 55119884
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e1d5b293f89c453886cafd9effc3fb5205f9696c
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.localizationpriority: medium
+ms.openlocfilehash: 2874f352dad4527fade65a714b231cdae85cf1ec
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542598"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616314"
 ---
 # <a name="filter-and-efficiently-enumerate-items-in-a-folder"></a>フォルダーのアイテムをフィルター処理して効率よく列挙する
 
@@ -24,7 +24,7 @@ ms.locfileid: "34542598"
 
 次に、 **Columns.Add** を再び呼び出して **ReceiveTime** プロパティを追加し、この列が協定世界時 (UTC) の日時値として値を格納するように MAPI 名前空間を指定します。 最後に、テーブルの各アイテムを列挙し、テーブルの列として指定された 4 つの各プロパティの値を表示します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード サンプルをテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートする際に、最初に必ず Microsoft Outlook 15.0 Object Library コンポーネントへの参照を追加し、そして Outlook 変数を指定します。**Imports** または **using** ステートメントは、コード サンプル中の関数の前に直接置かれず、Public クラス宣言の前に追加する必要があります。次のプログラムは、Visual Basic および C\#でインポートおよび割り当てを行う方法を示しています。
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook

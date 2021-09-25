@@ -1,24 +1,25 @@
 ---
-title: DBEngine メソッド (DAO)
+title: DBEngine.Idle メソッド (DAO)
 TOCTitle: Idle Method
+description: Idle メソッド
 ms:assetid: c90b565e-626e-139d-102a-0386601ce0c8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff823202(v=office.15)
 ms:contentKeyID: 48547666
-ms.date: 09/18/2015
+ms.date: 09/14/2021
 mtps_version: v=office.15
 f1_keywords:
 - dao360.chm1052978
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 7a84e3cc4b35886a12b2e6b4cf92b7483fea293a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0c476e335bc14392ccac304108b9df3056fd7548
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294331"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581463"
 ---
-# <a name="dbengineidle-method-dao"></a>DBEngine メソッド (DAO)
+# <a name="dbengineidle-method-dao"></a>DBEngine.Idle メソッド (DAO)
 
 **適用先:** Access 2013、Office 2013
 
@@ -26,37 +27,15 @@ ms.locfileid: "32294331"
 
 ## <a name="syntax"></a>構文
 
-*式*。Idle (***アクション***)
+*式* .Idle(***Action***)
 
-*式***DBEngine**オブジェクトを表す変数を取得します。
+*式* **DBEngine** オブジェクトを表す変数です。
 
 ## <a name="parameters"></a>パラメーター
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
-<th><p>データ型</p></th>
-<th><p>説明</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>Action</em></p></td>
-<td><p>Optional</p></td>
-<td><p><strong>Variant</strong></p></td>
-<td><p>実行するアクションを指定します。 <strong><a href="idleenum-enumeration-dao.md">IdleEnum</a></strong>定数のいずれかをすることができます。</p></td>
-</tr>
-</tbody>
-</table>
-
+|**名前**|**必須かどうか**|**データ型**|**説明**|
+|:----------|:----------|:----------|:----------|
+|*Action*|オプション|**Variant**|実行するアクションを指定します。|
 
 ## <a name="remarks"></a>注釈
 
@@ -123,4 +102,3 @@ Sub IdleOutput(rstTemp As Recordset, strTemp As String)
 End Sub 
  
 ```
-

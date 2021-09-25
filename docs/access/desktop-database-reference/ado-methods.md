@@ -1,18 +1,18 @@
 ---
-title: ActiveX データオブジェクト (ADO) メソッド
+title: ActiveXデータ オブジェクト (ADO) メソッド
 TOCTitle: ADO methods
 ms:assetid: 1fd965a0-711c-e199-822c-b9575c5034bd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248984(v=office.15)
 ms:contentKeyID: 48543651
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3169b7eaab6ad290bfc385881f5de69edc80111f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 94d7fcdbbbe442bfd7218d70e20b7d306f3f2e01
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283283"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559291"
 ---
 # <a name="ado-methods"></a>ADO のメソッド
 
@@ -46,7 +46,7 @@ ms.locfileid: "32283283"
 <td><p><a href="begintrans-committrans-and-rollbacktrans-methods-ado.md">BeginTrans、CommitTrans、RollbackTrans</a></p></td>
 <td><p><strong>Connection</strong> オブジェクト内のトランザクション処理を次のように管理します。<br/><br/><strong>BeginTrans</strong> は、新しいトランザクションを開始します。<br/><br/>
 <strong>CommitTrans</strong> は、すべての変更を保存して現在のトランザクションを終了します。新しいトランザクションを開始する場合もあります。<br/><br/>
-<strong>RollbackTrans</strong> -すべての変更をキャンセルし、現在のトランザクションを終了します。 新しいトランザクションを開始する場合もあります。</p></td>
+<strong>RollbackTrans</strong> - 変更を取り消し、現在のトランザクションを終了します。 新しいトランザクションを開始する場合もあります。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="cancel-method-ado.md">Cancel</a></p></td>
@@ -57,7 +57,7 @@ ms.locfileid: "32283283"
 <td><p>保留中のバッチ更新をキャンセルします。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="cancelupdate-method-ado.md">CancelUpdate</a></p></td>
+<td><p><a href="cancelupdate-method-ado.md">CancelUpdate </a></p></td>
 <td><p><strong>Update</strong> メソッドを呼び出す前に行った、<strong>Recordset</strong> オブジェクトのカレント行か新規行、または <strong>Record</strong> オブジェクトの <strong>Fields</strong> コレクションをキャンセルします。</p></td>
 </tr>
 <tr class="even">
@@ -66,7 +66,7 @@ ms.locfileid: "32283283"
 </tr>
 <tr class="odd">
 <td><p><a href="clone-method-ado.md">Clone</a></p></td>
-<td><p>既存の <strong>Recordset</strong> オブジェクトから <strong>Recordset</strong> オブジェクトの複製を作成します。 必要に応じて、複製を読み取り専用に指定できます。</p></td>
+<td><p>既存の <strong>Recordset</strong> オブジェクトから <strong>Recordset</strong> オブジェクトの複製を作成します。必要に応じて、複製を読み取り専用に指定できます。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="close-method-ado.md">Close</a></p></td>
@@ -117,7 +117,7 @@ ms.locfileid: "32283283"
 <td><p>指定した条件を満たす行を <strong>Recordset</strong> から検索します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="flush-method-ado.md">揃え</a></p></td>
+<td><p><a href="flush-method-ado.md">フラッシュ</a></p></td>
 <td><p>ADO バッファーに残っている <strong>Stream</strong> の内容を、<strong>Stream</strong> に関連付けられた、基になるオブジェクトに反映します。</p></td>
 </tr>
 <tr class="odd">
@@ -193,7 +193,7 @@ ms.locfileid: "32283283"
 <td><p>オブジェクトの基になるクエリを再実行して、<strong>Recordset</strong> オブジェクトのデータを更新します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="resync-method-ado.md">Resync</a></p></td>
+<td><p><a href="resync-method-ado.md">再同期</a></p></td>
 <td><p>基になるデータベースの情報を基に、現在の <strong>Recordset</strong> オブジェクト、または <strong>Record</strong> オブジェクトの <strong>Fields</strong> コレクションのデータを再表示します。</p></td>
 </tr>
 <tr class="even">
@@ -221,7 +221,7 @@ ms.locfileid: "32283283"
 <td><p>開いているストリームに関する統計情報を取得します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="supports-method-ado.md">機能</a></p></td>
+<td><p><a href="supports-method-ado.md">サポート</a></p></td>
 <td><p>指定した <strong>Recordset</strong> オブジェクトが特定の種類の機能をサポートしているかどうかを判別します。</p></td>
 </tr>
 <tr class="odd">

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm1015
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c599b444-4d0e-a855-b04b-dd9dcaedf263
 description: テキスト ブロックの上の枠線から、そのブロックに含まれるテキストの最初の行までの間隔を指定します。既定値は 4.0000 ポイントです。この値は、図面の縮尺による影響を受けません。図面の縮尺を変更しても、上余白の長さは変わりません。
-ms.openlocfilehash: 97d349fd4ddc3c76cda61e1ee7ce25909161e6fa
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4bc351b8b0b8ebfa537965cf89d67640206f646e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435573"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622726"
 ---
 # <a name="topmargin-cell-text-block-format-section"></a>[TopMargin] セル ([Text Block Format] セクション)
 

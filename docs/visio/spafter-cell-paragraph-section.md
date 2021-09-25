@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm960
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2dd56ae5-300e-ba09-a73a-83c2b6c2a0ef
 description: 図形のテキスト ブロック内にある各段落の後に挿入する間隔を指定します。この値に、[SpLine] セルや [BottomMargin] セル (テキスト ブロックの最後の段落に対して適用される) に指定した値が加えられて、テキスト ブロックが表示されます。
-ms.openlocfilehash: 2b8fe7e2b0df09561d0db4367f917c8f4b71335d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: cdabd57f5dbad41e9b4d09e684c59df242d1e2ab
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439836"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622789"
 ---
 # <a name="spafter-cell-paragraph-section"></a>[SpAfter] セル ([Paragraph] セクション)
 

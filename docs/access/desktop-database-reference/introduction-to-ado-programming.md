@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249181(v=office.15)
 ms:contentKeyID: 48544423
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: eab6794bb6aaf44ed0bca84165295ffd8c417058
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 086f15dbd156cfd842b7ee976d99ecdc95bcc9f4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291225"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568895"
 ---
 # <a name="introduction-to-ado-programming"></a>ADO プログラミングの概要
 
@@ -23,14 +23,14 @@ Microsoft ActiveX Data Objects (ADO) プログラマ ガイドの概要につい
 - [ADO の新機能](what-s-new-in-ado.md)
 - [前提条件 (ADO の概要)](prerequisites-ado-introduction.md)
 - [ライブラリの ADO ファミリ](the-ado-family-of-libraries.md)
-- [Microsoft データアクセスにおける ADO の役割](the-role-of-ado-in-microsoft-data-access.md)
+- [Microsoft Data Access での ADO の役割](the-role-of-ado-in-microsoft-data-access.md)
 - [ADO のタスク表](ado-task-table.md)
 - [ADO テクノロジ表](ado-technology-table.md)
 - [ADO 用語集](ado-glossary.md)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-[「I: Active X Data Objects」](section-i-activex-data-objects.md)に移動します。
+セクション [I: Active X データ オブジェクトに移動します](section-i-activex-data-objects.md)。
 
 ## <a name="see-also"></a>関連項目
 

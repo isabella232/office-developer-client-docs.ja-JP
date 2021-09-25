@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249734(v=office.15)
 ms:contentKeyID: 48546695
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 675dd1f671bd70d8272e303708bf951bbcee1a47
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9d6b2839a89a9ca85b3a1d55019fe1a7b41abd06
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295465"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569245"
 ---
 # <a name="count-property-example-vb"></a>Count プロパティの使用例 (VB)
 
 
 **適用先:** Access 2013、Office 2013
 
-この例では、***Employee*** データベース内の 2 つのコレクションで [Count](count-property-ado.md) プロパティを使用します。 このプロパティで、各コレクション内のオブジェクト数を取得し、これらのコレクションを列挙するループに上限を設定します。 **Count**プロパティを使用せずにこれらのコレクションを列挙する別の方法は、ステートメントを使用することです。
+この例では [、* Employee](count-property-ado.md) _ データベース内の 2 つのコレクションを持つ **Count プロパティを** 示します。 このプロパティで、各コレクション内のオブジェクト数を取得し、これらのコレクションを列挙するループに上限を設定します。 _ *Count** プロパティを使用せずにこれらのコレクションを列挙するもう 1 つの方法は、ステートメントを使用する方法です。
 
 ```vb 
  

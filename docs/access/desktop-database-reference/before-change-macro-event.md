@@ -12,13 +12,13 @@ dev_langs:
 - xml
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a180068e805ae11883822ebf26f924e10d34bac5
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.localizationpriority: medium
+ms.openlocfilehash: ddfbf772f1c7bf562fa6db1abdda88ac730c3db7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538117"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558787"
 ---
 # <a name="before-change-macro-event"></a>Before Change マクロ イベント
 
@@ -33,7 +33,7 @@ The **Before Change** event occurs when a record changes, but before the change 
 
 Before Change イベントでは、レコードの変更を確定する前に特定のアクションを実行します。通常は、検証の実行やカスタム エラー メッセージの生成を行います。
 
-**Updated("*フィールド名*")** 関数を使用すると、フィールドが変更されているかどうかを判断できます。 次のコード例は、 **if**ステートメントを使用して、PaidInFull フィールドが変更されているかどうかを判断する方法を示しています。
+**Updated("*フィールド名*")** 関数を使用すると、フィールドが変更されているかどうかを判断できます。 次のコード例は、If ステートメントを使用して **、PaidInFull** フィールドが変更されたかどうかを判断する方法を示しています。
 
 ```vb
     If  Updated("PaidInFull")   Then 
@@ -103,7 +103,7 @@ Before Change イベントで使用できるマクロ コマンドは次のと�
 </tr>
 <tr class="even">
 <td><p>データ ブロック</p></td>
-<td><p><a href="lookuprecord-data-block.md">LookupRecord マクロアクション</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">LookupRecord マクロ アクション</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>データ アクション</p></td>
@@ -143,7 +143,7 @@ To create a Data Macro that captures the **Before Change** event, use the follow
 
 ## <a name="example"></a>例
 
-次のコード例では、 **Before Change**イベントを使用して、状態フィールドを検証します。 An error is raised if an inappropriate value is contained in the Resolution field.
+次のコード例では **、Before Change イベントを使用して** Status フィールドを検証します。 An error is raised if an inappropriate value is contained in the Resolution field.
 
 ```vb 
  
@@ -178,9 +178,9 @@ End If
 
 2.  [ **テーブル**] タブの [ **イベント前**] で、[ **変更前**] をクリックします。
 
-3.  次のコード例のコードを選択し、 **CTRL + C**キーを押してクリップボードにコピーします。
+3.  次のコード例でコードを選択し **、Ctrl + C** キーを押してクリップボードにコピーします。
 
-4.  [マクロデザイナー] ウィンドウをアクティブにして、CTRL キーを押し**ながら V**キーを押します。
+4.  マクロ デザイナー ウィンドウをアクティブ化し、Ctrl + **V キーを押します**。
 
 
 
@@ -228,7 +228,7 @@ End If
 </DataMacros>
 ```
 
-次の例は、" RaiseError" アクションを使用して Before Change データ マクロ イベントを取り消す方法を示します。 AssignedTo フィールドが更新されると、 LookupRecord データ ブロックを使用して、割り当てられた技術者が未解決サービス リクエストに現在割り当てられているかどうかが確認されます。 これが true の場合、Before Change イベントは取り消され、レコードは更新されません。
+次の例は、" RaiseError" アクションを使用して Before Change データ マクロ イベントを取り消す方法を示します。 AssignedTo フィールドが更新されると、 LookupRecord データ ブロックを使用して、割り当てられた技術者が未解決サービス リクエストに現在割り当てられているかどうかが確認されます。 この値が true の場合、Before Change イベントは取り消され、レコードは更新されません。
 
 **サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 

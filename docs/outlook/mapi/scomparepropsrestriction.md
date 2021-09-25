@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SComparePropsRestriction
 api_type:
 - COM
 ms.assetid: 3231a91a-1ef2-4dd8-9f3e-79ca56d2eae9
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 513ec0db4e99e687d8aeb9e1d6acdef73df4d158
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 963563767723fbdb5e316bbd2ac8c49060b0a296
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33440004"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609458"
 ---
 # <a name="scomparepropsrestriction"></a>SComparePropsRestriction
 
@@ -39,7 +39,7 @@ typedef struct _SComparePropsRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 **relop**
   

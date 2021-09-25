@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm5267115
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 77d56efd63d6a0841b595f12456baa808751706e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 175f168fdc384570ad99c86db9e0c185b7d6cf38
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295521"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569252"
 ---
 # <a name="convert-dao-code-to-ado"></a>DAO コードを ADO に変換する
 
@@ -129,7 +129,7 @@ ms.locfileid: "32295521"
 
 ### <a name="about-the-contributors"></a>投稿者について
 
-**リンクの提供元: **[UtterAccess](https://www.utteraccess.com) コミュニティ。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
+**リンクの提供元:**[UtterAccess](https://www.utteraccess.com) コミュニティ。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
 
 - [DAO と ADO 間の選択](https://www.utteraccess.com/wiki/index.php/choosing_between_dao_and_ado)
 

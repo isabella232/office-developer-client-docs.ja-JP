@@ -3,17 +3,17 @@ title: MAPI サブシステムでのトランスポート プロバイダーの�
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 7659369a-0952-4f5a-a86b-91958c4c1a3f
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 7cadb57706e3feec7ed98dd5e4e8d75967036fef
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0cfc1fd71e70fbc3555e63551cb3e48c708b98bc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424057"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609279"
 ---
 # <a name="transport-provider-role-in-the-mapi-subsystem"></a>MAPI サブシステムでのトランスポート プロバイダーの役割
   
@@ -55,6 +55,6 @@ ms.locfileid: "33424057"
   
 **メッセージング システムのトランスポート プロバイダー ロール**
   
-![メッセージング システムのトランスポート プロバイダーの役割]メッセージング システム(media/xp01.gif "内のトランスポート プロバイダーの役割")
+![メッセージング システムのトランスポート プロバイダー ロール](media/xp01.gif "メッセージング システムのトランスポート プロバイダー ロール")
   
 

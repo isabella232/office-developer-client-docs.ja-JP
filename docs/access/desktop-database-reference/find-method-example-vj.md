@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249367(v=office.15)
 ms:contentKeyID: 48545232
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 33f34a657f483a406c1e0c61707b6eeaa9cf2bee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 450aa9bba66c3d2ce3fb737feeaa8a5425843852
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292357"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569000"
 ---
 # <a name="find-method-example-vj"></a>Find メソッドの使用例 (VJ++)
 
 
 **適用先:** Access 2013、Office 2013
 
-この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Find](find-method-ado.md) メソッドを使用して ***Pubs*** データベースを検索し、役職の数をカウントします。 基になるプロバイダーは同様の機能をサポートしていないものと仮定します。
+この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Find](find-method-ado.md) メソッドを使用して ***Pubs*** データベースを検索し、役職の数をカウントします。基になるプロバイダーは同様の機能をサポートしていないものと仮定します。
 
 ```java 
  

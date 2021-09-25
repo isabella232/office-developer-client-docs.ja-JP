@@ -1,5 +1,5 @@
 ---
-title: Connection オブジェクト (ADO)
+title: 接続オブジェクト (ADO)
 TOCTitle: Connection object (ADO)
 ms:assetid: c16023aa-0321-2513-ee71-255d6ffba03d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249940(v=office.15)
@@ -10,17 +10,17 @@ f1_keywords:
 - ado210.chm1231105
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: ed736a0e52ff45cd0fed63f1ba5bd7060d7a2380
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5e2f7c534ccd5d319af8be6000008ff8026221f7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295878"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602823"
 ---
-# <a name="connection-object-ado"></a>Connection オブジェクト (ADO)
+# <a name="connection-object-ado"></a>接続オブジェクト (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 データ ソースに対して開かれている接続を表します。
 

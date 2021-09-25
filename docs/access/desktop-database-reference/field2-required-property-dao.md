@@ -1,20 +1,20 @@
 ---
-title: Field2 プロパティ (DAO)
+title: Field2.Required プロパティ (DAO)
 TOCTitle: Required Property
 ms:assetid: 7d14dfd7-a50d-6044-469e-1511c74c148d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196390(v=office.15)
 ms:contentKeyID: 48545848
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6b1950c8a864fbf23bee26be89e07e49357840b7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 534dcec05ec3afdb4ff247313f70d9d2cd19a78b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292721"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581267"
 ---
-# <a name="field2required-property-dao"></a>Field2 プロパティ (DAO)
+# <a name="field2required-property-dao"></a>Field2.Required プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -24,9 +24,9 @@ ms.locfileid: "32292721"
 
 ## <a name="syntax"></a>構文
 
-*式*。必須
+*式* .必須
 
-*式***Field2**オブジェクトを表す変数を取得します。
+*式***Field2** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
@@ -48,7 +48,7 @@ ms.locfileid: "32292721"
 <tbody>
 <tr class="odd">
 <td><p><strong>Index</strong> オブジェクト</p></td>
-<td><p>サポートされない</p></td>
+<td><p>サポートしません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong> オブジェクト</p></td>
@@ -56,15 +56,15 @@ ms.locfileid: "32292721"
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong> オブジェクト</p></td>
-<td><p>値の取得のみ可能です。</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Relation</strong> オブジェクト</p></td>
-<td><p>サポートしません。</p></td>
+<td><p>非サポート</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>TableDef</strong> オブジェクト</p></td>
-<td><p>値の取得および設定が可能です。</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 </tbody>
 </table>

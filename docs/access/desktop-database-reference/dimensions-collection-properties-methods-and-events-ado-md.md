@@ -1,20 +1,20 @@
 ---
-title: Dimensions コレクションのプロパティ、メソッド、およびイベント (ADO MD)
+title: ディメンション コレクションのプロパティ、メソッド、およびイベント (ADO MD)
 TOCTitle: Dimensions collection properties, methods, and events
 ms:assetid: c5bf0d35-ff61-541c-c541-d186c45706e9
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249966(v=office.15)
 ms:contentKeyID: 48547615
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6f3795a06955b994b4561b8b36ec50734be98d13
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 864203058c3a1a672e42e6a0d9a940a4c7918802
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293855"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581435"
 ---
-# <a name="dimensions-collection-properties-methods-and-events-ado-md"></a>Dimensions コレクションのプロパティ、メソッド、およびイベント (ADO MD)
+# <a name="dimensions-collection-properties-methods-and-events-ado-md"></a>ディメンション コレクションのプロパティ、メソッド、およびイベント (ADO MD)
 
 
 **適用先:** Access 2013、Office 2013
@@ -24,7 +24,7 @@ ms.locfileid: "32293855"
 - [Count プロパティ](count-property-ado.md)
 - [Item プロパティ](item-property-ado.md)
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>Methods
 
 - [Refresh メソッド](refresh-method-ado.md)
 

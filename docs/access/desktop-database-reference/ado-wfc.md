@@ -1,18 +1,18 @@
 ---
-title: Windows Foundation Classes 用の ado (ado/WFC)
+title: ADO for Windows Foundation クラス (ADO/WFC)
 TOCTitle: ADO/WFC
 ms:assetid: 73206be8-6515-79e4-e904-cc2d0d59411d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249468(v=office.15)
 ms:contentKeyID: 48545628
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: df9def320274df0eb4636aa237deb566dd5725b7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0be678323e24179c0362f119ecc4dc11bb85b0ba
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281723"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559221"
 ---
 # <a name="adowfc"></a>ADO/WFC
 
@@ -64,7 +64,7 @@ Windows Foundation Classes (ADO/WFC) 用の ADO は、ADO のイベント モデ
     
     唯一の引数は、目的のクラス (**this**) と、そのクラス内のメソッド (**onConnectComplete**) への参照です。
 
-3.  Add your event handler to a list of handlers designated to process a particular type of event. メソッドには、**addOn * * * EventName*(*handler*) などの名前を付けて使用します。
+3.  Add your event handler to a list of handlers designated to process a particular type of event. addOn EventName (ハンドラー) などの名前を _持つメソッド_ を *使用します*。
 
 4.  ADO/WFC では、すべての ADO のイベント ハンドラーが内部的に実装されています。このため、 **Connection** または **Recordset** の操作によって発生するイベントは、ADO/WFC のイベント ハンドラーによって取得されます。 ADO/WFC のイベント ハンドラーは、ADO の **ConnectionEvent** のパラメーターを ADO/WFC の **ConnectionEvent** クラスのインスタンスとして、また ADO の **RecordsetEvent** のパラメーターを ADO/WFC の **RecordsetEvent** クラスのインスタンスとして渡します。これらの ADO/WFC クラスは、ADO イベントのパラメーターを統合したものです。つまり、各 ADO/WFC クラスには、ADO の **ConnectionEvent** または **RecordsetEvent** の全メソッドの一意のパラメーターごとに 1 つのデータ メンバーが含まれます。
 
@@ -79,5 +79,5 @@ Windows Foundation Classes (ADO/WFC) 用の ADO は、ADO のイベント モデ
 
 6.  作成したイベント ハンドラーから、ADO イベントの ADO/WFC ハンドラーに制御が戻ります。ADO/WFC は、関係する ADO/WFC のイベント データ メンバーを ADO のイベント パラメーターにコピーし、ADO のイベント ハンドラーに制御が戻ります。
 
-7.  When you are finished processing, remove your handler from the list of ADO/WFC event handlers. メソッドには、**removeon * * * EventName*(*handler*) などの名前を付けて使用します。
+7.  When you are finished processing, remove your handler from the list of ADO/WFC event handlers. **removeOn** EventName ( ハンドラー) などの名前を _持つメソッド_ を *使用します*。
 

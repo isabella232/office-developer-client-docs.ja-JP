@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249694(v=office.15)
 ms:contentKeyID: 48546529
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8d9dc28bd64966e85d16ee2d8cb62fdebc3ba942
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d8c641c43df1a0f035d37f14727e42f89475d16a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296872"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558801"
 ---
 # <a name="begintrans-committrans-and-rollbacktrans-methods-ado"></a>BeginTrans メソッド、CommitTrans メソッド、および RollbackTrans メソッド (ADO)
 
@@ -28,13 +28,13 @@ ms.locfileid: "32296872"
 
 ## <a name="syntax"></a>構文
 
-*level* = *オブジェクト*。BeginTrans ()
+*level*  = *object*.BeginTrans()
 
-*オブジェクト*。BeginTrans
+*object*.BeginTrans
 
-*オブジェクト*。CommitTrans
+*object*.CommitTrans
 
-*オブジェクト*。RollbackTrans
+*object*.RollbackTrans
 
 ## <a name="return-value"></a>戻り値
 
@@ -51,7 +51,7 @@ ms.locfileid: "32296872"
 **Connection** オブジェクトでこれらのメソッドを使用すると、ソース データに対して行った一連の変更を、1 つの単位として保存または取り消すことができます。たとえば、銀行口座間でお金を移すには、一方の口座からその金額を引き出し、他方の口座に入金するという 2 つの操作が行われます。どちらかの更新が失敗すると、口座の残高が合わなくなります。開いているトランザクションでこのような変更を行うと、すべての変更が正しく処理されるか、またはまったく変更が行われないことが保証されます。
 
 > [!NOTE]
-> [!メモ] すべてのプロバイダーでトランザクションがサポートされているわけではありません。 プロバイダーがトランザクションをサポートしていることを示す、プロバイダー定義プロパティの**Transaction DDL**が**Connection**オブジェクトの[Properties](properties-collection-ado.md)コレクションに表示されることを確認します。 プロバイダーがトランザクションをサポートしていない場合、これらのメソッドを呼び出すと、エラーが発生します。
+> [!メモ] すべてのプロバイダーでトランザクションがサポートされているわけではありません。 プロバイダー定義プロパティ Transaction DDL が **Connection** オブジェクトの **Properties** [](properties-collection-ado.md)コレクションに表示され、プロバイダーがトランザクションをサポートするかどうかを示します。 プロバイダーがトランザクションをサポートしていない場合、これらのメソッドを呼び出すと、エラーが発生します。
 
 いったん **BeginTrans** メソッドを呼び出すと、 **CommitTrans** メソッドまたは **RollbackTrans** メソッドを呼び出してトランザクションを終了するまで、変更がコミットされることはありません。
 

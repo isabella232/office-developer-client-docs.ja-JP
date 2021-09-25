@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249003(v=office.15)
 ms:contentKeyID: 48543708
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a476e9bc57224b0e46afb31bf092450c26de0a17
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 970c0d5c64d8a46bdaf21a3dc4991beaa459706d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293967"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569105"
 ---
 # <a name="deleting-records-using-the-delete-method"></a>Delete メソッドによるレコードの削除
 
@@ -33,9 +33,9 @@ ms.locfileid: "32293967"
 
 **Delete** メソッドは、 **Delete** 操作の対象となるレコードを指定できるオプションの引数を受け取ります。この引数に指定できる値は、次の ADO **AffectEnum** 列挙定数のうちどちらかのみです。
 
-  - **現在の範囲内の adて**いる現在のレコードにのみ影響します。
+  - **adAffectCurrent** 現在のレコードにのみ影響します。
 
-  - adています。**グループ**現在の**Filter**プロパティの設定を満たすレコードのみに影響します。 このオプションを使用するには、 **Filter** プロパティが、 **FilterGroupEnum** 値、または **Bookmarks** の配列に設定されている必要があります。
+  - **adAffectGroup** 現在の Filter プロパティ設定を満たす **レコードにのみ** 影響します。 このオプションを使用するには、 **Filter** プロパティが、 **FilterGroupEnum** 値、または **Bookmarks** の配列に設定されている必要があります。
 
 次のコードでは、 **Delete** メソッドを呼び出すときに **adAffectGroup** を指定する例を示します。この例では、いくつかのレコードをサンプルの **Recordset** に追加し、データベースを更新します。次に、フィルター列挙定数である **adFilterAffectedRecords** 使用して **Recordset** をフィルター処理し、新しく追加されたレコードのみ **Recordset** 内に表示されるようにします。最後に、 **Delete** メソッドを呼び出し、現在の **Filter** プロパティの設定を満たすすべてのレコード (新しいレコード) を削除するよう指定します。
 

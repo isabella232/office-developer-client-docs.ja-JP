@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f87cd7a4-b9de-5fb1-20ec-90759c966bd9
 description: 図形または図面ページと別の図面ページ、別のファイル、または Web サイトの間に複数のジャンプを作成するための要素が含まれます。
-ms.openlocfilehash: d2147504455c4edb13681a20aab0ade6a100a532
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 46c3e76a7617ad5430e9b3a9b2770803de7e1b4d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540883"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623048"
 ---
 # <a name="row-element-hyperlink-section-visio-xml"></a>Row 要素 (ハイパーリンク セクション) (Visio XML)
 

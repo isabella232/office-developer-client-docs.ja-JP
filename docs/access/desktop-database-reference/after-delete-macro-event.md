@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm15155
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 5b3b2da44d817885eb6190a8cbbfc73bf99e9e0a
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.localizationpriority: medium
+ms.openlocfilehash: c46bda55387fe0537aeed359091cde77f7976680
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538236"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559137"
 ---
 # <a name="after-delete-macro-event"></a>After Delete マクロ イベント
 
@@ -31,7 +31,7 @@ The **After Delete** event occurs after a record is deleted.
 
 After Delete イベントでは、レコードを削除したときに特定のアクションを実行します。通常は、ビジネス ルールやワークフローの実行、総計の更新、通知の送信などを行います。
 
-When the **After Delete** event occurs, the values contained in the deleted record are still available. 削除された値を使用して合計を増減したり、監査トレールを作成したり、 *WhereCondition*引数の既存の値と比較したりすることができます。
+When the **After Delete** event occurs, the values contained in the deleted record are still available. 削除された値を使用して、合計をインクリメントまたはデクリメントしたり、監査証跡を作成したり *、WhereCondition* 引数の既存の値と比較することができます。
 
 **Updated("*フィールド名*")** 関数を使用すると、フィールドが変更されているかどうかを判断できます。 The following code example shows how to use an If staement to determine determine whether the PaidInFull field has been changed.
 
@@ -55,7 +55,7 @@ End If
 
 The values contained in the deleted record are deleted permanently when the **After Delete** event ends.
 
-次のマクロコマンドは、 **After Delete**イベントで使用できます。
+次のマクロ コマンドは、削除後イベント **で使用** できます。
 
 <table>
 <colgroup>
@@ -163,7 +163,7 @@ After Delete イベントをキャプチャするデータ マクロを作成す
 
 ## <a name="example"></a>例
 
-次のコード例では、After Delete イベントを使用して、Donations テーブルからレコードを削除したときに特定の処理を実行します。 レコードが削除されると、寄付の金額は、DonationsReceived テーブルの DonationsReceived フィールドと、[寄付] テーブル内の TotalDonatedField の値になります。
+次のコード例では、After Delete イベントを使用して、Donations テーブルからレコードを削除したときに特定の処理を実行します。 レコードが削除された場合、寄附金の金額は、DonationsReceived テーブルの DonationsReceived フィールドと、Donations テーブルの TotalDonatedField を形成します。
 
 **マクロ デザイナーに貼り付けることができるマクロのコピーを表示するには、ここをクリックします。**
 

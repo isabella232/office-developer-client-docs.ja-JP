@@ -1,18 +1,18 @@
 ---
-title: ActiveConnection プロパティ、CommandText プロパティ、CommandTimeout プロパティの使用例 (VC + +)
+title: ActiveConnection、CommandText、CommandTimeout プロパティの例 (VC++)
 TOCTitle: ActiveConnection, CommandText, CommandTimeout, CommandType, Size, and Direction properties example (VC++)
 ms:assetid: 254e6d48-fc07-1df0-215c-a91141238985
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249021(v=office.15)
 ms:contentKeyID: 48543780
 ms.date: 10/17/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 50604f870a4902a7b6a5c26bb687fdc7dba17864
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 02269578e00144853fe1521d26f080f41b03c756
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280558"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569553"
 ---
 # <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vc"></a>ActiveConnection プロパティ、CommandText プロパティ、CommandTimeout プロパティ、CommandType プロパティ、Size プロパティ、Direction プロパティの使用例 (VC++)
 
@@ -202,7 +202,7 @@ VOID PrintProviderError(_ConnectionPtr pConnection)
 
 <br/>
 
-**activeconnectionx**
+**ActiveConnectionX.h**
 
 ```cpp 
  

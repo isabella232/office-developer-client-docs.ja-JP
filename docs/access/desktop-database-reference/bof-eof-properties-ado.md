@@ -1,20 +1,20 @@
 ---
-title: BOF プロパティと EOF プロパティ (ADO)
+title: BOF、EOF プロパティ (ADO)
 TOCTitle: BOF, EOF properties (ADO)
 ms:assetid: f797e140-5572-1a4d-9afc-285f6a3868a8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250260(v=office.15)
 ms:contentKeyID: 48548768
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d36a65ce8a6808f2128749bd7fbc6e468acbd279
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 43c1bbedeeee99e1d9c960cda3f8606bad9efd95
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296788"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558731"
 ---
-# <a name="bof-eof-properties-ado"></a>BOF プロパティと EOF プロパティ (ADO)
+# <a name="bof-eof-properties-ado"></a>BOF、EOF プロパティ (ADO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -39,7 +39,7 @@ ms.locfileid: "32296788"
 
 レコードが 1 つも格納されていない **Recordset** オブジェクトを開くと、**BOF** プロパティと **EOF** プロパティが **True** に設定されます (**Recordset** のこの状態については、[RecordCount](recordcount-property-ado.md) プロパティの説明を参照してください)。1 つ以上のレコードが格納されている **Recordset** オブジェクトを開くと、先頭レコードがカレント レコードになり、**BOF** プロパティと **EOF** プロパティが **False** に設定されます。
 
-**Recordset** オブジェクトに残っている最後の 1 つのレコードを削除した場合は、カレント レコードの位置を変更しようとするまでは **BOF** プロパティと **EOF** プロパティが **False** のまま変わらないこともあります。
+**Recordset** オブジェクト内に残っている最後のレコードを削除すると、カレント レコードを再配置しようとするまで **BOF** プロパティおよび **EOF** プロパティは **False** のままになります。
 
 次の表に、 **BOF** プロパティと **EOF** プロパティのさまざまな組み合わせで、どの **Move** メソッドが使用できるかを示します。
 
@@ -54,39 +54,39 @@ ms.locfileid: "32296788"
 <thead>
 <tr class="header">
 <th><p></p></th>
-<th><p>MoveFirst<br />
+<th><p>MoveFirst、<br />
 MoveLast</p></th>
-<th><p>MovePrevious<br />
-移動&lt; 0</p></th>
+<th><p>MovePrevious、<br />
+Move &lt; 0</p></th>
 <th><p><br />
 Move 0</p></th>
-<th><p>MoveNext<br />
-移動&gt; 0</p></th>
+<th><p>MoveNext、<br />
+Move &gt; 0</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>BOF = True、</strong><br />
-<strong>EOF = False</strong></p></td>
+<td><p><strong>BOF=True、</strong><br />
+<strong>EOF=False</strong></p></td>
 <td><p>可</p></td>
-<td><p>Error</p></td>
-<td><p>Error</p></td>
+<td><p>エラー</p></td>
+<td><p>エラー</p></td>
 <td><p>可</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>BOF = False、</strong><br />
-<strong>EOF = True</strong></p></td>
+<td><p><strong>BOF=False、</strong><br />
+<strong>EOF=True</strong></p></td>
 <td><p>可</p></td>
 <td><p>可</p></td>
-<td><p>Error</p></td>
-<td><p>Error</p></td>
+<td><p>エラー</p></td>
+<td><p>エラー</p></td>
 </tr>
 <tr class="odd">
 <td><p>両方とも <strong>True</strong></p></td>
-<td><p>エラー</p></td>
 <td><p>Error</p></td>
 <td><p>Error</p></td>
-<td><p>エラー</p></td>
+<td><p>Error</p></td>
+<td><p>Error</p></td>
 </tr>
 <tr class="even">
 <td><p>両方とも <strong>False</strong></p></td>
@@ -118,23 +118,23 @@ Move 0</p></th>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>MoveFirst</strong>、 <strong>MoveLast</strong></p></td>
+<td><p><strong>MoveFirst</strong>、<strong>MoveLast</strong></p></td>
 <td><p><strong>True</strong> に設定</p></td>
 <td><p><strong>True</strong> に設定</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Move</strong> 0</p></td>
-<td><p>変化なし</p></td>
-<td><p>変化なし</p></td>
+<td><p>変更なし</p></td>
+<td><p>変更なし</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>MovePrevious</strong>、<strong>移動</strong> &lt; 0</p></td>
+<td><p><strong>MovePrevious</strong>、<strong>Move</strong> &lt; 0</p></td>
 <td><p><strong>True</strong> に設定</p></td>
-<td><p>変化なし</p></td>
+<td><p>変更なし</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>MoveNext</strong>、 <strong>Move</strong> &gt; 0</p></td>
-<td><p>変化なし</p></td>
+<td><p><strong>MoveNext</strong>、<strong>Move</strong> &gt; 0</p></td>
+<td><p>変更なし</p></td>
 <td><p><strong>True</strong> に設定</p></td>
 </tr>
 </tbody>

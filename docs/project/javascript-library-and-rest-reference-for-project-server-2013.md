@@ -3,15 +3,15 @@ title: JavaScript ライブラリと REST リファレンス (Project Server)
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 67b47b8b-d34b-4fad-af49-0c258c345ad2
 description: Project Server 2013 の JavaScript ライブラリと REST リファレンスには、JavaScript オブジェクト モデルと、Project Server の機能にアクセスするために使用する REST インターフェイスに関する情報が含まれている。 これらの API を使用して、Project Server 2013 および Project Online にアクセスするクロスブラウザー Web アプリ、Project Professional 2013 アドイン、および Windows 以外のデバイス用のアプリを開発できます。
-ms.openlocfilehash: fb58de1e3858a39f42cc9a643a7394cec191a462
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 54b7c17d2090fb15eec14d740aa835d6b167a1e6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32358108"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616153"
 ---
 # <a name="javascript-library-and-rest-reference-for-project-server"></a>JavaScript ライブラリと REST リファレンス (Project Server)
 

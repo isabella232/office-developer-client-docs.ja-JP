@@ -3,17 +3,17 @@ title: 配信状態レポートの受信者プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 9b2e287e-1cf8-4b8f-b92c-a065ed264d02
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 784cac21aac5de18952f3768af9b8f189f604981
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1063d1a7a062b8b07d9ff66958efc5e65ef8737e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411086"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591312"
 ---
 # <a name="recipient-properties-for-delivery-status-reports"></a>配信状態レポートの受信者プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "33411086"
   
 **表のタイトル**
 
-|**Property**|**説明**|
+|**プロパティ**|**説明**|
 |:-----|:-----|
 |**PR_DELIVER_TIME** ([PidTagDeliverTime](pidtagdelivertime-canonical-property.md))  <br/> |元のメッセージが配信された日時を格納します。  <br/> |
 |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |特定の MAPI オブジェクトの表示名を格納します。  <br/> |

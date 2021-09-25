@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagViewsEntryId
 api_type:
 - COM
 ms.assetid: 8350a37c-6f42-4bef-82e0-35aa12b09fcf
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7d261ac0e9aaf36f2333b04b45edfaf8e24fa30d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3ef38395a37be6b1bedab0eb6ef032ae6717f20c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427312"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591326"
 ---
 # <a name="pidtagviewsentryid-canonical-property"></a>PidTagViewsEntryId 標準プロパティ
 

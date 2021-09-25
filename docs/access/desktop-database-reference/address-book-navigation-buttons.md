@@ -6,25 +6,25 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249253(v=office.15)
 ms:contentKeyID: 48544765
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e7c87acd433df4a303c1e6a15a60184cadf994c3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 11d79201416a0b02e7af8f4d25140d4d138bd7d2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282465"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603068"
 ---
 # <a name="address-book-navigation-buttons"></a>アドレス帳の移動ボタン
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-アドレス帳アプリケーションでは、web ページの下部にあるナビゲーションボタンが表示されます。 ナビゲーション ボタンを使ってデータの最初または最後の行、あるいは現在の行の前後にある行を選択することにより、HTML のグリッド表示内でデータ間を移動できます。
+アドレス帳アプリケーションは、Web ページの下部にナビゲーション ボタンを表示します。 ナビゲーション ボタンを使ってデータの最初または最後の行、あるいは現在の行の前後にある行を選択することにより、HTML のグリッド表示内でデータ間を移動できます。
 
 ## <a name="navigation-sub-procedures"></a>ナビゲーションのサブ プロシージャ
 
 Address Book アプリケーションには、ユーザーが [First]、[Next]、[Previous]、および [Last] の各ボタンをクリックしてデータ間を移動できるようにする複数のプロシージャが含まれています。
 
-たとえば、**最初**のボタンをクリックすると、VBScript\_の最初の OnClick Sub プロシージャがアクティブになります。 The procedure executes a [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) method, which makes the first row of data the current selection. **最後**のボタンをクリックすると\_、 [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-rds.md)メソッドが呼び出され、その最後の行のデータが現在の選択範囲になる直前の OnClick Sub プロシージャがアクティブになります。 The remaining navigation buttons work in a similar fashion.
+たとえば、[最初] ボタンを **クリックすると** 、VBScript \_ First OnClick Sub プロシージャがアクティブ化されます。 The procedure executes a [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) method, which makes the first row of data the current selection. [最後]**ボタンをクリック** すると、最後の OnClick Sub プロシージャがアクティブ化され、MoveLast メソッドが呼び出され、データの最後の行が現在の選択範囲 \_ [](movefirst-movelast-movenext-and-moveprevious-methods-rds.md)に設定されます。 The remaining navigation buttons work in a similar fashion.
 
 ```vb 
  

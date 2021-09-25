@@ -1,23 +1,23 @@
 ---
-title: Member オブジェクト (ADO MD)
+title: メンバー オブジェクト (ADO MD)
 TOCTitle: Member object (ADO MD)
 ms:assetid: d80c024a-07dc-7a35-f8f2-b4d5b19d89e4
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250088(v=office.15)
 ms:contentKeyID: 48548025
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 380fdf6c15f6774e27221e8500100870d22350c4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 88884141e90faca4eb83168d4f2378df5a6e399a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289423"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602228"
 ---
-# <a name="member-object-ado-md"></a>Member オブジェクト (ADO MD)
+# <a name="member-object-ado-md"></a>メンバー オブジェクト (ADO MD)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 キューブ内のレベルのメンバー、レベルのメンバーの子、またはセルセットの軸に沿ったメンバーの位置を表します。
 
@@ -61,7 +61,7 @@ ms.locfileid: "32289423"
 
   - [ParentSameAsPrev](parentsameasprev-property-ado-md.md) プロパティを使用して、この **Member** の親が **Member** の直上の親と同じかどうかを特定します。
 
-  - 標準の ADO [Properties](properties-collection-ado.md) コレクションを使用して、**Level** オブジェクトに関する追加情報を取得します。
+  - 標準の ADO [Properties](properties-collection-ado.md) コレクションを使用して、 **Level** オブジェクトに関する追加情報を取得します。
 
 **Properties** コレクションには、プロバイダー固有のプロパティが含まれます。次の表に、使用できるプロパティを示します。実際に使用できるプロパティの一覧は、プロバイダーの実装によって異なります。使用できるプロパティの完全な一覧については、各自のプロバイダーのドキュメントを参照してください。
 
@@ -102,7 +102,7 @@ ms.locfileid: "32289423"
 <td><p>階層の明確な名前。</p></td>
 </tr>
 <tr class="odd">
-<td><p>levelnumber</p></td>
+<td><p>LevelNumber</p></td>
 <td><p>階層のルートとレベルの距離。</p></td>
 </tr>
 <tr class="even">
@@ -110,11 +110,11 @@ ms.locfileid: "32289423"
 <td><p>レベルの明確な名前。</p></td>
 </tr>
 <tr class="odd">
-<td><p>メンバーキャプション</p></td>
+<td><p>MemberCaption</p></td>
 <td><p>メンバーに関連付けられているラベルまたはキャプション。</p></td>
 </tr>
 <tr class="even">
-<td><p>memberguid</p></td>
+<td><p>MemberGUID</p></td>
 <td><p>メンバーの GUID。</p></td>
 </tr>
 <tr class="odd">
@@ -122,7 +122,7 @@ ms.locfileid: "32289423"
 <td><p>メンバーの名前。</p></td>
 </tr>
 <tr class="even">
-<td><p>memberordinal</p></td>
+<td><p>MemberOrdinal</p></td>
 <td><p>メンバーの序数。</p></td>
 </tr>
 <tr class="odd">
@@ -134,11 +134,11 @@ ms.locfileid: "32289423"
 <td><p>メンバーの明確な名前。</p></td>
 </tr>
 <tr class="odd">
-<td><p>parentcount</p></td>
+<td><p>ParentCount</p></td>
 <td><p>このメンバーが持っている親の数。</p></td>
 </tr>
 <tr class="even">
-<td><p>parentlevel</p></td>
+<td><p>ParentLevel</p></td>
 <td><p>メンバーの親のレベル番号。</p></td>
 </tr>
 <tr class="odd">

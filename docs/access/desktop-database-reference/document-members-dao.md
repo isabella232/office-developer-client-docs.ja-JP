@@ -1,20 +1,20 @@
 ---
-title: Document メンバー (DAO)
+title: ドキュメント メンバー (DAO)
 TOCTitle: Document Members
 ms:assetid: 8de770e6-e4d1-372a-3ef8-8539c921b41f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197365(v=office.15)
 ms:contentKeyID: 48546270
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: cd50ec72113b0615849ff6b8b2e8d73c0e61c3ce
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7fdfd95721d0c5c8d93a9a26185883c18227da73
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293792"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581421"
 ---
-# <a name="document-members-dao"></a>Document メンバー (DAO)
+# <a name="document-members-dao"></a>ドキュメント メンバー (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -58,12 +58,12 @@ Document オブジェクトには、オブジェクトの 1 つのインスタ�
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="document-container-property-dao.md">Container</a></strong></p></td>
-<td><p><strong>Document</strong>オブジェクトが属する<strong><a href="container-object-dao.md">コンテナー</a></strong>オブジェクトの名前を返します (Microsoft access ワークスペースのみ)。 .</p></td>
+<td><p><strong><a href="document-container-property-dao.md">コンテナー</a></strong></p></td>
+<td><p><strong>Document</strong>オブジェクトが属する<strong><a href="container-object-dao.md">Container</a></strong>オブジェクトの名前を返します (Microsoft Access ワークスペースのみ)。 .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="document-datecreated-property-dao.md">DateCreated</a></strong></p></td>
-<td><p>オブジェクトが作成された日付と時刻を返します。 読み取り専用 <strong>バリアント</strong> です。</p></td>
+<td><p>オブジェクトが作成された日時を返します。値の取得のみ可能です。バリアント型 ( <strong>Variant</strong>) の値を使用します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="document-lastupdated-property-dao.md">LastUpdated</a></strong></p></td>
@@ -71,7 +71,7 @@ Document オブジェクトには、オブジェクトの 1 つのインスタ�
 </tr>
 <tr class="even">
 <td><p><strong><a href="document-name-property-dao.md">Name</a></strong></p></td>
-<td><p>指定したオブジェクトの名前を返します。 読み取り専用 <strong>文字列</strong> です。</p></td>
+<td><p>指定したオブジェクトの名前を返します。読み取り専用 <strong>文字列</strong> です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="document-properties-property-dao.md">Properties</a></strong></p></td>

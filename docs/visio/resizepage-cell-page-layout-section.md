@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm850
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d63fe874-1027-3436-dbc1-73e722bce22e
 description: '[レイアウトの構成] ダイアログ ボックスを使用して図形をレイアウトした後で、図面が中心に位置するようにページを拡大するかどうかを指定します (このダイアログ ボックスを開くには、[デザイン] タブの [レイアウト] グループで、[ページの再レイアウト] をクリックして、[その他のレイアウト オプション] をクリックします)。'
-ms.openlocfilehash: 8d0001ce35808f8c5f11068ed78865ce992af5cb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 77fd339dd21c7f8111a7359ed8d293ddeee1111d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438093"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623076"
 ---
 # <a name="resizepage-cell-page-layout-section"></a>[ResizePage] セル ([Page Layout] セクション)
 

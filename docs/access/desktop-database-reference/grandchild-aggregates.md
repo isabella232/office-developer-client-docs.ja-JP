@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250188(v=office.15)
 ms:contentKeyID: 48548462
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a4c50898626488f909616977c6bb50c936434563
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d55a304c05076a83af25265d51cb0837a7ea1459
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292147"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568958"
 ---
 # <a name="grandchild-aggregates"></a>孫の集計
 
 
 **適用先:** Access 2013、Office 2013
 
-shape コマンドの句で作成されたチャプター列には、(通常は as キーワードを使用して)*チャプターエイリアス名*を指定できます。 シェイプされた**Recordset**の任意のチャプター内の列は、その列が含まれている子を識別する完全修飾名で識別できます。 たとえば、親チャプター chap1 が含まれている場合は、chap2 という子チャプターが含まれているとします。これには、金額列 amt があるので、修飾名は chap1 になります。修飾名は、集計関数 (SUM、AVG、MAX、MIN、COUNT、STDEV、または ANY) のいずれかの引数として使用できます。
+shape コマンドの句で作成されたチャプター列には、チャプター エイリアス名 *(通常* は AS キーワード付き) を指定できます。 列を含む子を識別する完全修飾名を持つ、図形 **の Recordset** の任意のチャプター内の任意の列を識別できます。 たとえば、親チャプター chap1 に、金額列 amt を持つ子チャプター chap2 が含まれている場合、修飾名は chap1.chap2.amt となります。次に、修飾名を集計関数 (SUM、AVG、MAX、MIN、COUNT、STDEV、ANY) の 1 つの引数として使用できます。
 

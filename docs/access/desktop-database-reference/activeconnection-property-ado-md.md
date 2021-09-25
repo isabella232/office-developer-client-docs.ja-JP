@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250043(v=office.15)
 ms:contentKeyID: 48547845
 ms.date: 10/17/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 372dac11500647af75881ae6b4aee22a391a32c9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2d4892d330eda957b7064f46bf1d5114bbdbfbae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280530"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569532"
 ---
 # <a name="activeconnection-property-ado-md"></a>ActiveConnection プロパティ (ADO MD)
 
@@ -20,9 +20,9 @@ ms.locfileid: "32280530"
 
 現在のセルセットまたはカタログが、現在どの ADO [Connection](connection-object-ado.md) オブジェクトに属しているのかを示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
-接続を定義する文字列、または **Connection** オブジェクトを含むバリアント型 ( **Variant** ) を設定または取得します。 既定値は Empty 値です。
+接続を定義する文字列、または **Connection** オブジェクトを含むバリアント型 ( **Variant** ) を設定または取得します。既定値は Empty 値です。
 
 ## <a name="remarks"></a>注釈
 
@@ -43,7 +43,7 @@ MSOLAP データ プロバイダーを使用する場合、接続文字列内で
 
 `"Data Source=Servername;Initial Catalog=Bobs Video Store;Provider=msolap"`
 
-次の文字列は、場所 C\\: MSDASDK\\samples\\oledb\\olap\\data\\bobsvid のローカルキューブファイルに接続します。
+次の文字列は、場所 C のローカル キューブ ファイルに接続します \\ 。MSDASDK は \\ \\ oledb \\ olap \\ データ \\ bobsvid.cub をサンプルします。
 
 `"Location=C:\MSDASDK\samples\oledb\olap\data\bobsvid.cub;Provider=msolap"`
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251497
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fdc032c2-d0bd-1592-de3f-33c478d066ee
 description: 数値の符号を表す値を返します。
-ms.openlocfilehash: 34bbbab17de94b0a8c95b4b0bfd3829a06dc7e70
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ea7ed2ec4cacb6d926d907934f8745b8ab7538ad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420655"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622823"
 ---
 # <a name="sign-function"></a>SIGN 関数
 
@@ -28,7 +28,7 @@ SIGN(** *number* **, ** *fuzz* ** )
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> | 符号を確認する数値を指定します。  <br/> |
+| _number_ <br/> |必須かどうか  <br/> |**数値型 (Numeric)** <br/> | 符号を確認する数値を指定します。  <br/> |
 | _ファズ_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |指定した数値と 0 との誤差を指定します。数値と 0 の差がこの誤差以内である場合に、数値は 0 として扱われます。  <br/> |
    
 ### <a name="return-value"></a>戻り値

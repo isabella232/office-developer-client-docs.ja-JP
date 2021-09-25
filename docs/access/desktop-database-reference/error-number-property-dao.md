@@ -1,5 +1,5 @@
 ---
-title: Error. Number プロパティ (DAO)
+title: Error.Number プロパティ (DAO)
 TOCTitle: Number Property
 ms:assetid: 2fb94dca-f990-04f8-bbd2-9919d28de75a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192259(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053363
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 257c403951eff5bbb2f37de8b38a1c63a3445285
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f36a961cd29a0fc86c00af121b21d27e8d8d36f2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293498"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581386"
 ---
-# <a name="errornumber-property-dao"></a>Error. Number プロパティ (DAO)
+# <a name="errornumber-property-dao"></a>Error.Number プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -28,7 +28,7 @@ ms.locfileid: "32293498"
 
 ## <a name="syntax"></a>構文
 
-*式*。件数
+*式* .数値
 
 *式*: **Error** オブジェクトを表す変数。
 

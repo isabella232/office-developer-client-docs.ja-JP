@@ -1,25 +1,25 @@
 ---
-title: BeginTrans、CommitTrans、RollbackTrans メソッドの使用例 (VC + +)
+title: BeginTrans メソッド、CommitTrans メソッド、RollbackTrans メソッドの例 (VC++)
 TOCTitle: BeginTrans, CommitTrans, and RollbackTrans methods example (VC++)
 ms:assetid: b2e53b79-4f10-f9cc-59f7-61c9557e5ef2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249853(v=office.15)
 ms:contentKeyID: 48547182
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 37a716a60b902556c1e392fe9df5f1e104acffcd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2f325fb1733b0df5894e23db904fd92225228da6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296837"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558766"
 ---
 # <a name="begintrans-committrans-and-rollbacktrans-methods-example-vc"></a>BeginTrans メソッド、CommitTrans メソッド、RollbackTrans メソッドの使用例 (VC++)
 
 
 **適用先:** Access 2013、Office 2013
 
-この例では、データベースの ***Titles*** テーブル内のすべての心理学書の書籍種別を変更します。 [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで、***Titles*** テーブルに対するすべての変更を分離するトランザクションを開始した後、[CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで変更を保存します。 [RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドを使用すると、 [Update](update-method-ado.md) メソッドで保存した変更を変更前の状態に戻すことができます。
+次の使用例は、データベースの * Titles _ テーブル内のすべての心理学の書籍 **の** 種類を変更します。 [BeginTrans メソッドが](begintrans-committrans-and-rollbacktrans-methods-ado.md)トランザクションを開始し、_ *_Titles_** テーブルに加えたすべての変更を分離した後 [、CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)メソッドは変更を保存します。 [RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドを使用すると、 [Update](update-method-ado.md) メソッドで保存した変更を変更前の状態に戻すことができます。
 
 ```cpp 
  
@@ -277,7 +277,7 @@ void PrintProviderError(_ConnectionPtr pConnection)
 // EndBeginTransCpp 
 ```
 
-**BeginTransX**
+**BeginTransX.h**
 
 ```cpp 
  

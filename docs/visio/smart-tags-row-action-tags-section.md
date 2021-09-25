@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1026926
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 065c6977-c737-a4f4-effa-0fd2c98e8bbf
 description: 図形またはページに関連付けられた、単一のアクション タグの情報を格納します。 図形またはページには、各アクション タグに対して 1 つの [Smart Tags] 行があります。
-ms.openlocfilehash: 1c1591fd2d2cacfbfb350a542e6601cb2f6fbfd6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f08e6e9b5a16d85aedc354e54bc6d8b13fd3ceb1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404709"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559536"
 ---
 # <a name="smart-tags-row-action-tags-section"></a>[Smart Tags] 行 ([Action Tags] セクション)
 

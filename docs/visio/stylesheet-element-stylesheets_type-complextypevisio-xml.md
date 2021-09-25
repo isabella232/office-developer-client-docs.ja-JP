@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 323e1ccd-8ddd-46d3-1032-5d68d01cf4bd
 description: 図面で定義されているスタイルを表します。
-ms.openlocfilehash: 939180d24972ae68d01b2a707e7806380b706d14
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 4a05a6c2b94f8080c339f203497995ac5c72e562
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541940"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622768"
 ---
 # <a name="stylesheet-element-stylesheets_type-complextype-visio-xml"></a>StyleSheet 要素 (StyleSheets_Type complexType) (Visio XML)
 

@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249876(v=office.15)
 ms:contentKeyID: 48547278
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b44bf60399cd3bdab9e5a1e51d13cbfc1daaba6c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3435a219ba1acb97068503923598b329b23f0dd7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283241"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559263"
 ---
 # <a name="ado-programmers-guide"></a>ADO プログラマ ガイド
 
 **適用先:** Access 2013、Office 2013
 
-ado プログラマガイドは、ado を初めて利用する開発者を支援するために作成されています。これは、テクノロジについて詳細に説明しています。 このガイドでは、ADO ファミリのライブラリについて説明すると共に、さまざまな言語で記述されたサンプル コードを使用して、ライブラリの使用方法、ライブラリを使用するにあたって推奨される方法、および ADO アプリケーションのパフォーマンスを最大限に向上させるためのヒントについて説明します。
+ADO プログラマ 向けのガイドは、ADO の初めての開発者が、このテクノロジを完全に紹介することで支援するために作成されています。 このガイドでは、ADO ファミリのライブラリについて説明すると共に、さまざまな言語で記述されたサンプル コードを使用して、ライブラリの使用方法、ライブラリを使用するにあたって推奨される方法、および ADO アプリケーションのパフォーマンスを最大限に向上させるためのヒントについて説明します。
 
-「ADO プログラマーズガイド」には、以下のセクションと章が含まれています。
+ADO プログラマ 向けガイドには、次のセクションと章が含まれています。
 
 - [はじめに](introduction-to-ado-programming.md)
   

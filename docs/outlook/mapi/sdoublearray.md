@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SDoubleArray
 api_type:
 - COM
 ms.assetid: b63b26de-faf9-453c-ab8b-fb703ed09ae8
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 91440d619c8ad8a64b2bac7463a26d9c196a3c0f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 160fdc7ecc27a2a2a14882090f674441655540f5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439269"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609496"
 ---
 # <a name="sdoublearray"></a>SDoubleArray
 
@@ -40,7 +40,7 @@ typedef struct _SDoubleArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cValues**
   

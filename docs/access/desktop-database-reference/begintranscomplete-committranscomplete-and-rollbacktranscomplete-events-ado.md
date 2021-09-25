@@ -1,20 +1,20 @@
 ---
-title: begintranscomplete、committranscomplete、RollbackTransComplete events (ADO)
+title: BeginTransComplete、CommitTransComplete、RollbackTransComplete イベント (ADO)
 TOCTitle: BeginTransComplete, CommitTransComplete, and RollbackTransComplete events (ADO)
 ms:assetid: 9d0ae38e-530a-7a89-a344-f3ab401c2e35
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249713(v=office.15)
 ms:contentKeyID: 48546615
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a6f86e17a44ec0813176a023a02710fded627488
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 42379afcc6bb002abaa8cd854eafbc00aa355771
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296823"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558759"
 ---
-# <a name="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado"></a>begintranscomplete イベント、committranscomplete イベント、および RollbackTransComplete イベント (ADO)
+# <a name="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado"></a>BeginTransComplete、CommitTransComplete、RollbackTransComplete イベント (ADO)
 
 **適用先:** Access 2013、Office 2013
 
@@ -28,20 +28,20 @@ ms.locfileid: "32296823"
 
 ## <a name="syntax"></a>構文
 
-begintranscomplete*transactionlevel*、 ** 状態、 *adstatus*、 *pconnection*
+BeginTransComplete *TransactionLevel*, *pError*, *adStatus*, *pConnection*
 
-committranscomplete** の手順、 *adstatus*、 *pconnection*
+CommitTransComplete *pError*, *adStatus*, *pConnection*
 
-RollbackTransComplete** の*状態、adstatus*、 *pconnection*
+RollbackTransComplete *pError*, *adStatus*, *pConnection*
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
-|*transactionlevel* |長整数型 ( **Long** ) の値であり、このイベントを発生させた **BeginTrans** の新規トランザクション レベルが格納されます。|
-|*の場合* |[Error](error-object-ado.md) オブジェクトです。 eventstatusenum の値が**adstatuserrorソケット**の場合に発生したエラーについて説明します。それ以外の場合は、設定されません。|
-|*adStatus* |[eventstatusenum](eventstatusenum.md)。 このパラメーターを **adStatusUnwantedEvent** に設定すると、これらのイベントから制御が戻る前に後続の通知が行われるのを防ぐことができます。|
-|*pconnection* |このイベントが発生した **Connection** オブジェクトです。|
+|*TransactionLevel* |長整数型 ( **Long** ) の値であり、このイベントを発生させた **BeginTrans** の新規トランザクション レベルが格納されます。|
+|*pError* |[Error](error-object-ado.md) オブジェクトです。 EventStatusEnum の値が **adStatusErrorsOccurred** の場合に発生したエラーについて説明します。それ以外の場合は、設定は行わない。|
+|*adStatus* |[EventStatusEnum](eventstatusenum.md). このパラメーターを **adStatusUnwantedEvent** に設定すると、これらのイベントから制御が戻る前に後続の通知が行われるのを防ぐことができます。|
+|*pConnection* |このイベントが発生した **Connection** オブジェクトです。|
 
 ## <a name="remarks"></a>注釈
 

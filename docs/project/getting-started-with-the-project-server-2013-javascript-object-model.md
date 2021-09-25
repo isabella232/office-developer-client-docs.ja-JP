@@ -3,33 +3,33 @@ title: Project Server 2013 JavaScript オブジェクト モデルの概要
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 30dc3194-7480-4e7c-b731-4a171d652ee0
-description: このProject Server 2013、JavaScript オブジェクト モデルは Project Online、モバイル、およびオンプレミス開発で使用できます。 このトピックでは、JavaScript オブジェクト モデルの概要を説明し、JavaScript オブジェクト モデルを使用してプロジェクトを取得および反復処理するアプリケーション ページを作成する方法について説明します。
-ms.openlocfilehash: ec8a10e987276807dc4648bd8948b2285f76fd37
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: サーバー 2013 Project JavaScript オブジェクト モデルは、Project Online、モバイル、およびオンプレミスの開発で使用できます。 このトピックでは、JavaScript オブジェクト モデルの概要を説明し、JavaScript オブジェクト モデルを使用してプロジェクトを取得および反復処理するアプリケーション ページを作成する方法について説明します。
+ms.openlocfilehash: 5c667b736eb98829cbad538abdab1613b4cd7946
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360474"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616146"
 ---
 # <a name="getting-started-with-the-project-server-2013-javascript-object-model"></a>Project Server 2013 JavaScript オブジェクト モデルの概要
 
-このProject Server 2013、JavaScript オブジェクト モデルは Project Online、モバイル、およびオンプレミス開発で使用できます。 このトピックでは、JavaScript オブジェクト モデルの概要を説明し、JavaScript オブジェクト モデルを使用してプロジェクトを取得および反復処理するアプリケーション ページを作成する方法について説明します。
+サーバー 2013 Project JavaScript オブジェクト モデルは、Project Online、モバイル、およびオンプレミスの開発で使用できます。 このトピックでは、JavaScript オブジェクト モデルの概要を説明し、JavaScript オブジェクト モデルを使用してプロジェクトを取得および反復処理するアプリケーション ページを作成する方法について説明します。
   
 ## <a name="using-the-project-server-javascript-object-model"></a>Project Server JavaScript オブジェクト モデルの使用
 <a name="pj15_GetStartedJSOM_UseJSOM"> </a>
 
-JavaScript オブジェクト モデルを使用すると、クライアント側 (リモートで実行する必要があるマネージ クライアント コードではなく) を実行するアプリを作成できます。 アプリは JavaScript オブジェクト モデルを使用して、サーバーに非同期呼び出しを送信してオブジェクトを取得または変更できます。 JavaScript オブジェクト モデルを使用するアプリは、通常、カスタム SharePoint アドイン、アプリケーション ページ、およびカスタム Web パーツ。 詳細については [、「SharePoint 2013](https://msdn.microsoft.com/library/b791cdf5-8aa2-47fa-bc4c-aee437354759%28Office.15%29.aspx)のホスト Web、アドイン Web、および SharePoint コンポーネント」の「SharePoint 用アプリで使用できる SharePoint コンポーネントの種類」を参照してください。
+JavaScript オブジェクト モデルを使用すると、クライアント側 (リモートで実行する必要があるマネージ クライアント コードではなく) を実行するアプリを作成できます。 アプリは JavaScript オブジェクト モデルを使用して、サーバーに非同期呼び出しを送信してオブジェクトを取得または変更できます。 JavaScript オブジェクト モデルを使用するアプリは、通常、カスタム アドイン、SharePoint、アプリケーション ページ、およびカスタム Web パーツ。 詳細については[、2013](https://msdn.microsoft.com/library/b791cdf5-8aa2-47fa-bc4c-aee437354759%28Office.15%29.aspx)年のホスト Web、アドイン Web、および SharePoint コンポーネントの「SharePoint 用アプリで使用できる SharePoint SharePoint コンポーネントの種類」を参照してください。
   
-JavaScript オブジェクト モデルは、Project Server 2013 の主な機能を実装しますが、JavaScript オブジェクト モデルとサーバー オブジェクト モデルには 1 対 1 のパリティが含されません。 JavaScript オブジェクト モデルのエントリ ポイントは **ProjectContext** オブジェクトです。これは、Project Server 2013 のクライアント コンテキストを表し、サーバーのコンテンツと機能へのアクセスを提供します。 アプリケーション の JavaScript オブジェクト モデルProject Server 2013アプリケーション サーバーの既定のパスにある PS.js ファイル  `%ProgramFiles%\Common Files\Microsoft Shared\Web Server Extensions\15\TEMPLATE\LAYOUTS` で定義されます。 Project Server 2013ファイルもPS.Debug.js同じ場所にインストールします。 PS.Debug.jsは、ユーザー情報を提供するPS.jsバージョンIntelliSenseです。 
+JavaScript オブジェクト モデルは、Project Server 2013 の主な機能を実装しますが、JavaScript オブジェクト モデルとサーバー オブジェクト モデルには 1 対 1 のパリティが含されません。 JavaScript オブジェクト モデルのエントリ ポイントは **ProjectContext** オブジェクトで、Project Server 2013 のクライアント コンテキストを表し、サーバーのコンテンツと機能へのアクセスを提供します。 Project Server 2013 の JavaScript オブジェクト モデルは、アプリケーション サーバーの既定のパスにある PS.js ファイル `%ProgramFiles%\Common Files\Microsoft Shared\Web Server Extensions\15\TEMPLATE\LAYOUTS` で定義されます。 Projectまた、サーバー 2013 は、PS.Debug.jsファイルを同じ場所にインストールします。 PS.Debug.jsは、ユーザー情報を提供するPS.jsバージョンIntelliSenseです。 
   
-JavaScript オブジェクト モデルでは、フォーム認証が許可され、すべての要求が現在のユーザーとして認証されます。 カスタム アプリとソリューションを設計する際のセキュリティと他の考慮事項の詳細については [、「SharePoint 2013](https://msdn.microsoft.com/library/8734790c-eb75-4d78-9604-7cc23b33b693%28Office.15%29.aspx)の認証、承認、およびセキュリティ [」、SharePoint](https://msdn.microsoft.com/library/ae96572b-8f06-4fd3-854f-fc312f7f2d88%28Office.15%29.aspx)アドインのアーキテクチャと開発環境の重要な側面、 [および SharePoint](https://msdn.microsoft.com/library/0e9efadb-aaf2-4c0d-afd5-d6cf25c4e7a8%28Office.15%29.aspx)ソリューションと比較した SharePoint アドインを参照してください。
+JavaScript オブジェクト モデルでは、フォーム認証が許可され、すべての要求が現在のユーザーとして認証されます。 カスタム アプリとソリューションを設計する際のセキュリティと他の考慮事項の詳細については[、「SharePoint 2013](https://msdn.microsoft.com/library/8734790c-eb75-4d78-9604-7cc23b33b693%28Office.15%29.aspx)の認証、承認、およびセキュリティ[」、SharePoint](https://msdn.microsoft.com/library/ae96572b-8f06-4fd3-854f-fc312f7f2d88%28Office.15%29.aspx)ソリューションと比較した SharePoint アドインのアーキテクチャと開発環境の重要な側面、および[SharePoint](https://msdn.microsoft.com/library/0e9efadb-aaf2-4c0d-afd5-d6cf25c4e7a8%28Office.15%29.aspx)アドインを参照してください。
   
 > [!NOTE]
-> SharePoint サイトからリモートでデータにアクセスするために、SharePoint 2013 には、クライアント側のクロスドメイン呼び出しを行うクロスドメイン ライブラリが備わっています。 詳細については、「クロスドメイン ライブラリを使用してアドインから [SharePoint 2013](https://msdn.microsoft.com/library/bc37ff5c-1285-40af-98ae-01286696242d%28Office.15%29.aspx)データにアクセスする」を参照してください。 
+> SharePoint サイトからリモートでデータにアクセスするために、SharePoint 2013 には、クライアント側のクロスドメイン呼び出しを行うクロスドメイン ライブラリが提供されています。 詳細については[、「Access SharePoint 2013](https://msdn.microsoft.com/library/bc37ff5c-1285-40af-98ae-01286696242d%28Office.15%29.aspx)データをクロスドメイン ライブラリを使用してアドインから取得する」を参照してください。 
   
-JavaScript オブジェクト モデルを使用する方法の多くの概念Project Server 2013、関連するクライアント オブジェクト モデルの概念と似たものになります。 管理されたクライアント オブジェクト モデルProject Server 2013詳細については **、「Microsoft.ProjectServer.Client」を参照してください**。 SharePoint 2013 JavaScript オブジェクト モデルとマネージ クライアント オブジェクト モデルの詳細については [、「SharePoint 2013](https://msdn.microsoft.com/library/29089af8-dbc0-49b7-a1a0-9e311f49c826%28Office.15%29.aspx) で JavaScript ライブラリ コードを使用して基本操作を完了する」および [「SharePoint 2013](https://msdn.microsoft.com/library/5a69c9e3-73bf-4ed5-bc19-182056bdb394%28Office.15%29.aspx)クライアント ライブラリ コードを使用して基本操作を完了する」を参照してください。
+サーバー 2013 で JavaScript オブジェクト モデルを使用する多くの概Projectプロセスは、関連するクライアント オブジェクト モデルの概念と似たものになります。 サーバー 2013 Project クライアント オブジェクト モデルの詳細については **、「Microsoft.ProjectServer.Client」を参照してください**。 SharePoint 2013 JavaScript オブジェクト モデルとマネージ クライアント オブジェクト モデルの詳細については[、「SharePoint 2013](https://msdn.microsoft.com/library/29089af8-dbc0-49b7-a1a0-9e311f49c826%28Office.15%29.aspx)の JavaScript ライブラリ コードを使用した基本操作の完了」および[「SharePoint 2013](https://msdn.microsoft.com/library/5a69c9e3-73bf-4ed5-bc19-182056bdb394%28Office.15%29.aspx)クライアント ライブラリ コードを使用した基本操作の完了」を参照してください。
   
 ## <a name="walkthrough-creating-an-application-page-that-retrieves-and-iterates-through-projects"></a>チュートリアル: プロジェクトを取得および反復処理するアプリケーション ページの作成
 <a name="pj15_GetStartedJSOM_UseJSOM"> </a>
@@ -42,23 +42,23 @@ JavaScript オブジェクト モデルを使用する方法の多くの概念Pr
 このトピックで説明するアプリケーション ページを開発するには、以下の製品をインストールおよび構成する必要があります。
   
 - SharePoint Server 2013
-- Project Server 2013 1 つ以上の発行済みプロジェクトを使用する
+- Project少なくとも 1 つの発行済みプロジェクトを含むサーバー 2013
 - Visual Studio 2012
 - Office Developer Tools for Visual Studio 2012
     
-拡張機能を SharePoint Server 2013 に展開し、プロジェクトを取得するためのアクセス許可も必要です。
+また、拡張機能をサーバー 2013 に展開し、プロジェクトSharePointアクセス許可を持っている必要があります。
   
 > [!NOTE]
-> これらの手順では、コンピューターで開発中のコンピューターで開発中Project Server 2013。 
+> これらの手順では、サーバー 2013 で実行されているコンピューターで開発Project想定しています。 
   
-### <a name="creating-the-application-page-in-visual-studio-2012"></a>アプリケーション ページの作成Visual Studio 2012
+### <a name="creating-the-application-page-in-visual-studio-2012"></a>2012 年にアプリケーション ページVisual Studioする
 <a name="pj15_GetStartedJSOM_CreateVS"> </a>
 
 次の手順では、SharePoint プロジェクトと、テーブルとラベルを含むアプリケーション ページを作成します。テーブルにはプロジェクトに関する情報が表示され、ラベルにはエラー メッセージが表示されます。
   
-1. サーバーを実行しているコンピューターでProject Server 2013管理者Visual Studio 2012実行します。
+1. サーバー 2013 で実行されているProject、管理者として 2012 Visual Studioを実行します。
     
-2. 次のように、空の SharePoint 2013 プロジェクトを作成します。
+2. 次のように、2013 SharePointの空のプロジェクトを作成します。
     
     1. [**新しいプロジェクト**] ダイアログ ボックスで、上部のドロップダウン リストから [**.NET Framework 4.5**] を選択します。 
         
@@ -72,10 +72,10 @@ JavaScript オブジェクト モデルを使用する方法の多くの概念Pr
     
 4. [**GetProjectsJSOM**] プロジェクトのショートカット メニューを開き、SharePoint "レイアウト" のマップされたフォルダーを追加します。 
     
-5. [レイアウト **] フォルダーで****、GetProjectsJSOM** フォルダーのショートカット メニューを開き、ProjectsList.aspx という名前の新しい SharePoint アプリケーション ページを追加します。
+5. [レイアウト **] フォルダーで****、GetProjectsJSOM** フォルダーのショートカット メニューを開き、ProjectsList.aspx という名前の新SharePointアプリケーション ページを追加します。
     
    > [!NOTE]
-   > この例では、アプリケーション ページ用に作成するコード Visual Studio 2012を使用しない。 
+   > この例では、アプリケーション ページ用に 2012 Visual Studio作成するコード 背後にあるファイルは使用しない。 
   
 6. [**ProjectsList.aspx**] ページのショートカット メニューを開き、[**スタートアップ アイテムとして設定**] を選択します。
     
@@ -266,7 +266,7 @@ My Application Page
 
 ## <a name="see-also"></a>関連項目
 
-- [Project Server JavaScript オブジェクト モデルを使用してプロジェクトを作成、取得、更新、および削除する](create-retrieve-update-delete-projects-using-project-server-javascript.md)  
+- [サーバー JavaScript オブジェクト モデルを使用してプロジェクトを作成、取得、更新Project削除する](create-retrieve-update-delete-projects-using-project-server-javascript.md)  
 - [Project 2013 のクライアント側オブジェクト モデル (CSOM)](client-side-object-model-csom-for-project-2013.md)
 - [Project Server CSOM と .NET の使用を開始する](getting-started-with-the-project-server-csom-and-net.md)
     

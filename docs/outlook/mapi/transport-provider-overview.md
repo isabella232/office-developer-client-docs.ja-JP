@@ -3,17 +3,17 @@ title: トランスポート プロバイダーの概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: a51547e6-8f0e-45f4-a341-3cfa735112c2
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 53bdba624ba759debba25bae78fb45b0f9d5247e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f189ed78d7feb1714fa2a04bf29403c6d33773af
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433158"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609321"
 ---
 # <a name="transport-provider-overview"></a>トランスポート プロバイダーの概要
 

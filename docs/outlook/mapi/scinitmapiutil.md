@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ScInitMapiUtil
 api_type:
 - HeaderDef
 ms.assetid: d83b8ea8-a3b8-4038-a226-de1869c5d722
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 090a73ed908d2a647d00de27b93538a77766c258
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6dbc027dfc3dfb2a0b4cf3a0096c5d33e5b4d4a0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420592"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591214"
 ---
 # <a name="scinitmapiutil"></a>ScInitMapiUtil
 

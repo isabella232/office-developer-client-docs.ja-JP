@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251275
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cbfc4e91-10d1-d50e-3e8a-f269f7123276
 description: テキスト ブロックの回転中心の x 座標を、テキスト ブロックの原点に関連付けます。 既定の数式は次のとおりです。
-ms.openlocfilehash: 390f8129e8000a043969eda0ab1c8e4ef62515ef
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 019ebd40029c2c07c534a65e81f74bfaca91ac7a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425856"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559396"
 ---
 # <a name="txtlocpinx-cell-text-transform-section"></a>[TxtLocPinX] セル ([Text Transform] セクション)
 

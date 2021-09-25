@@ -1,18 +1,18 @@
 ---
-title: ADO MD オブジェクト (Access デスクトップデータベースリファレンス)
+title: ADO MD オブジェクト (Access デスクトップ データベースリファレンス)
 TOCTitle: ADO MD objects
 ms:assetid: 13501e44-70b6-1036-a8b7-c276f187e4f4
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248907(v=office.15)
 ms:contentKeyID: 48543366
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a2d3acf1b236e23522da0143d577bbcbeacbb4b7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 034344d469037d33c3dee586ab8bc56f95df906f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283297"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559298"
 ---
 # <a name="ado-md-objects"></a>ADO MD のオブジェクト
 
@@ -27,7 +27,7 @@ ms.locfileid: "32283297"
 </colgroup>
 <tbody>
 <tr class="even">
-<th>Object</th>
+<th>オブジェクト</th>
 <th>説明</th>
 </tr>
 <tr class="odd">
@@ -35,7 +35,7 @@ ms.locfileid: "32283297"
 <td><p>1 つ以上の次元の選択されたメンバーを含む、セルセットの位置またはフィルターの軸を表します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="catalog-object-ado-md.md">Catalog</a></p></td>
+<td><p><a href="catalog-object-ado-md.md">カタログ</a></p></td>
 <td><p>多次元データ プロバイダー (MDP) に固有の多次元スキーマ情報 (つまり、キューブおよび基になる次元、階層、レベル、およびメンバー) が含まれます。</p></td>
 </tr>
 <tr class="odd">
@@ -44,7 +44,7 @@ ms.locfileid: "32283297"
 </tr>
 <tr class="even">
 <td><p><a href="cellset-object-ado-md.md">Cellset</a></p></td>
-<td><p>多次元クエリの結果を表します。 キューブまたは他のセルセットから選択されたセルのコレクションになります。</p></td>
+<td><p>多次元クエリの結果を表します。キューブまたは他のセルセットから選択されたセルのコレクションになります。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="cubedef-object-ado-md.md">CubeDef</a></p></td>
@@ -56,14 +56,14 @@ ms.locfileid: "32283297"
 </tr>
 <tr class="odd">
 <td><p><a href="hierarchy-object-ado-md.md">Hierarchy</a></p></td>
-<td><p>次元のメンバーを集約または&quot;ロールアップできる1つの方法を表します。&quot;次元は、1つ以上の階層に基づいて集約できます。</p></td>
+<td><p>ディメンションのメンバーを集計またはロールアップできる 1 つの方法を &quot; 表します。 &quot; ディメンションは、1 つ以上の階層に沿って集計できます。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="level-object-ado-md.md">Level</a></p></td>
 <td><p>階層内で同じランクを持つメンバーのセットが含まれます。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="member-object-ado-md.md">Member</a></p></td>
+<td><p><a href="member-object-ado-md.md">メンバー</a></p></td>
 <td><p>キューブ内のレベルのメンバー、レベルのメンバーの子、またはセルセットの軸に沿ったメンバーの位置を表します。</p></td>
 </tr>
 <tr class="even">
@@ -86,7 +86,7 @@ ms.locfileid: "32283297"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Object</p></th>
+<th><p>オブジェクト</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>

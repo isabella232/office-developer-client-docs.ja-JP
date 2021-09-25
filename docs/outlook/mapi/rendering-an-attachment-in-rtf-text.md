@@ -3,17 +3,17 @@ title: RTF テキストで添付ファイルをレンダリングする
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 26372539-e9fe-464d-95c7-90b58c20b98f
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: b2a1a23f073d05e85c8203826e3407c5ae193f19
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 90e8c40833570927f488a053c7682af19bde9480
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439794"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609649"
 ---
 # <a name="rendering-an-attachment-in-rtf-text"></a>RTF テキストで添付ファイルをレンダリングする
 

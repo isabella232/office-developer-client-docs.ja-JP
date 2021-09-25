@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff184613(v=office.15)
 ms:contentKeyID: 55119887
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d6242506bac081ee16d125ea92fbed69939c6abc
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.localizationpriority: medium
+ms.openlocfilehash: b2102d23d77ab3dbfb458949da93f21722dfc75c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542626"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609076"
 ---
 # <a name="filter-and-display-multivalued-properties-when-enumerating-items-in-a-folder"></a>フォルダー内のアイテムの列挙時に複数値プロパティをフィルター処理して表示する
 

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 803ddfc1-b7d3-736f-2d85-7b8780ef9278
 description: SnapAngle 要素のコレクションが含まれます。
-ms.openlocfilehash: d0b2c2a0643b4f3bccd5b450ef0d9c89ce9ab7c2
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 4448214332f0ad696b296a7ce64c21c1fe54220b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540393"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559501"
 ---
 # <a name="snapangles-element-documentsettings_type-complextype-visio-xml"></a>SnapAngles 要素 (DocumentSettings_Type complexType) (Visio XML)
 

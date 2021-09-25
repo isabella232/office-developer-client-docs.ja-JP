@@ -1,18 +1,18 @@
 ---
-title: IsolationLevelEnum (Access デスクトップデータベースリファレンス)
+title: IsolationLevelEnum (Access デスクトップ データベース リファレンス)
 TOCTitle: IsolationLevelEnum
 ms:assetid: 438af3f3-65ed-237d-94d8-f3aff6addd3b
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249204(v=office.15)
 ms:contentKeyID: 48544506
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9f0176772b366b39d368f8bae1e402d420f0136c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a54f82a61605700d6691f4adc321114994b9e4a8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291157"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568874"
 ---
 # <a name="isolationlevelenum"></a>IsolationLevelEnum
 
@@ -39,47 +39,47 @@ ms.locfileid: "32291157"
 <tr class="odd">
 <td><p><strong>adXactUnspecified</strong></p></td>
 <td><p>-1</p></td>
-<td><p>プロバイダーが指定されたものとは異なる分離レベルを使用していますが、レベルを特定できないことを示します。</p></td>
+<td><p>プロバイダーが指定とは異なる分離レベルを使用しているが、レベルを特定できないことを示します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adXactChaos</strong></p></td>
-<td><p>16</p></td>
-<td><p>分離度の高いトランザクションからの保留中の変更を上書きできないことを示します。</p></td>
+<td><p>16 </p></td>
+<td><p>より高度に分離されたトランザクションからの保留中の変更を上書きできないことを示します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adXactBrowse</strong></p></td>
 <td><p>256</p></td>
-<td><p>1つのトランザクションから、他のトランザクションのコミットされていない変更を表示できることを示します。</p></td>
+<td><p>1 つのトランザクションから、他のトランザクションのコミットされていない変更を表示できます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adXactReadUncommitted</strong></p></td>
 <td><p>256</p></td>
-<td><p><strong>adXactBrowse</strong>と同じです。</p></td>
+<td><p><strong>adXactBrowse と同じです</strong>。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adXactCursorStability</strong></p></td>
 <td><p>4096</p></td>
-<td><p>1つのトランザクションから、コミットされた後にのみ他のトランザクションの変更を表示できることを示します。</p></td>
+<td><p>1 つのトランザクションから、他のトランザクションの変更を表示できるのは、コミット後にのみ行えます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adXactReadCommitted</strong></p></td>
 <td><p>4096</p></td>
-<td><p><strong>adXactCursorStability</strong>と同じです。</p></td>
+<td><p><strong>adXactCursorStability と同じです</strong>。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adXactRepeatableRead</strong></p></td>
 <td><p>65536</p></td>
-<td><p>1つのトランザクションから、他のトランザクションで行われた変更を表示できないが、再クエリで新しい<strong>Recordset</strong>オブジェクトを取得できることを示します。</p></td>
+<td><p>あるトランザクションから他のトランザクションで行われた変更は表示できませんが、その再クエリでは新しい Recordset オブジェクトを <strong>取得</strong> できます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adXactIsolated</strong></p></td>
 <td><p>1048576</p></td>
-<td><p>トランザクションが他のトランザクションとは分離して実行されることを示します。</p></td>
+<td><p>他のトランザクションを分離してトランザクションが行われるかどうかを示します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adXactSerializable</strong></p></td>
 <td><p>1048576</p></td>
-<td><p><strong>adXactIsolated</strong>と同じです。</p></td>
+<td><p><strong>adXactIsolated と同じです</strong>。</p></td>
 </tr>
 </tbody>
 </table>
@@ -100,31 +100,31 @@ ms.locfileid: "32291157"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums</p></td>
+<td><p>AdoEnums.IsolationLevel.UNSPECIFIED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums</p></td>
+<td><p>AdoEnums.IsolationLevel.CHAOS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums</p></td>
+<td><p>AdoEnums.IsolationLevel.BROWSE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums IsolationLevel</p></td>
+<td><p>AdoEnums.IsolationLevel.READUNCOMMITTED</p></td>
 </tr>
 <tr class="odd">
-<td><p>IsolationLevel の安定性 AdoEnums</p></td>
+<td><p>AdoEnums.IsolationLevel.CURSORSTABILITY</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums コミットされた IsolationLevel</p></td>
+<td><p>AdoEnums.IsolationLevel.READCOMMITTED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums IsolationLevel</p></td>
+<td><p>AdoEnums.IsolationLevel.REPEATABLEREAD</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums</p></td>
+<td><p>AdoEnums.IsolationLevel.ISOLATIONED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums IsolationLevel</p></td>
+<td><p>AdoEnums.IsolationLevel.SERIALIZABLE</p></td>
 </tr>
 </tbody>
 </table>

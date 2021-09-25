@@ -1,20 +1,20 @@
 ---
-title: DataUpdatable プロパティ (DAO)
+title: Field2.DataUpdatable プロパティ (DAO)
 TOCTitle: DataUpdatable Property
 ms:assetid: e6619c4e-26b1-777b-f0de-78fed3dbc890
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835966(v=office.15)
 ms:contentKeyID: 48548377
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 88a57ff2daeaaaab202daad55f01eebc6bdf86dd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4c8f47a18e8bc78c64ebee663b31b15a89ca1378
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292840"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581274"
 ---
-# <a name="field2dataupdatable-property-dao"></a>DataUpdatable プロパティ (DAO)
+# <a name="field2dataupdatable-property-dao"></a>Field2.DataUpdatable プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -24,13 +24,13 @@ ms.locfileid: "32292840"
 
 ## <a name="syntax"></a>構文
 
-*式*。DataUpdatable
+*式* .DataUpdatable
 
-*式***Field2**オブジェクトを表す変数を取得します。
+*式***Field2** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
-このプロパティを使用して、 **Field2**オブジェクトの**[Value](field-value-property-dao.md)** プロパティの設定値を変更できるかどうかを判断します。 このプロパティは、**[Attributes](field-attributes-property-dao.md)** プロパティが **dbAutoIncrField** の **Field2** オブジェクトでは常に **False** です。
+このプロパティを使用して **[、Field2](field-value-property-dao.md)** オブジェクトの Value プロパティ設定を変更 **できるかどうかを判断** します。 このプロパティは、**[Attributes](field-attributes-property-dao.md)** プロパティが **dbAutoIncrField** の **Field2** オブジェクトでは常に **False** です。
 
 You can use the **DataUpdatable** property on **Field2** objects that are appended to the **[Fields](fields-collection-dao.md)** collection of **[QueryDef](querydef-object-dao.md)**, **[Recordset](recordset-object-dao.md)**, and **[Relation](relation-object-dao.md)** objects, but not the **Fields** collection of **[Index](index-object-dao.md)** or **[TableDef](tabledef-object-dao.md)** objects.
 

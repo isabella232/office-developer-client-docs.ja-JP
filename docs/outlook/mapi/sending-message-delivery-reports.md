@@ -3,17 +3,17 @@ title: メッセージ配信レポートの送信
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: abb12ec5-f0b7-488a-a75d-446f4be53e96
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 2a31e7d088d5c1f94b272cb4d307f3aff99f32ee
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ef949db447aee54f0e007e1ddbbf104ea2451ef5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433081"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609440"
 ---
 # <a name="sending-message-delivery-reports"></a>メッセージ配信レポートの送信
 

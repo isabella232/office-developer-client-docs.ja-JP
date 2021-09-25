@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff844937(v=office.15)
 ms:contentKeyID: 48543052
 ms.date: 06/13/2019
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4e9f30401891452970fdbe80123fc373e26f26c6
-ms.sourcegitcommit: d0e1ce095a478d90411abb8c147eb9efe19ffa5f
+ms.localizationpriority: medium
+ms.openlocfilehash: 798e424f1ae7138d15b2bc7db26b17dfebc86d03
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34870858"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569378"
 ---
 # <a name="comparison-of-microsoft-access-sql-and-ansi-sql"></a>Microsoft Access SQL と ANSI SQL の比較
 
 **適用先:** Access 2013、Office 2013
 
-Microsoft Access データベース エンジン SQL は、ANSI 文字セット 89 レベル 1 の仕様にほぼ準拠しています。 ただし、Microsoft Access SQL では、ANSI SQL の一部の機能は実装されていません。 その一方で、ANSI SQL ではサポートされていない予約語や機能が実装されています。
+Microsoft Access データベース エンジン SQL は、ANSI 文字セット 89 レベル 1 の仕様にほぼ準拠しています。 ただし、特定の ANSI SQL機能は、Microsoft Access アプリケーションではSQL。 その一方で、ANSI SQL ではサポートされていない予約語や機能が実装されています。
 
 ## <a name="major-differences"></a>主な違い
 
@@ -26,11 +26,11 @@ Microsoft Access データベース エンジン SQL は、ANSI 文字セット 
 
 - **[Between...And](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/between-and-operator)**
     
-  *expr1*\[ *Value1* **と** *value2* \] **の間で**はない
+  *expr1* \[NOT \] **between** *value1* **and** *value2*
     
   Microsoft Access SQL では、引数 *value1* に引数 *value2* より大きい値を指定できますが、ANSI SQL では引数 *value1* は必ず引数 *value2* 以下の値である必要があります。
 
-- Microsoft Office Access SQL では、ANSI SQL の[ワイルドカード文字](using-wildcard-characters-in-string-comparisons.md)と、 **[Like](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/like-operator-microsoft-access-sql)** 演算子の指定項目の中で使われる Microsoft Office Access データベース エンジンに固有のワイルドカード文字の両方がサポートされています。ANSI SQL のワイルドカード文字と Microsoft Office Access データベース エンジンに固有のワイルドカード文字は互いに排他的です。このため、これらを同時に使用することはできず、どちらか一方を使用する必要があります。ANSI SQL のワイルドカード文字を使用できるのは、Microsoft Office Access データベース エンジンと Microsoft Office Access Database Engine OLE DB Provider を組み合わせて使う場合だけです。Microsoft Office Access または DAO を介して ANSI SQL のワイルドカード文字を使うと、リテラルとして解釈されます。Microsoft Office Access Database Engine OLE DB Provider を使用しているときは、Microsoft Office Access データベース エンジンのワイルドカード文字がリテラルとして解釈されます。
+- Microsoft Office Access SQL では、ANSI SQL の [ワイルドカード文字](using-wildcard-characters-in-string-comparisons.md)と、 **[Like](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/like-operator-microsoft-access-sql)** 演算子の指定項目の中で使われる Microsoft Office Access データベース エンジンに固有のワイルドカード文字の両方がサポートされています。ANSI SQL のワイルドカード文字と Microsoft Office Access データベース エンジンに固有のワイルドカード文字は互いに排他的です。このため、これらを同時に使用することはできず、どちらか一方を使用する必要があります。ANSI SQL のワイルドカード文字を使用できるのは、Microsoft Office Access データベース エンジンと Microsoft Office Access Database Engine OLE DB Provider を組み合わせて使う場合だけです。Microsoft Office Access または DAO を介して ANSI SQL のワイルドカード文字を使うと、リテラルとして解釈されます。Microsoft Office Access Database Engine OLE DB Provider を使用しているときは、Microsoft Office Access データベース エンジンのワイルドカード文字がリテラルとして解釈されます。
     
     <table>
     <colgroup>
@@ -64,7 +64,7 @@ Microsoft Access データベース エンジン SQL は、ANSI 文字セット 
 
 - Microsoft Access SQL では、ANSI SQL よりも強力な式がサポートされています。
 
-## <a name="enhanced-features-of-microsoft-access-sql"></a>Microsoft Access SQL の拡張機能
+## <a name="enhanced-features-of-microsoft-access-sql"></a>Microsoft Access サービスの拡張SQL
 
 Microsoft Access SQL には、次の拡張機能があります。
 
@@ -74,7 +74,7 @@ Microsoft Access SQL には、次の拡張機能があります。
 
 - パラメーター クエリの定義に使用する [PARAMETERS](parameters-declaration-microsoft-access-sql.md) 宣言。
 
-## <a name="ansi-sql-features-not-supported-in-microsoft-access-sql"></a>Microsoft Access SQL でサポートされていない ANSI SQL 機能
+## <a name="ansi-sql-features-not-supported-in-microsoft-access-sql"></a>Microsoft Access SQLでサポートされていない ANSI の機能SQL
 
 Microsoft Access SQL では、ANSI SQL の次の機能がサポートされていません。
 

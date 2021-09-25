@@ -3,17 +3,17 @@ title: メッセージの投稿
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: cc3e1546-e58b-413f-82d7-4efeb86b0000
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 2c174d48a19e23de725e1d5a1533130175f2ab00
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 44137ffcab25ace7e93d92a735bca4a1c1186c24
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429769"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609622"
 ---
 # <a name="posting-a-message"></a>メッセージの投稿
 

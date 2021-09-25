@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm79035
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: e79ab56778f9429e7f1a985f0f81864ae4363606
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5046b0ac633f0e2811f83a2a39130d548417932d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296998"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558892"
 ---
 # <a name="applyfilter-macro-action"></a>ApplyFilter マクロ アクション
 
@@ -27,7 +27,7 @@ You can use the **ApplyFilter** action to apply a filter, a query, or an SQL WHE
 > [!NOTE]
 > [!メモ] このアクションは、サーバー フィルターを使用する場合のみ、SQL WHERE 句を適用するために使用します。サーバー フィルターは、保存されているプロシージャのレコード ソースには適用できません。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "ApplyFilter/フィルターの実行" アクションの引数は次のとおりです。
 
@@ -45,19 +45,19 @@ You can use the **ApplyFilter** action to apply a filter, a query, or an SQL WHE
 <tbody>
 <tr class="odd">
 <td><p>Filter Name/フィルター名</p></td>
-<td><p>テーブル、フォーム、またはレポートのレコードの制限または並べ替えを行うフィルターまたはクエリの名前を指定します。[ <strong>マクロ ビルダー</strong>] ウィンドウの [ <strong>アクションの引数</strong>] セクションの [ <strong>フィルター名</strong>] ボックスに、既存のクエリ、またはクエリとして保存されているフィルターの名前を入力できます。  </p><p><strong>注</strong>: このアクションを使用してサーバーフィルターを適用する場合は、"filter Name/フィルター名" 引数を空白にする必要があります。</p></td>
+<td><p>テーブル、フォーム、またはレポートのレコードの制限または並べ替えを行うフィルターまたはクエリの名前を指定します。[ <strong>マクロ ビルダー</strong>] ウィンドウの [ <strong>アクションの引数</strong>] セクションの [ <strong>フィルター名</strong>] ボックスに、既存のクエリ、またはクエリとして保存されているフィルターの名前を入力できます。  </p><p><strong>注</strong>: このアクションを使用してサーバー フィルターを適用する場合、引数 Filter Name は空白である必要があります。</p></td>
 </tr>
 <tr class="even">
 <td><p>Where Condition/Where 条件式</p></td>
 <td><p>テーブル、フォーム、またはレポートのレコードを制限するための有効な SQL WHERE 句 (WHERE という単語は除く) または式を指定します。</p>
-<p><b>注</b>: Where Condition/Where 条件式引数式では、通常、フォームまたはレポートの基になるテーブルまたはクエリのフィールド名が式の左側に格納されます。 The right side of the expression typically contains the criteria you want to apply to this field to restrict or sort the records. このコントロール名は、完全な名前で指定する必要があります。 たとえば、次のように指定します。</p>
-<p><strong>フォーム</strong><em>formname</em>!<em>controlname</em>フィールド名は二重引用符で囲む必要があり、リテラル文字列は一重引用符で囲む必要があります。 引数 Where Condition の最大長は255文字です。 If you need to enter a longer SQL WHERE clause, use the <strong>ApplyFilter</strong> method of the <strong>DoCmd</strong> object in a Visual Basic for Applications (VBA) module. You can enter SQL WHERE clause statements of up to 32,768 characters in VBA.</p></td>
+<p><b>メモ</b>: Where Condition 引数式では、式の左側に、フォームまたはレポートの基になるテーブルまたはクエリのフィールド名が通常含まれる。 The right side of the expression typically contains the criteria you want to apply to this field to restrict or sort the records. このコントロール名は、完全な名前で指定する必要があります。 たとえば、次のように指定します。</p>
+<p><strong>フォーム</strong>!<em>formname</em>!<em>controlname</em> フィールド名は二重引用符で囲み、文字列リテラルは単一引用符で囲む必要があります。 Where Condition 引数の最大長は 255 文字です。 If you need to enter a longer SQL WHERE clause, use the <strong>ApplyFilter</strong> method of the <strong>DoCmd</strong> object in a Visual Basic for Applications (VBA) module. You can enter SQL WHERE clause statements of up to 32,768 characters in VBA.</p></td>
 </tr>
 </tbody>
 </table>
 
 > [!NOTE]
-> 適切なデータを提供するフィルターが既に定義されている場合は、"filter Name/フィルター名" 引数を使用できます。 制限条件を直接入力する場合は、"Where Condition/Where 条件式" 引数を使用します。 両方の引数を指定すると、Microsoft Office Access 2007 では、WHERE 句がフィルターの結果に適用されます。 2 つの引数のうち少なくとも 1 つは指定する必要があります。
+> 適切なデータを提供するフィルターを既に定義している場合は、引数 Filter Name を使用できます。 制限条件を直接入力する場合は、"Where Condition/Where 条件式" 引数を使用します。 両方の引数を指定すると、Microsoft Office Access 2007 では、WHERE 句がフィルターの結果に適用されます。 2 つの引数のうち少なくとも 1 つは指定する必要があります。
 
 ## <a name="remarks"></a>注釈
 

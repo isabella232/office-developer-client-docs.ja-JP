@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249045(v=office.15)
 ms:contentKeyID: 48543867
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7d7bba0af804df89bf4c8611e184928c9bf12d55
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 50fe7a1c034e1e60863ee04da523f41bb7eadb46
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293610"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581407"
 ---
 # <a name="editmode-property-ado"></a>EditMode プロパティ (ADO)
 
@@ -31,7 +31,7 @@ ADO は、現在のレコードに関連付けられた編集バッファーを�
 
 さまざまな編集条件における [EditMode](addnew-method-ado.md) プロパティの詳細については、「 **AddNew メソッド (ADO)**」を参照してください。
 
-[削除](delete-method-ado-recordset.md)の呼び出しで、(たとえば、参照整合性違反によって) データソース内の1つまたは複数のレコードが正常に削除されない場合、その[Recordset](recordset-object-ado.md)は編集モードのままになります (**EditMode** = **adEditInProgress**). これは、(たとえば **Move**、[NextRecordset](move-method-ado.md)、または [Close](nextrecordset-method-ado.md) などを使って) 現在のレコードから移動する前に [CancelUpdate](close-method-ado.md) メソッドを呼び出す必要があることを意味します。
+[Delete](delete-method-ado-recordset.md)の呼び出しでデータ ソース内のレコードまたはレコードが正常に削除されない場合 (参照整合性違反など [)、Recordset](recordset-object-ado.md)は編集モード **(EditMode**  =  **adEditInProgress)** のままです。 これは、(たとえば **Move**、[NextRecordset](move-method-ado.md)、または [Close](nextrecordset-method-ado.md) などを使って) 現在のレコードから移動する前に [CancelUpdate](close-method-ado.md) メソッドを呼び出す必要があることを意味します。
 
 
 > [!NOTE]

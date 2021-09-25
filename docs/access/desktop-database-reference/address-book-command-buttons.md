@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249908(v=office.15)
 ms:contentKeyID: 48547422
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 09f2513a3c541c76352e773f7f2a8f0c24f78850
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f981ef687f916a6d82cddf974ed1b6dac26c4252
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282479"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603082"
 ---
 # <a name="address-book-command-buttons"></a>アドレス帳のコマンド ボタン
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 
 アドレス帳アプリケーションには次のコマンド ボタンがあります。
@@ -32,11 +32,11 @@ ms.locfileid: "32282479"
 
 ## <a name="find-button"></a>[検索] ボタン
 
-[**検索**] ボタンをクリックすると\_、VBScript 検索の OnClick Sub プロシージャがアクティブになり、SQL クエリが作成されて送信されます。 このボタンをクリックすると、データ グリッドが設定されます。
+[検索] ボタン **を** クリックすると、VBScript Find OnClick Sub プロシージャがアクティブ化され、クエリの作成と送信SQL \_ されます。 このボタンをクリックすると、データ グリッドが設定されます。
 
 ## <a name="building-the-sql-query"></a>SQL クエリの作成
 
-OnClick Sub の検索\_プロシージャの最初の部分では、sql クエリを作成します。これは、1つの文字列をグローバル sql SELECT ステートメントに追加することによって行います。 この Sub プロシージャは、データ ソース テーブルからすべてのデータ行を要求する SQL SELECT ステートメントに変数を設定することから始まります。 次に、ページ上の 4 つの入力ボックスをそれぞれスキャンします。
+Find OnClick Sub プロシージャの最初の部分では、グローバルクエリ SELECT ステートメントにテキスト文字列を追加することで、SQL クエリ (一度に 1 つの語句) \_ をSQLします。 この Sub プロシージャは、データ ソース テーブルからすべてのデータ行を要求する SQL SELECT ステートメントに変数を設定することから始まります。 次に、ページ上の 4 つの入力ボックスをそれぞれスキャンします。
 
 プログラムでは、SQL ステートメントの作成時にワードを使用するため、クエリは完全一致ではなく、サブ文字列検索になります。
 
@@ -51,7 +51,7 @@ Select FirstName, LastName, Title, Email, Building, Room, Phone from Employee wh
 
 ## <a name="preparing-and-sending-the-query"></a>クエリの準備と送信
 
-OnClick Sub の検索\_プロシージャの最後の部分は、2つのステートメントで構成されます。 最初のステートメントは、RDS.DataControl オブジェクトの SQL プロパティを、動的に作成される SQL クエリと等しくなるように割り当てます。 2 番目のステートメントでは、**RDS.DataControl** オブジェクト ( ) でデータベースにクエリを実行した後、クエリの新しい結果をグリッドに表示します。
+Find OnClick Sub プロシージャの最後の \_ 部分は、2 つのステートメントで構成されます。 最初のステートメントは、RDS.DataControl オブジェクトの SQL プロパティを、動的に作成される SQL クエリと等しくなるように割り当てます。 2 番目のステートメントでは、**RDS.DataControl** オブジェクト ( ) でデータベースにクエリを実行した後、クエリの新しい結果をグリッドに表示します。
 
 ```vb 
  
@@ -64,7 +64,7 @@ End Sub
 
 ## <a name="update-profile-button"></a>[プロファイルの更新] ボタン
 
-[**プロファイルの更新**] ボタンをクリックする\_と、VBScript update OnClick Sub プロシージャがアクティブになります。これにより、RDS が実行されます。DataControl オブジェクトの () SubmitChanges メソッドおよび Refresh メソッド
+[プロファイルの更新 **] ボタンを** クリックすると、RDS を実行する VBScript Update \_ OnClick Sub プロシージャがアクティブ化されます。DataControl オブジェクトの () SubmitChanges メソッドと Refresh メソッド。
 
 ```vb 
  
@@ -74,11 +74,11 @@ Sub Update_OnClick
 End Sub 
 ```
 
-DC1。SubmitChanges が実行されると、リモートデータサービスはすべての更新情報をパッケージ化し、HTTP を介してサーバーに送信します。 update は all または nothing です。更新の一部が失敗した場合、変更は一切行われず、ステータスメッセージが返されます。 が実行されると、リモートデータサービスはすべての更新情報をパッケージ化し、HTTP を介してサーバーに送信します。 update は all または nothing です。更新の一部が失敗した場合、変更は一切行われず、ステータスメッセージが返されます。 DC1.リモートデータサービスを使用して**SubmitChanges**を実行した後に更新する必要はありませんが、最新のデータが保証されます。
+DC1 の場合。SubmitChanges が実行され、リモート データ サービスは、すべての更新情報をパッケージし、HTTP 経由でサーバーに送信します。 この更新プログラムは、すべてまたは何も行いません。更新プログラムの一部が失敗した場合、変更は行われません。状態メッセージが返されます。 を実行すると、リモート データ サービスは、すべての更新情報をパッケージし、HTTP 経由でサーバーに送信します。 この更新プログラムは、すべてまたは何も行いません。更新プログラムの一部が失敗した場合、変更は行われません。状態メッセージが返されます。 DC1。リモート データ サービスを使用して **SubmitChanges** を実行した後は更新は必要ありませんが、新しいデータが保証されます。
 
 ## <a name="cancel-changes-button"></a>[変更の取り消し] ボタン
 
-**[変更のキャンセル]** をクリック\_すると、VBScript のキャンセル OnClick Sub プロシージャがアクティブになります。これにより、RDS が実行されます。DataControl オブジェクト (CancelUpdate メソッド)。
+[変更の **取り消し]** をクリックすると、RDS を実行する VBScript Cancel \_ OnClick Sub プロシージャがアクティブ化されます。DataControl オブジェクトの ( CancelUpdate メソッド。
 
 ```vb 
  

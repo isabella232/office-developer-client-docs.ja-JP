@@ -1,5 +1,5 @@
 ---
-title: Relations プロパティ (DAO)
+title: Database.Relations プロパティ (DAO)
 TOCTitle: Relations Property
 ms:assetid: 7b2f9cfb-72f2-4641-8af9-3a4d1cd887ce
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196193(v=office.15)
@@ -10,24 +10,24 @@ f1_keywords:
 - dao360.chm1052922
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: e14cfde828322fee22b8a833bdbc7934900953a7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 76ae2a6ad3a86591c6fe2333d327e105958ce1fb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294723"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569154"
 ---
-# <a name="databaserelations-property-dao"></a>Relations プロパティ (DAO)
+# <a name="databaserelations-property-dao"></a>Database.Relations プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
 
-指定したデータベースの、すべての保存された **Relation** オブジェクトを含む **Relations** コレクションを返します。 読み取り専用です。
+指定したデータベースの、すべての保存された **Relation** オブジェクトを含む **Relations** コレクションを返します。値の取得のみ可能です。
 
 ## <a name="syntax"></a>構文
 
-*式*。Relations
+*式* .リレーション
 
-*式***Database**オブジェクトを表す変数を取得します。
+*式* **Database** オブジェクトを表す変数です。
 

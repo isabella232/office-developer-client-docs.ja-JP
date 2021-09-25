@@ -1,18 +1,18 @@
 ---
-title: ADOX コードの例 (Access デスクトップデータベースリファレンス)
+title: ADOX コード例 (Access デスクトップ データベースリファレンス)
 TOCTitle: ADOX code examples
 ms:assetid: 706689e7-8b34-59eb-533b-65fb73f1eb5f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249443(v=office.15)
 ms:contentKeyID: 48545557
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c0ba9aa652856a773e0986f2093b77898f259ef2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d2a19f3adfaa7a4815dcd0e71c6a1716cd46704f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282846"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559172"
 ---
 # <a name="adox-code-examples"></a>ADOX コードの例
 

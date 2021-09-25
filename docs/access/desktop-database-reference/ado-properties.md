@@ -1,18 +1,18 @@
 ---
-title: ActiveX Data Objects (ADO) プロパティ
+title: ActiveXデータ オブジェクト (ADO) プロパティ
 TOCTitle: ADO properties
 ms:assetid: 04f08f22-6327-c603-229e-d06a9f1c0d83
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248809(v=office.15)
 ms:contentKeyID: 48543020
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a0efb40d1b5e4c5d675d8add7cdb7a05760578a9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d79c1abb2ce664945c57a147e5e29909420caf5b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283234"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559270"
 ---
 # <a name="ado-properties"></a>ADO プロパティ
 
@@ -67,7 +67,7 @@ ms.locfileid: "32283234"
 <td><p>ローカル メモリにキャッシュされた <strong>Recordset</strong> オブジェクトのレコード数を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="chapter-property-ado.md">節</a></p></td>
+<td><p><a href="chapter-property-ado.md">チャプター</a></p></td>
 <td><p>Gets or sets an OLE DB <strong>Chapter</strong> object from/on an <strong>ADORecordsetConstruction</strong> object.</p></td>
 </tr>
 <tr class="odd">
@@ -155,7 +155,7 @@ ms.locfileid: "32283234"
 <td><p><strong>Connection</strong> オブジェクトの分離レベルを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="item-property-ado.md">Item</a></p></td>
+<td><p><a href="item-property-ado.md">項目</a></p></td>
 <td><p>コレクションの特定のメンバーをその名前またはインデックスで示します。</p></td>
 </tr>
 <tr class="odd">
@@ -179,7 +179,7 @@ ms.locfileid: "32283234"
 <td><p><strong>Connection</strong>、<strong>Record</strong>、または <strong>Stream</strong> オブジェクトでデータを変更するために使用できる権限を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="name-property-ado.md">Name</a></p></td>
+<td><p><a href="name-property-ado.md">名前</a></p></td>
 <td><p>オブジェクトの名前を示します。</p></td>
 </tr>
 <tr class="odd">
@@ -223,7 +223,7 @@ ms.locfileid: "32283234"
 <td><p><strong>Parameter</strong> オブジェクトの数値型 (Numeric) の値、または数値型の <strong>Field</strong> オブジェクトの精度を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="prepared-property-ado.md">整え</a></p></td>
+<td><p><a href="prepared-property-ado.md">準備</a></p></td>
 <td><p>コンパイルされたバージョンのコマンドを、実行前に保存するかどうかを示します。</p></td>
 </tr>
 <tr class="even">
@@ -239,7 +239,7 @@ ms.locfileid: "32283234"
 <td><p><strong>Record</strong> オブジェクトの種類を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="row-property-ado.md">行</a></p></td>
+<td><p><a href="row-property-ado.md">Row</a></p></td>
 <td><p><strong>ADORecordConstruction</strong> オブジェクトの OLE DB <strong>Row</strong> オブジェクトを設定または取得します。</p></td>
 </tr>
 <tr class="even">
@@ -247,11 +247,11 @@ ms.locfileid: "32283234"
 <td><p><strong>ADORecordsetConstruction</strong> オブジェクトの OLE DB <strong>RowPosition</strong> オブジェクトを取得または設定します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="rowset-property-ado.md">行</a></p></td>
+<td><p><a href="rowset-property-ado.md">行セット</a></p></td>
 <td><p><strong>ADORecordsetConstruction</strong> オブジェクトの OLE DB <strong>Rowset</strong> オブジェクトを取得または設定します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="size-property-ado.md">Size</a></p></td>
+<td><p><a href="size-property-ado.md">サイズ</a></p></td>
 <td><p><strong>Parameter</strong> オブジェクトの最大サイズをバイト数または文字数で示します。</p></td>
 </tr>
 <tr class="odd">
@@ -292,10 +292,10 @@ ms.locfileid: "32283234"
 </tr>
 <tr class="even">
 <td><p><a href="stayinsync-property-ado.md">StayInSync</a></p></td>
-<td><p>親の行の位置が変更されたときに、基になる子のレコード (つまり、<em>チャプター</em>) への参照を変更するかどうかを、階層<strong>Recordset</strong>オブジェクト内に示します。</p></td>
+<td><p>階層的な <strong>Recordset</strong> オブジェクトで、親行の位置が変更された場合に基になる子レコード (つまり <em>チャプター)</em>への参照が変更されるかどうかを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="type-property-ado.md">Type</a></p></td>
+<td><p><a href="type-property-ado.md">種類</a></p></td>
 <td><p><strong>Parameter</strong>、<strong>Field</strong>、または <strong>Property</strong> オブジェクトの操作の種類またはデータ型を示します。</p></td>
 </tr>
 <tr class="even">

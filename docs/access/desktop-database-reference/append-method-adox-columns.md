@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250152(v=office.15)
 ms:contentKeyID: 48548285
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 48bc100b7b56265a570ce963b80f569f1d827150
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2827fa16ce33903b7e220797ea51d4098b866e7a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297124"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559046"
 ---
 # <a name="append-method-adox-columns"></a>Append メソッド (ADOX Columns)
 
@@ -22,7 +22,7 @@ ms.locfileid: "32297124"
 
 ## <a name="syntax"></a>構文
 
-*列*。 *列* \[、*型*\] ** 、および未定義のサイズを追加する\[\]
+*列*. Append *Column* \[ ,*Type* \] \[ ,*DefinedSize*\]
 
 ## <a name="parameters"></a>パラメーター
 
@@ -30,10 +30,10 @@ ms.locfileid: "32297124"
 |:--------|:----------|
 |*Column* |追加する **Column** オブジェクトを指定します。または、新たに作成して追加する列の名前を指定します。|
 |*Type* |省略可能です。列のデータ型を指定する長整数型 (**Long**) の値を指定します。*Type* パラメーターは、**Column** オブジェクトの [Type](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-columnadox) プロパティに対応します。|
-|*DefinedSize* |省略可能です。 列のサイズを指定する長整数型 (**Long**) の値を指定します。 *DefinedSize* パラメーターは、**Column** オブジェクトの [DefinedSize](definedsize-property-adox.md) プロパティに対応します。|
+|*DefinedSize* |省略可能です。列のサイズを指定する長整数型 (**Long**) の値を指定します。*DefinedSize* パラメーターは、**Column** オブジェクトの [DefinedSize](definedsize-property-adox.md) プロパティに対応します。|
 
 
 > [!NOTE]
-> **Column** を [Index](index-object-adox.md) の **Columns** コレクションに追加するときに、[Tables](tables-collection-adox.md) コレクションに既に追加されている [Table](table-object-adox.md) にまだ **Column** が存在していない場合は、エラーが発生します。
+> [!メモ] **Column** を **Index** の [Columns](index-object-adox.md) コレクションに追加するときに、 **Tables** コレクションに既に追加されている [Table](table-object-adox.md) にまだ [Column](tables-collection-adox.md) が存在していない場合は、エラーが発生します。
 
 

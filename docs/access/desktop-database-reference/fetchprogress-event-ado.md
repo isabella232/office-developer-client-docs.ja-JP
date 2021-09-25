@@ -1,37 +1,37 @@
 ---
-title: fetchprogress イベント (ADO)
+title: FetchProgress イベント (ADO)
 TOCTitle: FetchProgress event (ADO)
 ms:assetid: 09145d9a-ea5e-b41c-6c54-33ec83e642a9
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248828(v=office.15)
 ms:contentKeyID: 48543114
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d863f51e7836acdc577ecd720df77114ed66f067
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 32aca282a3ef79ad5e29614445559a653034528a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293183"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602674"
 ---
-# <a name="fetchprogress-event-ado"></a>fetchprogress イベント (ADO)
+# <a name="fetchprogress-event-ado"></a>FetchProgress イベント (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 非同期操作が長く続く場合、現在までに [Recordset](recordset-object-ado.md) に取得された行数を報告するために **FetchProgress** イベントが定期的に呼び出されます。
 
 ## <a name="syntax"></a>構文
 
-fetchprogress** の進行状況、 *maxprogress*、 *adstatus*、 *precordset*
+FetchProgress *Progress*, *MaxProgress*, *adStatus*, *pRecordset*
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
 |*Progress* |フェッチ操作によって、現在までに取得したレコード数を表す長整数型 ( **Long** ) の値です。|
-|*maxprogress* |取得する予定の最大レコード数を表す長整数型 ( **Long** ) の値です。|
+|*MaxProgress* |取得する予定の最大レコード数を表す長整数型 ( **Long** ) の値です。|
 |*adStatus* |[EventStatusEnum](eventstatusenum.md) 状態値です。|
-|*precordset* |レコードの取得先のオブジェクトである **Recordset** オブジェクトです。|
+|*pRecordset* |レコードの取得先のオブジェクトである **Recordset** オブジェクトです。|
 
 ## <a name="remarks"></a>注釈
 

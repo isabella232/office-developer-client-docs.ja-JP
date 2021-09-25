@@ -1,30 +1,30 @@
 ---
-title: Version プロパティ (DAO)
+title: Database.Version プロパティ (DAO)
 TOCTitle: Version Property
 ms:assetid: 40faaa0c-e764-e968-f606-7e06ded80c3f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192887(v=office.15)
 ms:contentKeyID: 48544440
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 41b408f63522902fd1d4f806090eef7563a3492a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ea3d061025619ec2368b1cc3c732c82b2f291ba4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294653"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581547"
 ---
-# <a name="databaseversion-property-dao"></a>Version プロパティ (DAO)
+# <a name="databaseversion-property-dao"></a>Database.Version プロパティ (DAO)
 
 **適用先:** Access 2013、Office 2013
 
-microsoft access ワークスペースでは、データベースを作成した microsoft Jet または microsoft access データベースエンジンの vesion を返します。 値の取得のみ可能な文字列型 (**String**) の値です。
+Microsoft Access ワークスペースで、データベースを作成した Microsoft Jet または Microsoft Office Access のデータベース エンジンのバージョンを取得します。値の取得のみ可能です。文字列型 ( **String**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。バージョン
+*式* .バージョン
 
-*式***Database**オブジェクトを表す変数を取得します。
+*式* **Database** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 
@@ -63,7 +63,7 @@ microsoft access ワークスペースでは、データベースを作成した
 <td><p>該当なし</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet</p></td>
+<td><p>Microsoft Jet</p></td>
 <td><p>1.1 (1993)</p></td>
 <td><p>1.1</p></td>
 <td><p>3.0</p></td>
@@ -71,7 +71,7 @@ microsoft access ワークスペースでは、データベースを作成した
 <td><p>該当なし</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet</p></td>
+<td><p>Microsoft Jet</p></td>
 <td><p>2.0 (1994)</p></td>
 <td><p>2.0</p></td>
 <td><p>該当なし</p></td>
@@ -79,7 +79,7 @@ microsoft access ワークスペースでは、データベースを作成した
 <td><p>該当なし</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet</p></td>
+<td><p>Microsoft Jet</p></td>
 <td><p>2.5 (1995)</p></td>
 <td><p>該当なし</p></td>
 <td><p>4.0 (16 ビット)</p></td>

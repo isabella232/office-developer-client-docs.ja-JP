@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248837(v=office.15)
 ms:contentKeyID: 48543154
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a9c7f5782885aafd43e365ddc4f08dedd0975234
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: db240ef561de9ba653dbad3453a2ee4d894baa25
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295976"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602893"
 ---
 # <a name="configuring-virtual-servers-on-iis"></a>IIS での仮想サーバーの構成
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 Internet Information Services 4.0 で仮想サーバーを作成する場合、その仮想サーバーが RDS と共に動作するように設定するには、さらに次の 2 つの手順が必要です。
 
 1.  サーバーをセットアップするときに、[実行アクセスを許可する (スクリプトのアクセスを含む)] チェック ボックスをオンにします。
 
-2.  msadcs を*vroot*\\msadc に移動します。 *vroot*は、仮想サーバーのホームディレクトリです。
+2.  仮想msadcs.dll *vroot* msadc に移動します \\ *。vroot* は仮想サーバーのホーム ディレクトリです。
 

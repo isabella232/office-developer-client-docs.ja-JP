@@ -1,20 +1,20 @@
 ---
-title: CreateRecord データブロック
+title: CreateRecord データ ブロック
 TOCTitle: CreateRecord data block
 ms:assetid: e18f47f8-2aad-9a14-ad63-ab603a4d5b07
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835671(v=office.15)
 ms:contentKeyID: 48548263
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 63e189143e77f9fcc42fa8d48c3ebfb2feda6633
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2430e3731f83c59eb039f504609772cdc69b9695
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295353"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581596"
 ---
-# <a name="createrecord-data-block"></a>CreateRecord データブロック
+# <a name="createrecord-data-block"></a>CreateRecord データ ブロック
 
 
 **適用先:** Access 2013、Office 2013
@@ -24,7 +24,7 @@ You can use the **CreateRecord** data block to create a new record in the specif
 > [!NOTE]
 > **CreateRecord** データ ブロックはデータ マクロでのみ使用できます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 CreateRecord データ ブロックの引数は次のとおりです。
 
@@ -44,7 +44,7 @@ CreateRecord データ ブロックの引数は次のとおりです。
 <tbody>
 <tr class="odd">
 <td><p><strong>Create a Record In</strong>/レコードの作成先</p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 <td><p>新しいレコードを作成するテーブルの名前。</p></td>
 </tr>
 <tr class="even">
@@ -77,7 +77,7 @@ CreateRecord データ ブロックの引数は次のとおりです。
 <td><p><a href="group-macro-statement.md">Group マクロ ステートメント</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="if-then-else-macro-block.md">もし。。。そうしたら。。。Else マクロステートメント</a></p></td>
+<td><p><a href="if-then-else-macro-block.md">もし。。。そうしたら。。。Else マクロ ステートメント</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="setfield-macro-action.md">SetField マクロ アクション</a></p></td>

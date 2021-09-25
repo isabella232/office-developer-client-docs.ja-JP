@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191889(v=office.15)
 ms:contentKeyID: 48543802
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f731862e12a75f91d07ea7d012cc33dad5be0b55
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 73caeebae4a2a33d54d1dcc13cb0a7b79264302f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291567"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568930"
 ---
 # <a name="indexes-collection-dao"></a>Indexes コレクション (DAO)
 
@@ -22,7 +22,7 @@ ms.locfileid: "32291567"
 
 ## <a name="remarks"></a>注釈
 
-テーブル タイプの Recordset オブジェクトにアクセスする場合は、オブジェクトの **Index** プロパティを使用してレコードの順序を指定します。 このプロパティを、 **[Recordset](recordset-object-dao.md)** オブジェクトの基になる**[TableDef](tabledef-object-dao.md)** オブジェクトの**Indexes**コレクションの既存の**Index**オブジェクトの**Name**プロパティの設定値に設定します。
+テーブル タイプの Recordset オブジェクトにアクセスする場合は、オブジェクトの **Index** プロパティを使用してレコードの順序を指定します。 Recordset オブジェクトの基 **になる TableDef** オブジェクトの **Indexes** コレクション内の既存の **Index** オブジェクトの **[Name](tabledef-object-dao.md)** プロパティ設定にこのプロパティを **[設定](recordset-object-dao.md)** します。
 
 > [!NOTE]
 > **Append** または **Delete** メソッドを **Indexes** コレクションに使用できるのは、元になる **TableDef** オブジェクトの **[Updatable](connection-updatable-property-dao.md)** プロパティの設定が **True** の場合のみです。

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8074bd07-430a-779e-ad1f-e7e3a1c748b1
 description: Master、Page、またはグループ図形要素で図形を定義する要素を含む。
-ms.openlocfilehash: aa7ffa539c9f82adc486bd0848dda66798bac165
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 6c0d414fb3794ff1e377e908de38c694c9f1babd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542073"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622936"
 ---
 # <a name="shape-element-shapes_type-complextype-visio-xml"></a>Shape 要素 (Shapes_Type complexType) (Visio XML)
 
@@ -73,7 +73,7 @@ ms.locfileid: "34542073"
 |名前  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の名前。  <br/> |xsd:string 型の値。  <br/> |
 |NameU  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の汎用名。  <br/> |xsd:string 型の値。  <br/> |
 |TextStyle  <br/> |xsd:unsignedInt  <br/> ||この図形がテキストの書式設定を継承する StyleSheet の ID。  <br/> |xsd:unsignedInt 型の値。  <br/> |
-|型  <br/> |xsd:token  <br/> |省略可能  <br/> |図形の種類。 グループ、図形、ガイド、または外部のいずれかの値を指定できます。  <br/> |xsd:token 型の値。  <br/> |
+|種類  <br/> |xsd:token  <br/> |省略可能  <br/> |図形の種類。 グループ、図形、ガイド、または外部のいずれかの値を指定できます。  <br/> |xsd:token 型の値。  <br/> |
 |UniqueID  <br/> |xsd:string  <br/> |省略可能  <br/> |図形に割り当てられた GUID (グローバル一意識別子)。  <br/> |xsd:string 型の値。  <br/> |
    
 

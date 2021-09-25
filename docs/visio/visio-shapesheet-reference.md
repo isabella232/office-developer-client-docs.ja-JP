@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 ms.assetid: ca06502c-884c-c1ad-d2c9-31f2b2b30ae5
 description: このリファレンスには、Visio 2013 に基づくソリューションを開発するときに役立つ概念情報、プログラミング タスク、サンプル、および参考情報が含まれています。
-localization_priority: Priority
-ms.openlocfilehash: 56fa9ee3fa8b86eea08039b0064efed978735e3d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 8c222faa49d5a2a5c6b3e423b20c544a08e1399a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345452"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553635"
 ---
 # <a name="visio-shapesheet-reference"></a>Visio シェイプ シート リファレンス
 
 このリファレンスには、Visio 2013 に基づくソリューションを開発するときに役立つ概念情報、プログラミング タスク、サンプル、および参考情報が含まれています。
   
-このコンテンツに関する質問やコメントをお送りください。 **[docthis@microsoft.com](mailto:docthis@microsoft.com)** 宛にフィードバックを送信できます。 
+この内容に関するご質問やご意見をお待ちしています。**[docthis@microsoft.com](mailto:docthis@microsoft.com)** にフィードバックをお寄せください。 
   
  **初版**: 2012 年 7 月| **更新**: 2012 年 10 月
   

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251506
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2e662230-0760-5f43-52dc-927f499715f6
 description: 時間、分、および秒で表される時間を返します。
-ms.openlocfilehash: f5be55d7e63a70d15da49c68b924cc5b03c5ca88
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4df859721e4947ba625a473f391d9e81f5606b2e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414474"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622747"
 ---
 # <a name="time-function-visioshapesheet"></a>TIME 関数 (VisioShapeSheet)
 
@@ -28,9 +28,9 @@ TIME(** *hour* **, ** *minute* **, ** *second* ** )
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _hour_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |時間のコンポーネントを指定します。  <br/> |
-| _minute_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |分のコンポーネントを指定します。  <br/> |
-| _second_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |秒のコンポーネントを指定します。  <br/> |
+| _hour_ <br/> |必須かどうか  <br/> |**数値型 (Numeric)** <br/> |時間のコンポーネントを指定します。  <br/> |
+| _minute_ <br/> |必須かどうか  <br/> |**数値型 (Numeric)** <br/> |分のコンポーネントを指定します。  <br/> |
+| _second_ <br/> |必須かどうか  <br/> |**数値型 (Numeric)** <br/> |秒のコンポーネントを指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

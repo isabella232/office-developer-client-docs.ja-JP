@@ -6,22 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192918(v=office.15)
 ms:contentKeyID: 48544481
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2dc25621a49d8fd23078a926d6ec6c5de54e54d9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4c2504e30445b78d04e55bd5e8cab0ed0fd551eb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292112"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581148"
 ---
 # <a name="group-macro-statement"></a>Group マクロ ステートメント
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **Group** ステートメントでは、マクロ内で展開または折りたたみできるアクションのブロックを指定できます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 **Group** アクションの引数は次のとおりです。
 
