@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c2345092-ba5f-4030-9070-391233e70f92
 description: 式に含まれるすべての値の合計が返されます。
-ms.openlocfilehash: b0fed86469b32ddcc7f60a388f5d42c7bbd48b6c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2e6b75d256776e9552939e124410d258be1c0d74
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427102"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605702"
 ---
 # <a name="sum-function-access-custom-web-app"></a>Sum 関数 (Access カスタム Web アプリ)
 

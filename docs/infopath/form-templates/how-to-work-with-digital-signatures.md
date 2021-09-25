@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - デジタル署名 [infopath 2007],InfoPath 2007,デジタル署名
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fd13fb71-aecf-47bb-8a6b-db70bd90ceeb
 description: Microsoft.Office.InfoPath 名前空間のオブジェクト モデルには、プログラムによってデジタル署名を操作する機能が用意されています。
-ms.openlocfilehash: ea657f80f6e38a06a91e19c245eadc203c7c580c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 705eeeba8426411c2ca5b61c2b9b707da5271e82
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425576"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605534"
 ---
 # <a name="work-with-digital-signatures"></a>デジタル署名を操作する
 

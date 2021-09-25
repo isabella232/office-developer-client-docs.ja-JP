@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251443
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cc46f91e-733f-e25a-17d2-19df8c8febd2
 description: 区切り記号で区切られたリスト内の 0 から始る位置インデックスの部分文字列を返します。 または、インデックスが範囲を外している場合は、空の文字列または errorvalue 引数として指定されたオプションのトークンを返します。
-ms.openlocfilehash: 11362ed984a489682d57f007300e60de548ddf11
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 09559640a9d3b1d1da730a125024c9a8f4a11699
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431576"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628137"
 ---
 # <a name="index-function"></a>INDEX 関数
 
@@ -28,9 +28,9 @@ INDEX(** *index* **," ** *list* ** "[,** *区切* り文字 ** ][,[ ** *errorval
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _index_ <br/> |必須  <br/> |**数値** <br/> |検索する位置を指定します。  <br/> |
-| _リスト_ <br/> |必須  <br/> |**String** <br/> |検索するリストを指定します。  <br/> |
-| _delimiter_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> | リスト内で区切り文字として使用する  _文字列_ です。 区切  _り文字_ は、長さが 1 文字以上で、マルチバイト文字を含めることができます。 既定値はセミコロンです。  <br/> |
+| _index_ <br/> |必須かどうか  <br/> |**数値** <br/> |検索する位置を指定します。  <br/> |
+| _list_ <br/> |必須  <br/> |**String** <br/> |検索するリストを指定します。  <br/> |
+| _delimiter_ <br/> |省略可能  <br/> |**String** <br/> | リスト内で区切り文字として使用する  _文字列_ です。 区切  _り文字_ は、長さが 1 文字以上で、マルチバイト文字を含めることができます。 既定値はセミコロンです。  <br/> |
 | _errorvalue_ <br/> |省略可能  <br/> |**数値** <br/> | インデックスが範囲外の場合に返す、ユーザー指定の値です。既定では、空の文字列です。  <br/> |
    
 ## <a name="remarks"></a>注釈

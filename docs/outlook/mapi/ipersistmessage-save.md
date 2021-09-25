@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IPersistMessage.Save
 api_type:
 - COM
 ms.assetid: 17875c13-f55b-4538-ac6f-c020281c3175
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: fa3f1d6339000fcc53e0ee22dafec4362e65ca7f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 51fa8ddb71ba3d80c80b7e19d267fdf7da4f62ec
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309619"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596044"
 ---
 # <a name="ipersistmessagesave"></a>IPersistMessage::Save
 

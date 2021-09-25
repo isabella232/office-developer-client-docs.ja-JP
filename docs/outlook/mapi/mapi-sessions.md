@@ -3,17 +3,17 @@ title: MAPI セッション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: c5a7c137-393e-40ff-a2b9-afe02da2435a
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 3dd55d8ee3cb2751fb27184f0069ae831e2164ee
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d4e81b3e3c948d31e1f34e9e6b423ba881302f48
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595792"
 ---
 # <a name="mapi-sessions"></a>MAPI セッション
 
@@ -37,7 +37,7 @@ The function calls for establishing a session have a collection of flags and par
   
 **MAPI �Z�b�V�����̃t���[�`���[�g**
   
-![MAPI セッションフローチャート](media/amapi_47.gif "MAPI セッションフローチャート")
+![MAPI �Z�b�V�����̃t���[�`���[�g](media/amapi_47.gif "MAPI セッションのフローチャート")
   
 �N���C�A���g �A�v���P�[�V���������Z�b�V�����̏������@�̏ڍׂɂ��ẮA [MAPI �Z�b�V�����̏���](mapi-session-handling.md)��Q�Ƃ��Ă��������B
   
@@ -46,5 +46,5 @@ The function calls for establishing a session have a collection of flags and par
 - [MAPILogonEx](mapilogonex.md)  
 - [IMAPISession: IUnknown](imapisessioniunknown.md)
 - [MAPI �Z�b�V�����̏���](mapi-session-handling.md)  
-- [MAPI プログラミングの概要](mapi-programming-overview.md)
+- [MAPI �v���O���~���O�̊T�v](mapi-programming-overview.md)
 

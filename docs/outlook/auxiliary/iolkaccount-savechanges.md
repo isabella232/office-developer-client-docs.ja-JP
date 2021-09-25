@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8f1ab61e-7d1c-50d5-ae21-8cb4b08d729c
 description: レジストリ ストアに書き込み、アカウント オブジェクトに対する変更をコミットします。
-ms.openlocfilehash: c23cefbbda62de9b7e159e500d95b8db5ff34ef4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2ea5cfaa51ae4fada6d771b8aac774bf309a0335
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425835"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561937"
 ---
 # <a name="iolkaccountsavechanges"></a>IOlkAccount::SaveChanges
 

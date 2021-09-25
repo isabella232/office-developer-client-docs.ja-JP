@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm3020
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 55942a42-5e88-2f6b-69f8-405ce406fcaf
 description: 無限線上の 2 点の x 座標と y 座標を格納します。
-ms.openlocfilehash: b6338b6b50535379759649c791b9678de640df70
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 53d99efd06ec466625be5dd0565234a2c6f09607
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413620"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628116"
 ---
 # <a name="infiniteline-row-geometry-section"></a>[InfiniteLine] 行 ([Geometry] セクション)
 

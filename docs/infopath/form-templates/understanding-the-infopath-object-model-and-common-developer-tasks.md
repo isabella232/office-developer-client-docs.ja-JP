@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - examples [infopath 2007],InfoPath 2007, developer tasks,developer tasks [InfoPath 2007],InfoPath 2007, object models,object models [InfoPath 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a2c18b72-426b-4f63-8454-187e96d26199
 description: ここでは、InfoPath マネージ コード フォーム テンプレートの開発時に行う一般的な開発タスクに関する情報を記載しています。
-ms.openlocfilehash: a84bf1a70407ca87e1a83f74856d363d8860d4a1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: efd7ec81017e50b810a4535d4219013b5c78f0e3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418856"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621214"
 ---
 # <a name="understanding-the-infopath-object-model-and-common-developer-tasks"></a>InfoPath オブジェクト モデルと一般的な開発タスクについて
 

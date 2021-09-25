@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e9356257-4581-44fe-8efa-172964e4c8d4
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: cd1b54601c55e44ad2b9e1d2cea3d3fdd9e76017
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7bcfcd43cc5c629e65059e97a53111a932b18c5a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346593"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613402"
 ---
 # <a name="pidtaginferenceenabled-canonical-property"></a>PidTagInferenceEnabled 標準プロパティ
 
@@ -27,7 +27,7 @@ ms.locfileid: "32346593"
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_INFERENCES_ENABLED  <br/> |
 |識別子:  <br/> |0x3439000  <br/> |
-|データの種類 :   <br/> |Boolean  <br/> |
+|データの種類 :   <br/> |ブール型  <br/> |
 |エリア:  <br/> |メッセージ ストア  <br/> |
    
 ## <a name="related-resources"></a>関連リソース

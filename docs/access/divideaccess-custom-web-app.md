@@ -3,15 +3,15 @@ title: / (分割) (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3d296730-197b-44db-853b-881597dd9b48
 description: ある数を別の数で割ります。
-ms.openlocfilehash: 48d43b224743949f86c5d206d9919a9e2d6fbcae
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 975917c398d7d768305211290f320f1e7ede474c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435188"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614893"
 ---
 # <a name="-divide-access-custom-web-app"></a>/ (分割) (Access カスタム Web アプリ)
 

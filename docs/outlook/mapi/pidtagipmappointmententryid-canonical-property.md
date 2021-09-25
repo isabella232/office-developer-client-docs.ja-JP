@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagIpmAppointmentEntryId
 api_type:
 - HeaderDef
 ms.assetid: a6e8c8fb-b76a-4a73-b112-6399e4d94233
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: d27506edf6eb40f6b244733336b8b381ea941442
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 1604a4de9c97212cffcedba2bed7ab7eb0f6a722
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327917"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613409"
 ---
 # <a name="pidtagipmappointmententryid-canonical-property"></a>PidTagIpmAppointmentEntryId 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "32327917"
 |関連するプロパティ:  <br/> |PR_IPM_APPOINTMENT_ENTRYID  <br/> |
 |識別子:  <br/> |0x36D0  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Folder  <br/> |
+|エリア:  <br/> |フォルダー  <br/> |
    
 ## <a name="remarks"></a>注釈
 

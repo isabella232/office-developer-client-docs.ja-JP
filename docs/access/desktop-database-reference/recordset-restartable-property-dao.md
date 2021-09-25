@@ -1,5 +1,5 @@
 ---
-title: Recordset プロパティ (DAO)
+title: Recordset.Restartable プロパティ (DAO)
 TOCTitle: Restartable Property
 ms:assetid: 00def49d-ea7e-6cd5-2f4a-914a1ddcdd51
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844737(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052926
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 5142d0d47be37ca8c2e1c6b89462c05b7d41d302
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e0af1932a625703c08f7b0c873c177e21bd14ed0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307575"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572880"
 ---
-# <a name="recordsetrestartable-property-dao"></a>Recordset プロパティ (DAO)
+# <a name="recordsetrestartable-property-dao"></a>Recordset.Restartable プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -27,9 +27,9 @@ ms.locfileid: "32307575"
 
 ## <a name="syntax"></a>構文
 
-*式*。dbms
+*式* .再起動可能
 
-*式***Recordset**オブジェクトを表す変数を取得します。
+*expression*: **Recordset** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 

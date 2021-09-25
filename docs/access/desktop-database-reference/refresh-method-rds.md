@@ -6,23 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249668(v=office.15)
 ms:contentKeyID: 48546450
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 60de3b25e5eedc277eaafbe4bd1c078863e13f7b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6768e7fae2da5eaa985db29f77a606fa4ce937cc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309300"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585355"
 ---
 # <a name="refresh-method-rds"></a>Refresh メソッド (RDS)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 [Connect](connect-property-rds.md) プロパティで指定されたデータ ソースに再度クエリを実行し、クエリの結果を更新します。
 
 ## <a name="syntax"></a>構文
 
-*DataControl*。更新
+*DataControl*.更新
 
 ## <a name="parameters"></a>パラメーター
 

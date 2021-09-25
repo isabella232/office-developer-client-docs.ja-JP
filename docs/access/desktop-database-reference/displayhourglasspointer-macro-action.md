@@ -10,22 +10,22 @@ f1_keywords:
 - vbaac10.chm117200
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a5635b2b97066394b8596dbcdb50c84abf429719
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c0c6708acde1c9a50ae9a30ff8b1fce57e392605
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293834"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585733"
 ---
 # <a name="displayhourglasspointer-macro-action"></a>DisplayHourglassPointer マクロ アクション
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 You can use the **DisplayHourglassPointer** action to change the mouse pointer to an image of an hourglass (or another icon you've chosen) while a macro is running. This action can provide a visual indication that the macro is running. This is especially useful when a macro action or the macro itself takes a long time to run.
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "DisplayHourglassPointer/砂時計ポインターの表示" アクションの引数は次のとおりです。
 
@@ -51,7 +51,7 @@ You can use the **DisplayHourglassPointer** action to change the mouse pointer t
 
 ## <a name="remarks"></a>注釈
 
-このアクションは、" **Echo/エコー** " アクションでエコーをオフにした場合によく使用します。 エコーがオフの場合、マクロが終了するまで、Access は画面の更新を中断します。
+このアクションは、" **Echo/エコー** " アクションでエコーをオフにした場合によく使用します。 エコーがオフの場合、Access はマクロが終了するまで画面の更新を中断します。
 
 Access automatically resets the **Hourglass On** argument to **No** when the macro finishes running.
 

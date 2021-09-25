@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197799(v=office.15)
 ms:contentKeyID: 48546469
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 19999159f7987be87031f88d1eec87980585f369
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 0eeb52f8885a508de1f9497cdc44df0406e13871
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284519"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562350"
 ---
 # <a name="recordset-object-dao"></a>Recordset オブジェクト (DAO)
 
@@ -39,9 +39,9 @@ ms.locfileid: "32284519"
 
 **OpenRecordset** メソッドの type 引数を使用して、作成できる **Recordset** オブジェクトの種類を選択できます。
 
-Microsoft Access ワークスペースでは、 type を指定しない場合、DAO によって、まず最大限の機能を備えたテーブル タイプの **Recordset** オブジェクトが作成されます。 DAO 試行ダイナセット タイプ、スナップショット、し、最後に、前方の種類でこの種類を使用できない場合 **Recordset** オブジェクトです。
+Microsoft Access ワークスペースでは、 type を指定しない場合、DAO によって、まず最大限の機能を備えた **Recordset** のタイプが作成され、テーブルとともに開始されます。このタイプが使用できない場合は、Dynaset、Snapshot、最後にForward-only type の **Recordset** オブジェクトの生成を試みます。
 
-ODBCDirect ワークスペースでは、 type を指定しない場合、DAO によって、まずクエリ応答が最も速い前方スクロール タイプの **Recordset** オブジェクトが作成されます。 前方スクロール タイプが使用できない場合は、スナップショット タイプ、ダイナセット タイプ、最後に動的タイプの順で **Recordset** オブジェクトが作成されます。
+ODBCDirect ワークスペースでは、type を指定しない場合、DAO によって、まずクエリ応答が最も速い **Recordset** のタイプが作成され、Forward-only で開始されます。これが使用できない場合は、Snapshot、そして Dynaset、最後にDynamic-type の順で **Recordset** オブジェクトの生成を試みます。
 
 Microsoft Access ワークスペースで、リンクされていない [**TableDef**](tabledef-object-dao.md) オブジェクトを使用して **Recordset** オブジェクトを作成すると、テーブル タイプの **Recordset** オブジェクトが作成されます。リンク テーブルまたは Microsoft データベース エンジンに接続された ODBC データベースのテーブルでは、ダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトのみを作成できます。
 
@@ -58,9 +58,9 @@ Microsoft Access ワークスペースで、リンクされていない [**Table
 
 **Recordset** オブジェクトを作成すると、レコードがある場合はカレント レコードが最初のレコードに配置されます。レコードがない場合は、 **RecordCount** プロパティ設定が 0 になり、 **BOF** プロパティおよび **EOF** プロパティ設定が **True** になります。
 
-**MoveNext**、**MovePrevious**、**MoveFirst**、**MoveLast** の各メソッドを使用すると、カレント レコードを再配置できます。 前方スクロール タイプの **Recordset** オブジェクトは、**MoveNext** メソッドのみをサポートします。 Move メソッドを使用して各レコードを参照する場合 (または **Recordset** を実行する場合) は、**BOF** および **EOF** プロパティを使用して、**Recordset** オブジェクトの開始または終了を確認できます。
+**MoveNext**、**MovePrevious**、**MoveFirst**、**MoveLast** の各メソッドを使用すると、カレント レコードを再配置できます。前方スクロール タイプの **Recordset** オブジェクトは、**MoveNext** メソッドのみをサポートします。Move メソッドを使用して各レコードを参照する場合 (または **Recordset** を実行する場合) は、**BOF** および **EOF** プロパティを使用して、**Recordset** オブジェクトの開始または終了を確認できます。
 
-Microsoft Access ワークスペースで、ダイナセット タイプおよびスナップショット タイプの **Recordset** オブジェクトを使用する場合は、 FindFirst などの **Find** メソッドを使用して、基準に基づいて特定のレコードを検索することもできます。 レコードが見つからない場合は、 **NoMatch** プロパティが **True** に設定されます。 テーブル タイプの **Recordset** オブジェクトの場合は、 **Seek** メソッドを使用してレコードをスキャンできます。
+Microsoft Access ワークスペースで、ダイナセット タイプおよびスナップショット タイプの **Recordset** オブジェクトを使用する場合は、 FindFirst などの **Find** メソッドを使用して、基準に基づいて特定のレコードを検索することもできます。レコードが見つからない場合は、 **NoMatch** プロパティが **True** に設定されます。テーブル タイプの **Recordset** オブジェクトの場合は、 **Seek** メソッドを使用してレコードをスキャンできます。
 
 **Type** プロパティは、作成される **Recordset** オブジェクトの種類を示し、 **Updatable** プロパティはオブジェクトのレコードを変更できるかどうかを示します。
 
@@ -144,7 +144,7 @@ Microsoft Access ワークスペースで、ダイナセット タイプおよ�
 
 <br/>
 
-この例では、**OpenRecordset** メソッドを使用して 5 つの異なる **Recordset** オブジェクトを開き、それらの内容を表示します。 このプロシージャを実行するには、OpenRecordsetOutput プロシージャが必要です。
+この例では、 **OpenRecordset** メソッドを使用して、5 種類の **Recordset** オブジェクトを開き、その内容を表示します。このプロシージャを実行するには、 OpenRecordsetOutput プロシージャが必要です。
 
 ```vb
     Sub OpenRecordsetX() 

@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249113(v=office.15)
 ms:contentKeyID: 48544138
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ace5373c748fa1350d5ae8b09f4b839bf3440495
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 741338ac86a4dc451d9b5ec23cadd638d5589de1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293848"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585747"
 ---
 # <a name="dimensions-collection-ado-md-reference"></a>Dimensions コレクション (ADO MD リファレンス)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 - [Dimensions コレクション (ADO MD)](dimensions-collection-ado-md.md)
-- [Dimensions コレクションのプロパティ、メソッド、およびイベント (ADO MD)](dimensions-collection-properties-methods-and-events-ado-md.md)
+- [ディメンション コレクションのプロパティ、メソッド、およびイベント (ADO MD)](dimensions-collection-properties-methods-and-events-ado-md.md)
 

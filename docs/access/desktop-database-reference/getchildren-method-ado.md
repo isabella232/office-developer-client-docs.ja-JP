@@ -1,20 +1,20 @@
 ---
-title: getchildren メソッド (ADO)
+title: GetChildren メソッド (ADO)
 TOCTitle: GetChildren method (ADO)
 ms:assetid: 998cf640-ffc7-51e1-4d1e-4797f7cdea4a
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249687(v=office.15)
 ms:contentKeyID: 48546515
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4ca8c113a377543ea8624972adb5958612a3fc72
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6c2c23ed24ecde11e182e623834f986a37b9e73f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292308"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573006"
 ---
-# <a name="getchildren-method-ado"></a>getchildren メソッド (ADO)
+# <a name="getchildren-method-ado"></a>GetChildren メソッド (ADO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -24,7 +24,7 @@ ms.locfileid: "32292308"
 
 ## <a name="syntax"></a>構文
 
-**設定***recordset* = *レコード*。GetChildren
+**レコードセット***レコードを*  =  *設定します*。GetChildren
 
 ## <a name="return-value"></a>戻り値
 

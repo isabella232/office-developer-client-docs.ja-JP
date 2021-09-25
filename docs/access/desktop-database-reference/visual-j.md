@@ -1,18 +1,18 @@
 ---
-title: Visual J++ (Access デスクトップデータベースリファレンス)
+title: Visual J++ (Access デスクトップ データベース リファレンス)
 TOCTitle: Visual J++
 ms:assetid: 5c05db85-cdf2-9a73-fbc5-3dbfa6752376
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249320(v=office.15)
 ms:contentKeyID: 48545079
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: da13ae0f10e2338b961f2f12686bd378580a69d7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 93952438594d87e9985d44f22ca4e071a974e5f0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32311334"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572530"
 ---
 # <a name="visual-j"></a>Visual J++
 

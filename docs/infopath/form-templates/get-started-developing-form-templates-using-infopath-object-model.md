@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - form templates [infopath 2007], getting started,InfoPath 2003-compatible form templates, getting started
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 45867711-3231-43ce-bae9-caf588120550
 description: ここでは、Microsoft.Office.Interop.InfoPath.SemiTrust 名前空間のメンバーから提供される InfoPath 2003 互換オブジェクト モデルを使用するマネージ コード フォーム テンプレートを作成する作業の始め方に関する情報を記載しています。
-ms.openlocfilehash: 54d60e6d73ee224845c87c08f4de1e554e6182da
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1dab85ad84ebe26eb4285aac1eb2f82439e5dcf1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408055"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621256"
 ---
 # <a name="get-started-developing-form-templates-using-the-infopath-object-model"></a>InfoPath オブジェクト モデルを使用したフォーム テンプレートの開発を開始する
 

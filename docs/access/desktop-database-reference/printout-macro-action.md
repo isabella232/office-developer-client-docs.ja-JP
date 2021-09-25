@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm1697
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 04212a8bf63d5039c6548463612f006f0d116229
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2cfb01c542134570b2ccc0ac2a0e31fd3599cc5c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301408"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585484"
 ---
 # <a name="printout-macro-action"></a>PrintOut マクロ アクション
 
@@ -27,7 +27,7 @@ You can use the **PrintOut** action to print the active object in the open datab
 > [!NOTE]
 > このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 "PrintOut/印刷" アクションの引数は次のとおりです。
 

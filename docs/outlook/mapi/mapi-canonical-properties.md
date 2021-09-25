@@ -3,17 +3,17 @@ title: MAPI 標準プロパティ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 29151beb-7436-401a-8072-58d4facd8458
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 2fc605c57936765f43d7a6941dcc8d40d058db2f
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: eb0d0efe3eb0b6b9ec81fd0bff9a0893c3b950c7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540477"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595897"
 ---
 # <a name="mapi-canonical-properties"></a>MAPI 標準プロパティ
 

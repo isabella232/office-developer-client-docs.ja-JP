@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 keywords:
 - multithreading in excel,memory contention in Excel,functions [Excel 2007], thread-safe,thread-safe functions [Excel 2007],thread-local memory [Excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 86e1e842-f433-4ea9-8b13-ad2515fc50d8
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: a385728450fc6519d7f5211c186a9d74e623bf7b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 74f431357b74a117888eca847151a6145b2473e3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301639"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621424"
 ---
 # <a name="multithreading-and-memory-contention-in-excel"></a>Excel におけるマルチスレッド処理とメモリ競合
 

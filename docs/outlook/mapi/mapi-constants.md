@@ -5,15 +5,15 @@ ms.date: 10/02/2018
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8fa5ac8d-3f63-499c-bb4e-439984773e4a
 description: MAPI API で使用する定数の定義、MAPI インターフェイス宣言、クラスとインターフェイス識別子。
-ms.openlocfilehash: 343b777550d88276a1f5cad19f12ae7fc09c6244
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: aa31d57e6c3d81cf173ec9e7e825a6c8b9f55e8c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32318922"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595890"
 ---
 # <a name="mapi-constants"></a>MAPI 定数
 

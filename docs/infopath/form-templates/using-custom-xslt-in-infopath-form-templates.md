@@ -3,15 +3,15 @@ title: InfoPath フォーム テンプレートでカスタム XSLT を使用す
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 32c80bcd-a5d6-af32-38ba-9ca9ff148b99
 description: Microsoft InfoPath フォーム デザイナーで必要となる可能性のあるビュー要素のほとんどは作成できます。ただし、InfoPath で作成できないカスタム ビュー要素が必要な場合は、ビューを生成するために InfoPath で使用される XSL 変換 (XSLT) を手動で変更することができます。そのためには、Microsoft Office Backstage の [発行] タブの [ソース ファイルのエクスポート] を使用してフォームをそのコンポーネント ファイルに抽出し、Microsoft Visual Studio、メモ帳など任意の XML エディターで変換を編集します。
-ms.openlocfilehash: a61980191dbedeec33b06ad8173ce50126fea781
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6f25005eb69ce298f79082273eb9d21e3acf34f8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428271"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621242"
 ---
 # <a name="using-custom-xslt-in-infopath-form-templates"></a>InfoPath フォーム テンプレートでカスタム XSLT を使用する
 

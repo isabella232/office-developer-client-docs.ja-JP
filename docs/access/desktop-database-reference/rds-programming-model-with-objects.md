@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248987(v=office.15)
 ms:contentKeyID: 48543663
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9743fb1e7329457abb60ed8ed41bc39067f3551d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1a5f6ed9fbeff6db21592acc239ede8692da6217
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301051"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615180"
 ---
 # <a name="rds-programming-model-with-objects"></a>RDS プログラミング モデルとオブジェクト
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 RDS の目的は、IIS などを中継してデータ ソースに対するアクセスおよび更新を行うことです。プログラミング モデルでは、この目的の達成に必要な一連の操作を指定します。オブジェクト モデルでは、プログラミング モデルに作用するメソッドおよびプロパティを持つオブジェクトを指定します。
 

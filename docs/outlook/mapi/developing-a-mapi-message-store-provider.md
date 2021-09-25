@@ -3,17 +3,17 @@ title: MAPI メッセージ ストア プロバイダーの開発
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 83692674-0b5a-468d-9cd7-a2ac3d140bda
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 76332b57b2957b5682efb415121ea6db42409c30
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: aaf4e986b72c4ba34489f5880e95866436580172
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412612"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561832"
 ---
 # <a name="developing-a-mapi-message-store-provider"></a>MAPI メッセージ ストア プロバイダーの開発
   

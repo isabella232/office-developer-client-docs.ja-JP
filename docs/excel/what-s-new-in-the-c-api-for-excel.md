@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 keywords:
 - c api [excel 2007],新機能
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f11552e1-b8ea-4933-b6fc-c452b07eb59d
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 64e3933ec25f0771db5bd36bbf57f3f259cdc8a1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 99a4bc3c1a88dd4b812ced2c7578f61a7d1274a8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439689"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621375"
 ---
 # <a name="whats-new-in-the-c-api-for-excel"></a>Excel 用 C API の新機能
 

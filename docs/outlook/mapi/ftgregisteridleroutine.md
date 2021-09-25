@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.FtgRegisterIdleRoutine
 api_type:
 - COM
 ms.assetid: 8d9557ba-7919-42c6-9e2f-f10214437d53
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: b45b80f09efbd4f05aabc2c868d5bd8eb5fa4cce
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0ba14e2cb0b7c41460a54f31e80099ddfb27cfb7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418522"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621025"
 ---
 # <a name="ftgregisteridleroutine"></a>FtgRegisterIdleRoutine
 

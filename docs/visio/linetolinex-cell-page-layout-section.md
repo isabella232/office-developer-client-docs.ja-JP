@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm565
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f6b461fe-56ac-4c0e-31cd-6b3c1075db6e
 description: 図面ページにあるすべてのコネクタ間の水平方向のクリアランスを指定します。
-ms.openlocfilehash: f3dbf43c737fef1fa1156fb4dc8d0f23449328c0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a708e9e80332e5338e5f5ecf6e25b9414df627f9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416329"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628022"
 ---
 # <a name="linetolinex-cell-page-layout-section"></a>[LineToLineX] セル ([Page Layout] セクション)
 

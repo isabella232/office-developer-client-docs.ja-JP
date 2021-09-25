@@ -5,13 +5,13 @@ ms.audience: Developer
 ms.topic: overview
 ms.assetid: 597f7b81-3baf-4bf2-9ef0-f7fedad8c36e
 description: ソリューションの開発と Excel のカスタマイズに関する HowTo コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および技術記事を検索できます。
-localization_priority: Priority
-ms.openlocfilehash: af840c94620f445689a5b7dcdd20341485a4a6d7
-ms.sourcegitcommit: e2cff03cb13d6c500942897b234db00476a72f18
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 0d4355be208d28726567eb09f498147c4129d4a7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34100873"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572404"
 ---
 # <a name="develop-solutions-and-customize-excel"></a>ソリューションを開発し、Excel をカスタマイズする
 

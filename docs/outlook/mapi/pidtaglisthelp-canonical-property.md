@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagListHelp
 api_type:
 - HeaderDef
 ms.assetid: 403324b8-c992-4823-aa0f-0414b283debc
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 588747205ee3922fef7b107dc024f074a6ee527e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 1a67eaac19fb6316825f890207e061d958be791f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279630"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613360"
 ---
 # <a name="pidtaglisthelp-canonical-property"></a>PidTagListHelp 標準プロパティ
 
@@ -40,7 +40,7 @@ ms.locfileid: "32279630"
   
 これらのリスト サーバー関連のプロパティの値を設定するには、MIME クライアントが次の表で指定したヘッダー フィールドを記述する必要があります。
   
-|**Property**|**優先ヘッダー フィールド名**|**代替ヘッダー フィールド名**|
+|**プロパティ**|**優先ヘッダー フィールド名**|**代替ヘッダー フィールド名**|
 |:-----|:-----|:-----|
 |**PR_LIST_HELP** <br/> |List-Help  <br/> |X-List-Help  <br/> |
    

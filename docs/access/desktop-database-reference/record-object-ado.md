@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249557(v=office.15)
 ms:contentKeyID: 48545952
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 96ddc7fc1a93543f0eea2b42a3d423ec25a00636
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6008fd30e9ea43cc820322018eba36b33e55d463
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300904"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615173"
 ---
 # <a name="record-object-ado"></a>Record オブジェクト (ADO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 [Recordset](recordset-object-ado.md) オブジェクトやデータ プロバイダーの行、または、半構造化データ プロバイダーから返されるファイルやディレクトリなどのオブジェクトを表します。
 
@@ -33,12 +33,12 @@ ms.locfileid: "32300904"
 
 **Record** オブジェクトは、階層構造のデータ間を移動する手段としても使用できます。 **Record** オブジェクトを作成して、それを大規模なツリー構造の特定のサブツリーのルートにすると、新しい **Record** オブジェクトを子ノードとして開くことができます。
 
-A resource (for example, a file or directory) can be uniquely identified by an absolute URL. A [Connection](connection-object-ado.md) object is implicitly created and set to the **Record** object when the **Record** is opened with an absolute URL. A **Connection** object may explicitly be set to the **Record** object via the [ActiveConnection](activeconnection-property-ado.md) property. **Connection**オブジェクトを使用してアクセスできるファイルとディレクトリは、 **Record**操作が発生する可能性がある*コンテキスト*を定義します。
+A resource (for example, a file or directory) can be uniquely identified by an absolute URL. A [Connection](connection-object-ado.md) object is implicitly created and set to the **Record** object when the **Record** is opened with an absolute URL. A **Connection** object may explicitly be set to the **Record** object via the [ActiveConnection](activeconnection-property-ado.md) property. Connection オブジェクトを介してアクセスできるファイルとディレクトリは、**レコード***操作が* 発生する可能性がある **コンテキストを** 定義します。
 
 データを変更または移動する **Record** オブジェクトのメソッドでは相対 URL も利用でき、相対 URL では、絶対 URL または **Connection** オブジェクト コンテキストを起点としてリソースを検索します。
 
 > [!NOTE]
-> [!メモ] http スキームを使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、「[絶対 url と相対 url](absolute-and-relative-urls.md)」を参照してください。
+> [!メモ] http スキームを使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、「絶対 URL と [相対 URL」を参照してください](absolute-and-relative-urls.md)。
 
 
 
@@ -58,7 +58,7 @@ A resource (for example, a file or directory) can be uniquely identified by an a
 
   - [State](state-property-ado.md) プロパティを使用して、**Record** の現在のステータスを示すことができます。
 
-  - [RecordType](recordtype-property-ado.md)プロパティを使用して、**レコード**の種類 (*単純*、*コレクション*、または*構造化ドキュメント*) を指定します。
+  - RecordType プロパティを使用 **して、レコード** の種類 ( *単純*、 *コレクション*、 *または構造化* ドキュメント) [を指定](recordtype-property-ado.md) します。
 
   - [Cancel](cancel-method-ado.md) メソッドを使用して、非同期操作の実行を停止できます。
 

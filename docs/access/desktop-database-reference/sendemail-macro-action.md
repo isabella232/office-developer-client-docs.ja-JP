@@ -6,24 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff196780(v=office.15)
 ms:contentKeyID: 48546046
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c0fa220b3088cde46b0e82631c06520afd839c64
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 191942c63bce2111c22f2fbc871513a3c30c7a40
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314652"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585341"
 ---
 # <a name="sendemail-macro-action"></a>SendEmail マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-**SendEmail**アクションは、電子メールメッセージを送信します。
+**SendEmail アクションは** 電子メール メッセージを送信します。
 
 > [!NOTE]
 > **SendEmail** アクションは、データ マクロでのみ使用できます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 **SendEmail** アクションの引数は次のとおりです。
 
@@ -49,12 +49,12 @@ ms.locfileid: "32314652"
 <tr class="even">
 <td><p><strong>Cc/CC</strong></p></td>
 <td><p>いいえ</p></td>
-<td><p>メッセージの Cc (&quot;カーボンコピー&quot;) 行に配置するメッセージの受信者名。</p></td>
+<td><p>メッセージの Cc (カーボン コピー) 行に名前を付け &quot; &quot; したいメッセージ受信者。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Bcc/BCC</strong></p></td>
 <td><p>いいえ</p></td>
-<td><p>メッセージの Bcc (&quot;ブラインドカーボンコピー&quot;) 行に配置するメッセージの受信者名を指定します。</p></td>
+<td><p>メッセージの BCC (ブラインド カーボン コピー) 行に名前を付けしたい &quot; &quot; メッセージ受信者。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Subject/件名</strong></p></td>
@@ -62,7 +62,7 @@ ms.locfileid: "32314652"
 <td><p>メッセージの件名。このテキストはメール メッセージの [ <strong>件名</strong> ] 行に表示されます。  </p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Body/本文</strong></p></td>
+<td><p><strong>Body</strong></p></td>
 <td><p>いいえ</p></td>
 <td><p>メール メッセージの本文に含めるテキスト。この引数を指定しない場合、メッセージにテキストが追加されません。</p></td>
 </tr>

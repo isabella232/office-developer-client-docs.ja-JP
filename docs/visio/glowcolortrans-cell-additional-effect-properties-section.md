@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d6cf67cb-f9e6-43a5-918a-f9151821ab4d
 description: 図形の光彩のストロークに使用される色の透明度レベルをパーセンテージで指定します。
-ms.openlocfilehash: 81b734de6212540e0f50df05aca11dc535fc49ab
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 580deb08ef7ed48ed91c99ff61f38e74bba240fe
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439752"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628284"
 ---
 # <a name="glowcolortrans-cell-additional-effect-properties-section"></a>[GlowColorTrans] セル ([追加効果のプロパティ] セクション)
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagObsoletedMessageIds
 api_type:
 - HeaderDef
 ms.assetid: bc979398-f1ad-4496-b982-428b95719369
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1f00a57798b03edb368fb0dc59fead7a2e9f5c8f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c750c01dcbb5453a126c1d19f80e03275e4ad617
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416112"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560796"
 ---
 # <a name="pidtagobsoletedmessageids-canonical-property"></a>PidTagObsoletedMessageIds 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "33416112"
 |関連するプロパティ:  <br/> |PR_OBSOLETED_IPMS  <br/> |
 |識別子:  <br/> |0x001F  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Server  <br/> |
+|エリア:  <br/> |サーバー  <br/> |
    
 ## <a name="remarks"></a>注釈
 

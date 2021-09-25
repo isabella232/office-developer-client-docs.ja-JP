@@ -8,15 +8,15 @@ f1_keywords:
 - xlfRegister
 keywords:
 - xlfregister function [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c730124c-1886-4a0f-8f06-79763025537d
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 3cd2e5072c8602fe301028e69592220a8345c211
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 167e7be32a7904376e0e40a82965c21d3866e93d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303865"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605556"
 ---
 # <a name="xlfregister-form-1"></a>xlfRegister (形式 1)
 
@@ -79,12 +79,12 @@ XLL のエントリ ポイントの種類を示す、省略可能な引数。既
 |||||
 |:-----|:-----|:-----|:-----|
 | _pxMacroType value_ <br/> |0  <br/> |1  <br/> |2  <br/> |
-|ワークシートから呼び出し可能  <br/> |はい  <br/> |はい  <br/> |いいえ  <br/> |
-|マクロ シートから呼び出し可能  <br/> |はい  <br/> |はい  <br/> |はい  <br/> |
-|定義済みの名前の定義から呼び出し可能  <br/> |はい  <br/> |はい  <br/> |はい  <br/> |
-|条件付き書式の式から呼び出し可能  <br/> |はい  <br/> |はい  <br/> |いいえ  <br/> |
+|ワークシートから呼び出し可能  <br/> |はい  <br/> |必要  <br/> |いいえ  <br/> |
+|マクロ シートから呼び出し可能  <br/> |はい  <br/> |はい  <br/> |必要  <br/> |
+|定義済みの名前の定義から呼び出し可能  <br/> |はい  <br/> |はい  <br/> |必要  <br/> |
+|条件付き書式の式から呼び出し可能  <br/> |はい  <br/> |必要  <br/> |いいえ  <br/> |
 |ワークシート関数の関数ウィザードに表示される  <br/> |いいえ  <br/> |はい  <br/> |いいえ  <br/> |
-|マクロ シート関数の関数ウィザードに表示される  <br/> |いいえ  <br/> |はい  <br/> |はい  <br/> |
+|マクロ シート関数の関数ウィザードに表示される  <br/> |いいえ  <br/> |はい  <br/> |必要  <br/> |
    
 実際には、ワークシート関数には 1、ワークシートから呼び出すマクロ シートと同等の関数 (タイプ **#** として登録されたもの) には 1、コマンドには 2 を使用する必要があります。 
   
@@ -280,12 +280,12 @@ Excel 2010 以降の Excel では、指定の計算クラスター プロバイ�
 |1  <br/> |財務  <br/> |
 |2  <br/> |日付 &amp; 時刻  <br/> |
 |3  <br/> |数学 &amp; 三角  <br/> |
-|4  <br/> |テキスト  <br/> |
+|4   <br/> |テキスト  <br/> |
 |5  <br/> |論理演算子  <br/> |
-|6  <br/> |検索 &amp; 参照  <br/> |
-|7  <br/> |データベース  <br/> |
-|8  <br/> |統計  <br/> |
-|9  <br/> |情報  <br/> |
+|6   <br/> |検索 &amp; 参照  <br/> |
+|7   <br/> |データベース  <br/> |
+|8   <br/> |統計  <br/> |
+|9   <br/> |情報  <br/> |
 |14   <br/> |ユーザー定義  <br/> |
 ||エンジニアリング (Excel 2007 以降)  <br/> |
 ||キューブ (Excel 2007 以降)  <br/> |

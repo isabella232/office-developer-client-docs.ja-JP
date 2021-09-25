@@ -1,30 +1,30 @@
 ---
-title: Recordset プロパティ、SourceRecordset プロパティ (RDS)
+title: Recordset、SourceRecordset プロパティ (RDS)
 TOCTitle: Recordset, SourceRecordset properties (RDS)
 ms:assetid: 5f4bb72d-ddfa-41c0-c353-b3a6632b4a91
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249345(v=office.15)
 ms:contentKeyID: 48545160
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f83ab385b1fab511ab71ea9ff3456fe466efa17c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7bd0518334f17b29a835412f95e8911887dd4e73
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307589"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585383"
 ---
-# <a name="recordset-sourcerecordset-properties-rds"></a>Recordset プロパティ、SourceRecordset プロパティ (RDS)
+# <a name="recordset-sourcerecordset-properties-rds"></a>Recordset、SourceRecordset プロパティ (RDS)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 カスタム ビジネス オブジェクトから返された **Recordset** オブジェクトを示します。
 
 ## <a name="syntax"></a>構文
 
-*DataControl*。SourceRecordset = *Recordset*
+*DataControl*.SourceRecordset = *Recordset*
 
-*Recordset* = *DataControl*レコード
+*Recordset*  = *DataControl*.Recordset
 
 ## <a name="parameters"></a>パラメーター
 

@@ -1,5 +1,5 @@
 ---
-title: BatchCollisionCount プロパティ (DAO)
+title: Recordset.BatchCollisionCount プロパティ (DAO)
 TOCTitle: BatchCollisionCount Property
 ms:assetid: 9d166463-8313-c0f5-8389-5d5ad933eb33
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198240(v=office.15)
@@ -10,24 +10,24 @@ f1_keywords:
 - dao360.chm1101181
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: d0c4af9744accd21a91dca2676a08cad3d1cc7e7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9097c9bfff75d65546fe51eb7ccbdd0b8714806f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300631"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572908"
 ---
-# <a name="recordsetbatchcollisioncount-property-dao"></a>BatchCollisionCount プロパティ (DAO)
+# <a name="recordsetbatchcollisioncount-property-dao"></a>Recordset.BatchCollisionCount プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*。BatchCollisionCount
+*式* .BatchCollisionCount
 
-*式***Recordset**オブジェクトを表す変数を取得します。
+*expression*: **Recordset** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 

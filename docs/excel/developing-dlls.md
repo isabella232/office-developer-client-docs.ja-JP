@@ -1,5 +1,5 @@
 ---
-title: DLL ��J������
+title: DLL の開発
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,13 +8,13 @@ keywords:
 - dlls [excel 2007], creating,creating DLLs [Excel 2007]
 ms.assetid: 5d69d06d-a126-4c47-82ad-17112674c8a3
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: 89dd7b65ad94ba2fc7e1cf3f99ee163d3003d0fe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 365095dfaf1528663a358f69ad632b990f9ea1ce
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310921"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605611"
 ---
 # <a name="developing-dlls"></a>DLL の開発
 
@@ -56,7 +56,7 @@ DLL �v���W�F�N�g��R���p�C������Ƃ��A�
   
 �R���p�C�����\�[�X �R�[�h��R���p�C������Ƃ��A�ʏ�A�R���p�C���͊��̖��O��A�\�[�X �R�[�h�Ŏ�����Ă��閼�O����ύX���܂��B�����̏ꍇ�A���̂��߂ɂ͖��O�̐擪�܂��͖����ɒǉ�����܂��B���̃v���Z�X�́A���O�f�R���[�g�ƌĂ�܂��B�����ADLL ��ǂݍ��ރA�v���P�[�V�����ŔF���\�Ȗ��O�ŃG�N�X�|�[�g����邱�Ƃ�m�F����K�v������܂��B�܂�A�f�R���[�g���ꂽ���O�ƊȒP�ȃG�N�X�|�[�g����֘A�t����悤�Ƀ����J�[�Ɏw�����܂��B�G�N�X�|�[�g���́A�\�[�X �R�[�h�Ɏ�����Ă��錳�̖��O�ɂ��邱�Ƃ�A���̖��O�ɂ��邱�Ƃ�ł��܂��B
   
-���O��f�R���[�g������@�́A����A����уR���p�C���Ɏw������Ă������g�p�ł���悤�ɂ�����@�A�܂��Ăяo���K���ɂ���ĈقȂ�܂��BDLL ���g�p���� Windows �W���̃v���Z�X�ԌĂяo���K��́AWinAPI �K��ƌĂ�Ă��܂��B����́AWindows �w�b�_�[ �t�@�C���� **WINAPI** �Ƃ��Ē�**** ����܂��B
+���O��f�R���[�g������@�́A����A����уR���p�C���Ɏw������Ă������g�p�ł���悤�ɂ�����@�A�܂��Ăяo���K���ɂ���ĈقȂ�܂��BDLL ���g�p���� Windows �W���̃v���Z�X�ԌĂяo���K��́AWinAPI �K��ƌĂ�Ă��܂��B����́AWindows �w�b�_�[ �t�@�C���� **WINAPI** �Ƃ��Ē�����܂��B
   
 A DLL-export function for use with Excel (whether it is a worksheet function, macro-sheet equivalent function, or user-defined command) should always use the **WINAPI** / **__stdcall** calling convention. It is necessary to include the **WINAPI** specifier explicitly in the function's definition as the default in Win32 compilers is to use the **__cdecl** calling convention, also defined as **WINAPIV**, if none is specified.
   
@@ -132,7 +132,7 @@ double WINAPI my_Cdecorated_Cpp_export(double x);
 #endif
 ```
 
-### <a name="using-the-declspecdllexport-declarator"></a>__declspec(dllexport) 宣言子の使用
+### <a name="using-the-__declspecdllexport-declarator"></a>__declspec(dllexport) 宣言子の使用
 
 次に示すように、**__declspec(dllexport)** キーワードを関数の宣言で使用できます。 
   

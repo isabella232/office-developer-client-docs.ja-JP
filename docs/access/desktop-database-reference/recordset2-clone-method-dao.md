@@ -1,30 +1,30 @@
 ---
-title: Recordset2 メソッド (DAO)
+title: Recordset2.Clone メソッド (DAO)
 TOCTitle: Clone Method
 ms:assetid: f0d32cb1-03f6-395d-2509-b2139a5fdc68
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836567(v=office.15)
 ms:contentKeyID: 48548614
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6780a27d573f5ff7ff41060074fb8abb9f8e2b80
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b160e2dcff4dbd7df8889d8fe86dc6a34eeaaa86
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307393"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572859"
 ---
-# <a name="recordset2clone-method-dao"></a>Recordset2 メソッド (DAO)
+# <a name="recordset2clone-method-dao"></a>Recordset2.Clone メソッド (DAO)
 
 **適用先:** Access 2013、Office 2013
 
-元の**Recordset2**オブジェクトを参照する、重複した**[Recordset](recordset-object-dao.md)** オブジェクトを作成します。
+元の **[Recordset2](recordset-object-dao.md)** オブジェクトを参照する、重複する Recordset オブジェクト **を作成** します。
 
 ## <a name="syntax"></a>構文
 
-*式*。クローン
+*expression* .Clone
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="return-value"></a>戻り値
 
@@ -39,8 +39,8 @@ Recordset
 元のオブジェクトまたは複製オブジェクトのどちらかで **[Close](connection-close-method-dao.md)** メソッドを使用しても、もう一方のオブジェクトに影響が及ぶことはありません。たとえば、元のレコードセットで **Close** を使用しても、複製が閉じられることはありません。
 
 > [!NOTE]
-> - 保留中のトランザクションで複製レコードセットを閉じると、 **Rollback** 操作が暗黙的に実行されます。
-> - Microsoft Access ワークスペースでテーブル タイプの **Recordset** オブジェクトを複製した場合、 **[Index](recordset2-index-property-dao.md)** プロパティの設定はレコードセットの新しいコピーに反映されません。このため、 **Index** プロパティの設定を手動でコピーする必要があります。
+> - 保留中のトランザクション内でクローンのレコードセットを閉じると、暗黙の **Rollback** 操作が実行されます。
+> - Microsoft Access ワークスペースでテーブル タイプの **Recordset** オブジェクトのクローンを作成する場合、レコードセットの新しいコピーに **[Index](recordset2-index-property-dao.md)** プロパティの設定は複製されません。**Index** プロパティの設定は手動でコピーする必要があります。
 
 ## <a name="example"></a>例
 

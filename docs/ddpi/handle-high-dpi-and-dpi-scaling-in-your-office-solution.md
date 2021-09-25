@@ -2,13 +2,13 @@
 title: Office ソリューションでの高 DPI と DPI スケーリングの処理
 description: カスタム作業ウィンドウなどの Office ソリューション、または ActiveX コントロールを、高 DPI モニターに対応できるように更新します。
 ms.date: 03/09/2019
-localization_priority: Normal
-ms.openlocfilehash: 78179b958bc57137c0565b8b1ca5feb40f61fe0e
-ms.sourcegitcommit: 939bd9686ba41a8f94b82e004ed84b9054d9c7cf
+ms.localizationpriority: medium
+ms.openlocfilehash: 8ffc0727f434319cef74be15c9aa229efef3c44e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48293479"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605709"
 ---
 # <a name="handle-high-dpi-and-dpi-scaling-in-your-office-solution"></a>Office ソリューションでの高 DPI と DPI スケーリングの処理
 

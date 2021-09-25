@@ -1,22 +1,22 @@
 ---
-title: ResyncEnum (Access デスクトップデータベースリファレンス)
+title: ResyncEnum (Access デスクトップ データベース リファレンス)
 TOCTitle: ResyncEnum
 ms:assetid: 3d38b77b-6afe-e6a0-1a05-7c7ffc19edef
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249164(v=office.15)
 ms:contentKeyID: 48544337
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ff09d69a9cf36246b3367202531a011c4e1aba12
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fa2261b1d0fa09916a0cea833c00358b8cf77bf5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306546"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615026"
 ---
 # <a name="resyncenum"></a>ResyncEnum
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 [Resync](resync-method-ado.md) の呼び出しによって基になる値が上書きされるかどうかを表します。
 
@@ -38,12 +38,12 @@ ms.locfileid: "32306546"
 <tbody>
 <tr class="odd">
 <td><p><strong>adResyncAllValues</strong></p></td>
-<td><p>pbm-2</p></td>
+<td><p>2</p></td>
 <td><p>既定値。データは上書きされ、保留中の更新は取り消されます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adResyncUnderlyingValues</strong></p></td>
-<td><p>1-d</p></td>
+<td><p>1</p></td>
 <td><p>データは上書きされず、保留中の更新は取り消されません。</p></td>
 </tr>
 </tbody>
@@ -65,10 +65,10 @@ ms.locfileid: "32306546"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums allvalues</p></td>
+<td><p>AdoEnums.Resync.ALLVALUES</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums UNDERLYINGVALUES</p></td>
+<td><p>AdoEnums.Resync.UNDERLYINGVALUES</p></td>
 </tr>
 </tbody>
 </table>

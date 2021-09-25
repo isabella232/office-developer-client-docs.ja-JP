@@ -1,20 +1,20 @@
 ---
-title: Command のプロパティ、メソッド、およびイベント (ADO)
+title: コマンドのプロパティ、メソッド、およびイベント (ADO)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: 62b2db82-c518-016f-8e9a-e181528782c8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249373(v=office.15)
 ms:contentKeyID: 48545244
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f9b67e44e8374a88f83ee4523d031a055d75bbc3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e026b473cfeffd8a3806ee545fb6fce0797a28a4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296151"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573104"
 ---
-# <a name="command-properties-methods-and-events-ado"></a>Command のプロパティ、メソッド、およびイベント (ADO)
+# <a name="command-properties-methods-and-events-ado"></a>コマンドのプロパティ、メソッド、およびイベント (ADO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -31,7 +31,7 @@ ms.locfileid: "32296151"
 - [Properties コレクション](properties-collection-ado.md)
 - [State プロパティ](state-property-ado.md)
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>Methods
 
 - [Cancel メソッド](cancel-method-ado.md)
 - [CreateParameter メソッド](createparameter-method-ado.md)

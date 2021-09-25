@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 21b394a6-6f95-fc17-482c-4cb648a0d9bb
-ms.openlocfilehash: 39396ef0db5b78d6f32d8828103eecd105f8b91d
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 95fbb82360d70fcc442965f34d39bd5347fc10c8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539864"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628305"
 ---
 # <a name="foreigndata_type-complextype-visio-xml"></a>ForeignData_Type complexType (Visio XML)
 

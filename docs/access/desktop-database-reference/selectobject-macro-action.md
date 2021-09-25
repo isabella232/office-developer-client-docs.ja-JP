@@ -10,21 +10,21 @@ f1_keywords:
 - vbaac10.chm41840
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 6287bc8a66858d51d65c37477eed7a86cd7839af
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f8fee7b0bba3414816ad6fb6769bf7ddf8d37f7f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308730"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605929"
 ---
 # <a name="selectobject-macro-action"></a>SelectObject マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 "SelectObject/オブジェクトの選択" アクションを使用すると、指定したデータベース オブジェクトを選択できます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "SelectObject/オブジェクトの選択" アクションの引数は次のとおりです。
 
@@ -41,12 +41,12 @@ ms.locfileid: "32308730"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Object Type/オブジェクトの種類</strong></p></td>
+<td><p><strong>オブジェクトの種類</strong></p></td>
 <td><p>選択するデータベース オブジェクトの種類を指定します。[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>オブジェクトの種類</strong>] ボックスで、[<strong>テーブル</strong>]、[<strong>クエリ</strong>]、[<strong>フォーム</strong>]、[<strong>レポート</strong>]、[<strong>マクロ</strong>]、[<strong>モジュール</strong>]、[<strong>データ アクセス ページ</strong>]、[<strong>サーバー ビュー</strong>]、[<strong>ダイアグラム</strong>]、[<strong>ストアド プロシージャ</strong>]、[<strong>関数</strong>] のいずれかをクリックします。この引数は省略できません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>オブジェクト名</strong></p></td>
-<td><p>選択するオブジェクトの名前を指定します。 [ <strong>オブジェクト名</strong>] ボックスには、データベース内のオブジェクトのうち、 <strong>Object Type/オブジェクトの種類</strong> 引数で選択した種類のオブジェクトがすべて表示されます。 "In Navigation Pane/ナビゲーションウィンドウ" 引数を<strong>[Yes/はい]</strong>に設定しない限り、この引数は省略できません。</p><p><strong>注</strong>:<STRONG>サーバービュー</STRONG>、<STRONG>ダイアグラム</STRONG>、または<STRONG>ストアドプロシージャ</STRONG>オブジェクトのオブジェクト名は、Access プロジェクト (.adp) の [<STRONG>オブジェクト名</STRONG>] ボックスには表示されません。</p></td>
+<td><p>選択するオブジェクトの名前。 [ <strong>オブジェクト名</strong>] ボックスには、データベース内のオブジェクトのうち、 <strong>Object Type/オブジェクトの種類</strong> 引数で選択した種類のオブジェクトがすべて表示されます。 In Navigation Pane 引数を Yes に設定しない限り、これは必須の引数 <strong>です</strong>。</p><p><strong>注</strong>: サーバー ビュー <STRONG></STRONG>、ダイアグラム、<STRONG></STRONG>またはストアド<STRONG></STRONG>プロシージャ オブジェクトのオブジェクト名は、Access プロジェクト (.adp) の [オブジェクト名] ボックスに表示されません。 <STRONG></STRONG></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>In Navigation Pane/ナビゲーション ウィンドウ内</strong></p></td>

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 keywords:
 - 'functions [excel 2007], c api called from dll or xll ms.prod: office-online-server localization_priority: Normal ms.assetid: 87c9e75b-c364-4428-a169-010886313b85'
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 87c9e75b-c364-4428-a169-010886313b85
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: e6d2d3c824c482e3726cdaefa869393002a80f44
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8c53a2f68dab76bc68ea756f25d87e351b8700f1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423119"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605653"
 ---
 # <a name="c-api-functions-that-can-be-called-only-from-a-dll-or-xll"></a>DLL または XLL からのみ呼び出し可能な C API 関数
 

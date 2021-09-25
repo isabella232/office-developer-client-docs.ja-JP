@@ -3,17 +3,17 @@ title: MAPI �A�h���X��
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 6703ba3f-54a5-4059-b10a-1d42a9e81be1
 description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 14f9bff8dbf55456c37e70e1ae7a0c236471b6c0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 562a3cadb6f36885e1870284e3c0d7f2aa7071aa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410603"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595904"
 ---
 # <a name="mapi-address-book"></a>MAPI �A�h���X��
 

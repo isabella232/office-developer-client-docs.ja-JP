@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249830(v=office.15)
 ms:contentKeyID: 48547085
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 68530f060b0c3662e53e927d7e2fda6cfd7c6957
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e20edb8df6e93e36e30107b298c65aff0a9783cb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308527"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605870"
 ---
 # <a name="state-property-example-vc"></a>State プロパティの使用例 (VC++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、非同期接続を開き、非同期コマンドを実行している間、[State](state-property-ado.md) プロパティを使用してメッセージを表示します。
 

@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - form templates [infopath 2007], using infopath 2003 object model,InfoPath 2003-compatible form templates,InfoPath 2007, developing form templates using InfoPath 2003 object model,object models [InfoPath 2003], developing managed code form templates
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c74cbcd0-4fe6-4eb7-a05c-f61e1868c42b
 description: Microsoft InfoPath は引き続き、Microsoft Office InfoPath 2003 Toolkit for Visual Studio .NET または Visual Studio 2005 Tools for the Microsoft Office system で作成され、Microsoft.Office.Interop.InfoPath.SemiTrust 名前空間のメンバーに対して書かれたビジネス ロジックを持つ、フォーム テンプレート プロジェクトをサポートします。このセクションのトピックでは、この名前空間の型とメンバーを InfoPath 2003 互換オブジェクト モデル、または単に InfoPath 2003 オブジェクト モデルと呼びます。InfoPath は、InfoPath 2003 互換オブジェクト モデルを使用する Microsoft Office InfoPath 2007 で作成されたフォーム テンプレート プロジェクトもサポートします。さらに、Office InfoPath 2007 のユーザー向けに下位互換性を維持するため、InfoPath を使用して、InfoPath 2003 互換オブジェクト モデルを使用する新しいフォーム テンプレート プロジェクトを作成できます。このセクションのトピックには、Microsoft.Office.Interop.InfoPath.SemiTrust 名前空間によって提供される InfoPath 2003 互換オブジェクト モデルで動作するフォーム テンプレートの作成と開発に固有の情報が記載されています。
-ms.openlocfilehash: a39f921f6c7465dbcf469062b866c808fa222851
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8f481f49e56a45dfaf6d84298f80485a733a7665
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300365"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621277"
 ---
 # <a name="developing-form-templates-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム テンプレートを開発する
 

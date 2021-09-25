@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn125509(v=office.15)
 ms:contentKeyID: 52073631
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 89118e95259c1dfce7621bec66fd5b06d077851c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 776975babe73e6e5756be65087e256f303a33497
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293085"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585642"
 ---
 # <a name="field-methods-dao"></a>Field メソッド (DAO)
 
 **適用先:** Access 2013、Office 2013
 
-- [フィールド appendchunk メソッド (DAO)](field-appendchunk-method-dao.md)
-- [CreateProperty メソッド (DAO)](field-createproperty-method-dao.md)
-- [フィールドの GetChunk メソッド (DAO)](field-getchunk-method-dao.md)
+- [Field.AppendChunk メソッド (DAO)](field-appendchunk-method-dao.md)
+- [Field.CreateProperty メソッド (DAO)](field-createproperty-method-dao.md)
+- [Field.GetChunk メソッド (DAO)](field-getchunk-method-dao.md)
 

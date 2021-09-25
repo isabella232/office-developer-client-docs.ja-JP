@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm43195
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: d9e86fb7d60af94d6ecde71b2a857a3cc5b9bcb8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 861e6425ec7ab0da4f701fa7140c287ad24167d0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306854"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614956"
 ---
 # <a name="runmacro-macro-action"></a>RunMacro マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **RunMacro** アクションを使用すると、マクロを実行できます。マクロ グループ内のマクロも実行できます。
 
@@ -32,7 +32,7 @@ ms.locfileid: "32306854"
 
 - 独自のメニュー コマンドにマクロを割り当てる場合
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "**RunMacro**/マクロの実行" アクションの引数は次のとおりです。
 
@@ -50,7 +50,7 @@ ms.locfileid: "32306854"
 <tbody>
 <tr class="odd">
 <td><p><strong>Macro Name/マクロ名</strong></p></td>
-<td><p>The name of the macro to run. The <strong>Macro Name</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane shows all macros (and macro groups) in the current database. マクロがマクログループ内にある場合は、 <em>macrogroupname</em>としてリストのマクログループ名の下に一覧表示されます。<em>macroname</em> This is a required argument. If you run a macro containing the <strong>RunMacro</strong> action in a library database, Microsoft Access looks for the macro with this name in the library database and doesn't look for it in the current database.</p></td>
+<td><p>The name of the macro to run. The <strong>Macro Name</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane shows all macros (and macro groups) in the current database. マクロ がマクロ グループ内にある場合は、マクロ グループ名としてリストのマクロ グループ名の下 <em>に表示されます</em>。<em>macroname</em>. This is a required argument. If you run a macro containing the <strong>RunMacro</strong> action in a library database, Microsoft Access looks for the macro with this name in the library database and doesn't look for it in the current database.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Repeat Count/実行回数</strong></p></td>
@@ -65,7 +65,7 @@ ms.locfileid: "32306854"
 
 ## <a name="remarks"></a>注釈
 
-**Macro Name/マクロ名**引数にマクロ グループ名を入力すると、マクロ グループ内の最初のマクロが実行されます。
+**Macro Name/マクロ名** 引数にマクロ グループ名を入力すると、マクロ グループ内の最初のマクロが実行されます。
 
 このアクションの動作は、[ **データベース ツール**] タブの [ **マクロの実行**] をクリックし、マクロを選択して、[ **OK**] をクリックした場合と同じです。ただし、このコマンドではマクロを 1 回だけ実行するのに対し、 **RunMacro** アクションでは必要なだけ何回でもマクロを実行できます。
 

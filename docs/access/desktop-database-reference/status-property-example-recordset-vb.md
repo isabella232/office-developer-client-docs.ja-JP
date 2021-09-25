@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249677(v=office.15)
 ms:contentKeyID: 48546476
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 04508ce14402cb3456fba72b610798b64cffa33a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ab4a404f8b02946dd738d6d8b31d962560dba935
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314526"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605856"
 ---
 # <a name="status-property-example-recordset-vb"></a>Status プロパティの使用例 (Recordset) (VB)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、[Status](status-property-ado-recordset.md) プロパティを使用して、一括更新の前にバッチ処理で変更されたレコードを表示します。
 

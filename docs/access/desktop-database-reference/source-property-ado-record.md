@@ -6,22 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250235(v=office.15)
 ms:contentKeyID: 48548670
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9bd1e1259eb7b089d0387dd385ee5157eeac2f34
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e9c15b0c67aa19b6f629fb3f966be1cb0458fe26
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314554"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605884"
 ---
 # <a name="source-property-ado-record"></a>Source プロパティ (ADO Record)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 [Record](record-object-ado.md) で表されるデータ ソースまたはオブジェクトを示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
 **Record** が表すエンティティを示すバリアント型 (**Variant**) の値を設定または取得します。
 
@@ -38,6 +38,6 @@ ms.locfileid: "32314554"
 **Source** プロパティは、 **Record** オブジェクトが閉じている場合は値の取得および設定が可能で、 **Record** オブジェクトが開いている場合は値の取得のみ可能です。
 
 > [!NOTE]
-> [!メモ] http スキーマを使用している URL は自動的に [Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を呼び出します。 詳細については、「[絶対 url と相対 url](absolute-and-relative-urls.md)」を参照してください。
+> [!メモ] http スキーマを使用している URL は自動的に [Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を呼び出します。 詳細については、「絶対 URL と [相対 URL」を参照してください](absolute-and-relative-urls.md)。
 
 

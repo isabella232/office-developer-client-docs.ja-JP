@@ -1,5 +1,5 @@
 ---
-title: Recordset2 メソッド (DAO)
+title: Recordset2.Edit メソッド (DAO)
 TOCTitle: Edit method
 ms:assetid: 34c51eee-274d-3511-b5e2-cb74e4925ec8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192452(v=office.15)
@@ -10,25 +10,25 @@ f1_keywords:
 - dao360.chm1052869
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 2742b6558c555673937666ea7d27cae1a54fdf73
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4641f56e43111472eb663ee926b312a835110057
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309437"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615152"
 ---
-# <a name="recordset2edit-method-dao"></a>Recordset2 メソッド (DAO)
+# <a name="recordset2edit-method-dao"></a>Recordset2.Edit メソッド (DAO)
 
 **適用先:** Access 2013、Office 2013
 
-更新可能な **[Recordset](recordset-object-dao.md)** オブジェクトからカレント レコードをコピー バッファーにコピーし、編集できるようにします。
+現在のレコードを更新可能な **[Recordset](recordset-object-dao.md)** オブジェクトからコピー バッファーにコピーして、後で編集できるようにします。
 
 ## <a name="syntax"></a>構文
 
-*式*。修正
+*expression* .Edit
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 
@@ -37,7 +37,7 @@ ms.locfileid: "32309437"
 カレント レコードは、 **Edit** の使用後もカレント レコードのままです。
 
 > [!NOTE]
-> [!メモ] レコードの編集後、 **Update** を使用せずに他のレコードへ移動する操作を行った場合、変更は警告なしに取り消されます。 また、recordset を閉じるか、または**recordset**または親**[データベース](database-object-dao.md)** または**[Connection](connection-object-dao.md)** オブジェクトを宣言するプロシージャを終了すると、編集したレコードは警告なしに破棄されます。
+> [!メモ] レコードの編集後、 **Update** を使用せずに他のレコードへ移動する操作を行った場合、変更は警告なしに取り消されます。 さらに、レコードセットを閉じた場合や、**Recordset** または親である **[Database](database-object-dao.md)** オブジェクトまたは **[Connection](connection-object-dao.md)** オブジェクトが宣言されているプロシージャを終了した場合は、編集済みのレコードが警告なしに破棄されます。
 
 次の場合は、 **Edit** を使用するとエラーが発生します。
 

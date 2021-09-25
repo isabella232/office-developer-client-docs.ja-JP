@@ -8,15 +8,15 @@ f1_keywords:
 - xlfUnregister (Form 2)
 keywords:
 - xlfunregister [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 39c6eba7-ba41-4e7b-9a28-2b662378ff5a
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 8bf1151e1ba4c165e784b88dce80096a2eaa62de
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ae5188743e4aff9f187e0daff86fc9c78ec32a67
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419906"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605561"
 ---
 # <a name="xlfunregister-form-2"></a>xlfUnregister (形式 2)
 

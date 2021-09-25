@@ -1,31 +1,31 @@
 ---
-title: Connect プロパティ (DAO)
+title: データベース。Connect プロパティ (DAO)
 TOCTitle: Connect Property
 ms:assetid: c3e511a6-baef-3758-cfb1-3459b0b19cf3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff823048(v=office.15)
 ms:contentKeyID: 48547578
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: cb3566a4f402c1b8ae75a47880f2101bf35d77db
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 95d5814d41651287c23e7913103c30387691a50d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294989"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585985"
 ---
-# <a name="databaseconnect-property-dao"></a>Connect プロパティ (DAO)
+# <a name="databaseconnect-property-dao"></a>データベース。Connect プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-開いているデータベースのソースについての情報を提供する値を設定または取得します。 値の取得および設定が可能です。
+開いているデータベースのソースに関する情報を提供する値を設定します。値の取得および設定が可能です。文字列型 ( **String**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。結び付ける
+*式* . Connect
 
-*式***Database**オブジェクトを表す変数を取得します。
+*式* **Database** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 
@@ -33,7 +33,7 @@ ms.locfileid: "32294989"
 
 Microsoft Access データベース ファイルにリンクしているテーブルに対して SQL パススルー クエリを実行するには、まず、テーブルがリンクしているデータベースの **Connect** プロパティを、有効な ODBC 接続文字列に設定する必要があります。
 
-次の表に示すように、パスは、データベース ファイルのあるディレクトリへの完全なパスを表し、このパスの前に識別子 DATABASE= を付ける必要があります。 Microsoft Excel や Microsoft Access データベース エンジン データベースと同じように、場合によってはデータベース パスの引数に特定のファイル名を含める必要があります。
+次の表に示すように、パスは、データベース ファイルのあるディレクトリへの完全なパスを表し、このパスの前に識別子 DATABASE= を付ける必要があります。Microsoft Excel や Microsoft Access データベース エンジン データベースと同じように、場合によってはデータベース パスの引数にファイル名を明示する必要があります。
 
 次の表は、使用できるデータベースの種類と、それに対応するデータベース識別子および **Connect** プロパティの設定値のパスを示しています。
 
@@ -46,7 +46,7 @@ Microsoft Access データベース ファイルにリンクしているテー�
 <thead>
 <tr class="header">
 <th><p>データベースの種類</p></th>
-<th><p>識別子</p></th>
+<th><p>指定子</p></th>
 <th><p>例</p></th>
 </tr>
 </thead>
@@ -89,37 +89,37 @@ Microsoft Access データベース ファイルにリンクしているテー�
 <tr class="even">
 <td><p>Microsoft Excel 3.0</p></td>
 <td><p>Excel 3.0;</p></td>
-<td><p>ドライブ: \ path\filename.xls</p></td>
+<td><p>drive:\path\filename.xls</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Excel 4.0</p></td>
 <td><p>Excel 4.0;</p></td>
-<td><p>ドライブ: \ path\filename.xls</p></td>
+<td><p>drive:\path\filename.xls</p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft Excel 5.0 または Microsoft Excel 95</p></td>
 <td><p>Excel 5.0;</p></td>
-<td><p>ドライブ: \ path\filename.xls</p></td>
+<td><p>drive:\path\filename.xls</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Excel 97</p></td>
 <td><p>Excel 8.0;</p></td>
-<td><p>ドライブ: \ path\filename.xls</p></td>
+<td><p>drive:\path\filename.xls</p></td>
 </tr>
 <tr class="even">
 <td><p>Lotus 1-2-3 WKS および WK1</p></td>
 <td><p>Lotus WK1;</p></td>
-<td><p>ドライブ: \ path\filename.wk1</p></td>
+<td><p>drive:\path\filename.wk1</p></td>
 </tr>
 <tr class="odd">
 <td><p>Lotus 1-2-3 WK3</p></td>
 <td><p>Lotus WK3;</p></td>
-<td><p>ドライブ: \ path\filename.wk3</p></td>
+<td><p>drive:\path\filename.wk3</p></td>
 </tr>
 <tr class="even">
 <td><p>Lotus 1-2-3 WK4</p></td>
 <td><p>Lotus WK4;</p></td>
-<td><p>ドライブ: \ path\filename.wk4</p></td>
+<td><p>drive:\path\filename.wk4</p></td>
 </tr>
 <tr class="odd">
 <td><p>HTML インポート</p></td>
@@ -143,7 +143,7 @@ Microsoft Access データベース ファイルにリンクしているテー�
 </tr>
 <tr class="odd">
 <td><p>Microsoft Exchange</p></td>
-<td><p>Exchange 4.0MAPILEVEL = folderpath、[TABLETYPE = {0 | 1}];[profile = profile;][PWD = password;][database = database;]</p></td>
+<td><p>Exchange 4.0; MAPILEVEL=フォルダー パス; [TABLETYPE={ 0 | 1 }];[PROFILE=プロファイル;] [PWD=パスワード;] [DATABASE=データベース;]</p></td>
 <td><p>drive:\path\filename</p></td>
 </tr>
 </tbody>
@@ -160,7 +160,7 @@ Microsoft Exchange のデータの場合、必要な MAPILEVEL キーを、完�
 
 
 > [!NOTE]
-> - 先に **Connect** プロパティを設定してから、 **ReturnsRecords** プロパティを設定する必要があります。
+> - **ReturnsRecords** プロパティを設定する前に、**Connect** プロパティを設定する必要があります。
 > - アクセスするデータベース サーバーがインストールされているコンピューターに対するアクセス権限を持っている必要があります。
 
 

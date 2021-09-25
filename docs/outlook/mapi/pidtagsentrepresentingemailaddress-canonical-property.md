@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagSentRepresentingEmailAddress
 api_type:
 - COM
 ms.assetid: 5fa4edde-475c-4568-946b-73eb08f97a61
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1b82e1e96a5ffbb5c17dd919e78a9f07342194c5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 740cf8acfedadd101c4221f9a69ac21b5f446f25
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341091"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613318"
 ---
 # <a name="pidtagsentrepresentingemailaddress-canonical-property"></a>PidTagSentRepresentingEmailAddress 標準プロパティ
 

@@ -3,17 +3,17 @@ title: MAPI オブジェクトとインターフェイスの概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: d4ece3af-cb54-4727-8072-0c055381ec11
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: fcd85bf518f4e6466bf15a09e417767bc34df78d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d60f1bc4863986adf3d539c35f924a39e18beda9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345788"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595806"
 ---
 # <a name="mapi-object-and-interface-overview"></a>MAPI オブジェクトとインターフェイスの概要
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821155(v=office.15)
 ms:contentKeyID: 48546840
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: bd6f2fdf7d1f8ba9fc47c6223a8f872a655a1e3f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: ebcfcdb81899254b5e24496dff93f82fa626f7c6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307624"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572901"
 ---
 # <a name="recordsetrequery-method-dao"></a>Recordset.Requery メソッド (DAO)
 
@@ -38,7 +38,7 @@ ms.locfileid: "32307624"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須 / オプション </p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -57,20 +57,20 @@ ms.locfileid: "32307624"
 
 ## <a name="remarks"></a>注釈
 
-**Recordset** が最新のデータを含んでいるかこの方法を使って確認します。 このメソッドでは、現在のクエリ パラメーターを使用するか、または (Microsoft Access ワークスペースの場合)、newquerydef 引数で指定された新しいクエリ を使用して、現在の**Recordset**にデータが再読み込みされます。
+このメソッドを使用して、**Recordset** に確実に最新のデータが含まれるようにします。このメソッドでは、現在のクエリ パラメーターを使用するか、または引数 newquerydef で指定された新しいクエリ (Microsoft Access ワークスペースの場合) を使用して、現在の **Recordset** に再度データを読み込みます。
 
-newquerydef 引数を指定しない場合、 **Recordset** に対するデータの再読み込みは、その **Recordset** に最初にデータが読み込まれたときと同じクエリ定義とパラメーターに基づいて行われます。 基になるデータに変更があった場合は、この再読み込み時に反映されます。 **QueryDef** を使用して **Recordset** を作成していない場合は、 **Recordset** が最初から再作成されます。
+引数 newquerydef を指定しない場合、**Recordset** に対するデータの再読み込みは、その **Recordset** に最初にデータが読み込まれたときと同じクエリ定義とパラメーターに基づいて行われます。基になるデータに変更があった場合は、この再読み込み時に反映されます。**QueryDef** を使用して **Recordset** を作成していない場合は、**Recordset** が最初から再作成されます。
 
-newquerydef 引数に元の **QueryDef**を指定した場合は、**QueryDef** で指定されたパラメーターを使用して **Recordset** が再取得されます。 この再読み込み中に、基になるデータの変更が反映されます。 クエリ パラメーターの値に対する変更を **Recordset** に反映するには、newquerydef 引数を指定する必要があります。
+引数 newquerydef に元の **QueryDef** を指定した場合は、**QueryDef** で指定されたパラメーターを使用して **Recordset** が再取得されます。基になるデータに変更があった場合は、この再読み込み時に反映されます。クエリ パラメーターの値に対する変更を **Recordset** に反映するには、引数 newquerydef を指定する必要があります。
 
 最初に **Recordset** を作成したときとは異なる **QueryDef** を指定した場合、**Recordset** は最初から再作成されます。
 
 
             **Requery** を使用すると、**Recordset** 内の最初のレコードがカレント レコードとなります。
 
-**Requery** メソッドは、 [**Restartable**](recordset-restartable-property-dao.md) プロパティが **False** に設定されているダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトでは使用できません。 しかし、オプションの newquerydef 引数を指定した場合は、 **Restartable** プロパティが無視されます。
+**Requery** メソッドは、**[Restartable](recordset-restartable-property-dao.md)** プロパティが **False** に設定されているダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトでは使用できません。しかし、オプションの引数 newquerydef を指定した場合は、**Restartable** プロパティが無視されます。
 
-**Requery**メソッドを使用した後に、**Recordset**オブジェクトの**[BOF](recordset-bof-property-dao.md)** と**[EOF](recordset-eof-property-dao.md)** プロパティの両方の設定が**True** になった場合、クエリはレコードを返さず、**Recordset**にデータは含まれません。
+**Requery** メソッドを使用した後に、**Recordset** オブジェクトの **[BOF](recordset-bof-property-dao.md)** と **[EOF](recordset-eof-property-dao.md)** プロパティの両方の設定が **True** になった場合、クエリはレコードを返さず、**Recordset** にデータは含まれません。
 
 ## <a name="example"></a>例
 

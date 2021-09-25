@@ -10,24 +10,24 @@ f1_keywords:
 - vbaac10.chm3022
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: adcc8a2a9462509f4b37d2dbdaf824387ae52a26
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 697fd5e7c422be61f05cdb2ceaaa7f0f5e6ec4d9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309174"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614935"
 ---
 # <a name="runsavedimportexport-macro-action"></a>RunSavedImportExport マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **RunSavedImportExport** アクションを使用すると、インポート ウィザードまたはエクスポート ウィザードを使用して作成した保存済みのインポート定義またはエクスポート定義を実行できます。
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。
+> このアクションは、データベースが信頼されていない場合には許可されません。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 **RunSavedImportExport** アクションの引数は次のとおりです。
 
@@ -65,5 +65,5 @@ ms.locfileid: "32309174"
 
 - インポート定義およびエクスポート定義の保存と実行の詳細については、「 **参照**」セクションのリンク先を参照してください。
 
-- **保存**されたインポートまたはエクスポートに対して選択したエクスポート定義が、マクロの作成後に削除されると、マクロの実行時に次のエラーメッセージが表示されます。**指定されたインデックスを持つ仕様は、存在しません。別のインデックスを指定します。' * * * * * 仕様名 * *** * * * '。
+- [保存されたインポート エクスポート名] 引数に選択した保存済みインポートまたはエクスポート仕様がマクロの作成後に削除されると、マクロの実行時に Access に次のエラー メッセージが表示されます。指定したインデックスを持つ仕様は存在しません。 **別のインデックスを指定します。'*****仕様名*****'。**
 

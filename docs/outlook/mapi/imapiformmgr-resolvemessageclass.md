@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIFormMgr.ResolveMessageClass
 api_type:
 - COM
 ms.assetid: c2af7516-3a97-4422-874d-b1e3a0d4f316
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: e99cff77fe872018722395c53c605e4d8fabfdde
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8ea8a07c8b299c254fbbb8fd914838c916c5684f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426395"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596209"
 ---
 # <a name="imapiformmgrresolvemessageclass"></a>IMAPIFormMgr::ResolveMessageClass
 

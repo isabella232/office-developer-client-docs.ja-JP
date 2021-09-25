@@ -3,17 +3,17 @@ title: MAPI フォームの概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 1b3afeaa-4ede-41eb-a3c1-b8947a46ef97
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 4e7d48f6f6a47ce28aa0e1291ccef209b998c18e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c2c47bd25c0ddd05d6a0c518af37763803724e98
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432521"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595869"
 ---
 # <a name="mapi-forms-overview"></a>MAPI フォームの概要
   
@@ -27,7 +27,7 @@ MAPI フォームは、メッセージのビューアーです。 すべての�
   
 **MAPI フォームのアーキテクチャ**
   
-![MAPI フォーム アーキテクチャ](media/forms01.gif "MAPI フォーム アーキテクチャ")
+![MAPI フォームのアーキテクチャ](media/forms01.gif "MAPI フォームのアーキテクチャ")
   
 図では、フォーム マネージャーが他の MAPI サービス プロバイダーと似た役割を果たしますが、サービス プロバイダー自体ではありません。 フォーム マネージャーは、MAPI インターフェイスの一部を実装する置き換え可能な DLL です。 開発者は独自のフォーム マネージャーを実装することができますが、ほとんどの環境では、フォーム マネージャーの複雑さのために Microsoft が提供するフォーム マネージャーを使用します。
   

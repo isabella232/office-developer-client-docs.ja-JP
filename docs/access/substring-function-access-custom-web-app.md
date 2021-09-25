@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ae99a0fa-76c4-4c07-9ae9-a7abce23394f
 description: 文字列式の一部が返されます。
-ms.openlocfilehash: af93620905af366f41bcc50ab6102114acd3db9f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 74bd29717caa32aa9a8de5376ce7fc06bef02462
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433473"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614669"
 ---
 # <a name="substring-function-access-custom-web-app"></a>SubString 関数 (Access カスタム Web アプリ)
 

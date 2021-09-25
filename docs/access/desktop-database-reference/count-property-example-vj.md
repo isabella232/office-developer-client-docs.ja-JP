@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249478(v=office.15)
 ms:contentKeyID: 48545666
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6b875e2b5dff6f3b6927e73105b6732dfaa6fd0b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0bdacbc53139bea4dc737041a2e1b4d7218c2890
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295444"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586020"
 ---
 # <a name="count-property-example-vj"></a>Count プロパティの使用例 (VJ++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-この例では、***Employees*** データベース内の 2 つのコレクションで [Count](count-property-ado.md) プロパティを使用します。 このプロパティで、各コレクション内のオブジェクト数を取得し、これらのコレクションを列挙するループに上限を設定します。 **Count**プロパティを使用せずにこれらのコレクションを列挙する別の方法は、ステートメントを使用することです。
+この例では [、* Employees](count-property-ado.md) _ データベース内の 2 つのコレクションを持つ **Count プロパティを** 示します。 このプロパティで、各コレクション内のオブジェクト数を取得し、これらのコレクションを列挙するループに上限を設定します。 _ *Count** プロパティを使用せずにこれらのコレクションを列挙するもう 1 つの方法は、ステートメントを使用する方法です。
 
 ```java 
  

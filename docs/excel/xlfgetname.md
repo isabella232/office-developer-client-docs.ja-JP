@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 keywords:
 - xlfgetname
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 65780435-aaa2-47af-b44f-07be7aa769ee
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: fdee0146ae2199097828e98abb96ffe43a64fc80
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 63c883c480f9db4f0680f368fcbbe1f201bfd0b0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436630"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621326"
 ---
 # <a name="xlfgetname"></a>xlfGetName
 

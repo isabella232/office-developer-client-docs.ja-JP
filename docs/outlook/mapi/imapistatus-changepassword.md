@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIStatus.ChangePassword
 api_type:
 - COM
 ms.assetid: 0cd1026a-342d-4d05-91ed-d3decced5bf3
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 2c824b6b994bfb31b5e6ac7fed0eeae88c47cdba
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c98f3c2d3f14893fc37ab9c876d41ed65de409fc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410358"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596170"
 ---
 # <a name="imapistatuschangepassword"></a>IMAPIStatus::ChangePassword
 

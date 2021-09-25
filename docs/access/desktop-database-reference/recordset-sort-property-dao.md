@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1053063
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 630efdc4da5a9064f9dd9055e3ceabc0283d6d5f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 14c5247d458bb2fb1c18f529bac38cc132e31765
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307582"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585390"
 ---
 # <a name="recordsetsort-property-dao"></a>Recordset.Sort プロパティ (DAO)
 
@@ -38,7 +38,7 @@ ms.locfileid: "32307582"
 
 並べ替え順序を指定しない場合は、昇順 (A ～ Z、0 ～ 100、あ～ん) になります。
 
-**Sort** プロパティは、テーブル タイプまたは前方スクロール タイプの **Recordset** オブジェクトには適用されません。 テーブル タイプの **Recordset** オブジェクトを並べ替えるには、**[Index](recordset-index-property-dao.md)** プロパティを使用します。
+**Sort** プロパティは、テーブル タイプまたは前方スクロール タイプの **Recordset** オブジェクトには適用されません。テーブル タイプの **Recordset** オブジェクトを並べ替えるには、**[Index](recordset-index-property-dao.md)** プロパティを使用します。
 
 > [!NOTE]
 > 多くの場合、並べ替え条件を含む SQL ステートメントを使用すると、新規の **Recordset** オブジェクトをより短時間で開くことができます。

@@ -1,25 +1,25 @@
 ---
 title: Access アプリでマクロを使用してビューをフィルター処理する
-manager: kelbow
-ms.date: 08/18/2017
+manager: lindalu
+ms.date: 08/18/2021
 ms.audience: Developer
 ms.topic: overview
 ms.assetid: db4dbb71-1b22-4dfd-bc07-5f7d694fc038
 description: RequeryRecords マクロ アクションとデータ マクロを使用して、Access アプリでビューをフィルター処理する方法について説明します。
-localization_priority: Priority
-ms.openlocfilehash: 861851a3497f290fe0bcda38e51794194fbe7bbe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 9ff0e63731c60d48e6bc98619b131c38b2122974
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302692"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572439"
 ---
 # <a name="filter-a-view-by-using-a-macro-in-an-access-app"></a>Access アプリでマクロを使用してビューをフィルター処理する
 
 RequeryRecords マクロ アクションとデータ マクロを使用して、Access アプリでビューをフィルター処理する方法について説明します。
   
 > [!IMPORTANT]
-> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-JP/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
 
 Access アプリの既定のリスト ビューを使用すると、フィールドに含まれている値の問題をフィルター処理できます。値の一致ではなく、一連の条件に基づいてビューをフィルターする状況も考えられます。そのためには、マクロを作成する必要があります。この記事では、ビューをフィルター処理して、期限を過ぎているタスク、または次の 7 日以内が期限のタスクをフィルター処理するマクロを作成する方法を示します。
   
@@ -76,9 +76,9 @@ Access は、一連のテーブルとビューを作成します。
     
 - 進行中のタスクを確認する方法
     
-[ **期限** ] フィールドは、タスクの期限に関する情報を提供します。 **[状態]** フィールドでは、各タスクの状態情報を指定します。 マクロでフィールドを参照するには、**[*テーブル名*].[*フィールド名*]** の形式を使用します。 **[期限]** フィールドを参照するには **[タスク].[期限]** を使用し、**[ステータス]** フィールドを参照するには **[タスク].[ステータス]** を使用します。 
+**[期限]** フィールドは、タスクの期限に関する情報を提供します。**[ステータス]** フィールドは、各タスクに関するステータス情報を提供します。マクロでフィールドを参照するには、**[*テーブル名*].[*フィールド名*]** 形式を使用します。**[期限]** フィールドを参照するには **[タスク].[期限]** を使用し、**[ステータス]** フィールドを参照するには **[タスク].[ステータス]** を使用します。 
   
-[Today 関数 (Access カスタム Web アプリ)](today-function-access-custom-web-app.md) 関数は今日の日付を返します。 [DateAdd 関数 (Access カスタム Web アプリ)](dateadd-function-access-custom-web-app.md) 関数を使用すると、指定した日付から特定の日数が経過した後の日付を計算できます。 
+[Today 関数 (Access カスタム Web アプリ)](today-function-access-custom-web-app.md) 関数は今日の日付を返します。[DateAdd 関数 (Access カスタム Web アプリ)](dateadd-function-access-custom-web-app.md) 関数を使用すると、指定した日付から特定の日数が経過した後の日付を計算できます。 
   
 **[状態]** フィールドには、複数の可能な値が格納されています。**[Completed]** の値は、タスクがアクティブでなくなったことを示します。 
   
@@ -113,7 +113,7 @@ UI マクロは、次の週が期限であるタスクの検索を試みるデ�
     
 4. [ **参照するレコードが含まれるテーブル/クエリ**] リスト ボックスで、[ **タスク**] を選択します。
     
-5. [ **条件式**] ボックスに「 **[タスク].[期限]\<DateAdd(Day,7,Today()) AND [タスク].[ステータス]\<\>"Completed"** 」と入力します。 
+5. **[条件式]** ボックスに、「**[タスク].[期限]\<DateAdd(Day,7,Today()) AND [Tasks].[Status]\<\>"Completed"**」と入力します。 
     
 6. [ **新しいアクションの追加**] リスト ボックスから [ **戻り変数の設定**] を選択します。 
     
@@ -122,7 +122,7 @@ UI マクロは、次の週が期限であるタスクの検索を試みるデ�
   
    **図 1. [新しいアクションの追加] リスト ボックス**
 
-   ![[新しいアクションの追加] ドロップダウン](media/odc_Access2013_FilterFormByUsingMacro_Figure01.jpg "[新しいアクションの追加] ドロップダウン")
+   ![[新しいアクションの追加] ドロップダウンのスクリーンショット](media/odc_Access2013_FilterFormByUsingMacro_Figure01.jpg "[新しいアクションの追加] ドロップダウン")
   
 7. **[名前]** ボックスに「**TaskFound**」と入力します。 
     
@@ -201,7 +201,7 @@ UI マクロは、次の週が期限であるタスクの検索を試みるデ�
 
    ![[新しいアクションの追加] ドロップダウン](media/odc_Access2013_FilterFormByUsingMacro_Figure06.jpg "[新しいアクションの追加] ドロップダウン")
   
-7. **[Where]** ボックスに「**[タスク].[期限]\<DateAdd(Day,7,Today()) AND [タスク].[状態]\<\>"Completed"**」と入力します。 
+7. **[If]** ボックスに、「**[タスク].[期限]\<DateAdd(Day,7,Today()) AND [Tasks].[Status]\<\>"Completed"**」と入力します。 
     
 8. [ **Order By**] ボックスに「 **[期限]** 」と入力します。 
     
@@ -209,7 +209,7 @@ UI マクロは、次の週が期限であるタスクの検索を試みるデ�
     
    **図 7. [Else を追加] リンク**
 
-   ![[Else を追加] リンク](media/odc_Access2013_FilterFormByUsingMacro_Figure07.jpg "[Else を追加] リンク")
+   ![[その他を追加] リンク](media/odc_Access2013_FilterFormByUsingMacro_Figure07.jpg "[その他を追加] リンク")
   
     Else 句が If ブロックに追加されます。
     
@@ -223,7 +223,7 @@ UI マクロは、次の週が期限であるタスクの検索を試みるデ�
     
     **図 8. ビューをフィルター処理する UI マクロ**
 
-    ![ビューをフィルター処理する UI マクロ](media/odc_Access2013_FilterFormByUsingMacro_Figure08.jpg "ビューをフィルター処理する UI マクロ")
+    ![ビューをフィルターする UI マクロ](media/odc_Access2013_FilterFormByUsingMacro_Figure08.jpg "ビューをフィルターする UI マクロ")
   
 13. マクロのデザイン ビューを閉じます。
     

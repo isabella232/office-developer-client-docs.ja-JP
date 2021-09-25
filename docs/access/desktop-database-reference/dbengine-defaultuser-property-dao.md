@@ -1,5 +1,5 @@
 ---
-title: DBEngine ユーザープロパティ (DAO)
+title: DBEngine.DefaultUser プロパティ (DAO)
 TOCTitle: DefaultUser Property
 ms:assetid: 41ee0211-0794-6026-7341-3698a0b2c588
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192905(v=office.15)
@@ -10,30 +10,30 @@ f1_keywords:
 - dao360.chm1053071
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: c29f9663ce3591fe5b1633239e8ec0d8866ee16a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4b6a8a8f65b450d38a820bd00468cbde38facbd6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294348"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585817"
 ---
-# <a name="dbenginedefaultuser-property-dao"></a>DBEngine ユーザープロパティ (DAO)
+# <a name="dbenginedefaultuser-property-dao"></a>DBEngine.DefaultUser プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-初期化されたときに、既定の**Workspace**オブジェクトを作成するために使用されるユーザー名を設定します。 値の取得および設定が可能です。
+既定の **Workspace** オブジェクトを作成するために初期化時に使用されるユーザー名を設定します。値の取得および設定が可能です。文字列型 ( **String**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。DefaultUser
+*式* .DefaultUser
 
-*式***DBEngine**オブジェクトを返すオブジェクト式を指定します。
+*式* **DBEngine** オブジェクトを返す式。
 
 ## <a name="remarks"></a>注釈
 
-The setting for **DefaultUser** is a String data type. Microsoft access ワークスペースでは 1 ~ 20 文字の長さにすることができます。また、: "(引用符),/(スラッシュ), \\ (円記号) \[ \] , (かっこ) のように、英数字、アクセント記号付きの文字、数字、スペース、記号を含めることができます。、: (コロン)、|(パイプ)、 \< (不等号)、 \> (不等号)、+ (正符号)、= (等号)、、、。(セミコロン)、、(コンマ)、? (疑問符)、 \* (アスタリスク)、先頭のスペース、制御文字 (ascii 00 ~ ascii 31)。
+The setting for **DefaultUser** is a String data type. これは、Microsoft Access ワークスペースでは 1 ~ 20 文字の長さであり、アルファベット文字、アクセント文字、数字、スペース、および記号を含めることができます(" (二重引用符)、/(スラッシュ)、(円記号)、(かっこ \\ \[ \] )、: (コロン)、|(パイプ), \< (less-than sign), \> (大きい符号), + (プラス記号), = (等号), ;(セミコロン)、、 ( コンマ)、? (疑問符 \* )、(アスタリスク)、先頭のスペース、および制御文字 (ASCII 00 ~ ASCII 31)。
 
 
 > [!NOTE]

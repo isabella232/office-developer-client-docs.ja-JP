@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IProfAdmin.RenameProfile
 api_type:
 - COM
 ms.assetid: 2a575cac-dbfd-4f42-9c10-4b7e355a065e
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 162f20485fc21cf8523b6d4a653e52c35f4b3d9a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5ad3c9ae2d42b0cc9fbc613b35b645ad50e809c8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419521"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596037"
 ---
 # <a name="iprofadminrenameprofile"></a>IProfAdmin::RenameProfile
 

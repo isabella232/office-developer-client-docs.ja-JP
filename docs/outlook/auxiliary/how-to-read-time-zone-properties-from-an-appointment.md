@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ba1b9425-6c16-cab2-da0a-a21734118098
 description: このトピックでは、2 つの関数 BinToTZDEFINITION と BinToTZREG を呼び出して、予定からタイム ゾーン プロパティ PidLidAppointmentTimeZoneDefinitionStartDisplay と PidLidTimeZoneStruct を読み取る関数 ReadTimeZones を示します。
-ms.openlocfilehash: 67755ba49c5572005c6138e34329491148a199a1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 14774f5a565926bda2bdc16e846f3eed3d2002ce
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317620"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605457"
 ---
 # <a name="read-time-zone-properties-from-an-appointment"></a>予定からタイム ゾーンのプロパティを読み取る
 

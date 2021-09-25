@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5e818c7b-b816-43ca-a051-d5846d4694db
 description: 指定された式の正 (+1)、ゼロ (0)、または負 (-1) の記号を返します。
-ms.openlocfilehash: d02c3301728a16d533094244d0811aed70a1e9c3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fda8f76f9001711ba41060b5688dee6f6883f22c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404380"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614739"
 ---
 # <a name="sign-function-access-custom-web-app"></a>Sign Function (Access カスタム Web アプリ)
 

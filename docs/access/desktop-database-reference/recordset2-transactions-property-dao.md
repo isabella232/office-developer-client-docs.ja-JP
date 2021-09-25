@@ -1,35 +1,35 @@
 ---
-title: Recordset2 プロパティ (DAO)
+title: Recordset2.Transactions プロパティ (DAO)
 TOCTitle: Transactions Property
 ms:assetid: f2169565-f782-4089-0e4b-bc5d58d37db5
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836614(v=office.15)
 ms:contentKeyID: 48548642
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 58610ee87e61a8b342955107c2ba2b690e610c8b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0f9c00448a490161b0e0abe1e486e2664b00aaf4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309243"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615054"
 ---
-# <a name="recordset2transactions-property-dao"></a>Recordset2 プロパティ (DAO)
+# <a name="recordset2transactions-property-dao"></a>Recordset2.Transactions プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-オブジェクトがトランザクションをサポートしているかどうかを示す値を返します。 値の取得のみ可能なブール型 (**Boolean**) の値です。
+オブジェクトがトランザクションをサポートしているかどうかを示す値を取得します。値の取得のみ可能です。ブール型 ( **Boolean**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。トランザクション
+*式* .トランザクション
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 
-Microsoft Access ワークスペースでは、ダイナセット タイプまたはテーブル タイプの **Recordset** オブジェクトでも **Transactions** プロパティを使用できます。 スナップショットおよび前方スクロールタイプの**[Recordset](recordset-object-dao.md)** オブジェクトでは、常に**False**が返されます。
+Microsoft Access ワークスペースでは、ダイナセット タイプまたはテーブル タイプの **Recordset** オブジェクトでも **Transactions** プロパティを使用できます。 Snapshot オブジェクトと Forward-only-type **[Recordset](recordset-object-dao.md)** オブジェクトは常に False を **返します**。
 
 ダイナセット タイプまたはテーブル タイプの **Recordset** が Microsoft Access データベース エンジン テーブルに基づいている場合、 **Transactions** プロパティは **True** となるため、トランザクションを使用できます。他のデータベース エンジンでは、トランザクションがサポートされていないことがあります。たとえば、Paradox テーブルに基づくダイナセット タイプの **Recordset** オブジェクトでは、トランザクションを使用できません。
 

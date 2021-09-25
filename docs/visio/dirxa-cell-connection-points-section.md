@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251721
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 00d87b92-0da7-37d6-e7b5-23f350db0a9b
 description: 一致する接続ポイントの必要な配置ベクトルの x -component を決定します。 [DirX / A] セルは、動的コネクタに付いている足の向きを揃える場合にも使用されます。 このセルでは浮動小数点値が使用されます。
-ms.openlocfilehash: cb86ef1064537911ffd00a66f5c0b7942459f85e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d287568ac43ebb1f80d1914c22d81c843c44c7fd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422398"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628473"
 ---
 # <a name="dirx--a-cell-connection-points-section"></a>[DirX / A] セル ([Connection Points] セクション)
 

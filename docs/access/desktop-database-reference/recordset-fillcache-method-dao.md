@@ -1,20 +1,20 @@
 ---
-title: Recordset メソッド (DAO)
+title: Recordset.FillCache メソッド (DAO)
 TOCTitle: FillCache Method
 ms:assetid: d171b939-b904-c6bd-6217-68bc2814e282
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834751(v=office.15)
 ms:contentKeyID: 48547861
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4ef268a821d65732e0a54776872387f62c67e999
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: bfb37cd93b457fe3b0a73f6807b82bfd1c376960
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300519"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585460"
 ---
-# <a name="recordsetfillcache-method-dao"></a>Recordset メソッド (DAO)
+# <a name="recordsetfillcache-method-dao"></a>Recordset.FillCache メソッド (DAO)
 
 **適用先:** Access 2013、Office 2013
 
@@ -22,9 +22,9 @@ Microsoft Access データベース エンジンに接続されている ODBC �
 
 ## <a name="syntax"></a>構文
 
-*式*。FillCache (***Rows***、 ***startbookmark***)
+*式* .FillCache(***Rows** _, _*_StartBookmark_**)
 
-*式***Recordset**オブジェクトを表す変数を取得します。
+*expression*: **Recordset** オブジェクトを表す変数。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -38,7 +38,7 @@ Microsoft Access データベース エンジンに接続されている ODBC �
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -46,15 +46,15 @@ Microsoft Access データベース エンジンに接続されている ODBC �
 <tbody>
 <tr class="odd">
 <td><p><em>Rows</em></p></td>
-<td><p>Optional</p></td>
+<td><p>オプション</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>キャッシュに格納する行の数を指定する、サブタイプが整数型 (<strong>Integer</strong>) のバリアント型 (<strong>Variant</strong>) の値です。 この引数を省略すると、値は<strong><a href="recordset-cachesize-property-dao.md">CacheSize</a></strong>プロパティの設定によって決まります。</p></td>
+<td><p>キャッシュに格納する行の数を指定する、サブタイプが整数型 (<strong>Integer</strong>) のバリアント型 (<strong>Variant</strong>) の値です。この引数を省略すると、<strong><a href="recordset-cachesize-property-dao.md">CacheSize</a></strong> プロパティの設定に従って値が決定されます。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>StartBookmark</em></p></td>
-<td><p>Optional</p></td>
+<td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>ブックマークを指定する、サブタイプが文字列型 (<strong>String</strong>) のバリアント型 (<strong>Variant</strong>) の値です。 このブックマークで示されたレコードを始点としてキャッシュが埋められます。 この引数を省略すると、 <strong><a href="recordset-cachestart-property-dao.md">cachestart</a></strong>プロパティによって示されたレコードから、キャッシュに格納されます。</p></td>
+<td><p>ブックマークを指定する、サブタイプが文字列型 (<strong>String</strong>) のバリアント型 (<strong>Variant</strong>) の値です。このブックマークで示されたレコードを始点としてキャッシュが埋められます。この引数を省略すると、<strong><a href="recordset-cachestart-property-dao.md">CacheStart</a></strong> プロパティで示されたレコードを始点としてキャッシュが埋められます。</p></td>
 </tr>
 </tbody>
 </table>
@@ -68,7 +68,7 @@ Microsoft Access データベース エンジンに接続されている ODBC �
 
 **Recordset** オブジェクトを使用してアクセスする Microsoft Access データベース エンジンに接続されたすべての ODBC データ ソースには、ローカル キャッシュを割り当てることができます。キャッシュを作成するには、リモート データ ソースから **Recordset** オブジェクトを開き、 **Recordset** の **CacheSize** プロパティと **CacheStart** プロパティを設定します。
 
-rows および startbookmark では、 **CacheSize**プロパティと**cachestart**プロパティで指定されたレコード範囲の一部または全体の外側にある範囲のレコードが作成される場合、この範囲外の recordset の部分は無視され、読み込まれません。をキャッシュに入れます。
+行と startbookmark が **、CacheSize** プロパティおよび **CacheStart** プロパティで指定されたレコードの範囲の一部または全体を外した範囲のレコードを作成した場合、この範囲を外したレコードセットの部分は無視され、キャッシュに読み込まれません。
 
 **FillCache** によって要求されたレコード数が、リモート データ ソースに残っているレコード数を上回っている場合、Microsoft Access データベース エンジンは、残っているレコードのみを取得します。この場合、エラーは発生しません。
 
@@ -78,7 +78,7 @@ rows および startbookmark では、 **CacheSize**プロパティと**cachesta
 
 ## <a name="example"></a>例
 
-次の例では、 **CreateTableDef** メソッドと **FillCache** メソッド、および **CacheSize**、 **CacheStart**、 **SourceTableName** の各プロパティを使用して、リンクされたテーブルのレコードを 2 回列挙します。その後、50 レコードのキャッシュを使用してレコードを 2 回列挙します。さらに、リンクされたテーブルの処理にキャッシュを使用しなかった場合と使用した場合のパフォーマンス統計を表示します。
+この例では、**CreateTableDef** メソッドと **FillCache** メソッド、および **CacheSize**、**CacheStart**、**SourceTableName** の各プロパティを使用して、リンクされたテーブルのレコードを 2 回列挙します。その後、50 レコードのキャッシュを使用してレコードを 2 回列挙します。さらに、リンクされたテーブルの処理にキャッシュを使用しなかった場合と使用した場合のパフォーマンスの統計を表示します。
 
 ```vb
     Sub ClientServerX3() 

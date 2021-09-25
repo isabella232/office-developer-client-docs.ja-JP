@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ITnef.OpenTaggedBody
 api_type:
 - COM
 ms.assetid: 70d5b34c-85b3-4d1f-860e-2838947ba428
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 154d6e4a4e333f3a6165c3875bdcd57957ebf70c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e198c46ffdc4a1bcc54f41149e68df7569edb702
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348735"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595946"
 ---
 # <a name="itnefopentaggedbody"></a>ITnef::OpenTaggedBody
 

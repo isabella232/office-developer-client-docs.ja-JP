@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 63493467-af55-fa62-6c39-6b5896895952
 description: 図形に関する追加情報を提供するために使用される任意の文字列値を含む。
-ms.openlocfilehash: 1ce286c0c8db53305f78def465ac31a3ef3afdec
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 68ab3f1632b83b86e124f95a44c066f86804b13d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541254"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628536"
 ---
 # <a name="data3-element-shapesheet_type-complextype-visio-xml"></a>Data3 要素 (ShapeSheet_Type complexType) (Visio XML)
 

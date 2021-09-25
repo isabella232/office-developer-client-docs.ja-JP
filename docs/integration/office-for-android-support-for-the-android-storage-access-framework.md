@@ -3,15 +3,15 @@ title: Office for Android による Android Storage Access Framework のサポ�
 manager: soliver
 ms.date: 06/18/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9cfed295-f499-44dc-bac5-9e266df1b5b3
 description: Office for Android は Android Storage Access Framework と統合され、他のドキュメント プロバイダーが保存したファイルを Office で開けるようにします。
-ms.openlocfilehash: 24d7e48106aeb5e58a668b94cbde00eaa9175230
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: dc6478344b19e81fe766412122abec8312ac88e4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300351"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605499"
 ---
 # <a name="office-for-android-support-for-the-android-storage-access-framework"></a>Office for Android による Android Storage Access Framework のサポート
 
@@ -31,7 +31,7 @@ Android 4.4 (API レベル 19) に Storage Access Framework (SAF) が導入さ�
 |:-----|:-----|:-----|
 |ドキュメントの種類  <br/> |com_microsoft_office_doctype  <br/> |\<consumer\>  <br/> |
 |サービスのフレンドリ名  <br/> |com_microsoft_office_servicename  <br/> |Office アプリ内の最近使用した一覧にあるドキュメントを特定するのに使用される、サービスのわかりやすい任意の名前。サービスのフレンドり名が表示される前に "使用条件契約" プロパティを指定する必要があることに注意してください。  <br/> |
-|使用条件契約  <br/> |com_microsoft_office_termsofuse  <br/> |\<にある条件に同意しますhttps://go.microsoft.com/fwlink/p/?LinkId=528381\>  <br/> |
+|使用条件契約  <br/> |com_microsoft_office_termsofuse  <br/> |\<I agree to the terms located at https://go.microsoft.com/fwlink/p/?LinkId=528381\>  <br/> |
    
 ## <a name="see-also"></a>関連項目
 <a name="bk_addresources"> </a>

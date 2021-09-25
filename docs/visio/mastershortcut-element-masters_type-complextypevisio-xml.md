@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 62f0e093-5385-e552-f91a-02a65eb0e6e1
 description: ドキュメントで定義されているマスター ショートカットを指定します。
-ms.openlocfilehash: 94ac64ff0080bf7d50df67674022ce53f32339a4
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: b3be61ce7f9b82e1187dee6ee26bc6b3f92a6e07
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538208"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627913"
 ---
 # <a name="mastershortcut-element-masters_type-complextype-visio-xml"></a>MasterShortcut 要素 (Masters_Type complexType) (Visio XML)
 

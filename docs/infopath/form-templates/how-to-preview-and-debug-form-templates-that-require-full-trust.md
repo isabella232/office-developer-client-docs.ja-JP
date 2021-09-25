@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - debugging [infopath 2007], infopath 2003-compatible form templates,previewing InfoPath 2003-compatible form templates,form templates [InfoPath 2007], previewing 2003-compatible,form templates [InfoPath 2007], debugging 2003-compatible,debugging InfoPath 2003-compatible form templates
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c491666-06f0-42ec-967e-1c70cd5e03a0
 description: 既定では、完全な信頼が必要なオブジェクト モデルのメンバーを起動するコードを含むマネージ コード プロジェクト (ユーザーのログイン ドメインに関する情報へのアクセスを必要とする LoginName プロパティなど) をデバッグまたはプレビューしようとすると、Microsoft InfoPath では次のようになります。
-ms.openlocfilehash: 0780db286e2ca9cef381c2d24cb621c7c243dcb7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8fef3f0fceb1c9637cc4fbeb59bc8d716db442d2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411261"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605569"
 ---
 # <a name="preview-and-debug-form-templates-that-require-full-trust"></a>完全な信頼が必要なフォーム テンプレートをプレビューおよびデバッグする
 

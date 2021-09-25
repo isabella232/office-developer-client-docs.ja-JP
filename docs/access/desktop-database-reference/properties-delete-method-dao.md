@@ -1,20 +1,20 @@
 ---
-title: Delete メソッド (DAO)
+title: Properties.Delete メソッド (DAO)
 TOCTitle: Delete Method
 ms:assetid: dc2493c6-337c-cb56-7c0d-36762528fa43
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835356(v=office.15)
 ms:contentKeyID: 48548123
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8bc822abe52b8bc9e71a275f0fd9e5006099317a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9d14683a3b81c1d0ebb8811a09687a86b3700e96
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301253"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585495"
 ---
-# <a name="propertiesdelete-method-dao"></a>Delete メソッド (DAO)
+# <a name="propertiesdelete-method-dao"></a>Properties.Delete メソッド (DAO)
 
 **適用先:** Access 2013、Office 2013
 
@@ -22,9 +22,9 @@ ms.locfileid: "32301253"
 
 ## <a name="syntax"></a>構文
 
-*式*。削除 (***名前***)
+*式* .Delete(***Name***)
 
-*式***Properties**オブジェクトを表す変数を取得します。
+*式* Properties オブジェクトを表す **変数** 。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -38,7 +38,7 @@ ms.locfileid: "32301253"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>

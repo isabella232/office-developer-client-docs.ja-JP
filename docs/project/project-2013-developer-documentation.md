@@ -1,7 +1,7 @@
 ---
 title: Project 2013 開発者向けドキュメント
 manager: lindalu
-ms.date: 12/19/2019
+ms.date: 09/19/2021
 ms.audience: Developer
 f1_keywords:
 - Project
@@ -15,23 +15,22 @@ keywords:
 - sdk, project 2013,Project 2013, SDK の概要
 ms.assetid: f66adbf1-5cb5-4dd0-be08-45e1c88c010c
 description: ドキュメント、コード サンプル、ハウツー記事、およびプログラミング リファレンスを検索して、Office またはプライベート アプリ カタログ用のアプリの構築を支援し、Project Server および Project クライアントをカスタマイズし、エンタープライズ プロジェクト管理用のさまざまなデスクトップおよびビジネス アプリケーションと統合します。
-localization_priority: Priority
-ms.openlocfilehash: 1b6227bb25810be04bc87abb418f9966b593bf1c
-ms.sourcegitcommit: 55205b4ec1376713d31e75d195e031798fb2c6ad
+ms.localizationpriority: high
+ms.openlocfilehash: 3fb57b99ad927fec29a885a3329c3f92956e7da9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40825759"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574483"
 ---
 # <a name="project-2013-developer-documentation"></a>Project 2013 開発者向けドキュメント
 
-AppSource 向けアプリの構築に役立つドキュメント、コード サンプル、ハウツー記事、プログラミング リファレンスを検索します。 Project Server および Project クライアントをカスタマイズし、エンタープライズ プロジェクト管理 (EPM) 用のさまざまなデスクトップおよびビジネス アプリケーションと統合する方法について説明します。
+AppSource 向けアプリの構築に役立つドキュメント、コード サンプル、ハウツー記事、プログラミング リファレンスを検索します。Project Server および Project クライアントをカスタマイズし、エンタープライズ プロジェクト管理 (EPM) 用のさまざまなデスクトップおよびビジネス アプリケーションと統合する方法について説明します。
    
 > [!NOTE]
-> Project Server 2013 は SharePoint Server 2013 プラットフォームに基づいて構築され、Project 2013 には他の Office 2013 アプリケーションと同じインストラクチャが数多く含まれています。 SharePoint アドイン、SharePoint ベースのワークフロー、Web パーツ、および他の SharePoint 機能を使用した開発モデルに関するドキュメントについては、「[SharePoint アドイン](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins)」および「[Office アドイン](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)」をご覧ください。 
+> Project Server 2013 は SharePoint Server 2013 プラットフォームに基づいて構築され、Project 2013 には他の Office 2013 アプリケーションと同じインストラクチャが数多く含まれています。 SharePoint アドイン、SharePoint ベースのワークフロー、Web パーツ、および他の SharePoint 機能を使用した開発モデルに関するドキュメントについては、「[SharePoint アドイン](/sharepoint/dev/sp-add-ins/sharepoint-add-ins.md)」および「[Office アドイン](/office/dev/add-ins/overview/office-add-ins.md)」をご覧ください。 
   
 ## <a name="introduction-to-the-project-software-development-kit-sdk"></a>Project ソフトウェア開発キット (SDK) の概要
-<a name="pj15_Welcome_IntroToSDK"> </a>
 
 Project Server 2013 は、オンプレミスまたはクラウドベースのエンタープライズ プロジェクト管理ソリューションを構築し、エンド ユーザーが AppSource (以前の Office ストア) を介して発見し取得できるアプリを構築するためのプラットフォームです。 Project Server 2013 アーキテクチャは、Microsoft Office Project Server 2007 で導入された、多くの追加機能や強化点が含まれるプラットフォームに基づいています。 新機能には、Project Online へのアクセスを可能にするクライアント側オブジェクト モデル (CSOM)、Project Server レポート データにオンラインでアクセスするための OData サービス、リモート イベント レシーバー、Windows Workflow Foundation バージョン 4 (WF4) に基づくワークフロー アーキテクチャ、Microsoft Office 2013 クライアント アプリケーションの作業ウィンドウ拡張機能で共通のアーキテクチャである Office アドインなどが含まれます。
   
@@ -41,13 +40,11 @@ Project Server 2013 は Microsoft .NET Framework 4 と Microsoft SharePoint Serv
   
 Project 2013 SDK には、Project Server 2013、Project Web App、Project Professional 2013、Project Standard 2013 の開発者向けの情報が含まれています。 SDK の記事は、開発者や管理者が Project および Project Server の拡張性を評価して、カスタム ソリューションを計画できるようにすることを目的としています。
   
-### <a name="feedback"></a>フィードバック
-<a name="pj15_Welcome_Feedback"> </a>
+### <a name="welcome-feedback"></a>ウェルカム フィードバック
 
-皆さまからのご意見をぜひ伺いたいと考えています。 MSDN のオンライン トピックでは、コメントやコード サンプルを追加したり、各ページの下部にある **[コミュニティ コンテンツ]** セクションでコンテンツにバグのフラグを設定したりできます。 ダウンロードした Project 2013 SDK をインストールすると、それぞれのローカル ドキュメント記事には、タイトルの下に*フィードバックの送信*リンクが表示されます。 SDK を閲覧するときにはいつでも、このリンクを選択して SDK チームに電子メールを送信できます。 修正点、明確にしてほしい点に関するリクエスト、コード サンプル、他のコメントをお送りいただけます。こうして点はコンテンツをより優れたものにするのに役立ちます。 
+皆さまからのご意見をぜひ伺いたいと考えています。 MSDN のオンライン トピックでは、コメントやコード サンプルを追加したり、各ページの下部にある **[コミュニティ コンテンツ]** セクションでコンテンツにバグのフラグを設定したりできます。 ダウンロードした Project 2013 SDK をインストールすると、それぞれのローカル ドキュメント記事には、タイトルの下に *フィードバックの送信* リンクが表示されます。 SDK を閲覧するときにはいつでも、このリンクを選択して SDK チームに電子メールを送信できます。 修正点、明確にしてほしい点に関するリクエスト、コード サンプル、他のコメントをお送りいただけます。こうして点はコンテンツをより優れたものにするのに役立ちます。 
   
 ### <a name="download"></a>ダウンロード
-<a name="pj15_Welcome_Download"> </a>
 
 Project 2013 SDK のダウンロードは [Microsoft ダウンロード センター](https://www.microsoft.com/en-us/download/details.aspx?id=30435%20) (`https://www.microsoft.com/en-us/download/details.aspx?id=30435%20`) で行えます。 ダウンロードには、Project2013SDK.HxS (この記事が含まれるファイル)、関連するコード サンプル、再頒布可能アセンブリなどのリソースが含まれています。 Project 2013 SDK にはレポート データベースに関するリファレンスはまだ含まれていません。
   
@@ -88,12 +85,10 @@ Project Server 2013 における新しいプログラミング機能と廃止さ
 **Microsoft.ProjectServer.Client** 名前空間と PSI サービスの新しいメソッドに関するトピックには最小限のドキュメントのみが含まれています。 PSI サービスに関する参照トピックのほとんどは、2011 年 7 月リリースの Project 2010 SDK から変更がありません。 
   
 ### <a name="future-sdk-releases"></a>将来の SDK リリース
-<a name="pj15_Welcome_FutureReleases"> </a>
 
 Project 2013 SDK は、一般利用可能リリース向けに、新しい記事およびリファレンス コンテンツとともに更新される予定です。
   
 ## <a name="sections-in-the-project-sdk"></a>Project SDK のセクション
-<a name="pj15_Welcome_SectionsInTheSDK"> </a>
 
 Project 2013 SDK には最上位のセクションが 2 つあります。
   
@@ -137,6 +132,6 @@ Project 2013 SDK には最上位のセクションが 2 つあります。
     
 - [Microsoft Office 365 のアクセシビリティ](https://www.microsoft.com/enable/products/office365/)
     
-- [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/ja-JP/privacystatement)
+- [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/en-us/privacystatement)
     
 

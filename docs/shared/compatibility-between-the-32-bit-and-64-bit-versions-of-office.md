@@ -1,16 +1,16 @@
 ---
 title: Office の 32 ビット バージョンと 64 ビット バージョン間の互換性
-ms.date: 07/04/2021
+ms.date: 09/14/2021
 ms.audience: ITPro
 ms.assetid: ff49dc9e-daf8-43cf-8802-51c2537ed561
 description: 32 ビット バージョンの Office と 64 ビット バージョンの Office の互換性についてご確認ください。
-localization_priority: Priority
-ms.openlocfilehash: e1beaf4217091c1218653df33bd7d99883fb0862
-ms.sourcegitcommit: 8dcb4dc4aa066e3d79bcccd9a9aa6cd3f192b3e1
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 73c0459c2b5da6f8b63e77a4056fbebf83c88708
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53535893"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574441"
 ---
 # <a name="compatibility-between-the-32-bit-and-64-bit-versions-of-office"></a>Office の 32 ビット バージョンと 64 ビット バージョン間の互換性
 
@@ -23,7 +23,7 @@ Office アプリケーションは、32 ビット バージョンと 64 ビッ�
 Visual Basic for Applications 7.0 (VBA 7) は 64 ビット バージョンの Office でリリースされ、32 ビット バージョンと 64 ビット バージョンのどちらのアプリケーションでも動作します。この記事で説明されている変更は、64 ビット バージョンの Office にのみ適用されます。32 ビット バージョンの Microsoft Office を使うと、追加の変更を加えることなく、以前のバージョンの Office で作成したソリューションを使うことができます。
   
 > [!NOTE]
-> 既定で、64 ビット バージョンの Office をインストールすると、32 ビット バージョンが 64 ビット システムと共にインストールされます。Microsoft Office 64 ビット バージョンのインストール オプションを明示的に選択する必要があります。 
+> 既定で、64 ビット バージョンの Office をインストールすると、32 ビット バージョンも一緒にインストールされます。Microsoft Office 64 ビット バージョンのインストール オプションを明示的に選択する必要があります。 
   
 VBA 7 では、既存の Windows API ステートメント (**Declare** ステートメント) を更新して、64 ビット バージョンで動作するようにしなければなりません。さらに、これらのステートメントで使われているユーザー定義型のアドレス ポインターと表示ウィンドウ ハンドルを更新することも必要です。この点については、32 ビット バージョンと 64 ビット バージョン間の互換性に関する問題と推奨される解決案と共に、この記事で詳しく説明します。 
   

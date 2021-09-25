@@ -1,5 +1,5 @@
 ---
-title: IgnoreNulls プロパティ (DAO)
+title: Index.IgnoreNulls プロパティ (DAO)
 TOCTitle: IgnoreNulls Property
 ms:assetid: f49f17b8-d7c1-18ab-07a8-e1be61488519
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836698(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052931
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 6c306f76e34e24abb5065c627d9325b48c3acead
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 51d6ffd9c07ec9d03f9dfce54f98b8edaabf7145
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291804"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585635"
 ---
-# <a name="indexignorenulls-property-dao"></a>IgnoreNulls プロパティ (DAO)
+# <a name="indexignorenulls-property-dao"></a>Index.IgnoreNulls プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -27,9 +27,9 @@ ms.locfileid: "32291804"
 
 ## <a name="syntax"></a>構文
 
-*式*。IgnoreNulls
+*式* .IgnoreNulls
 
-*式***Index**オブジェクトを表す変数を取得します。
+*式* Index オブジェクトを表す **変数** 。
 
 ## <a name="remarks"></a>注釈
 
@@ -60,12 +60,12 @@ ms.locfileid: "32291804"
 </tr>
 <tr class="even">
 <td><p>False</p></td>
-<td><p>誤り</p></td>
+<td><p>False</p></td>
 <td><p>インデックス フィールドへの Null 値の入力が許可されます。インデックス エントリが追加されます。</p></td>
 </tr>
 <tr class="odd">
 <td><p>True または False</p></td>
-<td><p>正しい</p></td>
+<td><p>正解</p></td>
 <td><p>インデックス フィールドへの Null 値の入力は許可されません。インデックス エントリは追加されません。</p></td>
 </tr>
 </tbody>

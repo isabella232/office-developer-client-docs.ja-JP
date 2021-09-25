@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm80001
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 08b730c4-5dd8-106e-ddf3-da2c942e2ef6
 description: 図形の表示レベル バンド (Z オーダー グループ化の相対範囲) を指定します。
-ms.openlocfilehash: 4f7e3fcb2d28f8c4c0706502c66444c121ae6ee6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bd40078d29147a40be940d40f5f059d20a3d9979
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408146"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628459"
 ---
 # <a name="displaylevel-cell-shape-layout-section"></a>[DisplayLevel] セル ([Shape Layout] セクション)
 

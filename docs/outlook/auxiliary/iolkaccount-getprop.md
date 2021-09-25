@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5725eb52-3a78-897d-f9e3-c5a494fb78c0
 description: 指定したアカウント プロパティの値を取得します。
-ms.openlocfilehash: d24df8cfa9d54bee4614c1f31e12268748b8c986
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2ab86eeaf18374a28159c6f0743e55d1664a1b31
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433739"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561951"
 ---
 # <a name="iolkaccountgetprop"></a>IOlkAccount::GetProp
 

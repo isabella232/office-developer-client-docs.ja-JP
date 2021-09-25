@@ -1,25 +1,25 @@
 ---
-title: Keys の Append メソッド、キーの種類、およびフィールドのプロパティの使用例 (VB)
+title: Keys Append メソッド、Key Type、RelatedColumn プロパティの例 (VB)
 TOCTitle: Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule properties example (VB)
 ms:assetid: d1b0508d-ab2c-eece-061c-09c67ea9ecae
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250047(v=office.15)
 ms:contentKeyID: 48547871
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9120fa718544a0d1d7a132b197517aac955f5fc6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5df09f500661513a460aa500eafd018324668fe6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290632"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572929"
 ---
-# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb"></a>Keys の Append メソッド、キーの種類、UpdateRule の column プロパティの使用例 (VB)
+# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb"></a>Keys Append メソッド、Key Type、RelatedColumn、RelatedTable プロパティ、UpdateRule プロパティの例 (VB)
 
 
 **適用先:** Access 2013、Office 2013
 
-次のコードでは、新しい外部キーの作成方法を示します。 ここでは、2 つのテーブル (**Customers** および **Orders**) が存在することを前提としています。
+次のコードでは、新しい外部キーの作成方法を示します。ここでは、2 つのテーブル (**Customers** および **Orders**) が存在することを前提としています。
 
 ```vb 
  

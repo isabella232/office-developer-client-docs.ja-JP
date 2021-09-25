@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb645998(v=office.15)
 ms:contentKeyID: 55119837
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: d5c615eb811d5dc4a0f4170bfe432179acaa4666
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 9ddb7e2c89bd869909c27f25c34d3a01c7e9d66a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320196"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574665"
 ---
 # <a name="get-members-of-an-exchange-distribution-list"></a>Exchange 配布リストのメンバーを取得する
 
@@ -28,7 +28,7 @@ ms.locfileid: "32320196"
 
 配布リストのメンバーを取得するには、ユーザーが Exchange サーバーに接続し、オンライン状態になっている必要があります。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード サンプルをテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートする際に、最初に必ず Microsoft Outlook 15.0 Object Library コンポーネントへの参照を追加し、そして Outlook 変数を指定します。**Imports** または **using** ステートメントは、コード サンプル中の関数の前に直接置かれず、Public クラス宣言の前に追加する必要があります。次のプログラムは、Visual Basic および C\#でインポートおよび割り当てを行う方法を示しています。
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook

@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 32676003-ba32-886f-1185-4760cb0e30e3
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2aeca1a65a859ac9502995a463bc4869609bcd15
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d40c06b5bd7e2d2523fb81b702c513c6521518e4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334962"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621095"
 ---
 # <a name="fixmapi"></a>FixMAPI
 
@@ -53,7 +53,7 @@ DWORD STDAPICALLTYPE FixMAPI(void);
 
 
 
-[KB 256946: 2000 から開始すると、プログラムの競合Outlookされます。](https://support.microsoft.com/kb/256946)
+[KB 256946: 2000 年から開始すると、プログラムの競合エラー Outlookされます。](https://support.microsoft.com/kb/256946)
   
 [KB 228457: 5 に付属Fixmapi.exeツールのInternet Explorer説明](https://support.microsoft.com/kb/228457)
 

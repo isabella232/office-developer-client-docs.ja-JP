@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 026926cf-3d0b-984c-897e-9d28346b7ba7
 description: ドキュメントのヘッダーとフッターの要素を含む。
-ms.openlocfilehash: c3c2f0adab4448ca88e5f2cca5605f397c48bd98
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 4835598ec924ad600fa8ea6431055cc9ad330c94
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541107"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628256"
 ---
 # <a name="headerfooter-element-visiodocument_type-complextype-visio-xml"></a>HeaderFooter 要素 (VisioDocument_Type complexType) (Visio XML)
 

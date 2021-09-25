@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm93359
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: e7bf54934c6be215b2be5f32160d74fc2b4ab346
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b03b3541e259cb399ebd3d6a7998948a197ac285
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306840"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615019"
 ---
 # <a name="runapplication-macro-action"></a>RunApplication マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 <table>
 <thead>
@@ -40,7 +40,7 @@ You can use the **RunApplication** action to run a Microsoft Windows-based or MS
 > [!NOTE]
 > このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 "RunApplication/アプリケーションの実行" アクションの引数は次のとおりです。
 

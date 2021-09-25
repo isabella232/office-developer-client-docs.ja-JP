@@ -8,13 +8,13 @@ keywords:
 - dlls [excel 2007], calling into excel,xlAutoFree function [Excel 2007],xlAutoFree12 function [Excel 2007],xlcall32.lib [Excel 2007],xlAutoRegister function [Excel 2007],xlcall.cpp [Excel 2007],xlAutoRemove function [Excel 2007],xlAddInManagerInfo function [Excel 2007],xlAutoAdd function [Excel 2007],xlAutoOpen function [Excel 2007],xlAutoClose function [Excel 2007],DLLs [Excel 2007], turning into XLLs,XLLs [Excel 2007], calling into Excel,xlAutoRegister12 function [Excel 2007],xlcall.h [Excel 2007],xlAddInManagerInfo12 function [Excel 2007]
 ms.assetid: 7754998f-4e13-4a37-9724-43b6ee6c919b
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: 886b8e74f00f2e724785d43475ee0ffa3c922710
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: dd1f4d591d6131d9f683bbd4630cbb0ceadb03e1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304145"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605618"
 ---
 # <a name="creating-xlls"></a>XLL を作成する
 
@@ -100,7 +100,7 @@ Excel 2007 以降のバージョンでは、XLL によってエクスポート�
   
 ### <a name="xlautoregisterxlautoregister12"></a>xlAutoRegister/xlAutoRegister12
 
-Excel は登録対象の関数の戻り値の型と引数の型がない状態で、XLM 関数 **REGISTER**、または C API の同等の [xlfRegister](xlfregister-form-1.md) 関数に対する呼び出しが実行されると、常に [xlAutoRegister 関数](xlautoregister-xlautoregister12.md)を呼び出します。**xlAutoRegister**関数により、XLL はその内部にあるエクスポートされた関数とコマンドのリストを検索してその関数を引数とともに登録し、指定された型を返すことができます。 
+Excel は登録対象の関数の戻り値の型と引数の型がない状態で、XLM 関数 **REGISTER**、または C API の同等の [xlfRegister](xlfregister-form-1.md) 関数に対する呼び出しが実行されると、常に [xlAutoRegister 関数](xlautoregister-xlautoregister12.md)を呼び出します。**xlAutoRegister** 関数により、XLL はその内部にあるエクスポートされた関数とコマンドのリストを検索してその関数を引数とともに登録し、指定された型を返すことができます。 
   
 Excel 2007 以降では、**xlAddInRegister12** 関数が XLL によってエクスポートされている場合、Excel はこの関数を **xlAddInRegister** 関数よりも優先して呼び出します。 
   
