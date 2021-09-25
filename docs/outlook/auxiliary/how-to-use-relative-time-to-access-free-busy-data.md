@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 12/08/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 13aa6ae2-47b9-2cf4-a6ef-651f1338dd49
 description: Free/Busy API の IFreeBusyData インターフェイスでは、相対時間という概念が使用されます 。これは、1601 年 1 月 1 日からの分数で、世界時 (UTC) で表され、LONG 型の値です。
-ms.openlocfilehash: 1b977fc3aebd1f2b20e51f24caa36d6bbf2862ba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: df42b3af0fa2f0e85a0c89cea060de76996f4a01
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317634"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557303"
 ---
 # <a name="use-relative-time-to-access-freebusy-data"></a>相対時間を使用して空き時間情報にアクセスする
 

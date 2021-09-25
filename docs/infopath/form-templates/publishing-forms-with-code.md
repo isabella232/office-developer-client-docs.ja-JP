@@ -3,15 +3,15 @@ title: コードを含むフォームを発行する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: caafab24-6413-4731-813d-cba3ae9ea97e
 description: サイト コレクション管理者はだれでも、InfoPath Designer の発行ウィザードから直接、SharePoint 上のフォーム ライブラリに、コードを含むフォームを発行できます。コードはセキュリティ保護されたサンドボックス環境の中で実行されるので、悪意のあるコードがサーバーに害を与えることはありません。このことを、サンドボックス ソリューションの発行、またはSharePoint サンドボックス インフラストラクチャへの発行と呼びます。
-ms.openlocfilehash: f8f8a48ea6810b5331198f6ddc112b3bd38ab886
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ddc224826650ecda8f54bc7d882b78bc90377b81
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428327"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557436"
 ---
 # <a name="publishing-forms-with-code"></a>コードを含むフォームを発行する
 

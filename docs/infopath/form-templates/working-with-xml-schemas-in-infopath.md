@@ -3,15 +3,15 @@ title: InfoPath で XML スキーマを使用する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c1d70e9f-b9fc-7bdb-107e-d0cd8191607b
 description: Microsoft InfoPath で作成するフォーム テンプレートでは、InfoPath フォームで入力、編集、出力される XML の構造とデータの検証が XML スキーマ (XSD) を使用して実行されます。InfoPath のフォーム デザイン ウィンドウで作成したすべてのフォーム テンプレートには、実行時の検証に使用される XSD スキーマ ファイル (.xsd) が少なくとも 1 つ含まれています。
-ms.openlocfilehash: 25828c3ec21d22a9952452d5a82fe1a3b4bab54c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 0c6d079cbe4ed9f37e63ae945eda232fced44995
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303165"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557359"
 ---
 # <a name="working-with-xml-schemas-in-infopath"></a>InfoPath で XML スキーマを使用する
 
@@ -191,7 +191,7 @@ InfoPath のデザイン モードでは、このような XSD コンストラ�
 
 すべての W3C 標準と同様に、XML スキーマ (XSD) も長期にわたる検討プロセスを経て勧告となるに至っています。多数の草案が出され、絶えず変化する草案段階の各標準に基づいて数々の XSD ファイルが記述されました。この勧告プロセスの間に、Microsoft は XML-Data Reduced (XDR) と呼ばれる独自のスキーマ言語を開発し、MSXML 3.0 に組み込みました。MSXML 4.0 のリリース以降は、Microsoft XML Core Services で XSD の勧告をサポートしています。スキーマ作成用の多数のプログラムが、XSD の勧告を待たずに開発されました。これらの古いバージョンのプログラムでは、InfoPath が依存する MSXML 5.0 インフラストラクチャでサポートされていない旧式の XSD ファイルが作成される可能性があります。
   
-XSD ファイルが XSD 勧告を確実にサポートするようにするには、次の XML 名前空間宣言を \<schema\> タグに含めます。
+XSD ファイルが XSD の完全な推奨事項をサポートするには、タグに次の XML 名前空間宣言を含む必要 \<schema\> があります。
   
 ```XML
 xmlns:xsd="https://www.w3.org/2001/XMLSchema"
@@ -254,11 +254,11 @@ XSD スキーマの存在意義は、XML のデータ構造と型のセマンテ
 
 ```
 
-In this XML fragment, it is not clear whether the  *\<file_path\>*  element is the required node from the first part of the choice declaration or the optional one from the second part of the choice declaration. This distinction is important for the following reasons: 
+この XML フラグメントでは、要素が選択肢宣言の最初の部分の必須ノードか、または選択肢宣言の 2 番目の部分の省略可能なノードかは  *\<file_path\>*  明らかではありません。 この区別は、次の理由で重要になってきます。 
   
 1. この XML フラグメントが choice 要素宣言の最初の部分に照らして検証される場合、XML はスキーマに対して有効と判断されます。
     
-2. XML フラグメントが choice 要素宣言の第 2 の部分に照らして検証される場合、必須の \<URI\> ノードがないため、スキーマは有効ではないと判断されます。 
+2. XML フラグメントが選択肢宣言の 2 番目の部分に対して検証される場合、必要なノードが見つからないため、スキーマ \<URI\> は無効です。 
     
 XSD 検証システムによっては、有効なパスが存在することから、このスキーマに照らした検証で誤った判断が下される場合がありますが、MSXML はより厳密であり、スキーマが非決定論的であるというエラーを報告します。
   

@@ -10,13 +10,13 @@ f1_keywords:
 - jetsql40.chm5277479
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 20122fee617597987940766a076d5f968a87c2d2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 41ae1f88b89a7fb0293b4f0cd3df500687edd799
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306532"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580889"
 ---
 # <a name="revoke-statement-microsoft-access-sql"></a>REVOKE ステートメント (Microsoft Access SQL)
 
@@ -26,9 +26,9 @@ ms.locfileid: "32306532"
 
 ## <a name="syntax"></a>構文
 
-REVOKE {*privilege*\[,*特権*,...\]} {table *table* |object*オブジェクト*|
+REVOKE {*privilege* \[ , *privilege*, ... \] }ON {TABLE *table |* OBJECT *オブジェクト*|
 
-{*authorizationname*\[, *authorizationname*,... **\]}
+CONTAINTER *コンテナー*} FROM {*authorizationname* \[ , *authorizationname*, ... \] }
 
 REVOKE ステートメントには、次の指定項目があります。
 
@@ -45,19 +45,19 @@ REVOKE ステートメントには、次の指定項目があります。
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>オペレーター</em></p></td>
-<td><p>権限を無効にします。 権限は、SELECT、DELETE、INSERT、UPDATE、DROP、selectsecurity、UPDATESECURITY、dbpassword、UPDATEIDENTITY、CREATE、selectsecurity、schema、および updateowner の各キーワードを使用して指定します。</p></td>
+<td><p><em>特権</em></p></td>
+<td><p>権限を無効にします。 特権は、SELECT、DELETE、INSERT、UPDATE、DROP、SELECTSECURITY、UPDATESECURITY、DBPASSWORD、UPDATEIDENTITY、CREATE、SELECTSCHEMA、SCHEMA、および UPDATEOWNER を使用して指定されます。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>テーブル</em></p></td>
+<td><p><em>table</em></p></td>
 <td><p>任意の有効なテーブル名。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>object</em></p></td>
-<td><p>テーブル以外のどのオブジェクトも指定できます。 たとえば、ストアド クエリ (ビューまたはプロシージャ) を指定できます。</p></td>
+<td><p>テーブル以外のどのオブジェクトも指定できます。たとえば、ストアド クエリ (ビューまたはプロシージャ) を指定できます。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>格納</em></p></td>
+<td><p><em>コンテナー</em></p></td>
 <td><p>有効なコンテナーの名前。</p></td>
 </tr>
 <tr class="odd">

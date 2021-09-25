@@ -5,15 +5,15 @@ ms.date: 01/13/2015
 ms.audience: Developer
 keywords:
 - フォーム テンプレート [infopath 2007]、ウォークスルー、フォーム テンプレート [InfoPath 2007]、InfoPath 2003 互換、InfoPath 2003 互換フォーム テンプレートの作成、チュートリアル
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7658705f-c062-49a1-bea6-837737df2425
 description: このトピックでは、Microsoft が提供する InfoPath 2003 互換オブジェクト モデルで動作する基本的な InfoPath マネージ コード フォーム テンプレートを作成する方法について説明します。Office.Interop.InfoPath.SemiTrust 名前空間。
-ms.openlocfilehash: c559aedad5c62134c796196c63c1a84f70c4dc3e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 02ad670a7fc72c05466e50287098981ac3e07170
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414341"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557373"
 ---
 # <a name="walkthrough-create-and-debug-a-basic-form-template-using-the-infopath-object-model"></a>チュートリアル: InfoPath オブジェクト モデルを使用して基本的なフォーム テンプレートを作成およびデバッグする
 

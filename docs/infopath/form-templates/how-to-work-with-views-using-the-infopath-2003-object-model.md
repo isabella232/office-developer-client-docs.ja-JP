@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - infopath 2003 互換のフォーム テンプレート,ビュー,ビュー [InfoPath 2007], InfoPath 2003 互換のフォーム テンプレート
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: feb1bfcb-1cb1-4d5c-bc84-df86a33a5934
 description: InfoPath フォーム テンプレートの作業を行うときは、フォームのビューにアクセスし、ビューに格納されているデータに対してさまざまな操作を実行するためのコードを書くことができます。InfoPath 2003 互換のオブジェクト モデルでは、ViewObject インターフェイスのメンバーを使用してフォームのビューにアクセスできます。
-ms.openlocfilehash: 6a2dd408ba51e5c8394120944e0c28897e768738
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4273ebadcf2b90cc865814f3896e3c1c9710f0de
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411884"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557450"
 ---
 # <a name="work-with-views-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してビューを操作する
 

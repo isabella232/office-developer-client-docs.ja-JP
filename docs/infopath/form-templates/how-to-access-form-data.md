@@ -5,15 +5,15 @@ ms.date: 12/07/2015
 ms.audience: Developer
 keywords:
 - form data [infopath 2007],forms [InfoPath 2007], accessing properties,form templates [InfoPath 2007], accessing properties,opening forms [InfoPath 2007],printing forms [InfoPath 2007],forms [InfoPath 2007], printing,closing forms [InfoPath 2007],InfoPath 2007, accessing form data,forms [InfoPath 2007], accessing data source,forms [InfoPath 2007], closing,forms [InfoPath 2007], opening,printing [InfoPath 2007], forms,forms [InfoPath 2007], creating
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fd7374d3-a268-4e30-9872-7579cd681bd0
 description: InfoPath フォームの機能を拡張しようと思うと、多くの場合、フォームの基になる XML ドキュメントに関する情報へのアクセス、XML ドキュメントに記述されているデータへのアクセス、XML ドキュメントに対する何らかの操作の実行などの処理をプログラムで行う必要が出てきます。InfoPath オブジェクト モデルでは、XmlForm クラスと XmlFormCollection クラスを関連させて使用することにより、フォームの基になる XML ドキュメントにアクセスしたり、その XML ドキュメントを操作したりすることができます。
-ms.openlocfilehash: c8251afcd75391f102215811694515c06b9f3e7e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8b54013ee925491f7060dc088975ea65232fe12e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300211"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557478"
 ---
 # <a name="access-form-data"></a>フォーム データにアクセスする
 

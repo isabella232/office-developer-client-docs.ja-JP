@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249074(v=office.15)
 ms:contentKeyID: 48543985
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1ab0615d1c16900e86a844635fad4ac9a90751a4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ae1812a3d141f9466d1ff4d332cb09f557dfd53b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32312042"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580623"
 ---
 # <a name="using-ado-with-scripting-languages"></a>スクリプトの言語での ADO の使用
 
 
 **適用先:** Access 2013、Office 2013
 
-スクリプト環境では、ADO を使用することで、サーバー側スクリプトによりデータを公開できます。 このシナリオでは、ADO、ADO が利用する基盤の OLE DB プロバイダー、および特定のデータ ストアを参照するために必要な他のコンポーネントが、インターネット インフォメーション サービス (IIS) を実行するサーバーにインストールされます。 たとえば、Active Server Pages (ASP) を使用する場合、ADO は HTML を生成できるスクリプトで参照されるコンポーネントです。 この HTML コンテンツは、HTTP を介してクライアント web ブラウザーに渡すことができます。 スクリプトを使用すると、web ページはサーバー側スクリプトにアクションを送り返すことができるため、特定のデータを更新、スキャン、または表示することができます。
+スクリプト環境では、ADO を使用することで、サーバー側スクリプトによりデータを公開できます。 このシナリオでは、ADO、ADO が利用する基盤の OLE DB プロバイダー、および特定のデータ ストアを参照するために必要な他のコンポーネントが、インターネット インフォメーション サービス (IIS) を実行するサーバーにインストールされます。 たとえば、Active Server Pages (ASP) を使用する場合、ADO は HTML を生成できるスクリプトで参照されるコンポーネントです。 この HTML コンテンツは、HTTP 経由でクライアント Web ブラウザーに渡されます。 スクリプトを使用することで、Web ページはアクションをサーバー側スクリプトに送り返し、特定のデータを更新、トラバース、または表示できます。
 
 ## <a name="odbc-data-sources"></a>ODBC データ ソース
 

@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - フォーム テンプレートのトラブルシューティング [infopath 2007]、実行時、InfoPath 2003 互換フォーム テンプレート、実行時のトラブルシューティング
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 65e7882e-6397-4375-9bb4-d993d700d749
 description: 次のセクションでは、Microsoft が提供する InfoPath 2003 互換オブジェクト モデルを使用する InfoPath マネージ コード フォーム テンプレートの操作中に発生する可能性のある一般的なトラブルシューティングシナリオについて説明します。Office.Interop.InfoPath.SemiTrust 名前空間を実行時に指定します。
-ms.openlocfilehash: c7b4b65cc722e72ef155529a0b2aa66c4f6cfcff
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4d3fe238a5aaebacb24257ef137b5495595cde55
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414446"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557387"
 ---
 # <a name="troubleshoot-form-templates-that-use-the-infopath-object-model-at-run-time"></a>実行時に InfoPath オブジェクト モデルを使用するフォーム テンプレートのトラブルシューティング
 

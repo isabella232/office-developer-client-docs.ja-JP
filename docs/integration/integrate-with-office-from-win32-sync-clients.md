@@ -3,15 +3,15 @@ title: Win32 同期クライアントからの Office との統合
 manager: soliver
 ms.date: 07/29/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 348555d3-3cd4-4e4a-b5ad-436571c25251
 description: サード パーティ製 Win32 同期クライアントを Excel Mobile、 PowerPoint Mobile、および Word MobileOffice アプリケーションと統合します。
-ms.openlocfilehash: 83bc6e4cddc17e539b371999fff620c72c595534
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ad0c93bb03ba3b23c8395853bec77b8dec29a333
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303137"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557338"
 ---
 # <a name="integrate-with-office-from-win32-sync-clients"></a>Win32 同期クライアントからの Office との統合
 

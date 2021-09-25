@@ -3,15 +3,15 @@ title: サンドボックス ソリューションのサンプル
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 415fa0fa-b7b7-4acb-a437-f54c34064004
 description: このトピックでは、InfoPath セキュリティで保護されたソリューションでフォーム テンプレートを発行する方法として使用できる 2 つのコード例について説明します。
-ms.openlocfilehash: 56a9a2a765100ef327790265c7cf734903268bed
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9bce60d1141b82343ab021b120ae804d404d6b13
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439339"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557422"
 ---
 # <a name="sample-sandboxed-solutions"></a>サンドボックス ソリューションのサンプル
 

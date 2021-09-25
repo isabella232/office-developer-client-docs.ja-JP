@@ -1,20 +1,20 @@
 ---
-title: sortdirection プロパティ (RDS)
+title: SortDirection プロパティ (RDS)
 TOCTitle: SortDirection property (RDS)
 ms:assetid: 33de0dce-f371-6a54-d179-0627939f5b14
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249106(v=office.15)
 ms:contentKeyID: 48544119
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: fd09eb22d9f751ab1140db948356d2b168b30afb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3d8b7a42755d4efc18e5785efcbad92b9da6a709
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308618"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580854"
 ---
-# <a name="sortdirection-property-rds"></a>sortdirection プロパティ (RDS)
+# <a name="sortdirection-property-rds"></a>SortDirection プロパティ (RDS)
 
 **適用先:** Access 2013、Office 2013
 
@@ -22,7 +22,7 @@ ms.locfileid: "32308618"
 
 ## <a name="syntax"></a>構文
 
-*DataControl*。sortdirection =*値*
+*DataControl*.SortDirection = *value*
 
 ## <a name="parameters"></a>パラメーター
 

@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - エラー [infopath 2007],処理,FormErrorCollection [InfoPath 2007],InfoPath 2007,エラー処理,FormError [InfoPath 2007],エラー処理 [InfoPath 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 132cb698-d9a5-4767-b3d1-5dd1343a1ff4
 description: カスタム アプリケーションを作成するときに、開発者はエラー処理を行わなければならないことがよくあります。エラー処理では、アプリケーションで発生したエラーをチェックしたり、カスタム エラーを作成して発生させたりするプログラミング コードを記述します。Microsoft.Office.InfoPath 名前空間によって提供される InfoPath オブジェクト モデルでは、FormError クラスを FormErrorCollection クラスと共に使用するエラー処理がサポートされています。
-ms.openlocfilehash: 30cf649188b7e4cbc35469d2a50540bb13ecb38d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7697a2a40be1f2dda76a6a9f1f218192acad9453
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410778"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557471"
 ---
 # <a name="handle-errors"></a>エラーを処理する
 

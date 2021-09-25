@@ -1,18 +1,18 @@
 ---
-title: 静的カーソル (Access デスクトップデータベースリファレンス)
+title: 静的カーソル (Access デスクトップ データベース参照)
 TOCTitle: Static cursors
 ms:assetid: 1acf7fc5-fb12-e59e-f480-dde378a29c53
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248950(v=office.15)
 ms:contentKeyID: 48543524
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2eb019a6fc960d58771ff5ab0de7dca547c55f1c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b0953c631f1eba746d6f5ce8741e29f78525e219
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308541"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580777"
 ---
 # <a name="static-cursors"></a>静的カーソル
 

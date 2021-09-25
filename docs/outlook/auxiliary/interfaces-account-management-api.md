@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e67b0690-a3f4-4523-94a6-c0e4005bcb69
 description: このセクションでは、アカウント管理 API のインターフェイスについて説明します。
-ms.openlocfilehash: 31685e0fe04d0b72315a13c2f80fcb0fffc72a82
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5df87dd56ace4d3250db493333f2cedbef80b9e6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319251"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557198"
 ---
 # <a name="interfaces-account-management-api"></a>インターフェイス (アカウント管理 API)
 

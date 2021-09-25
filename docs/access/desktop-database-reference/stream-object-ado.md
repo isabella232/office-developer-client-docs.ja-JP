@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250065(v=office.15)
 ms:contentKeyID: 48547945
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1f6d7e8f64f6b14ea699006fc0461cdf0ded2a06
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6357a0f8ce0544294c54345bd5200b10b3fc95c3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308485"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580756"
 ---
 # <a name="stream-object-ado"></a>Stream オブジェクト (ADO)
 
@@ -23,7 +23,7 @@ ms.locfileid: "32308485"
 
 ## <a name="remarks"></a>注釈
 
-ファイルシステム、電子メールシステムなどのツリー構造の階層では、[レコード](record-object-ado.md)には、ファイルまたは電子メールの内容を含む既定のバイナリストリームと関連付けられたビットストリームがあります。 これらのデータ ストリームを格納したフィールドまたはレコードは、 **Stream** オブジェクトを使用して操作できます。 **Stream** オブジェクトは次の方法で取得できます。
+ファイル システムや電子メール システムなどのツリー構造の階層では、 [レコード](record-object-ado.md) には、ファイルまたは電子メールの内容を含む既定のバイナリ ストリームのビットが関連付けられている場合があります。 これらのデータ ストリームを格納したフィールドまたはレコードは、 **Stream** オブジェクトを使用して操作できます。 **Stream** オブジェクトは次の方法で取得できます。
 
   - バイナリ データまたはテキスト データを格納したオブジェクト (通常はファイル) を指定する URL で取得します。このようなオブジェクトには、単純なドキュメント、構造ドキュメントを表す **Record** オブジェクト、またはフォルダーがあります。
 
@@ -66,6 +66,6 @@ ms.locfileid: "32308485"
   - **Mode** プロパティを使用して、 [Stream](mode-property-ado.md) のアクセス モードを指定できます。
 
 > [!NOTE]
-> [!メモ] http スキームを使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、「[絶対 url と相対 url](absolute-and-relative-urls.md)」を参照してください。
+> [!メモ] http スキームを使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、「絶対 URL と [相対 URL」を参照してください](absolute-and-relative-urls.md)。
 
 

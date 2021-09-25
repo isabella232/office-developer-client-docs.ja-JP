@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c6c6bfda-5525-4618-b08c-bf85440b7415
 description: データ劣化層 API の参照コンテンツ。この API は、オブジェクトオブジェクトの基になるネイティブ文字形式を非表示Outlookします。
-ms.openlocfilehash: 4edbf09ce2b123425a271f090a466fdad770fb0b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3dc2e64f8dbbae2b2f34437013019a0eaaa4eb43
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423364"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557317"
 ---
 # <a name="data-degradation-layer-api-reference"></a>データ低下層 API リファレンス
 

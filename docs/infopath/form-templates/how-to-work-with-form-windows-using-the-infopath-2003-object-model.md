@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - infopath 2003 互換のフォーム テンプレート,フォーム ウィンドウ,フォーム ウィンドウ [InfoPath 2007], InfoPath 2003 互換のフォーム テンプレート
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fbcf3a04-ee0f-40a6-8edd-583ae203e2e1
 description: InfoPath フォームをプログラムから操作するときは、フォームのウィンドウにアクセスするコードを記述し、ウィンドウに含まれるアイテムの一部をカスタマイズすることができます。InfoPath 2003 互換のオブジェクト モデルでは、WindowsCollection インターフェイスと WindowObject インターフェイスを関連させて使用することにより、フォームのウィンドウにアクセスできます。
-ms.openlocfilehash: f8939fc562cf16c1bce0f6f88bba659e895254f3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b49007234d99edcf683e69fc94351e2bf4a5ffa2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427578"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557464"
 ---
 # <a name="work-with-form-windows-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム ウィンドウを操作する
 

@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - infopath 2003 互換フォーム テンプレート、一般的なタスク、フォーム テンプレート [InfoPath 2007]、2003 互換を開発するための一般的なタスク
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 578a38a9-b8d8-42e2-b98b-5e5bb85ebe05
 description: このトピックでは、Microsoft.Office.Interop.InfoPath.SemiTrust に対して動作するフォーム コードを使用してフォーム テンプレートを開発する際に生じる、一般的な疑問への回答をすばやく見つける手段を提供しています。
-ms.openlocfilehash: 1c5f72a3fa22cbe54b1290357aae1d2a68dff5b4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c94b5fbae2ddd7bb3d430f633a9aeed3c43e1426
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411576"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557499"
 ---
 # <a name="common-tasks-for-developing-form-templates-using-the-infopath-object-model"></a>InfoPath オブジェクト モデルを使用してフォーム テンプレートを開発するための一般的なタスク
 

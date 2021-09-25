@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm176660
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 091b9717b9a2e35cfc8d0c8555e28570628065ef
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: d552874568fe0e081ab4fe86e4f8a73c36281bc7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314589"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580847"
 ---
 # <a name="setlocalvar-macro-action"></a>SetLocalVar マクロ アクション
 

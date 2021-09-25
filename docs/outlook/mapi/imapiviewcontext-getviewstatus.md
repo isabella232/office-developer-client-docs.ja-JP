@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIViewContext.GetViewStatus
 api_type:
 - COM
 ms.assetid: 2e5ec914-7171-41ce-a6fe-78dd80ac32ff
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: bb8699746b3f4207ee70edd4e56d0ec6041beac2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5b8549c2abbad33baf38312f0d803f1f6f3a8244
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429018"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579895"
 ---
 # <a name="imapiviewcontextgetviewstatus"></a>IMAPIViewContext::GetViewStatus
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249260(v=office.15)
 ms:contentKeyID: 48544798
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0706f216eed6f40c313bc93541aae9d715efd2f8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 430d25a40d4a7dbf9ceade14e84ea6434673eb86
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309077"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580881"
 ---
 # <a name="running-the-address-book-sample-application"></a>アドレス帳サンプル アプリケーションの実行
 
@@ -24,7 +24,7 @@ Address Book アプリケーションを実行するには、次の手順に従�
 
 1.  Make sure that Microsoft SQL Server is running. Click **Start**, point to **Programs**, point to **Microsoft SQL Server 7.0**, and then click **Service Manager**. If there is a green arrow in the white circle, then SQL Server is running. If it is not (there will be a red square in the white circle), click **Start/Continue**.
 
-2.  Microsoft Internet Explorer 4.0 以降では、次のアドレスを入力します。 **https://***webserver***/RDS/AddressBook/AddrBook.asp**は、RDS サーバーコンポーネントがインストールされている web サーバーの名前です。 **
+2.  Microsoft Internet Explorer 4.0 以降では **、webserver** が RDS サーバー コンポーネントがインストールされている Web サーバーの名前である https://  _Webserver_*_/RDS/AddressBook/AddrBook.asp_* というアドレスを入力します。
 
-3.  その後、アドレス帳のサンプルアプリケーションでさまざまなシナリオを試してみることができます。たとえば、自分のメール名に基づいてユーザーを検索したり、"プログラムマネージャー" というタイトルのすべてのユーザーを一覧表示したり、既存のレコードを編集したりできます。 Click **Find** to fill the data grid with all the available names.
+3.  その後、アドレス帳サンプル アプリケーションで、電子メール名に基づいてユーザーを検索したり、"Program Manager" というタイトルのすべてのユーザーを一覧に表示したり、既存のレコードを編集したりなど、さまざまなシナリオを試できます。 Click **Find** to fill the data grid with all the available names.
 

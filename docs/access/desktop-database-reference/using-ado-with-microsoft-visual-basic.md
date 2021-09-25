@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249338(v=office.15)
 ms:contentKeyID: 48545130
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 26eaa93a1abbb3778a2735d50dd5022edb3023d9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 585c0bf9ef5792188ecbb372e2e009499b1cddee
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306224"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580658"
 ---
 # <a name="using-ado-with-microsoft-visual-basic"></a>Microsoft Visual Basic での ADO の使用
 
@@ -52,11 +52,11 @@ ADO プロジェクトのセットアップおよび ADO コードの作成は�
 
 4. [ **OK** ] をクリックします。
 
-## <a name="creating-ado-objects-in-visual-basic"></a>Visual Basic での ADO オブジェクトの作成
+## <a name="creating-ado-objects-in-visual-basic"></a>ADO オブジェクトを作成Visual Basic
 
 オートメーション変数を作成し、その変数に対するオブジェクトのインスタンスを作成するには、**Dim** メソッドまたは **CreateObject** メソッドを使用できます。
 
-### <a name="dim"></a>薄く
+### <a name="dim"></a>Dim
 
 **Dim** の **New** キーワードを使用すると、一度に ADO オブジェクトの作成とインスタンス化を行うことができます。
 
@@ -74,7 +74,7 @@ Set conn = New ADODB.Connection
 ```
 
 > [!NOTE]
-> プロジェクトで ADO ライブラリが正しく参照されていれば、**Dim** ステートメントで ADODB progid を明示的に使用する必要はありません。 ただし、明示的に使用することで、他のライブラリとの命名の競合を確実に回避できます。
+> プロジェクトで ADO ライブラリが正しく参照されていれば、**Dim** ステートメントで ADODB progid を明示的に使用する必要はありません。ただし、明示的に使用することで、他のライブラリとの命名の競合を確実に回避できます。
 > 
 > たとえば、同じプロジェクトに ADO と DAO に対する参照がどちらも含まれる場合は、 **Recordset** オブジェクトをインスタンス化するときに、次のコードで示すように、どちらのオブジェクト モデルを使用するのかを指定する修飾子を追加する必要があります。  
 > 
@@ -105,9 +105,9 @@ Set conn1 = CreateObject("ADODB.Connection.2.0") As Object
 
 ## <a name="handling-events"></a>イベントを処理する
 
-Microsoft Visual Basic で ADO イベントを処理するには、 **WithEvents**キーワードを使用してモジュールレベルの変数を宣言する必要があります。 この変数は、クラス モジュールの一部としてのみ宣言可能で、モジュール レベルで宣言する必要があります。 ado イベントの処理の詳細については、「 [7 章: ado イベントを処理](chapter-7-handling-ado-events.md)する」を参照してください。
+Microsoft Visual Basicで ADO イベントを処理するには、WithEvents キーワードを使用してモジュール レベルの変数 **を宣言する必要** があります。 この変数は、クラス モジュールの一部としてのみ宣言可能で、モジュール レベルで宣言する必要があります。 ADO イベントの処理の詳細については、「第 7 章: ADO イベントの処理 [」を参照してください](chapter-7-handling-ado-events.md)。
 
-## <a name="visual-basic-examples"></a>Visual Basic の例
+## <a name="visual-basic-examples"></a>Visual Basic例
 
-ADO のマニュアルには、Visual Basic での例が数多く含まれています。 詳細については、「 [Microsoft Visual Basic での ADO コードの例](ado-code-examples-in-microsoft-visual-basic.md)」を参照してください。
+ADO のマニュアルには、Visual Basic での例が数多く含まれています。 詳細については、「Microsoft Visual Basic の[ADO コード例」を参照してください](ado-code-examples-in-microsoft-visual-basic.md)。
 
