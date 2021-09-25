@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8b3aea70-a69f-a85e-83d8-c0fa2ee68836
 description: 図形の幅と高さに相対する 2 次ベジエ曲線のエンドポイントの x 座標または y 座標、または図形の幅と高さに相対する曲線のコントロール ポイントの x 座標または y 座標を格納します。
-ms.openlocfilehash: 7bdd55cfd5401c8455f09cf7d237117572d12723
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 5d40d49d7544660e1a525834aeea05d67c1a2f80
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542388"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578075"
 ---
 # <a name="cell-element-relquadbezto-row-visio-xml"></a>Cell 要素 (RelQuadBezTo 行) (Visio XML)
 

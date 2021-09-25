@@ -3,17 +3,17 @@ title: TNEF 処理
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 4d324fb3-d917-4502-b3a4-179c479deb79
 description: '�ŏI�X�V��: 2012�N7��5��'
-ms.openlocfilehash: 066ad3dfb64161e326b92fef7774d5b3b9461d8a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7e194d5c23a092ee239d4efa3dad47b7dadb732c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339600"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624042"
 ---
 # <a name="tnef-processing"></a>TNEF 処理
 

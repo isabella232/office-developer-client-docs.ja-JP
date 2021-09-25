@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.IID
 api_type:
 - COM
 ms.assetid: fa5498ab-2f8a-42f8-ba9d-1d555768594f
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 5605de7dbcc18197748713bcf909839690d7259f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c73dac549ec54d7e2dfd67a1f54031001a77684e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411597"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630818"
 ---
 # <a name="iid"></a>IID
 
@@ -38,7 +38,7 @@ typedef struct _GUID
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 GUID 構造 **を参照** してください。 
   

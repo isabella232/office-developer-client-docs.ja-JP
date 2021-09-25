@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3c0aa7a3-cc54-ffac-2c62-917b3d0a357e
 description: 楕円の弧の端点に対する x 座標または y 座標、円弧のコントロール ポイントに対する x 座標または y 座標、x 軸から楕円の長軸までの角度、または楕円の長軸と短軸との比率を格納します。
-ms.openlocfilehash: 396575c069925fe472fa3df0543e29303881dad3
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 07ae0f92a68b0f1b9b4c0051b03658a72227d053
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539829"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578110"
 ---
 # <a name="cell-element-ellipticalarcto-row-visio-xml"></a>Cell 要素 (楕円ArcTo 行) (Visio XML)
 

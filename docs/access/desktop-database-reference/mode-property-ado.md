@@ -6,22 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249365(v=office.15)
 ms:contentKeyID: 48545227
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f30dac303541b0f53d06eb7756739ff1add6ce0a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 166f214eb43cb8aafed63e1f17a013a71d51ac08
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288870"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606584"
 ---
 # <a name="mode-property-ado"></a>Mode プロパティ (ADO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 [Connection](connection-object-ado.md) オブジェクト、 [Record](record-object-ado.md) オブジェクト、または [Stream](stream-object-ado.md) オブジェクトで使用可能なデータ変更権限を示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
 [ConnectModeEnum](connectmodeenum.md) の値を設定または取得します。**Connection** の既定値は **adModeUnknown** です。**Record** オブジェクトの既定値は **adModeRead** です。基になるソースに関連付けられている **Stream** (URL により、ソース、または **Record** の既定 **Stream** として開かれたもの) の既定値は、**adModeRead** です。基になるソースに関連付けられていない (メモリ内でインスタンス化された) **Stream** の既定値は **adModeUnknown** です。
 
@@ -33,5 +33,5 @@ ms.locfileid: "32288870"
 
 このプロパティは、オブジェクトが閉じているときは読み取り/書き込み可能で、オブジェクトが開いているときは読み取り専用になります。
 
-**リモートデータサービスの使用状況**クライアント側の Connection オブジェクトで使用する場合、 **Mode**プロパティは**admodeunknown**にのみ設定できます。
+**リモート データ サービスの使用状況** クライアント側の Connection オブジェクトで使用する場合 **、Mode** プロパティは **adModeUnknown にのみ設定できます**。
 

@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPISupport.NewEntry
 api_type:
 - COM
 ms.assetid: 588d002b-8412-4ab9-9757-04ad89e0a6f8
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 3468e4a92787e440f230d60ab31f37526fe7d5e8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4b38b703437c196c0842e802897aaf02d9f87f39
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405458"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630664"
 ---
 # <a name="imapisupportnewentry"></a>IMAPISupport::NewEntry
 

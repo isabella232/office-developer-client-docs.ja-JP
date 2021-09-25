@@ -1,30 +1,30 @@
 ---
-title: Workspace メソッド (DAO)
+title: Workspace.Rollback メソッド (DAO)
 TOCTitle: Rollback Method
 ms:assetid: 10775fcc-7db2-9e14-5625-048db5c50466
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845335(v=office.15)
 ms:contentKeyID: 48543294
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 377d122821dc95b275c28ecab420748c3d120e0f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2f51bf0848e5fa75887317784f78721a4197da15
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302444"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596884"
 ---
-# <a name="workspacerollback-method-dao"></a>Workspace メソッド (DAO)
+# <a name="workspacerollback-method-dao"></a>Workspace.Rollback メソッド (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 現在のトランザクションを終了し、 **Workspace** オブジェクト内のデータベースを現在のトランザクションが開始された時点の状態に戻します。
 
 ## <a name="syntax"></a>構文
 
-*式*。戻す
+*式* .ロールバック
 
-*式***Workspace**オブジェクトを表す変数を取得します。
+*expression*: **Workspace** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 

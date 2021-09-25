@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IConverterSession.SetCharSet
 api_type:
 - COM
 ms.assetid: 25af3683-3a65-2d39-6f6e-76c8d36f866d
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 14b2904e57852c564395f4b27c9d5270afd1454a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b951eeb555f800d1e625e68806ba6b19352410b5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336660"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616832"
 ---
 # <a name="iconvertersessionsetcharset"></a>IConverterSession::SetCharSet
 
@@ -42,11 +42,11 @@ HRESULT SetCharset(
     
  _hcharset_
   
-> [in]文字列の mimeole.h で定義されている文字セットWindows メール。 特定 **の文字** セットを適用しない場合は null を指定します。 null 以外の **値の** 場合は [、MimeOleGetCodePageCharset](https://msdn.microsoft.com/library/ms714746%28VS.85%29.aspx) などの関数を使用して、文字セットのハンドルを取得します。 
+> [in]mail の mimeole.h で定義されている文字セットWindows。 特定 **の文字** セットを適用しない場合は null を指定します。 null 以外の **値の** 場合は [、MimeOleGetCodePageCharset](https://msdn.microsoft.com/library/ms714746%28VS.85%29.aspx) などの関数を使用して、文字セットのハンドルを取得します。 
     
  _csetapplytype_
   
-> [in]mimeole.h で定義されているメッセージを変換する文字セットを適用する方法をWindows メール。
+> [in]mail の mimeole.h で定義されているメッセージを変換する文字セットを適用するWindowsします。
     
 ## <a name="return-value"></a>戻り値
 

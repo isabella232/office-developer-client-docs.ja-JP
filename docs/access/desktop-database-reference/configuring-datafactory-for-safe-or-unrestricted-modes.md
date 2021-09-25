@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248915(v=office.15)
 ms:contentKeyID: 48543400
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a4313d48359499eaf249a68eb97408c8ed4ecb88
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: aa371dd98d61bd23b33c83bf4ce9b78947e10600
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295997"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577564"
 ---
 # <a name="configuring-datafactory-for-safe-or-unrestricted-modes"></a>DataFactory をセーフ モードまたはアクセス制限なしモードで構成する
 
@@ -27,11 +27,11 @@ ms.locfileid: "32295997"
 
 3.  Windows ディレクトリに msdfmap.ini ファイルがインストールされている。3 層モードで RDS を使用する場合は、必要に応じてこのファイルを事前に設定する必要があります。
 
-または、アクセス制限なしの **DataFactory** インストールを構成することもできます。 **DataFactory** は、カスタム ハンドラーがなくても直接使用できます。 接続文字列を変更してカスタム ハンドラーを使うことができますが、そうする必要はありません。 **rdsserver.datafactory**オブジェクトを使用する場合の影響の詳細については、「 [RDS アプリケーションのセキュリティ保護](securing-rds-applications.md)」を参照してください。
+または、アクセス制限なしの **DataFactory** インストールを構成することもできます。 **DataFactory** は、カスタム ハンドラーがなくても直接使用できます。 接続文字列を変更してカスタム ハンドラーを使うことができますが、そうする必要はありません。 **RDSServer.DataFactory** オブジェクトを使用する場合の影響の詳細については [、「Securing RDS Applications」を参照してください](securing-rds-applications.md)。
 
 安全に構成を行うために、レジストリ ファイル handsafe.reg がハンドラー レジストリ エントリのセットアップ用に用意されています。セーフ モードで実行するには、handsafe.reg を実行します。アクセス制限なしの構成を行うためには、レジストリ ファイル handunsf.reg がハンドラー レジストリ エントリのセットアップ用に用意されています。アクセス制限なしモードで実行するには、handunsf.reg を実行します。
 
-コマンドウィンドウで次のコマンドを入力して、web サーバー上の World Wide web Publishing サービスを停止してから再起動する必要があります。 "net stop w3svc" および "net START w3svc" です。
+handsafe.reg または handunsf.reg のいずれかを実行した後、コマンド ウィンドウに「NET STOP W3SVC」と「NET START W3SVC」というコマンドを入力して、Web サーバー上で World Wide Web Publishing Service を停止して再起動する必要があります。
 
 RDS のカスタム ハンドラー機能の使用方法の詳細については、技術記事「Using the Customization Handler Feature in RDS 2.1」 (英語) を参照してください。
 

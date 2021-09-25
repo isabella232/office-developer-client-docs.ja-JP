@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIAdviseSink.OnNotify
 api_type:
 - COM
 ms.assetid: 9eec90d3-2369-4340-86ed-0efa58918ed5
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5983ed3229f6b0053f15a614116cf5680e942587
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c05af1aa9ab38ed2501e2d3e65fe48f479128943
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407362"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616818"
 ---
 # <a name="imapiadvisesinkonnotify"></a>IMAPIAdviseSink::OnNotify
 
@@ -79,7 +79,7 @@ _lpNotifications パラメーターは_、イベント中に変更された情�
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**OnNotify の実装** は、通常、受信する通知の種類ごとに 1 つ以上のコード ブロックで構成されます。 これらのコード ブロック内で、通知への応答として必要と考えるタスクを実行します。 たとえば、ダイアログ ボックスの表示に含まれるフォルダーで **fnevObjectModified** 通知を受信するために登録するとします。 **fnevObjectModified** 通知を処理するために **OnNotify** メソッドに含めるコードブロックで、Windows メッセージをダイアログ ボックスに送信して、更新された表示を要求する場合があります。 
+**OnNotify の実装** は、通常、受信する通知の種類ごとに 1 つ以上のコード ブロックで構成されます。 これらのコード ブロック内で、通知への応答として必要と考えるタスクを実行します。 たとえば、ダイアログ ボックスの表示に含まれるフォルダーで **fnevObjectModified** 通知を受信するために登録するとします。 **fnevObjectModified** 通知を処理するために **OnNotify** メソッドに含めるコードブロックで、Windows メッセージをダイアログ ボックスに送信して、更新された表示を要求することができます。 
   
 **OnNotify** に渡される **NOTIFICATION** 構造を変更または解放しない。 構造体内のデータは **、OnNotify** が返されるまで有効です。 
   

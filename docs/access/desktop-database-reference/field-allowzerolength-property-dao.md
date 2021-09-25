@@ -1,5 +1,5 @@
 ---
-title: AllowZeroLength プロパティ (DAO)
+title: Field.AllowZeroLength プロパティ (DAO)
 TOCTitle: AllowZeroLength Property
 ms:assetid: 5103a905-9258-e088-0210-857372f41c3c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193832(v=office.15)
@@ -10,25 +10,25 @@ f1_keywords:
 - dao360.chm1052962
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: f1eb08c6079257a350a5bb92392871869e720f1b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3360304cc303dab1b94e7589797a9781852fedee
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293162"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606759"
 ---
-# <a name="fieldallowzerolength-property-dao"></a>AllowZeroLength プロパティ (DAO)
+# <a name="fieldallowzerolength-property-dao"></a>Field.AllowZeroLength プロパティ (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 長さゼロの文字列 ("") が、テキスト型またはメモ型の **[Field](field-value-property-dao.md)** オブジェクトの **[Value](field-object-dao.md)** プロパティに対する有効な設定値かどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*。AllowZeroLength
+*式* .AllowZeroLength
 
-*式***Field**オブジェクトを表す変数を取得します。
+*expression*: **Field** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
@@ -50,7 +50,7 @@ ms.locfileid: "32293162"
 <tbody>
 <tr class="odd">
 <td><p><strong>Index</strong> オブジェクト</p></td>
-<td><p>サポートされない</p></td>
+<td><p>サポートしません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong> オブジェクト</p></td>
@@ -58,11 +58,11 @@ ms.locfileid: "32293162"
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong> オブジェクト</p></td>
-<td><p>値の取得のみ可能です。</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Relation</strong> オブジェクト</p></td>
-<td><p>サポートしません。</p></td>
+<td><p>非サポート</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>TableDef</strong> オブジェクト</p></td>

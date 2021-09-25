@@ -1,22 +1,22 @@
 ---
-title: RDS メソッド (Access デスクトップデータベースリファレンス)
+title: RDS メソッド (Access デスクトップ データベースリファレンス)
 TOCTitle: RDS methods
 ms:assetid: 7f4e2a28-cf6b-4621-5352-ed983a3c7450
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249538(v=office.15)
 ms:contentKeyID: 48545899
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6797cb36821f99a2ec5aadf6e1c1c6fbedc5f3c3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 56d07d7edf8b201b3a31e19f8ba208639a27b840
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300890"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597045"
 ---
 # <a name="rds-methods"></a>RDS のメソッド
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 <br/>
 
@@ -35,7 +35,7 @@ ms.locfileid: "32300890"
 <td><p>保留中の非同期メソッド呼び出しの実行を取り消します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="cancelupdate-method-rds.md">CancelUpdate</a></p></td>
+<td><p><a href="cancelupdate-method-rds.md">CancelUpdate </a></p></td>
 <td><p><strong>Recordset</strong> オブジェクトの現在の行または新しい行に加えられたすべての変更をキャンセルします。</p></td>
 </tr>
 <tr class="odd">
@@ -55,7 +55,7 @@ ms.locfileid: "32300890"
 <td><p>指定された <strong>Recordset</strong> オブジェクトの最初、最後、次、または前のレコードに移動します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="query-method-rds.md">Query</a></p></td>
+<td><p><a href="query-method-rds.md">クエリ</a></p></td>
 <td><p>有効な SQL クエリ文字列を使用して <strong>Recordset</strong> を返します。</p></td>
 </tr>
 <tr class="even">

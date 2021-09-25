@@ -3,17 +3,17 @@ title: アドレス帳エントリのコピー
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 285abeb4-45c8-4e82-9a16-b935b4651afe
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 190c4bf12c8f5aaaf8143f59239bb53fb68046f5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ced6f77a73c8b0bb93cf464226ba254d357c098b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418744"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617021"
 ---
 # <a name="copying-address-book-entries"></a>アドレス帳エントリのコピー
 

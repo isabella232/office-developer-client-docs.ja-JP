@@ -1,24 +1,24 @@
 ---
-title: "\"Field2/式\" プロパティ (DAO)"
+title: Field2.Expression プロパティ (DAO)
 TOCTitle: Expression Property
 ms:assetid: 8ae9db2c-7460-5bfc-0dc4-3f87e5ab30ff
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197109(v=office.15)
 ms:contentKeyID: 48546205
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 603dfaa9a54ddfe769b96a57b790b4657abbeb14
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 31a60ae12870b82cf6997b2afc03f149217c3de6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292819"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606703"
 ---
-# <a name="field2expression-property-dao"></a>"Field2/式" プロパティ (DAO)
+# <a name="field2expression-property-dao"></a>Field2.Expression プロパティ (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-集計フィールドの数式を表す式を取得または設定します。 値の取得と設定が可能な文字列型 (**String**) の値です。
+演算フィールドの数式を表す式式を取得または設定します。値の取得および設定が可能です。文字列型 ( **String** ) の値を使用します。
 
 ## <a name="version-information"></a>バージョン情報
 
@@ -26,9 +26,9 @@ ms.locfileid: "32292819"
 
 ## <a name="syntax"></a>構文
 
-*式*。表現
+*式* .式
 
-*式***Field2**オブジェクトを表す変数を取得します。
+*式***Field2** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 

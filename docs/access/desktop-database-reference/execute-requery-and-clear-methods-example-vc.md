@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249803(v=office.15)
 ms:contentKeyID: 48547008
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 582acdd8500060cc340bb98d8335346f688f473a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 10a9b1562c03b728ceefebedd94e64fbdf5d201e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293288"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597353"
 ---
 # <a name="execute-requery-and-clear-methods-example-vc"></a>Execute メソッド、Requery メソッド、Clear メソッドの使用例 (VC++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a [recordset](recordset-object-ado.md), and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. The ExecuteCommand and PrintOutput functions are required for this example to run.
 

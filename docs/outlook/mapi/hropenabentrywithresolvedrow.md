@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ce3a583c-16a9-4268-9476-926d2780eae5
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2eb643e0002e2159e3197d66e021aba0bb8c126f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3df2b3f3a650eb05d83a1b5414060cb5baed6c18
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429909"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616965"
 ---
 # <a name="hropenabentrywithresolvedrow"></a>HrOpenABEntryWithResolvedRow
 

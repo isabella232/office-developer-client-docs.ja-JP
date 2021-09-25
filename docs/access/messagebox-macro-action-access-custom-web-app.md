@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bdacdafc-728b-4952-b28a-b5c1fe4b4f63
 description: MessageBox アクションを使用して、警告や情報メッセージを含むメッセージ ボックスを表示できます。 たとえば、検証マクロで MessageBox アクションを使用できます。コントロールまたはレコードがマクロ内の条件を満たさない場合、メッセージ ボックスにエラー メッセージおよび入力する必要があるデータの種類に関する指示を表示できます。
-ms.openlocfilehash: 9f45101fd269ef863e60fd8e69741e5cd7c56ef1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6909ab4a8c782ff2d5acf81f2ddb05ef2caa35c6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433452"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617266"
 ---
 # <a name="messagebox-macro-action-access-custom-web-app"></a>MessageBox マクロ アクション (Access カスタム Web アプリ)
 

@@ -3,17 +3,17 @@ title: ライブラリへのフォームのインストール
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 303c9dcb-f9b5-4cea-b5f2-3eba01aa3b09
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 08470a80153e42136922ae502252d83de0125512
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 808bf3b934e05d4f7d856986fa5ead299a247d05
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433144"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630524"
 ---
 # <a name="installing-a-form-into-a-library"></a>ライブラリへのフォームのインストール
 

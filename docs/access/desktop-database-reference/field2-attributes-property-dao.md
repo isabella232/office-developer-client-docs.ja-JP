@@ -1,5 +1,5 @@
 ---
-title: Field2 プロパティ (DAO)
+title: Field2.Attributes プロパティ (DAO)
 TOCTitle: Attributes Property
 ms:assetid: 08ae9b6b-21e4-9b7e-0852-cfc6639027a7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845025(v=office.15)
@@ -10,27 +10,27 @@ f1_keywords:
 - dao360.chm1052896
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a655cfa5c6f0427b1a26a01f01e991564ab8e387
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 767e4cf78f8c77dc1f20a5ee24336e25d05cae46
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292889"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577396"
 ---
-# <a name="field2attributes-property-dao"></a>Field2 プロパティ (DAO)
+# <a name="field2attributes-property-dao"></a>Field2.Attributes プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
 
 
-**Field2**オブジェクトの1つ以上の特性を示す値を設定または取得します。 値の取得と設定が可能な長整数型 (**Long**) の値です。
+**Field2** オブジェクトの 1 つまたは複数の特性を示す値を設定または取得します。値の取得および設定が可能です。長整数型 ( **Long**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。Attributes
+*式* .Attributes
 
-*式***Field2**オブジェクトを表す変数を取得します。
+*式***Field2** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
@@ -53,19 +53,19 @@ ms.locfileid: "32292889"
 <td><p>新しいレコードのフィールド値は、一意の長整数型の値に自動的に増分され、変更はできません (Microsoft Access ワークスペースでは、Microsoft Office Access データベース エンジン データベース テーブルでのみサポート)。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbdescending</strong></p></td>
-<td><p>フィールドを降順 (Z ～ A、100 ～ 0、ん～あ) で並べ替えるオプションで、これは、<strong>Index</strong> オブジェクトの <strong>Fields</strong> コレクションの <strong>Field2</strong> オブジェクトのみに適用されます。 この定数を省略すると、フィールドは昇順 (A ～ Z、0 ～ 100、あ～ん) で並べ替えられます。 これは、 <strong>Index</strong> フィールドおよび <strong>TableDef</strong> フィールドの既定値です (Microsoft Access ワークスペースのみ)。</p></td>
+<td><p><strong>dbDescending</strong></p></td>
+<td><p>フィールドを降順 (Z ～ A、100 ～ 0、ん～あ) で並べ替えるオプションで、これは、<strong>Index</strong> オブジェクトの <strong>Fields</strong> コレクションの <strong>Field2</strong> オブジェクトのみに適用されます。この定数を省略すると、フィールドは昇順 (A ～ Z、0 ～ 100、あ～ん) で並べ替えられます。これは、<strong>Index</strong> フィールドおよび <strong>TableDef</strong> フィールドの既定値です (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbfixedfield</strong></p></td>
+<td><p><strong>dbFixedField</strong></p></td>
 <td><p>フィールド サイズは固定です (数値フィールドの既定)。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbハイパーリンクフィールド</strong></p></td>
+<td><p><strong>dbHyperlinkField</strong></p></td>
 <td><p>フィールドにはハイパーリンク情報が含まれます (メモ型フィールドのみ)。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbsystemfield</strong></p></td>
+<td><p><strong>dbSystemField</strong></p></td>
 <td><p>レプリカのレプリケーション情報が保存される、削除できないタイプのフィールドです (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
@@ -73,7 +73,7 @@ ms.locfileid: "32292889"
 <td><p>フィールド値を変更できます。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>db変数フィールド</strong></p></td>
+<td><p><strong>dbVariableField</strong></p></td>
 <td><p>フィールド サイズは可変です (テキスト フィールドのみ)。</p></td>
 </tr>
 </tbody>
@@ -104,11 +104,11 @@ ms.locfileid: "32292889"
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong> オブジェクト</p></td>
-<td><p>値の取得のみ可能です。</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Relation</strong> オブジェクト</p></td>
-<td><p>サポートしません。</p></td>
+<td><p>非サポート</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>TableDef</strong> オブジェクト</p></td>

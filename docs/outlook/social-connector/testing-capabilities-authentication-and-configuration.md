@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 69e1f5bc-354c-4c33-84a1-b1aa10d4b650
 description: このトピックでは、機能を取得するためのテストと、アカウントの構成とソーシャル ネットワークのユーザー認証に関するシナリオについて説明します。
-ms.openlocfilehash: 218d5c564dd18e1e72820e31079011e6bb81a33c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 165ef53f2fc9a990f4f2ffc1acfcb61b51747bac
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423504"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578341"
 ---
 # <a name="testing-capabilities-authentication-and-configuration"></a>機能、認証、構成のテスト
 

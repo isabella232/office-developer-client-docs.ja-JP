@@ -1,5 +1,5 @@
 ---
-title: SourceTable プロパティ (DAO)
+title: Field.SourceTable プロパティ (DAO)
 TOCTitle: SourceTable Property
 ms:assetid: 9564ea1c-eafd-0b72-fd68-d88fcc3ea189
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197694(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052900
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a557a4941f5b4aa511489c5d057871df5fa72c08
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c2ddec42d2e459b49a119adf7ac9c197da69b20f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292987"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577403"
 ---
-# <a name="fieldsourcetable-property-dao"></a>SourceTable プロパティ (DAO)
+# <a name="fieldsourcetable-property-dao"></a>Field.SourceTable プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -27,9 +27,9 @@ ms.locfileid: "32292987"
 
 ## <a name="syntax"></a>構文
 
-*式*。SourceTable
+*式* .SourceTable
 
-*式***Field**オブジェクトを表す変数を取得します。
+*expression*: **Field** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
@@ -43,17 +43,17 @@ ms.locfileid: "32292987"
 <thead>
 <tr class="header">
 <th><p>オブジェクトの追加先</p></th>
-<th><p>使用方法</p></th>
+<th><p>使用法</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><strong>Index</strong></p></td>
-<td><p>サポートされていません</p></td>
+<td><p>サポートされません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong></p></td>
-<td><p>読み取り専用</p></td>
+<td><p>値の取得のみ可能です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong></p></td>

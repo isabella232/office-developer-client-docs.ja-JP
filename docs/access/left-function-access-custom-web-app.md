@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d2c726a3-29b2-491b-9c14-b4523f7f08f2
 description: .文字列の左端から指定した数の文字が返されます。
-ms.openlocfilehash: 6a2ba6f43701552a2dba2b983f405d4f3d898bad
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 41498cc54ec0069282bdfa68e6ca0cdfd80a1847
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424169"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596870"
 ---
 # <a name="left-function-access-custom-web-app"></a>Left 関数 (Access カスタム Web アプリ)
 

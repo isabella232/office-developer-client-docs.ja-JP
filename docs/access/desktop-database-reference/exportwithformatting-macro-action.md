@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm159503
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: fb633977fcc1b39fc2a5c0bb69523bc93c193695
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 41c2be7b412bf043f392fb5d26ba5eb2cbc9971c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293211"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606780"
 ---
 # <a name="exportwithformatting-macro-action"></a>ExportWithFormatting マクロ アクション
 
@@ -84,7 +84,7 @@ ms.locfileid: "32293211"
 
 Access のデータは形式を指定して出力すると、同じ形式を使用するプログラムでそのまま読み取ることができます。たとえば、Access のレポートをリッチ テキスト形式の文書に出力すると、その文書を Microsoft Word で開くことができます。
 
-データベース オブジェクトを HTML 形式で出力すると、そのオブジェクトのデータを含む HTML 形式のファイルが作成されます。**Template File/テンプレート ファイル**引数を使用すると、.html ファイルのテンプレートとして使用するファイルを指定できます。
+データベース オブジェクトを HTML 形式で出力すると、そのオブジェクトのデータを含む HTML 形式のファイルが作成されます。**Template File/テンプレート ファイル** 引数を使用すると、.html ファイルのテンプレートとして使用するファイルを指定できます。
 
 
             **ExportWithFormatting** アクションを使用してデータベース オブジェクトをいずれかの出力形式で出力する場合は、次の規則が適用されます。
@@ -102,5 +102,5 @@ Access のデータは形式を指定して出力すると、同じ形式を使�
 
             **ExportWithFormatting** アクションの実行結果は、[**外部データ**] タブの [**エクスポート**] にあるオプションのいずれかをクリックしたときと似ています。このアクションの引数は [**エクスポート**] ダイアログ ボックスの設定に対応しています。
 
-Visual Basic for Applications (VBA) モジュールで **ExportWithFormatting** アクションを実行するには、**DoCmd** オブジェクトの**OutputTo** メソッドを使用します。
+Visual Basic for Applications (VBA) モジュールで **ExportWithFormatting** アクションを実行するには、**DoCmd** オブジェクトの **OutputTo** メソッドを使用します。
 

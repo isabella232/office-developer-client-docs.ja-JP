@@ -10,24 +10,24 @@ f1_keywords:
 - vbaac10.chm174420
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 9f7c4ab535010dc0329673fd04721615f6eb3cd8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0afc47135ad5ba74fe8490d5046999a1111d7e3b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288884"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597213"
 ---
 # <a name="minimizewindow-macro-action"></a>MinimizeWindow マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 タブ付きドキュメントを使用せずにウィンドウを重ねて使用するように Access が構成されている場合、" **MinimizeWindow/ウィンドウの最小化** " アクションを使用してアクティブ ウィンドウを縮小し、Access ウィンドウの下部に小さなタイトル バーとして表示することができます。
 
 > [!NOTE]
 > [!メモ] このアクションは、Visual Basic Editor のコード ウィンドウには適用できません。コード ウィンドウへの影響の詳細については、 **WindowState** プロパティのトピックを参照してください。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "MinimizeWindow/ウィンドウの最小化" アクションには、引数はありません。
 

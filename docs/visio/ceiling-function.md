@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251405
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1a8d6d48-7ae3-5483-28d2-5b1706088a53
 description: 数値を 0 (ゼロ) から次の複数のインスタンスに切り上げします。 multiple を指定しない場合、数値は 0 から次の整数に丸められます。
-ms.openlocfilehash: 449f17d1b68c116cccb2635723a3f6277d0ac2a9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e544be99fe035e1394d55acb0af5a8ee78e7a06f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404128"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578117"
 ---
 # <a name="ceiling-function"></a>CEILING 関数
 
@@ -28,8 +28,8 @@ CEILING(** *number* **, ** *multiple* ** )
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number_ <br/> |必須  <br/> |**数値** <br/> |切り上げの対象となる数値を指定します。  <br/> |
-| _複数_ <br/> |必須  <br/> |**数値** <br/> |倍数から切り上へ。  <br/> |
+| _number_ <br/> |必須かどうか  <br/> |**数値** <br/> |切り上げの対象となる数値を指定します。  <br/> |
+| _複数_ <br/> |必須かどうか  <br/> |**数値** <br/> |倍数から切り上へ。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

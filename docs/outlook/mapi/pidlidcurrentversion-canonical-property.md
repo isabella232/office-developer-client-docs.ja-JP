@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidCurrentVersion
 api_type:
 - COM
 ms.assetid: 5894b98c-7d42-416d-b1b7-fb9a18abaaa3
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: ce211780eba111e1c31f3b39d815e93f65a220b6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c459dc908bdbba42740606e96a7fd8e865afa38f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327266"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630412"
 ---
 # <a name="pidlidcurrentversion-canonical-property"></a>PidLidCurrentVersion 標準プロパティ
 

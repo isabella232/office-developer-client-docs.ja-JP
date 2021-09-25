@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250238(v=office.15)
 ms:contentKeyID: 48548673
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 54ea659aa5392dd4404ffb591eba06f1f9c2910b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 656007eb55883ae4dcefdb97318744bb26fe27f4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288905"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597220"
 ---
 # <a name="microsoft-ole-db-remoting-provider-ado-service-provider"></a>Microsoft OLE DB Remoting Provider (ADO サービス プロバイダー)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 Microsoft OLE DB Remoting Provider を使用すると、クライアント コンピューター上のローカル ユーザーはリモート コンピューターのデータ プロバイダーを呼び出すことができます。リモート コンピューターのローカル ユーザーと同じように、リモート コンピューターのデータ プロバイダー パラメーターを指定します。次に、リモート コンピューターにアクセスするために Remoting Provider で使用するパラメーターを指定します。これによって、ローカル ユーザーと同じようにリモート コンピューターにアクセスすることができます。
 
@@ -74,10 +74,10 @@ OLE DB Remoting Provider を呼び出すには、接続文字列で次のキー�
 <td><p>DataFactory モードを示します。 サーバー上の <a href="datafactory-object-rdsserver.md">DataFactory</a> オブジェクトのバージョンを指定する文字列です。 このプロパティを設定した後、接続を開いて特定のバージョンの <strong>DataFactory</strong> を要求します。 要求したバージョンが使用できない場合、その前のバージョンの使用が試行されます。 前のバージョンが存在しない場合は、エラーが発生します。 <strong>DFMode</strong> で指定するバージョンが使用可能なバージョンよりも古い場合は、エラーが発生します。 このプロパティは、接続後は値の取得のみ可能です。 次の文字列値のいずれかを指定できます。</p>
 <p></p>
 <ul>
-<li><p>&quot;25&quot; -バージョン 2.5 (既定値)</p></li>
-<li><p>&quot;21&quot; -バージョン2.1</p></li>
-<li><p>&quot;20&quot; -バージョン2.0</p></li>
-<li><p>&quot;15&quot; -バージョン1.5</p></li>
+<li><p>&quot;25 &quot; - バージョン 2.5 (既定)</p></li>
+<li><p>&quot;21 &quot; - バージョン 2.1</p></li>
+<li><p>&quot;20 &quot; - バージョン 2.0</p></li>
+<li><p>&quot;15 &quot; - バージョン 1.5</p></li>
 </ul>
 <p></p></td>
 </tr>
@@ -96,7 +96,7 @@ OLE DB Remoting Provider を呼び出すには、接続文字列で次のキー�
 <li><p>15 - Version 1.5</p></li>
 </ul>
 <p></p>
-<p>DFMode &quot;の追加 = 20;&quot; <strong>msremote</strong> provider を使用する場合は、接続文字列にデータを更新するときのサーバーのパフォーマンスを向上させることができます。 この設定によって、サーバー上の <strong>RDSServer.DataFactory</strong> オブジェクトはリソース消費量の少ないモードを使用します。 ただし、この設定では次の機能は使用できません。</p>
+<p>&quot;MSRemote プロバイダーを使用する場合、接続文字列に DFMode=20 を追加すると、データを更新するときにサーバーのパフォーマンス &quot; が向上します。 <strong></strong> この設定によって、サーバー上の <strong>RDSServer.DataFactory</strong> オブジェクトはリソース消費量の少ないモードを使用します。 ただし、この設定では次の機能は使用できません。</p>
 <p></p>
 <ul>
 <li><p>パラメーター クエリを使用する。</p></li>
@@ -112,11 +112,11 @@ OLE DB Remoting Provider を呼び出すには、接続文字列で次のキー�
 </tr>
 <tr class="even">
 <td><p><strong>ハンドラー</strong></p></td>
-<td><p><a href="datafactory-object-rdsserver.md">rdsserver.datafactory</a>の機能を拡張するサーバー側のカスタマイズプログラム (またはハンドラー) の名前と、そのハンドラーで使用されるすべてのパラメーター<em>を</em>コンマ (&quot;,&quot;) で区切って指定します。 文字列型 ( <strong>String</strong> ) の値を返します。</p></td>
+<td><p><a href="datafactory-object-rdsserver.md">RDSServer.DataFactory</a>の機能を拡張するサーバー側カスタマイズ プログラム (またはハンドラー) の名前と、ハンドラーで使用されるパラメーターをコンマ (<em></em> 、 ) で区切って示します。 &quot; &quot; 文字列型 ( <strong>String</strong> ) の値を返します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Internet Timeout</strong></p></td>
-<td><p>サーバーとの間で要求をやり取りするときの最大待ち時間をミリ秒単位で示します。 既定値は 5 分です。</p></td>
+<td><p>サーバーとの間で要求をやり取りするときの最大待ち時間をミリ秒単位で示します。既定値は 5 分です。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Remote Provider</strong></p></td>
@@ -154,7 +154,7 @@ cn.Properties("Internet Timeout") = 5000
 
 ADO 2.0 では、OLE DB Remoting Provider は、[Recordset](recordset-object-ado.md) オブジェクトの **Open** メソッドの *ActiveConnection* パラメーターでのみ指定できます。ADO 2.1 以降では、[Connection](connection-object-ado.md) オブジェクトの **Open** メソッドの *ConnectionString* パラメーターでも、このプロバイダーを指定できます。
 
-**RDS.DataControl** オブジェクトの [SQL](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado) プロパティと等価な動的プロパティはありません。 代わりに、[Recordset](recordset-object-ado.md) オブジェクトの **Open** メソッドの *Source* 引数を使用します。
+**RDS.DataControl** オブジェクトの [SQL](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado) プロパティと等価な動的プロパティはありません。代わりに、[Recordset](recordset-object-ado.md) オブジェクトの **Open** メソッドの *Source* 引数を使用します。
 
 "...;Remote Provider=MS Remote;..." のように指定すると 4 層のシナリオになります。3 層を超えるシナリオについてはテストは行われておらず、必要になることもありません。
 

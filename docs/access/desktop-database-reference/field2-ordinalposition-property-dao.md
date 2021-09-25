@@ -1,5 +1,5 @@
 ---
-title: OrdinalPosition プロパティ (DAO)
+title: Field2.OrdinalPosition プロパティ (DAO)
 TOCTitle: OrdinalPosition Property
 ms:assetid: 55d89611-ad07-990d-fc33-f81d59472430
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194179(v=office.15)
@@ -10,27 +10,27 @@ f1_keywords:
 - dao360.chm1052899
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 26d37bfda90f2ab4e2627b936d3cf37b5be811d5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 65f28bfafebf145c7b995c4aecc0aa3499f2b6c5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292728"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606710"
 ---
-# <a name="field2ordinalposition-property-dao"></a>OrdinalPosition プロパティ (DAO)
+# <a name="field2ordinalposition-property-dao"></a>Field2.OrdinalPosition プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 
-**[Fields](fields-collection-dao.md)** コレクション内の**Field2**オブジェクトの相対位置を設定または取得します。 .
+[**Fields**](fields-collection-dao.md) コレクション内の **Field2** オブジェクトの相対位置を設定または取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*。OrdinalPosition
+*式* .OrdinalPosition
 
-*式***Field2**オブジェクトを表す変数を取得します。
+*式***Field2** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
@@ -54,7 +54,7 @@ ms.locfileid: "32292728"
 <tbody>
 <tr class="odd">
 <td><p><strong>Index</strong> オブジェクト</p></td>
-<td><p>サポートされない</p></td>
+<td><p>サポートしません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong> オブジェクト</p></td>
@@ -62,23 +62,23 @@ ms.locfileid: "32292728"
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong> オブジェクト</p></td>
-<td><p>値の取得のみ可能です。</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Relation</strong> オブジェクト</p></td>
-<td><p>サポートしません。</p></td>
+<td><p>非サポート</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>TableDef</strong> オブジェクト</p></td>
-<td><p>値の取得および設定が可能です。</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 </tbody>
 </table>
 
 
-通常、コレクションに追加するオブジェクトの順序位置は、そのオブジェクトを追加した順序になります。 最初に追加したオブジェクトが最初の位置 (0) に格納され、2 番目に追加したオブジェクトは 2 番目の位置 (1) に格納され、これ以降も同様です。 最後に追加されたオブジェクトは、位置を表す count –1、count プロパティの設定値で指定された**[](containers-count-property-dao.md)** コレクション内のオブジェクトの数です。
+通常、コレクションに追加するオブジェクトの順序位置は、そのオブジェクトを追加した順序になります。 最初に追加したオブジェクトが最初の位置 (0) に格納され、2 番目に追加したオブジェクトは 2 番目の位置 (1) に格納され、これ以降も同様です。 最後に追加されたオブジェクトは序数の位置カウント - 1 で、count は **[Count](containers-count-property-dao.md)** プロパティ設定で指定されたコレクション内のオブジェクトの数です。
 
-**OrdinalPosition** プロパティを使用して、コレクションに追加する順序とは異なるインデックスを新しい **Field2** オブジェクトに指定できます。 これにより、テーブル、クエリ、およびレコードセットをアプリケーションで使用するときのフィールドの順序を指定できます。 たとえば、選択\*クエリでフィールドが返される順序は、現在の**OrdinalPosition**プロパティの値によって決まります。
+**OrdinalPosition** プロパティを使用して、コレクションに追加する順序とは異なるインデックスを新しい **Field2** オブジェクトに指定できます。 これにより、テーブル、クエリ、およびレコードセットをアプリケーションで使用するときのフィールドの順序を指定できます。 たとえば、SELECT クエリでフィールドが返される順序は、現在の \* **OrdinalPosition** プロパティの値によって決まります。
 
 **OrdinalPosition** プロパティを任意の正の整数に設定することにより、レコードセットにフィールドが返される順序を永続的にリセットできます。
 
@@ -88,7 +88,7 @@ ms.locfileid: "32292728"
 
 
 > [!NOTE]
-> **[tabledef](tabledef-object-dao.md)** オブジェクトの**Fields**コレクションが更新されていない場合でも、tabledef オブジェクトから開かれた**[Recordset](recordset-object-dao.md)** 内のフィールドの順序には、 **tabledef**オブジェクトの**** **OrdinalPosition**データが反映されます。 テーブル タイプの **Recordset** には、基になるテーブルと同じ **OrdinalPosition** データが使用されますが、その他のタイプの **Recordset** には、**TableDef** オブジェクトの **OrdinalPosition** データによって指定される順序に従った、0 から始まる新しい **OrdinalPosition** データが使用されます。
+> TableDef オブジェクトの **Fields** コレクションが更新されていない場合でも **[、TableDef](tabledef-object-dao.md)** から開いた **[Recordset](recordset-object-dao.md)** のフィールドの順序は **、TableDef** オブジェクトの **OrdinalPosition** データを反映します。  テーブル タイプの **Recordset** には、基になるテーブルと同じ **OrdinalPosition** データが使用されますが、その他のタイプの **Recordset** には、**TableDef** オブジェクトの **OrdinalPosition** データによって指定される順序に従った、0 から始まる新しい **OrdinalPosition** データが使用されます。
 
 
 

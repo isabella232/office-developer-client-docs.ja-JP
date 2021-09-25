@@ -3,17 +3,17 @@ title: 受信者のコピー
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: b9a41f44-4c7e-4c57-b536-63fb85e4fae6
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 3a4fb1a3f76481bf1960c251a33911b871a8791c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c9030d9341ba9aea0ce186ba4205242e5e65b1fb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419087"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617049"
 ---
 # <a name="copying-a-recipient"></a>受信者のコピー
 

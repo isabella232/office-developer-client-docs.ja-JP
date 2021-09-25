@@ -3,17 +3,17 @@ title: 戻り値の名前付け規則
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 2c1cdd7b-82f1-46f2-a7ce-e0efe857b7cd
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 6786e1ca901215abd709a11401c3026d62c6ffc8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 80d8b9e1f38422977ff327aac90830ed7b58a96b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423616"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624287"
 ---
 # <a name="return-value-naming-convention"></a>戻り値の名前付け規則
 

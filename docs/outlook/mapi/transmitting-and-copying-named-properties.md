@@ -3,17 +3,17 @@ title: 名前付きプロパティの送信とコピー
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 37075cfc-461d-4983-9045-d9f1da6739be
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 6534e7344a62717e406c112249d26407b0852d93
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9e040277b82c0a946fbb55907ce823301351c44f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437778"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578460"
 ---
 # <a name="transmitting-and-copying-named-properties"></a>名前付きプロパティの送信とコピー
 

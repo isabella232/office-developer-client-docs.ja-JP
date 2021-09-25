@@ -1,20 +1,20 @@
 ---
-title: Field2 の始まったプロパティ (DAO)
+title: Field2.ValidateOnSet プロパティ (DAO)
 TOCTitle: ValidateOnSet Property
 ms:assetid: 07612730-8dad-4ef0-b19b-f76845973fc3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844969(v=office.15)
 ms:contentKeyID: 48543075
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 427903186cce0f2ce3adf7690682a793fb417873
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 85ccd74006cf11396bbf86aadf4225a6e0959368
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292644"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565353"
 ---
-# <a name="field2validateonset-property-dao"></a>Field2 の始まったプロパティ (DAO)
+# <a name="field2validateonset-property-dao"></a>Field2.ValidateOnSet プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -24,9 +24,9 @@ ms.locfileid: "32292644"
 
 ## <a name="syntax"></a>構文
 
-*式*。ValidateOnSet
+*式* .ValidateOnSet
 
-*式***Field2**オブジェクトを表す変数を取得します。
+*式***Field2** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 

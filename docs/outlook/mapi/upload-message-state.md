@@ -3,15 +3,15 @@ title: アップロードメッセージの状態
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7fdc1494-4f40-38bd-d363-144ca70e5906
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 61cda23557a501a2651385d192f1dc7432ef1cb5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f8ab2d0326e8948cb27f67376238caff50935ba2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433802"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578411"
 ---
 # <a name="upload-message-state"></a>アップロードメッセージの状態
 

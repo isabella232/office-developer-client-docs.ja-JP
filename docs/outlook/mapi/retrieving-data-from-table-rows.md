@@ -3,17 +3,17 @@ title: テーブル行からのデータの取得
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 19a42794-a3a2-4336-af2a-473f24431252
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2f389d26ec80b9af3ed28c5eb85b589c9cbb26c5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 902aa6b0471de78a5946b5fc89cbe87c874ce404
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405255"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624336"
 ---
 # <a name="retrieving-data-from-table-rows"></a>テーブル行からのデータの取得
 

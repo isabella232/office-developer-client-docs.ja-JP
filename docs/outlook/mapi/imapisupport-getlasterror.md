@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPISupport.GetLastError
 api_type:
 - COM
 ms.assetid: 5b4290d9-230f-416a-9644-188578565c7b
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: c34c175c43ada03e982f08a27f675448ea24a567
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 15884634ea80b48dfade4f0ef86f617b60cd6bd4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438548"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567460"
 ---
 # <a name="imapisupportgetlasterror"></a>IMAPISupport::GetLastError
 

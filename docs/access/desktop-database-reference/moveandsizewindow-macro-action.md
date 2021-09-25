@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197001(v=office.15)
 ms:contentKeyID: 48546090
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c1b127995a2f9a0af7da80e9df862259b570870e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 83d4306a7a15b42beb9fe1743b923e6a137f4bf9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288807"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597178"
 ---
 # <a name="moveandsizewindow-macro-action"></a>MoveAndSizeWindow マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 タブ付きドキュメントではなくウィンドウを重ねて使用するようにドキュメント ウィンドウ オプションを設定すると、" **MoveAndSizeWindow/ウィンドウの移動とサイズ変更** " アクションを使用して、アクティブ ウィンドウの移動またはサイズ変更を行うことができます。ドキュメント ウィンドウ オプションを設定する方法については、「注釈」セクションを参照してください。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "**MoveAndSizeWindow/ウィンドウの移動とサイズ変更**" アクションの引数は次のとおりです。
 
@@ -67,7 +67,7 @@ ms.locfileid: "32288807"
 
 タブ付きドキュメントではなくウィンドウを重ねて使用するようにアプリケーションを設定するには、次の手順を実行します。
 
-1.  [**オプション**] をクリックします。
+1.  [オプション **] をクリックします。**
 
 2.  [ **カレント データベース**] をクリックします。
 
@@ -103,20 +103,20 @@ Visual Basic for Applications (VBA) モジュールで "**MoveAndSizeWindow/ウ�
 <th><p>条件</p></th>
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>Comment</p></th>
+<th><p>コメント</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>Echo</strong></p></td>
-<td><p><strong>Echo On/エコーの設定</strong>: <strong>No/いいえ</strong></p></td>
-<td><p>画面の更新は停止しますが、マクロは実行されています。</p></td>
+<td><p><strong>Echo On/エコーの設定</strong>: <strong>いいえ</strong></p></td>
+<td><p>マクロの実行中に画面の更新を停止します。</p></td>
 </tr>
 <tr class="even">
 <td><p>IsNull([仕入先コード])</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Message/メッセージ</strong>: 表示する商品を扱う仕入先のレコードに移動し、[商品の参照] ボタンを再度クリックします。 <strong>Beep</strong>: <strong>yestype</strong>: <strong>none title</strong>: 仕入先の選択</p></td>
+<td><p><strong>Message/メッセージ</strong>: 表示する商品を扱う仕入先のレコードに移動し、[商品の参照] ボタンを再度クリックします。 <strong>Beep</strong>: <strong>YesType</strong>: <strong>NoneTitle</strong>: サプライヤーの選択</p></td>
 <td><p>[仕入先] フォームに現在の仕入先が存在しない場合、メッセージを表示します。</p></td>
 </tr>
 <tr class="odd">
@@ -134,13 +134,13 @@ Visual Basic for Applications (VBA) モジュールで "**MoveAndSizeWindow/ウ�
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>OpenForm</strong></p></td>
-<td><p><strong>フォーム名</strong>: 製品リスト<strong>ビュー</strong>: <strong>DatasheetFilter Name</strong>: <strong>Where Condition</strong>: [Supplier ID] = [Forms]![仕入先]!SupplierID<strong>データモード</strong>:<strong>読み取りのみウィンドウモード</strong>:<strong>標準</strong></p></td>
+<td><p><strong>フォーム名</strong>: 製品一 <strong>覧ビュー</strong>: <strong>データシートフィルター名</strong>: <strong>Where Condition</strong>: [Supplier ID] = [Forms]![サプライヤー]![SupplierID] <strong>データ モード</strong>: <strong>読み取り専用Window モード</strong>: <strong>標準</strong></p></td>
 <td><p>[製品リスト] フォームを開き、現在の仕入先の製品を表示します。</p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p><strong>MoveAndSizeWindow</strong></p></td>
-<td><p><strong>Right</strong>: 0.7799&quot; <strong>Down</strong>: 1.8&quot;</p></td>
+<td><p><strong>右</strong>: 0.7799 &quot; <strong>Down</strong>: 1.8&quot;</p></td>
 <td><p>[製品リスト] を [仕入先] フォームの右下に配置します。</p></td>
 </tr>
 </tbody>

@@ -3,17 +3,17 @@ title: C++ での IUnknown の実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 68519f6c-fba8-47f5-9401-316e276f770e
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 08f3f3f937320d8a986b2002c761a37f0f749227
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c64f29c91341209988f7980957468cd96ff70779
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32330178"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630552"
 ---
 # <a name="implementing-iunknown-in-c"></a>C++ での IUnknown の実装
 

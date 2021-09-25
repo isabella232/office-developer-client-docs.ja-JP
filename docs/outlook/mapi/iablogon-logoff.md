@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IABLogon.Logoff
 api_type:
 - COM
 ms.assetid: a36465e2-7be9-4bd6-8091-685f0a045aa9
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: af3c1f5135e90274c0251c5a0addf339c14f36c0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2f51e657fb3ab2c05a28af24a91c38d990b5d132
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416399"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616937"
 ---
 # <a name="iablogonlogoff"></a>IABLogon::Logoff
 

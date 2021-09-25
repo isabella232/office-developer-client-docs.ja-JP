@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm62274
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a2288d64241f3289505a8b0fafb98062830b0e97
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a9ff662ecd8c52c8caa8060e0c29a9a8f01440c4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288456"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565241"
 ---
 # <a name="onerror-macro-action"></a>OnError マクロ アクション
 
@@ -24,7 +24,7 @@ ms.locfileid: "32288456"
 
 **OnError** アクションを使用すると、マクロでエラーが発生したときに行われる処理を指定できます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 **OnError** アクションの引数は次のとおりです。
 
@@ -76,7 +76,7 @@ ms.locfileid: "32288456"
 </tr>
 <tr class="even">
 <td><p>マクロ名</p></td>
-<td><p>引数 Go が [マクロ名] に設定されている場合は、エラー処理に使用するマクロの名前を入力します。 The name you type must match a name in the <strong>Macro Name</strong> column of the current macro; you can't enter the name of a different macro object. In the example below, the <strong>ErrorHandler</strong> macro is contained in the same macro object as the <strong>OnError</strong> action. Go to 引数を [<strong>次へ</strong>] または [<strong>失敗</strong>] に設定した場合、この引数は空白にしておく必要があります。</p></td>
+<td><p>引数 Go to がマクロ名に設定されている場合は、エラー処理に使用するマクロの名前を入力します。 The name you type must match a name in the <strong>Macro Name</strong> column of the current macro; you can't enter the name of a different macro object. In the example below, the <strong>ErrorHandler</strong> macro is contained in the same macro object as the <strong>OnError</strong> action. Go to 引数を [<strong>次へ</strong>] または [<strong>失敗</strong>] に設定した場合、この引数は空白にしておく必要があります。</p></td>
 </tr>
 </tbody>
 </table>
@@ -86,11 +86,11 @@ ms.locfileid: "32288456"
 
 - **OnError** アクションは、通常はマクロの先頭に配置されますが、先頭以降に配置することもできます。このアクションによって設定されるルールは、アクションを実行するたびに適用されます。
 
-- 引数 Go to 引数を**Fail**に設定すると、マクロに " **OnError/エラー**時" アクションがない場合と同じように動作します。 つまり、エラーが発生した場合は、マクロの実行が停止され、標準的なエラー メッセージが表示されます。 [ **失敗** ] 設定値の主な用途は、マクロ内でそれ以前に設定したエラー処理を無効にすることです。
+- 引数 Go to をFail に設定すると、マクロに **OnError** アクションがない場合と同じように動作します。 つまり、エラーが発生した場合は、マクロの実行が停止され、標準的なエラー メッセージが表示されます。 [ **失敗** ] 設定値の主な用途は、マクロ内でそれ以前に設定したエラー処理を無効にすることです。
 
 ## <a name="example"></a>例
 
-次のマクロは、"OnError/**エラー**時" アクションの使用方法を示します。 この例では、" **OnError** /エラー時" アクションは、エラーが発生したときに ErrorHandler という名前のカスタムエラー処理マクロを実行するように指定します。 エラーが発生すると、CatchErrors submacro が呼び出されます。 エラー番号が2102の場合は、特定のメッセージが表示され、マクロの実行が停止します。 それ以外の場合は、エラーを説明するメッセージが表示され、マクロが一時停止して、追加のトラブルシューティングを実行できるようになります。 ErrorHandler マクロは、 **MacroError**オブジェクトを参照するメッセージボックスを表示して、エラーに関する情報を表示します。
+次のマクロは、"**OnError/エラー時**" アクションの使用例を示しています。この例では、エラーが発生したときに Access が "ErrorHandler" という名前のカスタム エラー処理マクロを実行するように、"**OnError/エラー時**" アクションが指定されています。エラーが発生すると、CatchErrors サブマクロが呼び出されます。エラー番号が 2102 の場合、特定のメッセージが表示され、マクロの実行が停止します。それ以外の場合は、エラーの内容を説明するメッセージが表示され、マクロが一時停止します。したがって、追加のトラブルシューティングを行うことができます。ErrorHandler マクロは、**MacroError** オブジェクトを参照するメッセージ ボックスを表示して、エラーに関する情報を表示します。
 
 **サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 

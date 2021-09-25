@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251387
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3864aadd-3f86-c20e-1a74-b0aaff5106f7
 description: 移動先の URL アドレス、ファイル名、または UNC パスを指定します。
-ms.openlocfilehash: 0fbb89e18a2d7a849e2369c0d41aac4a647f067b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ef893335b25fb400cbfc1f153a3fcdcd7a66be02
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438037"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578292"
 ---
 # <a name="address-cell-hyperlinks-section"></a>[Address] セル ([Hyperlinks] セクション)
 

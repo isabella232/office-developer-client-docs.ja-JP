@@ -1,32 +1,32 @@
 ---
-title: データベースプロパティ (DAO)
+title: Database.QueryTimeout プロパティ (DAO)
 TOCTitle: QueryTimeout Property
 ms:assetid: c83ca852-715a-c853-429b-80a15c3fc39b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff823170(v=office.15)
 ms:contentKeyID: 48547648
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f47d6c51079bf36cb7e1ca596a3476f1a7219c5d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 038a88305e8e670f63e11aa5dfc05c078c47bb4e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294739"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606878"
 ---
-# <a name="databasequerytimeout-property-dao"></a>データベースプロパティ (DAO)
+# <a name="databasequerytimeout-property-dao"></a>Database.QueryTimeout プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 
 ODBC データ ソースでクエリが実行される場合の、タイムアウト エラーが発生するまでに待機する秒数を指定する値を設定または取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*。QueryTimeout
+*式* .QueryTimeout
 
-*式***Database**オブジェクトを表す変数を取得します。
+*式* **Database** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 

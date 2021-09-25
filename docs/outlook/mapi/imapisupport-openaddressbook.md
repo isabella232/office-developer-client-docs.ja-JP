@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPISupport.OpenAddressBook
 api_type:
 - COM
 ms.assetid: d8da8be1-3efe-410a-bcce-49e522602d80
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 47a62b331ff9f1c96576d42797ebb23ed61cd362
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e23ff9bcf7ec5dafc32598690700a71f511fadef
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416882"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567411"
 ---
 # <a name="imapisupportopenaddressbook"></a>IMAPISupport::OpenAddressBook
 

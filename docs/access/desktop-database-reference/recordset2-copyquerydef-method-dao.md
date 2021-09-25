@@ -1,5 +1,5 @@
 ---
-title: Recordset2 の copyquerydef メソッド (DAO)
+title: Recordset2.CopyQueryDef メソッド (DAO)
 TOCTitle: CopyQueryDef Method
 ms:assetid: 36689ac0-f8a6-1f3e-4170-799141373777
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192474(v=office.15)
@@ -10,26 +10,26 @@ f1_keywords:
 - dao360.chm1053073
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 8a643dae0b67cf4f2a2a0148619d9a8f4df7e6f0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c130a63b7949dfb04f9470e0e2e4098042ea26c1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307365"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596912"
 ---
-# <a name="recordset2copyquerydef-method-dao"></a>Recordset2 の copyquerydef メソッド (DAO)
+# <a name="recordset2copyquerydef-method-dao"></a>Recordset2.CopyQueryDef メソッド (DAO)
 
 
-**適用先:** Access 2013、Office 2013 
+**適用先**: Access 2013、Office 2013 
 
-recordset の**[](querydef-object-dao.md)** プレースホルダーで表される**[recordset](recordset-object-dao.md)** オブジェクトの作成**** に使用される querydef オブジェクトを返します (Microsoft Access ワークスペースのみ)。 .
+レコードセット プレースホルダーを表す **[Recordset](recordset-object-dao.md)** オブジェクトを作成するのに使用された **QueryDef** のコピーである **[QueryDef](querydef-object-dao.md)** オブジェクトを取得します (Microsoft Access ワークスペースのみ)。 .
 
 ## <a name="syntax"></a>構文
 
-*式*。CopyQueryDef
+*式* .CopyQueryDef
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="return-value"></a>戻り値
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 keywords:
 - framework library functions [excel 2007],functions [Excel 2007], Framework library
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7d9a13fd-9a4c-423e-bb08-4a5be57c7905
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 4eeb9e5db09592e98e9afb763efaa6be18eb2f7e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e828a8a9f8724ac9012955f885238b2ca1b3dd3d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417547"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617217"
 ---
 # <a name="functions-in-the-framework-library"></a>フレームワーク ライブラリの関数
 

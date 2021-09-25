@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IProfAdmin.GetLastError
 api_type:
 - COM
 ms.assetid: bb161d7b-ae5b-4f8e-a506-8346ac5e583d
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: b6964ecde3a78bd1e9ce0ae1dcab0342c5a21a03
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 61da9b3eb173c8d33dfc0d2c29d39f03895f47c1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430774"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587889"
 ---
 # <a name="iprofadmingetlasterror"></a>IProfAdmin::GetLastError
 

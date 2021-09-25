@@ -8,15 +8,15 @@ f1_keywords:
 - xlAbort
 keywords:
 - xlabort function [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0fe71454-6b00-464b-8abf-afb209d57754
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 08ab69252520e76a5631c5e32a3970d2d95b1ff4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d19bbf949bc77a67fa84417e2eead2826c970eca
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436658"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596849"
 ---
 # <a name="xlabort"></a>xlAbort
 

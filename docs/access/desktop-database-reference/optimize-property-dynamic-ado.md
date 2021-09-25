@@ -1,27 +1,27 @@
 ---
-title: 動的プロパティを最適化する (ADO)
+title: 動的プロパティの最適化 (ADO)
 TOCTitle: Optimize dynamic property (ADO)
 ms:assetid: 2253b052-2d8a-f6f0-f8b8-f56e79d243de
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249001(v=office.15)
 ms:contentKeyID: 48543705
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 11bb7872514a828fdd97fb404f5366c35ff9a883
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9ae122b9716786d02365ed010bd25984b32cdff2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288253"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597157"
 ---
-# <a name="optimize-dynamic-property-ado"></a>動的プロパティを最適化する (ADO)
+# <a name="optimize-dynamic-property-ado"></a>動的プロパティの最適化 (ADO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 フィールドにインデックスを作成するかどうかを指定します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
 インデックスを作成するかどうかを表すブール型 (**Boolean**) の値を設定または取得します。
 

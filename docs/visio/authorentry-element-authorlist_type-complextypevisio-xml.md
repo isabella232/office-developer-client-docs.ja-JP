@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 21ca601b-27f0-b30b-a99e-56359bdf594c
 description: 図面内のコメントの作成者を識別するために使用するプロパティを指定します。
-ms.openlocfilehash: 29dc4459d0df3b914d61140cb2c5f33cc3e1306e
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: e8681a0425f7749924358ee088fd6499456b926d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537907"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578236"
 ---
 # <a name="authorentry-element-authorlist_type-complextype-visio-xml"></a>AuthorEntry 要素 (AuthorList_Type complexType) (Visio XML)
 

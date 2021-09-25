@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249031(v=office.15)
 ms:contentKeyID: 48543825
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c6668dfd40f7d0d26bcfa2ca4149acdc713e14c6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3e38f278331914804180b60c5ff1064fdd5ca22d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291930"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606664"
 ---
 # <a name="hierarchy-object-ado-md"></a>Hierarchy オブジェクト (ADO MD)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 [次元](dimension-object-ado-md.md)のメンバーを集約または "まとめる" ための 1 つの方法です。次元は 1 つ以上の階層ごとに集約できます。
 
@@ -48,7 +48,7 @@ ms.locfileid: "32291930"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>allmember</p></td>
+<td><p>AllMember</p></td>
 <td><p>最高レベルのロールアップにおける階層のメンバー。</p></td>
 </tr>
 <tr class="even">
@@ -68,7 +68,7 @@ ms.locfileid: "32291930"
 <td><p>階層の説明。</p></td>
 </tr>
 <tr class="even">
-<td><p>dimensiontype</p></td>
+<td><p>DimensionType</p></td>
 <td><p>この階層が属している次元の種類。</p></td>
 </tr>
 <tr class="odd">

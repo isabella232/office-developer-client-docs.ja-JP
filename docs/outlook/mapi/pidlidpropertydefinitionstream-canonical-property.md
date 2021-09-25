@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidPropertyDefinitionStream
 api_type:
 - COM
 ms.assetid: ead35049-e60e-4b46-bf12-f73d77cd36b2
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: b5ddb87111cfb0039cb1150338945615bbd5afc5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 2ba6fc19d52e0dbc54c863e0906bf8ff56b512a2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315940"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616678"
 ---
 # <a name="pidlidpropertydefinitionstream-canonical-property"></a>PidLidPropertyDefinitionStream 標準プロパティ
 
@@ -47,7 +47,7 @@ ms.locfileid: "32315940"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連するプロトコル仕様への参照Exchange Server提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
 ### <a name="header-files"></a>ヘッダー ファイル
 
@@ -59,7 +59,7 @@ Mapidefs.h
 
 
 
-[Outlook のアイテムとフィールド](outlook-items-and-fields.md)
+[Outlookアイテムとフィールド](outlook-items-and-fields.md)
   
 [新しいフィールドの定義をUser-Definedする](how-to-add-a-definition-for-a-new-user-defined-field.md)
   

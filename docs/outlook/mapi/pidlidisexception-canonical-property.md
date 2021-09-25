@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidIsException
 api_type:
 - COM
 ms.assetid: 802321fb-4261-4c3e-9de3-8b4f490dae13
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 18dfa8a5936902afe0272274f7a48d01b28f94f3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 18c2a4f3534e3dfabc4401f275a59ba9c270ac00
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315450"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616706"
 ---
 # <a name="pidlidisexception-canonical-property"></a>PidLidIsException 標準プロパティ
 
@@ -45,7 +45,7 @@ FALSE の値は、定期的な系列または 1 つのインスタンスを表�
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連するプロトコル仕様への参照Exchange Server提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
 [[MS-OXOCAL] ](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   

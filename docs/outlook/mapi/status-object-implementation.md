@@ -3,17 +3,17 @@ title: 状態オブジェクトの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 48fd3e28-c2d2-474d-9487-5e2f08ca7319
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: e97efb70716ffbd7fa98f980ce8520cfcb988532
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6e8ae261ff88d99594badc314fdac731257360d7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336338"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624140"
 ---
 # <a name="status-object-implementation"></a>状態オブジェクトの実装
 

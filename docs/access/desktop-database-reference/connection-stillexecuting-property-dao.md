@@ -1,28 +1,28 @@
 ---
-title: StillExecuting プロパティ (DAO)
+title: Connection.StillExecuting プロパティ (DAO)
 TOCTitle: StillExecuting Property
 ms:assetid: 0121f98a-cc23-5b5e-9a75-28307404a9a3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844743(v=office.15)
 ms:contentKeyID: 48542927
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 616e2bc6e374d7aba17c5cd07030469d8941014c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ae163ddcd61486259a43ba8873090a567bacd71d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295794"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577543"
 ---
-# <a name="connectionstillexecuting-property-dao"></a>StillExecuting プロパティ (DAO)
+# <a name="connectionstillexecuting-property-dao"></a>Connection.StillExecuting プロパティ (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*。StillExecuting
+*式* .StillExecuting
 
-*式***Connection**オブジェクトを表す変数を取得します。
+*式***Connection** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 

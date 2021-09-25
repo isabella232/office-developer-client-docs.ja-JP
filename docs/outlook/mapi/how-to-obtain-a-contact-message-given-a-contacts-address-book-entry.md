@@ -3,15 +3,15 @@ title: 連絡先アドレス帳エントリを指定して連絡先メッセー�
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a263894b-b3da-f1e4-a7da-ca3695bddc94
 description: '最終更新日: 2013 年 8 月 13 日'
-ms.openlocfilehash: be988a3036c2d882f65e2e588cc9a40bfda146a5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d4f56314dc8b2acac859f519ac2e15e219011b27
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437792"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616972"
 ---
 # <a name="obtain-a-contact-message-given-a-contacts-address-book-entry"></a>連絡先アドレス帳エントリを指定して連絡先メッセージを取得する
 

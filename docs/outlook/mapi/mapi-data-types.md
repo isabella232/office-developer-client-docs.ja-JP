@@ -5,17 +5,17 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 3d314d4e-553b-4767-a64a-b9cf1839de52
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: e09e77020d3f2c45ec4033c6945c21850aa1a5bc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 54fba33f229f3b68bd40aea85c695ec624e36644
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408797"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567268"
 ---
 # <a name="mapi-data-types"></a>MAPI のデータ型
 
@@ -27,7 +27,7 @@ ms.locfileid: "33408797"
   
 ||
 |:-----|
-|[BOOKMARK](bookmark.md) <br/> |
+|[ブックマーク](bookmark.md) <br/> |
 |[DNHIER](dnhier.md) <br/> |
 |[DNTBL](dntbl.md) <br/> |
 |[DNTBLE](dntble.md) <br/> |

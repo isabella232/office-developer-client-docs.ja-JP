@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPITable.GetRowCount
 api_type:
 - COM
 ms.assetid: 44a12c92-7462-4acf-9520-5d4c2d7f1d47
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: b13bf3bdd8392efc42ad189e48dffad8636f0708
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ebb926c340b194aae06bb057edf5a4bd1efe20ea
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425604"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630650"
 ---
 # <a name="imapitablegetrowcount"></a>IMAPITable::GetRowCount
 

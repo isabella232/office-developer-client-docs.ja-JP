@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250240(v=office.15)
 ms:contentKeyID: 48548686
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ade2e6eb2d54a686e4e1fa0537ec4573ee610d16
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1368d6678b0aa1c18a914927c32bb5fda91786cb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288260"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597150"
 ---
 # <a name="optimize-property-example-vb"></a>Optimize プロパティの使用例 (VB)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-この例では、[Field](field-object-ado.md) オブジェクトの動的 Optimize プロパティの機能を示します。 ***Pubs*** データベース内の ***Authors*** テーブルの ***zip*** フィールドには、インデックスが作成されていません。 **zip** フィールドの [Optimize](optimize-property-dynamic-ado.md) プロパティを ***True*** に設定すると、ADO によってインデックスが作成され、[Find](find-method-ado.md) メソッドのパフォーマンスが向上します。
+この例では、[Field](field-object-ado.md) オブジェクトの動的 Optimize プロパティの機能を示します。 Pubs **データベースの** _*_Authors_*_ テーブルの * _*_zip __*_ フィールドはインデックス付けされません。 Zip [フィールドの Optimize](optimize-property-dynamic-ado.md)プロパティを **** _ *True** に設定すると、ADO は Find メソッドのパフォーマンスを向上させるインデックスを [作成できます](find-method-ado.md)。
 
 ```vb 
  

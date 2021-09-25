@@ -1,28 +1,28 @@
 ---
 title: IMAPIWaitResult::End
 manager: lindalu
-ms.date: 04/26/2021
+ms.date: 04/27/2021
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIWaitResult.End
 api_type:
 - COM
 ms.assetid: 7463c9e8-d065-4cc3-ac01-d428b57bbc88
 description: IMAPIWaitResult::End
-Last modified: April 26, 2021
-ms.openlocfilehash: 3432bf3b71fa7e15cb4621d461a8d4bbe962f1ba
-ms.sourcegitcommit: 289cececd9fa38a3f4b8a0d7fd1f86adb6be9689
+Last modified: April 27, 2021
+ms.openlocfilehash: 7cc5e122f71399232c07d94a13598b0c9a6fed31
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52062033"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630559"
 ---
 # <a name="imapiwaitresultend"></a>IMAPIWaitResult::End
   
-**適用対象 :** Outlook 2013 |Outlook 2016 |2019
+**適用対象 :** Outlook 2013 |Outlook 2016 |Outlook 2019
 
 このスレッドで BLOCKING 呼び出しを開始します。指定したミリ秒数が経過するか、MAPI が初期化された場合に返されます。 INFINITE は、無限の待機に使用できます。
 
@@ -52,6 +52,6 @@ HRESULT_FROM_WIN32(ERROR_TIMEOUT)
 
 [IMAPIInitMonitor::BeginWait](imapiinitmonitor-beginwait.md)
 
-[CreateMAPIInitializationMonitor](createmapiinitializationmonitor.md)
-
 [IMAPIWaitResult](imapiwaitresultiunknown.md)
+
+[CreateMAPIInitializationMonitor](createmapiinitializationmonitor.md)

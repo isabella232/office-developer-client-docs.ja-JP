@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248901(v=office.15)
 ms:contentKeyID: 48543348
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2f2e409a7d158ba04e79d300eaacf9edf8cf5622
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e73c80a288e59d62cccff189908bf511243f98c1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296620"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606955"
 ---
 # <a name="catalog-activeconnection-property-example-vb"></a>Catalog の ActiveConnection プロパティの使用例 (VB)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 [ActiveConnection](activeconnection-property-adox.md) プロパティを有効に設定すると、開いている接続によってカタログが開かれます。開いたカタログから、そのカタログに含まれるスキーマ オブジェクトにアクセスできます。
 

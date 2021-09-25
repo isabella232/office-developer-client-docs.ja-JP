@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidEmail1OriginalEntryId
 api_type:
 - COM
 ms.assetid: e618213a-fad1-4559-a1df-5cdf4ea1637b
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: dfbb5206d0b87ce994c8137afa8b90440ceae8cc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a46ee0b5dd7031c2c543c73167bd5634620956df
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335029"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587763"
 ---
 # <a name="pidlidemail1originalentryid-canonical-property"></a>PidLidEmail1OriginalEntryId 標準プロパティ
 

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 021536b9-6724-4b8a-35c2-966e456e5232
 description: スプラインの 2 番目のコントロール ポイントに対するx 座標または y 座標、スプラインの 2 番目のノット、最初のノット、最後のノット、またはスプラインの角度を格納します。
-ms.openlocfilehash: e3a99818d897af21e3064e0fc92d9d56ffcf5a15
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 2c6a5caa7ecbc087e9623a789247e9d0f6c23b33
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539356"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578047"
 ---
 # <a name="cell-element-splinestart-row-visio-xml"></a>Cell 要素 (SplineStart 行) (Visio XML)
 

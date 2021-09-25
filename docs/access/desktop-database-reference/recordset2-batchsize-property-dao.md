@@ -1,29 +1,29 @@
 ---
-title: Recordset2 プロパティ (DAO)
+title: Recordset2.BatchSize プロパティ (DAO)
 TOCTitle: BatchSize Property
 ms:assetid: fa7f12f6-36c8-5aad-31d2-668cfe46f9f7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837054(v=office.15)
 ms:contentKeyID: 48548846
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f615823f99e2fdaa50a051d89a90c8f85a6ec841
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 15d43b25a28c900ecd8b817a961fba7498153548
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307470"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596996"
 ---
-# <a name="recordset2batchsize-property-dao"></a>Recordset2 プロパティ (DAO)
+# <a name="recordset2batchsize-property-dao"></a>Recordset2.BatchSize プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*。BatchSize
+*式* .BatchSize
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 

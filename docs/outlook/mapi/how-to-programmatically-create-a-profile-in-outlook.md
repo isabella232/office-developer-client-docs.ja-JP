@@ -3,15 +3,15 @@ title: Outlook でプログラムによりプロファイルを作成する
 manager: soliver
 ms.date: 06/02/2016
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2a8561a9-df09-453a-b415-c45910625870
 description: "���̃g�s�b�N�ł́A�v���O������g�p���āA�v���t�@�C�� �I�u�W�F�N�g��emsuid ] �Z�N�V������ MAPI �v���p�e�B��ǉ����� Outlook 2016 �Ńv���t�@�C����X�V������@�ɂ\x82��Đ�����܂��B"
-ms.openlocfilehash: 85d084705c1e36f5fe3b0ed268094f86b38d6383
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 30373bba054e25ad4c3288cbcdfcb1779df93471
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345942"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616979"
 ---
 # <a name="programmatically-create-a-profile-in-outlook"></a>Outlook でプログラムによりプロファイルを作成する
 

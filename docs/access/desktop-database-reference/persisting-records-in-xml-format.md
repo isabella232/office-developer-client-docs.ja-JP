@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249545(v=office.15)
 ms:contentKeyID: 48545924
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 10a5651c74580950810211c4f71e19fc80a16a95
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fce9b0c6657adcf627f600a39309ec23c1568ba2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287567"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606549"
 ---
 # <a name="persisting-records-in-xml-format"></a>XML 形式でのレコードの永続化
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ADTG 形式と同様に、XML 形式での **Recordset** の保存は、Microsoft OLE DB Persistence Provider で実装されます。このプロバイダーは、保存された XML ファイル、または ADO により生成されたスキーマ情報を含むストリームから前方スクロール型の読み取り専用行セットを生成します。同様に、プロバイダーは、ADO **Recordset** を取得し、XML を生成し、ファイルまたは COM **IStream** インターフェイスを実装する任意のオブジェクトに保存できます (実際には、ファイルも **IStream** をサポートするオブジェクトの一例です)。バージョン 2.5 以降の場合、ADO は Microsoft XML Parser (MSXML) に依存して XML を **Recordset** に読み込むため、msxml.dll が必要になります。バージョン 2.5 の場合、MSXML は Internet Explorer 5 に組み込まれて提供されています。バージョン 2.6 の場合、MSXML は SQL Server 2000 に組み込まれて提供されています。
 
@@ -55,7 +55,7 @@ rs.Open "titles.sav",,,,adCmdFile
 rs2.open s 
 ```
 
-ADO では、常に **Recordset** オブジェクト全体が保存されます。 **Recordset** オブジェクトの行のサブセットのみを保存する場合は、 **Filter** メソッドを使用して行を限定するか、または選択句を変更します。 ただし、**フィルター**メソッドを使用して行のサブセットを保存するには、クライアント側のカーソル (**cursor** = **adUseClient**) を使用して**Recordset**オブジェクトを開く必要があります。 たとえば、文字 "b" で始まるタイトルを取得するには、開いている **Recordset** オブジェクトに次のフィルターを適用します。
+ADO では、常に **Recordset** オブジェクト全体が保存されます。 **Recordset** オブジェクトの行のサブセットのみを保存する場合は、 **Filter** メソッドを使用して行を限定するか、または選択句を変更します。 ただし、行のサブセットを保存するために **Filter** メソッドを使用するには、クライアント側カーソル **(CursorLocation**  =  **adUseClient)** を使用して Recordset オブジェクトを開く必要があります。 たとえば、文字 "b" で始まるタイトルを取得するには、開いている **Recordset** オブジェクトに次のフィルターを適用します。
 
 ```vb 
  

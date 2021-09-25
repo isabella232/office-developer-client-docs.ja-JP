@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 30f50a94-88dc-41a3-bb46-45c92d6817a4
 description: ベベルが構成されるマテリアルの種類を指定します。
-ms.openlocfilehash: b8efaa1f84594c803c79be02cd88dda1a5346dc7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 31c062ffedc44b015f5a2329b4ca60f872a8361f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414586"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578152"
 ---
 # <a name="bevelmaterialtype-cell-bevel-properties-section"></a>[BevelMaterialType] セル ([ベベルのプロパティ] セクション)
 
@@ -24,12 +24,12 @@ ms.locfileid: "33414586"
 |1  <br/> |つや消し  <br/> |
 |2  <br/> |つや消し (明るめ)  <br/> |
 |3  <br/> |プラスチック  <br/> |
-|4  <br/> |メタル  <br/> |
+|4   <br/> |メタル  <br/> |
 |5  <br/> |濃いエッジ  <br/> |
-|6  <br/> |ぼかし  <br/> |
-|7  <br/> |[Flat/なし]  <br/> |
-|8  <br/> |ワイヤーフレーム  <br/> |
-|9  <br/> |パウダー  <br/> |
+|6   <br/> |ぼかし  <br/> |
+|7   <br/> |[Flat/なし]  <br/> |
+|8   <br/> |ワイヤーフレーム  <br/> |
+|9   <br/> |パウダー  <br/> |
 |10  <br/> |透明パウダー  <br/> |
 |11  <br/> |Clear  <br/> |
    

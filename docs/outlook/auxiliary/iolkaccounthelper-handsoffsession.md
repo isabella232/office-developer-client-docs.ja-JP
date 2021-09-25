@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9f71fdef-5df5-0892-b64c-293a2f22f5c3
 description: IOlkAccountHelper::GetMapiSession によって返された MAPI セッション オブジェクトを解放します。
-ms.openlocfilehash: c481cee1ecb8c2bd3997cdee8ae86c9c3b5a712e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3909d65d516d2b2da8e215bf5504e0ab64faa374
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418632"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617119"
 ---
 # <a name="iolkaccounthelperhandsoffsession"></a>IOlkAccountHelper::HandsOffSession
 

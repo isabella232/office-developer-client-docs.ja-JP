@@ -1,31 +1,31 @@
 ---
-title: Field プロパティ (DAO)
+title: Field.Value プロパティ (DAO)
 TOCTitle: Value Property
 ms:assetid: 6c0f9a8d-f51a-b8cf-8830-f8d960a1d08c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195493(v=office.15)
 ms:contentKeyID: 48545465
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a9b51bb4e08546531f95e3795074f90b5d94d4c7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 305b94655d46dcbd089f1bfde5b2b0482fdde23f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292924"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597304"
 ---
-# <a name="fieldvalue-property-dao"></a>Field プロパティ (DAO)
+# <a name="fieldvalue-property-dao"></a>Field.Value プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-オブジェクトの値を設定または取得します。 値の取得と設定が可能なバリアント型 (**Variant**) の値です。
+オブジェクトの値を設定します。値の取得および設定が可能です。バリアント型 ( **Variant**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。金額
+*式* .値
 
-*式***Field**オブジェクトを表す変数を取得します。
+*expression*: **Field** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 

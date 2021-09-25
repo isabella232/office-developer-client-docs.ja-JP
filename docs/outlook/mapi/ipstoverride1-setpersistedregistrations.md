@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IPSTOVERRIDE1.SetPersistedRegistrations
 api_type:
 - COM
 ms.assetid: 5f4b62db-a759-41a2-9bea-29fc04b2962b
 description: '最終更新日: 2011 年 11 月 08 日'
-ms.openlocfilehash: 6583765d4df7c7bfae9e7a62606beaa857874954
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0d5ebfe46d34c8ba2381900d445f47bd5ea08215
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408349"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587861"
 ---
 # <a name="ipstoverride1setpersistedregistrations"></a>IPSTOVERRIDE1::SetPersistedRegistrations
 

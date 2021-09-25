@@ -1,5 +1,5 @@
 ---
-title: Field プロパティ (DAO)
+title: Field.Size プロパティ (DAO)
 TOCTitle: Size Property
 ms:assetid: 15e25201-87b6-f62f-ff18-259414a47891
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845510(v=office.15)
@@ -10,27 +10,27 @@ f1_keywords:
 - dao360.chm1052878
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 16ce8a9e63c18ded2738035f23e9a1baeff4cc8c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d0651e41cb03e5b689093cea5e33ba95d9d8684a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293017"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597318"
 ---
-# <a name="fieldsize-property-dao"></a>Field プロパティ (DAO)
+# <a name="fieldsize-property-dao"></a>Field.Size プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 
 **[Field](field-object-dao.md)** オブジェクトの最大サイズをバイト数で示す値を設定または取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*。サイズ
+*式* .サイズ
 
-*式***Field**オブジェクトを表す変数を取得します。
+*expression*: **Field** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
@@ -48,21 +48,21 @@ ms.locfileid: "32293017"
 <thead>
 <tr class="header">
 <th><p>オブジェクトの追加先</p></th>
-<th><p>使用方法</p></th>
+<th><p>使用法</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><strong>Index</strong></p></td>
-<td><p>サポートされていません</p></td>
+<td><p>サポートされません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong></p></td>
-<td><p>読み取り専用</p></td>
+<td><p>値の取得のみ可能です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong></p></td>
-<td><p>読み取り専用</p></td>
+<td><p>値の取得のみ可能です。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Relation</strong></p></td>
@@ -78,7 +78,7 @@ ms.locfileid: "32293017"
 
 テキスト型 (Text) 以外のデータ型で **Field** オブジェクトを作成する場合、 **[Type](field-type-property-dao.md)** プロパティの設定によって **Size** プロパティの設定が自動的に決まり、ユーザーが設定する必要はありません。ただし、テキスト型 (Text) のデータ型を持つ **Field** オブジェクトの場合、 **Size** を最大テキスト サイズ以内の任意の整数 (Microsoft Access データベースでは 255) に設定できます。サイズを指定しない場合、フィールドはデータベースで許容される最大サイズになります。
 
-ロング バイナリ型 (Long Binary) とメモ型 (Memo) の **Field** オブジェクトの場合、**Size** は常に 0 に設定されます。 特定のレコードのデータのサイズを確認するには、 **Field**オブジェクトの**[FieldSize](field-fieldsize-property-dao.md)** プロパティを使用します。 ロング バイナリ型 (Long Binary) またはメモ型 (Memo) のフィールドの最大サイズを制限するのは、システム リソースまたはデータベースが許可する最大サイズのみです。
+ロング バイナリ型 (Long Binary) とメモ型 (Memo) の **Field** オブジェクトの場合、**Size** は常に 0 に設定されます。 特定の **[レコード内の](field-fieldsize-property-dao.md)** データのサイズを決定するには **、Field** オブジェクトの FieldSize プロパティを使用します。 ロング バイナリ型 (Long Binary) またはメモ型 (Memo) のフィールドの最大サイズを制限するのは、システム リソースまたはデータベースが許可する最大サイズのみです。
 
 ## <a name="example"></a>例
 

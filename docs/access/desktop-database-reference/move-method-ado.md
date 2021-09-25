@@ -1,28 +1,28 @@
 ---
-title: Move メソッド-ActiveX データオブジェクト (ADO)
+title: Move メソッド - ActiveX データ オブジェクト (ADO)
 TOCTitle: Move method (ADO)
 ms:assetid: 1f858654-5fa3-273d-7cdc-574c5f09a420
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248982(v=office.15)
 ms:contentKeyID: 48543645
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6c7db661e590bc21605d9c289b1de6d4ae9f46e2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 003c60e021ab773e4540af4739f5cf260048b63b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288835"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606563"
 ---
 # <a name="move-method-ado"></a>Move メソッド (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 [Recordset](recordset-object-ado.md) オブジェクトでカレント レコードの位置を移動します。
 
 ## <a name="syntax"></a>構文
 
-*recordset*。Move *NumRecords*, *Start*
+*recordset*.Move *NumRecords*, *Start*
 
 ## <a name="parameters"></a>パラメーター
 
@@ -37,7 +37,7 @@ ms.locfileid: "32288835"
 
 *NumRecords* 引数がゼロより大きい場合、現在のレコードの位置は前方 (**Recordset** の末尾方向) に移動します。*NumRecords* がゼロより小さい場合、現在のレコードの位置は後方 (**Recordset** の先頭方向) に移動します。
 
-**move**メソッドを呼び出して、カレントレコードの位置を最初のレコードの前に移動すると、ADO は現在のレコードを recordset の最初のレコードの前の位置 ([BOF](bof-eof-properties-ado.md)が**True**) に設定します。 **BOF** プロパティが既に **True** の場合、後方へ移動しようとすると、エラーが発生します。
+Move 呼び **出** しで現在のレコード位置を最初のレコードの前の位置に移動する場合、ADO はレコードセットの最初のレコードの前の位置に現在のレコードを設定します [(BOF](bof-eof-properties-ado.md)は **True)。** **BOF** プロパティが既に **True** の場合、後方へ移動しようとすると、エラーが発生します。
 
 **Move** メソッドを呼び出してカレント レコードの位置を最後のレコードの後に移動しようとすると、カレント レコードがレコードセットの最後のレコードの後に設定され、[EOF](bof-eof-properties-ado.md) が **True** になります。**EOF** プロパティが既に **True** の場合、前方へ移動しようとすると、エラーが発生します。
 

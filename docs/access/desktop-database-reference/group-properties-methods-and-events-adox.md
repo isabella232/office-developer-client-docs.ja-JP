@@ -1,22 +1,22 @@
 ---
-title: Group のプロパティ、メソッド、およびイベント (ADOX)
+title: グループ のプロパティ、メソッド、およびイベント (ADOX)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: c1597b02-a9db-662e-3842-3444c63406cc
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249939(v=office.15)
 ms:contentKeyID: 48547526
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a572a2aa5e866eebfbfea079ce462b02e2efa9cb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 818d12b759647d80b5b3b266c109a74990f3f1d3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292105"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606667"
 ---
-# <a name="group-properties-methods-and-events-adox"></a>Group のプロパティ、メソッド、およびイベント (ADOX)
+# <a name="group-properties-methods-and-events-adox"></a>グループ のプロパティ、メソッド、およびイベント (ADOX)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ## <a name="propertiescollections"></a>プロパティ/コレクション
 
@@ -24,7 +24,7 @@ ms.locfileid: "32292105"
 - [Properties コレクション](properties-collection-ado.md)
 - [Users コレクション](users-collection-adox.md)
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>Methods
 
 - [GetPermissions メソッド](getpermissions-method-adox.md)
 - [SetPermissions メソッド](setpermissions-method-adox.md)

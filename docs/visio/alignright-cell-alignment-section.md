@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251297
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c6d298a4-1602-a53c-bb5d-2ef16b43f722
 description: 親図形の原点を基準として、図形の右辺を揃えるための垂直ガイドまたはガイド点の水平方向の位置を指定します。
-ms.openlocfilehash: 558808908107a3e42d9d6e4a6fc1cf177150edb9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 121ad494745d7200cbe193c69a1a2d316bf9392e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439773"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616055"
 ---
 # <a name="alignright-cell-alignment-section"></a>[AlignRight] セル ([Alignment] セクション)
 

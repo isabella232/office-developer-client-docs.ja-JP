@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAttachAdditionalInformation
 api_type:
 - HeaderDef
 ms.assetid: 75f092f2-ee3f-45c2-a46f-e1dff2e22b2e
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: e0a8f49f96bf4c4f8518dddbe52e8692f7b6645a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d49e6663aa77fba9c2940ed614af4314e6fca6af
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616580"
 ---
 # <a name="pidtagattachadditionalinformation-canonical-property"></a>PidTagAttachAdditionalInformation 標準プロパティ
 

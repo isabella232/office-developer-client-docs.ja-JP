@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2e502d28-ae09-49d9-a35a-5d77acdcd6f4
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 4775de0707eb90549f07525e3aa54ec5842f6050
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: df8b5dd061613b75627e6c1c9208efb81a531cdd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438163"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616755"
 ---
 # <a name="mapioffline_aggregateinfo"></a>MAPIOFFLINE_AGGREGATEINFO
 
@@ -32,7 +32,7 @@ typedef struct
 } MAPIOFFLINE_AGGREGATEINFO;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulSize**
   

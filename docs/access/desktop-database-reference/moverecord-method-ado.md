@@ -6,38 +6,38 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250217(v=office.15)
 ms:contentKeyID: 48548588
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c9937f0ab32c5dba0e4435fdc0ba7e111f5651dc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d5c3abebc80dea7d5871faa7926cf81bdd9a681f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288680"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606570"
 ---
 # <a name="moverecord-method-ado"></a>MoveRecord メソッド (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
  
 [Record](record-object-ado.md) で表されるエンティティを別の場所に移動します。
 
 ## <a name="syntax"></a>構文
 
-*レコード*。MoveRecord (*Source*、 *Destination*、 *UserName*、 *Password*、 *Options*、 *Async*)
+*Record*.MoveRecord (*Source*, *Destination*, *UserName*, *Password*, *Options*, *Async*)
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
 |*Source* |省略可能です。移動する **Record** を示す URL を含む文字列型 (**String**) の値を指定します。*Source* を省略するか、または空文字列を指定すると、この **Record** で表されるオブジェクトが移動されます。たとえば、**Record** がファイルを表している場合は、ファイルの内容が *Destination* で指定した場所に移動されます。|
-|*Destination* |省略可能です。 *Source* の移動先の場所を指定する URL を含む文字列型 (**String**) の値を指定します。|
-|*UserName* |省略可能です。 *Destination* へのアクセス権が設定されている場合、アクセス権を持つユーザー ID を含む、文字列型 (**String**) の値を指定します。|
-|*Password* |省略可能です。 *UserName* を確認するためのパスワードを含む、文字列型 (**String**) を指定します。|
+|*宛先* |省略可能です。*Source* の移動先の場所を指定する URL を含む文字列型 (**String**) の値を指定します。|
+|*UserName* |省略可能です。*Destination* へのアクセス権が設定されている場合、アクセス権を持つユーザー ID を含む、文字列型 (**String**) の値を指定します。|
+|*Password* |省略可能です。*UserName* を確認するためのパスワードを含む、文字列型 (**String**) を指定します。|
 |*Options* |省略可能です。[MoveRecordOptionsEnum](moverecordoptionsenum.md) 値を指定します。既定値は、 **adMoveUnspecified** です。このメソッドの動作を指定します。|
-|*Async* |省略可能です。 **ブール**値。 **True**の場合、この操作は非同期であることを指定します。|
+|*Async* |オプション。 True **の** 場合 **、この操作** を非同期に指定するブール値。|
 
 ## <a name="return-value"></a>戻り値
 
-文字列型 (**String**) の値を返します。 通常は、*Destination* の値が返されます。 ただし、実際に返される値はプロバイダーによって異なります。
+文字列型 (**String**) の値を返します。通常は、*Destination* の値が返されます。ただし、実際に返される値はプロバイダーによって異なります。
 
 ## <a name="remarks"></a>注釈
 
@@ -53,6 +53,6 @@ Internet Publishing Provider を使用して移動されるファイルでは、
 **Recordset** から取得した [Record](recordset-object-ado.md) の場合、ファイルまたはディレクトリの移動後の場所は、 **Recordset** にすぐには反映されません。反映するには、 **Recordset** をいったん閉じてもう一度開いてください。
 
 > [!NOTE]
-> [!メモ] http スキームを使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、「[絶対 url と相対 url](absolute-and-relative-urls.md)」を参照してください。
+> [!メモ] http スキームを使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、「絶対 URL と [相対 URL」を参照してください](absolute-and-relative-urls.md)。
 
 

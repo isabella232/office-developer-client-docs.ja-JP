@@ -3,17 +3,17 @@ title: メッセージまたはフォルダーのコピーまたは移動
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 72290fd3-00d7-4055-bbfa-0c47b6e0f62d
 description: '最終更新日: 2011 年 11 月 08 日'
-ms.openlocfilehash: c5e92c44d7078560ed84d72b3477d5cf2e809353
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c06fee83d217339d48d66963a721143c9d26e25b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413501"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567733"
 ---
 # <a name="copying-or-moving-a-message-or-a-folder"></a>メッセージまたはフォルダーのコピーまたは移動
   

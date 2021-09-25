@@ -5,17 +5,17 @@ ms.date: 04/27/2021
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 2e5dcbb4-1ae6-4082-ba8f-c677e3265d59
 description: '最終更新日: 2021 年 4 月 27 日'
-ms.openlocfilehash: cf9761413d26ef56912bba342d52834a23e83935
-ms.sourcegitcommit: 66e74e39f44dca8c41f97f05528b8f9eb1aaed87
+ms.openlocfilehash: 1f9d7dd886791e8d185350b8a5de94ca7d180ca7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061315"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567187"
 ---
 # <a name="mapi-functions-callbacks-and-macros"></a>MAPI の関数、コールバック、マクロ
 

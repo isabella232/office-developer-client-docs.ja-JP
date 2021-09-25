@@ -6,27 +6,27 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249064(v=office.15)
 ms:contentKeyID: 48543936
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1de2000ec2b1db2c05bc6da8e097ea45f504084e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d34536c44c69a799dbd1c9059df8a1384e0816d5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287889"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606542"
 ---
 # <a name="parameters-collection-properties-methods-and-events"></a>Parameters コレクションのプロパティ、メソッド、イベント
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ## <a name="properties"></a>プロパティ
 
 - [Count プロパティ](count-property-ado.md)
 - [Item プロパティ](item-property-ado.md)
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>Methods
 
 - [Append メソッド](append-method-ado.md)
-- [Delete メソッド (ADO Parameters コレクション)](delete-method-ado-parameters-collection.md)
+- [Delete メソッド (ADO Parameters Collection)](delete-method-ado-parameters-collection.md)
 - [Refresh メソッド](refresh-method-ado.md)
 
 ## <a name="events"></a>イベント

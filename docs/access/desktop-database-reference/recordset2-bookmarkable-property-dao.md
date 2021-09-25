@@ -1,5 +1,5 @@
 ---
-title: Bookmarkable プロパティ (DAO)
+title: Recordset2.Bookmarkable プロパティ (DAO)
 TOCTitle: Bookmarkable Property
 ms:assetid: 9c93d04d-ca10-acf5-122a-58625ed93424
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198125(v=office.15)
@@ -10,32 +10,32 @@ f1_keywords:
 - dao360.chm1052888
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 26b8b60255b4e50a2288dedb8e27906476926e8c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f92bcb53fe9ab93d877b008b7646a609fa65541f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307456"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596947"
 ---
-# <a name="recordset2bookmarkable-property-dao"></a>Bookmarkable プロパティ (DAO)
+# <a name="recordset2bookmarkable-property-dao"></a>Recordset2.Bookmarkable プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-**Recordset** オブジェクトがブックマークをサポートし、 **[Bookmark](recordset2-bookmark-property-dao.md)** プロパティを使用してブックマークを設定できるかどうかを示す値を取得します。
+**[Bookmark](recordset2-bookmark-property-dao.md)** プロパティを使用して設定できるブックマークが **Recordset** オブジェクトでサポートされているかどうか示す値を取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*。Bookmarkable
+*式* .ブックマーク可能
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 
 **Bookmark** プロパティを設定または確認しようとする前に、 **Recordset** オブジェクトの **Bookmarkable** プロパティの設定を確認してください。
 
-Microsoft access データベースエンジンのテーブルを基にした**Recordset**オブジェクトの場合、 **Bookmarkable**プロパティの値は True になり、ブックマークを使用することができます。 ただし、他のデータベース製品はブックマークをサポートしていない場合があります。 たとえば、主キーを持たないリンク テーブルの Paradox に準拠する **Recordset** オブジェクトではブックマークを使用できません。
+完全 **に Microsoft Access** データベース エンジン テーブルに基づく Recordset オブジェクトの場合 **、Bookmarkable** プロパティの値は True であり、ブックマークを使用できます。 ただし、他のデータベース製品はブックマークをサポートしていない場合があります。 たとえば、主キーを持たないリンク テーブルの Paradox に準拠する **Recordset** オブジェクトではブックマークを使用できません。
 
 ## <a name="example"></a>例
 

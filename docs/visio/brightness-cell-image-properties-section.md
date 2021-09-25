@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251608
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5bb1cc81-f3fd-a835-1449-233dbd1a62b6
 description: ビットマップ イメージの明るさを調整します。0 ～ 49% の範囲で値を入力するとイメージの輝度が下がります。51 ～ 100% の範囲で値を入力するとイメージの輝度が上がります。既定値は 50% です。
-ms.openlocfilehash: ae1390d2db3adad86a8afcbeaff88172a841d030
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 41615007b66a0b148c9166ee76126b935a5327c8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424792"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578145"
 ---
 # <a name="brightness-cell-image-properties-section"></a>[Brightness] セル ([Image Properties] セクション)
 

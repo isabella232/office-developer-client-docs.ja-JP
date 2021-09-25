@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm64319
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 4397846abdc0d10b6bfa0e6a1eb5c0c435fc862a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 25d4f49d9a7afd7cbbd915c80895a3de789ac161
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296291"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577578"
 ---
 # <a name="closewindow-macro-action"></a>CloseWindow マクロ アクション
 
@@ -25,7 +25,7 @@ ms.locfileid: "32296291"
 
 " **CloseWindow/ウィンドウを閉じる** " アクションを使用すると、指定した Access ドキュメント タブを閉じることができます。何も指定しない場合は、アクティブなドキュメント タブが閉じます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "CloseWindow/ウィンドウを閉じる" アクションの引数は次のとおりです。
 
@@ -42,7 +42,7 @@ ms.locfileid: "32296291"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Object Type/オブジェクトの種類</strong></p></td>
+<td><p><strong>オブジェクトの種類</strong></p></td>
 <td><p>ドキュメント タブを閉じるオブジェクトの種類を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>オブジェクトの種類</strong>] ボックスの一覧で [ <strong>テーブル</strong>]、[ <strong>クエリ</strong>]、[ <strong>フォーム</strong>]、[ <strong>レポート</strong>]、[ <strong>マクロ</strong>]、[ <strong>モジュール</strong>]、[ <strong>データ アクセス ページ</strong>]、[ <strong>サーバー ビュー</strong>]、[ <strong>ダイアグラム</strong>]、[ <strong>ストアド プロシージャ</strong>]、[ <strong>関数</strong>] のいずれかをクリックします。アクティブなドキュメント タブを選択する場合は、この引数を指定しません。  </p>
 
 > [!NOTE]

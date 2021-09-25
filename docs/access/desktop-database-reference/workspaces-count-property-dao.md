@@ -1,31 +1,31 @@
 ---
-title: Workspaces プロパティ (DAO)
+title: Workspaces.Count プロパティ (DAO)
 TOCTitle: Count Property
 ms:assetid: bc7c5a11-13d3-27bd-1be4-5d069e888ac2
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822719(v=office.15)
 ms:contentKeyID: 48547414
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 692240130d0a5aa32899b94a18302721da01d44d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 485c43b6cc345777d9567b62e984fed4d4bfe482
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302559"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588540"
 ---
-# <a name="workspacescount-property-dao"></a>Workspaces プロパティ (DAO)
+# <a name="workspacescount-property-dao"></a>Workspaces.Count プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-指定したコレクション内のオブジェクトの数を取得します。 読み取り専用です。
+指定したコレクション内のオブジェクトの数を取得します。値の取得のみ可能です。
 
 ## <a name="syntax"></a>構文
 
-*式*。量
+*式* .Count
 
-*式***workspace**オブジェクトを表す変数を取得します。
+*式* Workspaces オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 

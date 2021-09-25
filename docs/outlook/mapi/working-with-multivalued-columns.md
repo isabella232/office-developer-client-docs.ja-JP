@@ -3,17 +3,17 @@ title: 複数値の列の操作
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 911a41c3-c10f-4473-8853-fafb56b721ba
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 34f19e279c86e0c0856d242cf2aa13d744d46f13
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ee6b1f22b7eee25698bbc445c562bdbe849b38f9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420186"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578397"
 ---
 # <a name="working-with-multivalued-columns"></a>複数値の列の操作
 

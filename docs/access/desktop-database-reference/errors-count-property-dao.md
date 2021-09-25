@@ -1,29 +1,29 @@
 ---
-title: Count プロパティ (DAO)
+title: Errors.Count プロパティ (DAO)
 TOCTitle: Count Property
 ms:assetid: ad135955-3b18-4f99-66d9-aff1492df13b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821719(v=office.15)
 ms:contentKeyID: 48547028
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c2cbbed2c7061b225d969dbd7554191e8db4a28a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f850c0891225ab88ac76f7a6dddb1f03f13c7af4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293400"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606829"
 ---
-# <a name="errorscount-property-dao"></a>Count プロパティ (DAO)
+# <a name="errorscount-property-dao"></a>Errors.Count プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-指定したコレクション内のオブジェクトの数を取得します。 読み取り専用です。
+指定したコレクション内のオブジェクトの数を取得します。値の取得のみ可能です。
 
 ## <a name="syntax"></a>構文
 
-*式*。量
+*式* .Count
 
 *式*: **Errors** オブジェクトを表す変数。
 

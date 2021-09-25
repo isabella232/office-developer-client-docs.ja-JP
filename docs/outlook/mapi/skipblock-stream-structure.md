@@ -3,15 +3,15 @@ title: SkipBlock ストリーム構造
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2499587b-2a0e-4987-9bf7-591bef41b894
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 5a3367a15374234658fd9d10f3c2a5f3a191c80e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fd4dfba1aaa13294fc1a238e9d4cfac28831849e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435545"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624210"
 ---
 # <a name="skipblock-stream-structure"></a>SkipBlock ストリーム構造
 

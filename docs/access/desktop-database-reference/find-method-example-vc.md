@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250114(v=office.15)
 ms:contentKeyID: 48548137
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b1e7d18f8068e3ea12d74eca9d208764662765df
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: dfb6bd3e78efc6601aa93beffb13d11d8e68db00
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292364"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565290"
 ---
 # <a name="find-method-example-vc"></a>Find メソッドの使用例 (VC++)
 
 
 **適用先:** Access 2013、Office 2013
 
-この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Find](find-method-ado.md) メソッドを使用して ***Pubs*** データベースを検索し、役職の数をカウントします。 基になるプロバイダーは同様の機能をサポートしていないものと仮定します。
+この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Find](find-method-ado.md) メソッドを使用して ***Pubs*** データベースを検索し、役職の数をカウントします。基になるプロバイダーは同様の機能をサポートしていないものと仮定します。
 
 ```cpp 
  
@@ -188,7 +188,7 @@ void PrintComError(_com_error &e)
 // EndFindCpp 
 ```
 
-**findx .h**
+**FindX.h**
 
 ```cpp 
  

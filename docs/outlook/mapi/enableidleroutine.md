@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.EnableIdleRoutine
 api_type:
 - COM
 ms.assetid: 332ea831-bdf9-4dbd-b9c7-a80f8ba11b3b
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: e04c872762665f4b3a22559dc2ed1504e7b8f9af
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d81fec5072b51c26291b16253d0fefa5bfa89f91
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410222"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567684"
 ---
 # <a name="enableidleroutine"></a>EnableIdleRoutine
 

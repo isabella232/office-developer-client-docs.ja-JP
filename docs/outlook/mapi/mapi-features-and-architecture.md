@@ -3,17 +3,17 @@ title: MAPI の機能とアーキテクチャ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 34bae703-a979-437c-9d86-8b91e9822a54
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 8156cb53fc81f4861e4a66da4960df0458ec6c91
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2e78f5a9450b16e323bfea3ebb8c01119d2cf3d3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418282"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567215"
 ---
 # <a name="mapi-features-and-architecture"></a>MAPI の機能とアーキテクチャ
 

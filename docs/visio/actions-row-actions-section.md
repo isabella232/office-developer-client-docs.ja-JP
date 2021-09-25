@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm60017
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 29a7464a-b9d4-a8ea-161b-3044de32ed23
 description: ショートカットまたはアクション タグ メニューのカスタム コマンドに関連付けられたアクションを指定するセルを含む。 [Actions] セクションには、各アクションごとに 1 つの [Actions] 行があります。
-ms.openlocfilehash: 37464e98b3e4f7d07b2ae4bd391b31ec009b6726
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 21b0fe801b7041f7de9a7b4dfcd559e8ea553356
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408006"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616132"
 ---
 # <a name="actions-row-actions-section"></a>[Actions] 行 ([Actions] セクション)
 

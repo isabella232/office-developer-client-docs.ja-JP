@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IABProvider.Logon
 api_type:
 - COM
 ms.assetid: f9468715-1674-4d14-81c8-2f24dbaa0453
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 59c6d4a05c91511ad8c481fd4ddbe42396442190
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c502d3ba8b956a6c3c83bbed6e1e17d9f11fd97b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348784"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616895"
 ---
 # <a name="iabproviderlogon"></a>IABProvider::Logon
 

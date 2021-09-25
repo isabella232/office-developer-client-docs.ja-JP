@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SMAPIFormPropArray
 api_type:
 - COM
 ms.assetid: bb243bc4-4974-4ad6-aa76-2426c1ebe84b
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 50b6581dec8211968a49b204c6d9b1ba1c65bb62
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 471e2accdd925e81c951e195349bf00691dea100
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420067"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624182"
 ---
 # <a name="smapiformproparray"></a>SMAPIFormPropArray
 
@@ -42,7 +42,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cProps**
   

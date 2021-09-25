@@ -3,17 +3,17 @@ title: MAPI 機能へのリンク
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: be72a893-a3bc-4dea-8234-47f3e1db4515
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 71108da8bb9914bb7ed0ad0b3adacc24e1d69e63
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4bf9c044ca7aadac9ae097bcd54228e0fba15dcd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346885"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616986"
 ---
 # <a name="link-to-mapi-functions"></a>MAPI 機能へのリンク
 

@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm51789
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: e0cdf85461276d26005bc3066a387031a1086691
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 199da1d702bea1db81443faffaa89d00192c22d9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291888"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565283"
 ---
 # <a name="importexportdata-macro-action"></a>ImportExportData マクロ アクション
 
@@ -25,7 +25,7 @@ ms.locfileid: "32291888"
 You can use the **ImportExportData** action to import or export data between the current Access database (.mdb or .accdb) or Access project (.adp) and another database. For Microsoft Access databases, you can also link a table to the current Access database from another database. With a linked table, you have access to the table's data while the table itself remains in the other database.
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> このアクションは、データベースが信頼されていない場合には許可されません。 
 
 ## <a name="settings"></a>設定
 
@@ -44,7 +44,7 @@ You can use the **ImportExportData** action to import or export data between the
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Transfer Type/変換の種類</strong></p></td>
+<td><p><strong>Transfer Type/転送の種類</strong></p></td>
 <td><p>変換の種類を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>変換の種類</strong>] ボックスで、[ <strong>インポート</strong>]、[ <strong>エクスポート</strong>]、または [ <strong>リンク</strong>] を選択します。既定値は [ <strong>インポート</strong>] です。  </p><p><strong>注意</strong>: Access プロジェクト (.adp) では、転送の種類 <strong>[リンク]</strong> はサポートされていません。</p></td>
 </tr>
 <tr class="even">
@@ -61,7 +61,7 @@ You can use the **ImportExportData** action to import or export data between the
 <li><p>[ <strong>テーブルのリンク</strong>] ダイアログ ボックスでテーブルを選択し、[ <strong>OK</strong>] をクリックします。</p></li>
 </ol>
 <p>Open the newly linked table in Design view and view the table properties by clicking <strong>Property Sheet</strong> on the <strong>Design</strong> tab, under <strong>Tools</strong>. The text in the <strong>Description</strong> property setting is the connection string for this table.  </p>
-<p>odbc 接続文字列の詳細については、この odbc データベースの odbc ドライバーのヘルプファイルまたはその他のドキュメントを参照してください。</p></td>
+<p>ODBC 接続文字列の詳細については、この種類の ODBC データベースの ODBC ドライバーのヘルプ ファイルまたは他のドキュメントを参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Object Type/オブジェクトの種類</strong></p></td>

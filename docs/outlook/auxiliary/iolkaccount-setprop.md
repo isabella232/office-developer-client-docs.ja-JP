@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 883b1c5d-47dd-a006-b5f1-130691bdd019
 description: 指定したアカウント プロパティの値を設定します。
-ms.openlocfilehash: 94134cee7886177ab840a6caff7d70d65bf9d4cb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8fd8eb0acc51d457911799e751451e7600202d5d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431989"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617147"
 ---
 # <a name="iolkaccountsetprop"></a>IOlkAccount::SetProp
 

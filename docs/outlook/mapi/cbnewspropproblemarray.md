@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.CbNewSPropProblemArray
 api_type:
 - COM
 ms.assetid: ce018fb0-4e23-4451-a31a-52bd0977a061
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 00a57468c2c43c6f3405c04e2e436fbe9e328887
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 77fc60de5bc789bf3c8ff0b3f698ab8dc2233ee1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413340"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567831"
 ---
 # <a name="cbnewspropproblemarray"></a>CbNewSPropProblemArray
 
