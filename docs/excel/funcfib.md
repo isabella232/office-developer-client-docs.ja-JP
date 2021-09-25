@@ -8,15 +8,15 @@ f1_keywords:
 - FuncFib
 keywords:
 - funcfib function [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6a719f04-b2d1-4f87-a227-be561cbd3e49
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: fb8f0c12c27fb2c95007eb5006c1d8b90970f3ad
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4f1fceedaf7e152fbbfd5e708d9da55e161f43ba
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423672"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552221"
 ---
 # <a name="funcfib"></a>FuncFib
 

@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 40161358-4d41-43cf-83c7-fdd843bec87b
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: c8bccbfeb7f04745a66831618deff490bc651b02
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fe99dced15540813434b3486a46c547528f820e2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415153"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578957"
 ---
 # <a name="pidtagstoreentryidemsmdbv1-canonical-property"></a>PidTagStoreEntryIdEmsmdbV1 標準プロパティ
 

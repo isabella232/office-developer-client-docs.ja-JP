@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251495
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 22005976-37c0-d2be-8e34-8aee8458e4be
 description: datetime または式の秒のコンポーネントを表す 0 ~ 59 の整数を返します。
-ms.openlocfilehash: c23bbded12a3886fe3bd4dd2a3c3ba1bd6d11619
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f9f8a3f823ed4b0989abd6f338aaf44a0f56a059
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404877"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553928"
 ---
 # <a name="second-function-visioshapesheet"></a>SECOND 関数 (VisioShapeSheet)
 
@@ -30,7 +30,7 @@ SECOND(" ** *datetime* ** "|** *式* ** [, ** *lcid* ** ])
 |:-----|:-----|:-----|:-----|
 | _datetime_ <br/> |必須  <br/> |**String** <br/> |日付および時刻として一般的に認識される任意の文字列、または日付および時刻を含んだセルに対する参照を指定します。  <br/> |
 | _expression_ <br/> |必須  <br/> |**String** <br/> | 日付および時刻を算出する式を指定します。  <br/> |
-| _lcid_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |非地域的な日時の評価に使用するロケール  _識別子_ です。 ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
+| _lcid_ <br/> |オプション  <br/> |**数値型 (Numeric)** <br/> |非地域的な日時の評価に使用するロケール  _識別子_ です。 ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

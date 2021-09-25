@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm335
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 24261b77-e3e8-7434-a503-9f23798bdab1
 description: 親図形の原点との関係で、1-D 図形の端点の x 座標を表します。
-ms.openlocfilehash: 4bd3099b2c13572023b0b813b1cc69a7b211546b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3c42910233729d4cf35e3ce408ef7339a932b066
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411569"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559865"
 ---
 # <a name="endx-cell-1-d-endpoints-section"></a>[EndX] セル ([1-D Endpoints] セクション)
 

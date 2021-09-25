@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 08/18/2017
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2b5beeb6-e52d-41be-94df-083d36141a9d
 description: Microsoft Access は、データベースを定義、操作、およびアクセスする目的で予約済みキーワードを使用します。予約済みキーワードは、Access が SQL ステートメントを解析して理解する目的で使用する言語の文法の部分です。
-ms.openlocfilehash: 132f912d2b6b5a65980355b18c0a23eaa8c24cbc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3404cc630f774f95d4364792fbfbb31c3f960a0e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424981"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588421"
 ---
 # <a name="reserved-keywords-access-custom-web-app"></a>予約キーワード (Access カスタム Web アプリ)
 
@@ -41,7 +41,7 @@ Microsoft Access は、データベースを定義、操作、およびアクセ
 |Break  <br/> |GROUP  <br/> |REVOKE  <br/> |
 |BROWSE  <br/> |HAVING  <br/> |RIGHT  <br/> |
 |BULK  <br/> |HOLDLOCK  <br/> |ROLLBACK  <br/> |
-|BY  <br/> |時  <br/> |ROWCOUNT  <br/> |
+|BY  <br/> |時間  <br/> |ROWCOUNT  <br/> |
 |CASCADE  <br/> |IDENTITY  <br/> |ROWGUIDCOL  <br/> |
 |CASE  <br/> |IDENTITY_INSERT  <br/> |RULE  <br/> |
 |CHECK  <br/> |IDENTITYCOL  <br/> |SAVE  <br/> |
@@ -84,7 +84,7 @@ Microsoft Access は、データベースを定義、操作、およびアクセ
 |DISTRIBUTED  <br/> |OPENROWSET  <br/> |VALUES  <br/> |
 |DOUBLE  <br/> |OPENXML  <br/> |VARYING  <br/> |
 |DROP  <br/> |OPTION  <br/> |VIEW  <br/> |
-|DUMP  <br/> |OR  <br/> |WAITFOR  <br/> |
+|DUMP  <br/> |または  <br/> |WAITFOR  <br/> |
 |ELSE  <br/> |ORDER  <br/> |週  <br/> |
 |終了  <br/> |OUTER  <br/> |平日  <br/> |
 |ERRLVL  <br/> |OVER  <br/> |WHEN  <br/> |
@@ -94,7 +94,7 @@ Microsoft Access は、データベースを定義、操作、およびアクセ
 |EXECUTE  <br/> |PRECISION  <br/> |WITHIN GROUP  <br/> |
 |EXISTS  <br/> |PRIMARY  <br/> |WRITETEXT  <br/> |
 |EXIT  <br/> |PRINT  <br/> |Year  <br/> |
-|EXTERNAL  <br/> |PROC  <br/> |はい  <br/> |
+|EXTERNAL  <br/> |PROC  <br/> |必要  <br/> |
 |FETCH  <br/> |PROCEDURE  <br/> |YesNo  <br/> |
 |FILE  <br/> |PUBLIC  <br/> ||
    
@@ -125,7 +125,7 @@ Microsoft Access は、データベースを定義、操作、およびアクセ
 |ASSERTION  <br/> |FOUND  <br/> |PUBLIC  <br/> |
 |AT  <br/> |差出人  <br/> |READ  <br/> |
 |AUTHORIZATION  <br/> |FULL  <br/> |REAL  <br/> |
-|AVG  <br/> |GET  <br/> |REFERENCES  <br/> |
+|AVG  <br/> |取得  <br/> |REFERENCES  <br/> |
 |BEGIN  <br/> |GLOBAL  <br/> |RELATIVE  <br/> |
 |BETWEEN  <br/> |GO  <br/> |RESTRICT  <br/> |
 |BIT  <br/> |GOTO  <br/> |REVOKE  <br/> |
@@ -184,7 +184,7 @@ Microsoft Access は、データベースを定義、操作、およびアクセ
 |DOUBLE  <br/> |のみ  <br/> |WHENEVER  <br/> |
 |DROP  <br/> |OPEN  <br/> |どこ  <br/> |
 |ELSE  <br/> |OPTION  <br/> |WITH  <br/> |
-|終了  <br/> |OR  <br/> |WORK  <br/> |
+|終了  <br/> |または  <br/> |WORK  <br/> |
 |END-EXEC  <br/> |ORDER  <br/> |WRITE  <br/> |
 |ESCAPE  <br/> |OUTER  <br/> |YEAR  <br/> |
 |EXCEPT  <br/> |OUTPUT  <br/> |ZONE  <br/> |
@@ -282,7 +282,7 @@ Microsoft Access は、データベースを定義、操作、およびアクセ
 |FULLTEXTTABLE  <br/> |REGR_AVGY  <br/> |XMLPI  <br/> |
 |FUSION  <br/> |REGR_COUNT  <br/> |XMLQUERY  <br/> |
 |GENERAL  <br/> |REGR_INTERCEPT  <br/> |XMLSERIALIZE  <br/> |
-|GET  <br/> |REGR_R2  <br/> |XMLTABLE  <br/> |
+|取得  <br/> |REGR_R2  <br/> |XMLTABLE  <br/> |
 |GLOBAL  <br/> |REGR_SLOPE  <br/> |XMLTEXT  <br/> |
 |GO  <br/> |REGR_SXX  <br/> |XMLVALIDATE  <br/> |
 |グループ化  <br/> |REGR_SXY  <br/> |YEAR  <br/> |

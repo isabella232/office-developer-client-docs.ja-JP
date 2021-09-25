@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - infopath 2007、 作成 com アドイン、InfoPath 2007、カスタム機能の追加、COM アドイン [InfoPath 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: af0b0bc9-20ef-4503-8b3b-8f2a97b671a2
 description: Microsoft InfoPath は、ユーザーのフォーム編集を拡張する COM アドインをサポートしています。 COM アドインのサポートは InfoPath で最初に追加されましたが、Microsoft Office Word や Microsoft Office Excel などの他の Office アプリケーションは、2000 年から COM アドインをサポートOffice。
-ms.openlocfilehash: f8dd16b161c4ea862cf3b15e56e26a2547c1fc4c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b53d14f637b8f2bd6b8accdf45a331f674a7d91a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303788"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552116"
 ---
 # <a name="create-a-com-add-in-to-add-custom-features-to-infopath"></a>COM アドインを作成して InfoPath にカスタム機能を追加する
 
@@ -58,7 +58,7 @@ InfoPath を含め、すべての Office アプリケーションはレジスト
 |0  <br/> |切断済み。アドインを **[COM アドイン]** のダイアログ ボックスに非アクティブとして表示します。<br/> |
 |1  <br/> |接続済み。アドインを **[COM アドイン]** のダイアログ ボックスに アクティブとして表示します。<br/> |
 |2  <br/> |起動時に読み込む。アドインは、ホスト アプリケーションの起動時に読み込まれ、接続されます。  <br/> |
-|8  <br/> |必要時に読み込む。アドインは、ユーザーがアドインの機能を使用するボタンをクリックした時など、ホスト アプリケーションが要求した場合に読み込まれ、接続されます。  <br/> |
+|8   <br/> |必要時に読み込む。アドインは、ユーザーがアドインの機能を使用するボタンをクリックした時など、ホスト アプリケーションが要求した場合に読み込まれ、接続されます。  <br/> |
 |16   <br/> |初回に接続する。アドインを登録した後にユーザーがホスト アプリケーションを実行した時に、アドインは初めて読み込まれます。  <br/> |
    
 ## <a name="creating-a-managed-com-add-in-with-visual-studio-2005-or-visual-studio-2008"></a>Visual Studio 2005 または Visual Studio 2008 を利用したマネージ COM アドインの作成

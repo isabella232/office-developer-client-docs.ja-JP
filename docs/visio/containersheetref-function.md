@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bbdb2dea-4f75-b73e-a98a-0031f34dff2c
 description: 図形を含む、指定されたコンテナーのシート参照を返します。
-ms.openlocfilehash: 473d8c0b81ecc568c1d4f3a3b3a885e1ceb4e00d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 59d820760d09d56bdbc47ef2a56252d6214c6278
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437267"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559991"
 ---
 # <a name="containersheetref-function"></a>CONTAINERSHEETREF 関数
 
@@ -32,7 +32,7 @@ CONTAINERSHEETREF(** *index* ** ** *[, category]* ** )
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _index_ <br/> |必須  <br/> |**整数型 (Integer)** <br/> |コンテナーの 1 から始まるインデックス。詳細については、「備考」を参照してください。  <br/> |
-| _category_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |コンテナーのカテゴリ。詳細については、「備考」を参照してください。  <br/> |
+| _category_ <br/> |省略可能  <br/> |**String** <br/> |コンテナーのカテゴリ。詳細については、「備考」を参照してください。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

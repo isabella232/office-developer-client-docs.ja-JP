@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm1025
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cfa3ecc6-61a8-506c-ba1d-b5e1f757d44f
 description: テキスト ブロックの高さを指定します。既定の数式は次のとおりです。
-ms.openlocfilehash: 8ad17cdf1deca6c4aa81f3388d7c112b4e179e2f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bcf9292de38860ebfbb81607049214cd5ce99aa7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409308"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553676"
 ---
 # <a name="txtheight-cell-text-transform-section"></a>[TxtHeight] セル ([Text Transform] セクション)
 

@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMSLogon.OpenEntry
 api_type:
 - COM
 ms.assetid: 612cbab7-60cb-48bb-906e-18d9135e7a86
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 544aaaace18a9d26972e6484803b63a1ee7060fc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 560d68693589b5fc4daef8c6f440147b6fe9283a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416301"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551185"
 ---
 # <a name="imslogonopenentry"></a>IMSLogon::OpenEntry
 

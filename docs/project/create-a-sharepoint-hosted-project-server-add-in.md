@@ -3,15 +3,15 @@ title: SharePoint をホストとする Project Server アドインを作成す�
 manager: lindalu
 ms.date: 08/10/2016
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bb9c3c00-7121-41e1-9db3-75550d040ba8
 description: Project Online 用に作成できる 3 種類のアプリ (自動ホスト型アプリ、プロバイダー ホスト型アプリ、SharePoint ホスト型アプリ) の中で、SharePoint ホスト型アプリは最も簡単に作成および展開できます。
-ms.openlocfilehash: 9b3b41eda40a8419ad72f11bb474acf7acaf81e9
-ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
+ms.openlocfilehash: 2afa297fe61f026977277356b8ad63dbf86992ef
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41773758"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560271"
 ---
 # <a name="create-a-sharepoint-hosted-project-server-add-in"></a>SharePoint をホストとする Project Server アドインを作成する
 
@@ -1224,6 +1224,6 @@ Project Web Appは、Project Web App インスタンスでタイムシートと�
 - [Project Server のプログラミング タスク](project-programming-tasks.md)
 - [SharePoint アドイン](https://msdn.microsoft.com/library/jj163230.aspx)
 - [Project Web App でタスク更新を管理する](https://technet.microsoft.com/library/hh767481%28v=office.14%29.aspx)
-- [カスタム アクションを作成して、SharePoint アドインで展開する](https://msdn.microsoft.com/library/jj163954.aspx)
+- [カスタム アクションを作成して SharePoint アドインで展開する](https://msdn.microsoft.com/library/jj163954.aspx)
     
 

@@ -3,17 +3,17 @@ title: プロファイルの作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 80867adf-6786-47a9-9d3f-4aef4a7d7c66
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 842a8d9f2f08125fbede037dabf8ae6f6790d547
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f1e0c0e4f9ad2f9d723e32a46ea6284807098054
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432689"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551738"
 ---
 # <a name="creating-a-profile"></a>プロファイルの作成
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm320
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2f9c11ba-a316-bc34-60d4-0a41b2af486f
 description: 線の最後の頂点に対して、矢印を付けるか、または別の書式の端点を適用するかを指定します。
-ms.openlocfilehash: 54ef11125a8774914a60897850fb75cd4ab949a5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 186c16762103aab59b3162f5706b0ca31ecfe9b4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434684"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559900"
 ---
 # <a name="endarrow-cell-line-format-section"></a>[EndArrow] セル ([Line Format] セクション)
 

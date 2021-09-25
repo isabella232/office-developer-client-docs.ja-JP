@@ -3,17 +3,17 @@ title: プロファイルの削除
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 4d01ab2e-40fd-409d-a69d-163b7d5462ca
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 1cd87b92a9d289f06e466f4e44ce757c93074336
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fc951d5b4a031aed335181ac8534ac4eb9c6c8ba
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410204"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588183"
 ---
 # <a name="deleting-a-profile"></a>プロファイルの削除
 

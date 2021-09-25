@@ -3,15 +3,15 @@ title: サーバー JavaScript を使用してプロジェクトを作成、取�
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6b690938-05bc-46a3-a40e-30f081403767
 description: 現在の ProjectContext インスタンスを取得します。サーバー上の発行済みプロジェクトのコレクションを取得して反復処理します。サーバー JavaScript オブジェクト モデルを使用して、プロジェクトを作成、取得、チェックアウトProject削除します。をクリックし、プロジェクトのプロパティを変更します。
-ms.openlocfilehash: 10dac7edfa3e84cebfd0585bc8c4bff1ea22ea44
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 9d114af4a1d90c7de393bd3564a74b9d75d33762
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322667"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560229"
 ---
 # <a name="create-retrieve-update-and-delete-projects-using-project-server-javascript"></a>サーバー JavaScript を使用してプロジェクトを作成、取得、更新Project削除する
 

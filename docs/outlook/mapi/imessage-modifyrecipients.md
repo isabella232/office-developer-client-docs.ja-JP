@@ -5,19 +5,18 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMessage.ModifyRecipients
 api_type:
 - COM
 ms.assetid: 2625f29d-325f-417d-bcec-49d580f9cd7e
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 07e1c2104068a6eb242e8ba81f91655edaa92cd8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f8cca47a25157379e6005ca5b0f2dd7cbe934015
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426241"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551283"
 ---
 # <a name="imessagemodifyrecipients"></a>IMessage::ModifyRecipients
 
@@ -81,8 +80,6 @@ You can create a recipient list by calling [IAddrBook::Address](imapisupport-add
 [ADRLIST](adrlist.md)�\����Ŏ�M�҂̃v���p�e�B��w�肷��ꍇ�́A���ׂĂ̒ǉ��܂��͕ύX���ꂽ��̂����łȂ��A��M�҂̃v���p�e�B��w�肵�܂��B��M�҂��ύX���ꂽ�Ƃ� **ADRLIST**�\���Ɋ܂܂�Ă��Ȃ��C�ӂ̃v���p�e�B���폜����܂��B���݂̈�A�̃v���p�e�B�̂��ׂẴ��b�Z�[�W�̎�M�҂�擾����ɂ͂���ɂ́A [GetRecipientTable](imessage-getrecipienttable.md)����ׂĂ̍s��擾���܂��B **SRowSet**�ɂ́A **ADRLIST**�\����Ɠ����ł��邽�ߓ����Ӗ��Ŏg�p�ł��܂��B
   
  **ModifyRecipients**�ɂ́A  _ulFlags_�p�����[�^�[�Ȃ��̃t���O�̐ݒ肳��Ă���ꍇ�A  _lpMods_���w������܂ނ��ׂĂ̌��݂̎�M�҃��X�g�̃G���g�����u���������܂��B 
-  
-## <a name="notes-to-callers"></a>呼び出し側への注意
 
 MODRECIP_MODIFY �t���O��ݒ肷��Ƃ��� **ModifyRecipients** [lpMods](adrlist.md)�ɓn�����_ADRLIST_�\���Ɋ֘A�t�����Ă���s�S�̂̎�M�Ҋe�s�ɒu�������܂��B���ׂĂ̎�M�҂��Ӑ}�����ɍ폜����Ȃ��悤�ɕύX����Ă��邩�ǂ����Ɋ֌W�Ȃ��A�v���p�e�B��w�肷��悤�ɒ��ӂ��܂��B
   

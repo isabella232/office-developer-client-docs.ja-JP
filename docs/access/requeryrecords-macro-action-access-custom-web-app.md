@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1dab102f-24af-4984-8020-a9fb06355639
 description: RequeryRecords アクションを使用してビューのソースに、再度、クエリを実行することで、アクティブなビュー内のデータを更新、並べ替え、およびフィルター処理できます。
-ms.openlocfilehash: 69d88401abc0de417f7dc58e275c66f2037212aa
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bbfd4f2738e7e2dcb46346c83ea0804b8bd7b8b1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439248"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552368"
 ---
 # <a name="requeryrecords-macro-action-access-custom-web-app"></a>RequeryRecords マクロ アクション (Access カスタム Web アプリ)
 

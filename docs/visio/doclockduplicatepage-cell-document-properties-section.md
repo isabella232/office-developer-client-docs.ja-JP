@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b08a6558-519f-44e0-aeff-9919544d515e
 description: ドキュメントのページを複製できるかどうかを、ブール演算型で決定します。
-ms.openlocfilehash: 3f3274c6cfadb81ef514a179279bdaed3543b654
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 264b55909a5eb48636601566d6392e62393f00d9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439661"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559921"
 ---
 # <a name="doclockduplicatepage-cell-document-properties-section"></a>[DocLockDuplicatePage] セル ([ドキュメントのプロパティ] セクション)
 

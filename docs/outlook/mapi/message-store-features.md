@@ -3,17 +3,17 @@ title: メッセージ ストアの機能
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: d9167cd2-fc88-46b1-9a26-151955fb606c
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 092cf56aea2e246fbb7ef2016a2662a1f67f889b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0fe0e9d4e64659f09d314731e72b0048177e8fa8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439521"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551101"
 ---
 # <a name="message-store-features"></a>メッセージ ストアの機能
 
@@ -32,8 +32,8 @@ ms.locfileid: "33439521"
 |進行状況インターフェイスの提供。  <br/> |必須  <br/> |必須  <br/> |
 |構成インターフェイスの提供。  <br/> |必須  <br/> |必須  <br/> |
 |フォームとビューのサポートに関連付けられたコンテンツ テーブルをサポートします。  <br/> |省略可能  <br/> |オプション  <br/> |
-|メッセージ ストア プロバイダーとのメッセージの送信。  <br/> |省略可能  <br/> |必須  <br/> |
-|メッセージ ストア プロバイダーとのメッセージの受信。  <br/> |省略可能  <br/> |必須  <br/> |
+|メッセージ ストア プロバイダーとのメッセージの送信。  <br/> |オプション  <br/> |必須かどうか  <br/> |
+|メッセージ ストア プロバイダーとのメッセージの受信。  <br/> |オプション  <br/> |必須かどうか  <br/> |
 |メッセージの添付ファイルのサポート。  <br/> |省略可能  <br/> |オプション  <br/> |
 |メッセージのリッチ テキスト形式のサポート。  <br/> |省略可能  <br/> |オプション  <br/> |
 |通知の提供。  <br/> |省略可能  <br/> |オプション  <br/> |

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4d823766-5cb0-925c-f622-18025f44426c
 description: 線のグラデーションについて、グラデーションの分岐点の色、透過性、および位置を格納します。
-ms.openlocfilehash: bfaf3ab8cc16e11051310d7e838b9dddbf7e108d
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: f07cfccd9444d1bad69b8bfbf6e01491dec6e1cd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540827"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559627"
 ---
 # <a name="row-element-line-gradient-section-visio-xml"></a>Row 要素 ([線のグラデーション] セクション) (Visio XML)
 

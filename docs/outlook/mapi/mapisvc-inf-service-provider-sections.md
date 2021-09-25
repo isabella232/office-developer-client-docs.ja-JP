@@ -3,17 +3,17 @@ title: MapiSvc.inf サービス プロバイダーのセクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: ab17dcf2-409b-4a57-9cc4-5794f995cd3e
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: ea192ec6356cc3b929bf8379567144d3a54223f2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 276d9e8d96d620060ea1cf3bac5790f34a900efd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405563"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551143"
 ---
 # <a name="mapisvcinf-service-provider-sections"></a>MapiSvc.inf サービス プロバイダーのセクション
 

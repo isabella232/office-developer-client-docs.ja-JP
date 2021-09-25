@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1135
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2416b323-e084-18e1-c9be-a797078dfab9
 description: ローカル座標の図形の x 座標を表します。 次の表に、各行で [X] セルが示す内容を説明します。
-ms.openlocfilehash: 2b3303533db446780ef797844ac5e1438cec242f
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 1435e07bc2c2d02f971f0fa083638acb903d0114
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538215"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553593"
 ---
 # <a name="x-cell-geometry-section"></a>[X] セル ([Geometry] セクション)
 

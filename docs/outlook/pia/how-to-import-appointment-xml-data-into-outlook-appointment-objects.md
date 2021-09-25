@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff462092(v=office.15)
 ms:contentKeyID: 55119821
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0af86772fced3e69d1d28cf8d98a544e3b4d90d2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fef3e924ed5f81d5d64e5ca77bc417c000866ad2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320063"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560509"
 ---
 # <a name="import-appointment-xml-data-into-outlook-appointment-objects"></a>予定の XML データを Outlook の予定オブジェクトにインポートする
 
@@ -109,7 +109,7 @@ CreateAppointmentsFromXml メソッドは、Microsoft COM 実装の XML ドキ�
 
 CreateAppointmentsFromXml では、XML データ内の appointment タグで区切られた予定の子ノードごとに固有のタグを検索し、DOM を使用してデータを抽出して、そのデータを対応する **AppointmentItem** オブジェクトのプロパティ ([Start](https://msdn.microsoft.com/library/bb647263\(v=office.15\))、[End](https://msdn.microsoft.com/library/bb623715\(v=office.15\))、[Subject](https://msdn.microsoft.com/library/bb611653\(v=office.15\))、[Location](https://msdn.microsoft.com/library/bb608946\(v=office.15\))、および [Body](https://msdn.microsoft.com/library/bb644880\(v=office.15\))) に割り当てます。 その後、CreateAppointmentsFromXml では既定の予定表に予定を保存します。
 
-CreateAppointmentsFromXml では、[System.Collections.Generic](https://docs.microsoft.com/dotnet/api/system.collections.generic?view=netframework-4.7.2) 名前空間内の [List\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2) クラスの [Add](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add?view=netframework-4.7.2) メソッドを使用して、該当する AppointmentItem オブジェクトを集約します。 このメソッドは、XML データに含まれるすべての予定を処理すると、配列で AppointmentItem オブジェクトを返します。
+CreateAppointmentsFromXml は[](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add?view=netframework-4.7.2)[、System.Collections.Generic](https://docs.microsoft.com/dotnet/api/system.collections.generic?view=netframework-4.7.2)名前空間の[List \<T\> ](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2)クラスの Add メソッドを使用して、これらの AppointmentItem オブジェクトを集約します。 このメソッドは、XML データに含まれるすべての予定を処理すると、配列で AppointmentItem オブジェクトを返します。
 
 Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。
 

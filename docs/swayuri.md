@@ -3,16 +3,16 @@ title: SwayURI
 ms.audience: ITPro
 ms.topic: article
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 11daa75b-87fc-4e63-8e02-09ab9307c8f8
 ms.date: 01/28/2016
 description: Sway URI スキームを使用して Sway アプリケーションを開き、Sway を表示または編集します。
-ms.openlocfilehash: 04848ef1de2777d916d8dd8dd381e6d5f66310d6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 10357bd7df8bd0bff96e042cb715c0a691a31a9c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415314"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560187"
 ---
 # <a name="sway-uri-scheme"></a>Sway URI スキーム
 
@@ -31,7 +31,7 @@ URI スキームの構文を次に示します。
 
 Sway URL スキームの一部として、いくつかのコマンド引数を含めできます。 これらのコマンド引数は必須ではありません。 コマンド引数を含めない場合は、Sway アプリケーションが呼び出されます。
 
-|コマンドの引数名|説明|型|可能な値|必須|
+|コマンドの引数名|説明|型|使用可能な値|必須|
 |:-----|:-----|:-----|:-----|:-----|
 |**id**|Sway の一意の識別子。 開く Sway を示すために使用します。|String|Sway の有効な一意識別子。 ID は常に Sway の URL の一部です。<br/><br/>たとえば、次の Sway の `https://sway.com/dBheQgVZ1RQBfiQU` 場合、id は `dBheQgVZ1RQBfiQU` .<br/><br/>Sway アプリケーションに関連付けられているユーザー アカウントに編集権限がある場合、アプリケーションは編集モードで Sway を開きます。 それ以外の場合、アプリケーションはビュー モードで Sway を開きます。|いいえ|
 |**mode**|編集用または表示用に、特定の Sway を開くモード。|String|edit<br/>view<br/><br/>**メモ**: id を **指定しない** 場合、このコマンド引数は無視されます。|いいえ|

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIFormInfo.CalcVerbSet
 api_type:
 - COM
 ms.assetid: 0170dc9d-dc72-48e2-a522-374f199b18ea
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: babff746af16d51ca154d049943f6be7e9fab589
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9c7ecf9ae44cb19c6040b713fe77cfb6cf44a066
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428782"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551290"
 ---
 # <a name="imapiforminfocalcverbset"></a>IMAPIFormInfo::CalcVerbSet
 

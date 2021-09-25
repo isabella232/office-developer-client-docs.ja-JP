@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PpropFindProp
 api_type:
 - HeaderDef
 ms.assetid: f23dd6f4-915b-4fe8-ab3f-6d625c7d6061
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 97021128f92af0486af1ba3125c7843eaa357648
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 29a06ebfec45acecbc938611c50c4939e3a52286
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406340"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578894"
 ---
 # <a name="ppropfindprop"></a>PpropFindProp
 

@@ -3,17 +3,17 @@ title: メッセージ ストア プロバイダーの構造
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 064b2fc1-e690-43e6-95d3-a61438115de5
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: eda62a4cd31e0de695d52391a6717e7a0f5ea581
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d2b6c11453ccbb127c684ccde7773bc09c1f7a49
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426423"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578558"
 ---
 # <a name="structure-of-message-store-providers"></a>メッセージ ストア プロバイダーの構造
   
@@ -27,7 +27,7 @@ ms.locfileid: "33426423"
   
 **メッセージ ストアのオブジェクト階層**
   
-![メッセージ ストア オブジェクト階層](media/storeobj.gif "メッセージ ストア オブジェクト階層")
+![メッセージ ストアのオブジェクト階層](media/storeobj.gif "メッセージ ストアのオブジェクト階層")
   
 ## <a name="see-also"></a>関連項目
 

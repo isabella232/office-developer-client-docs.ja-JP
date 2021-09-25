@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagInternetLines
 api_type:
 - HeaderDef
 ms.assetid: bfbbbb76-796a-4ee8-8410-0d17edb349b5
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 87c8ab6a06d830d9d509c1dd1c6f5af1a0de654b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 29e17560437c483effbd507a4bc5b1295e6b0173
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425548"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579048"
 ---
 # <a name="pidtaginternetlines-canonical-property"></a>PidTagInternetLines 標準プロパティ
 

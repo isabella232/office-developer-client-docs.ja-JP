@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9dfb9b6d-2fb4-45bf-a12f-bd10a799ce29
 description: このトピックでは、Outlook Social Connector (OSC) プロバイダーを正常にインストールするための前提条件と、プロバイダー インストーラーが正常に動作するために完了する必要があるインストール チェックについて説明します。
-ms.openlocfilehash: 8fec8523e57ad2678d02a0c5cbc1ad57340e5267
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: aaed852edd9a3f4e30ec5fdcc4afbdd32eed0442
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286342"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560404"
 ---
 # <a name="installation-checklist"></a>インストール チェックリスト
 
@@ -21,7 +21,7 @@ ms.locfileid: "32286342"
   
 ## <a name="installation-overview"></a>インストールの概要
 
-ユーザーは、サポート されているバージョンの OSC プロバイダーが存在し、Outlook コンピューターに OSC がインストールされ、有効になっている場合にのみ、OSC プロバイダーをインストールする必要があります。 Outlook のサポート バージョンは、Office Outlook 2003、Office Outlook 2007、Outlook 2010、Outlook 2013 です (クライアント コンピューターにインストールされている場合、または Outlook 2010 および Outlook 2013 の場合は、クライアント コンピューターで クイック実行 によって配信されます)。 インストールが正常に完了するには、プロバイダー インストーラーで次の操作を行う必要があります。
+ユーザーは、サポート されているバージョンの OSC プロバイダーが存在し、Outlook コンピューターに OSC がインストールされ、有効になっている場合にのみ、OSC プロバイダーをインストールする必要があります。 Outlook のサポート バージョンは、Office Outlook 2003、Office Outlook 2007、Outlook 2010、Outlook 2013 (クライアント コンピューターにインストールされている場合、または Outlook 2010 および Outlook 2013 の場合に配信されます。クイック実行コンピューター上に表示されます)。 インストールが正常に完了するには、プロバイダー インストーラーで次の操作を行う必要があります。
   
 - サポートされているバージョンのファイルが存在Outlook確認します。
     
@@ -197,15 +197,15 @@ Outlook の異なるバージョンとビット数の Glink 値、およびサ�
    
 **表 2: OSC でサポートされている Glink 値**
   
-|**Glink 値**|**Function**|
+|**Glink 値**|**関数**|
 |:-----|:-----|
-|80  <br/> |最新バージョンの OSC for Outlook 2003 または Outlook 2007 をインストールします。  <br/> |
+|80  <br/> |2003 年または 2007 年Outlook OSC の最新Outlookインストールします。  <br/> |
 |82  <br/> |Outlook 2007、Outlook 2010、または Outlook Social Connector 2013 用の 32 ビット OSC の最新パッチをインストールします。  <br/> |
-|83  <br/> |Outlook 2010 または Outlook Social Connector 2013 用の 64 ビット OSC の最新パッチをインストールします。  <br/> |
+|83  <br/> |2010 年またはソーシャル コネクタ 2013 用の 64 ビット OSC Outlook最新Outlookインストールします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [プロバイダーの登録](registering-a-provider.md) 
-- [プロバイダーを開発するための学習のクイック ステップ](quick-steps-for-learning-to-develop-a-provider.md)
+- [プロバイダーを開発するためのラーニング手順](quick-steps-for-learning-to-develop-a-provider.md)
 - [プロバイダーの展開](deploying-a-provider.md)
 

@@ -8,13 +8,13 @@ f1_keywords:
 - Vis_DSS.chm82251816
 ms.assetid: 81ebd41f-a6a7-af63-b6cf-dd3d5c371a61
 description: ''
-localization_priority: Priority
-ms.openlocfilehash: f98bf7b4e1736862d908a2f589379e1349164ffa
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 72254cf51ca7078ce87e7b9df9c92066d61de49e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341931"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560040"
 ---
 # <a name="change-the-name-and-view-the-id-of-a-shape"></a>図形の名前を変更し ID を表示する
 
@@ -26,6 +26,6 @@ ms.locfileid: "32341931"
     
     **[図形の名前]** ダイアログ ボックスの上部に図形の ID が表示されます。 
     
-4. **[OK]** をクリックします。
+4. [**OK**] をクリックします。
     
 

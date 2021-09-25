@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82253230
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 87065350-ba9a-aae8-47f6-f263f6700d08
 description: 図形の塗りつぶしのパターンに対して、背景 (塗りつぶし部分) に適用される透過性レベルを指定します。
-ms.openlocfilehash: 64c5d09fb18f089769e025893b9fac8b1878fca1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6680213259873de7a6269a03ef1fb30c48170ec5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423210"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570631"
 ---
 # <a name="fillbkgndtrans-cell-fill-format-section"></a>[FillBkgndTrans] セル ([Fill Format] セクション)
 

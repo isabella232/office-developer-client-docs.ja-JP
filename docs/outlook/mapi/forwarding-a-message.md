@@ -3,17 +3,17 @@ title: メッセージの転送
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 0027fd5a-f30a-4025-b670-c21869b3a480
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: d1df84c37cc2a24806c35ae0c90e4bf2a5e438d2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 37515d7a45115988945112bef892975bb193ff3c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433179"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551591"
 ---
 # <a name="forwarding-a-message"></a>メッセージの転送
 

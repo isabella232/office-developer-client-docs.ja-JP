@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0e5ffb61-1469-bc91-f237-27d1156179cd
 description: 使用するアカウント マネージャーを初期化します。
-ms.openlocfilehash: 5a643a4636251afc98750be8acf47cd3bdab3847
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 44742fadb2c0c450611370d700ced33173387a02
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322037"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552004"
 ---
 # <a name="iolkaccountmanagerinit"></a>IOlkAccountManager::Init
 

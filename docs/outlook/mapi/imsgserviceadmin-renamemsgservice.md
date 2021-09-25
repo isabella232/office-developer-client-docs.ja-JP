@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMsgServiceAdmin.RenameMsgService
 api_type:
 - COM
 ms.assetid: eba0e7f2-03c1-4713-aa36-3d0b398cd197
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 2f0f1fb94ea36512bbc40df8a4877e89d2613a25
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0018833c991a62ac11b50682b49a55a3dc97e70b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422104"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551248"
 ---
 # <a name="imsgserviceadminrenamemsgservice"></a>IMsgServiceAdmin::RenameMsgService
 

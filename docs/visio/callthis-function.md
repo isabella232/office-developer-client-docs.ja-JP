@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251403
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 461abfc1-d2cc-2354-1c2f-395c9e351a78
 description: Microsoft Visual Basic for Applications (VBA) プロジェクトでプロシージャを呼び出します。
-ms.openlocfilehash: 7e0f0bafa39d6c1eb1fd39535506981c937ce8a1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7dff3b6b49eb828b5c73f4aa98da2d5c460a84d4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413816"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560082"
 ---
 # <a name="callthis-function"></a>CALLTHIS 関数
 
@@ -29,8 +29,8 @@ CALLTHIS(" ** *procedure* ** ",[" ** *project* ** "],[ ** *arg1* **, ** *arg2* *
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _procedure_ <br/> |必須  <br/> |**String** <br/> | 呼び出すプロシージャの名前を指定します。  <br/> |
-| _project_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |プロシージャが含まれるプロジェクトを指定します。  <br/> |
-| _arg_ <br/> |省略可能  <br/> |**数値型 (Number)、文字列型 (String)、日付型 (Date)、または通貨型 (Currency)** <br/> |パラメーターとしてプロシージャに渡されます。  <br/> |
+| _project_ <br/> |省略可能  <br/> |**String** <br/> |プロシージャが含まれるプロジェクトを指定します。  <br/> |
+| _arg_ <br/> |オプション  <br/> |**数値型 (Number)、文字列型 (String)、日付型 (Date)、または通貨型 (Currency)** <br/> |パラメーターとしてプロシージャに渡されます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

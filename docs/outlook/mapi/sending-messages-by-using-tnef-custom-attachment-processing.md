@@ -3,17 +3,17 @@ title: TNEF カスタム添付ファイル処理を使用したメッセージ�
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: da318b6f-128a-44b5-8357-a130022030a1
 description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: f9d154b26319f5ed72b1abd6aeef307d07a63bda
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 1456cd4d949799862c9d07cb3f733810bdc409c2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339698"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578670"
 ---
 # <a name="sending-messages-by-using-tnef-custom-attachment-processing"></a>TNEF カスタム添付ファイル処理を使用したメッセージの送信
 

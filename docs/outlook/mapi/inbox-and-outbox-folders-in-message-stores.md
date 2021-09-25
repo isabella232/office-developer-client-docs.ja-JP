@@ -3,17 +3,17 @@ title: ��M�g���C ���b�Z�[�W �X�g�A��̃t�H�
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 8e4ce129-137d-4618-80a6-88781a578d01
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 95a2b7b9bac11404817fb6848d58c45251c141f2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: afd7e93e3a6000579f2e1a3daea024e041298e58
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414243"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551157"
 ---
 # <a name="inbox-and-outbox-folders-in-message-stores"></a>��M�g���C ���b�Z�[�W �X�g�A��̃t�H���_�[�����M�g���C
 

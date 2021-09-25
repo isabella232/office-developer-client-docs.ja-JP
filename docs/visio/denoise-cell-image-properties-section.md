@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm225
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e305585f-f0d8-0494-91d4-0c76929dc170
 description: ビットマップ画像からノイズを除去します。ノイズとは、カラー レベルが不規則に分散したピクセルのことです。既定値は 0% です。
-ms.openlocfilehash: f970fde22e864239ea3f3f9bcb704e7f4692e9cc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 40d9048cd24f0585c246436217f0ed5b515eb32a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415805"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559949"
 ---
 # <a name="denoise-cell-image-properties-section"></a>[Denoise] セル ([Image Properties] セクション)
 

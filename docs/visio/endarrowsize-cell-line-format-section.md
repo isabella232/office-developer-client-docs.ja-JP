@@ -6,29 +6,29 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251630
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e2ecf7c0-a0e9-951f-676a-8e5857bb6544
 description: 線の終端にある矢印のサイズを指定します。
-ms.openlocfilehash: 768a2b2adb05248049377eaee07194cdb89ed810
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 272f40fcd3da875bf67384e51d2ab9060ac0d40f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438079"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559893"
 ---
 # <a name="endarrowsize-cell-line-format-section"></a>[EndArrowSize] セル ([Line Format] セクション)
 
 線の終端にある矢印のサイズを指定します。
   
-|**値**|**[サイズ]**|**オートメーション定数**|
+|**値**|**サイズ**|**オートメーション定数**|
 |:-----|:-----|:-----|
 |0  <br/> |極小  <br/> |**visArrowSizeVerySmall** <br/> |
 |1  <br/> |小  <br/> |**visArrowSizeSmall** <br/> |
 |2  <br/> |中  <br/> |**visArrowSizeMedium** <br/> |
 |3  <br/> |大  <br/> |**visArrowSizeLarge** <br/> |
-|4  <br/> |特大  <br/> |**visArrowSizeVeryLarge** <br/> |
+|4   <br/> |特大  <br/> |**visArrowSizeVeryLarge** <br/> |
 |5  <br/> |ジャンボ  <br/> |**visArrowSizeJumbo** <br/> |
-|6  <br/> |Colossal  <br/> |**visArrowSizeColossal** <br/> |
+|6   <br/> |Colossal  <br/> |**visArrowSizeColossal** <br/> |
    
 ## <a name="remarks"></a>注釈
 

@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cb2aace1-fa2d-480e-bfc7-44ae399943f5
 description: クエリに指定したフィールドに含まれる値セットとして表現された標本母集団の不偏分散が返されます。
-ms.openlocfilehash: 80cea512b0386d9b0461c927675ae51be3e0dcda
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a6ce06ea74c32a52685d1debee14345b193920e6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437757"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588393"
 ---
 # <a name="var-function-access-custom-web-app"></a>Var 関数 (Access カスタム Web アプリ)
 

@@ -3,15 +3,15 @@ title: Office ドキュメント キャッシュ (ODC) を制御するための 
 manager: soliver
 ms.date: 07/13/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 394b8e6f-9132-4c98-8fd6-46ad3c871440
 description: Office ドキュメント キャッシュ (ODC) を制御するための CSISyncClient の使用法について取り上げます。
-ms.openlocfilehash: ce33063f88492bcd6f9682a4a6431fb36f138d55
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 1ad8c752e573eab894be675a2b0e790d560f4002
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346257"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560201"
 ---
 # <a name="using-csisyncclient-to-control-the-office-document-cache-odc"></a>Office ドキュメント キャッシュ (ODC) を制御するための CSISyncClient の使用
 
@@ -202,7 +202,7 @@ CsiSyncClient COM オブジェクトによってサポートされているフ�
   
  _bstrProgID_
   
-双方向通信のためのコンシューマーの COM オブジェクトを示します。空にすることはできません。最大長は 39 文字です。ProgID の詳細については、「[\<ProgID\> Key](https://docs.microsoft.com/windows/desktop/com/-progid--key)」をご覧ください。 
+2 者間通信用のコンシューマーの COM オブジェクトを識別します。 最大 39 文字の空でない必要があります。 ProgIDs の詳細については、「Key」を参照してください。 [ \<ProgID\> ](https://docs.microsoft.com/windows/desktop/com/-progid--key) 
   
  _bstrFileSystemDirectoryHint_
   

@@ -3,15 +3,15 @@ title: JavaScript オブジェクト Project Online (JSOM) を使用したアド
 manager: soliver
 ms.date: 11/08/2016
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4a4b1ad2-de46-421d-a698-53c20c90b93a
 description: この記事では、Microsoft Project Onlineのエクスペリエンスを向上させるアドイン開発のProject Online。 開発プロジェクトは、チュートリアルとして実装されます。 この記事で使用するアドインは、Project Online アカウントから発行されたプロジェクトのプロジェクト名と ID を読み取って表示し、個々のプロジェクトに関連付けられたタスクを取得するためにドリルダウンできます。
-ms.openlocfilehash: 0a472a6300f18aaa65649f44d944445642a59e1a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b30350a0d78531e304545e551ff61257e52386e8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322691"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560222"
 ---
 # <a name="developing-a-project-online-add-in-using-the-javascript-object-model-jsom"></a>JavaScript オブジェクト Project Online (JSOM) を使用したアドインの開発
 
@@ -19,7 +19,7 @@ ms.locfileid: "32322691"
   
 実行時に、アドインの一覧は次の図のようになります。
   
-![JSOM プロジェクトとタスクの一]覧を示すスクリーン ショット JSOM プロジェクトとタスクの一覧(media/766e5914-f048-48f4-9282-291f55e6e90d.png "を示す")スクリーン ショット
+![JSOM のプロジェクトとタスクの一覧を示すスクリーンショット](media/766e5914-f048-48f4-9282-291f55e6e90d.png "JSOM のプロジェクトとタスクの一覧を示すスクリーンショット")
   
 この例の焦点は、Project Online要求ごとにクエリを行い、コンテキストを設定する方法です。 ユーザー インターフェイス (UI) 要素は、最小限の注意を受け取る。 代わりに、ソースリストには UI に関するコメントが表示されます。
   
@@ -94,13 +94,13 @@ Visual Studio ウィザードでは、Project Online 設定サイト (ダイア�
     
    ホスティング オプションを含むSharePointアドインの詳細については[、「SharePoint」を参照してください](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
     
-3. **[次へ]** をクリックします。 
+3. [**次へ**] をクリックします。 
     
 2 番目の追加ダイアログでは、アドインSharePointオンライン バージョンを指定する必要があります。 
   
 1. アドインにターゲットを設定するSharePointの最も古いバージョンは何ですか? [X] S **harePoint-Online を選択します**。 
     
-2. **[完了]** をクリックします。 
+2. [**完了**] をクリックします。 
     
 Visual Studio作成し、プロジェクト サイトにProject Onlineします。 
   
@@ -151,7 +151,7 @@ Visual Studio作成し、プロジェクト サイトにProject Onlineします�
 
 |範囲|アクセス許可|
 |:-----|:-----|
-|複数のプロジェクト (Project サーバー)  <br/> |Read  <br/> |
+|複数のプロジェクト (Project サーバー)  <br/> |読み取り  <br/> |
    
 アプリケーションスコープを設定した後にファイルを保存します。 それ以外の場合、サービスからデータは返されません。 
   
@@ -172,7 +172,7 @@ Visual Studio作成し、プロジェクト サイトにProject Onlineします�
 
 アドインの例は、いくつかのコンポーネントで構成されています。 静的要素の説明は、Default.aspx ファイルに保存されます。 すべてのコンポーネントの動的要素の説明とコードは、App.jsファイルに保存されます。 コンポーネントに関するコメントについては、ソース コードの一覧を参照してください。 アドインの UI コンポーネントの一覧を次に示します。
   
-- タイトル
+- Title
     
 - 入門動詞
     
@@ -329,7 +329,7 @@ displayTasks 関数は、指定したプロジェクトに関連付けられた�
   
 1 つのプロジェクトのタスクの出力例を次に示します。
   
-![プロジェクト タスクの出力を示す]スクリーン ショット プロジェクト タスクの出力(media/f6500a3f-000b-4f3e-9be6-9a74d0bea15e.png "を示すスクリーン")ショット
+![プロジェクト タスクの出力を示すスクリーンショット](media/f6500a3f-000b-4f3e-9be6-9a74d0bea15e.png "プロジェクト タスクの出力を示すスクリーンショット")
   
 ## <a name="see-also"></a>関連項目
 

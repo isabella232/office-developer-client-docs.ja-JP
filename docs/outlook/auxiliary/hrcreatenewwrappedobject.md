@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 780ade1c-88d0-04d2-ba7e-251c19c43438
 description: クライアントが優先文字形式でアクセスできるオブジェクトを作成します。
-ms.openlocfilehash: 3f68e0f275bcc5df065b3113d3322d6957f76df0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7832b495e8d5e7ee1849782269f073fd4fa28392
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317606"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552088"
 ---
 # <a name="hrcreatenewwrappedobject"></a>HrCreateNewWrappedObject
 
@@ -23,7 +23,7 @@ ms.locfileid: "32317606"
 |||
 |:-----|:-----|
 |次の方法でエクスポートされます。  <br/> |msmapi32.dll  <br/> |
-|呼び出し元:  <br/> |クライアント  <br/> |
+|呼び出し元:  <br/> |Client  <br/> |
 |実装元:  <br/> |Outlook  <br/> |
    
 ```cpp

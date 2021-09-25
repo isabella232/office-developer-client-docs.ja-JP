@@ -3,17 +3,17 @@ title: 進行状況インジケーターを表示する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 20f5ad5a-b700-4fb5-9658-f71da5a06a12
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 7b0ce0ab75ffdce045ccde5bf6ea8a7da046f463
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 892882531df4fd857e7eb525a615657f5ef4e4e9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408027"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551430"
 ---
 # <a name="display-a-progress-indicator"></a>進行状況インジケーターを表示する
  

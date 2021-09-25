@@ -3,17 +3,17 @@ title: フォーム構成ファイル [拡張機能] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 4817e446-982d-491c-abcf-cc888a771afa
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 96682dd2bdfedc42ea13c6985cb834f0adffd4df
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3f3ffce0753ef62d8e61f9c6df010882d5bb5178
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423756"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587987"
 ---
 # <a name="form-configuration-file-extensions-section"></a>フォーム構成ファイル [拡張機能] セクション
 

@@ -3,15 +3,15 @@ title: 概要 - インデックス作成用のストアの登録
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dd2aa06a-96e8-1291-18b5-fc3c40b74e4d
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 96322d12b3b7b334b5f78f81910dcf34c3fc78e1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e972c0a443a0c06b4df5cde5ea0ec82587d077b4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321827"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588267"
 ---
 # <a name="about-registering-stores-for-indexing"></a>概要 - インデックス作成用のストアの登録
 

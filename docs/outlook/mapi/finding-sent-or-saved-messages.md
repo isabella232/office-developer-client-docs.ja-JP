@@ -3,17 +3,17 @@ title: 送信済みまたは保存済みメッセージの検索
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 6b6714a5-7f36-4a72-9a2a-0d7fdf0e21b7
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 86373fae2753df66d4456cc0fc00f8b289977650
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 77d7173a6a62a375108f0d8bcffa3b99237417b2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437421"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588001"
 ---
 # <a name="finding-sent-or-saved-messages"></a>送信済みまたは保存済みメッセージの検索
 

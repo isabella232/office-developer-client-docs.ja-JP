@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251196
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d05a001c-9001-90d9-5028-f38b90acc53e
 description: 親図形を基準としたときの、図形の現在の回転角度を表します。1-D 図形の回転角度を決定する既定の数式は =ATAN2(EndY-BeginY,EndX-BeginX) です。
-ms.openlocfilehash: 85f64c6111b492940d278a5558508a2dea6b1e1a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0e4beb3ce83623580cd7fabcfdb788121ff1ba46
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414551"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560124"
 ---
 # <a name="angle-cell-shape-transform-section"></a>[Angle] セル ([Shape Transform] セクション)
 

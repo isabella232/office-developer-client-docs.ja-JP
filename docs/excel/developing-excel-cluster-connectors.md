@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b538ae44-37d2-496b-b6e7-b0e39f6e38cb
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: e1c70713586a7a143f119a2c3e9d34b982dcedba
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 67fd0af130351ad48599c9e6ac82bd280eb4f561
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412598"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552270"
 ---
 # <a name="developing-excel-cluster-connectors"></a>Excel クラスター コネクタの開発
 

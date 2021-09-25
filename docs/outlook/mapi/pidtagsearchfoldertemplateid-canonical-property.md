@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagSearchFolderTemplateId
 api_type:
 - COM
 ms.assetid: 56288f55-b3ba-42df-9c90-f9b5857f19a1
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: bee22a7a435b99f4b94473a3f6eb4b7f32517128
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 1e234e679daac7c4367865e5478e7032187587c1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336625"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570794"
 ---
 # <a name="pidtagsearchfoldertemplateid-canonical-property"></a>PidTagSearchFolderTemplateId 標準プロパティ
 

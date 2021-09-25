@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm60101
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c827ecd4-5593-6d4f-2746-d13b02b098fe
 description: 別のテキスト文字列内に含まれる 1 つのテキスト文字列を検索し、その文字列を含むテキスト文字列内の位置を基準に検索するテキスト文字列の開始位置を返します。
-ms.openlocfilehash: 40d65af25d89774c1bdf7b235cf653dbb61dd1c7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 313f6b97c5aacbb83e8aeedb91b69ce28cef465a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426577"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590199"
 ---
 # <a name="find-function"></a>FIND 関数
 
@@ -30,7 +30,7 @@ FIND (** *find_text* **, ** *within_text* **,[ ** *start_num* ** ], [ **** ignor
 |:-----|:-----|:-----|:-----|
 | _find_text_ <br/> |必須  <br/> |**String** <br/> |検索する文字列を指定します。  <br/> |
 | _format_ <br/> |必須  <br/> |**String** <br/> |検索する文字列を含んでいる文字列を指定します。  <br/> |
-| _start_num_ <br/> |省略可能  <br/> |**数値** <br/> |検索を開始する文字の位置を指定します。 この値の最初  _のwithin_text_ は 1 です。 この  _start_num_ 見つからない場合は、1 と見なされます。  <br/> |
+| _start_num_ <br/> |オプション  <br/> |**数値** <br/> |検索を開始する文字の位置を指定します。 この値の最初  _のwithin_text_ は 1 です。 この  _start_num_ 見つからない場合は、1 と見なされます。  <br/> |
 | _ignore_case_ <br/> |省略可能  <br/> |**Boolean** <br/> |既定では、FIND 関数は大文字と小文字を区別します。大文字と小文字を区別しないようにするには、この引数の値を TRUE に設定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値

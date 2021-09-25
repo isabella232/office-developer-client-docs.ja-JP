@@ -3,17 +3,17 @@ title: HandsOffAfterSave 状態
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: ffdfed49-2c52-445c-8051-6e566f61eedc
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 85630965c7e78e6fa76e348bfe98cc9060665057
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e9027ab37fe5183847ee8181530f9adb1a8cddde
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406606"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551465"
 ---
 # <a name="handsoffaftersave-state"></a>HandsOffAfterSave 状態
 
@@ -23,7 +23,7 @@ ms.locfileid: "33406606"
   
 HandsOffAfterSave 状態は、フォームの内容を永続的な記憶域に保存するプロセスの一部です。 この状態の場合、フォーム オブジェクトは、メッセージのプロパティの値のメモリ内コピーに変更を加えるのを控える必要があります。これらの変更を保存する別の機会が存在しない可能性があります。 次の表では、HandsOffAfterSave 状態からの許可された移行について説明します。
   
-|**IPersistMessage メソッド**|**Action**|**新しい状態**|
+|**IPersistMessage メソッド**|**操作**|**新しい状態**|
 |:-----|:-----|:-----|
 |[IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)(_pMessage !=_ NULL)  <br/> |埋め込みオブジェクトを開きます。 _pMessage_ に格納されているメッセージ内のデータは、前の [IPersistMessage::Save](ipersistmessage-save.md)呼び出しのメッセージと同じになる必要があります。 **SaveCompleted 呼び出しが** 成功した場合は、Normal 状態を入力します。 それ以外の場合は、最後のエラーを [E_OUTOFMEMORYに設定し、HandsOffAfterSave 状態に残ります。  <br/> |[Normal または](normal-state.md) HandsOffAfterSave  <br/> |
 |**IPersistMessage::SaveCompleted**(_pMessage ==_ NULL)  <br/> |最後のエラーを[エラー] または [E_INVALIDARG] にE_UNEXPECTED。  <br/> |HandsOffAfterSave  <br/> |

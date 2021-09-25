@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIFormFactory.LockServer
 api_type:
 - COM
 ms.assetid: b9bd389a-6975-41a2-a2f4-e501312e434b
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: ab51b939651bc3c121f357545969d26832a19d19
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d5aa2068b461a5bba1055ef990a5aff38b113879
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342141"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551325"
 ---
 # <a name="imapiformfactorylockserver"></a>IMAPIFormFactory::LockServer
 

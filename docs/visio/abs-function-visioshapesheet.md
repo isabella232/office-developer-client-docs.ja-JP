@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251389
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c9ed37ba-019c-b11e-c803-4669e6a248d1
 description: 数値の絶対値を返します。
-ms.openlocfilehash: 3d3d79aab65e34ad36890e56568b043bab327919
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b46ca51298820b45d8828f583346bcc9928a49a1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421810"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570723"
 ---
 # <a name="abs-function-visioshapesheet"></a>ABS 関数 (VisioShapeSheet)
 

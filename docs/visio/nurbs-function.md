@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251579
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f34db20d-6501-2026-a5e8-29c4d4cb2405
 description: 非一次有理 B スプライン (NURBS) を返します。 この関数は、NURBSTo ジオメトリ行の E セルで使用されます。
-ms.openlocfilehash: af92374a829c0df8e71ac81e630abc4fa64988dc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 335b055aef4517a783a7971e9f63bc36fea9dc4c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438457"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590185"
 ---
 # <a name="nurbs-function"></a>NURBS 関数
 
@@ -28,10 +28,10 @@ NURBS(** *knotLast* **, ** *degree* **, ** xType **, ** *yType* **, ** x1 **,  *
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _knotLast_ <br/> |必須  <br/> |**string** <br/> | 最後のノットを指定します。  <br/> |
-| _度_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |スプラインの角度を指定します。  <br/> |
-| _xType_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |x 入力データの解釈方法  _を_ 指定します。 _xType が_ 0 の場合、_すべての x_ 入力データは Width のパーセンテージとして解釈されます。 _xType が_ 1 の場合、_すべての x_ 入力データはローカル座標として解釈されます。  <br/> |
-| _yType_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |y 入力データの  _解釈方法を_ 指定します。 _yType が_ 0 の場合、_すべての y_ 入力データは Height のパーセンテージとして解釈されます。 _yType が_ 1 の場合、_すべての y_ 入力データはローカル座標として解釈されます。  <br/> |
+| _knotLast_ <br/> |必須かどうか  <br/> |**string** <br/> | 最後のノットを指定します。  <br/> |
+| _度_ <br/> |必須かどうか  <br/> |**数値型 (Numeric)** <br/> |スプラインの角度を指定します。  <br/> |
+| _xType_ <br/> |必須かどうか  <br/> |**数値型 (Numeric)** <br/> |x 入力データの解釈方法  _を_ 指定します。 _xType が_ 0 の場合、_すべての x_ 入力データは Width のパーセンテージとして解釈されます。 _xType が_ 1 の場合、_すべての x_ 入力データはローカル座標として解釈されます。  <br/> |
+| _yType_ <br/> |必須かどうか  <br/> |**数値型 (Numeric)** <br/> |y 入力データの  _解釈方法を_ 指定します。 _yType が_ 0 の場合、_すべての y_ 入力データは Height のパーセンテージとして解釈されます。 _yType が_ 1 の場合、_すべての y_ 入力データはローカル座標として解釈されます。  <br/> |
 | _x1_ <br/> |必須  <br/> |**String** <br/> |x 座標を指定します。  <br/> |
 | _y1_ <br/> |必須  <br/> |**String** <br/> |y 座標を指定します。  <br/> |
 | _knot1_ <br/> |必須  <br/> |**String** <br/> |B スプライン上のノットを指定します。  <br/> |

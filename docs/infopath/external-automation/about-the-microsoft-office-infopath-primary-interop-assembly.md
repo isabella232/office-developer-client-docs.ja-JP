@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - infopath 2007、プライマリ相互運用機能アセンブリ、InfoPath プライマリ相互運用機能アセンブリ、PIA [InfoPath 2007]、プライマリ相互運用機能アセンブリ [InfoPath 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1b3ae03c-6951-49e4-a489-4712d3f7ba72
 description: Visual C# や Visual Basic などのマネージ コード言語を使用する InfoPath ソリューションの作成をサポートするために、InfoPath セットアップ プログラムの .NET プログラミングサポート オプションは、3 つの相互運用機能アセンブリをインストールします。
-ms.openlocfilehash: 51773ad46b1371c410c4249e13a489f0c5550cd1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 659297635627cbf4d7a80c5d0dae7a9bd25ce980
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310137"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552137"
 ---
 # <a name="about-the-microsoft-office-infopath-primary-interop-assembly"></a>Microsoft Office InfoPath プライマリ相互運用機能アセンブリについて
 
@@ -45,7 +45,7 @@ Microsoft の場合。Office.Interop.InfoPath アセンブリが GAC に表示�
 
 このセクションの例では、Microsoft への参照が確立されている必要があります。Office.Interop.InfoPath とMicrosoft.Office.Interop.InfoPath.Xmlアセンブリ。 参照と追加の外部オートメーションの例を設定する方法については、「外部オートメーションのシナリオと例 [」を参照してください](external-automation-scenarios-and-examples.md)。
   
-外部オートメーション コードで Microsoft IntelliSense ステートメント補完を使用する前に、次のコード行に示すように[、Application](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.Application.aspx)クラスのインスタンスのオブジェクト変数を作成する必要があります。 
+外部オートメーション コードで Microsoft IntelliSense ステートメント補完を使用する前に、次のコード行に示すように [、Application](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.Application.aspx) クラスのインスタンスのオブジェクト変数を作成する必要があります。 
   
 ```cs
 Application myApp = 

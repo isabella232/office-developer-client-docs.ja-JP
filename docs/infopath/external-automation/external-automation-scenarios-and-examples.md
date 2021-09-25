@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - infopath 2007、forms [InfoPath 2007] の自動化、プログラムによるデータの追加、オートメーション [InfoPath 2007]、外部シナリオ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dfa880e6-de23-41c4-b80b-6935e0c8563d
 description: Microsoft Office InfoPath プライマリ相互運用機能アセンブリ (Microsoft.Office.Interop.InfoPath.dll) と InfoPath XML 相互運用機能アセンブリ (Microsoft.Office.Interop.InfoPath.Xml.dll) が提供するメンバーは、InfoPath を自動化するためのマネージ コードの記述をサポートします。
-ms.openlocfilehash: 79fbc56033ffce639b5007874dabf56e8e286edb
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: da68c9e5924fdc83aee2b700115db03c91cf55fd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537816"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552123"
 ---
 # <a name="external-automation-scenarios-and-examples"></a>外部自動化のシナリオと例
 

@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d72331d9-a8f3-4fcb-ba26-c93210b74935
 description: GoToRecord/レコードの移動アクションを使用すると、ビューで指定したレコードをカレント レコードにすることができます。
-ms.openlocfilehash: 9e4049f64ab06b68fc04599c49bd56057c5c5628
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2e50fbe1ca0023150c53cafe6f446450405a9dff
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424897"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588463"
 ---
 # <a name="gotorecord-macro-action-access-custom-web-app"></a>GoToRecord マクロ アクション (Access カスタム Web アプリ)
 

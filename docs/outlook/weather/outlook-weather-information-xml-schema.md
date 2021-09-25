@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 91a8ec9b-fb42-8081-cc23-172aa55531e1
 description: このセクションには、Outlook天気予報 XML スキーマの 2013 Outlook参照が含まれている。 このスキーマを使用すると、天気予報サービス プロバイダーは、Outlook への Web サービス応答として指定された場所の天気予報情報を送信し、Outlook が天気予報バーに情報を表示できます。
-ms.openlocfilehash: 8d10a996107dca6123300249306cbd3f0e208a2c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9d5c24158e78c18e1b4e07539538c1b560759385
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427942"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560264"
 ---
 # <a name="outlook-weather-information-xml-schema"></a>Outlook天気予報 XML スキーマ
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 keywords:
 - expression evaluation [excel 2007],worksheets [Excel 2007], name evaluation,evaluating expressions [Excel 2007],evaluating worksheet names [Excel 2007],expressions [Excel 2007], evaluating,names [Excel 2007], evaluating,name evaluation [Excel 2007],strings [Excel 2007], converting to values,xlfEvaluate function [Excel 2007],worksheets [Excel 2007], expression evaluation
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2b23c75e-2a95-4f26-8714-2a73f5e326a7
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 97328cbc57a9144a133524774e3be10a84a96bf4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f2a9f1221acead606b71eedf6deb09133ad25a39
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406865"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552256"
 ---
 # <a name="evaluating-names-and-other-worksheet-formula-expressions"></a>名前と他のワークシートの数式を評価する
 

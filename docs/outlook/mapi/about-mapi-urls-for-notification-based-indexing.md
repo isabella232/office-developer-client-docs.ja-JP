@@ -3,15 +3,15 @@ title: インデックス作成の MAPI URL Notification-Basedについて
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9cb35f0a-267e-2d85-1701-02d52578a0b8
 description: '最終更新日: 2011 年 11 月 08 日'
-ms.openlocfilehash: 5a3e45809f36b71968560a4b239e268addf00474
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f51ddada87a68a13322641b21acda317a8ce5442
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422482"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588288"
 ---
 # <a name="about-mapi-urls-for-notification-based-indexing"></a>インデックス作成の MAPI URL Notification-Basedについて
 
@@ -23,7 +23,7 @@ ms.locfileid: "33422482"
 
 次の表では、一般的な URL のさまざまな部分について説明します。
 
-|指定項目 | 説明|
+|パーツ | 説明|
 |:----|:-----------|  
 |*SID* |現在のユーザーのセキュリティ識別子。| 
 |*StoreDisplayName* |そのストア上のユーザーの表示名を指定する文字列。|
@@ -79,7 +79,7 @@ WCHAR  wszProviderItemID
 
 ストア プロバイダーは、これらの値を示す順序で BLOB に書き込む必要があります。 次の表では、BLOB の各フィールドについて説明します。
 
-|指定項目 | 説明|
+|パーツ | 説明|
 |:----|:-----------|  
 |*dwVersion* |これは、送信されるデータのバージョンです。 現在、この値は 1 です。|
 |*dwFlags* |将来使用するために予約されています。 現在、この値は 0 である必要があります。|

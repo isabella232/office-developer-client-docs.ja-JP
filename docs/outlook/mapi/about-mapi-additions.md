@@ -3,15 +3,15 @@ title: MAPI の追加について
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 78e2806d-bb6f-cd96-21f1-b7c667c73c33
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: fefa77a15cc2b8c72a41b29e6299f159a893cee8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 033053c41988ad9b63f88def7652d1a37dae5f1e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415293"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588309"
 ---
 # <a name="about-mapi-additions"></a>MAPI の追加について
 
@@ -29,11 +29,11 @@ MAPI の追加は、以前は MAPI プログラマリファレンスの一部と
     
 - **[FollowUpStatus](followupstatus.md)**
     
-- **[Gender](gender.md)**
+- **[性別](gender.md)**
     
 - **[OlFlagIcon](olflagicon.md)**
     
-## <a name="functions"></a>Functions
+## <a name="functions"></a>関数
 
 - **[FixMAPI](fixmapi.md)**
     

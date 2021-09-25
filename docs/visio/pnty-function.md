@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251482
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8436cbe6-e0f6-ddbb-9489-21027e31bd51
 description: ポイントの y 座標を返します。
-ms.openlocfilehash: 39f71dccd95602fe9578d09e941f360c82c48a3e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6f31a718d529a2065301993bad54f5d5d12f13e5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423315"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570352"
 ---
 # <a name="pnty-function"></a>PNTY 関数
 
@@ -28,7 +28,7 @@ PNTX(** *point* ** )
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _point_ <br/> |必須  <br/> |**数値** <br/> |ポイント  _の y_ 座標。  <br/> |
+| _point_ <br/> |必須かどうか  <br/> |**数値** <br/> |ポイント  _の y_ 座標。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

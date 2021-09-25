@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251363
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3ea2b3c7-0c69-a9f2-379f-8daa0c665810
 description: 使用する垂直方向のグリッドの種類を指定します。
-ms.openlocfilehash: 793fa40316edd591c8b4873d8919507c2393b5d8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 71b592831e6b84ea8ac7ad142ae5ad1b4c475a0e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429811"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553537"
 ---
 # <a name="ygriddensity-cell-ruler-amp-grid-section"></a>[YGridDensity] セル (Ruler &amp; Grid セクション)
 
@@ -24,8 +24,8 @@ ms.locfileid: "33429811"
 |:-----|:-----|:-----|
 |0  <br/> |Fixed  <br/> |**visGridFixed** <br/> |
 |2  <br/> |粗い  <br/> |**visGridCoarse** <br/> |
-|4  <br/> |標準 (既定値)  <br/> |**visGridNormal** <br/> |
-|8  <br/> |いい  <br/> |**visGridFine** <br/> |
+|4   <br/> |標準 (既定値)  <br/> |**visGridNormal** <br/> |
+|8   <br/> |いい  <br/> |**visGridFine** <br/> |
    
 ## <a name="remarks"></a>注釈
 

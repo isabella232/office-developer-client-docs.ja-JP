@@ -3,15 +3,15 @@ title: PowerPoint
 manager: kelbow
 ms.date: 12/13/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c76c7851-d68f-4f56-8111-e05c764f0ef8
 description: ソリューションの開発と PowerPoint のカスタマイズに関する HowTo コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および技術記事を検索できます。
-ms.openlocfilehash: 21105174e3d06151ef788ab0d81badd2c3e1d952
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7fc5f516ba704487d1d96cfacd1bae2b34c618d3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355028"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570764"
 ---
 # <a name="powerpoint"></a>PowerPoint
 

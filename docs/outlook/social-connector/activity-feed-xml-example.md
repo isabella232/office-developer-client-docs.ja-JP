@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: aa50ca36-8d01-4770-9d9c-30a5baa146ff
 description: このトピックの XML 例は、ソーシャル ネットワークの ISocialSession2::GetActivitiesEx メソッドを呼び出した後、Outlook Social Connector (OSC) に返されるアクティビティ フィード XML 文字列です。
-ms.openlocfilehash: bb8af45f25d8ee2897a3a01e2863466aeacec4e8
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 62e38f1da6e0488d750e8daa51d7fb8a1f6ff1be
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538327"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560431"
 ---
 # <a name="activity-feed-xml-example"></a>アクティビティ フィード XML の例
 
@@ -21,13 +21,13 @@ ms.locfileid: "34538327"
   
 この例では **、activityDetails** 要素で区切られた次の 4 つのアクティビティを含む **activityFeed** XML を示し、表示目的でテンプレートと一致します。 
   
-- Melissa Macbeth によるプロファイル画像の更新。そのソーシャル ネットワーク上の **ownerID** は 4667647 です。 このアクティビティは **、publisherVariable、listVariable、****および** **pictureVariable (listVariable** で囲まれた) の 3 つのテンプレート変数 **を指定します**。 これらの変数は、アクティビティ フィード アイテムを公開したユーザーと、更新する図の情報を指定します **(pictureVariable** の名前、**値****、altText、****および href** 子要素を使用します)。 
+- Melissa Macbeth によるプロファイル画像の更新で、ソーシャル ネットワーク上の **ownerID** が4667647。 このアクティビティは **、publisherVariable、listVariable、****および** **pictureVariable (listVariable** で囲まれた) の 3 つのテンプレート変数 **を指定します**。 これらの変数は、アクティビティ フィード アイテムを公開したユーザーと、更新する図の情報を指定します **(pictureVariable** の名前、**値****、altText、****および href** 子要素を使用します)。 
     
-- ソーシャル ネットワーク上の **ownerID** が 5015012 である Michael Affronti によるプロファイル画像の更新。 最後のアクティビティと同様に、このアクティビティは **publisherVariable、listVariable、pictureVariable** の 3 つのテンプレート変数 **を指定します**。  これらの変数は、アクティビティ フィード アイテムを公開したユーザーと、更新する画像の情報を指定します。
+- Michael Affronti によるプロフィール写真の更新で、ソーシャル ネットワーク上の **ownerID** が5015012。 最後のアクティビティと同様に、このアクティビティは **publisherVariable、listVariable、pictureVariable** の 3 つのテンプレート変数 **を指定します**。  これらの変数は、アクティビティ フィード アイテムを公開したユーザーと、更新する画像の情報を指定します。
     
-- Michael Affronti による状態の更新で、最後のアクティビティと同じ **ownerID** 5015012 が表示されます。 このアクティビティは、publisherVariable 型と **textVariable 型の 2** つの **テンプレート変数を指定します**。 **publisherVariable は** 、アクティビティ フィード アイテムを公開したユーザーを指定し **、textVariable には** 状態行 **の** 値が含まれます  `is hiking on Mount Rainier this weekend!`
+- Michael Affronti による状態の更新で、前回のアクティビティと同5015012 **所有者 ID** が表示されます。 このアクティビティは、publisherVariable 型と **textVariable 型の 2** つの **テンプレート変数を指定します**。 **publisherVariable は** 、アクティビティ フィード アイテムを公開したユーザーを指定し **、textVariable には** 状態行 **の** 値が含まれます  `is hiking on Mount Rainier this weekend!`
     
-- Michael Affronti のブログ投稿で、最後の 2 つのアクティビティと同じ **ownerID** 5015012 が表示されます。 このアクティビティは、publisherVariable 型と **linkVariable 型の 2** つの **テンプレート変数を指定します**。 **publisherVariable は**、アクティビティ フィード アイテムを公開したユーザーを指定し **、linkVariable** にはブログ投稿に関する詳細な情報 **(linkVariable** の名前、テキスト、および値の子要素で指定) が含まれます。 
+- Michael Affronti のブログ投稿で、最後の 2 つのアクティビティと同5015012所有者 **ID** が表示されます。 このアクティビティは、publisherVariable 型と **linkVariable 型の 2** つの **テンプレート変数を指定します**。 **publisherVariable は**、アクティビティ フィード アイテムを公開したユーザーを指定し **、linkVariable** にはブログ投稿に関する詳細な情報 **(linkVariable** の名前、テキスト、および値の子要素で指定) が含まれます。 
     
 4 つのアクティビティのそれぞれは **templateID** 値を指定します。これは templates 要素で指定された 3 つのテンプレートの 1 つと **一致** します。 各テンプレートは、独自の **activityTemplateContainer** 要素に含め、同じ **templateID** 値を持つアクティビティの表示にも使用される **templateID** 値で識別されます。 
   

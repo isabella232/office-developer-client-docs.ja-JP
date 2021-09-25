@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 12f9be33-25c2-4912-ab44-15d8c582f655
 description: 指定した数値式より小さい、または等しい最大の整数を戻します。
-ms.openlocfilehash: 9902bbb3e273cff1b793d3e26e8c55738ef8beac
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: de1f1f93614cef85b31e5c39331203384b104702
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404814"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588484"
 ---
 # <a name="floor-function-access-custom-web-app"></a>Floor 関数 (Access カスタム Web アプリ)
 

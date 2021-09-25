@@ -3,15 +3,15 @@ title: FieldDefinition ストリーム構造
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 93acdbc8-381f-45d5-be6c-0cad066269fe
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 98584e450bb820dbce05b0f8d2c6d15551586130
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 2277d66a4f46a64f6e5fce9cad747fb98e767701
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334896"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588036"
 ---
 # <a name="fielddefinition-stream-structure"></a>FieldDefinition ストリーム構造
 
@@ -66,12 +66,12 @@ FieldDefinition ストリーム構造には、ユーザー定義フィールド�
     |iTypeNumber  <br/> |1  <br/> |**数値** <br/> |
     |iTypePercent  <br/> |2  <br/> |**Percent** <br/> |
     |通貨  <br/> |3  <br/> |**Currency** <br/> |
-    |iTypeBool  <br/> |4  <br/> |**はい/いいえ** <br/> |
+    |iTypeBool  <br/> |4   <br/> |**はい/いいえ** <br/> |
     |iTypeDateTime  <br/> |5  <br/> |**日付/時刻** <br/> |
-    |iTypeDuration  <br/> |6  <br/> |**Duration** <br/> |
-    |iTypeCombination  <br/> |7  <br/> |**[** 組み合 **わせ]** 、 [組み合わせ数式フィールド] ダイアログ ボックスで選択されている後続のフィールドを無視して、最初の空でないフィールドのみを表示 **する** オプションを指定します。  <br/> |
-    |iTypeFormula  <br/> |8  <br/> |**式** <br/> |
-    |iTypeResult  <br/> |9  <br/> |この型は、ユーザー定義フィールドには使用されません。  <br/> |
+    |iTypeDuration  <br/> |6   <br/> |**Duration** <br/> |
+    |iTypeCombination  <br/> |7   <br/> |**[** 組み合 **わせ]** 、 [組み合わせ数式フィールド] ダイアログ ボックスで選択されている後続のフィールドを無視して、最初の空でないフィールドのみを表示 **する** オプションを指定します。  <br/> |
+    |iTypeFormula  <br/> |8   <br/> |**式** <br/> |
+    |iTypeResult  <br/> |9   <br/> |この型は、ユーザー定義フィールドには使用されません。  <br/> |
     |iTypeVariant  <br/> |10  <br/> |この型は、ユーザー定義フィールドには使用されません。  <br/> |
     |iTypeFloatResult  <br/> |11  <br/> |この型は、ユーザー定義フィールドには使用されません。  <br/> |
     |iTypeConcat  <br/> |12   <br/> |**[** 結合フィールド] と [結合フィールド] **および [** 組み合わせ数式フィールド] ダイアログ ボックスで選択されている任意のテキスト **フラグメント** を組み合わせて指定します。  <br/> |

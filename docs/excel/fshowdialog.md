@@ -8,15 +8,15 @@ f1_keywords:
 - fShowDialog
 keywords:
 - fshowdialog function [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6cc01075-7221-488e-870f-433da62930e6
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 6122e4b99c69cd1bd878c9267ff85f59d0f61998
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 69c4ba0fc535df6787683a42d49441f97c4bebe4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433592"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552249"
 ---
 # <a name="fshowdialog"></a>fShowDialog
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm375
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dac82a4f-4508-541a-e118-7d79df987232
 description: 図形の塗りつぶしのパターンを指定します。ユーザー設定の塗りつぶしのパターンを指定するには、このセルで USE 関数を使用します。
-ms.openlocfilehash: 340ccdc9f3819fb29e210832107e270bd302433c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3a8a07add43f980f124ff532e2b04939f2324284
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422930"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570680"
 ---
 # <a name="fillpattern-cell-fill-format-section"></a>[FillPattern] セル ([Fill Format] セクション)
 

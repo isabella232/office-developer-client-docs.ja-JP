@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6e86e943-bd29-0a7b-3d6a-d91281f98777
 description: ウィンドウでスナップがアクティブな場合に、図形のスナップ先のオブジェクトを指定します。
-ms.openlocfilehash: 8d4be35a4cd66a1d3914dbda8162f4acb3d05bfa
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 01fdc54a559b43baefbdbdfa436c3281b919bd65
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540295"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553796"
 ---
 # <a name="snapsettings-element-documentsettings_type-complextype-visio-xml"></a>SnapSettings 要素 (DocumentSettings_Type complexType) (Visio XML)
 
@@ -59,16 +59,16 @@ ms.locfileid: "34540295"
 |**値**|**説明**|
 |:-----|:-----|
 |0  <br/> |何もスナップしません。  <br/> |
-|1  <br/> |スナップサブディビジョンに設定します。  <br/> |
-|2  <br/> |スナップグリッドに移動します。  <br/> |
-|4  <br/> |ガイドにスナップします。  <br/> |
-|8  <br/> |選択ハンドルにスナップします。  <br/> |
+|1  <br/> |ルーラーのサブディビジョンにスナップします。  <br/> |
+|2  <br/> |グリッドにスナップします。  <br/> |
+|4   <br/> |ガイドにスナップします。  <br/> |
+|8   <br/> |選択ハンドルにスナップします。  <br/> |
 |16   <br/> |頂点にスナップします。  <br/> |
 |32  <br/> |接続ポイントにスナップします。  <br/> |
-|256  <br/> |スナップ図形の可視エッジに対して表示されます。  <br/> |
-|512  <br/> |スナップボックスに配置します。  <br/> |
+|256  <br/> |図形の可視エッジにスナップします。  <br/> |
+|512  <br/> |[配置ボックスにスナップ] をクリックします。  <br/> |
 |1024  <br/> |図形の補助線オプションにスナップします。  <br/> |
-|32768  <br/> |スナップ無効です。  <br/> |
+|32768  <br/> |スナップが無効です。  <br/> |
 |65536  <br/> |交点にスナップします。  <br/> |
    
 
