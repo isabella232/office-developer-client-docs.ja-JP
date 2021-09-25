@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm680
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b82feade-5793-8a6e-3ff4-69a4cbdd2cf9
 description: 図形の原点に対する図形のピン (回転の中心) の x 座標を表します。 [LocPinX] を決定する既定の数式は次のとおりです。
-ms.openlocfilehash: 2eb5c328eed3c97652173670c426b83b8c358833
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0ff3815f474ce9ffaec543855092c197aa51a6a9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439241"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582513"
 ---
 # <a name="locpinx-cell-shape-transform-section"></a>[LocPinX] セル ([Shape Transform] セクション)
 

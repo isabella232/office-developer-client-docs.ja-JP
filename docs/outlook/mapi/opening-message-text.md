@@ -3,17 +3,17 @@ title: メッセージ テキストを開く
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: e37fc9d8-433b-41b4-84f2-42a952063f35
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 305b0534f828ea72c1e116fd38fb8f578062e32e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 40d12c84088748d0801649a2fca59c12e60d0b92
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407537"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625141"
 ---
 # <a name="opening-message-text"></a>メッセージ テキストを開く
 

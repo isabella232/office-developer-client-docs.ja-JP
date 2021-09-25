@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251460
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 38e6bba7-1bf2-3d31-0912-707002454f5d
 description: 色の光度コンポーネントの値を返します。
-ms.openlocfilehash: 17fa43f8e2cd7422428f92724e351436233c2d62
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 752af49222ed7919e6c7b9cce4a51821bbe9f4b7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419339"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582526"
 ---
 # <a name="lum-function"></a>LUM 関数
 
@@ -28,7 +28,7 @@ LUM(** *expression* ** )
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |図面のカラー テーブルにある色のインデックス、またはカラー インデックスを含むセルに対する参照を指定します。  <br/> |
+| _expression_ <br/> |必須かどうか  <br/> |**数値型 (Numeric)** <br/> |図面のカラー テーブルにある色のインデックス、またはカラー インデックスを含むセルに対する参照を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

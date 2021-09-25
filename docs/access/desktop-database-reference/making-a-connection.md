@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248932(v=office.15)
 ms:contentKeyID: 48543472
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 487212acd8847928e1fab405593edb172d0172d0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5c63ad8329dddecfb8a5900a1ade860325629322
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289785"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581036"
 ---
 # <a name="making-a-connection"></a>接続の作成
 
 **適用先:** Access 2013、Office 2013
 
-データソースに接続するには、*接続文字列*を指定する必要があります。これらのパラメーターは、プロバイダーとデータソースごとに異なる場合があります。 For more information, see [Creating the Connection String](creating-the-connection-string.md).
+データ ソースに接続するには、接続文字列を指定する必要があります。パラメーターはプロバイダーとデータ ソースごとに異なる場合があります。 For more information, see [Creating the Connection String](creating-the-connection-string.md).
 
 ADO では、多くの場合、**Connection** オブジェクトの **Open** メソッドを使用して接続を開きます。**Open** メソッドの構文は次のとおりです。
 

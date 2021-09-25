@@ -6,28 +6,28 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249024(v=office.15)
 ms:contentKeyID: 48543790
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0f28b14f3eaf6792a74ef0967d698d5a3914955a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9a2216d41bd9d55e8b56816301350906fc2654a4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291273"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594112"
 ---
 # <a name="internet-publishing-scenario"></a>Internet Publishing シナリオ
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ここに示すコード例では、ADO を Microsoft OLE DB Provider for Internet Publishing と共に使用する方法を示します。このシナリオでは、 **Recordset** 、 **Record** 、および **Stream** の各オブジェクトを使用して Internet Publishing Provider で発行されたリソースのコンテンツを表示する Visual Basic アプリケーションを作成します。
 
 このシナリオを作成するには、次の手順が必要です。 
 
-1. Visual Basic プロジェクトをセットアップします。
-2. メインリストボックスを初期化します。
-3. [Fields] リストボックスに値を設定します。
-4. [詳細] テキストボックスに値を設定します。
+1. プロジェクトのVisual Basicします。
+2. [メイン] リスト ボックスを初期化します。
+3. [フィールド] リスト ボックスに値を設定します。
+4. [詳細] テキスト ボックスに値を設定します。
 
-## <a name="step-1-set-up-the-visual-basic-project"></a>手順 1: Visual Basic プロジェクトをセットアップする
+## <a name="step-1-set-up-the-visual-basic-project"></a>手順 1: プロジェクトのVisual Basicする
 
 このシナリオでは、システムに Microsoft Visual Basic 6.0 以降、ADO 2.5 以降、および Microsoft OLE DB Provider for Internet Publishing がインストールされていることを前提としています。
 
@@ -37,19 +37,19 @@ ms.locfileid: "32291273"
 
 2.  From the **Project** menu, choose **References**.
 
-3.  [ **Microsoft ActiveX データオブジェクト2.5 ライブラリ**] を選択し、[ **OK**] をクリックします。
+3.  [Microsoft **ActiveX データ オブジェクト 2.5 ライブラリ**] を選択し **、[OK] をクリックします**。
 
-### <a name="insert-controls-on-the-main-form"></a>メインフォームにコントロールを挿入する
+### <a name="insert-controls-on-the-main-form"></a>メイン フォームにコントロールを挿入する
 
-1.  Form1 に ListBox コントロールを追加します。 **Name**プロパティを**lstMain**に設定します。
+1.  Form1 に ListBox コントロールを追加します。 Name プロパティ **を** **lstMain に設定します**。
 
-2.  Form1 にもう 1 つの ListBox コントロールを追加します。 **Name**プロパティを**lstDetails**に設定します。
+2.  Form1 にもう 1 つの ListBox コントロールを追加します。 Name プロパティ **を** **lstDetails に設定します**。
 
-3.  Form1 に TextBox コントロールを追加します。 " **Name/名前**" プロパティを**txtdetails**に設定します。
+3.  Form1 に TextBox コントロールを追加します。 Name プロパティ **を** **txtDetails に設定します**。
 
-## <a name="step-2-initialize-the-main-list-box"></a>手順 2: メインリストボックスを初期化する
+## <a name="step-2-initialize-the-main-list-box"></a>手順 2: [メイン] リスト ボックスを初期化する
 
-### <a name="declare-global-record-and-recordset-objects"></a>グローバルレコードオブジェクトと Recordset オブジェクトを宣言する
+### <a name="declare-global-record-and-recordset-objects"></a>グローバル Record オブジェクトと Recordset オブジェクトを宣言する
 
 - Form1 の (General) (Declarations) に次のコードを挿入します。
     
@@ -62,7 +62,7 @@ ms.locfileid: "32291273"
     
    このコードによって、このシナリオで後ほど使用する **Record** オブジェクトと **Recordset** オブジェクトへのグローバル オブジェクト参照を宣言します。
 
-### <a name="connect-to-a-url-and-populate-lstmain"></a>URL に接続し、lstMain に入力します。
+### <a name="connect-to-a-url-and-populate-lstmain"></a>Connectにアクセスし、lstMain を設定する
 
 - Form1 の Form Load イベント ハンドラーに次のコードを挿入します。
     
@@ -81,13 +81,13 @@ ms.locfileid: "32291273"
     End Sub 
    ```
     
-   このコードによって、グローバルな **Record** オブジェクトと **Recordset** オブジェクトのインスタンスが作成されます。 **ActiveConnection**として指定された URL を使用して、 **Record** `grec`が開かれます。 URL が存在する場合は開かれますが、存在しない場合は作成されます。 
+   このコードによって、グローバルな **Record** オブジェクトと **Recordset** オブジェクトのインスタンスが作成されます。 レコード **は** `grec` **ActiveConnection** として指定された URL で開きます。 URL が存在する場合は開かれますが、存在しない場合は作成されます。 
    
-   ご使用の環境から`https://servername/foldername/`有効な URL に置き換える必要があることに注意してください。 
+   環境の有効な `https://servername/foldername/` URL に置き換える必要があります。 
    
-   **Recordset** `grs`は、 **Record** `grec`の子に対して開かれます。 lstMain には、URL に発行されたリソースのファイル名が設定されます。
+   Recordset **は** `grs` Record の子で開 **きます** `grec` 。 その後、lstMain には、URL に発行されたリソースのファイル名が入力されます。
 
-## <a name="step-3-populate-the-fields-list-box"></a>手順 3: Fields リストボックスに値を設定する
+## <a name="step-3-populate-the-fields-list-box"></a>手順 3: [フィールド] リスト ボックスに値を設定する
 
 - lstMain の Click イベント ハンドラーに次のコードを挿入します。
 
@@ -118,19 +118,19 @@ ms.locfileid: "32291273"
     End Sub 
    ```
 
-   このコードでは、ローカルの**Record**オブジェクトと`rec` **Recordset**オブジェクトの宣言とインスタンス化を`rs`それぞれ行います。
+   このコードは、ローカルの **Record** オブジェクトと **Recordset** オブジェクトをそれぞれ宣言し `rec` 、 `rs` インスタンス化します。
 
-   lstMain で選択されているリソースに対応する行が、の`grs`現在の行になります。 その後、**詳細**リストボックスがクリア`rec`され、ソースとして`grs`の現在の行を使用して開きます。
+   lstMain で選択されたリソースに対応する行は、 の現在の行にされます `grs` 。 [ **詳細]** リスト ボックスがオフにされ、現在の行がソース `rec` `grs` として開きます。
 
-   リソースが**RecordType**で指定されているようにコレクションレコードである場合、ローカルの**Recordset** `rs`はの`rec`子で開かれます。 lstDetails には、の`rs`行の値が入力されます。
+   リソースがコレクション レコード **(RecordType** で指定) の場合、ローカル **Recordset** はの子で `rs` 開きます `rec` 。 次に、lstDetails の行の値が入力されます `rs` 。
 
-   リソースが単純なレコードである場合`recFields`は、が呼び出されます。 の詳細につい`recFields`ては、次の手順を参照してください。
+   リソースが単純なレコードの場合は `recFields` 、呼び出されます。 詳細については、 `recFields` 次の手順を参照してください。
 
    リソースが構造化ドキュメントである場合は、コードは実装されません。
 
-## <a name="step-4-populate-the-details-text-box"></a>手順 4: [詳細] テキストボックスに値を設定する
+## <a name="step-4-populate-the-details-text-box"></a>手順 4: [詳細] テキスト ボックスに入力する
 
-- という名前`recFields`の新しいサブルーチンを作成し、次のコードを挿入します。
+- という名前の新しいサブルーチンを作成 `recFields` し、次のコードを挿入します。
 
    ```vb 
     
@@ -157,5 +157,5 @@ ms.locfileid: "32291273"
     End Sub 
    ```
 
-   このコードによって、lstDetails に`recFields`、渡される単純なレコードのフィールドと値が設定されます。 リソースがテキスト ファイルである場合は、テキスト **Stream** がリソース レコードから開かれます。 コードは、文字セットが ASCII であるかどうかを**** 判断し、 `txtDetails`ストリームの内容をにコピーします。
+   このコードは、lstDetails に渡される単純なレコードのフィールドと値を設定します `recFields` 。 リソースがテキスト ファイルである場合は、テキスト **Stream** がリソース レコードから開かれます。 このコードは、文字セットが ASCII かどうかを決定し、Stream の内容 **をに** コピーします `txtDetails` 。
 

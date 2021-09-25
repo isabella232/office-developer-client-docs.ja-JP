@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249920(v=office.15)
 ms:contentKeyID: 48547448
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b61e18e288e53f2aa362659de5796a72a710349e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7161eab7755b535af622dcb1c63b01ff7f8e172e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288421"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593923"
 ---
 # <a name="open-and-close-methods-example-vj"></a>Open メソッドと Close メソッドの使用例 (VJ++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、開かれている **Recordset** オブジェクトと [Connection](close-method-ado.md) オブジェクトの両方に対して、 [Open](recordset-object-ado.md) メソッドと [Close](connection-object-ado.md) メソッドを使用します。
 

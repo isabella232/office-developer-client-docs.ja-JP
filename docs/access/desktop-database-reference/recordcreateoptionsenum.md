@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248917(v=office.15)
 ms:contentKeyID: 48543405
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1bc0d378428c00882c49f7783892ca2bf4d4638c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6fa9193c8ff1110fb132051d5a373948d99c0892
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300694"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593783"
 ---
 # <a name="recordcreateoptionsenum"></a>RecordCreateOptionsEnum
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **Record** オブジェクトの **Open** メソッドに対し、既存の [Record](record-object-ado.md) を開くか、新しい [Record](open-method-ado-record.md) を作成するかを表します。これらの値は AND 演算子で結合できます。
 
@@ -36,17 +36,17 @@ ms.locfileid: "32300694"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adcreatecollection</strong></p></td>
+<td><p><strong>adCreateCollection</strong></p></td>
 <td><p>0x2000</p></td>
 <td><p>既存の <strong>Record</strong> を開かずに、<em>Source</em> パラメーターで指定したノードに新しい <strong>Record</strong> を作成します。ソースが既存のノードを指定している場合、<strong>adCreateCollection</strong> が <strong>adOpenIfExists</strong> または <strong>adCreateOverwrite</strong> と組み合わせて使用されていない限り、実行時エラーになります。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adcreatenoncollection</strong></p></td>
-<td><p>.0</p></td>
+<td><p><strong>adCreateNonCollection</strong></p></td>
+<td><p>0</p></td>
 <td><p>種類が <a href="recordtypeenum.md">adSimpleRecord</a> の新しい <strong>Record</strong> を作成します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adcreateoverwrite</strong></p></td>
+<td><p><strong>adCreateOverwrite</strong></p></td>
 <td><p>0x4000000</p></td>
 <td><p>作成フラグ <strong>adCreateCollection</strong>、<strong>adCreateNonCollection</strong>、および <strong>adCreateStructDoc</strong> を修飾します。この値と作成フラグの値の 1 つが OR を使って連結されている場合、ソース URL が既存のノードまたは <strong>Record</strong> を指定していると、既存のものが上書きされ、新しい <strong>Record</strong> が作成されます。この値は、<strong>adOpenIfExists</strong> とは併用できません。</p></td>
 </tr>
@@ -56,12 +56,12 @@ ms.locfileid: "32300694"
 <td><p>既存の <strong>Record</strong> を開かずに、種類が <a href="recordtypeenum.md">adStructDoc</a> の新しい <strong>Record</strong> を作成します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adfailifnotexists</strong></p></td>
+<td><p><strong>adFailIfNotExists</strong></p></td>
 <td><p>-1</p></td>
 <td><p>既定値。<em>Source</em> が存在しないノードを指定していると、実行時エラーになります。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adopenifexists</strong></p></td>
+<td><p><strong>adOpenIfExists</strong></p></td>
 <td><p>0x2000000</p></td>
 <td><p>作成フラグ <strong>adCreateCollection</strong>、<strong>adCreateNonCollection</strong>、および <strong>adCreateStructDoc</strong> を修飾します。この値と作成フラグの値の 1 つが OR を使って連結されている場合、ソース URL が既存のノードまたは <strong>Record</strong> オブジェクトを指定していると、プロバイダーは、新しい <strong>Record</strong> を作成せずに、既存のものを開く必要があります。この値は、<strong>adCreateOverwrite</strong> とは併用できません。</p></td>
 </tr>

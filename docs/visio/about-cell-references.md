@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 f1_keywords:
 - Vis_DSS.chm82251827
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e6a9aceb-90d7-fb53-eaf4-416a1ae2a98b
 description: シェイプシートのセルの参照を使用すると、数式間の相互依存を作成できます。セルの参照によって、別のセルの値を基にセルの値を計算できます。たとえば、図形の [Width] セルに、図形の [Height] セルの値を参照して図形の幅を計算する数式が含まれている場合、図形の高さを変更すると、高さに比例して図形の幅も変更されます。
-ms.openlocfilehash: a92bcc560c535dc012ec5cb79db72250e78364c7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 90ca190bfa7415a58f21859c0af2fd6e6d47f28d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409805"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603964"
 ---
 # <a name="about-cell-references"></a>セルの参照について
 

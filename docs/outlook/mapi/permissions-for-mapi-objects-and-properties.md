@@ -3,17 +3,17 @@ title: MAPI オブジェクトとプロパティのアクセス許可
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 32669cbe-5460-4043-99cc-c609608f48da
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 4efa9cd1596cffe19a19a62059f81fa553343d77
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: adc960182a7d6a8eeacfcd5ee644c0e2fde9d3d6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436175"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591977"
 ---
 # <a name="permissions-for-mapi-objects-and-properties"></a>MAPI オブジェクトとプロパティのアクセス許可
 

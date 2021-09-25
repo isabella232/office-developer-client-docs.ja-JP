@@ -3,17 +3,17 @@ title: MAPI スプーラーの概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 5866b202-883e-454e-aeb1-61526c43dae9
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 162957ea17b5a82d4da68340e971d328c85cd9f7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f92d7a579c2ccd8c945cdbb820bd97b66d6fa2c5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432717"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592124"
 ---
 # <a name="mapi-spooler-overview"></a>MAPI スプーラーの概要
   
@@ -37,7 +37,7 @@ MAPI スプーラーには、メッセージの配布に関連する追加の責
   
 **出力メッセージ フロー**
   
-![送信メッセージ フロー](media/amapi_46.gif "送信メッセージ フロー")
+![出力メッセージ フロー](media/amapi_46.gif "出力メッセージ フロー")
   
 クライアント アプリケーションのユーザーは、1 つ以上の受信者にメッセージを送信します。 メッセージ ストア プロバイダーは送信プロセスを開始し、送信に必要な追加情報を含むメッセージを書式設定します。
   

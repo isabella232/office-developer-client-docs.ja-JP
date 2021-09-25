@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagOriginalEits
 api_type:
 - COM
 ms.assetid: 9908039e-6b88-428f-b241-b04144cbcf5c
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: cdfbf0e8c5118f87ac058d56ebc8f85369bd5494
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 736e5617ff28e46ca03cb9382630a8a6224cec2e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434712"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624789"
 ---
 # <a name="pidtagoriginaleits-canonical-property"></a>PidTagOriginalEits 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "33434712"
 |関連するプロパティ:  <br/> |PR_ORIGINAL_EITS  <br/> |
 |識別子:  <br/> |0x0021  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Server  <br/> |
+|エリア:  <br/> |サーバー  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 

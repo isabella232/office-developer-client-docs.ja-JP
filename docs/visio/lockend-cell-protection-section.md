@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm620
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e9742142-4d34-1ba9-480e-d1ecff4fc7cd
 description: 1-D 図形の終点 ([EndX]、[EndY]) を特定の位置にロックします。
-ms.openlocfilehash: d9fe0372c44fe3b029a4d06056c8d3871c3f91e8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 35831023adb58b75be973bd6e54c5985eae01c0c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425583"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603614"
 ---
 # <a name="lockend-cell-protection-section"></a>[LockEnd] セル ([Protection] セクション)
 

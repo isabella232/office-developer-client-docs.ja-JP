@@ -3,22 +3,22 @@ title: DateDiff 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1c58ee87-0f57-4643-be4d-62da815df705
 description: 指定した開始日と終了日間で超えられた、指定した日付部分境界のカウントを戻します。
-ms.openlocfilehash: 1cce8a501c5a57384372e681f903baa4f4c20bef
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 33db2ae5caa55949d0eac86a2bef7f5049d849f2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415615"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569766"
 ---
 # <a name="datediff-function-access-custom-web-app"></a>DateDiff 関数 (Access カスタム Web アプリ)
 
 指定した開始日と終了日間で超えられた、指定した日付部分境界のカウントを戻します。
   
 > [!NOTE]
-> この記事で説明されているクラウド ストレージ機能は、Office 2013 および Office 2016 ではサポートされなくなっているため、次のエラーが発生する可能性があります。 >  *申し訳ございません。サーバーで問題が発生しているため、現在 \<サービス\> を追加できません。後でもう一度お試しください。* > Office Online、Office for iOS、Office for Android のクラウド ストレージについて、[Office クラウド ストレージ パートナー プログラム](https://dev.office.com/programs/officecloudstorage)でお調べいただけます。 
+> この記事で説明するクラウド ストレージ機能は、Office 2013 および Office 2016 ではサポートされなくなったので、> 申し訳ありませんが、サーバーの問題が発生するため、今は追加できません。 *\<service\>後でやり直してください。* > Office Online、Office for iOS、Office for Android のクラウド ストレージについては、Office Cloud Storage パートナー プログラムを[参照してください](https://dev.office.com/programs/officecloudstorage)。 
   
 ## <a name="syntax"></a>構文
 

@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IXPLogon.TransportNotify
 api_type:
 - COM
 ms.assetid: c712fc17-f436-41cf-9aa3-186c9a86d56e
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 2482dc39d3f1d1568b45dd3de88358e08d190be4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7a53fb7f07be66c1d55f1adabc24511c9d50bb84
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428859"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592201"
 ---
 # <a name="ixplogontransportnotify"></a>IXPLogon::TransportNotify
 

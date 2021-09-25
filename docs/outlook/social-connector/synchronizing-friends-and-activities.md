@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6e91b765-a207-4d8c-8763-5d643ca4d0c0
 description: ソーシャル Outlook (OSC) は、連絡先カードまたはユーザー ウィンドウ内のユーザーに関するソーシャル ネットワークからの情報Outlookサポートしています。 SharePointプレゼンス情報SharePointサポートするサーバー、SharePoint Office、Lync クライアント、およびすべてのクライアント アプリケーションが連絡先カードをサポートします。
-ms.openlocfilehash: 0d6881c5d596519422d01ca61a00b1a68e610f2c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: f86441e18697de26fe41cc7b680c85abb28ec27f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329202"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604076"
 ---
 # <a name="synchronizing-friends-and-activities"></a>友だちとアクティビティの同期
 

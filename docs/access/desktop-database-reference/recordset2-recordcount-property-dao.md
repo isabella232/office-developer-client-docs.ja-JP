@@ -1,5 +1,5 @@
 ---
-title: Recordset2 プロパティ (DAO)
+title: Recordset2.RecordCount プロパティ (DAO)
 TOCTitle: RecordCount Property
 ms:assetid: 77852966-11e9-1773-6e58-53927b84c03b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196071(v=office.15)
@@ -10,29 +10,29 @@ f1_keywords:
 - dao360.chm1052890
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: c23de433f26b5a54b3fee5cc69f67a07b53f8a3b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f8181738ddf39ba00dca921cc192e2e68deaaf82
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309157"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617532"
 ---
-# <a name="recordset2recordcount-property-dao"></a>Recordset2 プロパティ (DAO)
+# <a name="recordset2recordcount-property-dao"></a>Recordset2.RecordCount プロパティ (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **[Recordset](recordset-object-dao.md)** オブジェクト内のアクセス済みのレコード数、またはテーブル タイプの **Recordset** オブジェクト、あるいは **[TableDef](tabledef-object-dao.md)** オブジェクトの合計レコード数を取得します。値の取得のみ可能です。長整数型 ( **Long**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。RecordCount
+*式* .RecordCount
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 
-**RecordCount** プロパティを使用して、**Recordset** オブジェクトまたは **TableDef** オブジェクトのアクセス済みのレコード数を調べます。 ダイナセット タイプ、スナップショット タイプ、または前方スクロール タイプの **Recordset** オブジェクトでは、すべてのレコードがアクセス済みになるまで、そのオブジェクトに含まれている合計レコード数は **RecordCount** プロパティに示されません。 最後のレコードにアクセスした後、**Recordset** オブジェクト内または **TableDef** オブジェクト内にある削除されていないレコードの合計数が **RecordCount** プロパティに示されます。 最後のレコードにアクセスするように強制するには、 **Recordset**オブジェクトで**[MoveLast](recordset2-movelast-method-dao.md)** メソッドを使用します。 また、SQL **Count** 関数を使用して、クエリから返される概算のレコード数を調べることもできます。
+**RecordCount** プロパティを使用して、**Recordset** オブジェクトまたは **TableDef** オブジェクトのアクセス済みのレコード数を調べます。 ダイナセット タイプ、スナップショット タイプ、または前方スクロール タイプの **Recordset** オブジェクトでは、すべてのレコードがアクセス済みになるまで、そのオブジェクトに含まれている合計レコード数は **RecordCount** プロパティに示されません。 最後のレコードにアクセスした後、**Recordset** オブジェクト内または **TableDef** オブジェクト内にある削除されていないレコードの合計数が **RecordCount** プロパティに示されます。 最後のレコードがアクセスされるように強制するには、**Recordset** オブジェクトに対して **[MoveLast](recordset2-movelast-method-dao.md)** メソッドを使用します。 また、SQL **Count** 関数を使用して、クエリから返される概算のレコード数を調べることもできます。
 
 > [!NOTE]
 > [!メモ] 新しく開いた **Recordset** オブジェクトに、 **MoveLast** メソッドを使用して値を設定するとパフォーマンスが低下します。 **Recordset** を開いた直後に正確な **RecordCount** プロパティの値が必要な場合を除き、コードの他の部分で **Recordset** オブジェクトに値が設定されるまで待機してから、 **RecordCount** プロパティを確認することをお勧めします。
@@ -43,7 +43,7 @@ ms.locfileid: "32309157"
 
 レコードが格納されていない **Recordset** オブジェクトおよび **TableDef** オブジェクトは、 **RecordCount** プロパティが 0 に設定されます。
 
-**Recordset**オブジェクトに対して**[Requery](recordset2-requery-method-dao.md)** メソッドを使用すると、クエリが再実行された場合と同様に**RecordCount**プロパティがリセットされます。
+**Recordset** オブジェクトに対して **[Requery](recordset2-requery-method-dao.md)** メソッドを使用すると、クエリがもう一度実行された場合と同じ状態に **RecordCount** プロパティが再設定されます。
 
 ## <a name="example"></a>例
 

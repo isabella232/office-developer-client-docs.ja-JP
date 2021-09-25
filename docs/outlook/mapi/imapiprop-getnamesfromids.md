@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIProp.GetNamesFromIDs
 api_type:
 - COM
 ms.assetid: 3efa4731-cf32-4a6c-9ba8-d059e58b0d98
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: f6688afde9b36a7722eaaf768f091481c15b7308
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9b968f76ee5b7f8b76b1ede9d8ce23b363c40e0f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423574"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625561"
 ---
 # <a name="imapipropgetnamesfromids"></a>IMAPIProp::GetNamesFromIDs
 

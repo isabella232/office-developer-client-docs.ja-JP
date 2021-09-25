@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e14b8246-0064-3a54-7bd6-ad28180f9ea6
 description: 無限線上の 2 つの点に対する x 座標または y 座標を格納します。
-ms.openlocfilehash: 1198e516a15e829b9a2da23491ca5f75e88a8e7d
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: b0d9319a2be8f6365207d9dac7c4ee3b4a550d4b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539773"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603782"
 ---
 # <a name="cell-element-infiniteline-row-visio-xml"></a>Cell 要素 (InfiniteLine Row) (Visio XML)
 

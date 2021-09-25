@@ -1,29 +1,29 @@
 ---
-title: Recordset2 メソッド (DAO)
+title: Recordset2.Delete メソッド (DAO)
 TOCTitle: Delete Method
 ms:assetid: 01fd8e20-d491-385e-2b6d-0d1423f66e51
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844759(v=office.15)
 ms:contentKeyID: 48542947
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 17e9c89323eec9ebe1d95e514e62e835febebf61
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5b573e31f63f51579d444d2a396a54dd8e5e620c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307358"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617539"
 ---
-# <a name="recordset2delete-method-dao"></a>Recordset2 メソッド (DAO)
+# <a name="recordset2delete-method-dao"></a>Recordset2.Delete メソッド (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 このオブジェクトではサポートされていません。
 
 ## <a name="syntax"></a>構文
 
-*式*。デリート
+*式* .削除
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 

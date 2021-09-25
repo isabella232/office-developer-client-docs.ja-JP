@@ -1,23 +1,23 @@
 ---
-title: marshaloptions プロパティ (ADO)
+title: MarshalOptions プロパティ (ADO)
 TOCTitle: MarshalOptions property (ADO)
 ms:assetid: dc9c4e94-0725-210d-8251-079054541142
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250118(v=office.15)
 ms:contentKeyID: 48548143
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 22a3662d3d14dd639069fa7aa48eda6f032fd2d1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 8fff5f725df8c53e3990ed1aacd519a0bfdf6f4f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289771"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594000"
 ---
-# <a name="marshaloptions-property-ado"></a>marshaloptions プロパティ (ADO)
+# <a name="marshaloptions-property-ado"></a>MarshalOptions プロパティ (ADO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 どのレコードがサーバーにマーシャリングされるかを示します。
 
@@ -27,7 +27,7 @@ ms.locfileid: "32289771"
 
 ## <a name="remarks"></a>注釈
 
-クライアント側の[Recordset](recordset-object-ado.md)を使用する場合、クライアント上で変更されたレコードは、マーシャリングと呼ばれる手法を使用して中間層または web サーバーに書き戻されます。これは、スレッド間でインターフェイスメソッドのパラメーターをパッケージ化して送信するプロセスです。プロセス境界。 **marshaloptions**プロパティを設定すると、変更されたリモートデータを中央層または web サーバーに戻すためにマーシャリングするときのパフォーマンスを向上させることができます。
+クライアント側の [Recordset](recordset-object-ado.md)を使用する場合、クライアントで変更されたレコードは、マーシャリング、スレッドまたはプロセスの境界を越えてインターフェイス メソッド パラメーターをパッケージ化して送信するプロセスと呼ばれる手法を使用して、ミドル 層または Web サーバーに書き戻されます。 **MarshalOptions** プロパティを設定すると、ミドル 層または Web サーバーに更新するために変更されたリモート データをマーシャリングすると、パフォーマンスが向上します。
 
-**リモートデータサービスの使用状況**このプロパティは、クライアント側の**Recordset**でのみ使用されます。
+**リモート データ サービスの使用状況** このプロパティは、クライアント側の Recordset でのみ使用 **されます**。
 

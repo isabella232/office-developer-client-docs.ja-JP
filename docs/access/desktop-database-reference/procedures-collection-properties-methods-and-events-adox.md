@@ -6,24 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249387(v=office.15)
 ms:contentKeyID: 48545292
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 263fe157076d11c05f5503012d74375a2f4bbb88
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a5d13a06ad5da437c98db4843bab8993b8cedc15
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301352"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617812"
 ---
 # <a name="procedures-collection-properties-methods-and-events-adox"></a>Procedures コレクションのプロパティ、メソッド、およびイベント (ADOX)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ## <a name="properties"></a>プロパティ
 
 - [Count プロパティ](count-property-ado.md)
 - [Item プロパティ](item-property-ado.md)
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>Methods
 
 - [Append メソッド (プロシージャ)](append-method-adox-procedures.md)
 - [Delete メソッド (コレクション)](delete-method-adox-collections.md)

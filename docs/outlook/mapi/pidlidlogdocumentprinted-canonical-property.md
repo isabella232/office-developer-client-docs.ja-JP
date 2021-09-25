@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidLogDocumentPrinted
 api_type:
 - COM
 ms.assetid: e01bf0d9-62cf-4fba-8cec-232a46025feb
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 16504329d9eb653914d84da2be26e10c54d06376
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 836b2cf09056bfcfcf51224573697ab6d70167aa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280472"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604601"
 ---
 # <a name="pidlidlogdocumentprinted-canonical-property"></a>PidLidLogDocumentPrinted 標準プロパティ
 
@@ -41,7 +41,7 @@ ms.locfileid: "32280472"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様Exchange Server提供します。
     
 [[MS-OXOJRNL]](https://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
   

@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm183441
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: f8c45cdf0d9cf588f61d1b51b728a8a15f6d7e12
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: dda5d6fa69e60c84a76a62a091d429ca27ebfb1c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308751"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593601"
 ---
 # <a name="sendkeys-macro-action"></a>SendKeys マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 <table>
 <thead>
@@ -38,9 +38,9 @@ ms.locfileid: "32308751"
 **SendKeys** アクションを使用すると、Microsoft Access やアクティブな Windows ベースのアプリケーションにキー操作を直接送信することができます。
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 **SendKeys** アクションの引数は次のとおりです。
 
@@ -80,8 +80,8 @@ ms.locfileid: "32308751"
 このアクションは、ダイアログ ボックスに情報を入力する場合 (特にマクロを中断せずにダイアログ ボックスに手動で入力する場合) に使用します。Access のアクションには、よく使用するダイアログ ボックスのオプションを自動的に選択する **PrintOut** アクションや **FindRecord** アクションなどがありますが、それ以外のダイアログ ボックスのオプションを選択するには **SendKeys** アクションを使います。
 
 > [!NOTE]
-> - ダイアログ ボックスによってマクロが中断されるので、ダイアログ ボックスを開くアクションの前に**SendKeys** アクションを配置し、**Wait/待機**引数を [**いいえ**] に設定する必要があります。
-> - Access やその他のアプリケーションにキー操作が到達するタイミングには注意が必要です。目的の処理を実行するために、**SendKeys** アクションを使わずに他の**FindRecord** アクションなどを使用してダイアログ ボックスのオプションを入力できる場合は、他のアクションを使用することをお勧めします。
+> - ダイアログ ボックスによってマクロが中断されるので、ダイアログ ボックスを開くアクションの前に **SendKeys** アクションを配置し、**Wait/待機** 引数を [**いいえ**] に設定する必要があります。
+> - Access やその他のアプリケーションにキー操作が到達するタイミングには注意が必要です。目的の処理を実行するために、**SendKeys** アクションを使わずに他の **FindRecord** アクションなどを使用してダイアログ ボックスのオプションを入力できる場合は、他のアクションを使用することをお勧めします。
 
 Access やその他の Windows ベースのアプリケーションに 255 文字を超えるキー操作を送る場合は、マクロで **SendKeys** アクションを複数回続けて使用します。
 

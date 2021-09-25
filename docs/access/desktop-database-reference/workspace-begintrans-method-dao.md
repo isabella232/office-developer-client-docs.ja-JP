@@ -1,30 +1,30 @@
 ---
-title: Workspace メソッド (DAO)
+title: Workspace.BeginTrans メソッド (DAO)
 TOCTitle: BeginTrans Method
 ms:assetid: aa7c3bf8-fb08-9360-5998-4bf3f721ecbb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821457(v=office.15)
 ms:contentKeyID: 48546948
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c143d91c3dfe786c3245c2b67768c57379869e75
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 845d6b12fb7ee17ad9a4a860f5e37239665bfbe2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302549"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617378"
 ---
-# <a name="workspacebegintrans-method-dao"></a>Workspace メソッド (DAO)
+# <a name="workspacebegintrans-method-dao"></a>Workspace.BeginTrans メソッド (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 新しいトランザクションを開始します。値の取得および設定が可能です。データベース型 (**Database**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。BeginTrans
+*式* .BeginTrans
 
-*式***Workspace**オブジェクトを表す変数を取得します。
+*expression*: **Workspace** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 

@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249112(v=office.15)
 ms:contentKeyID: 48544132
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9f9d226f33fba327d3784d18d631f6c0c74a337a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a3c4203b84bb43853b4bfc77ffe5ce041ab276ca
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288414"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593944"
 ---
 # <a name="open-and-close-methods-example-vc"></a>Open メソッドと Close メソッドの使用例 (VC++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、開かれている **Recordset** オブジェクトと [Connection](close-method-ado.md) オブジェクトの両方に対して、 [Open](recordset-object-ado.md) メソッドと [Close](connection-object-ado.md) メソッドを使用します。
 
@@ -219,7 +219,7 @@ void PrintComError(_com_error &e)
 // EndOpenCpp 
 ```
 
-**openx**
+**OpenX.h**
 
 ```cpp 
  

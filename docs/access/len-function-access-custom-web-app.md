@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6434655b-8fb3-4a20-9649-8934042bfc7b
 description: 指定された文字列式の文字数 (ただし、末尾の空白を除く) を返します。
-ms.openlocfilehash: 2bd4f4fc4407f946398003e8e572e01e3a9f60f9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 69e1b6d71c63ea95763e1181e3b21506db99f6e8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410757"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617287"
 ---
 # <a name="len-function-access-custom-web-app"></a>Len 関数 (Access カスタム Web アプリ)
 

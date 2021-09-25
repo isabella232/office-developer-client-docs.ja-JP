@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f9dd58c7-4119-90db-54f3-e1dd8e48451e
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: d18308d93956809ec1fc3003f2d414aba24d4689
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a5a0b97ae800db64889206b1b238222a127f66d2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331221"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624595"
 ---
 # <a name="pidtagrpcoverhttpproxyprincipalname-canonical-property"></a>PidTagRpcOverHttpProxyPrincipalName 標準プロパティ
 
@@ -21,7 +21,7 @@ ms.locfileid: "32331221"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Hypertext Transfer Protocol (HTTP) を使用してリモート プロシージャ 呼び出し (RPC) を使用して Microsoft Exchange Server に接続するために Microsoft Outlook で使用されるプロキシ サーバーのプリンシパル名を格納します。
+Microsoft Outlook がハイパーテキスト転送プロトコル (HTTP) を使用してリモート プロシージャ 呼び出し (RPC) を使用して Microsoft Exchange Server に接続するために使用するプロキシ サーバーのプリンシパル名を格納します。
   
 ## 
 

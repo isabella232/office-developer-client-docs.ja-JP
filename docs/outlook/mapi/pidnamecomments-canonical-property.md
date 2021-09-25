@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidNameComments
 api_type:
 - COM
 ms.assetid: bc9b00b6-6337-411b-9219-067dd6c1add3
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0cf253846959afafe634f2846c1a21bddbff35d6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e38673495daf7bdb2bb4583cc8e328d36373da38
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331522"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604349"
 ---
 # <a name="pidnamecomments-canonical-property"></a>PidNameComments 標準プロパティ
 
@@ -41,7 +41,7 @@ ms.locfileid: "32331522"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連するプロトコル仕様への参照Exchange Server提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
 [[MS-OXODOC]](https://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)
   

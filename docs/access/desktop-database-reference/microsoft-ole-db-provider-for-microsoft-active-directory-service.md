@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249647(v=office.15)
 ms:contentKeyID: 48546385
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 23e1cab32fee6103a046219a7cda8c90f02d9f79
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7ea95d40d10823de22b7496615a4fddb3e2860c5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288940"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593965"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-active-directory-service"></a>Microsoft OLE DB Provider for Microsoft Active Directory Service
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 Microsoft Active Directory Service Interfaces (ADSI) プロバイダーを使用すると、ADO から ADSI をとおして異種ディレクトリ サービスに接続できます。これによって、ADO アプリケーションでは、Microsoft Windows NT 4.0 および Microsoft Windows 2000 のディレクトリ サービス、LDAP 準拠のディレクトリ サービス、および Novell Directory Services に対する読み取り専用アクセスが可能になります。ADSI 自体がプロバイダー モデルに基づいているので、新しいプロバイダーで別のディレクトリへのアクセスを提供する場合でも、ADO アプリケーションはシームレスにアクセスできます。ADSI プロバイダーはフリースレッドであり、Unicode に対応しています。
 
@@ -60,11 +60,11 @@ ADSDSOObject
 </tr>
 <tr class="even">
 <td><p><strong>User ID</strong></p></td>
-<td><p>ユーザー名を指定します。 このキーワードを省略すると、現在のログオンが使用されます。</p></td>
+<td><p>ユーザー名を指定します。このキーワードを省略すると、現在のログオンが使用されます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Password</strong></p></td>
-<td><p>ユーザー パスワードを指定します。 このキーワードを省略すると、現在のログオンが使用されます。</p></td>
+<td><p>ユーザー パスワードを指定します。このキーワードを省略すると、現在のログオンが使用されます。</p></td>
 </tr>
 </tbody>
 </table>
@@ -89,7 +89,7 @@ ADSDSOObject
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>原因</em></p></td>
+<td><p><em>Root</em></p></td>
 <td><p>検索を開始する <strong>ADsPath</strong> オブジェクト (つまり、検索のルート) を示します。</p></td>
 </tr>
 <tr class="even">
@@ -101,10 +101,10 @@ ADSDSOObject
 <td><p>返される属性をコンマ区切りの一覧で示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Scope</em></p></td>
-<td><p>省略可能です。 検索の範囲を指定する<strong>文字列</strong>。 次のいずれかをすることができます。 base-ベースオブジェクトのみを検索します (検索のルート)。<br />
-OneLevel-1 つのレベルのみを検索します。<br />
-subtree-サブツリー全体を検索します。</p></td>
+<td><p><em>スコープ</em></p></td>
+<td><p>オプション。 検索 <strong>の</strong> 範囲を指定する文字列。 次のいずれかを指定できます。 Base - 検索は基本オブジェクト (検索のルート) のみです。<br />
+OneLevel - 1 つのレベルのみを検索します。<br />
+Subtree - サブツリー全体を検索します。</p></td>
 </tr>
 </tbody>
 </table>
@@ -129,7 +129,7 @@ objectClass='user' AND objectCategory='Person'"
 
 ## <a name="recordset-behavior"></a>Recordset の動作
 
-次の表は、このプロバイダーで開かれた [Recordset](recordset-object-ado.md) オブジェクトで利用可能な機能の一覧です。 使用できるのは、静的カーソルの種類 (**adopenstatic**) だけです。
+次の表は、このプロバイダーで開かれた [Recordset](recordset-object-ado.md) オブジェクトで利用可能な機能の一覧です。 静的カーソルの種類 (**adOpenStatic**) のみを使用できます。
 
 プロバイダーの構成による **Recordset** の動作の詳細については、 [Supports](supports-method-ado.md) メソッドを実行し、 [Recordset](properties-collection-ado.md) の **Properties** コレクションを列挙して、プロバイダー固有の動的プロパティが存在するかどうかを確認してください。
 
@@ -143,7 +143,7 @@ objectClass='user' AND objectCategory='Person'"
 <thead>
 <tr class="header">
 <th><p>プロパティ</p></th>
-<th><p>Availability</p></th>
+<th><p>可用性</p></th>
 </tr>
 </thead>
 <tbody>
@@ -240,8 +240,8 @@ objectClass='user' AND objectCategory='Person'"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>メソッド</p></th>
-<th><p>できる?</p></th>
+<th><p>Method</p></th>
+<th><p>利用可能ですか?</p></th>
 </tr>
 </thead>
 <tbody>
@@ -258,64 +258,64 @@ objectClass='user' AND objectCategory='Person'"
 <td><p>いいえ</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="cancelupdate-method-ado.md">CancelUpdate</a></p></td>
+<td><p><a href="cancelupdate-method-ado.md">CancelUpdate </a></p></td>
 <td><p>いいえ</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="clone-method-ado.md">Clone</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="close-method-ado.md">Close</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="delete-method-ado-recordset.md">Delete</a></p></td>
+<td><p><a href="delete-method-ado-recordset.md">削除</a></p></td>
 <td><p>いいえ</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="getrows-method-ado.md">GetRows</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="move-method-ado.md">Move</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="movefirst-movelast-movenext-and-moveprevious-methods-ado.md">MoveFirst</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="movefirst-movelast-movenext-and-moveprevious-methods-ado.md">MoveLast</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="movefirst-movelast-movenext-and-moveprevious-methods-ado.md">MoveNext</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="movefirst-movelast-movenext-and-moveprevious-methods-ado.md">MovePrevious</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="nextrecordset-method-ado.md">NextRecordset</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="open-method-ado-recordset.md">Open</a></p></td>
-<td><p>はい</p></td>
+<td><p><a href="open-method-ado-recordset.md">開く</a></p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="requery-method-ado.md">Requery</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="resync-method-ado.md">Resync</a></p></td>
-<td><p>はい</p></td>
+<td><p><a href="resync-method-ado.md">再同期</a></p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="supports-method-ado.md">機能</a></p></td>
-<td><p>はい</p></td>
+<td><p><a href="supports-method-ado.md">サポート</a></p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="update-method-ado.md">Update</a></p></td>

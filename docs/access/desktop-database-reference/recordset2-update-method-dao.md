@@ -1,5 +1,5 @@
 ---
-title: Recordset2. Update メソッド (DAO)
+title: Recordset2.Update メソッド (DAO)
 TOCTitle: Update Method
 ms:assetid: 1b47606a-e79c-23f1-b120-46d1429bc167
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845700(v=office.15)
@@ -10,23 +10,23 @@ f1_keywords:
 - dao360.chm1052882
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 4259da0eb48e7ff13e246b326cc6e96d7a916ea7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9d8dbd5100c13f78eaac4d5ceb6cfa22b55ca532
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307169"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593699"
 ---
-# <a name="recordset2update-method-dao"></a>Recordset2. Update メソッド (DAO)
+# <a name="recordset2update-method-dao"></a>Recordset2.Update メソッド (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*。Update (***updatetype***, ***Force***)
+*式* .Update(***UpdateType** _, _*_Force_**)
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -40,23 +40,23 @@ ms.locfileid: "32307169"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>updatetype</em></p></td>
+<td><p><em>UpdateType</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>長整数型 (Long)</strong></p></td>
+<td><p><strong>Long</strong></p></td>
 <td><p>[設定] で指定されている更新の種類を示す <strong><a href="updatetypeenum-enumeration-dao.md">UpdateTypeEnum</a></strong> クラスの定数です (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Force</em></p></td>
-<td><p>省略可</p></td>
-<td><p><strong>ブール型 (Boolean)</strong></p></td>
-<td><p><a href="recordset-addnew-method-dao.md"><strong>AddNew</strong></a> 、 <a href="fields-delete-method-dao.md"><strong>Delete</strong></a> 、または <a href="recordset2-edit-method-dao.md"><strong>Edit</strong></a> の呼び出し後に、基になるデータが他のユーザーによって変更されたかどうかにかかわらず、変更を強制的にデータベースに反映するかどうかを示すブール型 ( <strong>Boolean</strong> ) の値です。 <strong>True</strong> に設定すると、変更が強制的に反映され、他のユーザーによる変更は単純に上書きされます。 <strong>False</strong> (既定値) に設定すると、更新が保留されている間に他のユーザーが変更を加えた場合、競合する変更の更新が失敗します。 エラーは発生しませんが、 <strong><a href="recordset-batchcollisioncount-property-dao.md">BatchCollisionCount</a></strong>プロパティと<strong>batchcollisions</strong>プロパティによって競合の発生回数と行数がそれぞれ異なります (ODBCDirect ワークスペースのみ)。</p></td>
+<td><p><em>物理的な力</em></p></td>
+<td><p>省略可能</p></td>
+<td><p><strong>Boolean</strong></p></td>
+<td><p><a href="recordset-addnew-method-dao.md"><strong>AddNew</strong></a> 、 <a href="fields-delete-method-dao.md"><strong>Delete</strong></a> 、または <a href="recordset2-edit-method-dao.md"><strong>Edit</strong></a> の呼び出し後に、基になるデータが他のユーザーによって変更されたかどうかにかかわらず、変更を強制的にデータベースに反映するかどうかを示すブール型 ( <strong>Boolean</strong> ) の値です。 <strong>True</strong> に設定すると、変更が強制的に反映され、他のユーザーによる変更は単純に上書きされます。 <strong>False</strong> (既定値) に設定すると、更新が保留されている間に他のユーザーが変更を加えた場合、競合する変更の更新が失敗します。エラーは発生しませんが、 <strong><a href="recordset-batchcollisioncount-property-dao.md">BatchCollisionCount</a></strong> プロパティと <strong>BatchCollisions</strong> プロパティに、競合の数と競合によって影響を受ける行が、それぞれ格納されます (ODBCDirect ワークスペースのみ)。  </p></td>
 </tr>
 </tbody>
 </table>
@@ -78,9 +78,9 @@ ms.locfileid: "32307169"
 
 ODBCDirect ワークスペースでは、カーソル ライブラリが一括更新をサポートしており、 **Recordset** を開くときにオプションとして一括更新時の共有的ロックが指定されている場合に、一括更新を実行できます。
 
-Microsoft Access ワークスペースでは、マルチユーザー環境で **Recordset** オブジェクトの **LockEdits** プロパティが **True** に設定されている場合 (排他的ロック)、 **Edit** が使用された時点から、 **Update** メソッドが実行されるか、編集が取り消されるまで、レコードがロックされます。 **LockEdits** プロパティが **False** に設定されている場合 (共有的ロック)、レコードはロックされ、データベースに反映される直前に、編集前のレコードと比較されます。 **Edit** メソッドを使用した時点からレコードが変更されている場合は、 **Update** 操作が失敗します。 Microsoft Office Access データベース エンジンに接続されている ODBC データベース、およびインストール可能な ISAM データベースでは、常に共有的ロックが使用されます。 変更による **Update** 操作を引き続き実行するには、 **Update** メソッドを再度使用します。 他のユーザーが変更を加えた場合にそのレコードに戻るには、Move 0 を使用してカレント レコードを更新します。
+Microsoft Access ワークスペースでは、マルチユーザー環境で **Recordset** オブジェクトの **LockEdits** プロパティが **True** に設定されている場合 (排他的ロック)、 **Edit** が使用された時点から、 **Update** メソッドが実行されるか、編集が取り消されるまで、レコードがロックされます。 **LockEdits** プロパティが **False** に設定されている場合 (共有的ロック)、レコードはロックされ、データベースに反映される直前に、編集前のレコードと比較されます。 **Edit** メソッドを使用した時点からレコードが変更されている場合は、 **Update** 操作が失敗します。 Microsoft Office Access データベース エンジンに接続されている ODBC データベース、およびインストール可能な ISAM データベースでは、常に共有的ロックが使用されます。 変更による **Update** 操作を引き続き実行するには、 **Update** メソッドを再度使用します。 他のユーザーがレコードを変更した後にレコードを戻すには、Move 0 を使用して現在のレコードを更新します。
 
 > [!NOTE]
-> [!メモ] レコードを追加、編集、または削除するには、基になるデータ ソースでレコードに一意なインデックスが付けられている必要があります。このようなインデックスがない場合、Microsoft Access ワークスペースで **AddNew**、 **Delete**、または **Edit** の各メソッドを呼び出すと、"アクセスが拒否されました。" というエラーが発生し、ODBCDirect ワークスペースで **Update** を呼び出すと、"引数が無効です。" というエラーが発生します。
+> レコードを追加、編集、または削除するには、基になるデータ ソースでレコードに一意なインデックスが付けられている必要があります。このようなインデックスがない場合、Microsoft Access ワークスペースで **AddNew**、**Delete**、または **Edit** の各メソッドを呼び出すと、"アクセスが拒否されました。" というエラーが発生し、ODBCDirect ワークスペースで **Update** を呼び出すと、"引数が無効です。" というエラーが発生します。
 
 

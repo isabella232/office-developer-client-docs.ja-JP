@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidLogType
 api_type:
 - COM
 ms.assetid: 6cfcc048-03b9-4e34-bb92-480fe808e910
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: b4e8ef3f38a373cd3bab7af6f01d42113fe5fdc3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 04cbcf1c2f3b6552c4d824120070367d81faab52
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326671"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624868"
 ---
 # <a name="pidlidlogtype-canonical-property"></a>PidLidLogType 標準プロパティ
 

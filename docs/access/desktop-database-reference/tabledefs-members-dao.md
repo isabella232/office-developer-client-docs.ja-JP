@@ -1,23 +1,23 @@
 ---
-title: テーブル定義メンバー (DAO)
+title: TableDefs メンバー (DAO)
 TOCTitle: TableDefs Members
 ms:assetid: 7a365303-1e7d-0c01-67ed-defcc76577d1
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196175(v=office.15)
 ms:contentKeyID: 48545784
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: fe8ba97e3d8306b8dc8b0415fdf50e4c7041d7f2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ac6f805bcd2cbad752d3ed59419ac8ab8dea0c13
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314085"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593524"
 ---
-# <a name="tabledefs-members-dao"></a>テーブル定義メンバー (DAO)
+# <a name="tabledefs-members-dao"></a>TableDefs メンバー (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 TableDefs コレクションには、データベースに格納されているすべての TableDef オブジェクトが含まれます (Microsoft Access ワークスペースのみ)。
 
@@ -36,7 +36,7 @@ TableDefs コレクションには、データベースに格納されている�
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="tabledefs-append-method-dao.md">追加</a></strong></p></td>
+<td><p><strong><a href="tabledefs-append-method-dao.md">Append</a></strong></p></td>
 <td><p>新しい <strong>TableDef</strong> を <strong>TableDefs</strong> コレクションに追加します。</p></td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ TableDefs コレクションには、データベースに格納されている�
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="tabledefs-count-property-dao.md">Count</a></strong></p></td>
-<td><p>指定したコレクション内のオブジェクトの数を取得します。 値の取得のみ可能です。</p></td>
+<td><p>指定したコレクション内のオブジェクトの数を取得します。値の取得のみ可能です。</p></td>
 </tr>
 </tbody>
 </table>

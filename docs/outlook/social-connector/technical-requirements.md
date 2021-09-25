@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eff6d5d6-8855-4e54-a781-9deab8cc0aca
 description: このトピックでは、サポートされているプログラミング言語、COM 可視性とメソッドの戻り値の型の要件、および Outlook Social Connector (OSC) プロバイダー拡張 DLL の詳細について説明します。
-ms.openlocfilehash: 14dfcf52d714177775c5610b5da91d174f81a132
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5d5ca78c7ff1e328257b7e645731e76a2e6e5633
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329156"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604061"
 ---
 # <a name="technical-requirements"></a>技術的要件
 
@@ -58,7 +58,7 @@ XML パーサーには依存関係はありません。 OSC プロバイダー�
 ## <a name="see-also"></a>関連項目
 
 - [プロバイダーの開発に関するベスト プラクティス](best-practices-for-developing-a-provider.md)  
-- [プロバイダーを開発するための学習のクイック ステップ](quick-steps-for-learning-to-develop-a-provider.md)
+- [プロバイダーを開発するためのラーニング手順](quick-steps-for-learning-to-develop-a-provider.md)
 - [プロバイダーの展開](deploying-a-provider.md)  
 - [Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)](getting-started-with-developing-an-outlook-social-connector-provider.md)
 

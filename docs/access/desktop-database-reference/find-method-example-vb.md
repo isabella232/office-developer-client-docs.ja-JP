@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249657(v=office.15)
 ms:contentKeyID: 48546408
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d7149cd3ac9fe32d56cd0f5e75a7d718c02e9e46
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7190aed24c9e0789d55e8dab1ee17803cf64816f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292385"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594231"
 ---
 # <a name="find-method-example-vb"></a>Find メソッドの使用例 (VB)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Find](find-method-ado.md) メソッドを使用して ***Pubs*** データベースを検索し、役職の数をカウントします。 基になるプロバイダーは同様の機能をサポートしていないものと仮定します。
+この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Find](find-method-ado.md) メソッドを使用して ***Pubs*** データベースを検索し、役職の数をカウントします。基になるプロバイダーは同様の機能をサポートしていないものと仮定します。
 
 ```vb 
  

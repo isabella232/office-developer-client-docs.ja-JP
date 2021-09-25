@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPISupport.CompleteMsg
 api_type:
 - COM
 ms.assetid: e7932433-abe0-4341-95e0-91b37c848145
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: e8c52d71ee47966be09c6c0806eceafae0c5ff5b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 87640445c1243f6725c42fbc0a20f77f54e45dde
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411191"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625442"
 ---
 # <a name="imapisupportcompletemsg"></a>IMAPISupport::CompleteMsg
 

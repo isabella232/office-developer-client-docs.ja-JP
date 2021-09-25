@@ -1,5 +1,5 @@
 ---
-title: テキストデータソースドライバーの初期化
+title: テキスト データ ソース ドライバーの初期化
 TOCTitle: Initializing the Text Data Source driver
 ms:assetid: cba0864e-5f94-bf43-4708-b1981e3acaff
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834391(v=office.15)
@@ -10,25 +10,25 @@ f1_keywords:
 - acmain11.chm1032166
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 2e76cc7d6b5254f2347e2264b0588ee1df643d05
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9fbe8bcde259f69086c511ec0343d345a15aa425
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291422"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594091"
 ---
-# <a name="initializing-the-text-data-source-driver"></a>テキストデータソースドライバーの初期化
+# <a name="initializing-the-text-data-source-driver"></a>テキスト データ ソース ドライバーの初期化
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-テキストデータソースと HTML データソースの両方に同じデータベースドライバーが使用されます。
+テキスト データ ソースと HTML データ ソースの両方に同じデータベース ドライバーが使用されます。
 
-テキストデータソースデータベースドライバーをインストールすると、セットアッププログラムによって、エンジンおよび ISAM 形式のサブキーに、Microsoft Windows レジストリに既定値のセットが書き込まれます。 これらの設定は直接変更しないでください。アプリケーションのセットアッププログラムを使用して、これらの設定を追加、削除、または変更します。 次のセクションでは、テキストデータソースデータベースドライバーの初期化と ISAM 形式の設定について説明します。
+テキスト データ ソース データベース ドライバーをインストールすると、セットアップ プログラムは、エンジンおよび ISAM Formats サブキーの Microsoft Windows レジストリに一連の既定値を書き込みます。 これらの設定は直接変更する必要があります。これらの設定を追加、削除、または変更するには、アプリケーションのセットアップ プログラムを使用します。 次のセクションでは、テキスト データ ソース データベース ドライバーの初期化と ISAM 形式の設定について説明します。
 
-## <a name="text-data-source-initialization-settings"></a>テキストデータソースの初期設定
+## <a name="text-data-source-initialization-settings"></a>テキスト データ ソースの初期化設定
 
-**Access Connectivity Engine\\ISAM 形式\\のテキストフォルダー**には、テキストデータファイルへの外部アクセスに使用される acetxt.dll ドライバーの初期化設定が含まれています。 通常、このキーのエントリの設定は次のようになっています。
+Access **Connectivity Engine \\ ISAM Formats \\ Text** フォルダーには、テキスト データ ファイルへの外部アクセスに使用される Acetxt.dll ドライバーの初期化設定が含まれています。 通常、このキーのエントリの設定は次のようになっています。
 
 ```vb
     win32=<path>\ ACETXT.DLL 
@@ -57,7 +57,7 @@ Microsoft Access データベース エンジンで使用される、Text キー
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>値</p></th>
+<th><p>エントリ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -89,7 +89,7 @@ Microsoft Access データベース エンジンで使用される、Text キー
 </tr>
 <tr class="odd">
 <td><p>形式</p></td>
-<td><p>TabDelimited、CSVDelimited、Delimited (&lt;1 文字&gt;) のいずれかを指定できます。 区切り記号付きの1文字の区切り文字には、二重引用符 (&quot;) 以外の任意の1文字を指定できます。 既定値は CSVDelimited です。 値の型は REG_SZ 型です。</p></td>
+<td><p>TabDelimited、CSVDelimited、Delimited (&lt;1 文字&gt;) のいずれかを指定できます。 区切り文字形式の 1 文字区切り文字は、二重引用符 ( ) を除く任意の 1 文字を指定できます &quot; 。 既定値は CSVDelimited です。 値の型は REG_SZ 型です。</p></td>
 </tr>
 <tr class="even">
 <td><p>拡張機能</p></td>
@@ -103,9 +103,9 @@ Microsoft Access データベース エンジンで使用される、Text キー
 </table>
 
 
-## <a name="text-data-source-isam-formats"></a>テキストデータソースの ISAM 形式
+## <a name="text-data-source-isam-formats"></a>テキスト データ ソースの ISAM 形式
 
-**Access Connectivity Engine\\ISAM 形式\\テキスト**フォルダーには、次のエントリが含まれています。
+Access **Connectivity Engine \\ ISAM Formats \\ Text フォルダー** には、次のエントリが含まれます。
 
 <table>
 <colgroup>
@@ -127,39 +127,39 @@ Microsoft Access データベース エンジンで使用される、Text キー
 <td><p>テキスト</p></td>
 </tr>
 <tr class="even">
-<td><p>exportfilter</p></td>
+<td><p>ExportFilter</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>テキスト ファイル (*.txt、*.csv、*.tab、および *.asc)</p></td>
 </tr>
 <tr class="odd">
-<td><p>importfilter</p></td>
+<td><p>ImportFilter</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>テキスト ファイル (*.txt、*.csv、*.tab、および *.asc)</p></td>
 </tr>
 <tr class="even">
-<td><p>canlink</p></td>
+<td><p>CanLink</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>atl-fs-01</p></td>
+<td><p>01</p></td>
 </tr>
 <tr class="odd">
-<td><p>onetableperfile</p></td>
+<td><p>OneTablePerFile</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>atl-fs-01</p></td>
+<td><p>01</p></td>
 </tr>
 <tr class="even">
-<td><p>isamtype</p></td>
+<td><p>IsamType</p></td>
 <td><p>REG_DWORD</p></td>
-<td><p>pbm-2</p></td>
+<td><p>2</p></td>
 </tr>
 <tr class="odd">
-<td><p>indexdialog</p></td>
+<td><p>IndexDialog</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>+</p></td>
+<td><p>00</p></td>
 </tr>
 <tr class="even">
-<td><p>createdbonexport</p></td>
+<td><p>CreateDBOnExport</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>+</p></td>
+<td><p>00</p></td>
 </tr>
 <tr class="odd">
 <td><p>ResultTextImport</p></td>
@@ -167,19 +167,19 @@ Microsoft Access データベース エンジンで使用される、Text キー
 <td><p>外部ファイルのデータをカレント データベースにインポートします。カレント データベースのデータを変更しても、外部ファイルのデータは変更されません。</p></td>
 </tr>
 <tr class="even">
-<td><p>resulttextlink</p></td>
+<td><p>ResultTextLink</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>外部ファイルにリンクされているテーブルをカレント データベース内に作成します。カレント データベースのデータを変更すると、外部ファイルのデータも変更されます。</p></td>
 </tr>
 <tr class="odd">
-<td><p>resulttextexport</p></td>
+<td><p>ResultTextExport</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>カレント データベースからテキスト ファイルにデータをエクスポートします。既存のファイルにエクスポートする場合、ファイル内のデータは上書きされます。</p></td>
 </tr>
 <tr class="even">
-<td><p>supportslongnames</p></td>
+<td><p>SupportsLongNames</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>atl-fs-01</p></td>
+<td><p>01</p></td>
 </tr>
 </tbody>
 </table>
@@ -188,9 +188,9 @@ Microsoft Access データベース エンジンで使用される、Text キー
 > [!NOTE]
 > [!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。
 
-## <a name="html-import-isam-formats"></a>HTML インポートの ISAM 形式
+## <a name="html-import-isam-formats"></a>HTML インポート ISAM 形式
 
-**Access Connectivity Engine\\ISAM 形式\\HTML インポート**フォルダーには、次のエントリが含まれています。
+Access **Connectivity Engine \\ ISAM Formats \\ HTML Import フォルダー** には、次のエントリが含まれます。
 
 <table>
 <colgroup>
@@ -212,34 +212,34 @@ Microsoft Access データベース エンジンで使用される、Text キー
 <td><p>テキスト</p></td>
 </tr>
 <tr class="even">
-<td><p>importfilter</p></td>
+<td><p>ImportFilter</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>HTML ファイル (*.ht*)</p></td>
 </tr>
 <tr class="odd">
-<td><p>canlink</p></td>
+<td><p>CanLink</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>atl-fs-01</p></td>
+<td><p>01</p></td>
 </tr>
 <tr class="even">
-<td><p>onetableperfile</p></td>
+<td><p>OneTablePerFile</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>+</p></td>
+<td><p>00</p></td>
 </tr>
 <tr class="odd">
-<td><p>isamtype</p></td>
+<td><p>IsamType</p></td>
 <td><p>REG_DWORD</p></td>
-<td><p>pbm-2</p></td>
+<td><p>2</p></td>
 </tr>
 <tr class="even">
-<td><p>indexdialog</p></td>
+<td><p>IndexDialog</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>+</p></td>
+<td><p>00</p></td>
 </tr>
 <tr class="odd">
-<td><p>createdbonexport</p></td>
+<td><p>CreateDBOnExport</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>+</p></td>
+<td><p>00</p></td>
 </tr>
 <tr class="even">
 <td><p>ResultTextImport</p></td>
@@ -247,14 +247,14 @@ Microsoft Access データベース エンジンで使用される、Text キー
 <td><p>外部ファイルのデータをカレント データベースにインポートします。カレント データベースのデータを変更しても、外部ファイルのデータは変更されません。</p></td>
 </tr>
 <tr class="odd">
-<td><p>resulttextlink</p></td>
+<td><p>ResultTextLink</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>外部ファイルにリンクされているテーブルをカレント データベース内に作成します。カレント データベースのデータを変更すると、外部ファイルのデータも変更されます。</p></td>
 </tr>
 <tr class="even">
-<td><p>supportslongnames</p></td>
+<td><p>SupportsLongNames</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>atl-fs-01</p></td>
+<td><p>01</p></td>
 </tr>
 </tbody>
 </table>
@@ -262,9 +262,9 @@ Microsoft Access データベース エンジンで使用される、Text キー
 > [!NOTE]
 > [!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。
 
-## <a name="html-export-isam-formats"></a>HTML エクスポートの ISAM 形式
+## <a name="html-export-isam-formats"></a>HTML エクスポート ISAM 形式
 
-**Access Connectivity Engine\\の ISAM 形式\\の HTML エクスポート**フォルダーには、次のエントリが含まれています。
+Access **Connectivity Engine \\ ISAM Formats \\ HTML Export フォルダー** には、次のエントリが含まれます。
 
 <table>
 <colgroup>
@@ -286,44 +286,44 @@ Microsoft Access データベース エンジンで使用される、Text キー
 <td><p>テキスト</p></td>
 </tr>
 <tr class="even">
-<td><p>exportfilter</p></td>
+<td><p>ExportFilter</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>HTML ファイル (*.htm)</p></td>
 </tr>
 <tr class="odd">
-<td><p>canlink</p></td>
+<td><p>CanLink</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>+</p></td>
+<td><p>00</p></td>
 </tr>
 <tr class="even">
-<td><p>onetableperfile</p></td>
+<td><p>OneTablePerFile</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>atl-fs-01</p></td>
+<td><p>01</p></td>
 </tr>
 <tr class="odd">
-<td><p>isamtype</p></td>
+<td><p>IsamType</p></td>
 <td><p>REG_DWORD</p></td>
-<td><p>pbm-2</p></td>
+<td><p>2</p></td>
 </tr>
 <tr class="even">
-<td><p>indexdialog</p></td>
+<td><p>IndexDialog</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>+</p></td>
+<td><p>00</p></td>
 </tr>
 <tr class="odd">
-<td><p>createdbonexport</p></td>
+<td><p>CreateDBOnExport</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>+</p></td>
+<td><p>00</p></td>
 </tr>
 <tr class="even">
-<td><p>resulttextexport</p></td>
+<td><p>ResultTextExport</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>カレント データベースからテキスト ファイルにデータをエクスポートします。既存のファイルにエクスポートする場合、ファイル内のデータは上書きされます。</p></td>
 </tr>
 <tr class="odd">
-<td><p>supportslongnames</p></td>
+<td><p>SupportsLongNames</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>atl-fs-01</p></td>
+<td><p>01</p></td>
 </tr>
 </tbody>
 </table>
@@ -331,7 +331,7 @@ Microsoft Access データベース エンジンで使用される、Text キー
 > [!NOTE]
 > [!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。
 
-## <a name="customizing-the-schemaini-file-for-text-and-html-data"></a>text および HTML データ用の schema.ini ファイルのカスタマイズ
+## <a name="customizing-the-schemaini-file-for-text-and-html-data"></a>テキストおよび HTML データSchema.iniファイルをカスタマイズする
 
 テキスト データと HTML データの読み取り、インポート、またはエクスポートを行うには、Schema.ini ファイルを作成してその中にテキストの ISAM 情報を追加する必要があります。Schema.ini には、テキスト ファイルの書式化方法、インポート時の読み取り方法、ファイルへの既定のエクスポート書式など、データ ソースの仕様を記述します。次の例では、固定長のファイルである Filename.txt に対するレイアウトを示しています。
 
@@ -429,21 +429,21 @@ Microsoft Access データベース エンジンで使用される、Schema.ini 
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>値</p></th>
+<th><p>エントリ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>colnameheader</p></td>
+<td><p>ColNameHeader</p></td>
 <td><p>データの最初のレコードを列名に指定する <strong>True</strong> 、または <strong>False</strong> を設定できます。</p></td>
 </tr>
 <tr class="even">
 <td><p>Format</p></td>
-<td><p>TabDelimited、CSVDelimited、Delimited (&lt;1 文字&gt;)、FixedLength のいずれかを指定できます。 区切り記号付きファイル形式に対して指定された区切り記号には、二重引用符&quot;() 以外の任意の1文字を指定できます。</p></td>
+<td><p>TabDelimited、CSVDelimited、Delimited (&lt;1 文字&gt;)、FixedLength のいずれかを指定できます。 区切り文字で区切られたファイル形式に指定する区切り記号は、二重引用符 ( ) を除く任意の 1 文字を指定できます &quot; 。</p></td>
 </tr>
 <tr class="odd">
-<td><p>fixedformat</p></td>
+<td><p>FixedFormat</p></td>
 <td><p>Format を FixedLength に指定した場合にのみ使用します。RaggedEdge は、行を復帰改行文字で終えるようにします。RaggedEdge は、行を復帰改行文字で終えるようにします。TrueFixedLength は、各行が決まった文字数になるようにします。復帰改行文字は、行の境界には存在せず、フィールドに埋め込まれていると見なされます。この設定がない場合、既定値は RaggedEdge です。</p></td>
 </tr>
 <tr class="even">
@@ -472,7 +472,7 @@ Microsoft Access データベース エンジンで使用される、Schema.ini 
 </tr>
 <tr class="even">
 <td><p>CurrencyNegFormat</p></td>
-<td><p>次のいずれかの値にすることができます。 ($1) – $1 $ – $1 1 – ($1)-$1 1 – $1 $ –-$1 – $1 $1-$1 – $ – 1 1-$ ($1) ($1) ドル記号は、この例の目的では表示されますが、実際のプログラムの適切な CurrencySymbol 値に置き換える必要が このエントリを省略した場合は、Windows コントロール パネルの既定値が使用されます。</p></td>
+<td><p>次のいずれかの値を指定できます。($1) –$1 $-1 $1 – (1$) –1$ 1–$1$– –1 $– –$ 1 1 $– $ 1 – $ 1 – $ 1 – $1 – $1 ( $ 1) ($ 1$) ドル記号は、この例の目的のために表示されますが、実際のプログラムの適切な CurrencySybol 値に置き換える必要があります。 このエントリを省略した場合は、Windows コントロール パネルの既定値が使用されます。</p></td>
 </tr>
 <tr class="odd">
 <td><p>CurrencyThousandSymbol</p></td>
@@ -487,20 +487,20 @@ Microsoft Access データベース エンジンで使用される、Schema.ini 
 <td><p>数値の整数部分と端数部分を区切るために使用する任意の 1 文字を設定できます。このエントリを省略した場合は、Windows コントロール パネルの既定値が使用されます。</p></td>
 </tr>
 <tr class="even">
-<td><p>数字</p></td>
+<td><p>NumberDigits</p></td>
 <td><p>数値の端数部分の桁数を示します。このエントリを省略した場合は、Windows コントロール パネルの既定値が使用されます。</p></td>
 </tr>
 <tr class="odd">
-<td><p>数字のリード (0)</p></td>
+<td><p>NumberLeadingZeros</p></td>
 <td><p>-1 を超え、1 未満の 10 進値の先頭に 0 を付けるかどうかを指定します。値は False (先頭に 0 を付けない) または True を指定できます。</p></td>
 </tr>
 <tr class="even">
 <td><p>Col1, Col2, …</p></td>
-<td><p>Lists the columns in the text file to be read. このエントリの形式は、次のようにする必要があり<em>#</em>ます。 <em>coln</em>=<em>columnName</em>型 [Width] <em>columnname</em>: スペースが埋め込まれた列名は二重引用符で囲む必要があります。 <em>型</em>: Bit、Byte、Short、Long、Decimal、Currency、Single、Double、DateTime を使用できます。 Binary, OLE, Text, or Memo. さらに、次の ODBC テキストドライバーの種類がサポートされています。 Char (テキストと同じ) 浮動小数点型 (Short と同じ) (Short と同じ) <em></em> longchar (省略可能)。メモ型の場合、追加の書式設定マーカー [属性のハイパーリンク] を使用できます。アクティブな url にする必要がある列を Microsoft access で指定するために使用します。 In the case of a Decimal type the additional format markers [Scale #] Precision #] should be used.</p></td>
+<td><p>Lists the columns in the text file to be read. このエントリの形式は<em>、Coln</em> = <em>columnName</em>型 [Width ] columnName : 埋め込みスペースを含む列名を二重引用符で囲む <em>#</em> 必要があります。 <em></em> <em>type</em>: Can can bit, Byte, Short, Long, Decimal, Currency, Single, Double, DateTime. Binary, OLE, Text, or Memo. さらに、次の ODBC テキスト ドライバーの種類がサポートされています。 Char (Text と同じ) Float (Double と同じ) 整数<em></em>(Short と同じ) LongChar (メモと同じ) 日付形式 メモ型の場合は、追加の書式マーカー [属性ハイパーリンク] を使用して、Microsoft Access でアクティブな URL である必要がある列を指定できます。 In the case of a Decimal type the additional format markers [Scale #] Precision #] should be used.</p></td>
 </tr>
 <tr class="odd">
-<td><p>textdelimiter</p></td>
-<td><p>特殊文字を含む文字列を区切るために使用する 1 つの文字を設定できます ("abc"、"xyz,pqr"、"hij" など)。 例: &quot;abc&quot;、&quot;xyz、pqr&quot;、&quot;hij&quot;このエントリが存在しない場合、既定の区切り記号は二重引用符になります。 このエントリが文字列&quot;none&quot;の場合、区切り文字として扱われる文字はありません。</p></td>
+<td><p>TextDelimiter</p></td>
+<td><p>特殊文字を含む文字列を区切るために使用する 1 つの文字を設定できます ("abc"、"xyz,pqr"、"hij" など)。 例: &quot;abc &quot; 、 xyz,pqr 、 hij このエントリが存在しない場合、既定の区切り記号は &quot; &quot; &quot; &quot; 二重引用符です。 このエントリが文字列 none &quot; の場合 &quot; 、文字は区切り文字として扱われます。</p></td>
 </tr>
 </tbody>
 </table>

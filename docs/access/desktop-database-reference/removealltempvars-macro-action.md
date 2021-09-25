@@ -10,23 +10,23 @@ f1_keywords:
 - vbaac10.chm117413
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: eade809a6e3982dc0dc4cf94ae382af72e8f454e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f2c98a02702409962f20289128b18e53835e071d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306798"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617497"
 ---
 # <a name="removealltempvars-macro-action"></a>RemoveAllTempVars マクロ アクション
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 
 "RemoveAllTempVars/すべての一時変数の削除" アクションは、"SetTempVar/一時変数の設定" アクションを使用して作成したすべての一時変数を削除するために使用します。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "RemoveAllTempVars/すべての一時変数の削除" アクションには、引数はありません。
 
@@ -61,12 +61,12 @@ The following macro demonstrates how to create a temporary variable, use it in a
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>SetTempVar</strong></p></td>
-<td><p><strong>名前</strong>: MyVar<strong>Expression</strong>: InputBox (&quot;0 以外の数値を入力し&quot;ます。)</p></td>
+<td><p><strong>名前</strong>: MyVar<strong>式</strong>: InputBox( &quot; 0 以外の数値を入力します。 &quot;</p></td>
 </tr>
 <tr class="even">
 <td><p>[TempVars]![MyVar]&lt;&gt;0</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>メッセージ</strong>: =&quot;入力&quot; &amp;した [TempVars]!MyVar&amp; &quot;.&quot;<strong>警告音</strong>: <strong>yestype</strong>:<strong>情報</strong></p></td>
+<td><p><strong>メッセージ</strong>: = &quot; &quot; &amp; [TempVars]と入力しました![MyVar] &amp; &quot; . &quot;<strong>Beep</strong>: <strong>YesType</strong>: <strong>Information</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

@@ -10,24 +10,24 @@ f1_keywords:
 - vbaac10.chm96777
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 424b2b2cab9bc4272052a201350a0cc2ab297b8c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 143ece00d7adb9b4011bd2fe92db069d8beec0e5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302815"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617707"
 ---
 # <a name="quitaccess-macro-action"></a>QuitAccess マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 You can use the **QuitAccess** action to exit Microsoft Access. The **QuitAccess** action can also specify one of several options for saving database objects prior to exiting Access.
 
 > [!NOTE]
 > このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 "QuitAccess/Accessの終了" アクションの引数は次のとおりです。
 

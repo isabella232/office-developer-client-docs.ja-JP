@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250022(v=office.15)
 ms:contentKeyID: 48547776
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ebbfeb303bb575928f09858db5d3a34cf2171ce0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 77e913f87923cb4dc7f4d4ddde5bf63b944c6252
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300757"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593776"
 ---
 # <a name="records-and-provider-supplied-fields"></a>レコードとプロバイダー供給のフィールド
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 [Record](record-object-ado.md) オブジェクトが開かれると、そのソースは、開かれた [Connection](recordset-object-ado.md) オブジェクトと共に動作する、開かれた [Recordset](connection-object-ado.md) のカレント行、絶対 URL、または相対 URL になることができます。
 
@@ -24,7 +24,7 @@ ms.locfileid: "32300757"
 
 プロバイダーは、 **Record** の補完機能として作用する追加フィールドを挿入することができます。その結果、 **Record** には、 **Recordset** 全体、または **Recordset** の別の行から派生した **Record** にはない固有のフィールドが存在するようになります。
 
-たとえば、電子メールデータソースから派生した**Recordset**のすべての行に、from、To、および Subject などの列が含まれている場合があります。 A **Record** derived from that **Recordset** will have the same fields. However, the **Record** may also have other fields unique to the particular message represented by that **Record**, such as Attachment and Cc (carbon copy).
+たとえば、電子メール データ ソースから派生した **Recordset** のすべての行に、From、To、Subject などの列が含まれます。 A **Record** derived from that **Recordset** will have the same fields. However, the **Record** may also have other fields unique to the particular message represented by that **Record**, such as Attachment and Cc (carbon copy).
 
 **Record** オブジェクトと **Recordset** オブジェクトのカレント行には同じフィールドがありますが、 **Record** オブジェクトと **Recordset** オブジェクトには異なるメソッドとプロパティがあるので、この 2 つは別のものです。
 
@@ -36,7 +36,7 @@ ms.locfileid: "32300757"
 
 ## <a name="special-fields-for-document-source-providers"></a>ドキュメント ソース プロバイダー用の特殊なフィールド
 
-*ドキュメントソースプロバイダー*と呼ばれる、プロバイダーの特別なクラスは、フォルダーとドキュメントを管理します。 When a **Record** object represents a document or a **Recordset** object represents a folder of documents, the document source provider populates those objects with a unique set of fields that describe characteristics of the document instead of the actual document itself. Typically, one field contains a reference to the **Stream** that represents the document.
+ドキュメント ソース プロバイダーと呼ばれる特別なクラスのプロバイダーは、フォルダーとドキュメントを管理します。 When a **Record** object represents a document or a **Recordset** object represents a folder of documents, the document source provider populates those objects with a unique set of fields that describe characteristics of the document instead of the actual document itself. Typically, one field contains a reference to the **Stream** that represents the document.
 
 これらのフィールドがリソースの **record** または **recordset** を形成していますが、これらのフィールドをサポートする特定のプロバイダーについてのフィールド一覧は、「 [付録 A: プロバイダー](appendix-a-providers.md)」に記載されています。
 
@@ -63,7 +63,7 @@ ms.locfileid: "32300757"
 <thead>
 <tr class="header">
 <th><p>列名</p></th>
-<th><p>型</p></th>
+<th><p>種類</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -85,23 +85,23 @@ ms.locfileid: "32300757"
 </tr>
 <tr class="even">
 <td><p>RESOURCE_ISHIDDEN</p></td>
-<td><p>adboolean</p></td>
+<td><p>AdBoolean</p></td>
 <td><p>リソースが非表示状態であれば True です。RESOURCE_ISHIDDEN が True の行を、行セットを作成するコマンドが明示的に選択しない限り、行は返されません。</p></td>
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_ISREADONLY</p></td>
-<td><p>adboolean</p></td>
+<td><p>AdBoolean</p></td>
 <td><p>リソースが読み取り専用であれば True です。DBBINDFLAG_WRITE でこのリソースを開こうとすると、DB_E_READONLY が設定され、失敗します。リソースが読み取り専用で開かれた場合でも、このプロパティは編集することができます。</p></td>
 </tr>
 <tr class="even">
 <td><p>RESOURCE_CONTENTTYPE</p></td>
 <td><p>AdVarWChar</p></td>
-<td><p>たとえば、法律家の書類などの、ドキュメントの使用方法を示します。 これは、ドキュメントの作成に使用される Office テンプレートに対応する場合があります。&quot;&quot;</p></td>
+<td><p>たとえば、法律家の書類などの、ドキュメントの使用方法を示します。 これは、ドキュメントの作成にOfficeテンプレートに対応する場合があります。&quot;&quot;</p></td>
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_CONTENTCLASS</p></td>
 <td><p>AdVarWChar</p></td>
-<td><p>&quot;text/html&quot;などの形式を示すドキュメントの MIME タイプを示します。</p></td>
+<td><p>テキスト/html などの形式を示す、ドキュメントの MIME の種類 &quot; を &quot; 示します 。'</p></td>
 </tr>
 <tr class="even">
 <td><p>RESOURCE_CONTENTLANGUAGE</p></td>
@@ -110,32 +110,32 @@ ms.locfileid: "32300757"
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_CREATIONTIME</p></td>
-<td><p>adfiletime</p></td>
+<td><p>adFileTime</p></td>
 <td><p>読み取り専用です。リソースが作成された時刻を含んだ FILETIME 構造を示します。時刻は、Coordinated Universal Time (UTC) 形式で報告されます。</p></td>
 </tr>
 <tr class="even">
 <td><p>RESOURCE_LASTACCESSTIME</p></td>
-<td><p>adfiletime</p></td>
+<td><p>AdFileTime</p></td>
 <td><p>読み取り専用です。リソースが最後にアクセスされた時刻を含んだ FILETIME 構造を示します。時刻は UTC 形式です。プロバイダーでこの時刻メンバーがサポートされない場合、FILETIME メンバーは 0 です。</p></td>
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_LASTWRITETIME</p></td>
-<td><p>adfiletime</p></td>
+<td><p>AdFileTime</p></td>
 <td><p>読み取り専用です。リソースが最後に書き込まれた時刻を含んだ FILETIME 構造を示します。時刻は UTC 形式です。プロバイダーでこの時刻メンバーがサポートされない場合、FILETIME メンバーは 0 です。</p></td>
 </tr>
 <tr class="even">
 <td><p>RESOURCE_STREAMSIZE</p></td>
-<td><p>as非 signedbigint</p></td>
+<td><p>asUnsignedBigInt</p></td>
 <td><p>読み取り専用です。リソースの既定のストリームのサイズをバイト数で示します。</p></td>
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_ISCOLLECTION</p></td>
-<td><p>adboolean</p></td>
+<td><p>AdBoolean</p></td>
 <td><p>読み取り専用です。リソースがディレクトリなどのコレクションであれば True です。リソースが単純ファイルの場合は False です。</p></td>
 </tr>
 <tr class="even">
 <td><p>RESOURCE_ISSTRUCTUREDDOCUMENT</p></td>
-<td><p>adboolean</p></td>
+<td><p>AdBoolean</p></td>
 <td><p>リソースが構造ドキュメントであれば True です。リソースが構造ドキュメントでない場合は False です。その場合は、コレクションまたは単純ファイルの可能性があります。</p></td>
 </tr>
 <tr class="odd">
@@ -145,7 +145,7 @@ ms.locfileid: "32300757"
 </tr>
 <tr class="even">
 <td><p>CHAPTERED_CHILDREN</p></td>
-<td><p>adchapter</p></td>
+<td><p>AdChapter</p></td>
 <td><p>読み取り専用です。オプションです。リソースの子を含む行セットのチャプターを示します (<em>OLE DB Provider for Internet Publishing</em> はこの列を使用しません)。</p></td>
 </tr>
 <tr class="odd">
@@ -155,7 +155,7 @@ ms.locfileid: "32300757"
 </tr>
 <tr class="even">
 <td><p>RESOURCE_ISROOT</p></td>
-<td><p>adboolean</p></td>
+<td><p>AdBoolean</p></td>
 <td><p>読み取り専用です。リソースがコレクションのルートまたは構造ドキュメントであれば True です。</p></td>
 </tr>
 </tbody>

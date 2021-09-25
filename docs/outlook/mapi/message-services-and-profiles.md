@@ -3,17 +3,17 @@ title: メッセージ サービスとプロファイル
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: df0db1e4-69c8-44ec-bb2a-d31fc8a564b9
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 78a13bacf13b019bbf9436830ad66db7fdfaf425
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f8f081ea35241f3e57a8cf2345254d24c5032fdc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415468"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592054"
 ---
 # <a name="message-services-and-profiles"></a>メッセージ サービスとプロファイル
   
@@ -55,7 +55,7 @@ Mapisvc.inf ファイルには、コンピューターにインストールさ�
   
 **サービス プロバイダーのインストールおよび構成**
   
-![サービス プロバイダーのインストールと構成](media/amapi_55.gif "サービス プロバイダーのインストールと構成")
+![サービス プロバイダーのインストールおよび構成](media/amapi_55.gif "サービス プロバイダーのインストールおよび構成")
   
 ## <a name="see-also"></a>関連項目
 

@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ITnef.ExtractProps
 api_type:
 - COM
 ms.assetid: 9169a5be-21dd-4938-8db3-522bea165c92
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 5a01c65bbec061248537558257c66d1a90128b5e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b8e4e639f7f886480822ad992baf742ac52db748
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407502"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625225"
 ---
 # <a name="itnefextractprops"></a>ITnef::ExtractProps
 

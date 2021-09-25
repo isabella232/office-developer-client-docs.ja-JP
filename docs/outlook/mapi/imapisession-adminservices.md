@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPISession.AdminServices
 api_type:
 - COM
 ms.assetid: 487fab39-5c2c-4e1a-9f90-4da64f5e198b
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: c639523a02047bf00c378dafd7bc698d7d4e5fff
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c39051ed0a3b112293d3e851883d233c15a2b277
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405906"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625526"
 ---
 # <a name="imapisessionadminservices"></a>IMAPISession::AdminServices
 

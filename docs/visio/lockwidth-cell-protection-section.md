@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm675
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fef022ea-38ab-2b66-60c8-b94a6b0bdfbf
 description: 図形の幅をロックします。ロックすると、図形のサイズを変更しても幅は変更されません。
-ms.openlocfilehash: 84c89b5f264c00d6fe5f95cb27eae74b91b88dc3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5e3b05fb7cda925c5d1c4e2942c665d55190cc7d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439808"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582562"
 ---
 # <a name="lockwidth-cell-protection-section"></a>[LockWidth] セル ([Protection] セクション)
 

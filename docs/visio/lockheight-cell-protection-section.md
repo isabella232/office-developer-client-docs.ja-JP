@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm635
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 218b957e-5af6-e53b-1453-a84164ae456e
 description: 図形の高さをロックします。ロックすると、図形のサイズを変更しても高さは変更されません。
-ms.openlocfilehash: 099f6597656d4389476818253f34e741ddd404de
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fbc4ef93c7d3df306fe506aa09eed125743912d8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432087"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582555"
 ---
 # <a name="lockheight-cell-protection-section"></a>[LockHeight] セル ([Protection] セクション)
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidClassificationDescription
 api_type:
 - COM
 ms.assetid: e4b85b92-abf7-4e4f-b612-2e20af3c1611
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: ee022bdbc30f5b01cb2dcd34a7a1884ed5ef2c2f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 772427649a30d7f867e0e6319245f6eafdf30d94
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341973"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625057"
 ---
 # <a name="pidlidclassificationdescription-canonical-property"></a>PidLidClassificationDescription 標準プロパティ
 
@@ -37,7 +37,7 @@ ms.locfileid: "32341973"
    
 ## <a name="remarks"></a>注釈
 
-詳細については [、「Outlook 2007 のメッセージ分類を展開する方法」を参照してください。](https://msdn.microsoft.com/library/5a220424-edd5-4a21-b7fd-8106c23c3b39.aspx)
+詳細については[、「How to Deploy Message Classification for Outlook 2007」を参照してください。](https://msdn.microsoft.com/library/5a220424-edd5-4a21-b7fd-8106c23c3b39.aspx)
   
 ## <a name="related-resources"></a>関連リソース
 
@@ -45,7 +45,7 @@ ms.locfileid: "32341973"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連するプロトコル仕様への参照Exchange Server提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
 [[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   

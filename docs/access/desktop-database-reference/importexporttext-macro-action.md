@@ -10,24 +10,24 @@ f1_keywords:
 - vbaac10.chm168097
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a26b370e14dba68b0cbe686f4b23ae0db3fc1fea
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ce2e04ce40a6cea6db285b6df93097e2553695c4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291867"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594175"
 ---
 # <a name="importexporttext-macro-action"></a>ImportExportText マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-" **importexporttext/テキスト**のインポート" アクションを使用すると、現在の Microsoft access データベース (.mdb または .accdb) または Access プロジェクト (.adp) とテキストファイルとの間でテキストをインポートまたはエクスポートできます。 また、テキスト ファイルのデータを現在の Access データベースにリンクすることもできます。 リンクされたテキスト ファイルを使えば、ワード プロセッシング プログラムからデータに完全にアクセスできる状態で、Access でテキスト データを表示することができます。 html ファイル (\*.html) 内のテーブルまたはリストに対してインポート、エクスポート、リンクを行うこともできます。
+**ImportExportText** アクションを使用すると、現在の Microsoft Access データベース (.mdb または .accdb) または Access プロジェクト (.adp) とテキスト ファイルの間でテキストをインポートまたはエクスポートできます。 また、テキスト ファイルのデータを現在の Access データベースにリンクすることもできます。 リンクされたテキスト ファイルを使えば、ワード プロセッシング プログラムからデータに完全にアクセスできる状態で、Access でテキスト データを表示することができます。 HTML ファイルのテーブルまたはリストからインポート、エクスポート、およびリンクを行 \*.html。
 
 > [!NOTE]
 > テキスト ファイルまたは HTML ファイルのデータにリンクする場合、Access ではデータが読み取り専用になります。 このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 **ImportExportText** アクションの引数は次のとおりです。
 
@@ -44,8 +44,8 @@ ms.locfileid: "32291867"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Transfer Type/変換の種類</strong></p></td>
-<td><p>変換の種類を指定します。 区切りテキスト ファイル、固定長テキスト ファイル、または HTML ファイル間でデータをインポート、エクスポート、リンクすることができます。 また、データを Microsoft Word 差し込みデータ ファイルにエクスポートすることもできるため、Word の差し込み印刷機能を使用して、定型書簡および宛名ラベルなどの差し込み文書を作成できます。 [マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>変換の種類</strong>] ボックスで、[<strong>区切り記号付きインポート</strong>]、[<strong>固定長インポート</strong>]、[<strong>HTML インポート</strong>]、[<strong>区切り記号付きエクスポート</strong>]、[<strong>固定長エクスポート</strong>]、[<strong>HTML エクスポート</strong>]、[<strong>Word 差し込みデータ エクスポート</strong>]、[<strong>区切り記号付きリンク</strong>]、[<strong>固定長リンク</strong>]、または [<strong>HTML リンク</strong>] を選択します。 既定値は [<strong>区切り記号付きインポート</strong>] です。</p><p><strong>注</strong>: Access プロジェクト (.adp) でサポートされているのは、インポートのみの<STRONG>区切り</STRONG>、<STRONG>固定長のインポート</STRONG>、<STRONG>エクスポート区切り</STRONG>、<STRONG>固定幅のエクスポート</STRONG>、または Windows マージ転送タイプ<STRONG>の Word のエクスポート</STRONG>のみです。</p></td>
+<td><p><strong>Transfer Type/転送の種類</strong></p></td>
+<td><p>変換の種類を指定します。 区切りテキスト ファイル、固定長テキスト ファイル、または HTML ファイル間でデータをインポート、エクスポート、リンクすることができます。 また、データを Microsoft Word 差し込みデータ ファイルにエクスポートすることもできるため、Word の差し込み印刷機能を使用して、定型書簡および宛名ラベルなどの差し込み文書を作成できます。 [マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>変換の種類</strong>] ボックスで、[<strong>区切り記号付きインポート</strong>]、[<strong>固定長インポート</strong>]、[<strong>HTML インポート</strong>]、[<strong>区切り記号付きエクスポート</strong>]、[<strong>固定長エクスポート</strong>]、[<strong>HTML エクスポート</strong>]、[<strong>Word 差し込みデータ エクスポート</strong>]、[<strong>区切り記号付きリンク</strong>]、[<strong>固定長リンク</strong>]、または [<strong>HTML リンク</strong>] を選択します。 既定値は [<strong>区切り記号付きインポート</strong>] です。</p><p><strong>注</strong>: <STRONG></STRONG>Access プロジェクト<STRONG></STRONG>(.adp) では、<STRONG></STRONG>区切られたインポート、固定幅のインポート、区切り文字のエクスポート、固定幅のエクスポート、<STRONG>または Windows Merge</STRONG>転送の種類の Word のエクスポートだけがサポートされています。 <STRONG></STRONG></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Specification Name/定義名</strong></p></td>
@@ -69,7 +69,7 @@ ms.locfileid: "32291867"
 </tr>
 <tr class="even">
 <td><p><strong>File Name/ファイル名</strong></p></td>
-<td><p>インポート元、エクスポート先、またはリンク先のテキストファイルの名前を指定します。 ファイル名が既存のワークシートの名前と同じ場合、既存のワークシートが置き換えられます。 この引数は省略できません。 access からデータをエクスポートすると、新しいテキストファイルが作成されます。 ファイル名が既存のテキストファイルの名前と同じ場合は、Access によって既存のテキストファイルが置き換えられます。 html ファイル内の特定のテーブルまたはリストをインポートまたはリンクする場合は、html の<strong>table Name</strong>引数を使用できます。</p></td>
+<td><p>インポート、エクスポート先、またはリンク先のテキスト ファイルの名前。 ファイル名が既存のワークシートの名前と同じ場合、既存のワークシートが置き換えられます。 この引数は省略できません。 Access からデータをエクスポートすると、新しいテキスト ファイルが作成されます。 ファイル名が既存のテキスト ファイルの名前と同じ場合、Access によって既存のテキスト ファイルが置き換わります。 HTML ファイル内の特定のテーブルまたはリストをインポートまたはリンクする場合は、HTML Table Name 引数 <strong>を使用</strong> できます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Has Field Names/フィールド名の設定</strong></p></td>
@@ -77,7 +77,7 @@ ms.locfileid: "32291867"
 </tr>
 <tr class="even">
 <td><p><strong>HTML Table Name/HTML テーブル名</strong></p></td>
-<td><p>インポートまたはリンクする HTML ファイル内のテーブルまたはリストの名前を指定します。 この引数は、"<strong>転送の種類</strong>" 引数が [html またはリンクの html をインポートするように設定されていない場合は無視されます。 この引数を空白のままにすると、HTML ファイル内の最初のテーブルまたはリストがインポートまたはリンクされます。 <br/><br/>&lt;caption&gt;タグがある場合、HTML ファイル内のテーブル名またはリスト名は&lt;、&gt; caption タグで指定されたテキストによって決まります。 &lt;CAPTION&gt; タグが存在しない場合、この名前は &lt;TITLE&gt; タグで指定されたテキストによって決まります。 複数のテーブルまたはリストが同じ名前の場合は、それぞれの名前の末尾に数字を追加して区別します。たとえば、Employees1 と Employees2 のようになります。</p></td>
+<td><p>インポートまたはリンクする HTML ファイル内のテーブルまたはリストの名前。 この引数は、[転送の種類] 引数が <strong>[HTML</strong> のインポート] または [リンク HTML] に設定されていない限り、無視されます。 この引数を空白のままにすると、HTML ファイル内の最初のテーブルまたはリストがインポートまたはリンクされます。 <br/><br/>HTML ファイル内のテーブル名またはリスト名は、CAPTION タグがある場合は CAPTION タグで指定されたテキスト &lt; &gt; によって &lt; 決 &gt; まります。 &lt;CAPTION&gt; タグが存在しない場合、この名前は &lt;TITLE&gt; タグで指定されたテキストによって決まります。 複数のテーブルまたはリストに同じ名前がある場合、Access は各名前の末尾に番号を追加して区別します。たとえば、Employees1 と Employees2 などです。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>コード ページ</strong></p></td>
@@ -95,7 +95,7 @@ Access の選択クエリのデータをテキスト ファイルにエクスポ
 
 - テキストの各フィールドのデータ型は、テーブルの対応するフィールドのデータ型と同じにする必要があります。
 
-- フィールドは同じ順序にする必要があります (ただし、**Has Field Names/フィールド名の設定**引数を [**はい**] に設定した場合は、テキストのフィールド名とテーブルのフィールド名を同じにする必要があります)。
+- フィールドは同じ順序にする必要があります (ただし、**Has Field Names/フィールド名の設定** 引数を [**はい**] に設定した場合は、テキストのフィールド名とテーブルのフィールド名を同じにする必要があります)。
 
 このアクションの動作は、[**外部データ**] タブの [**インポート**] または [**エクスポート**] で [**テキスト ファイル**] をクリックした場合の動作と同じです。**ImportExportText** アクションの引数は、[**テキスト ファイル**] コマンドで開始するウィザードのオプションに対応しています。
 

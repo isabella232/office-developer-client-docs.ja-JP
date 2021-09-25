@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251454
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1265e4d6-58c7-896d-0d13-12944f96cf35
 description: 数値の自然対数を返します。 数値は正の値である必要があります。または LN はエラー値を返#NUM。
-ms.openlocfilehash: 867e487d369a7f042c3be297abd1b29e931ffea6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a4e6778749f9d30b2e2bf6bb8a3e52bb3abb72ac
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439976"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603663"
 ---
 # <a name="ln-function"></a>LN 関数
 
@@ -28,7 +28,7 @@ LN(** *number* ** )
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> | 自然対数を調べる数値を指定します。  <br/> |
+| _number_ <br/> |必須かどうか  <br/> |**数値型 (Numeric)** <br/> | 自然対数を調べる数値を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

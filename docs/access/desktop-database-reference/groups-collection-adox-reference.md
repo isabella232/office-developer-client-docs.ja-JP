@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249693(v=office.15)
 ms:contentKeyID: 48546527
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2cec3fba5fc5badbaa4ec91dad7a4b443ac793ca
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 40ee1a98aad8487570cc8a9ba4d30222b1b45464
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292063"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594237"
 ---
 # <a name="groups-collection-adox-reference"></a>Groups コレクション (ADOX) リファレンス
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 - [Groups コレクション (ADOX)](groups-collection-adox.md)
-- [Groups コレクションのプロパティ、メソッド、およびイベント (ADOX)](groups-collection-properties-methods-and-events-adox.md)
+- [コレクションのプロパティ、メソッド、およびイベントをグループ化する (ADOX)](groups-collection-properties-methods-and-events-adox.md)
 

@@ -10,24 +10,24 @@ f1_keywords:
 - vbaac10.chm165893
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: ce16b86ea06e041d490d0c68917daf18bd80dbb6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: bafbde738154993f3fea0c4f2537a9807009b966
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306721"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617455"
 ---
 # <a name="renameobject-macro-action"></a>RenameObject マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 You can use the **RenameObject** action to rename a specified database object.
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。
+> このアクションは、データベースが信頼されていない場合には許可されません。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 "RenameObject/オブジェクト名の変更" アクションの引数は次のとおりです。
 
@@ -48,12 +48,12 @@ You can use the **RenameObject** action to rename a specified database object.
 <td><p>データベース オブジェクトに付ける新しい名前を指定します。[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>新しい名前</strong>] ボックスにオブジェクト名を入力します。この引数は省略できません。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Object Type/オブジェクトの種類</strong></p></td>
+<td><p><strong>オブジェクトの種類</strong></p></td>
 <td><p>名前を変更するオブジェクトの種類を指定します。[<strong>テーブル</strong>]、[<strong>クエリ</strong>]、[<strong>フォーム</strong>]、[<strong>レポート</strong>]、[<strong>マクロ</strong>]、[<strong>モジュール</strong>]、[<strong>データ アクセス ページ</strong>]、[<strong>サーバー ビュー</strong>]、[<strong>ダイアグラム</strong>]、[<strong>ストアド プロシージャ</strong>]、[<strong>関数</strong>] のいずれかをクリックします。ナビゲーション ウィンドウで選択したオブジェクトの名前を変更する場合は、この引数を指定しません。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Old Name/古い名前</strong></p></td>
-<td><p>名前を変更するオブジェクトの名前を指定します。 [<strong>以前の名前</strong>] ボックスには、<strong>オブジェクトの種類</strong>の引数で選択した種類のデータベースのすべてのオブジェクトが表示されます。 If you leave the <strong>Object Type</strong> argument blank, leave this argument blank also.</p><p><strong>注</strong>: ライブラリデータベースで " <STRONG>Rename/名前の変更</STRONG>" アクションを含むマクロを実行すると、この名前のオブジェクトが、最初にライブラリデータベースで検索され、次にカレントデータベースで検索されます。</p></td>
+<td><p>名前を変更するオブジェクトの名前。 [ <strong>古い名前]</strong> ボックスには、引数 Object Type で選択された型のデータベース内のすべてのオブジェクト <strong>が表示</strong> されます。 If you leave the <strong>Object Type</strong> argument blank, leave this argument blank also.</p><p><strong>注</strong>: ライブラリ データベースで Rename<STRONG></STRONG>アクションを含むマクロを実行すると、まずライブラリ データベースでこの名前のオブジェクトが検索され、次に現在のデータベースで検索されます。</p></td>
 </tr>
 </tbody>
 </table>

@@ -3,17 +3,17 @@ title: 添付ファイルを開く
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: c0350698-5304-40cd-903d-279471f3c226
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 39da1e02622d81cd12a2d4673b827d49bf418128
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ab54b14b9497cd9f1e1bc47bdc2c8d8783db65cd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430624"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591984"
 ---
 # <a name="opening-an-attachment"></a>添付ファイルを開く
 

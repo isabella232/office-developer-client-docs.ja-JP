@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251406
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0803d5d3-d804-5ffe-604d-661b35d1fc01
 description: 数値の ANSI 文字を返します。
-ms.openlocfilehash: 6f1c459892331ec30ad93bbc860fcd038e8f4732
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9e29a518f81a59fcf63313ef06391a4984944d81
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418191"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603754"
 ---
 # <a name="char-function"></a>CHAR 関数
 
@@ -28,7 +28,7 @@ CHAR(** *number* ** )
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number_ <br/> |必須  <br/> |**数値** <br/> |ANSI 文字を取得する番号。  <br/> |
+| _number_ <br/> |必須かどうか  <br/> |**数値** <br/> |ANSI 文字を取得する番号。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

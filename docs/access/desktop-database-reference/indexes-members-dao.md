@@ -1,23 +1,23 @@
 ---
-title: Indexes メンバー (DAO)
+title: インデックス メンバー (DAO)
 TOCTitle: Indexes Members
 ms:assetid: 7b145a20-5cc9-57c3-7c6f-89cebdab7ea2
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196191(v=office.15)
 ms:contentKeyID: 48545807
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ae3358c499e4f730758f9c3aaf420725cc6efd96
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5fe1ac30ecb128dc490cf2e659a648694145a7e8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291539"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594098"
 ---
-# <a name="indexes-members-dao"></a>Indexes メンバー (DAO)
+# <a name="indexes-members-dao"></a>インデックス メンバー (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 Indexes コレクションには、格納されているすべての TableDef オブジェクトの Index オブジェクトが含まれます (Microsoft Access ワークスペースのみ)。
 
@@ -36,7 +36,7 @@ Indexes コレクションには、格納されているすべての TableDef �
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="indexes-append-method-dao.md">追加</a></strong></p></td>
+<td><p><strong><a href="indexes-append-method-dao.md">Append</a></strong></p></td>
 <td><p>新しい <strong>Index</strong> を <strong>Indexes</strong> コレクションに追加します。</p></td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ Indexes コレクションには、格納されているすべての TableDef �
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="indexes-count-property-dao.md">Count</a></strong></p></td>
-<td><p>指定したコレクション内のオブジェクトの数を取得します。 値の取得のみ可能です。</p></td>
+<td><p>指定したコレクション内のオブジェクトの数を取得します。値の取得のみ可能です。</p></td>
 </tr>
 </tbody>
 </table>

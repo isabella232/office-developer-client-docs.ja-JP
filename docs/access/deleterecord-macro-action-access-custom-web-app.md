@@ -3,15 +3,15 @@ title: DeleteRecord マクロ アクション (Access カスタム Web アプリ
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 071ef6c8-ee0a-4092-8f41-bbb115f5eeea
 description: DeleteRecord/レコードの削除アクションを使用して、レコードを削除できます。
-ms.openlocfilehash: 3b7d501f8b784b7df2250ffdd80ca7184e539616
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3c9ccb11b1cecbd524e6f612b2c56d0c82e97399
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420991"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569707"
 ---
 # <a name="deleterecord-macro-action-access-custom-web-app"></a>DeleteRecord マクロ アクション (Access カスタム Web アプリ)
 
@@ -20,7 +20,7 @@ ms.locfileid: "33420991"
   
 "**DeleteRecord/レコードの削除**" アクションを使用して、レコードを削除できます。 
   
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 ユーザー インターフェイス (UI) マクロで使用されるとき、 **DeleteRecord** アクションには引数は含まれません。 
   

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82253229
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 612b605d-a703-b08f-2e8e-7bc1624b5370
 description: 円弧の x 座標と y 座標と弓を格納します。
-ms.openlocfilehash: 222edea250be794adc964345384f2c08a7798f2f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 28cf822d71021d7fe4264dd6b4269974e3a75bb6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430043"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603915"
 ---
 # <a name="arcto-row-geometry-section"></a>[ArcTo] 行 ([Geometry] セクション)
 

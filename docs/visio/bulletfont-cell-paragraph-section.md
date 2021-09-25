@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm60023
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a75ff1f3-2f4d-89e3-108b-e16a34f5184f
 description: ユーザー設定の箇条書き文字列を指定し、[Bullet] セルの値がゼロ以外のとき、テキストの書式設定に使用するフォントの番号を表します。
-ms.openlocfilehash: 1cf04917bb7dfa68ee9395abb66ffe9e150f0273
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 32c7240ac9cf44c7e37ba5fee003f0b5bc876bd0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438464"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603803"
 ---
 # <a name="bulletfont-cell-paragraph-section"></a>[BulletFont] セル ([Paragraph] セクション)
 

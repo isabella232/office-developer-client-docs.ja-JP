@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidNoteColor
 api_type:
 - COM
 ms.assetid: 9d4b8f5f-1789-497c-8010-f83da9ba5966
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 09d0ee3be704dc55452b615a23ac9cf20d9254d8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 0c07460767ab1684fd67dd6e4db8a29912ca6b45
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331361"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604580"
 ---
 # <a name="pidlidnotecolor-canonical-property"></a>PidLidNoteColor 標準プロパティ
 
@@ -39,7 +39,7 @@ ms.locfileid: "32331361"
 
 このプロパティは、次の表のエントリの 1 つである必要があります。
   
-|**値**|**色**|
+|**値**|**Color**|
 |:-----|:-----|
 |0x00000000  <br/> |青  <br/> |
 |0x00000001  <br/> |緑  <br/> |

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidSharingLocalType
 api_type:
 - COM
 ms.assetid: 6ac438a1-d36f-424f-b4b4-d6f2d26fd350
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: aa1f76a3f410294de9c7ebfb3e64bbb1cd6cc25c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5a176b20f1c865df49a9d73e5d09ae250ca9649c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336828"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604475"
 ---
 # <a name="pidlidsharinglocaltype-canonical-property"></a>PidLidSharingLocalType 標準プロパティ
 

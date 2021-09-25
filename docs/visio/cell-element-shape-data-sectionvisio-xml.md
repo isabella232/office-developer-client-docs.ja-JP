@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 98643832-7861-385d-3a52-0060ea413e2e
 description: 図形データのいずれかのプロパティを指定します。
-ms.openlocfilehash: 3a6238f19f27d001d3c9eebcbcec720822a0ed40
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 5b0c9ebd56b114e6aaa2ff7c9d55d883099a0965
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539377"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603775"
 ---
 # <a name="cell-element-shape-data-section-visio-xml"></a>Cell 要素 (Shape Data Section) (Visio XML)
 
@@ -66,15 +66,15 @@ ms.locfileid: "34539377"
   
 |**値**|**説明**|**詳細情報**|
 |:-----|:-----|:-----|
-|カレンダー  <br/> |図形データ項目の [Type] の値が "日付" のときに、使用するカレンダーの種類を指定します。  <br/> |[[Calendar] セル ([Shape Data] セクション)](calendar-cell-shape-data-section.md) <br/> |
+|予定表  <br/> |図形データ項目の [Type] の値が "日付" のときに、使用するカレンダーの種類を指定します。  <br/> |[[Calendar] セル ([Shape Data] セクション)](calendar-cell-shape-data-section.md) <br/> |
 |DataLinked  <br/> |[図形データ] 行が現在、データ レコードセットのフィールドにリンクされているかどうかを示します。  <br/> ||
-|Format  <br/> |図形データ項目の書式を指定します。文字列、固定リスト、数値、可変リスト、日付/時刻、期間、または通貨を指定できます。  <br/> |[[Format] セル ([Shape Data] セクション)](format-cell-shape-data-section.md) <br/> |
+|フォーマット  <br/> |図形データ項目の書式を指定します。文字列、固定リスト、数値、可変リスト、日付/時刻、期間、または通貨を指定できます。  <br/> |[[Format] セル ([Shape Data] セクション)](format-cell-shape-data-section.md) <br/> |
 |非表示  <br/> |[図形データ] ウィンドウに、図形データ項目を表示するかどうかを指定します。  <br/> |[[Invisible] セル ([Shape Data] セクション)](invisible-cell-shape-data-section.md) <br/> |
 |ラベル  <br/> |[図形データ] ウィンドウに表示されるラベルを指定します。ラベルには、英数字とアンダースコア (_) 文字を使用できます。  <br/> |[[Label] セル ([Shape Data] セクション)](label-cell-shape-data-section.md) <br/> |
 |LangID  <br/> |図形データ値の記入に使用した言語を示します。  <br/> |[[LangID] セル ([Shape Data] セクション)](langid-cell-shape-data-section.md) <br/> |
 |プロンプト  <br/> |[図形データ] ウィンドウで値の上にマウスを置いたときにヒントとして表示される説明または手順を示すテキストを指定します。  <br/> |[[Prompt] セル ([Shape Data] セクション)](prompt-cell-shape-data-section.md) <br/> |
 |SortKey  <br/> |このセルの値は文字列として扱われ、評価されます。この値に基づいて、[図形データ] ウィンドウ内にある項目を一覧表示するための順序が決まります。  <br/> |[[SortKey] セル ([Shape Data] セクション)](sortkey-cell-shape-data-section.md) <br/> |
-|型  <br/> |図形データ値のデータの種類を指定します。  <br/> |[[Type] セル ([Shape Data] セクション)](type-cell-shape-data-section.md) <br/> |
+|種類  <br/> |図形データ値のデータの種類を指定します。  <br/> |[[Type] セル ([Shape Data] セクション)](type-cell-shape-data-section.md) <br/> |
 |値  <br/> |[図形データの定義] ダイアログ ボックスに入力した図形データ項目の値が格納されています。  <br/> |[[Value] セル ([Shape Data] セクション)](value-cell-shape-data-section.md) <br/> |
 |確認する  <br/> |インスタンスの作成時、または図形の複製またはコピー時に、ユーザーが図形のカスタム プロパティ情報を入力するためにクエリを実行するかどうかを指定します。  <br/> |なし。  <br/> |
    

@@ -3,17 +3,17 @@ title: メッセージ コンテンツ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: ce643afe-e5b6-42f2-b3cf-4efb957c4f2e
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: c4d2439c06da292c9cc72c1506a1ae4d10c6704f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b1523d230ae49e8ca779bab12e5ce6264f6300dc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435461"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592061"
 ---
 # <a name="message-content"></a>メッセージ コンテンツ
 
@@ -33,7 +33,7 @@ ms.locfileid: "33435461"
     
 送信メッセージに MIME または uuencode を選択する方法は指定されていません。
   
-次のプロパティは、TNEF から除外されます **\* 。PR_SENDER_、PR_ATTACH_DATA_、PR_BODY。** **\***  他のすべての送信可能なメッセージ プロパティは、TNEF ストリームに含まれます。
+次のプロパティは TNEF から除外 **されます: PR_SENDER_ \* *_、 _* PR_ATTACH_DATA_ \* *_、 _* PR_BODY。** 他のすべての送信可能なメッセージ プロパティは、TNEF ストリームに含まれます。
   
 次の提案は、実装がサポートする方法を決定できるパラメーターの一覧を提供することを目的としています。
   

@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d592a396-f935-c44c-409f-b849c327cfbd
 description: 現在の気象条件を指定します。
-ms.openlocfilehash: 1303212da1336112599ae5328498cca0d4ab5f89
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 616c891eb2b941e6376b2845e0844f0b43eb39e1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541009"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604034"
 ---
 # <a name="current-element-weathertype-complextype-outlook-weather-information-schema"></a>current 要素 (weatherType complexType) (Outlook天気予報スキーマ)
 
@@ -56,14 +56,14 @@ ms.locfileid: "34541009"
 |date  <br/> |xs:date  <br/> |必須  <br/> |今日の日付を指定します。  <br/> |xs:date 型の値  <br/> |
 |日  <br/> |xs:string  <br/> |省略可能  <br/> |予測の日を指定します。  <br/> |xs:string 型の値  <br/> |
 |感じが良い  <br/> |xs:integer  <br/> |必須  <br/> |現在の天気の温度を指定します。  <br/> |xs:integer 型の値  <br/> |
-|湿度  <br/> |xs:integer  <br/> |必須  <br/> |現在の数値の湿度値を指定します。  <br/> |xs:integer 型の値  <br/> |
-|オブザベーションポイント  <br/> |xs:string  <br/> |必須  <br/> |現在の気象情報の観測場所を指定します。  <br/> |xs:string 型の値  <br/> |
-|観測時間  <br/> |xs:time  <br/> |必須  <br/> |現在の気象情報がいつ観測されるのか指定します。  <br/> |xs:time 型の値  <br/> |
+|湿度  <br/> |xs:integer  <br/> |必須出席者  <br/> |現在の数値の湿度値を指定します。  <br/> |xs:integer 型の値  <br/> |
+|オブザベーションポイント  <br/> |xs:string  <br/> |必須出席者  <br/> |現在の気象情報の観測場所を指定します。  <br/> |xs:string 型の値  <br/> |
+|観測時間  <br/> |xs:time  <br/> |必須出席者  <br/> |現在の気象情報がいつ観測されるのか指定します。  <br/> |xs:time 型の値  <br/> |
 |shortday  <br/> |xs:string  <br/> |省略可能  <br/> |省略形で日を指定します。  <br/> |xs:string 型の値  <br/> |
 |skycode  <br/> |xs:integer  <br/> |必須  <br/> |現在の気象条件の整数コードを指定します。  <br/> |xs:integer 型の値  <br/> |
-|skytext  <br/> |xs:string  <br/> |必須  <br/> |現在の気象条件を表す単語を 1 から 2 つ指定します。  <br/> |xs:string 型の値  <br/> |
+|skytext  <br/> |xs:string  <br/> |必須出席者  <br/> |現在の気象条件を表す単語を 1 から 2 つ指定します。  <br/> |xs:string 型の値  <br/> |
 |温度  <br/> |xs:integer  <br/> |必須  <br/> |場所の現在の温度を指定します。  <br/> |xs:integer 型の値  <br/> |
-|winddisplay  <br/> |xs:string  <br/> |必須  <br/> |現在の風の状態を表す文字列。  <br/> |xs:string 型の値  <br/> |
-|windspeed  <br/> |xs:integer  <br/> |必須  <br/> |現在の風速の数値を指定します。  <br/> |xs:integer 型の値  <br/> |
+|winddisplay  <br/> |xs:string  <br/> |必須出席者  <br/> |現在の風の状態を表す文字列。  <br/> |xs:string 型の値  <br/> |
+|windspeed  <br/> |xs:integer  <br/> |必須出席者  <br/> |現在の風速の数値を指定します。  <br/> |xs:integer 型の値  <br/> |
    
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidMileage
 api_type:
 - COM
 ms.assetid: a0c2014a-6112-4c90-9be0-babb2e377402
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: dba0a43e936a6c814ffc4914240e85c05fa3ed58
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: af6a92d73acf4f9de77f10404d87407a6c7a1f2d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328743"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604587"
 ---
 # <a name="pidlidmileage-canonical-property"></a>PidLidMileage 標準プロパティ
 
@@ -41,7 +41,7 @@ ms.locfileid: "32328743"
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連するプロトコル仕様への参照Exchange Server提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
 ### <a name="header-files"></a>ヘッダー ファイル
 
