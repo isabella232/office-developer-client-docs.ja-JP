@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagProviderUid
 api_type:
 - COM
 ms.assetid: 993f5bca-58a6-455d-8a25-6e08b441ad31
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0d79075ea1db451e0c3d327df9a662e5032ebb22
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 95d42bd6889ca2c8630e2240767a241142aa92d6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422776"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583248"
 ---
 # <a name="pidtagprovideruid-canonical-property"></a>PidTagProviderUid 標準プロパティ
 

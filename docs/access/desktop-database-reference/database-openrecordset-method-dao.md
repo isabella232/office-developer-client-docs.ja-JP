@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1052939
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: b8a6e9a2204a60ecff33555d31f39591308f9b67
-ms.sourcegitcommit: 27a9f3568318470e7ee09ad93a90c3f80d3ef0cd
+ms.localizationpriority: high
+ms.openlocfilehash: 543aa19f98e112aff01b6fadb85e34e4340296bf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36790765"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606906"
 ---
 # <a name="databaseopenrecordset-method-dao"></a>Database.OpenRecordset メソッド (DAO)
 
@@ -97,7 +97,7 @@ ODBC データ ソースで複数の **Recordset** を開こうとすると、**
 > [!NOTE]
 > *source* が文字列と非整数値を連結したもので構成される SQL ステートメントを参照し、かつシステム パラメーターでコンマなどのピリオド以外の小数点の記号が使用されている場合 (たとえば、strSQL = "PRICE &gt; " &amp; lngPrice で lngPrice = 125,50)、**Recordset** を開こうとするとエラーが発生します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみになるからです。
 
-**リンクの提供元: **[UtterAccess](https://www.utteraccess.com) コミュニティ。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
+**リンクの提供元:**[UtterAccess](https://www.utteraccess.com) コミュニティ。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
 
 - [Excel へ Access からデータを転送](https://www.utteraccess.com/forum/transfer-data-access-ex-t1672619.html)
 

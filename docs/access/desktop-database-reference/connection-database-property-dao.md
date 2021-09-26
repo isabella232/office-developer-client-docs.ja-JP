@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1053581
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 7033c612642aa3ae6ce6c6175560438c893cde6d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: eaca7976e417d61ef8d70f0d60aa2438f89072ad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295920"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586041"
 ---
 # <a name="connectiondatabase-property-dao"></a>Connection.Database プロパティ (DAO)
 
@@ -33,7 +33,7 @@ ms.locfileid: "32295920"
 
 ## <a name="remarks"></a>注釈
 
-**[Connection](connection-object-dao.md)** オブジェクトで、**Database** プロパティを使用して、**Connection** オブジェクトに対応する **Database** オブジェクトへの参照を取得します。 DAO では、**Connection** オブジェクトとそれに対応する **Database** オブジェクトは、単に同じオブジェクトへの 2 つの異なるオブジェクト変数の参照です。 **Connection** オブジェクトの **Database** プロパティと **Database** オブジェクトの **[Connection](database-connection-property-dao.md)** プロパティを利用すると、Microsoft Access データベース エンジンを介した ODBC データ ソースへの接続を変更して ODBCDirect を使用することが容易になります。
+**[Connection](connection-object-dao.md)** オブジェクトで、**Database** プロパティを使用して、**Connection** オブジェクトに対応する **Database** オブジェクトへの参照を取得します。DAO では、**Connection** オブジェクトとそれに対応する **Database** オブジェクトは、同じオブジェクトへの 2 つの異なるオブジェクト変数参照です。**Connection** オブジェクトの **Database** プロパティと **Database** オブジェクトの **[Connection](database-connection-property-dao.md)** プロパティを利用すると、Microsoft Access データベース エンジンを介した ODBC データ ソースへの接続を変更して ODBCDirect を使用することが容易になります。
 
 ## <a name="example"></a>例
 

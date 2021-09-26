@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMessage.GetRecipientTable
 api_type:
 - COM
 ms.assetid: a335dfca-44da-452e-b16f-25d314b1758f
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: ca42e91528cdb7e61ae3620989c4a89966db1061
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 466e0e8d5adee88b8e6a7d1b70c79bf075310cb0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424610"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610511"
 ---
 # <a name="imessagegetrecipienttable"></a>IMessage::GetRecipientTable
 

@@ -1,23 +1,23 @@
 ---
-title: Field オブジェクト (ADO) リファレンス
+title: Field オブジェクト (ADO) 参照
 TOCTitle: Field object (ADO)
 ms:assetid: c718c40e-48bb-40e3-a3d4-a9580518cbbf
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249970(v=office.15)
 ms:contentKeyID: 48547634
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 40b225b1220ddd9b180a2451619eb97225b46a21
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a4c4397630b6c931fc9ffe42b7c6fa86993991fa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293071"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589555"
 ---
-# <a name="field-object-ado-reference"></a>Field オブジェクト (ADO) リファレンス
+# <a name="field-object-ado-reference"></a>Field オブジェクト (ADO) 参照
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 - [Field オブジェクト (ADO)](field-object-ado.md)
-- [Field のプロパティ、メソッド、およびイベント (ADO)](field-properties-methods-and-events-ado.md)
+- [フィールドのプロパティ、メソッド、およびイベント (ADO)](field-properties-methods-and-events-ado.md)
 

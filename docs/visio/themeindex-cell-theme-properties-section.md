@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 21002267-1400-4398-b937-f5b289cf0ed2
-description: ドキュメントに適用される組み込みの Microsoft Visio テーマの列挙を整数として格納します。 新しいテーマをドキュメント用に選択した場合、ドキュメントの [ThemeIndex] セルとそこに格納されたすべてのページと図形が、組み込みテーマのインデックスを使用して更新されます。
-ms.openlocfilehash: 6ddede864a54fbd7127552499d3ee1ae3d36efc1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: ドキュメントに適用される組み込みの Microsoft Visioテーマの列挙を整数として格納します。 新しいテーマをドキュメント用に選択した場合、ドキュメントの [ThemeIndex] セルとそこに格納されたすべてのページと図形が、組み込みテーマのインデックスを使用して更新されます。
+ms.openlocfilehash: a016fdef87fd0324b71cb912482fa9f1d797b946
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411912"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603306"
 ---
 # <a name="themeindex-cell-theme-properties-section"></a>[ThemeIndex] セル ([テーマのプロパティ] セクション)
 
-ドキュメントに適用される組み込みの Microsoft Visio テーマの列挙を整数として格納します。 新しいテーマをドキュメント用に選択した場合、ドキュメントの [**ThemeIndex**] セルとそこに格納されたすべてのページと図形が、組み込みテーマのインデックスを使用して更新されます。 
+ドキュメントに適用される組み込みの Microsoft Visioテーマの列挙を整数として格納します。 新しいテーマをドキュメント用に選択した場合、ドキュメントの [**ThemeIndex**] セルとそこに格納されたすべてのページと図形が、組み込みテーマのインデックスを使用して更新されます。 
   
 ## <a name="remarks"></a>注釈
 

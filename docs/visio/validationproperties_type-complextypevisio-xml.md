@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3b0d1209-4636-ea9c-acf7-895c3300492a
-ms.openlocfilehash: d83a1ce8e7ad89155726200de2950da755e5d3db
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 5bfc719cd159c4ece5a74cfd19eee1709829993f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538516"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603208"
 ---
 # <a name="validationproperties_type-complextype-visio-xml"></a>ValidationProperties_Type complexType (Visio XML)
 
@@ -51,7 +51,7 @@ ms.locfileid: "34538516"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|LastValidated  <br/> |xsd:dateTime  <br/> |必須  <br/> ||xsd:dateTime type 型の値。  <br/> |
+|LastValidated  <br/> |xsd:dateTime  <br/> |必須出席者  <br/> ||xsd:dateTime type 型の値。  <br/> |
 |ShowIgnored  <br/> |xsd:boolean  <br/> |必須  <br/> ||xsd:boolean 型の値。  <br/> |
    
 

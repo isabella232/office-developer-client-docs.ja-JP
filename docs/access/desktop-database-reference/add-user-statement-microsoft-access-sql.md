@@ -6,23 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845862(v=office.15)
 ms:contentKeyID: 48543652
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8ba60a646fd234748bcc39b9a5604a33675caee5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9eed2a6f66a2e23294aa3354178a051fe4a699b7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280426"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590171"
 ---
 # <a name="add-user-statement-microsoft-access-sql"></a>ADD USER ステートメント (Microsoft Access SQL)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 既存のユーザーを既存のグループに追加します。
 
 ## <a name="syntax"></a>構文
 
-ユーザー *user*\[、 *user*、... を追加します。\] *グループ*へ
+ADD USER *user* \[ , *user*, ... \]TO *グループ*
 
 ADD USER ステートメントには次の指定項目があります。
 
@@ -39,11 +39,11 @@ ADD USER ステートメントには次の指定項目があります。
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>user</em></p></td>
+<td><p><em>ユーザー</em></p></td>
 <td><p>ワークグループ情報ファイルに追加されるユーザーの名前。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>グループ</em></p></td>
+<td><p><em>group</em></p></td>
 <td><p>ワークグループ情報ファイルに追加されるグループの名前。</p></td>
 </tr>
 </tbody>
@@ -52,5 +52,5 @@ ADD USER ステートメントには次の指定項目があります。
 
 ## <a name="remarks"></a>注釈
 
-*ユーザー*が*グループ*に追加されると、そのユーザー ** は*グループ*に付与されているすべてのアクセス許可を持ちます。
+ユーザーが *グループ* に追加された後、そのユーザーには、グループに付与されているすべてのアクセス許可が付与 *されます*。
 

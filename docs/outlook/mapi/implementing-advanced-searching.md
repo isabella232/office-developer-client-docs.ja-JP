@@ -3,17 +3,17 @@ title: 高度な検索の実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 08cc60d4-cac8-4ba5-bd7f-a56e63697be3
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 35d41ff903c5ed22c5210adf6448dfded0afe4b6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 20282c78f6ff9003221429046fa9126cc4abaeec
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407390"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610469"
 ---
 # <a name="implementing-advanced-searching"></a>高度な検索の実装
 

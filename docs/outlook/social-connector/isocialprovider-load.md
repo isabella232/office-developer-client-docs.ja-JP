@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6356f7bf-e3a1-4294-ad6e-df77bdd0356c
 description: ソーシャル コネクタOutlook (OSC) プロバイダーを初期化します。
-ms.openlocfilehash: 73d14f66785417e80448f622256d0b9cb059b83c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4e41c78c016358c205f860345bee6cdcf3ba06e4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285760"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608866"
 ---
 # <a name="isocialproviderload"></a>ISocialProvider::Load
 

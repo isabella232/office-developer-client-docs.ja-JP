@@ -11,13 +11,13 @@ f1_keywords:
 - vbaac10.chm13783
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 9635cdb2a06f610f42e4aa9fc9f998719aebb986
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 526887b6d63623174f0bcdffd43d87a17270a1b4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296963"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558843"
 ---
 # <a name="automation-with-microsoft-access"></a>Microsoft Access によるオートメーション
 
@@ -29,7 +29,7 @@ Access はオートメーション (以前の OLE オートメーション) を�
 
 Access では、コンポーネントのタイプ ライブラリへの参照を設定することで、オートメーションを通じてそのコンポーネントを処理する際のパフォーマンスを向上させることができます。また、Access のオブジェクト ブラウザーでは、他のコンポーネントのタイプ ライブラリのオブジェクトやメソッド、プロパティを表示することができます。
 
-Microsoft Access タイプ ライブラリでは、Microsoft Access オブジェクトに関する情報が他のコンポーネントに提供されます。 コンポーネントから Microsoft Access タイプ ライブラリへの[参照を設定](https://docs.microsoft.com/office/vba/access/Concepts/Settings/set-references-to-type-libraries)すると、オブジェクト ブラウザーでタイプ ライブラリ内のオブジェクトを表示できます。
+Microsoft Access タイプ ライブラリは、Microsoft Access オブジェクトに関する情報を他のコンポーネントに提供します。コンポーネントから Microsoft Access タイプ ライブラリへの[参照を設定](https://docs.microsoft.com/office/vba/access/Concepts/Settings/set-references-to-type-libraries)し、オブジェクト ブラウザーでそのオブジェクトを表示できます。
 
 オートメーションを通じて Microsoft Access オブジェクトを処理するには、Microsoft Access の **[Application](https://docs.microsoft.com/office/vba/api/Access.Application)** オブジェクトのインスタンスを作成する必要があります。たとえば、Microsoft Access のフォームまたはレポートに Microsoft Excel のデータを表示するとします。このような場合に Microsoft Excel から Microsoft Access を起動するには、キーワード **New** を使って Microsoft Access の **Application** オブジェクトのインスタンスを作成するという方法があります。他にも、 **CreateObject** メソッドを使って Microsoft Access の **Application** オブジェクトの新規インスタンスを作成する方法や、 **GetObject** メソッドを使って Microsoft Access の既存のインスタンスへのオブジェクト変数を示す方法があります。これらのうち、コンポーネントがどの方法をサポートしているかは、そのコンポーネントのマニュアルで確認してください。
 

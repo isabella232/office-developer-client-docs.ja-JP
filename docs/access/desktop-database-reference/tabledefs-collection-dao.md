@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff820997(v=office.15)
 ms:contentKeyID: 48546766
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: f16f44b57a690aa58efdff9b00341df5023c293f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 7b6eb74e03b4fe892ae479ed99119e2df952f750
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314176"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580742"
 ---
 # <a name="tabledefs-collection-dao"></a>TableDefs コレクション (DAO)
 
@@ -34,7 +34,7 @@ ms.locfileid: "32314176"
 
 **TableDefs**\!\[name\]
 
-[UtterAccess](https://www.utteraccess.com) コミュニティで**リンクが提供**されます。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
+[UtterAccess](https://www.utteraccess.com) コミュニティで **リンクが提供** されます。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
 
   - [Re-Linker Multi-Backends](https://www.utteraccess.com/wiki/index.php/re-linker_multi-backends)
 

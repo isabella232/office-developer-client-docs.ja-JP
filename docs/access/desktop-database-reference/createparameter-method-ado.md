@@ -1,5 +1,5 @@
 ---
-title: createparameter メソッド (ADO)
+title: CreateParameter メソッド (ADO)
 TOCTitle: CreateParameter method (ADO)
 ms:assetid: cf080a0b-75d2-dcdf-2715-10af147358e9
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250026(v=office.15)
@@ -10,23 +10,23 @@ f1_keywords:
 - ado210.chm1231042
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: fa060811f60379e720e06be9f94e9403477c7869
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ee1103492c6a637463002070239fbdafbe98578e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295395"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589814"
 ---
-# <a name="createparameter-method-ado"></a>createparameter メソッド (ADO)
+# <a name="createparameter-method-ado"></a>CreateParameter メソッド (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 指定したプロパティを使用して、新規 [Parameter](parameter-object-ado.md) オブジェクトを作成します。
 
 ## <a name="syntax"></a>構文
 
-**設定***パラメーター* = *コマンド*を実行します。createparameter (*Name*、 *Type*、 *Direction*、 *Size*、 *Value*)
+**Set** *parameter*  =  *command*.CreateParameter (*Name*, *Type*, *Direction*, *Size*, *Value*)
 
 ## <a name="return-value"></a>戻り値
 
@@ -36,7 +36,7 @@ ms.locfileid: "32295395"
 
 |パラメーター|説明|
 |:--------|:----------|
-|*Name* |省略可能です。 **Parameter** オブジェクト名を含む文字列型 ( **String** ) の値を指定します。|
+|*名前* |省略可能です。 **Parameter** オブジェクト名を含む文字列型 ( **String** ) の値を指定します。|
 |*Type* |省略可能です。 [Parameter](datatypeenum.md) オブジェクトのデータ型を **DataTypeEnum** 値で指定します。|
 |*Direction* |省略可能です。 [Parameter](parameterdirectionenum.md) オブジェクトのデータ型を **ParameterDirectionEnum** 値で指定します。|
 |*Size* |省略可能です。パラメーター値の最大長を文字数またはバイト数で指定する長整数型 ( **Long** ) の値を指定します。|

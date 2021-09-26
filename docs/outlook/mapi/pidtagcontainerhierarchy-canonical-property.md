@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagContainerHierarchy
 api_type:
 - HeaderDef
 ms.assetid: 6917510d-ca1e-4049-9eab-09313753ecf0
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: f009d7ce5cd1856ccff1e00953188c8edde7a6bc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 65460c148c812793b72220e3d2b2bba6ccd227ba
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332859"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583535"
 ---
 # <a name="pidtagcontainerhierarchy-canonical-property"></a>PidTagContainerHierarchy 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "32332859"
 |関連するプロパティ:  <br/> |PR_CONTAINER_HIERARCHY  <br/> |
 |識別子:  <br/> |0x360E  <br/> |
 |データの種類 :   <br/> |PT_OBJECT  <br/> |
-|エリア:  <br/> |Container  <br/> |
+|エリア:  <br/> |コンテナー  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -42,7 +42,7 @@ ms.locfileid: "32332859"
   
  **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) **、PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)) 、このプロパティは使用法で似ています。 複数の MAPI プロパティを使用すると、テーブルにアクセスできます。 
   
-|**Property**|**表**|
+|**プロパティ**|**Table**|
 |:-----|:-----|
 |**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))  <br/> |コンテンツ テーブル  <br/> |
 |**PR_CONTAINER_HIERARCHY** <br/> |階層テーブル  <br/> |

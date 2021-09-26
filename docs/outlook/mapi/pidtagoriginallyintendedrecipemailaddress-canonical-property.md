@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagOriginallyIntendedRecipEmailAddress
 api_type:
 - COM
 ms.assetid: 6a85b695-731a-4401-9c9c-fda6bc308558
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4a0e7325618a38addefe562c8207066dfea620f9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d95ab4a6ca8d07b7df28af2afed089ec160a0ed6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411373"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583303"
 ---
 # <a name="pidtagoriginallyintendedrecipemailaddress-canonical-property"></a>PidTagOriginallyIntendedRecipEmailAddress 標準プロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "33411373"
 |関連するプロパティ:  <br/> |PR_ORIGINALLY_INTENDED_RECIP_EMAIL_ADDRESS、PR_ORIGINALLY_INTENDED_RECIP_EMAIL_ADDRESS_A、PR_ORIGINALLY_INTENDED_RECIP_EMAIL_ADDRESS_W  <br/> |
 |識別子:  <br/> |0x007C  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|エリア:  <br/> |Server  <br/> |
+|エリア:  <br/> |サーバー  <br/> |
    
 ## <a name="remarks"></a>注釈
 

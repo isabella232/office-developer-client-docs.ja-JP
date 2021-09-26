@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248944(v=office.15)
 ms:contentKeyID: 48543509
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6578dbfc50ae8ffeaa31f49b694b37ba5fd534e8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2bb56f998a6508b3a30c1efa45270c296aa80540
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296711"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607032"
 ---
 # <a name="calling-a-stored-procedure-with-a-command"></a>コマンドを使用したストアド プロシージャの呼び出し
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ストアド プロシージャを呼び出すときにも、コマンドを使用できます。このトピックのコードでは、Northwind のサンプル データベースで、CustOrdersOrders というストアド プロシージャを呼び出します。このストアド プロシージャは次のように定義されます。
 

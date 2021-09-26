@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192329(v=office.15)
 ms:contentKeyID: 48544109
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 31d003d7ae98bf509aca8f24da9c37f0276af6fd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: b09723b816525ac538de54c3a85df53260496959
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300239"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585453"
 ---
 # <a name="recordsetmovefirst-method-dao"></a>Recordset.MoveFirst メソッド (DAO)
 
@@ -40,7 +40,7 @@ ms.locfileid: "32300239"
 
             **MoveFirst** または **MoveLast** を使用したときに、最初のレコードまたは最後のレコードが既にカレント レコードである場合、カレント レコードは変更されません。
 
-recordset がテーブル タイプの **Recordset** である場合 (Microsoft Access ワークスペースのみ)、現在のインデックスに従って移動が行われます。 現在のインデックスを設定するには、 **Index** プロパティを使用します。 現在のインデックスを設定しない場合、返されるレコードの順序は未定義となります。
+recordset がテーブル タイプの **Recordset** である場合 (Microsoft Access ワークスペースのみ)、現在のインデックスに従って移動が行われます。現在のインデックスを設定するには、 **Index** プロパティを使用します。現在のインデックスを設定しない場合、返されるレコードの順序は未定義となります。
 
 
             **MoveFirst**、**MoveLast**、および **MovePrevious** の各メソッドは、前方スクロール タイプの **Recordset** オブジェクトでは使用できません。

@@ -4,15 +4,15 @@ TOCTitle: Microsoft ActiveX Data Objects Reference
 ms:assetid: 235fc575-8a2e-913c-fa3d-bb86256733f9
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249010(v=office.15)
 ms:contentKeyID: 48543728
-ms.date: 09/18/2015
+ms.date: 09/18/2021
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: c1fee657c0d6ecd319157f704df2b1c5a900be3b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 0a6e7090b1be0e5c31d670e7ff5c524f8c68e8cb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289120"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606612"
 ---
 # <a name="microsoft-activex-data-objects-reference"></a>Microsoft ActiveX データ オブジェクト リファレンス
 
@@ -20,7 +20,7 @@ ms.locfileid: "32289120"
 
 ## <a name="purpose"></a>用途
 
-Microsoft ActiveX Data Objects (ADO) により、クライアント アプリケーションが、OLE DB プロバイダーを通じてデータベース サーバーのデータにアクセスし、これを操作できるようになります。 ADO の主な利点は、使用が簡単で、高速に動作し、メモリのオーバーヘッドが小さく、ディスクの使用量が少ないことです。 ADO では、クライアント/サーバー アプリケーションおよび Web ベース アプリケーションを構築するための重要な機能がサポートされています。
+Microsoft ActiveX Data Objects (ADO) により、クライアント アプリケーションが、OLE DB プロバイダーを通じてデータベース サーバーのデータにアクセスし、これを操作できるようになります。ADO の主な利点は、使用が簡単で、高速に動作し、メモリのオーバーヘッドが小さく、ディスクの使用量が少ないことです。ADO では、クライアント/サーバー アプリケーションおよび Web ベース アプリケーションを構築するための重要な機能がサポートされています。
 
 ## <a name="rds"></a>RDS
 
@@ -43,8 +43,3 @@ ADOX は、ADO のコア オブジェクトに添付されるライブラリで�
 - [プログラマー ガイド](ado-programmer-s-guide.md): ADO、RDS、ADO MD、および ADOX の使用方法の概要について説明します。
 
 - [Programmer's reference](ado-programmer-s-reference-topics.md): この ADO のドキュメントのセクションには、ADO、RDS、ADO MD、および ADOX の各オブジェクト、コレクション、プロパティ、動的プロパティ、メソッド、イベント、および列挙型に関するトピックが含まれています。
-
-## <a name="feedback"></a>フィードバック
-
-ADO のドキュメントまたはサンプルに関するフィードバックは、ADO ドキュメント チームに直接お送りください。
-

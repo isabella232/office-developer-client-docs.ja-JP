@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249882(v=office.15)
 ms:contentKeyID: 48547290
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 11a280ffc1434d58b73169231b47f1ff132e1263
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c73ed8d60c88618d92ed75d7642a29e83fe50b70
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280210"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590136"
 ---
 # <a name="addnew-method-example-jscript"></a>AddNew メソッドの使用例 (JScript)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、[AddNew](addnew-method-ado.md) メソッドを使用して、指定された名前で新しいレコードを作成します。以下のコードをコピーしてメモ帳などのテキスト エディターに貼り付け、 **AddNewJS.asp** という名前で保存してください。
 

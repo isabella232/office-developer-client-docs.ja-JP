@@ -3,17 +3,17 @@ title: MAPI フォーム インターフェイス
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 611213c9-e758-4366-b193-fc62181d3d1f
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: f207f9550c61ad69fd1fc560cdb2084b7bb56c6f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b314e9c3d0e8ffd82a94ae981b259cb3b845254c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412346"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610322"
 ---
 # <a name="mapi-form-interfaces"></a>MAPI フォーム インターフェイス
 

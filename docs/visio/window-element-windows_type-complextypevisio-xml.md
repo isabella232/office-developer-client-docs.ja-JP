@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: da776276-e8c2-085b-9b23-e5b1f5ba64cd
 description: Microsoft Visio インスタンスで開いているウィンドウを表します。 この要素には、Visio でファイルを最初に開いたときにアプリケーション ワークスペースでユーザー インターフェイス ウィンドウを正確に再作成するために必要な情報が含まれています。
-ms.openlocfilehash: 2700ee7a9a17460f6ac707f5b1a8f35d622e33e3
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
-ms.translationtype: HT
+ms.openlocfilehash: 44282149246dc4bfb93e583d8db4025d63ce542b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538460"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603201"
 ---
 # <a name="window-element-windows_type-complextype-visio-xml"></a>Window 要素 (Windows_Type complexType) (Visio XML)
 

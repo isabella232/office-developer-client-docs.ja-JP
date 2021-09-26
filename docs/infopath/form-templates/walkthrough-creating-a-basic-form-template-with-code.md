@@ -5,15 +5,15 @@ ms.date: 12/07/2015
 ms.audience: Developer
 keywords:
 - フォーム テンプレート [infopath 2007], 管理対象コードの作成,管理対象コードのフォーム テンプレート [InfoPath 2007], フォーム テンプレートの作成 [InfoPath 2007], チュートリアル,InfoPath 2007, チュートリアル
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0f55c8be-8641-476a-b0c8-c88adb2ac2b9
 description: Microsoft InfoPath の場合は、Visual Basic または C# でビジネス ロジックを記述できます。これを実行するには、フォーム テンプレートを InfoPath のデザイン モードで開き、いずれかのユーザー インターフェイス コマンドを使用してイベント ハンドラーを追加します。これにより、コードを記述するための Visual Studio 2012 開発環境が開きます。
-ms.openlocfilehash: cc09856750ced28d35c8da172a08a31c4e3cd4a2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: de6edb87ee29ea7ea6fcf0f9a658bcd013a410da
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420648"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611134"
 ---
 # <a name="walkthrough-create-a-basic-form-template-with-code"></a>チュートリアル: コードを含む基本的なフォーム テンプレートの作成
 

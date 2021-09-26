@@ -1,17 +1,17 @@
 ---
 title: Outlook 用のソリューションを開発するための API またはテクノロジの選択
 manager: lindalu
-ms.date: 12/03/2019
+ms.date: 09/15/2021
 ms.audience: Developer
 ms.assetid: 01a46083-03d0-4333-920c-01a9f17f68cb
 description: この記事では Outlook 2013 および Outlook 2016 を拡張するために使用できる API とテクノロジについて説明しており、各自のシナリオに適した API またはテクノロジを判断する際に役立てることができます。
-localization_priority: Priority
-ms.openlocfilehash: 42ca5056c49186229ab1689c9aeeb4d34dda60fc
-ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
+ms.localizationpriority: high
+ms.openlocfilehash: 6414b772ffd5af9abb3d9b0f6b0a4b72fae0815e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41773751"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594959"
 ---
 # <a name="selecting-an-api-or-technology-for-developing-solutions-for-outlook"></a>Outlook 用のソリューションを開発するための API またはテクノロジの選択
 
@@ -67,7 +67,7 @@ Microsoft は、Outlook を拡張するさまざまな API とテクノロジを
 
 Office 2013 以降、開発者は Office アドイン プラットフォームを使用して Web サービスとコンテンツを Office のリッチ クライアントと Web クライアントのコンテキストに拡張することができます。Office アドイン は、一般的な Web テクノロジを使用して開発され、(Outlook などの) Office クライアント アプリケーション内部でホストされる Web ページで、 社内またはクラウドで実行できます。Office アドイン の中でも、Outlook がサポートするタイプはメール アプリといいます。Outlook をアプリケーション レベルで自動化するためにオブジェクト モデル、PIA、MAPI をよく使用しますが、JavaScript API for Office を使用してアイテム レベルで電子メール メッセージ、会議出席依頼、予定の内容やプロパティを連動させることもできます。メール アプリは Office ストア や社内の Exchange カタログに公開できます。 
   
-エンド ユーザーや管理者はメール アプリを Exchange メールボックスにインストールすれば、Outlook リッチ クライアントや Outlook Web App でもメール アプリを使用できます。 開発者であれば、自分のメール アプリをデスクトップでのみ利用可能にしたり、タブレットやスマートフォンでも利用可能にしたりすることもできます。図 1 に、[方法: YouTube ビデオを表示するための Outlook 2013 プレビュー用メール アプリを構築する方法](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)で詳しく説明されている YouTube メール アプリの例を示します。YouTube メール アプリにより、エンド ユーザーは YouTube の URL を選択して、デスクトップやタブレットの Outlook または Outlook Web App 内でビデオを見ることができます。
+エンド ユーザーや管理者はメール アプリを Exchange メールボックスにインストールすれば、Outlook リッチ クライアントや Outlook Web App でもメール アプリを使用できます。 開発者であれば、自分のメール アプリをデスクトップでのみ利用可能にしたり、タブレットやスマートフォンでも利用可能にしたりすることもできます。図 1 に、[方法: YouTube ビデオを表示するための Outlook 2013 プレビュー用メール アプリを構築する方法](/samples/browse/?redirectedfrom=MSDN-samples.md)で詳しく説明されている YouTube メール アプリの例を示します。YouTube メール アプリにより、エンド ユーザーは YouTube の URL を選択して、デスクトップやタブレットの Outlook または Outlook Web App 内でビデオを見ることができます。
   
 **図 1. 選択したメッセージには YouTube.com のビデオの URL が含まれていて、このメッセージに対して YouTube メール アプリがアクティブになっている**
 
@@ -107,8 +107,8 @@ Office 2013 以降、開発者は Office アドイン プラットフォーム�
 |**基準**|**Office 用アプリ プラットフォームでのメール アプリ サポート**|
 |:-----|:-----|
 |デザイン時権限  <br/> |メール アプリの開発に特別な権限は必要ありません。  <br/> |
-|セットアップ権限  <br/> |デフォルトでは、エンドユーザーと管理者は **制限** または **アイテムの読み取り**権限が必要な低信頼メール アプリをインストールでき、管理者は **メールボックスの読み取り/書き込み**権限を必要とする高信頼メール アプリをインストールできます。  <br/> |
-|実行時権限  <br/> |メール アプリは、 **制限**、 **アイテムの読み取り**、 **メールボックスの読み取り/書き込み**の 3 層のアクセス許可モデルに基づいて特定のレベルの権限を要求します。 .    <br/> |
+|セットアップ権限  <br/> |デフォルトでは、エンドユーザーと管理者は **制限** または **アイテムの読み取り** 権限が必要な低信頼メール アプリをインストールでき、管理者は **メールボックスの読み取り/書き込み** 権限を必要とする高信頼メール アプリをインストールできます。  <br/> |
+|実行時権限  <br/> |メール アプリは、 **制限**、 **アイテムの読み取り**、 **メールボックスの読み取り/書き込み** の 3 層のアクセス許可モデルに基づいて特定のレベルの権限を要求します。 .    <br/> |
 |組み込みセキュリティ機能  <br/> | Office アドイン ランタイムには、アプリがエンド ユーザーの環境を損なわないようにするための次のような利点があります。  <br/>  アプリを実行するプロセスは分離されます。  <br/>  .dll または .exe 置換または ActiveX コンポーネントを使用しません。  <br/>  エンドユーザーによるアプリのインストールまたはアンインストールが容易です。  <br/>  管理者とエンドユーザーは、使用可能なメール アプリを制御することができ、メール アプリをインストールする前に要求された権限を付与するかどうかを判断できます。  <br/>  リッチ クライアントの場合、悪意あるサービス拒否攻撃を防ぐためにメモリーと CPU の使用状況を統御します。  <br/> |
 |セキュリティ監視機能  <br/> | メール アプリの場合、以下のリソースが監視されます。  <br/>  CPU コア使用状況。  <br/>  メモリー使用状況。  <br/>  クラッシュ回数。  <br/>  アプリケーションをブロックする時間。  <br/>  正規表現応答時間。  <br/>  正規表現の再評価回数。  <br/>  管理者は、リソース使用状況を制御するデフォルト設定に優先する設定を行えます。  <br/> |
    
@@ -278,10 +278,10 @@ Office アドイン には Web テクノロジが使用されているので、�
 
 ### <a name="major-baseline-scenarios-supported-by-the-outlook-object-model-or-pia"></a>Outlook オブジェクトモデルまたは PIA でサポートされている主要な ベースライン シナリオ
 
-一般に、ソリューションが Outlook ユーザーインターフェイスをカスタマイズしたり、Outlook のビジネスロジックに依存している場合、オブジェクトモデルまたは PIA を使用します。 以下は、Outlook ソリューションがオブジェクト モデルまたは PIA を使用する主なベースライン シナリオです。 
+一般に、ソリューションで Outlook ユーザー インターフェイスをカスタマイズするか、またはソリューションが Outlook のビジネス ロジックに依存している場合、オブジェクト モデルまたは PIA を使用します。次に、Outlook ソリューションがオブジェクト モデルまたは PIA を使用する主な基準となるシナリオを示します。 
   
 - [Outlook ユーザー インターフェイスをカスタマイズする](#OLSelectAPI_CustomizeTheOutlookInterface)
-- [Outlook アイテムの追加、削除、読み取り、書き込み、フィルター処理、検索、並べ替えを行う](https://docs.microsoft.com/office/vba/outlook/How-to/Items-Folders-and-Stores/outlook-item-objects)
+- [Outlook アイテムの追加、削除、読み取り、書き込み、フィルター処理、検索、並べ替えを行う](/office/vba/outlook/How-to/Items-Folders-and-Stores/outlook-item-objects.md)
 - [アイテムのプロパティ、フィールド、フォームのカスタマイズ](#OLSelectAPI_ItemPropFieldsForms)
 - [フォルダーの切り替えやアイテムを開くなど、Outlook のイベントを処理する](#OLSelectAPI_Events)
 - [ Outlook を自動化し、他の Office アプリケーションと統合する](#OLSelectAPI_AutomateOutlook)
@@ -295,7 +295,7 @@ Office アドイン には Web テクノロジが使用されているので、�
 
 ### <a name="scenarios-supported-by-the-object-model-or-pia-since-outlook-2007"></a>Outlook 2007 以降のオブジェクト モデルまたは PIA でサポートされているシナリオ
 
-ベースライン シナリオに加えて、Outlook ソリューションが次のリストにあるシナリオのいずれかをサポートしている場合、使用しているソリューションが Outlook 2007 以降のバージョンでのみ実行されるものであれば、オブジェクトモデルや PIA も使用できます。 このセクションでは、Outlook オブジェクトモデルで各シナリオを拡張するために使用することができる主なオブジェクトまたはメンバーを指定します（Visual Studio オートメーションオブジェクトモデルの[IDTExtensibility2](https://docs.microsoft.com/dotnet/api/extensibility.idtextensibility2?view=visualstudiosdk-2017) インターフェイスと、Outlook オブジェクトモデルに統合できる Office オブジェクトモデルでの[IRibbonExtensibility](https://docs.microsoft.com/office/vba/api/Office.IRibbonExtensibility)インターフェイスを除く）。 
+ベースライン シナリオに加えて、Outlook ソリューションが次のリストにあるシナリオのいずれかをサポートしている場合、使用しているソリューションが Outlook 2007 以降のバージョンでのみ実行されるものであれば、オブジェクトモデルや PIA も使用できます。 このセクションでは、Outlook オブジェクトモデルで各シナリオを拡張するために使用することができる主なオブジェクトまたはメンバーを指定します（Visual Studio オートメーションオブジェクトモデルの[IDTExtensibility2](/dotnet/api/extensibility.idtextensibility2?view=visualstudiosdk-2017.md) インターフェイスと、Outlook オブジェクトモデルに統合できる Office オブジェクトモデルでの[IRibbonExtensibility](/office/vba/api/Office.IRibbonExtensibility.md)インターフェイスを除く）。 
 
 - [Outlook UI をカスタマイズする: Office Fluent リボン、ナビゲーションウィンドウ、作業ウィンドウ](#OLSelectAPI_CustomizeTheOutlookInterface)
 - [フォームをフォーム領域としてカスタマイズして、アドイン別に展開する](#OLSelectAPI_CustomFormRegions)
@@ -327,14 +327,14 @@ Office アドイン には Web テクノロジが使用されているので、�
 
 ### <a name="scenarios-supported-by-the-object-model-or-pia-since-outlook-2010"></a>Outlook 2010 以降のオブジェクト モデルまたは PIA でサポートされているシナリオ
 
-Outlook ソリューションを Outlook 2010 以降のバージョンでのみ実行する場合には、次のセクションで示されるシナリオをサポートするオブジェクト モデルまたは PIA を選択して使用できます。 このセクションでは、Outlook オブジェクトモデルで各シナリオを拡張するために使用できる主なオブジェクトまたはメンバーを指定します（Outlook オブジェクトモデルと統合できる Office オブジェクトモデル内の[IRibbonControl](https://docs.microsoft.com/office/vba/api/Office.IRibbonControl)、[IRibbonExtensibility](https://docs.microsoft.com/office/vba/api/Office.IRibbonExtensibility)、[IRibbonUI](https://docs.microsoft.com/office/vba/api/Office.IRibbonUI)インターフェースを除く）。 
+Outlook ソリューションを Outlook 2010 以降のバージョンでのみ実行する場合には、次のセクションで示されるシナリオをサポートするオブジェクト モデルまたは PIA を選択して使用できます。 このセクションでは、Outlook オブジェクトモデルで各シナリオを拡張するために使用できる主なオブジェクトまたはメンバーを指定します（Outlook オブジェクトモデルと統合できる Office オブジェクトモデル内の[IRibbonControl](/office/vba/api/Office.IRibbonControl.md)、[IRibbonExtensibility](/office/vba/api/Office.IRibbonExtensibility.md)、[IRibbonUI](/office/vba/api/Office.IRibbonUI.md)インターフェースを除く）。 
    
 - [Office Backstage ビューやコンテキストメニューなどの Outlook 2010 UI をカスタマイズする](#OLSelectAPI_CustomizingUIOutlook2010)
 - [スレッドの異種アイテムを管理し、アクセスする](#OLSelectAPI_Conversations)
 - [エクスプローラー内でのアイテムの選択の管理、または選択したアイテムの特定](#OLSelectAPI_ItemSelection)
 - [インスペクター内での添付ファイルの選択の管理](#OLSelectAPI_AttachmentSelection)
 - [1 つのプロファイルでの複数の Exchange アカウントのサポート](#OLSelectAPI_MultipleAccounts)
-- [住所を入力する連絡先カードの作成](https://docs.microsoft.com/office/vba/api/Outlook.NameSpace.CreateContactCard)
+- [住所を入力する連絡先カードの作成](/office/vba/api/Outlook.NameSpace.CreateContactCard.md)
 - [ソリューション モジュールでソリューション固有のフォルダーを整理する](#OLSelectAPI_Folders)
 
 <!--more removed images:
@@ -351,10 +351,10 @@ Outlook ソリューションを Outlook 2010 以降のバージョンでのみ�
 
 Outlook ソリューションを Outlook 2013 以降のバージョンでのみ実行する場合には、次のリソースで示されるシナリオをサポートするオブジェクト モデルまたは PIA を使用できます。
 
-- [現在のフォルダー内のすべての連絡先のビューを表示](https://docs.microsoft.com/office/vba/api/Outlook.peopleview)
+- [現在のフォルダー内のすべての連絡先のビューを表示](/office/vba/api/Outlook.peopleview.md)
 - [閲覧ウィンドウのインライン応答を選択](#OLSelectAPI_InlineResponse)
 - [連絡先の住所またはフルネームをチェックするダイアログを表示](#OLSelectAPI_ContactCheckDialogs)
-- [アイテムのプロパティの読み取り完了を検知](https://docs.microsoft.com/office/vba/outlook/How-to/Items-Folders-and-Stores/outlook-item-objects)
+- [アイテムのプロパティの読み取り完了を検知](/office/vba/outlook/How-to/Items-Folders-and-Stores/outlook-item-objects.md)
 
 <!--more removed images:
 ![Display view for all contacts in current folder](media/odc_ol15_ta_SelectingAPI_Fig5-1.gif)
@@ -440,10 +440,6 @@ Outlook は、マネージ言語またはアンマネージ言語で作成され
   
 ## <a name="niche-apis-and-technologies"></a>最適な API とテクノロジ
 
-<a name="OLSelectAPI_NicheAPI"> </a>
-
-## <a name="niche-apis-and-technologies"></a>最適な API とテクノロジ
-
 Outlook Social Connector (OSC) と天気予報バーは、Outlook の非常に特殊なシナリオの拡張をサポートします。 
   
 ### <a name="outlook-social-connector-osc-provider-extensibility"></a>Outlook Social Connector (OSC) プロバイダー拡張機能
@@ -467,8 +463,6 @@ Outlook 2013 以降、天気予報バー用のサード パーティの天気 We
 既定では、Outlook は MSN 天気が提供する天気データを使用します。天気バーは、Outlook との通信用に定義されたプロトコルに準拠するサード パーティの天気データ Web サービスをサポートします。サード パーティの天気データ サービスがこのプロトコルをサポートする限り、ユーザーはその天気データ サービスを選択して天気バーに天気データを提供できます。
   
 OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細については、「[その他の技術資料主な参照資料、リソース、コード サンプル](#OLSelectAPI_AdditionalResourcesRefCode)」セクションをご覧ください。 
-
-<a name="OLSelectAPI_Conclusion"> </a>
 
 ## <a name="conclusion"></a>まとめ
 
@@ -494,24 +488,20 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 
 <a name="OLSelectAPI_AdditionalResourcesApps"> </a>
 
-[Office 用アプリの構築を開始する](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins?redirectedfrom=MSDN) には、アーキテクチャや開発ライフ サイクルを含む Office アドイン の概要がわかりやすく提供されています。 
+[Office 用アプリの構築を開始する](/office/dev/add-ins/overview/office-add-ins.md) には、アーキテクチャや開発ライフ サイクルを含む Office アドイン の概要がわかりやすく提供されています。 
   
-メール アプリの開発に関するリソースの詳細なロードマップについては、「[Outlook アドイン](https://docs.microsoft.com/outlook/add-ins/?redirectedfrom=MSDN)」を参照してください。 
+メール アプリの開発に関するリソースの詳細なロードマップについては、「[Outlook アドイン](/outlook/add-ins/)」を参照してください。 
   
-## <a name="see-also-object-model-and-pia"></a>関連項目: オブジェクト モデルと PIA
-
-<a name="OLSelectAPI_AdditionalResourcesObjModelPIA"> </a>
-
 ## <a name="see-also-object-model-and-pia"></a>関連項目: オブジェクト モデルと PIA
 
 オブジェクトモデルと PIA の使用方法の詳細については、次のリソースを参照してください。
 
 <a name="OLSelectAPI_PrimaryAccount"> </a>
 
-- [Account](https://docs.microsoft.com/office/vba/api/Outlook.Account) オブジェクト 
+- [Account](/office/vba/api/Outlook.Account.md) オブジェクト 
 
     
-- [NameSpace.Accounts](https://msdn.microsoft.com/library/80e969ea-d2cc-966d-5fe4-68d59951b5c9%28Office.15%29.aspx) プロパティ 
+- [NameSpace.Accounts](/office/vba/api/Outlook.NameSpace.Accounts.md) プロパティ 
 
 <a name="OLSelectAPI_MultipleAccounts"> </a>
 
@@ -917,10 +907,10 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
   
 ### <a name="major-references-and-resources"></a>主な参照資料とリソース
 
-- [Office 用アプリの作成](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)   
-- [Outlook 2013 開発者用リファレンス](https://docs.microsoft.com/office/vba/api/overview/outlook)   
-- [Outlook 2010 プライマリ相互運用機能アセンブリ リファレンス](https://docs.microsoft.com/office/client-developer/outlook/pia/welcome-to-the-outlook-primary-interop-assembly-reference)   
-- [Outlook MAPI リファレンス](https://docs.microsoft.com/office/client-developer/outlook/mapi/outlook-mapi-reference)   
+- [Office 用アプリの作成](/office/dev/add-ins/overview/office-add-ins.md)   
+- [Outlook 2013 開発者用リファレンス](/office/vba/api/overview/outlook.md)   
+- [Outlook 2010 プライマリ相互運用機能アセンブリ リファレンス](/office/client-developer/outlook/pia/welcome-to-the-outlook-primary-interop-assembly-reference.md)   
+- [Outlook MAPI リファレンス](/office/client-developer/outlook/mapi/outlook-mapi-reference.md)   
 - [Outlook 2013 補助リファレンス](auxiliary/welcome-to-the-outlook-auxiliary-reference.md)   
 - [Outlook Social Connector のプロバイダーの参照](social-connector/outlook-social-connector-provider-reference.md)   
 - [Outlook の天気予報バーの拡張](weather/extending-the-weather-bar-in-outlook.md)   
@@ -933,9 +923,7 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 ### <a name="code-samples"></a>コード サンプル
 
 - [メール アプリのサンプル](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples)   
-- オブジェクト モデルのコード サンプル: [操作方法.(Outlook 2013 開発者用リファレンス)](https://docs.microsoft.com/office/vba/outlook/concepts/miscellaneous/how-do-i-outlook-vba-reference)  
-- PIA のコード サンプル: [操作方法 (Outlook リファレンス)](https://docs.microsoft.com/office/client-developer/outlook/pia/how-do-i-outlook-2013-pia-reference?redirectedfrom=MSDN)  
-- [MAPI Samples](https://docs.microsoft.com/office/client-developer/outlook/mapi/mapi-samples)
+- オブジェクト モデルのコード サンプル: [操作方法.(Outlook 2013 開発者用リファレンス)](/office/vba/outlook/concepts/miscellaneous/how-do-i-outlook-vba-reference.md)  
+- PIA のコード サンプル: [操作方法 (Outlook リファレンス)](/office/client-developer/outlook/pia/how-do-i-outlook-2013-pia-reference.md)  
+- [MAPI Samples](/office/client-developer/outlook/mapi/mapi-samples.md)
 - 補助 API のコード サンプル: [サンプル タスク](auxiliary/sample-tasks.md)
-    
-

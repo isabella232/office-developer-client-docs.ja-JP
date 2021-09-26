@@ -3,17 +3,17 @@ title: メッセージ ストア プロバイダーを使用したメッセー�
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 7632d784-00d8-48fd-a73b-73778efbef7f
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: b34714a230adb44417624d149d34ed6a14a2dfa5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6469f039b9a70eb12c4dd137aefbdbd1472fdee2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437610"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598998"
 ---
 # <a name="sending-messages-by-using-message-store-providers"></a>メッセージ ストア プロバイダーを使用したメッセージ送信
 

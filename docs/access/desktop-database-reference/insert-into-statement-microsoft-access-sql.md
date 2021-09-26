@@ -10,19 +10,19 @@ f1_keywords:
 - jetsql40.chm5277575
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 4fee5e9e8878274f2c20dd83a3dbedaf2903ca62
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 0a4c94e90e2c9efd29d0d07eae852ab2a2c009f2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291334"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568902"
 ---
 # <a name="insert-into-statement-microsoft-access-sql"></a>INSERT INTO ステートメント (Microsoft Access SQL)
 
 **適用先**: Access 2013、Office 2013
 
-テーブルに 1 つまたは複数のレコードを追加します。追加クエリとも呼ばれます。
+1 つのテーブルに 1 つのレコードまたは複数のレコードを追加します。これは、追加クエリと呼ばれます。
 
 ## <a name="syntax"></a>構文
 

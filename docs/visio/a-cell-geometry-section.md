@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm51215
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6853df0f-d22e-89ca-7d34-342b9c0bea23
 description: 各行に対応する情報を表示します。次の表に、各行で [A] セルが示す内容を説明します。
-ms.openlocfilehash: 7009658c7a6844a5c6071f502c05114a4accd7b7
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 260c9cb9a6bc5b538857585208ba9b8d719f07ad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541303"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608768"
 ---
 # <a name="a-cell-geometry-section"></a>[A] セル ([Geometry] セクション)
 

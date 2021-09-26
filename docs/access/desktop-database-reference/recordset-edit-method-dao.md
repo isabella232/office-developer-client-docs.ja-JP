@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821175(v=office.15)
 ms:contentKeyID: 48546850
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 82dc6e175c7168d5c1b042e85dce7b77aa96b575
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: d6b39af36089784f86f5dd7c286da7329c9e6aeb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300540"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606297"
 ---
 # <a name="recordsetedit-method-dao"></a>Recordset.Edit メソッド (DAO)
 
@@ -33,7 +33,7 @@ ms.locfileid: "32300540"
 カレント レコードは、 **Edit** の使用後もカレント レコードのままです。
 
 > [!NOTE]
-> [!メモ] レコードの編集後、 **Update** を使用せずに他のレコードへ移動する操作を行った場合、変更は警告なしに取り消されます。 さらに、レコードセットを閉じた場合や、**Recordset** または親である **[Database](database-object-dao.md)** オブジェクトまたは **[Connection](connection-object-dao.md)** オブジェクトが宣言されているプロシージャを終了した場合は、編集済みのレコードが警告なしに破棄されます。
+> [!メモ] レコードの編集後、**Update** を使用せずに他のレコードへ移動する操作を行った場合、変更は警告なしに取り消されます。さらに、recordset を閉じた場合や、**Recordset** または親である **[Database](database-object-dao.md)** オブジェクトまたは **[Connection](connection-object-dao.md)** オブジェクトが宣言されているプロシージャを終了した場合は、編集済みのレコードが警告なしに破棄されます。
 
 次の場合は、 **Edit** を使用するとエラーが発生します。
 

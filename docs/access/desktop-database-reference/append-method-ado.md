@@ -6,25 +6,25 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250014(v=office.15)
 ms:contentKeyID: 48547742
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a85faf900860dabb809a10a92985559b7a7cf2ef
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 119ef95c34f58d0bee8c5c76beb63377bd7ac23c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297131"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607368"
 ---
 # <a name="append-method-ado"></a>Append メソッド (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 コレクションにオブジェクトを追加します。コレクションが [Fields](fields-collection-ado.md) である場合は、コレクションに追加する前に、新しい [Field](field-object-ado.md) オブジェクトを作成できます。
 
 ## <a name="syntax"></a>構文
 
-*コレクション*。Append*オブジェクト*
+*コレクション*.Append *オブジェクト*
 
-*フィールド*。Append *Name*、 *Type*、*未定義サイズ*、 *Attrib*、 *FieldValue*
+*fields*.Append *Name*, *Type*, *DefinedSize*, *Attrib*, *FieldValue*
 
 ## <a name="parameters"></a>パラメーター
 

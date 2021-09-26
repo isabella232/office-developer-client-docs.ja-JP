@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 74662f25-5e18-4d0b-999c-a144427ad9e3
 description: activityTemplateContainer 要素は、アクティビティ フィード アイテムの書式を設定し、レイアウトを指定する XML を再利用できるテンプレートです。
-ms.openlocfilehash: c2540b1d871e440e8f8f343a1788194c32d7dcc2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7b0d8e8d995721e3a58b3b0db1bb7b403be445dc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413718"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583052"
 ---
 # <a name="activitytemplatecontainer-element"></a>activityTemplateContainer 要素
 
@@ -21,7 +21,7 @@ ms.locfileid: "33413718"
   
 次の表に **、activityTemplateContainer** 要素で必要な 3 つの要素について説明します。 
   
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
 |**applicationID** <br/> |フィード アイテムとテンプレートを一致するために使用される 2 つの一意の ID の 1 つ。 複数のアプリケーションまたは他のグループ化がある場合、これは第 1 層テンプレートオーガナイザーとして使用できます。  <br/> |
 |**templateID** <br/> |フィード アイテムとテンプレートを一致するために使用される 2 番目の一意の ID。 これは、第 2 層テンプレートオーガナイザーとして使用できます。  <br/> |
@@ -29,7 +29,7 @@ ms.locfileid: "33413718"
    
 次の表では、レイアウトとテンプレートの種類を説明する **activityTemplate** の子要素について説明します。
   
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
 |**icon** <br/> |そのフィード アイテムのアイコンの URL を参照するリンク トークン。  <br/> |
 |**title** <br/> |フィード アイテムに必要な情報。  <br/> |

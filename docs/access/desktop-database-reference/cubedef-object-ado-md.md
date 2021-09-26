@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248941(v=office.15)
 ms:contentKeyID: 48543502
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c82c95a430da76694fe26300e877e86f86a2eb4b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f01aa6bbc694cfc798351c9711a38e567c9d3f66
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295311"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597549"
 ---
 # <a name="cubedef-object-ado-md"></a>CubeDef オブジェクト (ADO MD)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 関連する次元のセットを含む、多次元スキーマからのキューブを表します。
 
@@ -52,11 +52,11 @@ ms.locfileid: "32295311"
 <td><p>このキューブが属しているカタログの名前。</p></td>
 </tr>
 <tr class="even">
-<td><p>createdon</p></td>
+<td><p>CreatedOn</p></td>
 <td><p>キューブの作成日時。</p></td>
 </tr>
 <tr class="odd">
-<td><p>cubeguid</p></td>
+<td><p>CubeGUID</p></td>
 <td><p>キューブの GUID。</p></td>
 </tr>
 <tr class="even">

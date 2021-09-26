@@ -10,20 +10,20 @@ f1_keywords:
 - jetsql40.chm5277587
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 3ea0641c7325bfcb4339572bc8b50724115af8d6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: b6a4a9cb420911bc5220e43abd1753eceb14d2e2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293512"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589625"
 ---
 # <a name="equivalent-ansi-sql-data-types"></a>同等の ANSI SQL のデータ型
 
 
 **適用先**: Access 2013、Office 2013
 
-次の表は、ANSI SQL データ型、同等の Microsoft Access データベース エンジンの SQL データ型、有効な類義語を一覧表示しています。 また、この表には同等の Microsoft SQL Server™ のデータ型も示されています。
+次の表は、ANSI SQL でサポートされているデータ型、およびそれらと一致する Microsoft Access データベース エンジン SQL でサポートされているデータ型とその別名を示したものです。また、この表には、Microsoft Jet データベース エンジン SQL と ANSI SQL のデータ型に対応する Microsoft® SQL Server のデータ型も示されています。
 
 <table>
 <colgroup>
@@ -117,7 +117,7 @@ ms.locfileid: "32293512"
 <td><p>INTERVAL</p></td>
 <td><p>非サポート</p></td>
 <td><p></p></td>
-<td><p>サポートされていません。</p></td>
+<td><p>サポート対象外</p></td>
 </tr>
 <tr class="even">
 <td><p>非サポート</p></td>

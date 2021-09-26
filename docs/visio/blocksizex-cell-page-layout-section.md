@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm105
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 253aac17-077e-48e0-39a8-a3abd5d4a257
 description: '[レイアウトの構成] ダイアログ ボックス ([デザイン] タブの [レイアウト] グループの [Re-Layout ページ] をクリックし、[その他のレイアウト オプション] をクリックして図形をレイアウトするときに、図面ページに図形が収まる必要がある領域である水平方向のブロック サイズを指定します。'
-ms.openlocfilehash: 8e4cee4b2059d9b8f2fe77c2d4902e67246eac2f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c5002566dca3772ab78fcfebf01f15d4cbde129d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424190"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598739"
 ---
 # <a name="blocksizex-cell-page-layout-section"></a>[BlockSizeX] セル ([Page Layout] セクション)
 

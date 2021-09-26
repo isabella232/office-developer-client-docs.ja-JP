@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251586
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1f09482a-0b1b-1bef-bc23-7f7793c4c65f
 description: 変換先の座標系のローカル座標の変換されたポイントを返します。
-ms.openlocfilehash: f08feb6137c3022027d19b45f06285fb8b6441a7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a53798312d81c10baa6bb25ed473424bc41624f7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427487"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603572"
 ---
 # <a name="loctoloc-function"></a>LOCTOLOC 関数
 

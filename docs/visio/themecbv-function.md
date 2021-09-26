@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ef62f63f-b2ce-4d12-a294-93dbdc9a869d
 description: 引数として渡される色 (数値) が、アクティブなテーマのグラデーション設定に格納されている指定された濃色または濃色の値によって変更された、ドキュメントのカラー パレット内のインデックスを表す RGB 値または整数を返します。
-ms.openlocfilehash: 014dc04c5114e296cd2226f3cf04dfb729817578
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1d9a95aedee2f04e72bd4868ddfaec149c872b62
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429139"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603331"
 ---
 # <a name="themecbv-function"></a>THEMECBV 関数
 
@@ -32,7 +32,7 @@ ms.locfileid: "33429139"
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _color_ <br/> |必須  <br/> |**数値** <br/> |ドキュメントのカラー パレット内のインデックスを表す数値。  <br/> |
-| _gradient_stop_number_ <br/> |必須  <br/> |**数値** <br/> |色に適用する、アクティブなテーマのグラデーションの設定に格納された、グラデーションの分岐点 (濃淡または網かけ)。  <br/> |
+| _gradient_stop_number_ <br/> |必須かどうか  <br/> |**数値** <br/> |色に適用する、アクティブなテーマのグラデーションの設定に格納された、グラデーションの分岐点 (濃淡または網かけ)。  <br/> |
    
 ## <a name="return-value"></a>戻り値
 

@@ -8,13 +8,13 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 dev_langs:
 - sql
-localization_priority: Priority
-ms.openlocfilehash: c6e37cd68d586e39a06fd650ccb453f35477253f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 01c1c1b095d37d7505524af5360b0079e6dd1c0e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290146"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602361"
 ---
 # <a name="left-join-right-join-operations-microsoft-access-sql"></a>LEFT JOIN 操作および RIGHT JOIN 操作 (Microsoft Access SQL)
 
@@ -50,7 +50,7 @@ LEFT JOIN 操作および RIGHT JOIN 操作には、次の指定項目があり�
 </tr>
 <tr class="odd">
 <td><p><em>compopr</em></p></td>
-<td><p>任意のリレーショナル比較演算子: &quot;=、&quot; &quot;&lt;、&quot; &quot;&gt;、&quot; &quot;&lt;=、&quot; &quot;&gt;=、&quot; または &quot;&lt;&gt;。&quot;</p></td>
+<td><p>任意のリレーショナル比較演算子: &quot;=&quot; &quot; &lt;、&quot; &quot; &gt;、&quot; &quot; &lt;=&quot; &quot; &gt;=&quot;または&quot; &lt;&gt;。&quot;</p></td>
 </tr>
 </tbody>
 </table>
@@ -73,7 +73,7 @@ FROM Categories LEFT JOIN Products
 ON Categories.CategoryID = Products.CategoryID;
 ```
 
-この例では、CategoryID は結合フィールドですが、[SELECT](select-statement-microsoft-access-sql.md) ステートメントで指定されていないため、クエリ結果には含まれません。 結合フィールドを含めるには、フォールド名 (この場合は Categories.CategoryID) を SELECT ステートメントに指定します。
+この例では、結合されるフィールドは CategoryID フィールドですが、このフィールドは [SELECT](select-statement-microsoft-access-sql.md) ステートメントで指定していないため、クエリの結果には含まれません。結合に使用したフィールドを出力するには、そのフィールド名を SELECT ステートメントで指定してください。前の例では、フィールド名は Categories.CategoryID です。
 
 > [!NOTE]
 > - 結合フィールドのデータが同じレコードのみを選択するクエリを作成するには、[INNER JOIN](inner-join-operation-microsoft-access-sql.md) 操作を使用します。
@@ -84,7 +84,7 @@ ON Categories.CategoryID = Products.CategoryID;
 ## <a name="example"></a>例
 
 この例
-- Employees テーブルに仮定の Department Name フィールドと Department ID フィールドが存在すると想定します。 実際には、Northwind データベースの Employees テーブルにこのフィールドは含まれていないので注意してください。
+- Employees テーブルに Department Name フィールドと Department ID フィールドが含まれていると仮定していますが、実際にはノースウィンド データベースの Employees テーブルにこの 2 つのフィールドは含まれていないので注意してください。
 
 - 社員が配属されていない部署も含めてすべての部署を選択します。
 

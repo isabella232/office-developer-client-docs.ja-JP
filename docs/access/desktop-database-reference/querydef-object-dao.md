@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845129(v=office.15)
 ms:contentKeyID: 48543169
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: a94d34a2dbe8043e6db637b649f59047cf3f1dda
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: c66c9f6dc891b7be513746206c40d249a5a198f4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301058"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589270"
 ---
 # <a name="querydef-object-dao"></a>QueryDef オブジェクト (DAO)
 
@@ -44,7 +44,7 @@ Microsoft Access ワークスペースの永続的な **QueryDef** オブジェ�
 
 Microsoft Access データベース エンジンを介してアクセスする外部データベース エンジンの固有の SQL 言語を使用するときには、 **QueryDef** オブジェクトの使用をお勧めします。たとえば、Microsoft SQL Server クエリを作成して、 **QueryDef** オブジェクトに保存できます。Microsoft Access データベース エンジン以外の SQL クエリを使用する場合、外部データ ソースを指す **Connect** プロパティ文字列を指定する必要があります。有効な **Connect** プロパティを持つクエリは、Microsoft Access データベース エンジンを使用せずに、外部データベース サーバーに処理するクエリを直接渡します。
 
-新しい **QueryDef** オブジェクトを作成するには、**CreateQueryDef** メソッドを使用します。 Microsoft Access ワークスペースで、引数 name に文字列を指定するか、新しい **QueryDef** オブジェクトの **Name** プロパティを明示的に長さ 0 の文字列以外に設定すると、**QueryDefs** コレクションに自動的に追加されてディスクに保存される、永続的な **QueryDef** が作成されます。 引数 name として長さ 0 の文字列を指定するか、**Name** プロパティを長さ 0 の文字列に明示的に設定すると、一時的な **QueryDef** オブジェクトが作成されます。
+新しい **QueryDef** オブジェクトを作成するには、**CreateQueryDef** メソッドを使用します。Microsoft Access ワークスペースで、引数 name に文字列を指定するか、新しい **QueryDef** オブジェクトの **Name** プロパティを明示的に長さ 0 の文字列以外に設定すると、**QueryDefs** コレクションに自動的に追加されてディスクに保存される、永続的な **QueryDef** オブジェクトが作成されます。引数 name として長さ 0 の文字列を指定するか、**Name** プロパティを長さ 0 の文字列に明示的に設定すると、一時的な **QueryDef** オブジェクトが作成されます。
 
 コレクション内の **QueryDef** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
@@ -56,7 +56,7 @@ QueryDefs\!\[ name\]
 
 一時的な **QueryDef** オブジェクトは、オブジェクトに割り当てたオブジェクト変数でのみ参照できます。
 
-[UtterAccess](https://www.utteraccess.com) コミュニティで**提供されるリンク**。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
+[UtterAccess](https://www.utteraccess.com) コミュニティで **提供されるリンク**。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
 
 - [クエリ: SQL を Word に文書化する](https://www.utteraccess.com/wiki/index.php/queries:_document_sql_to_word)
 
@@ -113,7 +113,7 @@ QueryDefs\!\[ name\]
 
 <br/>
 
-この例では、**CreateQueryDef** メソッドを使用して、一時的および永続的な **QueryDef** を両方作成して実行します。 このプロシージャを実行するには、GetrstTemp 関数が必要です。
+この例では、 **CreateQueryDef** メソッドを使用して、一時的および永続的な **QueryDef** オブジェクトを両方作成して実行します。このプロシージャを実行するには、 GetrstTemp 関数が必要です。
 
 ```vb
     Sub CreateQueryDefX() 

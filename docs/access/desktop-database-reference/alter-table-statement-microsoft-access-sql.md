@@ -12,13 +12,13 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 07a83c16368caa6e5c05c7554300c5589a437067
-ms.sourcegitcommit: 0419850d5c1b3439d9da59070201fb4952ca5d07
+ms.localizationpriority: high
+ms.openlocfilehash: 2c9247063173c4e7ad2006c008469b2b79881b17
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "49734183"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607403"
 ---
 # <a name="alter-table-statement-microsoft-access-sql"></a>ALTER TABLE ステートメント (Microsoft Access SQL)
 
@@ -27,7 +27,7 @@ ms.locfileid: "49734183"
 [CREATE TABLE](create-table-statement-microsoft-access-sql.md) ステートメントで作成されたテーブルのデザインを変更します。
 
 > [!NOTE]
-> [!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース以外のデータベースの ALTER TABLE または DDL (データ定義言語) ステートメントをサポートしません。 代わりに、DAO の **Create** メソッドをご使用ください。
+> [!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース以外のデータベースの ALTER TABLE または DDL (データ定義言語) ステートメントをサポートしません。代わりに、DAO の **Create** メソッドを使用してください。
 
 ## <a name="syntax"></a>構文
 
@@ -82,7 +82,7 @@ ALTER TABLE ステートメントでは、次の引数を使用します。
 
 ## <a name="remarks"></a>注釈
 
-ALTER TABLE ステートメントを使用すると、いくつかの方法で既存のテーブルを変更できます。 以下のことが実行できます。
+ALTER TABLE ステートメントを使用すると、次の方法で既存のテーブルを変更できます。
 
 - ADD COLUMN を使用して新しいフィールドをテーブルに追加します。フィールド名、データ型、および (テキスト型とバイナリ型のフィールドの場合) 省略可能なサイズを指定します。たとえば、次のステートメントでは、Notes という 25 文字のテキスト型フィールドを Employees テーブルに追加します。
     
@@ -110,7 +110,8 @@ ALTER TABLE ステートメントを使用すると、いくつかの方法で�
 > [!NOTE] 
 > - 同時に複数のフィールドまたはインデックスを追加または削除することはできません。
 > - [CREATE INDEX](create-index-statement-microsoft-access-sql.md) ステートメントを使用すると、単一フィールド インデックスまたは複数フィールド インデックスをテーブルに追加できます。また、ALTER TABLE ステートメントや CREATE INDEX ステートメントで作成したインデックスは、ALTER TABLE ステートメントまたは [DROP](drop-statement-microsoft-access-sql.md) ステートメントを使用して削除できます。
-> - NOT NULL を 1 つのフィールドまたは名前付きの CONSTRAINT 句内で使用し、CONSTRAINT という名前の 1 つのフィールドまたは複数のフィールドに適用することができます。 ただし、フィールドに NOT NULL 制限を 1 回だけ適用することができます。 この制限を複数回実行しようすると、実行時エラーになります。
+> - NOT NULL は、単一フィールド、または名前付き CONSTRAINT 句の内部で使用できます。名前付き CONSTRAINT 句は、単一フィールドまたは複数フィールドのどちらかの名前付き CONSTRAINT 句に適用されます。ただし、NOT NULL の制約を適用できるのはフィールドに対して一度のみです。再度適用しようとした場合は実行時エラーになります。 
+
 
 ## <a name="example"></a>例
 

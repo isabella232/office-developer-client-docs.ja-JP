@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82253251
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: df014b98-cfd5-b6d3-4b8a-b0acb3b94412
 description: '[レイアウトの構成] ダイアログ ボックスを使用するときに、配置可能な図形をページ上で反転または回転する方法を指定します (このダイアログ ボックスを開くには、[デザイン] タブの [レイアウト] グループで、[ページの再レイアウト] をクリックして、[その他のレイアウト オプション] をクリックします)。'
-ms.openlocfilehash: d1c31654782012b3536d35f3a12a923c2cc7a8f3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 10165312a0ad4c595a58f4ab94d319b0a3d61d29
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434299"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598431"
 ---
 # <a name="placeflip-cell-page-layout-section"></a>[PlaceFlip] セル ([Page Layout] セクション)
 

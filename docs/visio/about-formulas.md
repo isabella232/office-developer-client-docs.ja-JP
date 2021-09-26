@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 f1_keywords:
 - Vis_DSS.chm82251823
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ec0de3e1-21dc-c5d6-2c2a-d5fef80d89bd
 description: 図形のアクションを制御するには、必要な動作を定義する数式を記述します。セルの数式を編集すると、そのセルの値を変更し、結果的に特定の図形の動作を変更できます。たとえば、[Shape Transform] セクションの [Height] セルに含まれる数式を変更すると、その図形の高さを変更できます。
-ms.openlocfilehash: e8e1a2b77cc355e930af6f31f0b375dfba321e74
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 31585f7da6170628da7e41455c448e417b48d823
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426262"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598893"
 ---
 # <a name="about-formulas"></a>数式について
 
@@ -36,7 +36,7 @@ Microsoft Visio の数式は、多くの点で一般的なスプレッドシー�
     
 - 演算子
     
-- Functions
+- 関数
     
 - 文字列
     

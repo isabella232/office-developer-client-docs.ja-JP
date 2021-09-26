@@ -3,17 +3,17 @@ title: 単純なメール アイテムを作成する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: bbf99c4b-3008-4475-a60a-648eaed59d01
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 8b7afa8f3c04cb479906f721db8de90e8cf66f11
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4e03407fc0a36d895fdaf0282c2af31f1ce9f4d3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345194"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610868"
 ---
 # <a name="create-a-simple-mail-item"></a>単純なメール アイテムを作成する
   
@@ -139,5 +139,5 @@ HRESULT AddMail(LPMAPISESSION lpMAPISession,
 
 ## <a name="see-also"></a>関連項目
 
-- [MAPI を使用して Outlook 2007 アイテムを作成する](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
+- [MAPI を使用して 2007 Outlookアイテムを作成する](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
 

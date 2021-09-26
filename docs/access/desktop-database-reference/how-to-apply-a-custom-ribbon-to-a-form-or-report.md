@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff196428(v=office.15)
 ms:contentKeyID: 48545865
 ms.date: 10/16/2018
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 329f184a1bcd3c856ccfd0b15c3fa92bc6230c98
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 5bc5b4d9bc231cc7fcbb513170e802c307ffa76d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291916"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594196"
 ---
 # <a name="apply-a-custom-ribbon-to-a-form-or-report"></a>フォームまたはレポートにカスタム リボンを適用する
 
 **適用先**: Access 2013、Office 2013
 
-リボンでは、リボン XML の作成およびカスタマイズを簡素化するテキストベースの宣言型 XML マークアップが使用されています。 XML を数行記述するだけで、ユーザーに最適なインターフェイスを作成できます。 Access では、柔軟にリボン ユーザー インターフェイスをカスタマイズできます。 
+リボンでは、リボン XML の作成およびカスタマイズを簡素化するテキストベースの宣言型 XML マークアップが使用されています。XML を数行記述するだけで、ユーザーに最適なインターフェイスを作成できます。Access では、柔軟にリボン ユーザー インターフェイスをカスタマイズできます。 
 
-たとえば、カスタマイズしたマークアップをテーブルまたは別の Access データベースに格納する、VBA プロシージャに埋め込む、Excel のワークシートと関連付けるなどの操作ができます。 このトピックでは、フォームまたはレポートを読み込むときにカスタマイズしたリボンを適用する方法について説明します。
+たとえば、カスタマイズしたマークアップをテーブルまたは別の Access データベースに格納する、VBA プロシージャに埋め込む、Excel のワークシートと関連付けるなどの操作ができます。このトピックでは、フォームまたはレポートを読み込むときにカスタマイズしたリボンを適用する方法について説明します。
 
 ## <a name="make-the-ribbon-customization-xml-available"></a>リボン カスタマイズ XML を利用可能にする
 
@@ -79,7 +79,7 @@ XML マークアップには、テーブルから作成される **Recordset** �
 
 4.  [プロパティ] ウィンドウの [**すべて**] タブで、[**リボン名**] リストを選択し、リボンを選択します。
 
-5.  フォームまたはレポートを保存して閉じ、再度開きます。 選択した リボン UI が表示されます。
+5.  フォームまたはレポートを保存して閉じ、再度開きます。選択した リボン UI が表示されます。
 
 
 > [!NOTE]

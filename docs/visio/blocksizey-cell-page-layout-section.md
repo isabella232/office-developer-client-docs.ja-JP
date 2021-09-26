@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm110
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: be51e18e-ea49-0788-1a17-866090afb9f4
 description: '[レイアウトの構成] ダイアログ ボックス ([デザイン] タブの [レイアウト] グループで、[Re-Layout ページ] をクリックし、[その他のレイアウト オプション] をクリックして、 [レイアウトの構成] ダイアログ ボックスを使用して図形をレイアウトするときに、各図形が図面ページに収まる領域である垂直方向のブロック サイズを指定します。'
-ms.openlocfilehash: 08f2012bb027267810c21ef253a0073bb42d3a96
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 11a3c4d576f125bd6a7a731585845f4b816f3096
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427403"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598711"
 ---
 # <a name="blocksizey-cell-page-layout-section"></a>[BlockSizeY] セル ([Page Layout] セクション)
 

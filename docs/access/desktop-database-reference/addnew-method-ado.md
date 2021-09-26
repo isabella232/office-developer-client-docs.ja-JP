@@ -6,31 +6,31 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249899(v=office.15)
 ms:contentKeyID: 48547384
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f733c574ba7927587c6fcb6305a361ca1070de0f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 57c174e073313500331a310bab2e0284c1bf4c83
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282514"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590073"
 ---
 # <a name="addnew-method-ado"></a>AddNew メソッド (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 更新可能な [Recordset](recordset-object-ado.md) オブジェクトの新しいレコードを作成します。
 
 ## <a name="syntax"></a>構文
 
-*recordset*。AddNew *FieldList*、*値*
+*recordset*.AddNew *FieldList*, *Values*
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
 |*recordset* |**Recordset** オブジェクトです。|
-|*FieldList* |省略可能です。 新しいレコード内の単一フィールドの名前であるか、複数フィールドの名前または順序の配列です。|
-|*Values* |省略可能です。 新しいレコードのフィールドの値の1つまたは複数の配列。 *Fieldlist*が配列の場合は、*値*も同じ数のメンバーの配列である必要があります。それ以外の場合は、エラーが発生します。 また、一方の配列におけるフィールド名の順序と、もう一方の配列におけるフィールド値の順序は、一致している必要があります。|
+|*FieldList* |省略可能です。新しいレコード内の単一フィールドの名前であるか、複数フィールドの名前または順序の配列です。|
+|*Values* |省略可能です。 1 つの値、または新しいレコード内のフィールドの値の配列。 *Fieldlist が配列* の場合 *、Values* は同じ数のメンバーを持つ配列である必要があります。それ以外の場合は、エラーが発生します。 また、一方の配列におけるフィールド名の順序と、もう一方の配列におけるフィールド値の順序は、一致している必要があります。|
 
 ## <a name="remarks"></a>注釈
 
@@ -42,7 +42,7 @@ ms.locfileid: "32282514"
 
 **AddNew** メソッドの動作は、**Recordset** オブジェクトの更新モード、および *Fieldlist* 引数と *Values* 引数を渡すかどうかによって異なります。
 
-*即時更新モード*( **update**メソッドを呼び出した後、プロバイダーが基になるデータソースに変更を書き込む場合) では、引数を指定せずに**AddNew**メソッドを呼び出すと、 [EditMode](editmode-property-ado.md)プロパティが**adEditAdd**に設定されます ([editmodeenum](editmodeenum.md)値)。 The provider caches any field value changes locally. Calling the **Update** method posts the new record to the database and resets the **EditMode** property to **adEditNone** (an **EditModeEnum** value). *Fieldlist*引数と*Values*引数を渡すと、ADO によって新しいレコードがすぐにデータベースにポストされます (**更新**呼び出しは必要ありません)。**EditMode**プロパティの値は変更されません (**adEditNone**)。
+即時 *更新* モード (Update メソッドを呼び出した後にプロバイダーが基になるデータソースに変更を書き込む) では、引数を指定せずに **AddNew** メソッドを呼び出して [、EditMode](editmode-property-ado.md)プロパティを **adEditAdd** [(EditModeEnum](editmodeenum.md)値) に設定します。 The provider caches any field value changes locally. Calling the **Update** method posts the new record to the database and resets the **EditMode** property to **adEditNone** (an **EditModeEnum** value). *Fieldlist* 引数と *Values* 引数を渡した場合、ADO は新しいレコードをすぐにデータベースにポストします (**更新** 呼び出しは必要ありません)。**EditMode プロパティの** 値は変更されません **(adEditNone)。**
 
-*バッチ更新モード*(プロバイダーが複数の変更をキャッシュし、 [UpdateBatch](updatebatch-method-ado.md)メソッドを呼び出したときに、基になるデータソースにその変更を書き込む場合)、引数を指定せずに**AddNew**メソッドを呼び出すと、 **EditMode**が設定されます。プロパティを**adEditAdd**にします。 The provider caches any field value changes locally. Calling the **Update** method adds the new record to the current **Recordset** and resets the **EditMode** property to **adEditNone**, but the provider does not post the changes to the underlying database until you call the **UpdateBatch** method. *Fieldlist*引数と*Values*引数を渡すと、ADO はキャッシュに格納されているプロバイダーに新しいレコードを送信します。新しいレコードを基になるデータベースにポストするには、 **UpdateBatch**メソッドを呼び出す必要があります。
+バッチ *更新* モード (プロバイダーが複数の変更をキャッシュし [、UpdateBatch](updatebatch-method-ado.md) メソッドを呼び出す場合にのみ基になるデータ ソースに書き込む) では、引数なしで **AddNew** メソッドを呼び出して **EditMode** プロパティを **adEditAdd** に設定します。 The provider caches any field value changes locally. Calling the **Update** method adds the new record to the current **Recordset** and resets the **EditMode** property to **adEditNone**, but the provider does not post the changes to the underlying database until you call the **UpdateBatch** method. *引数 Fieldlist* と *Values* を渡した場合、ADO はキャッシュに格納するために新しいレコードをプロバイダーに送信します。新しいレコードを基 **になるデータベースに投稿するには、UpdateBatch** メソッドを呼び出す必要があります。
 

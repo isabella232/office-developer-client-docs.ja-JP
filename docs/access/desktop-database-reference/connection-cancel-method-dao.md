@@ -1,32 +1,32 @@
 ---
-title: Cancel メソッド (DAO)
+title: Connection.Cancel メソッド (DAO)
 TOCTitle: Cancel Method
 ms:assetid: 43ad7b64-823d-3fac-e4d4-5e9514f60011
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192953(v=office.15)
 ms:contentKeyID: 48544509
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a0826a30f22cc46eb6ff9a114dbf02cab1d9f76a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 489f1d1b85fdd9a3ba207f733123cf18af6c91d5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295969"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597612"
 ---
-# <a name="connectioncancel-method-dao"></a>Cancel メソッド (DAO)
+# <a name="connectioncancel-method-dao"></a>Connection.Cancel メソッド (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*。キャンセル
+*式* .キャンセル
 
-*式***Connection**オブジェクトを表す変数を取得します。
+*式***Connection** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 
-**Cancel**メソッドを使用して、非同期の**Execute**メソッドまたは**openconnection**メソッドの呼び出し (つまり、dbrunasync オプションを指定してメソッドが呼び出された場合) の実行を終了します。 終了しようとしているメソッドで dbrunasync が使用されていない場合、 **Cancel**は実行時エラーを返します。
+Cancel メソッド **を使用** して、非同期の **Execute** メソッドまたは **OpenConnection** メソッド呼び出しの実行を終了します (つまり、メソッドは dbRunAsync オプションを使用して呼び出されました)。 **Cancel** は、終了しようとしているメソッドで dbRunAsync が使用されていない場合、実行時エラーを返します。
 
 **Cancel** メソッドを呼び出した後に、非同期の **OpenConnection** の呼び出しによって作成されたオブジェクト ( **Cancel** メソッドを呼び出した **Connection** オブジェクト) を参照しようとすると、エラーが発生します。
 

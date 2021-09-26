@@ -1,18 +1,19 @@
 ---
 title: Field.Type プロパティ (DAO)
 TOCTitle: Type Property
+description: Type プロパティ
 ms:assetid: 1295ca40-78c1-bdd0-d407-e1b5be8adfd4
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845405(v=office.15)
 ms:contentKeyID: 48543345
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: c8f212c5e1f10f4270987c9453802575d88cebfa
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 082f6b34965ae90c99efd8d8cf3ac34d2cfc5dfc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292952"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581295"
 ---
 # <a name="fieldtype-property-dao"></a>Field.Type プロパティ (DAO)
 
@@ -33,105 +34,28 @@ ms.locfileid: "32292952"
 
 次の表は、 **Field** オブジェクトで使用可能な設定値および戻り値を示しています。
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>定数</p></th>
-<th><p>説明</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>dbBigInt</strong></p></td>
-<td><p>多倍長整数型 (Big Integer)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbBinary</strong></p></td>
-<td><p>Binary</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbBoolean</strong></p></td>
-<td><p>Boolean</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbByte</strong></p></td>
-<td><p>バイト型 (Byte)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbChar</strong></p></td>
-<td><p>Char</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbCurrency</strong></p></td>
-<td><p>通貨</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbDate</strong></p></td>
-<td><p>日付/時刻</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbDecimal</strong></p></td>
-<td><p>Decimal</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbDouble</strong></p></td>
-<td><p>2 行分</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbFloat</strong></p></td>
-<td><p>浮動小数点数</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbGUID</strong></p></td>
-<td><p>GUID</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbInteger</strong></p></td>
-<td><p>整数</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbLong</strong></p></td>
-<td><p>Long</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbLongBinary</strong></p></td>
-<td><p>ロング バイナリ型 (Long Binary) - OLE オブジェクト型 (OLE Object)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbMemo</strong></p></td>
-<td><p>メモ</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbNumeric</strong></p></td>
-<td><p>数値</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbSingle</strong></p></td>
-<td><p>1 行</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbText</strong></p></td>
-<td><p>テキスト</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbTime</strong></p></td>
-<td><p>Time</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbTimeStamp</strong></p></td>
-<td><p>タイム スタンプ</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbVarBinary</strong></p></td>
-<td><p>VarBinary</p></td>
-</tr>
-</tbody>
-</table>
-
+|**定数**|**値**|**説明**|
+|:----------|:----------|:----------|
+|**dbBigInt**|16|多倍長整数型 (Big Integer)|
+|**dbBinary**|9|Binary|
+|**dbBoolean**|1|Boolean|
+|**dbByte**|2|バイト型 (Byte)|
+|**dbChar**|18|Char|
+|**dbCurrency**|5|通貨|
+|**dbDate**|8|日付/時刻|
+|**dbDecimal**|20|Decimal|
+|**dbDouble**|7|2 行分|
+|**dbFloat**|21|浮動小数点数|
+|**dbGUID**|15|GUID|
+|**dbInteger**|3|整数|
+|**dbLong**|4|Long|
+|**dbLongBinary**|11|ロング バイナリ型 (Long Binary) - OLE オブジェクト型 (OLE Object)|
+|**dbMemo**|12|メモ|
+|**dbNumeric**|19|数値|
+|**dbSingle**|6|1 行|
+|**dbText**|10|テキスト|
+|**dbTime**|22|Time|
+|**dbTimeStamp**|23|タイム スタンプ|
+|**dbVarBinary**|17|VarBinary|
 
 新しい **Field** オブジェクト、 **Parameter** オブジェクト、または **Property** オブジェクトを **[Index](index-object-dao.md)** オブジェクト、 **QueryDef** オブジェクト、 **Recordset** オブジェクト、または **TableDef** オブジェクトのコレクションに追加するときに、基になるデータベースが新しいオブジェクトに指定されているデータ型をサポートしていない場合、エラーが発生します。
-

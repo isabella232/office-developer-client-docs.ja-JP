@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm400
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ab937a00-84c2-6c1c-9080-b7c95ead4f63
 description: テキスト フィールドの書式を指定します。文字列、数値、日付/時刻、期間、または通貨を指定できます。
-ms.openlocfilehash: c1c7fc7e9c699b7642369fbb979c005829b06cb8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 97e49692f33f7ecee44a744002f5a35a2368ece9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431520"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598613"
 ---
 # <a name="format-cell-text-fields-section"></a>[Format] セル ([Text Fields] セクション)
 

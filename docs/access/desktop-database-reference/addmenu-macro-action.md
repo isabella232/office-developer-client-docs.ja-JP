@@ -10,18 +10,18 @@ f1_keywords:
 - vbaac10.chm37891
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 119e824cae71d54bb398aa68f476a667f14a6888
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b788fa30f143d5810cc9a64fa041b401518e87e5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280274"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597703"
 ---
 # <a name="addmenu-macro-action"></a>AddMenu マクロ アクション
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 This article describes the basic operation of the **AddMenu** macro action.
 
@@ -33,7 +33,7 @@ You can use the **AddMenu** action to create:
 
 - グローバル ショートカット メニュー。グローバル ショートカット メニューは、フォーム、 レポート、またはコントロールのカスタム ショートカット メニューを追加した場合を除き、テーブルやクエリ データシート内のフィールド、フォーム、およびレポートで、組み込みショートカット メニューの代わりに表示されます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "AddMenu/メニューの追加" アクションの引数は次のとおりです。
 
@@ -51,16 +51,18 @@ You can use the **AddMenu** action to create:
 <tbody>
 <tr class="odd">
 <td><p><strong>Menu Name/メニュー名</strong></p></td>
-<td><p>メニューの名前&quot;(レポートコマンド&quot;や&quot;ツール&quot;など)。 キーボードを使用してメニューを選択できるようにアクセスキーを作成するには、アクセスキー<strong>&amp;</strong>として使用する文字の前にアンパサンド () を入力します。 [<strong>アドイン</strong>] タブのメニュー名で、この文字に下線が付きます。</p></td>
+<td><p>メニューの名前 ([レポート コマンド] や &quot; [ツール] &quot; &quot; など &quot; )。 キーボードを使用してメニューを選択するためにアクセス キーを作成するには、アクセス キーになる文字の前にアンパサンド ( ) と <strong>&amp;</strong> 入力します。 この文字は、[アドイン] タブのメニュー名に下 <strong>線が付</strong> きます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Menu Macro Name/メニュー マクロ名</strong></p></td>
-<td><p>メニュー コマンドのマクロを含むマクロ グループの名前を指定します。 この引数は省略できません。</p>
-<p><strong>注</strong>: ライブラリデータベースで " <strong>AddMenu/メニュー</strong>の作成" アクションが記述されたマクロを実行すると、Microsoft Office Access 2007 は、この名前のマクログループをカレントデータベースでのみ検索します。</p></td>
+<td><p>メニュー コマンドのマクロを含むマクロ グループの名前を指定します。この引数は省略できません。 
+
+</p>
+<p><strong>注</strong>: ライブラリ データベースで<strong>AddMenu</strong>アクションを含むマクロを実行する場合、Microsoft Office Access 2007 は現在のデータベースでのみこの名前のマクロ グループを検索します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Status Bar Text/ステータス バー テキスト</strong></p></td>
-<td><p>メニュー選択時にステータス バーに表示されるテキストを指定します。 ショートカット メニューの場合、この引数は無視されます。</p></td>
+<td><p>メニュー選択時にステータス バーに表示されるテキストを指定します。ショートカット メニューの場合、この引数は無視されます。</p></td>
 </tr>
 </tbody>
 </table>

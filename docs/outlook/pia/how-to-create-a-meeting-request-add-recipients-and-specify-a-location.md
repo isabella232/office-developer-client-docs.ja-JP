@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb644964(v=office.15)
 ms:contentKeyID: 55119873
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 0f637d3d21f79ec538d10cf509fb09f5abf0b0ac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 410a90388ec9b3237eb150f74c08818b8b08739e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351430"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590794"
 ---
 # <a name="create-a-meeting-request-add-recipients-and-specify-a-location"></a>会議出席依頼を作成し、受信者を追加して、場所を指定する
 
@@ -22,7 +22,7 @@ ms.locfileid: "32351430"
 
 Outlook の場合、会議出席依頼は [AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) です。 予定アイテムを会議出席依頼として設定するには、[MeetingStatus](https://msdn.microsoft.com/library/bb611417\(v=office.15\)) プロパティを **olMeeting** に設定する必要があります。 [Recipient](https://msdn.microsoft.com/library/bb611841\(v=office.15\)) オブジェクトの [Type](https://msdn.microsoft.com/library/bb624370\(v=office.15\)) プロパティを使用して、会議出席者がオプションかどうかや、受信者が実際には出席者ではなく会議のリソースであるかどうかを指定します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード サンプルをテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートする際に、最初に必ず Microsoft Outlook 15.0 Object Library コンポーネントへの参照を追加し、そして Outlook 変数を指定します。**Imports** または **using** ステートメントは、コード サンプル中の関数の前に直接置かれず、Public クラス宣言の前に追加する必要があります。次のプログラムは、Visual Basic および C\#でインポートおよび割り当てを行う方法を示しています。
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook

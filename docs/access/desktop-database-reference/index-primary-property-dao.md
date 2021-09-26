@@ -1,5 +1,5 @@
 ---
-title: Primary プロパティ (DAO)
+title: Index.Primary プロパティ (DAO)
 TOCTitle: Primary property
 ms:assetid: 90eda1cb-cf7f-9682-9b74-81c27a37af16
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197416(v=office.15)
@@ -10,34 +10,34 @@ f1_keywords:
 - dao360.chm1052908
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: da0d28a5599dadc9432b38ab6155e53e884e4838
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b80ad9b2af5dcd76bf0e830d4114564bc134e3cb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291755"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589450"
 ---
-# <a name="indexprimary-property-dao"></a>Primary プロパティ (DAO)
+# <a name="indexprimary-property-dao"></a>Index.Primary プロパティ (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **[Index](index-object-dao.md)** オブジェクトがテーブルの主キー インデックスを表すかどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*。プライマリ
+*式* .プライマリ
 
-*式***Index**オブジェクトを表す変数を取得します。
+*式* Index オブジェクトを表す **変数** 。
 
 ## <a name="remarks"></a>注釈
 
 **Primary** プロパティの設定は、新しい **Index** オブジェクトがコレクションに追加されていない場合は値の取得および設定が可能で、 [**Indexes**](indexes-collection-dao.md) コレクション内の既存の **Index** オブジェクトの場合は値の取得のみ可能です。 **Index** オブジェクトが **[TableDef](tabledef-object-dao.md)** オブジェクトに追加されていても、 **TableDef** オブジェクトが **[TableDefs](tabledefs-collection-dao.md)** コレクションに追加されていない場合、 **Index** プロパティは値の取得および設定が可能です。
 
-主キー インデックスは、定義済みの順序で、テーブル内のすべてのレコードを一意に識別する 1 つ以上のフィールドで構成されます。 インデックスフィールドは一意である必要があるため、 **index**オブジェクトの**[unique](index-unique-property-dao.md)** プロパティを**True**に設定します。 主キー インデックスが複数のフィールドで構成される場合、それぞれのフィールドには重複する値を格納できますが、インデックスが設定されたすべてのフィールドの値を組み合わせた結果は一意である必要があります。 主キー インデックスはテーブルのキーで構成され、通常、主キーと同じフィールドが含まれます。
+主キー インデックスは、定義済みの順序で、テーブル内のすべてのレコードを一意に識別する 1 つ以上のフィールドで構成されます。 インデックス フィールドは一意である必要があるため **[、Index](index-unique-property-dao.md)** オブジェクトの Unique プロパティは **True** に設定 **されます**。 主キー インデックスが複数のフィールドで構成される場合、それぞれのフィールドには重複する値を格納できますが、インデックスが設定されたすべてのフィールドの値を組み合わせた結果は一意である必要があります。 主キー インデックスはテーブルのキーで構成され、通常、主キーと同じフィールドが含まれます。
 
 > [!NOTE]
-> テーブルにインデックスを作成する必要はありませんが、テーブルが大きくてインデックスが設定されていない場合、特定のレコードへのアクセス時間が長くなる可能性があります。 **index**オブジェクト内の各**[Field](field-object-dao.md)** オブジェクトの**[Attributes](field-attributes-property-dao.md)** プロパティによってレコードの順序が決まり、その結果、そのインデックスに使用するアクセス方法が決まります。 データベースに新しいテーブルを作成する場合は、各レコードが一意に識別される 1 つ以上のフィールドでインデックスを作成し、**Index** オブジェクトの **Primary** プロパティを **True** に設定することをお勧めします。
+> テーブルにインデックスを作成する必要はありませんが、テーブルが大きくてインデックスが設定されていない場合、特定のレコードへのアクセス時間が長くなる可能性があります。 **Index** オブジェクト内にある各 **[Field](field-object-dao.md)** オブジェクトの **[Attributes](field-attributes-property-dao.md)** プロパティによってレコードの順序が決まり、その結果、そのインデックスに対して使用するアクセス方法が決まります。 データベースに新しいテーブルを作成する場合は、各レコードが一意に識別される 1 つ以上のフィールドでインデックスを作成し、**Index** オブジェクトの **Primary** プロパティを **True** に設定することをお勧めします。
 
 テーブルの主キーを設定すると、その主キーがテーブルの主キー インデックスとして自動的に定義されます。
 

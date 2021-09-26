@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm405
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f71d8737-92ef-1124-ba4a-b7e17305bd0a
 description: コンテナー アプリケーション内で、Visio アプリケーションが ActiveX の文書として開く場合、ターゲットとなるフレームの名前を表します。既定では、空の文字列です。
-ms.openlocfilehash: 8f41e5bf854e31e1f17eabb2aecbded55175ebaf
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 436a95ac60b01d951e84e6deb5d1a03887c82b47
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432857"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598592"
 ---
 # <a name="frame-cell-hyperlinks-section"></a>[Frame] セル ([Hyperlinks] セクション)
 

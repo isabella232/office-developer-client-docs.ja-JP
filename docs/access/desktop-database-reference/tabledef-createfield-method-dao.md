@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1052971
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 713f2530369a824a6d7204655ded4333f7fe2765
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 9a4f117592e58c282b83f3456c275c6b081c1419
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308443"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601703"
 ---
 # <a name="tabledefcreatefield-method-dao"></a>TableDef.CreateField メソッド (DAO)
 
@@ -42,7 +42,7 @@ ms.locfileid: "32308443"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/省略可能</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -52,19 +52,19 @@ ms.locfileid: "32308443"
 <td><p><em>名前</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>新しい <strong>Field</strong> オブジェクトの名前を一意に指定する文字列。 有効な <strong>Field</strong> 名の詳細については、<strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティを参照してください。</p></td>
+<td><p>新しい <strong>Field</strong> オブジェクトの名前を一意に指定する文字列。有効な <strong>Field</strong> 名の詳細については、<strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティを参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Type</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>新しい <strong>Field</strong> オブジェクトのデータ型を決定する定数。 有効なデータ型については、<strong><a href="field-type-property-dao.md">Type</a></strong> プロパティを参照してください。</p></td>
+<td><p>新しい <strong>Field</strong> オブジェクトのデータ型を指定する定数。有効なデータ型については、<strong><a href="field-type-property-dao.md">Type</a></strong> プロパティを参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>Size</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>テキストを含む <strong>Field</strong> オブジェクトの最大サイズをバイト単位で示す整数。 サイズの有効な値については、<strong><a href="field-size-property-dao.md">Size</a></strong> プロパティを参照してください。 この引数は数値フィールドおよび固定幅フィールドでは無視されます。</p></td>
+<td><p>テキストを格納する <strong>Field</strong> オブジェクトの最大サイズをバイト単位で示す整数型 (Integer) の値。size の有効な値については、<strong><a href="field-size-property-dao.md">Size</a></strong> プロパティを参照してください。この引数は、数値フィールドおよび固定幅フィールドでは無視されます。</p></td>
 </tr>
 </tbody>
 </table>
@@ -78,13 +78,13 @@ Field
 
 **CreateField** メソッドを使用して、新しいフィールドを作成し、そのフィールドの名前、データ型、およびサイズを指定できます。**CreateField** の使用時に省略可能な引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に、適切な代入ステートメントを使用して、対応するプロパティを設定またはリセットできます。新しいオブジェクトの追加後は、一部のプロパティの設定は変更できません。詳細については、各プロパティのトピックを参照してください。
 
-引数 type および引数 Size は、**TableDef** オブジェクトの **Field** オブジェクトにのみ適用されます。 **Field** オブジェクトが **Index** または **Relation** オブジェクトに関連付けられている場合、これらの引数は無視されます。
+引数 type および引数 Size は、**TableDef** オブジェクトの **Field** オブジェクトにのみ適用されます。これらの引数は、 **Field** オブジェクトが **Index** オブジェクトまたは **Relation** オブジェクトに関連付けられている場合は無視されます。
 
 Name が示すオブジェクトが既にコレクションのメンバーである場合に **[Append](fields-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。
 
 **Fields** コレクションから **Field** オブジェクトを削除するには、コレクションの **[Delete](fields-delete-method-dao.md)** メソッドを使用します。フィールドを参照するインデックスを作成した後は、 **TableDef** オブジェクトの **Fields** コレクションから **Field** オブジェクトを削除できません。
 
-**リンクの提供元: **[UtterAccess](https://www.utteraccess.com) コミュニティ。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
+**リンクの提供元:**[UtterAccess](https://www.utteraccess.com) コミュニティ。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
 
 - [DAO を使用して既存のテーブルにハイパーリンク フィールドを追加する](https://www.utteraccess.com/wiki/index.php/adding_a_hyperlink_field_to_an_existing_table_with_dao)
 

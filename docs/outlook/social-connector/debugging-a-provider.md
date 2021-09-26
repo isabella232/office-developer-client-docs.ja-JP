@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d2dfaeed-7635-4c6b-9c35-b955ca1a85e9
-description: Outlook Social Connector (OSC) プロバイダーをデバッグするには、いくつかの方法があります。
-ms.openlocfilehash: 39deb7b6c0b11460826bdbf1957ffd8404d926e5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: ソーシャル コネクタ (OSC) プロバイダーでOutlook方法は次のとおりです。
+ms.openlocfilehash: 60856866359521923c225a41a5399b8e20093b1a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281070"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608922"
 ---
 # <a name="debugging-a-provider"></a>プロバイダーのデバッグ
 
-Outlook Social Connector (OSC) プロバイダーをデバッグするには、いくつかの方法があります。 
+ソーシャル コネクタ (OSC) プロバイダーでOutlook方法は次のとおりです。 
   
 - Outlook の Office Fluent ユーザー インターフェイスのリボン コンポーネントまたはサポートされている Office クライアント アプリケーションのリボン コンポーネントでデバッグ コマンドを使用して、OSC がさまざまなアクションを実行します。
     
@@ -25,7 +25,7 @@ Outlook Social Connector (OSC) プロバイダーをデバッグするには、�
     
 ## <a name="debug-buttons"></a>デバッグ ボタン
 
-OSC プロバイダーの機能拡張により、OSC プロバイダーをデバッグできます。 プロバイダーをデバッグするには、キーの下の Windows レジストリに DWORD 型の値を作成し (次の行に示すように)、値を  `DebugProviders`  `SocialConnector`  `DebugProviders` 1 に設定します。 
+OSC プロバイダーの機能拡張により、OSC プロバイダーをデバッグできます。 プロバイダーをデバッグするには、キーの下の Windows レジストリに DWORD 型の値を作成し (次の行に示すように)、値を `DebugProviders` `SocialConnector` `DebugProviders` 1 に設定します。 
   
 `HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\SocialConnector`
   
@@ -33,16 +33,16 @@ OSC プロバイダーの機能拡張により、OSC プロバイダーをデバ
   
 プロバイダーのデバッグが有効になっている場合、エラーが発生した場合、OSC は詳細なエラー情報を含む警告ダイアログ ボックスを表示し、OSC プロバイダー XML スキーマに対して OSC プロバイダー XML を検証します。 XML 文字列に指定された名前空間に基づいて、OSC 1.0 を使用して開発された OSC プロバイダーは、OSC 1.0 スキーマ ファイル OutlookSocialProvider.xsd に対して検証されます。 OSC 1.1 以降を使用して開発された OSC プロバイダーは、スキーマ ファイル OutlookSocialProvider_1.1.xsd に対して検証されます。 この値を使用すると、特定のプロバイダーではなく、読み込まれたすべてのプロバイダーに対してデバッグ  `DebugProviders` アラートが表示されます。 
   
-プロバイダーのデバッグに役立つデバッグ ボタンを表示するには、キーの下の Windows レジストリに DWORD 型の値を作成し、値を  `ShowDebugButtons`  `SocialConnector`  `ShowDebugButtons` 1 に設定します。 デバッグ コマンド バー ボタンを非表示にする場合は、値  `ShowDebugButtons` を 0 に設定します。 
+プロバイダーのデバッグに役立つデバッグ ボタンを表示するには、キーの下の Windows レジストリに DWORD 型の値を作成し、値を `ShowDebugButtons` `SocialConnector` 1 に `ShowDebugButtons` 設定します。 デバッグ コマンド バー ボタンを非表示にする場合は、値  `ShowDebugButtons` を 0 に設定します。 
   
-Outlook 2010 および Office 2013以降のクライアント アプリケーションでは、エクスプローラー リボンの [アドイン] タブにデバッグ ボタンが表示されます。 Outlook 2007 および Outlook 2003 では、Outlook エクスプローラー ウィンドウの標準コマンド バーにデバッグ ボタンが表示されます。 
+Outlook 2013 以降の 201 Office 0 およびクライアント アプリケーションの場合、デバッグ ボタンはエクスプローラーリボンの [アドイン] タブに表示されます。 2007 Outlook 2003 および Outlook 2003 の場合、デバッグ ボタンは、エクスプローラー ウィンドウの標準コマンド バー Outlook表示されます。 
   
 次の表に、デバッグ ボタンについて説明します。
   
-|**[デバッグ] ボタン**|**Function**|
+|**[デバッグ] ボタン**|**関数**|
 |:-----|:-----|
 |連絡先の同期  <br/> |OSC がキャッシュされた連絡先のみを OSC プロバイダーに求める原因です。  <br/> |
-|GAL 同期  <br/> |OSC が Exchange グローバル アドレス一覧から Outlook 連絡先にデータを入力します。  <br/> |
+|GAL 同期  <br/> |OSC がグローバル アドレス一覧から連絡先にデータExchangeを設定Outlookします。  <br/> |
 |カテゴリ キャッシュの無効化  <br/> |アクティビティ フィードの更新時に、OSC が各ストアのカテゴリ リストを再読み込みします。  <br/> |
    
 ## <a name="fiddler"></a>Fiddler
@@ -51,7 +51,7 @@ Fiddler は、プロバイダーからソーシャル ネットワークに送�
   
 ## <a name="see-also"></a>関連項目
 
-- [プロバイダーを開発するための学習のクイック ステップ](quick-steps-for-learning-to-develop-a-provider.md)  
+- [プロバイダーを開発するためのラーニング手順](quick-steps-for-learning-to-develop-a-provider.md)  
 - [フレンドとアクティビティの同期](synchronizing-friends-and-activities.md) 
 - [プロバイダーの開発に関するベスト プラクティス](best-practices-for-developing-a-provider.md)
 - [OSC の一般的な呼び出しシーケンス](osc-typical-calling-sequences.md)  

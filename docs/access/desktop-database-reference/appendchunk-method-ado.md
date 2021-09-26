@@ -1,28 +1,28 @@
 ---
-title: appendchunk メソッド (ADO)
+title: AppendChunk メソッド (ADO)
 TOCTitle: AppendChunk method (ADO)
 ms:assetid: 3fa931a3-2cd7-a3b0-a750-40e18bc9937e
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249179(v=office.15)
 ms:contentKeyID: 48544405
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 89a75ebe8a3fe704c4f755a0f744eac4d068ec0a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7582a33ea1add92f2c9d678a671cc6129e0f68ed
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297026"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607263"
 ---
-# <a name="appendchunk-method-ado"></a>appendchunk メソッド (ADO)
+# <a name="appendchunk-method-ado"></a>AppendChunk メソッド (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 大きなサイズのテキストまたはバイナリ データの [Field](field-object-ado.md) オブジェクト、または [Parameter](parameter-object-ado.md) オブジェクトにデータを追加します。
 
 ## <a name="syntax"></a>構文
 
-*オブジェクト。* appendchunk*データ*
+*オブジェクト。* AppendChunk *Data*
 
 ## <a name="parameters"></a>パラメーター
 
@@ -35,7 +35,7 @@ ms.locfileid: "32297026"
 
 **AppendChunk** メソッドは、長いバイナリ データまたは文字データを格納するために、**Field** オブジェクトまたは **Parameter** オブジェクトに対して使用します。システムのメモリに制限がある場合は、**AppendChunk** メソッドを使用することで、長い値を全体としてではなく、複数の部分に分けて操作できます。
 
-### <a name="field"></a>Field
+### <a name="field"></a>フィールド
 
 **Field** オブジェクトの [Attributes](attributes-property-ado.md) プロパティの **adFldLong** ビットが True に設定されている場合は、そのフィールドに対して **AppendChunk** メソッドを使用できます。
 

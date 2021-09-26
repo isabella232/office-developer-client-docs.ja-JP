@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - WrapStoreEntryID
 api_type:
 - HeaderDef
 ms.assetid: b20107e3-5e23-4cde-9cd6-670c914ea70a
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: e797a80cf8659baa7ca935f94b3ab65c200530a3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ef6286738be70ee3e2d91d32df9635f25df0a6c7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409210"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583234"
 ---
 # <a name="wrapstoreentryid"></a>WrapStoreEntryID
 

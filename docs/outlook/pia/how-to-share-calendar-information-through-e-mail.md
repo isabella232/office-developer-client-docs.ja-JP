@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb609881(v=office.15)
 ms:contentKeyID: 55119817
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 48b299ad4d3afe5c0c9aaa05f5d8af3b92bf655d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d6e1031e5d4b387aee7297dd91584f0916b4f00b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332081"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608943"
 ---
 # <a name="share-calendar-information-through-email"></a>電子メールで予定表情報を共有する
 
@@ -26,7 +26,7 @@ iCalendar 形式を使用すると、アイテムを他の Outlook クライア�
 
 予定表の情報を電子メールで送信するには、**CalendarSharing** オブジェクトの [ForwardAsICal](https://msdn.microsoft.com/library/bb652866\(v=office.15\)) メソッドを呼び出します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード サンプルをテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートする際に、最初に必ず Microsoft Outlook 15.0 Object Library コンポーネントへの参照を追加し、そして Outlook 変数を指定します。**Imports** または **using** ステートメントは、コード サンプル中の関数の前に直接置かれず、Public クラス宣言の前に追加する必要があります。次のプログラムは、Visual Basic および C\#でインポートおよび割り当てを行う方法を示しています。
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook

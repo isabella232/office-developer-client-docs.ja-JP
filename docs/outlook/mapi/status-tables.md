@@ -3,17 +3,17 @@ title: 状態テーブル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: f2b2aca7-757f-4260-96a5-d0af55189711
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: d612738ef8bf0e6925d89a5be7cb423695672d28
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a3bb89cb54dafe6c3f82f4633c15ed4e67751448
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422363"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591067"
 ---
 # <a name="status-tables"></a>状態テーブル
 

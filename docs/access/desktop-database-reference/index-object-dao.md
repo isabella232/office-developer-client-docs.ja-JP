@@ -1,22 +1,22 @@
 ---
-title: Index オブジェクト-データアクセスオブジェクト (DAO)
+title: Index オブジェクト - データ アクセス オブジェクト (DAO)
 TOCTitle: Index object
 ms:assetid: 92c32cad-ec8a-1243-1d18-83f50b269ecb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197655(v=office.15)
 ms:contentKeyID: 48546380
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ca0a975017b5c5396d23817716689b37433d8f97
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 319cc60b882d631b1c187fa707e80b3eca391920
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291769"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589457"
 ---
 # <a name="index-object-dao"></a>Index オブジェクト (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **Index** オブジェクトは、データベース テーブルからアクセスされるレコードの順序、および重複するレコードを受け付けるかどうかを指定して、データに効率的にアクセスできるようにします。外部データベースの場合、 **Index** オブジェクトは、外部キー側のテーブルに対して設定されたインデックスを記述します (Microsoft Access ワークスペースの場合のみ)。
 
@@ -32,12 +32,12 @@ Microsoft Access データベース エンジンは、テーブルを結合し�
 
 Microsoft Access データベース エンジンは、すべてのベース テーブル インデックスを自動的に保守します。ベース テーブルのレコードに対して追加、変更、または削除を行うたびにインデックスを更新します。データベースを作成した後は、 **[CompactDatabase](dbengine-compactdatabase-method-dao.md)** メソッドを定期的に使用して、インデックス統計を最新の状態にします。
 
-テーブル タイプの **Recordset** オブジェクトにアクセスする場合、オブジェクトの **Index** プロパティを使用してレコードの順序を指定します。 このプロパティを、**Indexes** コレクションの既存の **Index** オブジェクトの **Name** プロパティの設定値に設定します。 このコレクションは、設定する**Recordset**オブジェクトの基になる**[TableDef](tabledef-object-dao.md)** オブジェクトに含まれています。
+テーブル タイプの **Recordset** オブジェクトにアクセスする場合、オブジェクトの **Index** プロパティを使用してレコードの順序を指定します。このプロパティを、**Indexes** コレクションの既存の **Index** オブジェクトの **Name** プロパティの設定値に設定します。このコレクションは、操作する **Recordset** オブジェクトの基になる **[TableDef](tabledef-object-dao.md)** オブジェクトに含まれています。
 
 > [!NOTE]
 > [!メモ] テーブルのインデックスを作成する必要はありませんが、インデックスが設定されていない大きなテーブルの場合、特定のレコードへのアクセスまたは結合の処理に時間がかかることがあります。逆に、インデックスが多すぎると、テーブル インデックスがそれぞれ修正されるため、データベースの更新速度が遅くなる場合があります。
 
-インデックス内の各**Field**オブジェクトの**[Attributes](field-attributes-property-dao.md)** プロパティは、返されるレコードの順序を決定するため、そのインデックスに使用するアクセス方法を決定します。
+インデックス **[内](field-attributes-property-dao.md)** の各 **Field** オブジェクトの Attributes プロパティは、返されるレコードの順序を決定し、そのインデックスに使用するアクセス手法を決定します。
 
 **Index** オブジェクトの **Fields** コレクションの各 **Field** オブジェクトは、インデックスのコンポーネントです。新しい **Index** オブジェクトを定義するときには、コレクションに追加する前にそのプロパティを設定して、 **Index** オブジェクトを以降使用できるようにします。
 

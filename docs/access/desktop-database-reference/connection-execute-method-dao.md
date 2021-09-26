@@ -1,30 +1,30 @@
 ---
-title: Connection メソッド (DAO)
+title: Connection.Execute メソッド (DAO)
 TOCTitle: Execute Method
 ms:assetid: d6140d4e-fa14-6455-525e-49d8aab3dff7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835040(v=office.15)
 ms:contentKeyID: 48547978
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8140dbe9bc0c68d467c011d77bc0c00cec7ad560
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9f4d2159e50c54b6dc448cf2b2963ec05df6ffeb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295913"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597590"
 ---
-# <a name="connectionexecute-method-dao"></a>Connection メソッド (DAO)
+# <a name="connectionexecute-method-dao"></a>Connection.Execute メソッド (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-指定したオブジェクトのアクション クエリまたは SQL ステートメントを実行します。
+指定されたオブジェクトに対してアクション クエリを実行するか、SQL ステートメントを実行します。
 
 ## <a name="syntax"></a>構文
 
-*式*。Execute (***クエリ***、***オプション***)
+*式* .Execute(***Query** _, _*_Options_**)
 
-*式***Connection**オブジェクトを表す変数を取得します。
+*式***Connection** オブジェクトを表す変数です。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -38,7 +38,7 @@ ms.locfileid: "32295913"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -51,8 +51,8 @@ ms.locfileid: "32295913"
 <td><p>SQL ステートメントまたは <strong>QueryDef</strong> オブジェクトの <strong>Name</strong> プロパティの値を示す文字列型 (<strong>String</strong>) の値。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Options</em></p></td>
-<td><p>Optional</p></td>
+<td><p><em>オプション</em></p></td>
+<td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>[設定] で指定された、クエリのデータ整合性の特性を表す定数 (または定数の組み合わせ)。</p></td>
 </tr>
@@ -62,7 +62,7 @@ ms.locfileid: "32295913"
 
 ## <a name="remarks"></a>注釈
 
-オプションには、次の**[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)** 定数を使用できます。
+Options には、次の **[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)** 定数を使用できます。
 
 <table>
 <colgroup>
@@ -77,7 +77,7 @@ ms.locfileid: "32295913"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>dbdenywrite</strong></p></td>
+<td><p><strong>dbDenyWrite</strong></p></td>
 <td><p>他のユーザーに対して書き込み権限を許可しません (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
@@ -90,7 +90,7 @@ ms.locfileid: "32295913"
 </tr>
 <tr class="even">
 <td><p><strong>dbSQLPassThrough</strong></p></td>
-<td><p>SQL パススルー クエリを実行します。 このオプションを設定すると、SQL ステートメントが ODBC データベースに渡されて処理されます (Microsoft Access ワークスペースのみ)。</p></td>
+<td><p>SQL パススルー クエリを実行します。このオプションを設定すると、SQL ステートメントが ODBC データベースに渡されて処理されます (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbFailOnError</strong></p></td>
@@ -106,7 +106,7 @@ ms.locfileid: "32295913"
 </tr>
 <tr class="even">
 <td><p><strong>dbExecDirect</strong></p></td>
-<td><p>SQLPrepare ODBC API 関数を呼び出さずにステートメントを実行します (ODBCDirect の Connection オブジェクトと QueryDef オブジェクトのみ)。</p></td>
+<td><p>最初に SQLPrepare ODBC API 関数を呼び出さずにステートメントを実行します (ODBCDirect Connection および QueryDef オブジェクトのみ)。</p></td>
 </tr>
 </tbody>
 </table>

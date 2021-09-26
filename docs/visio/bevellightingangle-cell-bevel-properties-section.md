@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 537f5100-a8cf-4e29-81a5-bb71a80a7178
 description: 斜角に対する稲妻の角度を度数で指定します。
-ms.openlocfilehash: 984cae54d8a688b96642552355e9e1d011f4f9b9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b4d01d2d160fe6452e78d205cc8b8c1ab55c337e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423329"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598732"
 ---
 # <a name="bevellightingangle-cell-bevel-properties-section"></a>[BevelLightingAngle] セル ([ベベルのプロパティ] セクション)
 

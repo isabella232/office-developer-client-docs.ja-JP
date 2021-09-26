@@ -3,17 +3,17 @@ title: フォームを使用した新しいメッセージの作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: c92181c4-79ca-4310-8bf1-2bc335c8e0cd
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 1c5ba8631ba39309b7131440f04564f80b5dbb57
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4356fadc307ce260315a306693ef18e348722485
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412801"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611036"
 ---
 # <a name="composing-a-new-message-by-using-a-form"></a>フォームを使用した新しいメッセージの作成
 

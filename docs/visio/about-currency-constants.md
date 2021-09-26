@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 f1_keywords:
 - Vis_DSS.chm82253123
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d94c740f-29e1-1e7f-39f6-8aa215f3111d
 description: 数値を通貨として書式設定するには、CY 関数を使用して、どの国/地域の通貨を使用するかを指定するオプションの定数を渡します。通貨定数は、国/地域に対応する ID 番号、または ISO 4217 の 3 文字の省略形を示す文字列 (引用符で囲む) として指定できます。
-ms.openlocfilehash: 4492f4901779d94a32b881c973eab9e32a9c0514
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
-ms.translationtype: HT
+ms.openlocfilehash: 17e559e9c2cdc2a09ce437af5918ce4457b144dc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421796"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608761"
 ---
 # <a name="about-currency-constants"></a>通貨定数について
 
@@ -31,16 +31,16 @@ ms.locfileid: "33421796"
 | 2 - 9  <br/> | 予備  <br/> |
 | 10  <br/> | EUR  <br/> | ユーロ  <br/> |
 | 11  <br/> | USD  <br/> | 米ドル  <br/> |
-| 12  <br/> | ATS  <br/> | オーストリア シリング  <br/> |
+| 12   <br/> | ATS  <br/> | オーストリア シリング  <br/> |
 | 13  <br/> | AUD  <br/> | オーストラリア ドル  <br/> |
-| 14  <br/> | BEF  <br/> | ベルギー フラン  <br/> |
-| 15  <br/> | CAD  <br/> | カナダ ドル  <br/> |
-| 16  <br/> | CHF  <br/> | スイス フラン  <br/> |
-| 17  <br/> | CNY  <br/> | 中国 人民元  <br/> |
-| 18  <br/> | DEM  <br/> | ドイツ マルク  <br/> |
+| 14   <br/> | BEF  <br/> | ベルギー フラン  <br/> |
+| 15   <br/> | CAD  <br/> | カナダ ドル  <br/> |
+| 16   <br/> | CHF  <br/> | スイス フラン  <br/> |
+| 17   <br/> | CNY  <br/> | 中国 人民元  <br/> |
+| 18   <br/> | DEM  <br/> | ドイツ マルク  <br/> |
 | 19  <br/> | DKK  <br/> | デンマーク クローネ  <br/> |
 | 20  <br/> | ESP  <br/> | スペイン ペセタ  <br/> |
-| 21  <br/> | FIM  <br/> | フィンランド マルカ  <br/> |
+|  21  <br/> | FIM  <br/> | フィンランド マルカ  <br/> |
 | 22  <br/> | FRF  <br/> | フランス フラン  <br/> |
 | 23  <br/> | GBP  <br/> | イギリス ポンド  <br/> |
 | 24  <br/> | GRD  <br/> | ギリシャ ドラクマ  <br/> |
@@ -59,22 +59,32 @@ ms.locfileid: "33421796"
 | 37  <br/> | NOK  <br/> | ノルウェー クローネ  <br/> |
 | 38  <br/> | NZD  <br/> | ニュージーランド ドル  <br/> |
 | 39  <br/> | PHP  <br/> | フィリピン ペソ  <br/> |
-| 40  <br/> | PLZ (旧称。 PLN を使用)  <br/> | ポーランド ズウォティ  <br/> |
+| 40  <br/> |  
+PLZ (現在は PLN を使用) 
+  <br/> | ポーランド ズウォティ  <br/> |
 | 41  <br/> | PTE  <br/> | ポルトガル エスクード  <br/> |
 | 42  <br/> | ROL  <br/> | ルーマニア レウ  <br/> |
-| 43  <br/> | PUR (旧称。 RUBを使用)  <br/> | ロシア ルーブル  <br/> |
+| 43  <br/> |  
+RUR (現在は RUB を使用) 
+  <br/> | ロシア ルーブル  <br/> |
 | 44  <br/> | SEK  <br/> | スウェーデン クローネ  <br/> |
 | 45  <br/> | SGD  <br/> | シンガポール ドル  <br/> |
 | 46  <br/> | THB  <br/> | タイ バーツ  <br/> |
 | 47  <br/> | TWD  <br/> | 新台湾ドル  <br/> |
-| 48  <br/> | XEU (旧称。 現在はユーロを使用)  <br/> | ECU (1998 年以前)  <br/> |
-| 49  <br/> | YUN (旧称。 YUM を使用)  <br/> | ユーゴスラビア ディナール  <br/> |
+| 48  <br/> |  
+XEU (現在は EUR を使用) 
+  <br/> | ECU (1998 年以前)  <br/> |
+| 49  <br/> |  
+YUN (現在は YUM を使用) 
+  <br/> | ユーゴスラビア ディナール  <br/> |
 | 50  <br/> | ZAR  <br/> | 南アフリカ ランド  <br/> |
 | 51 - 55  <br/> | 予備  <br/> |
 | 56  <br/> | ARS  <br/> | アルゼンチン ペソ  <br/> |
 | 57  <br/> | BMD  <br/> | バミューダ ドル  <br/> |
 | 58  <br/> | BOB  <br/> | ボリビア ボリビアーノ  <br/> |
-| 59  <br/> | BRR (旧称。 BRL を使用)  <br/> | ブラジル クルゼイロ・レアル  <br/> |
+| 59  <br/> |  
+BRR (現在は BRL を使用) 
+  <br/> | ブラジル クルゼイロ・レアル  <br/> |
 | 60  <br/> | BSD  <br/> | バハマ ドル  <br/> |
 | 61  <br/> | CLP  <br/> | チリ ペソ  <br/> |
 | 62  <br/> | COP  <br/> | コロンビア ペソ  <br/> |
@@ -107,7 +117,9 @@ ms.locfileid: "33421796"
 | 89  <br/> | PLN  <br/> | ポーランド ズウォティ  <br/> |
 | 90  <br/> | RUB  <br/> | ロシア ルーブル  <br/> |
 | 91  <br/> | YUM  <br/> | ユーゴスラビア ディナール  <br/> |
-| 92  <br/> | BYB (旧称。 BYR を使用)  <br/> | ベラルーシ ルーブル  <br/> |
+| 92  <br/> |  
+BYB (現在は BYR を使用) 
+  <br/> | ベラルーシ ルーブル  <br/> |
 | 93  <br/> | UAH  <br/> | ウクライナ フリヴニャ  <br/> |
 | 94  <br/> | AFA  <br/> | アフガニ (Visio 2002 で追加)  <br/> |
 | 95  <br/> | すべて  <br/> | レク (Visio 2002 で追加)  <br/> |
@@ -128,7 +140,9 @@ ms.locfileid: "33421796"
 | 110  <br/> | BAM  <br/> | 兌換マルク (Visio 2002 で追加)  <br/> |
 | 111  <br/> | BWP  <br/> | プラ (Visio 2002 で追加)  <br/> |
 | 112  <br/> | BND  <br/> | ブルネイ ドル (Visio 2002 で追加)   <br/> |
-| 113  <br/> | BGL (旧称。 BGN を使用)  <br/> | レフ  <br/> |
+| 113  <br/> |  
+BGL (現在は BGN を使用) 
+  <br/> | レフ  <br/> |
 | 114  <br/> | BGN  <br/> | ブルガリア レフ (Visio 2002 で追加)  <br/> |
 | 115  <br/> | BIF  <br/> | ブルンジ フラン (Visio 2002 で追加)  <br/> |
 | 116  <br/> | KHR  <br/> | リエル (Visio 2002 で追加)  <br/> |
@@ -172,7 +186,9 @@ ms.locfileid: "33421796"
 | 154  <br/> | LYD  <br/> | リビア ディナール (Visio 2002 で追加)  <br/> |
 | 155  <br/> | LTL  <br/> | リトアニア リタス (Visio 2002 で追加)  <br/> |
 | 156  <br/> | MKD  <br/> | デナール (Visio 2002 で追加)  <br/> |
-| 157  <br/> | MGF (旧称。 MGA を使用)  <br/> | マダガスカル フラン (Visio 2002 で追加)  <br/> |
+| 157  <br/> |  
+MGF (現在は MGA を使用) 
+  <br/> | マダガスカル フラン (Visio 2002 で追加)  <br/> |
 | 158  <br/> | MWK  <br/> | マラウイ クワチャ (Visio 2002 で追加)   <br/> |
 | 159  <br/> | MVR  <br/> | ルフィヤ (Visio 2002 で追加)  <br/> |
 | 160  <br/> | MTL  <br/> | マルタ リラ (Visio 2002 で追加)  <br/> |
@@ -203,7 +219,9 @@ ms.locfileid: "33421796"
 | 185  <br/> | SRG  <br/> | スリナム ギルダー (Visio 2002 で追加)   <br/> |
 | 186  <br/> | SZL  <br/> | リランゲニ (Visio 2002 で追加)  <br/> |
 | 187  <br/> | SYP  <br/> | シリア ポンド (Visio 2002 で追加)  <br/> |
-| 188  <br/> | TJR (旧称。 TJSを使用）  <br/> | タジク ルーブル  <br/> |
+| 188  <br/> |  
+TJR (現在は TJS を使用) 
+  <br/> | タジク ルーブル  <br/> |
 | 189  <br/> | TJS  <br/> | タジク ソモニ (Visio 2002 で追加)  <br/> |
 | 190  <br/> | TZS  <br/> | タンザニア シリング (Visio 2002 で追加)  <br/> |
 | 191  <br/> | TOP  <br/> | パアンガ (Visio 2002 で追加)  <br/> |

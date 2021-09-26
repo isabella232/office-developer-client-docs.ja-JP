@@ -6,24 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250218(v=office.15)
 ms:contentKeyID: 48548589
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0526ee6a0d6cf9aa8f9263e8f3d31e66fad7da82
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 80b632ebe3f0181dc38de120ef7bf41caeab6e1f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295703"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589940"
 ---
 # <a name="connectiontimeout-property-ado"></a>ConnectionTimeout プロパティ (ADO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 接続操作を中止して、エラーを生成するまでの待機時間を示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
-接続が開くまでの待機時間を秒単位で示す長整数型 ( **Long** ) の値を設定または取得します。 既定値は 15 です。
+接続が開くまでの待機時間を秒単位で示す長整数型 ( **Long** ) の値を設定または取得します。既定値は 15 です。
 
 ## <a name="remarks"></a>注釈
 

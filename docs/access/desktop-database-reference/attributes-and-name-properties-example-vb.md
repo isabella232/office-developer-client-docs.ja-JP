@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249840(v=office.15)
 ms:contentKeyID: 48547120
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5584529eb9de3aa7c10303a40fb66790ad4e5c0f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f5fb76076c743efacbc5e1a4707c765ac9d1d952
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296977"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607256"
 ---
 # <a name="attributes-and-name-properties-example-vb"></a>Attributes プロパティと Name プロパティの使用例 (VB)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 次の例では、[Connection](attributes-property-ado.md)、[Field](connection-object-ado.md)、[Property](field-object-ado.md) の各オブジェクトの [Attributes](property-object-ado.md) プロパティの値を表示します。 [Name](name-property-ado.md) プロパティを使用して、 **Field** および **Property** の各オブジェクトの名前を表示しています。
 

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f5444543-fcd9-91cc-e7f8-cf860caa9fcc
 description: 段落プロパティの実行の開始を指定します。 実行は、テキストの末尾、または次のタグまで定義されます。
-ms.openlocfilehash: 695958c77f730abed03f50d6ad9c71f4de76dd63
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 051650db1aa1d0bcf109bdca63d0909f94fb9479
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537739"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598417"
 ---
 # <a name="pp-element-text_type-complextype-visio-xml"></a>pp 要素 (Text_Type complexType) (Visio XML)
 

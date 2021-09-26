@@ -8,15 +8,15 @@ f1_keywords:
 - xlDefineBinaryName
 keywords:
 - xldefinebinaryname function [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e3e8f91b-cc31-4f09-9941-f950ae96820a
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 3c7fc4f6b6fc7179c1ca84043895273b2781f8b5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 17a28b5fac2e2d92beb19def39174a728df1b188
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430253"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611211"
 ---
 # <a name="xldefinebinaryname"></a>xlDefineBinaryName
 

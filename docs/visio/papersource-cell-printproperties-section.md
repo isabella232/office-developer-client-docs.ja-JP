@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm60068
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 771a2ab4-578d-51c3-fabd-138f7952bb11
 description: 用紙の給紙方法を指定します。
-ms.openlocfilehash: eb6e7daccb1743c43a30b34598e47187496e4aac
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 90d9013ebd831851d42b55dc4f1d754f9dc4c5cc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406760"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598445"
 ---
 # <a name="papersource-cell-printproperties-section"></a>[PaperSource] セル ([PrintProperties] セクション)
 

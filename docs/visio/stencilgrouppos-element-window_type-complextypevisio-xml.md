@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7440a59b-1c7c-6477-32e7-35188fbd2b39
 description: ウィンドウのグループ内にあるステンシルの相対位置を指定する整数を含みます。
-ms.openlocfilehash: a539cd4435477f43a2e9c16b6a9b77e6e1e9d7f5
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: ae76b45b01f9d78908893b339a8cd3d5a33903c1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538880"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603474"
 ---
 # <a name="stencilgrouppos-element-window_type-complextype-visio-xml"></a>StencilGroupPos 要素 (Window_Type complexType) (Visio XML)
 

@@ -3,17 +3,17 @@ title: メッセージ ストア プロバイダーに対する読み取りレ�
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 9644b8c5-ecc0-4ea3-972a-2169c78b99e5
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 96546d3d766af398ff7acb50f4fc3a479b5668b2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 15a2868519e5b8a4363e23ccf1cc3037d630f162
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432339"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599159"
 ---
 # <a name="providing-read-and-nonread-reports-for-message-store-providers"></a>メッセージ ストア プロバイダーに対する読み取りレポートと読み取り以外のレポートの提供
 

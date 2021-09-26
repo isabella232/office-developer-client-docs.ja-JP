@@ -3,17 +3,17 @@ title: MAPI のStorage構造
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 642a678b-4bf2-4246-85cb-c798de23e36f
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: f58fa70e98841db5507323a63737f1df6c1b7a6d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: afc817e963a4855aaa5f13ee01b74a82e9ab225e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411751"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591032"
 ---
 # <a name="structured-storage-in-mapi"></a>MAPI のStorage構造
 
@@ -45,7 +45,7 @@ MAPI と COM には、ストレージ オブジェクトとストリーム オ�
   
 **ストリーム オブジェクトとストリーム オブジェクトStorageアクセスする関数**
 
-|**Function**|**説明**|
+|**関数**|**説明**|
 |:-----|:-----|
 |[HrIStorageFromStream](hristoragefromstream.md) <br/> |ストリームまたはロック バイト オブジェクトにアクセスするストレージ オブジェクトを作成します。  <br/> |
 |[OpenIMsgOnIStg](openimsgonistg.md) <br/> |ストレージ オブジェクトにアクセスするメッセージ オブジェクトを作成します。  <br/> |

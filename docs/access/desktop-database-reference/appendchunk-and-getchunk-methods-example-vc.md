@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249767(v=office.15)
 ms:contentKeyID: 48546825
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8a2dd398fa7f8dfdee491aaf65cb561a9f9c52f8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3cf9f081adf8543b571e3a824ca462214f846a25
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297040"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607298"
 ---
 # <a name="appendchunk-and-getchunk-methods-example-vc"></a>AppendChunk メソッドと GetChunk メソッドの使用例 (VC++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、[AppendChunk](appendchunk-method-ado.md) メソッドと [GetChunk](getchunk-method-ado.md) メソッドを使用して、別のレコードのデータを画像フィールドに格納します。
 
@@ -294,7 +294,7 @@ VOID PrintProviderError(_ConnectionPtr pConnection)
 // EndAppendChunkCpp 
 ```
 
-**appendchunkx**
+**AppendChunkX.h**
 
 ```cpp 
  

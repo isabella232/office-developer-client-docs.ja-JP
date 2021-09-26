@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagWizardNoPabPage
 api_type:
 - COM
 ms.assetid: 9cec22cd-798d-41f6-9ebd-c7354f2162c2
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: fc971be76dbaa83176f207411f9f125ffee386cf
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f66afac0d76705eb2a7910310626097cd2c5e2ad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424463"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599264"
 ---
 # <a name="pidtagwizardnopabpage-canonical-property"></a>PidTagWizardNoPabPage 標準プロパティ
 

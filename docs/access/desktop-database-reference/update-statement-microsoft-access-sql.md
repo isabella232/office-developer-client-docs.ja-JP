@@ -12,13 +12,13 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 6a0404c21b308f6e389ee5577cc212763e660774
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 97b41c7c4b296f931c04108568735f2bd38877e9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306245"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601633"
 ---
 # <a name="update-statement-microsoft-access-sql"></a>UPDATE ステートメント (Microsoft Access SQL)
 
@@ -76,7 +76,7 @@ WHERE ShipCountry = 'UK';
 
 > [!IMPORTANT]
 - UPDATE ステートメントは、結果セットを作成しません。また、更新クエリを使用してレコードを更新すると、元に戻せません。どのレコードが変更されるかをあらかじめ確認する場合は、更新クエリを実行する前に、同じ抽出条件を使用する選択クエリを実行してその結果を調べてください。
-- データのバックアップ コピーを常に維持してください。 間違ったレコードを更新した場合、バックアップ コピーからレコードを元に戻すことができます。
+- 誤ってレコードを更新した場合にも復旧できるように、常にデータのバックアップ コピーを作成しておくことをお勧めします。
 
 
 

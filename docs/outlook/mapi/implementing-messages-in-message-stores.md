@@ -3,17 +3,17 @@ title: ���[���̕ۑ��ꏊ�Ń��b�Z�[�W������
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: df5003d5-cbfe-40b2-a481-e2e11dce4b3e
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 223dfa2ac990875e98e876ab491bf09caf63e874
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 345abc0b47901b473403a66e48b27c5b1e5ea163
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416644"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610448"
 ---
 # <a name="implementing-messages-in-message-stores"></a>���[���̕ۑ��ꏊ�Ń��b�Z�[�W��������܂��B
 

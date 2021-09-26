@@ -3,17 +3,17 @@ title: プロファイルのコピー
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: b722a157-0d92-404d-9075-39547241dbb7
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 86f381eff1dab0144afe0f94dcd6dd54d1ad7fa8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4bf3bd7c5d509b0464a620ad0e8a6c00d45b9874
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424729"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611001"
 ---
 # <a name="copying-a-profile"></a>プロファイルのコピー
 

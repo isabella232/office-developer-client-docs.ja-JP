@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm85126
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 27b4269e9718e425bc5a1307ae311ccaad89e514
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.localizationpriority: high
+ms.openlocfilehash: 60726e4c514f9fc8e6a432bac171d6bc35c4c05e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538229"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559123"
 ---
 # <a name="after-update-macro-event"></a>After Update マクロ イベント
 
@@ -31,7 +31,7 @@ The **After Update** event occurs after a record is changed.
 
 After Update イベントでは、レコードを変更したときに特定のアクションを実行します。通常は、ビジネス ルールの実行、総計の更新、通知の送信などを行います。
 
-**Updated("*フィールド名*")** 関数を使用すると、フィールドが変更されているかどうかを判断できます。 次のコード例では、PaidInFull フィールドが変更されているかどうかを If ステートメントで判断する方法を示します。
+**Updated("*フィールド名*")** 関数を使用すると、フィールドが変更されているかどうかを判断できます。次のコード例では、PaidInFull フィールドが変更されているかどうかを **If** ステートメントで判断する方法を示します。
 
 ```vb 
  

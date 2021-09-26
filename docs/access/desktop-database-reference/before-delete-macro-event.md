@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm186077
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 2b2a4f978a4af2ba79cab7807f0142d35d7d30c7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d8f4f44ae2acdfe5f20b5ee8a95314f518be07f8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296914"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607123"
 ---
 # <a name="before-delete-macro-event"></a>Before Delete マクロ イベント
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 The **Before Delete** event occurs when a record is deleted, but before the change is committed.
 
@@ -31,7 +31,7 @@ The **Before Delete** event occurs when a record is deleted, but before the chan
 
 Use the **Before Delete** event to perform any actions that you want to occur before a record is deleted. The **Before Change** is commonly used to perform validation and to raise custom error messages.
 
-削除するレコード内の値には、次の構文を使用してアクセスできます。
+削除するレコードの値にアクセスするには、次の構文を使用します。
 
 `[Old].[Field Name]`
 
@@ -41,7 +41,7 @@ Use the **Before Delete** event to perform any actions that you want to occur be
 
 The values contained in the record to be deleted are deleted permanently when the **Before Delete** event ends.
 
-You can cancel the **Before Delete** event by using the **RaiseError** action. エラーが発生した場合、 **Before Delete**イベントに含まれる変更は破棄されます。
+You can cancel the **Before Delete** event by using the **RaiseError** action. エラーが発生すると、Before **Delete** イベントに含まれる変更は破棄されます。
 
 The following table lists macro commands that can be used in the **Before Delete** event.
 
@@ -53,7 +53,7 @@ The following table lists macro commands that can be used in the **Before Delete
 <thead>
 <tr class="header">
 <th><p>コマンドの種類</p></th>
-<th><p>Command</p></th>
+<th><p>コマンド</p></th>
 </tr>
 </thead>
 <tbody>
@@ -71,7 +71,7 @@ The following table lists macro commands that can be used in the **Before Delete
 </tr>
 <tr class="even">
 <td><p>データ ブロック</p></td>
-<td><p><a href="lookuprecord-data-block.md">LookupRecord マクロアクション</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">LookupRecord マクロ アクション</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>データ アクション</p></td>
@@ -101,5 +101,5 @@ To create a Data macro that captures the **Before Delete** event, use the follow
 
 1.  Open the table for which you want to capture the **Before Delete** event.
 
-2.  [**テーブル**] タブの [**イベント前**] グループで、[**削除前**] を選択します。
+2.  [テーブル] **タブの** [Before **Events] グループで** 、[削除前] **を選択します**。
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm100
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0b7ffe39-ee6c-71eb-355c-9bb4660260f1
 description: アプリケーションによって生成されたトリガー数式が格納されています。このトリガー数式によって、1 次元図形の始点を移動するときに別の図形に対する接続を維持するかどうかを指定します。
-ms.openlocfilehash: b401d349119337016a96b5fffbc26f7be2891864
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 745dfed2762dc9b3f10d3da576609ec9b8cce36d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437953"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598809"
 ---
 # <a name="begtrigger-cell-glue-info-section"></a>[BegTrigger] セル ([Glue Info] セクション)
 

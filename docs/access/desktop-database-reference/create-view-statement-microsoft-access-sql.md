@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff836312(v=office.15)
 ms:contentKeyID: 48548519
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 73fac5ff9dd1f5cf277b8cb241044af23609b764
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 2f46b897ba4e37f454c656f39333f5c4e0389e94
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295367"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581589"
 ---
 # <a name="create-view-statement-microsoft-access-sql"></a>CREATE VIEW ステートメント (Microsoft Access SQL)
 
@@ -52,7 +52,7 @@ CREATE VIEW ステートメントでは、次の引数を使用します。
 </tr>
 <tr class="odd">
 <td><p><em>selectstatement</em></p></td>
-<td><p>SQL SELECT ステートメントです。 詳細については、「<a href="select-statement-microsoft-access-sql.md">SELECT ステートメント</a>」を参照してください。</p></td>
+<td><p>SQL SELECT ステートメント。詳細については、「<a href="select-statement-microsoft-access-sql.md">SELECT ステートメント</a>」を参照してください。</p></td>
 </tr>
 </tbody>
 </table>
@@ -66,7 +66,7 @@ CREATE VIEW ステートメントでは、次の引数を使用します。
 
 ビューの名前は、既存のテーブルの名前と同じにすることができません。
 
-SELECT ステートメントによって定義されたクエリが更新できる場合、ビューも更新できます。 更新できない場合、ビューは読み取り専用となります。
+SELECT ステートメントで定義されたクエリが更新されると、読み取り専用に設定されていない限り、ビューも更新されます。
 
 SELECT ステートメントで定義されるクエリに名前が同じフィールドが 2 つある場合、ビューの定義にフィールド リストを追加し、クエリの各フィールドに一意の名前を指定する必要があります。
 

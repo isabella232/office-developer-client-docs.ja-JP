@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ITnef.AddProps
 api_type:
 - COM
 ms.assetid: e85641fb-6d3c-494a-981c-01781c7bf5bb
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6a7bb7265d29d2acfce17a1a09c95f7f7b539064
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: fb9591794ae6606ef06b0fc756380fcd0ffab3fe
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348623"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610406"
 ---
 # <a name="itnefaddprops"></a>ITnef::AddProps
 

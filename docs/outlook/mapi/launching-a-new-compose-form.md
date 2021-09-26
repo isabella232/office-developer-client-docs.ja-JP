@@ -3,17 +3,17 @@ title: 新規作成フォームの起動
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: ffceaa03-76f2-42e0-b28d-226f1f9cc889
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 29d53ba1242014a501a01d161c19dade164f393a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 29ad3393340d356a043f5df5115b9112d8e3b3df
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32270057"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610357"
 ---
 # <a name="launching-a-new-compose-form"></a>新規作成フォームの起動
 

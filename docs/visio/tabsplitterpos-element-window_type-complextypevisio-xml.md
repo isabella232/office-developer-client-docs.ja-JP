@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eca75ec6-3677-54ef-74ec-4a440a089e5d
 description: 図面ウィンドウのページ タブ コントロールの幅を指定します (図面ウィンドウ全体の幅の一部として)。
-ms.openlocfilehash: 50b614ff43fa502bce7989dacf2652d52b850994
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 7f4ea91fa43129f9a837918ad8493e9c3812c7ad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538852"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603362"
 ---
 # <a name="tabsplitterpos-element-window_type-complextype-visio-xml"></a>TabSplitterPos 要素 (Window_Type complexType) (Visio XML)
 

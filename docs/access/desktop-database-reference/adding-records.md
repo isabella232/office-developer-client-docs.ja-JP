@@ -1,22 +1,22 @@
 ---
-title: レコードの追加 (Access デスクトップデータベースリファレンス)
+title: レコードの追加 (Access デスクトップ データベース参照)
 TOCTitle: Adding records
 ms:assetid: 7a5b27bc-7b28-4f43-b55e-a21edfb9e1b3
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249505(v=office.15)
 ms:contentKeyID: 48545791
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 268cd381cdeef11f2a6f351160d930e4b169cfbf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2ecf86a6dd3524e36feefc25aafbb311cc7cac46
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280288"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590108"
 ---
 # <a name="adding-records"></a>レコードの追加
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 既存の **Recordset** 内に新しいレコードを作成し、これを初期化するには、 **AddNew** メソッドを使用します。 **Supports** メソッドで **CursorOptionEnum** 値の **adAddNew** を指定すると、現在の **Recordset** オブジェクトにレコードを追加できるかどうかを確認できます。
 
@@ -27,6 +27,6 @@ ms.locfileid: "32280288"
 このセクションでは、以下のトピックについて説明します。
 
 - [複数のフィールドの追加](adding-multiple-fields.md)
-- [編集モードを決定する](determining-edit-mode.md)
-- [イミディエイトモードとバッチモードで AddNew を使用する](using-addnew-in-immediate-and-batch-modes.md)
+- [編集モードの決定](determining-edit-mode.md)
+- [イミディエイト モードとバッチ モードでの AddNew の使用](using-addnew-in-immediate-and-batch-modes.md)
 

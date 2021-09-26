@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194099(v=office.15)
 ms:contentKeyID: 48544893
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: a9ef8f1714244b02ed5423a38cf3fb8fa328ec1e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 216a15a6152fd1920562ad04b9c0f1a4d150bf86
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300638"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568510"
 ---
 # <a name="recordsetfindnext-method-dao"></a>Recordset.FindNext メソッド (DAO)
 
@@ -38,7 +38,7 @@ ms.locfileid: "32300638"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須 / オプション</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -48,7 +48,7 @@ ms.locfileid: "32300638"
 <td><p><em>基準</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>String</strong></p></td>
-<td><p>レコードの検索に使用する文字列です。 SQL ステートメントの WHERE 句に似ていますが、WHERE という語は付けません。</p></td>
+<td><p>レコードの検索に使用する文字列です。SQL ステートメントの WHERE 句に似ていますが、WHERE という語は付けません。</p></td>
 </tr>
 </tbody>
 </table>
@@ -118,17 +118,17 @@ Microsoft Access データベース エンジンに接続している ODBC デ�
         & Format(mydate, 'm-d-yy' ) & "#" 
 ```
 
-抽出条件が文字列と非整数値を連結したもので構成され、かつシステム パラメーターでコンマなどのピリオド以外の小数点の記号が使用されている場合 (たとえば、strSQL = "PRICE \> " & lngPrice と lngPrice = 125,50)、メソッドを呼び出そうとするとエラーが発生します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Access の SQL で小数点の記号として使用できるのはピリオドのみであるためです。
+criteria が文字列と非整数値を連結したもので構成され、かつシステム パラメーターでコンマなどのピリオド以外の小数点の記号が使用されている場合 (たとえば、strSQL = "PRICE \> " & lngPrice で lngPrice = 125,50)、メソッドを呼び出そうとするとエラーが発生します。連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Access の SQL で小数点の記号として使用できるのはピリオドのみになるからです。
 
 > [!NOTE]
-> - パフォーマンスを向上させるには、*抽出条件*の形式は"*field* = *value*" (*field*は基になるベース テーブルのインデックス フィールド)、または "*field* LIKE *prefix*" (*field*は基になるベース テーブルのインデックス フィールド) のどちらかにし、*prefix* ("ART*"など) はプレフィックスを付けた検索文字列 にしてください。
+> - パフォーマンスを向上させるには、*抽出条件* の形式は"*field* = *value*" (*field* は基になるベース テーブルのインデックス フィールド)、または "*field* LIKE *prefix*" (*field* は基になるベース テーブルのインデックス フィールド) のどちらかにし、*prefix* ("ART*"など) はプレフィックスを付けた検索文字列 にしてください。
 > 
 > - 一般に、同じような検索を行う場合は、**Find** メソッドよりも **Seek** メソッドを使用する方がパフォーマンスが優れています。ただし、これを使用できるのは、テーブル タイプの **Recordset** オブジェクトだけを検索対象とする場合です。
 
 
 ## <a name="example"></a>例
 
-次の例は、FindFirst および FindNext メソッドを使用して、 Recordset 内のレコードを見つける方法を示しています。
+次の例は、FindFirst および FindNext メソッドを使用して、Recordset 内のレコードを見つける方法を示しています。
 
 **サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 

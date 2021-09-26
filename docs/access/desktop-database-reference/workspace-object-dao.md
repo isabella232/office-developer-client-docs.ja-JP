@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822782(v=office.15)
 ms:contentKeyID: 48547481
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 2c734d5e0f022faec4ebb9efe2dfc2f7dd7b7979
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: d6f676033c5619915f15605eababaaf7aaeb01c2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308359"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588566"
 ---
 # <a name="workspace-object-dao"></a>Workspace オブジェクト (DAO)
 
@@ -32,7 +32,7 @@ ms.locfileid: "32308359"
 
 - **BeginTrans** 、 **CommitTrans** 、および **Rollback** の各メソッドを使用して、 **Workspace** 内のネストされたトランザクションの処理を管理し、複数の **Workspace** オブジェクトを使用して、複数のトランザクション、同時実行トランザクション、および重なり合うトランザクションを実行します。
 
-**Workspace** オブジェクトを初めて参照または使用すると、自動的に既定のワークスペース DBEngine.Workspaces(0) が作成されます。 この既定のワークスペースの **Name** プロパティと **UserName** プロパティの設定は、"\#Default Workspace\#" と "Admin" です。 セキュリティが有効になっている場合、 **UserName** プロパティの設定はログオンしたユーザーの名前になります。
+**Workspace** オブジェクトを初めて参照または使用すると、自動的に既定のワークスペース DBEngine.Workspaces(0) が作成されます。この既定のワークスペースの **Name** プロパティと **UserName** プロパティの設定は、"\#Default Workspace\#" と "Admin" です。セキュリティが有効になっている場合、**UserName** プロパティの設定はログオンしたユーザーの名前になります。
 
 トランザクションを使用する場合、 **Workspace** オブジェクトで複数の **Database** オブジェクトが開かれていると、指定した **Workspace** オブジェクトのすべてのデータベースが影響を受けます。たとえば、 **BeginTrans** メソッドを使用し、あるデータベースの複数のレコードを更新した後、別のデータベースのレコードを削除します。次に、 **Rollback** メソッドを使用すると、更新と削除の両方の操作がキャンセルされ、ロールバックされます。複数の **Database** オブジェクトにまたがってトランザクションを個別に管理するには、追加の **Workspace** オブジェクトを作成します。
 

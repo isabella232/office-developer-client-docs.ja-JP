@@ -10,21 +10,21 @@ f1_keywords:
 - vbaac10.chm35083
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 0bcf0a37f8c1596856f5d7b921430371d620f7a3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 53cc7fd0b085efee9b52d53371b08e338ccd4665
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296774"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607081"
 ---
 # <a name="browseto-macro-action"></a>BrowseTo マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 You can use the **BrowseTo** action to navigate between objects in place. You can also change the source object of a subform control by specifying the Path to Subform Control argument. Use **BrowseTo** to navigate from form1 to form2 without opening up a new window.
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "BrowseTo/参照先" アクションの引数は次のとおりです。
 
@@ -50,15 +50,15 @@ You can use the **BrowseTo** action to navigate between objects in place. You ca
 </tr>
 <tr class="odd">
 <td><p>Path to Subform Control/サブフォーム コントロールへのパス</p></td>
-<td><p>指定した場合、アプリケーションのメインフォームから、オブジェクト名の引数で指定されたオブジェクトを読み込むターゲットサブフォームコントロールへのパス。</p></td>
+<td><p>指定した場合、アプリケーションのメイン フォームから Object Name 引数で指定されたオブジェクトを読み込むターゲット サブフォーム コントロールへのパス。</p></td>
 </tr>
 <tr class="even">
 <td><p>Where Condition/Where 条件式</p></td>
 <td><p>指定した場合は、オブジェクト レコード ソースの Where 条件を置き換えます。</p></td>
 </tr>
 <tr class="odd">
-<td><p>ページ</p></td>
-<td><p>指定した場合は、現在のページになる帳票フォームのページを設定します。 この引数は web のみです。</p></td>
+<td><p>Page</p></td>
+<td><p>指定した場合は、現在のページになる帳票フォームのページを設定します。 この引数は Web のみです。</p></td>
 </tr>
 <tr class="even">
 <td><p>Data Mode/データ モード</p></td>
@@ -80,7 +80,7 @@ PathToSubFormControl 引数は、次のコード例に示す構文で指定し�
 
 ## <a name="example"></a>例
 
-次の例は、BrowseTo アクションを使用して、サブフォームコントロールまたはナビゲーションコントロール内のレポートを開く方法を示しています。
+次の例は、BrowseTo アクションを使用して、サブフォーム コントロールまたはナビゲーション コントロール内でレポートを開く方法を示しています。
 
 **サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 

@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249892(v=office.15)
 ms:contentKeyID: 48547356
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7bb2a479789a8c5bd1825b6cb04e602e0b829dfb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1fd28f453ef38b8a2e71f0e479c19fcd05c50aca
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296550"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590101"
 ---
 # <a name="cell-object-ado-md"></a>Cell オブジェクト (ADO MD)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 セルセットに含まれる、座標軸の交点のデータを表します。
 
@@ -56,7 +56,7 @@ ms.locfileid: "32296550"
 <td><p>セルを表示するときに使用する背景色。</p></td>
 </tr>
 <tr class="even">
-<td><p>fontflags</p></td>
+<td><p>FontFlags</p></td>
 <td><p>フォントの効果を指定するビットマスク。</p></td>
 </tr>
 <tr class="odd">

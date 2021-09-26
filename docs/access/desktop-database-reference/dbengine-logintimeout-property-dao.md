@@ -1,5 +1,5 @@
 ---
-title: DBEngine タイムアウトプロパティ (DAO)
+title: DBEngine.LoginTimeout プロパティ (DAO)
 TOCTitle: LoginTimeout Property
 ms:assetid: 81d14153-79c5-7860-b6a8-4079d2d7acf7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196648(v=office.15)
@@ -10,26 +10,26 @@ f1_keywords:
 - dao360.chm1052923
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: e3ff893a16e650fe7eb49b647ae8d67374375a0d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 631459d65e9064f68b5d5e445db148748411136f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294310"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589695"
 ---
-# <a name="dbenginelogintimeout-property-dao"></a>DBEngine タイムアウトプロパティ (DAO)
+# <a name="dbenginelogintimeout-property-dao"></a>DBEngine.LoginTimeout プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ODBC データベースへのログオン試行でエラーが発生するまでの秒数を設定または取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*。LoginTimeout
+*式* .LoginTimeout
 
-*式***DBEngine**オブジェクトを表す変数を取得します。
+*式* **DBEngine** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 

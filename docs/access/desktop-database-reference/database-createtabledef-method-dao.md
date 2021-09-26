@@ -10,23 +10,23 @@ f1_keywords:
 - dao360.chm1052968
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: c986f0a96c14dac8a9ee4f3c7fded5a049fa451e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 64cb20daaf235ebdd736771d571881cec17950f7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294947"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562749"
 ---
 # <a name="databasecreatetabledef-method-dao"></a>Database.CreateTableDef メソッド (DAO)
 
 **適用先**: Access 2013、Office 2013
 
-新しい **[TableDef](tabledef-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。 。
+新しい **[TableDef](tabledef-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式* .CreateTableDef(***Name***、***Attributes***、***SourceTableName***、***Connect***)
+*式* .CreateTableDef(***Name** _, _*_Attributes_*_, _*_SourceTableName_*_, _*_Connect_**)
 
 *式* **Database** オブジェクトを表す変数です。
 
@@ -42,7 +42,7 @@ ms.locfileid: "32294947"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/省略可能</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -52,7 +52,7 @@ ms.locfileid: "32294947"
 <td><p><em>名前</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>新しい <strong>TableDef</strong> の一意の名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。 有効な <strong>TableDef</strong> 名の詳細については、<strong><a href="tabledef-name-property-dao.md">Name</a></strong> プロパティを参照してください。</p></td>
+<td><p>新しい <strong>TableDef</strong> オブジェクトの一意の名前を表す、<strong>Variant</strong> (サブタイプが文字列型 <strong>String</strong>)。有効な <strong>TableDef</strong> 名の詳細については、<strong><a href="tabledef-name-property-dao.md">Name</a></strong> プロパティを参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>属性</em></p></td>
@@ -64,13 +64,13 @@ ms.locfileid: "32294947"
 <td><p><em>SourceTableName</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>データの元のソースである外部データベース内のテーブルの名前を含む <strong>Variant</strong> (<strong>String</strong> サブタイプ)。 ソース文字列は、新しい <strong>TableDef</strong> オブジェクトの <strong><a href="tabledef-sourcetablename-property-dao.md">SourceTableName</a></strong> プロパティ設定になります。</p></td>
+<td><p>データの元のソースである外部データベースのテーブルの名前を格納している <strong>Variant</strong> (サブタイプが<strong>String</strong>)。ソースの文字列は、新しい <strong>TableDef</strong> オブジェクトの <strong><a href="tabledef-sourcetablename-property-dao.md">SourceTableName</a></strong> プロパティの設定値になります。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Connect</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>開いているデータベース、パススルー クエリで使用されるデータベース、またはリンク テーブルのソースに関する情報を格納している、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。 有効な接続文字列の詳細については、<strong><a href="tabledef-connect-property-dao.md">Connect</a></strong> プロパティを参照してください。</p></td>
+<td><p>公開データベース、パススルー クエリで使用されるデータベース、またはリンクされたテーブル、これらのソースに関する情報を格納している <strong>Variant</strong> (サブタイプが <strong>String</strong>)。有効な接続文字列の詳細については、<strong><a href="tabledef-connect-property-dao.md">Connect</a></strong> プロパティを参照してください。</p></td>
 </tr>
 </tbody>
 </table>
@@ -85,11 +85,10 @@ TableDef
 
             **CreateTableDef** メソッドの使用時に省略可能な引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に、適切な代入ステートメントを使用して対応するプロパティを設定またはリセットできます。オブジェクトの追加後は、一部のプロパティは変更できません。詳細については、各プロパティのトピックを参照してください。
 
-name が示すオブジェクトが既にコレクションのメンバーである場合や、追加する **TableDef** オブジェクトまたは **[Field](field-object-dao.md)** オブジェクトに無効なプロパティを指定した場合は、**[Append](tabledefs-append-method-dao.md)** メソッドを使用すると実行時エラーが発生します。 また、 **TableDef** オブジェクトの **Field** を少なくとも 1 つ定義しないと、 **TableDef** オブジェクトを **TableDefs** コレクションに追加できません。
+名前が既にコレクションのメンバーであるオブジェクトを参照している場合や、追加する **TableDef** または **[Field](field-object-dao.md)** オブジェクトに無効なプロパティを指定した場合は、 **[Append](tabledefs-append-method-dao.md)** メソッドを使用するとランタイム エラーが発生します。また、**TableDef** オブジェクトの **Field** を少なくとも 1 つ定義しないと、 **TableDef** オブジェクトを **TableDefs** コレクションに追加できません。
 
 
-            **
-            [TableDefs](tabledefs-collection-dao.md)** コレクションから **TableDef** オブジェクトを削除するには、コレクションの **[Delete](tabledefs-delete-method-dao.md)** メソッドを使用します。
+            **[TableDefs](tabledefs-collection-dao.md)** コレクションから **TableDef** オブジェクトを削除するには、コレクションの **[Delete](tabledefs-delete-method-dao.md)** メソッドを使用します。
 
 ## <a name="example"></a>例
 

@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1c65d2df-86a3-48d5-9fec-a9040f3b878c
 description: このOutlookソーシャル コネクタ (OSC) プロバイダー リファレンスでは、OSC プロバイダーの機能拡張を使用して OSC プロバイダーを開発する方法について説明します。
-ms.openlocfilehash: 24f8eabe33103f53e848f055b72fd402bc5dd89a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 78a4ed1fe9a88fe2f90b88ed2aa97aafcdce4e5c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327161"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583045"
 ---
 # <a name="getting-started-with-developing-an-outlook-social-connector-provider"></a>ソーシャル コネクタ プロバイダーの開発Outlook開始する
 
@@ -29,7 +29,7 @@ ms.locfileid: "32327161"
     
 - [OSC](relating-the-osc-with-outlook-and-social-networks.md)とソーシャル Outlook関連付け : OSC がユーザーとソーシャル ネットワークを接続するOutlookを示します。 また、この参照の残りの部分では、"ソーシャル ネットワーク"、"フレンド"、"友人以外"、"連絡先" など、一般的な用語を使用する方法も定義します。
     
-- [プロバイダーの開発を学習するためのクイック ステップ](quick-steps-for-learning-to-develop-a-provider.md): OSC プロバイダーの開発を学ぶ手順の概要を示します。
+- [プロバイダーの開発ラーニング](quick-steps-for-learning-to-develop-a-provider.md)クイック ステップ: OSC プロバイダーの開発に関する手順の概要を示します。
     
 - [技術要件](technical-requirements.md): サポートされているプログラミング言語、COM 可視性の要件、メソッドの戻り値の型の要件、および OSC プロバイダー拡張 DLL の詳細について説明します。
     

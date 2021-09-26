@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822070(v=office.15)
 ms:contentKeyID: 48547232
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: a046359f39611e38b9e517495f54041f876addfc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 54350b61c59c53f173b491b8f4724c8c1c14f004
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302850"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589247"
 ---
 # <a name="querydefopenrecordset-method-dao"></a>QueryDef.OpenRecordset メソッド (DAO)
 
@@ -22,9 +22,9 @@ ms.locfileid: "32302850"
 
 ## <a name="syntax"></a>構文
 
-*expression* .OpenRecordset(***Type***, ***Options***, ***LockEdit***)
+*expression* .OpenRecordset(***Type** _, _*_Options_*_, _*_LockEdit_**)
 
-*expression*: **QueryDef** オブジェクトを表す変数。
+*式***QueryDef** オブジェクトを表す変数。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -38,7 +38,7 @@ ms.locfileid: "32302850"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/省略可能</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -48,7 +48,7 @@ ms.locfileid: "32302850"
 <td><p><em>Type</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>開く <strong>Recordset</strong> の型を示す <strong><a href="recordsettypeenum-enumeration-dao.md">RecordsetTypeEnum</a></strong> 定数。</p><p><strong>注</strong>: Microsoft Access ワークスペースで <STRONG>Recordset</STRONG> を開き、型を指定しない場合、可能であれば<STRONG>OpenRecordset</STRONG>はテーブル タイプの <STRONG>Recordset</STRONG> を作成します。 If you specify a linked table or query, <STRONG>OpenRecordset</STRONG> creates a dynaset-type <STRONG>Recordset</STRONG>.</p>
+<td><p>開く <strong>Recordset</strong> の型を示す <strong><a href="recordsettypeenum-enumeration-dao.md">RecordsetTypeEnum</a></strong> 定数。</p><p><strong>注</strong>: タイプを指定せずに <STRONG>Recordset</STRONG> を Microsoft Access ワークスペースで開くと、可能な場合は <STRONG>OpenRecordset</STRONG> はテーブルタイプの <STRONG>Recordset</STRONG> を作成します。 If you specify a linked table or query, <STRONG>OpenRecordset</STRONG> creates a dynaset-type <STRONG>Recordset</STRONG>.</p>
 </td>
 </tr>
 <tr class="even">

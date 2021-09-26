@@ -2,15 +2,15 @@
 title: MFCMAPI を使用して Outlook プロファイルを作成する
 ms.date: 05/18/2016
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 85581bc7-2d81-46af-8836-adef39c933fc
 description: MFCMAPI は、MAPI ストアへのアクセスを提供し、ExchangeおよびOutlookの調査を容易にし、MAPI 開発のサポートを開発者に提供します。
-ms.openlocfilehash: 8a300ad53918b22cc3de5554a1e3c29289cd9365
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 0776619fc97ee94ae557b72cf7576b9ff6b779ae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345991"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610854"
 ---
 # <a name="create-an-outlook-profile-using-mfcmapi"></a>MFCMAPI を使用して Outlook プロファイルを作成する
 
@@ -60,7 +60,7 @@ MFCMAPI は、MAPI ストアへのアクセスを提供し、ExchangeおよびOu
   
 ||||
 |:-----|:-----|:-----|
-|**Property** <br/> |**Tag** <br/> |**説明** <br/> |
+|**プロパティ** <br/> |**Tag** <br/> |**説明** <br/> |
 | PR_PROFILE_USER_SMTP_EMAIL_ADDRESS_W  <br/> |0x6641001F  <br/> |ユーザーの SMTP アドレス  <br/> |
 |PR_DISPLAY_NAME_W  <br/> |0x3001001F  <br/> |ユーザーの表示名  <br/> |
 |PR_STORE_PROVIDERS  <br/> |0x3D000102  <br/> |**EMSMDB** セクションにあるこのプロパティの値を構成し、対応する一致するプロパティの UID を更新します。  <br/> |

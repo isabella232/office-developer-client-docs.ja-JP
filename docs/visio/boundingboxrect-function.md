@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1f66d2b2-ec9e-cd58-7642-96850fe4589e
 description: 図形の境界ボックスの、指定した端の座標を返します。
-ms.openlocfilehash: 0018118eb0991fe9dc1da0eb000566b69d8a4b4d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: da94210970e1c3331380e1ee319b0ba59230ea68
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418072"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598718"
 ---
 # <a name="boundingboxrect-function"></a>BOUNDINGBOXRECT 関数
 

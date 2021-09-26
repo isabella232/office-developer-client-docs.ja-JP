@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagRuleState
 api_type:
 - COM
 ms.assetid: f62f3055-b855-4203-aa5c-6ba28b58c6f7
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: a0e15462cd3dc14c93155e34e47b7caac2c04087
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c28c4af9117ca0aee1b19ecef812c2636860c45c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338613"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599495"
 ---
 # <a name="pidtagrulestate-canonical-property"></a>PidTagRuleState 標準プロパティ
 

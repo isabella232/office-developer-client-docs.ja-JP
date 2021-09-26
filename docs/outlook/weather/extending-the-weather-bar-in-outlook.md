@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3b355b98-dd7d-4f16-8257-367e5dd61b34
 description: Outlook 2013 で天気予報バー用サードパーティの天気予報 Web サービスをプラグインとして指定して、ユーザーの選択する場所の天気予報データを提供する方法について説明します。
-ms.openlocfilehash: 0423e149306bf7562dd525f1b7460a63cbace372
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 080fea920848139b61e738cb5f78a22329b57daf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336577"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598970"
 ---
 # <a name="extending-the-weather-bar-in-outlook"></a>Outlook の天気予報バーの拡張
 
@@ -208,7 +208,7 @@ Contoso Weather は、以下の XML を応答として返すことにより、�
 
 Outlook は既定で MSN Weather を使用することになっていますが、ユーザーが天気予報バーをカスタマイズして別の天気予報サービスを使用するようにした後、再び MSN Weather を使用する場合、ユーザーは、単に Windows レジストリの **WeatherServiceUrl** キーを削除することができます。このレジストリ キーを削除すると、Outlook がリセットされ、MSN Weather が使用されるようになります。 
   
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>結論
 <a name="ol15_weatherbar_conclusion"> </a>
 
 Outlook 予定表の天気予報バーでは、指定された場所の天気予報を提供するため、既定値として MSN Weather が使用されます。ユーザーは、指定した場所の天気予報情報を表示できます。また、Outlook Weather Location XML Schema および Outlook Weather Information XML Schema をサポートし、Outlook とのシンプルな Web サービス プロトコルに準拠することにより、天気予報バーにサードパーティ天気予報データ サービスを統合することもできます。

@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 115a1499-ae55-f85c-676c-e78f478c4703
-ms.openlocfilehash: 1b16a32462f997ab80b0b6ef64df8eb202740c47
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 2492b9e1fb52bc231a1009dd4447d3ac815091a7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542290"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598571"
 ---
 # <a name="geometry_type-complextype-visio-xml"></a>Geometry_Type complexType (Visio XML)
 
@@ -59,7 +59,7 @@ ms.locfileid: "34542290"
 |**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
 |[Cell](cell-element-geometry-sectionvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> ||
-|[行](row-element-geometry-sectionvisio-xml.md) <br/> |GeometryRow_Type  <br/> ||
+|[Row](row-element-geometry-sectionvisio-xml.md) <br/> |GeometryRow_Type  <br/> ||
    
 ### <a name="attributes"></a>属性
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm2055
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 75601a1e-6b1a-27ee-a2bd-69e569315982
 description: 図形を構成する直線と円弧の頂点の座標を一覧表示する行を格納します。
-ms.openlocfilehash: d45f960ecc697dc6f0f5a0efa18e6cbbc6e4fff0
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 38418376f6296fb3b6f1bbb4e9722421dfcf2440
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542283"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598578"
 ---
 # <a name="geometry-section"></a>[Geometry] セクション
 

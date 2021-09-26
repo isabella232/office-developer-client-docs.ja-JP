@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 22e3de8a-c4f2-41a4-a5b1-c5b1bf06f724
 description: ソーシャル コネクタ 2013 (OSC) プロバイダーを開発する場合は、次Outlookに従う必要があります。
-ms.openlocfilehash: 6a48a56d8065fb9a176ca6527340c99551cdb52a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 97405b70b225e7e5c961e07f31bdd5eeb3247bb2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425919"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608964"
 ---
 # <a name="best-practices-for-developing-a-provider"></a>プロバイダー開発のためのベスト プラクティス
 

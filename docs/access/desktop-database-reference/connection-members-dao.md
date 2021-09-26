@@ -1,22 +1,22 @@
 ---
-title: Connection メンバー (DAO)
+title: 接続メンバー (DAO)
 TOCTitle: Connection Members
 ms:assetid: 94fc60ee-b6f2-cf08-b008-ed51bf7e7f8c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197681(v=office.15)
 ms:contentKeyID: 48546422
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 098f44d87390351c23e61000ecbe47eae35810ae
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: df81fc1fe146832799d8af3b02c13ce8df65d5a7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295906"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597587"
 ---
-# <a name="connection-members-dao"></a>Connection メンバー (DAO)
+# <a name="connection-members-dao"></a>接続メンバー (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 > [!NOTE]
 > [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。 Connection オブジェクトは、ODBC データベースへの接続を表します (ODBCDirect ワークスペースのみ)。
@@ -40,7 +40,7 @@ ms.locfileid: "32295906"
 <td><p>保留中の非同期メソッド呼び出しの実行をキャンセルします (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="connection-close-method-dao.md">閉じる</a></strong></p></td>
+<td><p><strong><a href="connection-close-method-dao.md">Close</a></strong></p></td>
 <td><p>開いている <strong>Connection</strong> を閉じます。</p></td>
 </tr>
 <tr class="odd">
@@ -49,11 +49,11 @@ ms.locfileid: "32295906"
 </tr>
 <tr class="even">
 <td><p><strong><a href="connection-execute-method-dao.md">Execute</a></strong></p></td>
-<td><p>指定したオブジェクトのアクション クエリまたは SQL ステートメントを実行します。</p></td>
+<td><p>指定されたオブジェクトに対してアクション クエリを実行するか、SQL ステートメントを実行します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="connection-openrecordset-method-dao.md">OpenRecordset</a></strong></p></td>
-<td><p>新しい <strong><a href="recordset-object-dao.md">Recordset</a></strong> オブジェクトを作成して <strong>Recordsets</strong> コレクションに追加します。</p></td>
+<td><p>新しい <strong><a href="recordset-object-dao.md">Recordset</a></strong> オブジェクトを作成し、<strong>Recordsets</strong> コレクションに追加します。</p></td>
 </tr>
 </tbody>
 </table>
@@ -75,11 +75,11 @@ ms.locfileid: "32295906"
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="connection-connect-property-dao.md">Connect</a></strong></p></td>
-<td><p>開いている接続のソースに関する情報を提供する値を設定または取得します。 値の取得と設定が可能な文字列型 (<strong>String</strong>) の値です。</p></td>
+<td><p>開いている接続のソースに関する情報を提供する値を設定または取得します。値の取得および設定が可能です。文字列型 ( <strong>String</strong> ) の値を使用します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="connection-database-property-dao.md">Database</a></strong></p></td>
-<td><p>この接続に対応する<strong><a href="database-object-dao.md">Database</a></strong>オブジェクトを返します (ODBCDirect ワークスペースのみ)。</p></td>
+<td><p><strong><a href="connection-database-property-dao.md">データベース</a></strong></p></td>
+<td><p>この接続に <strong><a href="database-object-dao.md">対応する Database</a></strong> オブジェクトを返します (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="connection-name-property-dao.md">Name</a></strong></p></td>
@@ -87,7 +87,7 @@ ms.locfileid: "32295906"
 </tr>
 <tr class="even">
 <td><p><strong><a href="connection-querydefs-property-dao.md">QueryDefs</a></strong></p></td>
-<td><p>指定した接続のすべての <strong>QueryDef</strong> オブジェクトを含む <strong>QueryDefs</strong> コレクションを返します。 読み取り専用です。</p></td>
+<td><p>指定した接続のすべての <strong>QueryDef</strong> オブジェクトを含む <strong>QueryDefs</strong> コレクションを返します。値の取得のみ可能です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="connection-querytimeout-property-dao.md">QueryTimeout</a></strong></p></td>
@@ -99,15 +99,15 @@ ms.locfileid: "32295906"
 </tr>
 <tr class="odd">
 <td><p><strong><a href="connection-recordsets-property-dao.md">Recordsets</a></strong></p></td>
-<td><p>指定した接続の開いているレコードセットをすべて含む <strong>Recordsets</strong> コレクションを返します。 値の取得のみ可能です。</p></td>
+<td><p>指定した接続の開いているレコードセットをすべて含む <strong>Recordsets</strong> コレクションを返します。値の取得のみ可能です。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="connection-stillexecuting-property-dao.md">StillExecuting</a></strong></p></td>
 <td><p>非同期操作 (つまり、 <strong>dbRunAsync</strong> オプションを指定して呼び出したメソッド) の実行が完了したかどうかを示します (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="connection-transactions-property-dao.md">トランザクション</a></strong></p></td>
-<td><p>オブジェクトがトランザクションをサポートしているかどうかを示す値を返します。 読み取り専用の <strong>Boolean</strong> です。</p></td>
+<td><p><strong><a href="connection-transactions-property-dao.md">Transactions</a></strong></p></td>
+<td><p>オブジェクトがトランザクションをサポートしているかどうかを示す値を取得します。値の取得のみ可能です。ブール型 ( <strong>Boolean</strong>) の値を使用します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="connection-updatable-property-dao.md">Updatable</a></strong></p></td>

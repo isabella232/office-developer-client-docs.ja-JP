@@ -6,13 +6,13 @@ ms.audience: Developer
 ms.topic: overview
 ms.assetid: f5310aa0-75f5-4c33-897e-8cae5de2100a
 description: ソリューションの開発と Visio のカスタマイズを行う方法を記載したコンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、技術記事をご覧ください。
-localization_priority: Priority
-ms.openlocfilehash: b54e784576fa32d6a6ae654bb192bb2a58a85aa4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 3975645a6129e1b415b16138f76c85cd7d2b87ee
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359578"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603187"
 ---
 # <a name="visio"></a>Visio
 

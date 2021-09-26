@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249781(v=office.15)
 ms:contentKeyID: 48546911
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 947a6355d07ba2e9fb9b2a9b76c4c1941d83e668
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9773bbe764c110826319a1e68119981d27fbf4af
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296886"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607144"
 ---
 # <a name="basic-rds-programming-model"></a>基本的な RDS プログラミング モデル
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 RDS は、次のような状況にあるクライアント アプリケーションを対象としています。このクライアント アプリケーションでは、サーバー上で実行するプログラムと、目的の情報を返すために必要なパラメーターを指定します。サーバー上で呼び出されたプログラムは、指定されたデータ ソースにアクセスして情報を取得し、必要に応じてそのデータを処理し、結果の情報は使用しやすい形式でクライアント アプリケーションに返します。RDS は、次に示す一連の操作を実行する手段を提供します。
 

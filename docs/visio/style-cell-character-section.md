@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251249
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4372f1e1-f0a9-2f63-ff79-58f2afdceed5
 description: 図形のテキスト ブロック内にあるテキストの範囲に適用される文字の書式を表示します。
-ms.openlocfilehash: 349bdc42485aa511011aeb85a43f1ab3e4ea853d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4171ceac4ea092b3ed70bb06c11b1113d61ef1b5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411429"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603390"
 ---
 # <a name="style-cell-character-section"></a>[Style] セル ([Character] セクション)
 

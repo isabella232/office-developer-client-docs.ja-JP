@@ -3,17 +3,17 @@ title: 複雑な定期実行予定アイテムを作成する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: da9626da-5ba5-4f18-954c-4e23971d23e8
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: d44bf5cccd7e846530eae0c03b8d3ff525f3c012
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4087c02bcb827bf5e321706950af012386c9421f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344535"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610889"
 ---
 # <a name="create-a-complex-recurrent-appointment-item"></a>複雑な定期実行予定アイテムを作成する
   
@@ -44,7 +44,7 @@ MAPI を使用して定期的な予定アイテムを作成できます。
   
 関数  `AddAppointment` は、名前付きプロパティの数を設定します。 名前付きプロパティの詳細と作成方法については[、「Using MAPI to Create to Create Outlook 2007 Items](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)」を参照してください。 予定アイテムに使用される名前付きプロパティは複数のプロパティ セットを占めるので [、IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) メソッドに渡すパラメーターを構築する場合は注意が必要です。 
   
-この  `AddAppointment` 関数は、いくつかのヘルパー関数を使用して、さまざまな予定関連のプロパティの構造を構築します。 ヘルパー  `BuildTimeZoneStruct` 関数  `BuildTimeZoneDefinition` とヘルパー関数は、タイム ゾーン関連のプロパティを指定する構造を構築するために使用されます。 タイム ゾーン関連のプロパティは **、dispidTimeZoneStruct** ([PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md)) **、dispidTimeZoneDesc** ([PidLidTimeZoneDescription](pidlidtimezonedescription-canonical-property.md)) **、dispidApptTZDefRecur** ([PidLidAppointmentTimeZoneDefinitionRecur](pidlidappointmenttimezonedefinitionrecur-canonical-property.md)) **、dispidApptTZDefStartDisplay** ([PidLidAppointmentTimeZoneDefinitionStartDisplay](pidlidappointmenttimezonedefinitionstartdisplay-canonical-property.md)) 、 **および dispidApptTZDefEndDisplay** ([PidLidAppointmentTimeZoneDefinitionEndDisplay](pidlidappointmenttimezonedefinitionenddisplay-canonical-property.md)) と、それらは [[MS-OXOCAL]](https://msdn.microsoft.com/library/cc425490%28v=EXCHG.80%29.aspx)の対応するセクションで説明されています。 
+この  `AddAppointment` 関数は、いくつかのヘルパー関数を使用して、さまざまな予定関連のプロパティの構造を構築します。 ヘルパー  `BuildTimeZoneStruct` 関数  `BuildTimeZoneDefinition` とヘルパー関数は、タイム ゾーン関連のプロパティを指定する構造を構築するために使用されます。 タイム ゾーン関連のプロパティは **、dispidTimeZoneStruct** ([PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md)) **、dispidTimeZoneDesc** ([PidLidTimeZoneDescription](pidlidtimezonedescription-canonical-property.md)) **、dispidApptTZDefRecur** ([PidLidAppointmentTimeZoneDefinitionRec)](pidlidappointmenttimezonedefinitionrecur-canonical-property.md)です。 **dispidApptTZDefStartDisplay** ([PidLidAppointmentTimeZoneDefinitionStartDisplay](pidlidappointmenttimezonedefinitionstartdisplay-canonical-property.md)) 、 **および dispidApptTZDefEndDisplay** ([PidLidAppointmentTimeZoneDefinitionEndDisplay](pidlidappointmenttimezonedefinitionenddisplay-canonical-property.md)) で説明します。 [[MS-OXOCAL] の対応するセクション](https://msdn.microsoft.com/library/cc425490%28v=EXCHG.80%29.aspx)。 
 
 `BuildGlobalObjectID`この関数は **、LID_GLOBAL_OBJID** ([PidLidGlobalObjectId](pidlidglobalobjectid-canonical-property.md)) プロパティと **dispidCleanGlobalObjId** ([PidLidCleanGlobalObjectId](pidlidcleanglobalobjectid-canonical-property.md)) プロパティを指定する構造を構築するために使用されます。これは [、[MS-OXOCAL]](https://msdn.microsoft.com/library/cc425490%28v=EXCHG.80%29.aspx)の対応するセクションで説明されています。 **dispidApptRecur プロパティを** 指定する構造体は、関数を使用して構築 `BuildWeeklyAppointmentRecurrencePattern` されます。 
 

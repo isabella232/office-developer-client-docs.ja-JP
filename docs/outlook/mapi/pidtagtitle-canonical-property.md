@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagTitle
 api_type:
 - COM
 ms.assetid: f35bbcc3-15dd-40ab-9bf4-bdb21f95d464
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2501ea7c4be08b0bec3c2d65e6a504df47dfc488
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4b9570f390f296807a482d955ea22855d15e3017
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32358766"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599278"
 ---
 # <a name="pidtagtitle-canonical-property"></a>PidTagTitle 標準プロパティ
 

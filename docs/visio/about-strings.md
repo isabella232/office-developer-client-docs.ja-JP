@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 f1_keywords:
 - Vis_DSS.chm82251826
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e1174d8f-70cb-4595-7906-889da15367db
 description: '数式には文字列を含めることができます。 プロンプト セル、図形データ項目値、テキスト フィールドなどで文字列の出力を書式設定するには、書式形式を指定します。 出力は、数値と単位の組み合わせ、文字列、日付/時刻、期間、または通貨として書式設定できます。 たとえば、picture0 #/10 uuformats the number-unit pair 10.9cm as10 9/10 cm.'
-ms.openlocfilehash: aa95e11db387913edbb40292f7da6a0f4b8a5cf7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: edc9cf9f2eb6a6b32d88944e0443f449084b79bc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409518"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598879"
 ---
 # <a name="about-strings"></a>文字列について
 

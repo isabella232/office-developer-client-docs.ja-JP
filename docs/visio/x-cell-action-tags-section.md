@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm60093
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d13e362b-9b69-30c5-003a-9c5df2aa29f6
 description: アクション タグ ボタンを配置する図形のローカル座標の x 座標位置。
-ms.openlocfilehash: 9f26bec81563c9813a88ed5c69730266834ee101
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 76b334daf087fd2fcacf1fd706cfb3186e87110c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431114"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603194"
 ---
 # <a name="x-cell-action-tags-section"></a>[X] セル ([Action Tags] セクション)
 

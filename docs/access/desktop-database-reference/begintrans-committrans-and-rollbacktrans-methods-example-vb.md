@@ -1,25 +1,25 @@
 ---
-title: BeginTrans、CommitTrans、RollbackTrans メソッドの使用例 (VB)
+title: BeginTrans メソッド、CommitTrans メソッド、RollbackTrans メソッドの例 (VB)
 TOCTitle: BeginTrans, CommitTrans, and RollbackTrans methods example (VB)
 ms:assetid: 12fce322-dba7-9159-8a09-7f6daf1a80ed
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248904(v=office.15)
 ms:contentKeyID: 48543357
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 57efd2b4361a48eff122ce2ee2ed2d0f68d438b1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a904c56275a66c4ba53b1b9c21e39a0f8ea6a1e5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296851"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607116"
 ---
 # <a name="begintrans-committrans-and-rollbacktrans-methods-example-vb"></a>BeginTrans メソッド、CommitTrans メソッド、RollbackTrans メソッドの使用例 (VB)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-この例では、データベースの ***Titles*** テーブル内のすべての心理学書の書籍種別を変更します。 [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで、***Titles*** テーブルに対するすべての変更を分離するトランザクションを開始した後、[CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで変更を保存します。 [RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドを使用すると、 [Update](update-method-ado.md) メソッドで保存した変更を変更前の状態に戻すことができます。
+次の使用例は、データベースの * Titles _ テーブル内のすべての心理学の書籍 **の** 種類を変更します。 [BeginTrans メソッドが](begintrans-committrans-and-rollbacktrans-methods-ado.md)トランザクションを開始し、_ *_Titles_** テーブルに加えたすべての変更を分離した後 [、CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)メソッドは変更を保存します。 [RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドを使用すると、 [Update](update-method-ado.md) メソッドで保存した変更を変更前の状態に戻すことができます。
 
 ```vb 
  

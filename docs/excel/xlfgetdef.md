@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 keywords:
 - xlfgetdef
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 68f5edbd-9040-46d3-acd5-dd51ca82f6fa
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 014db553156849d84bd07e0e416f8cb3fefb4e0b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c6f3f8de3fc3a4fcc3c6ade8d3378e578f4fb193
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421999"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611197"
 ---
 # <a name="xlfgetdef"></a>xlfGetDef
 
@@ -60,10 +60,10 @@ _pxTypeNum_ (**xltypeNum**)
   
 |**Excel で定義された名前**|**_pxDefText_**|**_pxDocumentText_**|**_pxTypeNum_**|**戻り値**|
 |:-----|:-----|:-----|:-----|:-----|
-|Sheet4 の指定の範囲には「Sales」という名前が付いています。  <br/> |"R2C2:R9C6"  <br/> |"Sheet4"  <br/> |\<省略\>  <br/> |"Sales"  <br/> |
-|Sheet4 の値 100 は、「Constant」として定義されています。  <br/> |"100"  <br/> |"Sheet4"  <br/> |\<省略\>  <br/> |"Constant"  <br/> |
-|Sheet4 の指定の数式には「SumTotal」という名前が付いています。  <br/> |"SUM(R1C1:R10C1)"  <br/> |"Sheet4"  <br/> |\<省略\>  <br/> |"SumTotal"  <br/> |
-|アクティブなシートの非表示名「Counter」として 3 が定義されています。  <br/> |"3"  <br/> |\<省略\>  <br/> |2  <br/> |"Counter"  <br/> |
+|Sheet4 の指定の範囲には「Sales」という名前が付いています。  <br/> |"R2C2:R9C6"  <br/> |"Sheet4"  <br/> |\<omitted\>  <br/> |"Sales"  <br/> |
+|Sheet4 の値 100 は、「Constant」として定義されています。  <br/> |"100"  <br/> |"Sheet4"  <br/> |\<omitted\>  <br/> |"Constant"  <br/> |
+|Sheet4 の指定の数式には「SumTotal」という名前が付いています。  <br/> |"SUM(R1C1:R10C1)"  <br/> |"Sheet4"  <br/> |\<omitted\>  <br/> |"SumTotal"  <br/> |
+|アクティブなシートの非表示名「Counter」として 3 が定義されています。  <br/> |"3"  <br/> |\<omitted\>  <br/> |2  <br/> |"Counter"  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

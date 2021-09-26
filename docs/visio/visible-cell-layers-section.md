@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm1110
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 02048012-a814-410b-f26e-56fcfbe106e6
 description: レイヤーに属している図形が図面ページに表示されるかどうかを指定します。
-ms.openlocfilehash: 4266debc318c839bdd29fa818d11b5e1da669a9e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4e5e91a0a13d2e0b6f084095da813d35316f6bc8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405451"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597724"
 ---
 # <a name="visible-cell-layers-section"></a>[Visible] セル ([Layers] セクション)
 
