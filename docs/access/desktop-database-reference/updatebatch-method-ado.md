@@ -6,29 +6,29 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249416(v=office.15)
 ms:contentKeyID: 48545420
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9d269a9012588a7b82505ac2e28466151715cbb0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7ccb06a047fc7f1fcb304765350588f69e7f6808
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32313577"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621655"
 ---
 # <a name="updatebatch-method-ado"></a>UpdateBatch メソッド (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 保留中の一括更新をすべてディスクに書き込みます。
 
 ## <a name="syntax"></a>構文
 
-*recordset*。UpdateBatch の影響のある*レコード*
+*recordset*.UpdateBatch *AffectRecords*
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
-|*影響のあるレコード* |省略可能です。 [UpdateBatch](affectenum.md) メソッドで処理するレコードの数を示す **AffectEnum** 値を指定します。|
+|*AffectRecords* |省略可能です。 [UpdateBatch](affectenum.md) メソッドで処理するレコードの数を示す **AffectEnum** 値を指定します。|
 
 ## <a name="remarks"></a>注釈
 

@@ -1,22 +1,22 @@
 ---
-title: event理由列挙 (Access デスクトップデータベースリファレンス)
+title: EventReasonEnum (Access デスクトップ データベースリファレンス)
 TOCTitle: EventReasonEnum
 ms:assetid: 0639928e-d0ef-3db3-887e-f3da03913bc7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248815(v=office.15)
 ms:contentKeyID: 48543047
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4948cd9a5f1436e4e1afc61bef87b63675e115ff
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 315a6a3f2dac22a3938c81d350dbd62078f1dade
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293330"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612205"
 ---
 # <a name="eventreasonenum"></a>EventReasonEnum
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 イベントが発生した理由を表します。
 
@@ -37,58 +37,58 @@ ms.locfileid: "32293330"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adrsnaddnew</strong></p></td>
-<td><p>1-d</p></td>
+<td><p><strong>adRsnAddNew</strong></p></td>
+<td><p>1</p></td>
 <td><p>新しいレコードが追加されました。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adrsnclose</strong></p></td>
-<td><p>i-9</p></td>
+<td><p><strong>adRsnClose</strong></p></td>
+<td><p>9 </p></td>
 <td><p><strong>Recordset</strong> が閉じられました。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adrsndelete</strong></p></td>
-<td><p>pbm-2</p></td>
+<td><p><strong>adRsnDelete</strong></p></td>
+<td><p>2</p></td>
 <td><p>レコードが削除されました。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adrsnfirstchange</strong></p></td>
-<td><p>#</p></td>
+<td><p><strong>adRsnFirstChange</strong></p></td>
+<td><p>11</p></td>
 <td><p>レコードに初めての変更が加えられました。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adrsnmove</strong></p></td>
-<td><p>個</p></td>
+<td><p><strong>adRsnMove</strong></p></td>
+<td><p>10</p></td>
 <td><p><strong>Recordset</strong> 内のレコード ポインターが移動しました。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adrsnmovefirst</strong></p></td>
-<td><p>個</p></td>
+<td><p><strong>adRsnMoveFirst</strong></p></td>
+<td><p>12 </p></td>
 <td><p>レコード ポインターが <strong>Recordset</strong> の最初のレコードに移動しました。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adrsnmovelast</strong></p></td>
-<td><p>約</p></td>
+<td><p><strong>adRsnMoveLast</strong></p></td>
+<td><p>15 </p></td>
 <td><p>レコード ポインターが <strong>Recordset</strong> の最後のレコードに移動しました。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adrsnmovenext</strong></p></td>
-<td><p>スリー</p></td>
+<td><p><strong>adRsnMoveNext</strong></p></td>
+<td><p>13</p></td>
 <td><p>レコード ポインターが <strong>Recordset</strong> の次のレコードに移動しました。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adRsnMovePrevious</strong></p></td>
-<td><p>第</p></td>
+<td><p>14 </p></td>
 <td><p>レコード ポインターが <strong>Recordset</strong> の前のレコードに移動しました。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adrsnrequery</strong></p></td>
-<td><p>7</p></td>
+<td><p><strong>adRsnRequery</strong></p></td>
+<td><p>7 </p></td>
 <td><p><a href="recordset-object-ado.md">Recordset</a> が再クエリされました。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adrsnresynch 同期</strong></p></td>
-<td><p>~</p></td>
+<td><p><strong>adRsnResynch</strong></p></td>
+<td><p>8 </p></td>
 <td><p><strong>Recordset</strong> がデータベースと再同期しました。</p></td>
 </tr>
 <tr class="even">
@@ -98,17 +98,17 @@ ms.locfileid: "32293330"
 </tr>
 <tr class="odd">
 <td><p><strong>adRsnUndoDelete</strong></p></td>
-<td><p>シックス</p></td>
+<td><p>6 </p></td>
 <td><p>レコードの削除が取り消されました。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRsnUndoUpdate</strong></p></td>
-<td><p>2/4</p></td>
+<td><p>4 </p></td>
 <td><p>レコードの更新が取り消されました。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adrsnupdate</strong></p></td>
-<td><p>1/3</p></td>
+<td><p><strong>adRsnUpdate</strong></p></td>
+<td><p>3</p></td>
 <td><p>既存のレコードが更新されました。</p></td>
 </tr>
 </tbody>
@@ -130,49 +130,49 @@ ms.locfileid: "32293330"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums のイベント</p></td>
+<td><p>AdoEnums.EventReason.ADDNEW</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums を閉じます。</p></td>
+<td><p>AdoEnums.EventReason.CLOSE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums の削除</p></td>
+<td><p>AdoEnums.EventReason.DELETE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums の変更</p></td>
+<td><p>AdoEnums.EventReason.FIRSTCHANGE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums の移動</p></td>
+<td><p>AdoEnums.EventReason.MOVE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums のためのイベント</p></td>
+<td><p>AdoEnums.EventReason.MOVEFIRST</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums のためのイベント</p></td>
+<td><p>AdoEnums.EventReason.MOVELAST</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums のためのイベント</p></td>
+<td><p>AdoEnums.EventReason.MOVENEXT</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums MOVEPREVIOUS</p></td>
+<td><p>AdoEnums.EventReason.MOVEPREVIOUS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums の再クエリ</p></td>
+<td><p>AdoEnums.EventReason.REQUERY</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums の再同期</p></td>
+<td><p>AdoEnums.EventReason.RESYNCH</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums UNDOADDNEW</p></td>
+<td><p>AdoEnums.EventReason.UNDOADDNEW</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums UNDODELETE</p></td>
+<td><p>AdoEnums.EventReason.UNDODELETE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums UNDOUPDATE</p></td>
+<td><p>AdoEnums.EventReason.UNDOUPDATE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums の更新</p></td>
+<td><p>AdoEnums.EventReason.UPDATE</p></td>
 </tr>
 </tbody>
 </table>

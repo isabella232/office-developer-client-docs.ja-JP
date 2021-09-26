@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 398c141c-8a40-7605-254a-2ee7cc0a7af5
 description: 図面内の 2 Connect間の接続ごとに 1 つの要素を格納します。
-ms.openlocfilehash: d421068926a40a8f7c24a783388d06091700211f
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 9d9e009d1deeec997b20cf4084f1f8d1b15fa1fd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538712"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613010"
 ---
 # <a name="connects-element-pagecontents_type-complextype-visio-xml"></a>Connects 要素 (PageContents_Type complexType) (Visio XML)
 

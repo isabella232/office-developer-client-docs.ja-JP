@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm3010
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 183fb303-4acb-a486-7b97-f11f7ae3978f
 description: 楕円の中心点の x 座標と y 座標、および楕円上の 2 つの点を含む。
-ms.openlocfilehash: 5121ba0c7bf97eaeaaf8a438dd40eccddada4362
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 15b1047f790d58d65b745c052330b2441cb08a4c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421831"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619107"
 ---
 # <a name="ellipse-row-geometry-section"></a>[Ellipse] 行 ([Geometry] セクション)
 

@@ -3,17 +3,17 @@ title: TNEF ストリーム構造
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 8eda1251-3858-4832-ac43-d817b4a7ea59
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7e77c043e4f152740af9bdb2b8fb5b7bedece1c0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f4898c6bfab4ee93c70455999f3e95e47be6bd23
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430204"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619625"
 ---
 # <a name="tnef-stream-structure"></a>TNEF ストリーム構造
 
@@ -31,7 +31,7 @@ TNEF ストリーム内のすべての整数は、リトル エンディアン �
   
 TNEF 実装では、属性識別子を使用して属性を対応する MAPI プロパティにマップします。 属性識別子は、2 つの単語値で作られた 32 ビットの符号なし整数です。 高次単語は、文字列やバイナリなどのデータ型を示し、低次単語は特定の属性を識別します。 高次ワードのデータ型は次のとおりです。
   
-|**Type**|**値**|
+|**型**|**値**|
 |:-----|:-----|
 |atpTriples  <br/> |0x0000  <br/> |
 |atpString  <br/> |0x0001  <br/> |

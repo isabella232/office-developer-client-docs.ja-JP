@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm3015
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7ceb30a8-1d05-feff-35d8-08a198784a27
 description: 楕円円弧の端点の x 座標と y 座標、円弧上のコントロール ポイントの x 座標と y 座標、x 軸から楕円の長軸への角度、楕円の長軸と短軸の比率を含む。
-ms.openlocfilehash: c6db7560a05652ca3bfcadb2fd4857ac39370562
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 53bc69b8047a21b0e0cb4c6c2d567de3d8dd69e0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421404"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612856"
 ---
 # <a name="ellipticalarcto-row-geometry-section"></a>[EllipticalArcTo] 行 ([Geometry] セクション)
 

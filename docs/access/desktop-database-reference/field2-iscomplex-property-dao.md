@@ -1,34 +1,34 @@
 ---
-title: Field2 プロパティ (DAO)
+title: Field2.IsComplex プロパティ (DAO)
 TOCTitle: IsComplex Property
 ms:assetid: ffc90e6e-e3ee-4f9b-ca6b-615199300d45
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837318(v=office.15)
 ms:contentKeyID: 48548970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d24229a0fc3122cc8a9fb20b041fc9fadc5ccb0a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2bfec22e23aef53abe3a175a7647c2a0acaf58bb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292784"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618169"
 ---
-# <a name="field2iscomplex-property-dao"></a>Field2 プロパティ (DAO)
+# <a name="field2iscomplex-property-dao"></a>Field2.IsComplex プロパティ (DAO)
 
-**適用先:** Access 2013、Office 2013 
+**適用先**: Access 2013、Office 2013 
 
-指定されたフィールドが複数値データ型かどうかを示すブール型 ( **Boolean**) の値を返します。 値の取得および設定が可能です。
+指定されたフィールドが複数値データ型かどうかを示すブール型 ( **Boolean**) の値を返します。値の取得および設定が可能です。
 
 ## <a name="version-information"></a>バージョン情報
 
-追加されたバージョン: Access 2007
+追加バージョン: Access 2007
 
 ## <a name="syntax"></a>構文
 
-*式*。IsComplex
+*式* .IsComplex
 
-*式***Field2**オブジェクトを表す変数を取得します。
+*式***Field2** オブジェクトを表す変数。
 
 ## <a name="example"></a>例
 

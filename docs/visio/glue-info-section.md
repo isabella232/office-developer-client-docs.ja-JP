@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm2060
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a1ed2846-a358-5515-a34d-66e0cc6e56d3
 description: 1-D 図形が別の図形に接着されたときに 1-D 図形に対して生成された数式を格納します。
-ms.openlocfilehash: c8591b7ce7c91ad53b0b3b7411402e5ebd09e490
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1cbb95e622daea489fe28d5f4f32b763b6f45b51
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428446"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612751"
 ---
 # <a name="glue-info-section"></a>[Glue Info] セクション
 

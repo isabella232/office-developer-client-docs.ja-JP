@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249327(v=office.15)
 ms:contentKeyID: 48545100
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 38183cd8306f2425a362bd2650639120a2d16845
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: bec6427627697750d3c8e0ee82c32c3818e06e53
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288968"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611974"
 ---
 # <a name="microsoft-ole-db-provider-for-internet-publishing"></a>Microsoft OLE DB Provider for Internet Publishing
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 Microsoft OLE DB Provider for Internet Publishing を使用すると、ADO から、Microsoft FrontPage や Microsoft Internet Information Server が提供するリソースにアクセスできます。このリソースには、HTML ファイルなどの Web ソース ファイルや Windows 2000 の Web フォルダーも含まれます。
 
-## <a name="connection-string-parameters"></a>接続文字列のパラメーター
+## <a name="connection-string-parameters"></a>接続文字列パラメーター
 
 このプロバイダーに接続するには、[ConnectionString](connectionstring-property-ado.md) プロパティの *Provider* 引数を次のように設定します。
 
@@ -31,7 +31,7 @@ MSDAIPP.DSO
 
 この値は、[Provider](provider-property-ado.md) プロパティを使用して設定または取得することもできます。
 
-## <a name="typical-connection-string"></a>標準的な接続文字列
+## <a name="typical-connection-string"></a>一般的な接続文字列
 
 このプロバイダーの標準的な接続文字列を次に示します。
 
@@ -40,7 +40,7 @@ MSDAIPP.DSO
 "Provider=MSDAIPP.DSO;Data Source=ResourceURL;User ID=userName;Password=userPassword;" 
 ```
 
-\-や
+\-or-
 
 ```vb 
  
@@ -67,7 +67,7 @@ MSDAIPP.DSO
 </tr>
 <tr class="even">
 <td><p><strong>Data Source</strong> または <strong>URL</strong></p></td>
-<td><p>web フォルダーに公開されているファイルまたはディレクトリの URL を指定します。</p></td>
+<td><p>Web フォルダーに公開されているファイルまたはディレクトリの URL を指定します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>User ID</strong></p></td>

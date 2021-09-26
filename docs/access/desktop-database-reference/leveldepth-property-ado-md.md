@@ -1,23 +1,23 @@
 ---
-title: leveldepth プロパティ (ADO MD)
+title: LevelDepth プロパティ (ADO MD)
 TOCTitle: LevelDepth property (ADO MD)
 ms:assetid: ba680f1e-2731-ad6b-4cee-cd3d8d114788
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249894(v=office.15)
 ms:contentKeyID: 48547366
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 664a21f8b642c8db27580993089268e5d7b6f4ae
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7a791f2eb4567b48b5316a8351214ae130370059
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290007"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612023"
 ---
-# <a name="leveldepth-property-ado-md"></a>leveldepth プロパティ (ADO MD)
+# <a name="leveldepth-property-ado-md"></a>LevelDepth プロパティ (ADO MD)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 階層のルートとメンバーとの間にあるレベルの数を示します。
 

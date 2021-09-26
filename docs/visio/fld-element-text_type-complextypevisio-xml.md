@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 92d90240-012b-9598-c893-6e7085813aa5
 description: 対応するフィールド要素のテキスト フィールドの挿入ポイントを示します。
-ms.openlocfilehash: efacb7ed11968dec5d5c2f62b0ca3e3bcd8580c0
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
-ms.translationtype: HT
+ms.openlocfilehash: 56a0927b36c996ce163194163381494452eb6776
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539615"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612793"
 ---
 # <a name="fld-element-text_type-complextype-visio-xml"></a>fld 要素 (Text_Type complexType) (Visio XML)
 
-対応する**フィールド** 要素のテキスト フィールドの挿入ポイントを示します。 
+対応する **フィールド** 要素のテキスト フィールドの挿入ポイントを示します。 
   
 ## <a name="element-information"></a>要素の情報
 

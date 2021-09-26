@@ -10,21 +10,21 @@ f1_keywords:
 - vbaac10.chm195788
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a2ef6c5f38064ae3253cd7e0e58732f63294ceb3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 08fd34680942d47bc6a45abcb54587d7fb29c65e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306686"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611610"
 ---
 # <a name="repaintobject-macro-action"></a>RepaintObject マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 "RepaintObject/オブジェクトの再描画" アクションを使用すると、表示が更新されていないデータベース オブジェクトを再描画できます。データベース オブジェクトが指定されている場合はそのオブジェクトを再描画し、指定されていない場合はアクティブなデータベース オブジェクトを再描画します。このとき、コントロールの再計算も行われます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "RepaintObject/オブジェクトの再描画" アクションの引数は次のとおりです。
 
@@ -41,12 +41,12 @@ ms.locfileid: "32306686"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Object Type/オブジェクトの種類</strong></p></td>
+<td><p><strong>オブジェクトの種類</strong></p></td>
 <td><p>再描画するオブジェクトの種類を指定します。[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>オブジェクトの種類</strong>] ボックスで、[<strong>テーブル</strong>]、[<strong>クエリ</strong>]、[<strong>フォーム</strong>]、[<strong>レポート</strong>]、[<strong>マクロ</strong>]、[<strong>モジュール</strong>]、[<strong>データ アクセス ページ</strong>]、[<strong>サーバー ビュー</strong>]、[<strong>ダイアグラム</strong>]、[<strong>ストアド プロシージャ</strong>]、または [<strong>関数</strong>] をクリックします。この引数を指定しない場合は、アクティブ オブジェクトが選択されます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>オブジェクト名</strong></p></td>
-<td><p>再描画するオブジェクトの名前を指定します。 [ <strong>オブジェクト名</strong>] ボックスには、データベース内のオブジェクトのうち、 <strong>Object Type/オブジェクトの種類</strong> 引数で選択した種類のオブジェクトがすべて表示されます。 If you leave the <strong>Object Type</strong> argument blank, leave this argument blank also.</p></td>
+<td><p>再描画するオブジェクトの名前。 [ <strong>オブジェクト名</strong>] ボックスには、データベース内のオブジェクトのうち、 <strong>Object Type/オブジェクトの種類</strong> 引数で選択した種類のオブジェクトがすべて表示されます。 If you leave the <strong>Object Type</strong> argument blank, leave this argument blank also.</p></td>
 </tr>
 </tbody>
 </table>
@@ -62,7 +62,7 @@ Microsoft Access では、他の保留中のタスクの実行が終わるまで
 
 > [!NOTE]
 > - This action doesn't cause a requery of the database, so it doesn't show new and changed records or remove deleted records from the object's underlying table or query. Use the **Requery** action to requery the source of the object or one of its controls. Use the **ShowAllRecords** action to display the most recent records and remove any applied filters.
-> - **RepaintObject**アクションの動作は、[**ホーム**] タブの [**レコード**] グループで [最新の情報に**更新**] をクリックした場合と同じです。これには、フォームおよびデータシートに現在表示されているレコードに対して行った変更やその他のユーザーが表示されます。
+> - **RepaintObject** アクションは、[ホーム] タブの [レコード] グループで [更新] をクリックした場合と同じ効果はありません。これは、ユーザーまたは他のユーザーがフォームやデータシートで現在表示されているレコードに対して行った変更を示します。 
 
-Visual Basic for applications (VBA) モジュールで**RepaintObject**アクションを実行するには、 **DoCmd**オブジェクトの**RepaintObject**メソッドを使用します。
+Vba モジュール **で RepaintObject** アクションを実行Visual Basic for Applications **DoCmd** オブジェクトの **RepaintObject** メソッドを使用します。
 

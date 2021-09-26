@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 858a3191-420a-4065-9180-ebd8503d1eef
 description: 反射が図形からオフセットされる距離を 0.0 ~ 100.0 のポイントで指定します。
-ms.openlocfilehash: cc0aca484a77602b78523819cd4f01d78a9ff86f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: adba2d59d7003f1d06185a4099ca35ea1729919b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433025"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618582"
 ---
 # <a name="reflectiondist-cell-additional-effect-properties-section"></a>[ReflectionDist] セル ([追加効果のプロパティ] セクション)
 

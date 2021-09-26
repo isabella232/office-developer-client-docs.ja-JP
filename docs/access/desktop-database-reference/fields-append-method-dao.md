@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff820791(v=office.15)
 ms:contentKeyID: 48546719
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: ec3cacbe1f1c7ac5d6bda16bdd47891dc58ebfe0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: f233e85fd6de5b7bfb31b0e4e1211ce7612996af
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292588"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618128"
 ---
 # <a name="fieldsappend-method-dao"></a>Fields.Append メソッド (DAO)
 
@@ -38,7 +38,7 @@ ms.locfileid: "32292588"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/省略可能</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>

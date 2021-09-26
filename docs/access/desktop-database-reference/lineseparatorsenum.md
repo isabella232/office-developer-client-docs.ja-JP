@@ -1,22 +1,22 @@
 ---
-title: LineSeparatorsEnum (Access デスクトップデータベースリファレンス)
+title: LineSeparatorsEnum (Access デスクトップ データベース リファレンス)
 TOCTitle: LineSeparatorsEnum
 ms:assetid: 3b0c58a8-1617-f9b1-c0c8-928580b2dade
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249148(v=office.15)
 ms:contentKeyID: 48544277
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c5ab57cab4829d565ea0e9ac8bffdb0790a34c9f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a53b7029922c2014d63165ee404a164c37c2a98e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289943"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618001"
 ---
 # <a name="lineseparatorsenum"></a>LineSeparatorsEnum
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 テキスト [Stream](stream-object-ado.md) オブジェクトの行区切り記号に使われている文字を表します。
 
@@ -37,18 +37,18 @@ ms.locfileid: "32289943"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adcr</strong></p></td>
-<td><p>スリー</p></td>
+<td><p><strong>adCR</strong></p></td>
+<td><p>13</p></td>
 <td><p>復帰を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adcrlf です</strong></p></td>
+<td><p><strong>adCRLF</strong></p></td>
 <td><p>-1</p></td>
 <td><p>既定値。復帰改行を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adlf</strong></p></td>
-<td><p>個</p></td>
+<td><p><strong>adLF</strong></p></td>
+<td><p>10</p></td>
 <td><p>改行を示します。</p></td>
 </tr>
 </tbody>

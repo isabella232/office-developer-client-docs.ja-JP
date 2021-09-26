@@ -1,30 +1,30 @@
 ---
-title: Move メソッド (DAO)
+title: Recordset2.Move メソッド (DAO)
 TOCTitle: Move Method
 ms:assetid: df39c05e-c5f8-3b66-fa5f-c91b687c147d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835635(v=office.15)
 ms:contentKeyID: 48548211
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d57e73c52ca515f13d613ed3aeb9cf361054396e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4b1f6995e2c999bd2ecb03fb2fe50ebc4b297e64
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307267"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621942"
 ---
-# <a name="recordset2move-method-dao"></a>Move メソッド (DAO)
+# <a name="recordset2move-method-dao"></a>Recordset2.Move メソッド (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-**[Recordset](recordset-object-dao.md)** オブジェクトのカレント レコードの位置を移動します。
+現在のレコードの位置を **[[Recordset]](recordset-object-dao.md)** オブジェクトに移動します。
 
 ## <a name="syntax"></a>構文
 
-*式*。Move (***Rows***、 ***startbookmark***)
+*式* .Move(***Rows** _, _*_StartBookmark_**)
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -38,7 +38,7 @@ ms.locfileid: "32307267"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -47,12 +47,12 @@ ms.locfileid: "32307267"
 <tr class="odd">
 <td><p><em>Rows</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>長整数型 (Long)</strong></p></td>
+<td><p><strong>Long</strong></p></td>
 <td><p>位置を移動する行数。rows が 0 より大きい場合は、前方 (ファイルの末尾) に向かって位置が移動します。rows が 0 より小さい場合は、後方 (ファイルの先頭) に向かって位置が移動します。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>StartBookmark</em></p></td>
-<td><p>Optional</p></td>
+<td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>ブックマークを示す値。startbookmark を指定した場合、このブックマークが移動の開始位置となります。それ以外の場合は、カレント レコードが移動の開始位置となります。</p></td>
 </tr>

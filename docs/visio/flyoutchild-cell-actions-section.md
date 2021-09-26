@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm80003
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b2405457-843c-0d46-5f4f-9c413826c3f1
 description: 行が、サブ項目の子ではない行の上の最終行の子サブ項目メニューかどうかを指定します。
-ms.openlocfilehash: 85524ea33258449f5c9ee0991ac9a64f8f0eebae
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e5409d16df7b91c855a95e7b9deb2121ec4e63b3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420865"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612800"
 ---
 # <a name="flyoutchild-cell-actions-section"></a>[FlyoutChild] セル ([Actions] セクション)
 

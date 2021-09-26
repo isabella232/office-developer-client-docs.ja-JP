@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b5292f82-f299-ea96-6101-ebb799bbec9a
 description: 図面で接着が有効な場合に、図形が接着するオブジェクトを指定します。
-ms.openlocfilehash: c2966cfb8805120aca164fc2f6f28b0210923f6f
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 7e7072c518ac842542478b06f6b812f5ef7a2501
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542206"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612737"
 ---
 # <a name="gluesettings-element-window_type-complextype-visio-xml"></a>GlueSettings 要素 (Window_Type complexType) (Visio XML)
 

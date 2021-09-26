@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249228(v=office.15)
 ms:contentKeyID: 48544660
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9b4f1c46b390e1f059e57f3b7a70fc667da4b09b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 91852f8d08ae8ea7f71d079c625b9d17b7ddf427
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288926"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611932"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-jet"></a>Microsoft OLE DB Provider for Microsoft Jet
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 OLE DB Provider for Microsoft Jet を使用すると、ADO から Microsoft Jet データベースにアクセスできます。
 
@@ -64,11 +64,11 @@ Microsoft.Jet.OLEDB.4.0
 </tr>
 <tr class="odd">
 <td><p><strong>User ID</strong></p></td>
-<td><p>ユーザー名を指定します。 このキーワードを指定しない場合、既定で&quot;は&quot;、admin という文字列が使用されます。</p></td>
+<td><p>ユーザー名を指定します。 このキーワードを指定しない場合は、既定で &quot; 文字列 admin &quot; が使用されます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Password</strong></p></td>
-<td><p>ユーザー パスワードを指定します。 このキーワードが指定されていない場合、&quot;&quot;既定では空の文字列 () が使用されます。</p></td>
+<td><p>ユーザー パスワードを指定します。 このキーワードを指定しない場合、空の文字列 ( &quot; &quot; ) が既定で使用されます。</p></td>
 </tr>
 </tbody>
 </table>
@@ -93,24 +93,24 @@ OLE DB Provider for Microsoft Jet は、ADO で定義されたプロパティに
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Jet OLEDB: コンパクトに再生領域の容量<br />
+<td><p>Jet OLEDB:Compact Reclaimed Space Amount<br />
 (DBPROP_JETOLEDB_COMPACTFREESPACESIZE)</p></td>
 <td><p>データベースの最適化によって増やすことができる空き領域の推定量をバイト単位で示します。この値は、データベース接続が確立した後でのみ有効です。</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: Connection Control<br />
+<td><p>Jet OLEDB:Connection Control<br />
 (DBPROP_JETOLEDB_CONNECTIONCONTROL)</p></td>
 <td><p>ユーザーがデータベースに接続できるかどうかを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: システムデータベースの作成<br />
+<td><p>Jet OLEDB:Create System Database<br />
 (DBPROP_JETOLEDB_CREATESYSTEMDATABASE)</p></td>
 <td><p>新規データ ソースの作成時にシステム データベースを作成するかどうかを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: データベースロックモード<br />
+<td><p>Jet OLEDB:Database Locking Mode<br />
 (DBPROP_JETOLEDB_DATABASELOCKMODE)</p></td>
-<td><p>このデータベースのロック モードを示します。 最初にデータベースを開いたユーザーが、データベースを開いているときに使用されるモードを決定します。</p></td>
+<td><p>このデータベースのロック モードを示します。最初にデータベースを開いたユーザーが、データベースを開いているときに使用されるモードを決定します。</p></td>
 </tr>
 <tr class="odd">
 <td><p>Jet OLEDB:Database Password<br />
@@ -143,12 +143,12 @@ OLE DB Provider for Microsoft Jet は、ADO で定義されたプロパティに
 <td><p>非同期書き込みのためにキャッシュに保存されたデータが実際にディスクに書き込まれるまでの待ち時間を示します。この設定は、 <strong>Jet OLEDB:Shared Async Delay</strong> および <strong>Jet OLEDB:Exclusive Async Delay</strong> の値よりも優先されます。  </p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: グローバルバルクトランザクション<br />
+<td><p>Jet OLEDB:Global Bulk Transactions<br />
 (DBPROP_JETOLEDB_GLOBALBULKNOTRANSACTIONS)</p></td>
 <td><p>SQL 一括トランザクションが処理されるかどうかを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: Global Partial Bulk Ops<br />
+<td><p>Jet OLEDB:Global Partial Bulk Ops<br />
 (DBPROP_JETOLEDB_GLOBALBULKPARTIAL)</p></td>
 <td><p>データベースを開くときに使用されるパスワードを示します。</p></td>
 </tr>
@@ -175,20 +175,20 @@ OLE DB Provider for Microsoft Jet は、ADO で定義されたプロパティに
 <tr class="odd">
 <td><p>Jet OLEDB:Max Locks Per File<br />
 (DBPROP_JETOLEDB_MAXLOCKSPERFILE)</p></td>
-<td><p>データベースに配置できるロックの最大数を示します。 既定値は 9500 です。</p></td>
+<td><p>データベースに配置できるロックの最大数を示します。既定値は 9500 です。</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: 新しいデータベースパスワード<br />
+<td><p>Jet OLEDB:New Database Password<br />
 (DBPROP_JETOLEDB_NEWDATABASEPASSWORD)</p></td>
-<td><p>このデータベースに設定する新しいパスワードを示します。 元のパスワードは <strong>Jet OLEDB:Database Password</strong> に保存されます。</p></td>
+<td><p>このデータベースに設定する新しいパスワードを示します。元のパスワードは <strong>Jet OLEDB:Database Password</strong> に保存されます。  </p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: ODBC コマンドのタイムアウト<br />
+<td><p>Jet OLEDB:ODBC コマンド のタイム アウト<br />
 (DBPROP_JETOLEDB_ODBCCOMMANDTIMEOUT)</p></td>
 <td><p>Jet からのリモート ODBC クエリがタイムアウトになるまでの時間をミリ秒単位で示します。</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: テーブルロックへのページロック<br />
+<td><p>Jet OLEDB:Page Locks to Table Lock<br />
 (DBPROP_JETOLEDB_PAGELOCKSTOTABLELOCK)</p></td>
 <td><p>ロックからテーブル ロックへの昇格を試行するまでに、トランザクションでロックする必要があるページ数を示します。この値が 0 の場合、ロックは昇格されません。</p></td>
 </tr>
@@ -208,7 +208,7 @@ OLE DB Provider for Microsoft Jet は、ADO で定義されたプロパティに
 <td><p>Jet データベース エンジンの値を格納する Windows レジストリ キーを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: ISAM 統計情報のリセット<br />
+<td><p>Jet OLEDB:Reset ISAM Stats<br />
 (DBPROP_JETOLEDB_RESETISAMSTATS)</p></td>
 <td><p>パフォーマンス情報を返した後、スキーマ <strong>Recordset</strong> DBSCHEMA_JETOLEDB_ISAMSTATS のパフォーマンス カウンターをリセットするかどうかを示します。</p></td>
 </tr>
@@ -223,7 +223,7 @@ OLE DB Provider for Microsoft Jet は、ADO で定義されたプロパティに
 <td><p>ワークグループ情報ファイル (システム データベース) のパスおよびファイル名を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: トランザクションコミットモード<br />
+<td><p>Jet OLEDB:Transaction Commit Mode<br />
 (DBPROP_JETOLEDB_TXNCOMMITMODE)</p></td>
 <td><p>トランザクションがコミットされたときに、データをディスクに同期モードで書き込むか、非同期モードで書き込むかを示します。</p></td>
 </tr>
@@ -253,57 +253,57 @@ Jet プロバイダーは、プロバイダー固有の **Recordset** のプロ�
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Jet OLEDB: 一括トランザクション<br />
+<td><p>Jet OLEDB:Bulk Transactions<br />
 (DBPROP_JETOLEDB_BULKNOTRANSACTIONS)</p></td>
-<td><p>SQL の一括操作が処理されるかどうかを示します。 大量の一括操作は、リソース遅延のために、処理に失敗する場合があります。</p></td>
+<td><p>SQL の一括操作が処理されるかどうかを示します。大量の一括操作は、リソース遅延のために、処理に失敗する場合があります。</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: Enable Fat カーソル<br />
+<td><p>Jet OLEDB:Fat Cursors を有効にする<br />
 (DBPROP_JETOLEDB_ENABLEFATCURSOR)</p></td>
 <td><p>リモートの行ソースのレコードセットを作成するときに、複数の行をキャッシュするかどうかを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: Fat カーソルキャッシュサイズ<br />
+<td><p>Jet OLEDB:Fat Cursor Cache Size<br />
 (DBPROP_JETOLEDB_FATCURSORMAXROWS)</p></td>
 <td><p>リモート データ ストアの行キャッシュを使用するときに、キャッシュする行数を示します。 <strong>Jet OLEDB:Enable Fat Cursors</strong> が True ではない場合、この値は無視されます。  </p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: 不整合<br />
+<td><p>Jet OLEDB:不整合<br />
 (DBPROP_JETOLEDB_INCONSISTENT)</p></td>
 <td><p>クエリの結果で、矛盾した更新を許容するかどうかを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: ロックの粒度<br />
+<td><p>Jet OLEDB:Locking Granularity<br />
 (DBPROP_JETOLEDB_LOCKGRANULARITY)</p></td>
 <td><p>テーブルが行レベルのロックを使用して開かれているかどうかを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: ODBC パススルーステートメント<br />
+<td><p>Jet OLEDB:ODBC Pass-Through ステートメント<br />
 (DBPROP_JETOLEDB_ODBCPASSTHROUGH)</p></td>
 <td><p><strong>Command</strong> オブジェクトの SQL テキストを変更せずにバックエンドに渡すかどうかを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: Partial Bulk Ops<br />
+<td><p>Jet OLEDB:Partial Bulk Ops<br />
 (DBPROP_JETOLEDB_BULKPARTIAL)</p></td>
 <td><p>SQL DML 操作に失敗したときの Jet の動作を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: クエリの一括操作のパススルー<br />
+<td><p>Jet OLEDB:Pass through Query Bulk-Op<br />
 (DBPROP_JETOLEDB_PASSTHROUGHBULKOP)</p></td>
 <td><p><strong>Recordset</strong> を返さないクエリを変更せずにデータ ソースに渡すかどうかを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: クエリの接続文字列を渡します。<br />
+<td><p>Jet OLEDB:Pass through Query Connect String<br />
 (DBPROP_JETOLEDB_ODBCPASSTHROUGHCONNECTSTRING)</p></td>
 <td><p>リモート データ ストアへの接続に使用される Jet 接続文字列を示します。 <strong>Jet OLEDB:ODBC Pass-Through Statement</strong> が True ではない場合、この値は無視されます。  </p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: ストアドクエリ<br />
+<td><p>Jet OLEDB:Stored Query<br />
 (DBPROP_JETOLEDB_STOREDQUERY)</p></td>
 <td><p>コマンド テキストを、SQL コマンドではなく、ストアド クエリとして解釈するかどうかを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: セットのルールの検証<br />
+<td><p>Jet OLEDB:セットでのルールの検証<br />
 (DBPROP_JETOLEDB_VALIDATEONSET)</p></td>
 <td><p>列データを設定するとき、または変更をデータベースにコミットするときに、Jet 入力規則を評価するかどうかを示します。</p></td>
 </tr>
@@ -668,7 +668,7 @@ OLE DB Provider for Microsoft Jet は、開かれていない [Connection](conne
 <td><p>DBPROP_IConnectionPointContainer</p></td>
 </tr>
 <tr class="even">
-<td><p>iconverttype</p></td>
+<td><p>IConvertType</p></td>
 <td><p>DBPROP_IConvertType</p></td>
 </tr>
 <tr class="odd">
@@ -964,7 +964,7 @@ OLE DB Provider for Microsoft Jet は、開かれていない [Connection](conne
 <td><p>DBPROP_IConnectionPointContainer</p></td>
 </tr>
 <tr class="odd">
-<td><p>iconverttype</p></td>
+<td><p>IConvertType</p></td>
 <td><p>DBPROP_IConvertType</p></td>
 </tr>
 <tr class="even">

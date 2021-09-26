@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251442
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 66771ad3-0fb3-68ff-81da-d1162d37c05a
 description: 論理式が TRUE の場合は、valueiftrue を返します。 それ以外の場合は、valueiffalse を返します。
-ms.openlocfilehash: 8780bd3dd5ded1a950a5bf3f79333687f3b6843c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8364db9622d4e0432544d83c1265e2af0c4b33f6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405472"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612646"
 ---
 # <a name="if-function"></a>IF 関数
 
@@ -29,8 +29,8 @@ IF(** *logicalexpression* **, ** *valueiftrue* **, ** *valueiffalse* ** )
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _logicalexpression_ <br/> |必須  <br/> |**String** <br/> |評価する式を指定します。  <br/> |
-| _valueiftrue_ <br/> |必須  <br/> |**さまざま** <br/> |_logicalexpression が true の場合に返す_ 値。  <br/> |
-| _valueiffalse_ <br/> |必須  <br/> |**さまざま** <br/> | 論理式が  _false の場合に返す_ 値。  <br/> |
+| _valueiftrue_ <br/> |必須かどうか  <br/> |**さまざま** <br/> |_logicalexpression が true の場合に返す_ 値。  <br/> |
+| _valueiffalse_ <br/> |必須かどうか  <br/> |**さまざま** <br/> | 論理式が  _false の場合に返す_ 値。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

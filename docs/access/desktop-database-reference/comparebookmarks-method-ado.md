@@ -1,28 +1,28 @@
 ---
-title: comparebookmarks メソッド (ADO)
+title: CompareBookmarks メソッド (ADO)
 TOCTitle: CompareBookmarks method (ADO)
 ms:assetid: 826cb3c7-2f5c-284f-421d-6b7b07f14dec
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249564(v=office.15)
 ms:contentKeyID: 48545977
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 460a77284141daad1834699c4dc1775be05c5c26
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3439cb1a15d98c8e0b882ef8ba0bfd3e934f689a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296095"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612282"
 ---
-# <a name="comparebookmarks-method-ado"></a>comparebookmarks メソッド (ADO)
+# <a name="comparebookmarks-method-ado"></a>CompareBookmarks メソッド (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 2 つのブックマークを比較して、相対的な位置を示す値を返します。
 
 ## <a name="syntax"></a>構文
 
-*結果* = の*recordset*。comparebookmarks (*Bookmark1*、 *Bookmark2*)
+*result*  = *recordset*.CompareBookmarks(*Bookmark1*, *Bookmark2*)
 
 ## <a name="return-value"></a>戻り値
 
@@ -41,7 +41,7 @@ ms.locfileid: "32296095"
 
 ブックマークは、 **Recordset** オブジェクトの行を一意に識別します。カレント行のブックマークを取得するには、カレント行の [Bookmark](bookmark-property-ado.md) プロパティを使用します。
 
-ブックマークのデータ型はプロバイダー固有であり、ADO ではバリアント (Variant) 型として公開されます。 たとえば、SQL Server のブックマークは型 DBTYPE\_R8 (Double) です。 ADO では、このデータ型は、サブタイプが倍精度浮動小数点型のバリアント型として表されます。
+ブックマークのデータ型はプロバイダー固有であり、ADO ではバリアント (Variant) 型として公開されます。 たとえば、ブックマークSQL Serverタイプは DBTYPE \_ R8 (Double) です。 ADO では、このデータ型は、サブタイプが倍精度浮動小数点型のバリアント型として表されます。
 
 ブックマークを比較するとき、ADO はどのような種類の強制も試みません。値は、比較が行われるプロバイダーにそのまま渡されます。 **CompareBookmarks** メソッドに渡されるブックマークが異なる型の変数に格納されている場合は、"引数が間違った型、許容範囲外、または競合しています。" という型不一致エラーが発生します。
 

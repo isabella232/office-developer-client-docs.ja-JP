@@ -1,22 +1,22 @@
 ---
-title: FieldAttributeEnum (Access デスクトップデータベースリファレンス)
+title: FieldAttributeEnum (Access デスクトップ データベース リファレンス)
 TOCTitle: FieldAttributeEnum
 ms:assetid: 2d3a541e-a437-6108-ab0e-90c7884b3df7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249071(v=office.15)
 ms:contentKeyID: 48543967
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 079c79af3d15a6a5864a7db7f8334393258cfd42
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f7e4b9db2fee904e2beb640e8a8ffe460e54ff15
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292602"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612156"
 ---
 # <a name="fieldattributeenum"></a>FieldAttributeEnum
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 [Field](field-object-ado.md) オブジェクトの 1 つ以上の属性を表します。
 
@@ -37,38 +37,38 @@ ms.locfileid: "32292602"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adfldcachedeferred</strong></p></td>
+<td><p><strong>adFldCacheDeferred</strong></p></td>
 <td><p>0x1000</p></td>
 <td><p>プロバイダーでフィールド値がキャッシュされ、その後の読み取りはキャッシュから行われることを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adfldfixed</strong></p></td>
+<td><p><strong>adFldFixed</strong></p></td>
 <td><p>0x10</p></td>
 <td><p>フィールドが固定長データを含むことを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adfldischapter</strong></p></td>
+<td><p><strong>adFldIsChapter</strong></p></td>
 <td><p>0x2000</p></td>
 <td><p>フィールドがチャプター値を含み、この親フィールドに関連付けられた特定の子レコードセットを指定していることを示します。通常、チャプター フィールドはデータ シェイプやフィルター用に使います。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adfldiscollection</strong></p></td>
+<td><p><strong>adFldIsCollection</strong></p></td>
 <td><p>0x40000</p></td>
 <td><p>レコードが示すリソースが、テキスト ファイルなどの単純なリソースではなく、フォルダーなどのように他のリソースのコレクションであることを、フィールドが表していることを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adfldisdefaultstream</strong></p></td>
+<td><p><strong>adFldIsDefaultStream</strong></p></td>
 <td><p>0x20000</p></td>
-<td><p>フィールドが、レコードが示すリソースの既定ストリームを含むことを示します。 たとえば、既定のストリームは、web サイトのルートフォルダーの HTML コンテンツにすることができます。これは、ルート URL が指定されたときに自動的に提供されます。</p></td>
+<td><p>フィールドが、レコードが示すリソースの既定ストリームを含むことを示します。 たとえば、既定のストリームには、Web サイト上のルート フォルダーの HTML コンテンツを指定できます。これは、ルート URL を指定すると自動的に提供されます。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adfldisnullable</strong></p></td>
+<td><p><strong>adFldIsNullable</strong></p></td>
 <td><p>0x20</p></td>
 <td><p>フィールドに null 値を指定できることを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adfldisrowurl</strong></p></td>
-<td><p>「その他」</p></td>
+<td><p><strong>adFldIsRowURL</strong></p></td>
+<td><p>0x10000</p></td>
 <td><p>フィールドが、レコードが示すデータ ストアのリソースを指定する URL を含むことを示します。</p></td>
 </tr>
 <tr class="even">
@@ -82,7 +82,7 @@ ms.locfileid: "32292602"
 <td><p>フィールドからの null 値の読み取りが可能であることを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adfld/defer</strong></p></td>
+<td><p><strong>adFldMayDefer</strong></p></td>
 <td><p>0x2</p></td>
 <td><p>フィールドが遅延フィールドであることを示します。フィールド値は、レコード全体のデータ ソースから取得されず、明示的にアクセスした場合のみ取得されます。</p></td>
 </tr>
@@ -92,7 +92,7 @@ ms.locfileid: "32292602"
 <td><p>負のスケール値をサポートする列の数値を、フィールドが表していることを示します。スケールは、<a href="numericscale-property-ado.md">NumericScale</a> プロパティで指定します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adflん wid</strong></p></td>
+<td><p><strong>adFldRowID</strong></p></td>
 <td><p>0x100</p></td>
 <td><p>フィールドが書き込み禁止の永続化された行識別子を含み、行を識別するもの (レコード番号、一意識別子など) 以外に有効な値は持たないことを示します。</p></td>
 </tr>
@@ -107,7 +107,7 @@ ms.locfileid: "32292602"
 <td><p>フィールドへの書き込みが可能かどうかをプロバイダーが確認できないことを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adfldunspecified</strong></p></td>
+<td><p><strong>adFldUnspecified</strong></p></td>
 <td><p>-1<br />
 0xFFFFFFFF</p></td>
 <td><p>プロバイダーがフィールド属性を指定しないことを示します。</p></td>
@@ -136,40 +136,40 @@ ms.locfileid: "32292602"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>FieldAttribute の遅延 AdoEnums</p></td>
+<td><p>AdoEnums.FieldAttribute.CACHEDEFERRED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums</p></td>
+<td><p>AdoEnums.FieldAttribute.FIXED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums FieldAttribute</p></td>
+<td><p>AdoEnums.FieldAttribute.ISNULLABLE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums FieldAttribute</p></td>
+<td><p>AdoEnums.FieldAttribute.LONG</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums FieldAttribute</p></td>
+<td><p>AdoEnums.FieldAttribute.MAYBENULL</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums。 FieldAttribute</p></td>
+<td><p>AdoEnums.FieldAttribute.MAYDEFER</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums FieldAttribute</p></td>
+<td><p>AdoEnums.FieldAttribute.NEGATIVESCALE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums</p></td>
+<td><p>AdoEnums.FieldAttribute.ROWID</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums FieldAttribute</p></td>
+<td><p>AdoEnums.FieldAttribute.ROWVERSION</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums FieldAttribute</p></td>
+<td><p>AdoEnums.FieldAttribute.UNKNOWNUPDATABLE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums</p></td>
+<td><p>AdoEnums.FieldAttribute.UNSPECIFIED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums</p></td>
+<td><p>AdoEnums.FieldAttribute.UPDATABLE</p></td>
 </tr>
 </tbody>
 </table>

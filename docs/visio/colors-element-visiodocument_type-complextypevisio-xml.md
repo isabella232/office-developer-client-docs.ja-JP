@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3f439c2d-78be-5f2e-fa5a-f3feb83a0234
 description: ドキュメントのカラーテーブルが含まれます。
-ms.openlocfilehash: 6f18926961583e09f83dd7921ca140c07a60ecc3
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 1459c0f70fb4705992e0c63655520ea95d49ff16
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540176"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613023"
 ---
 # <a name="colors-element-visiodocument_type-complextype-visio-xml"></a>Colors 要素 (VisioDocument_Type complexType) (Visio XML)
 

@@ -10,18 +10,18 @@ f1_keywords:
 - vbaac10.chm62122
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: d8682c19686650ab193536658c6b56961f289174
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1f1592282635cc27486562ca26c31bcea4f3b4e6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307080"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611694"
 ---
 # <a name="refreshrecord-macro-action"></a>RefreshRecord マクロ アクション
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 You can use the **RefreshRecord** action to update the underlying record source for the active form or datasheet to reflect changes made to the records in the current set.
 
@@ -39,9 +39,9 @@ The **RefreshRecord** macro action does the following in a client database:
 
 1.  アクティブ フォームまたはアクティブ データシートのレコード ソースを更新し、現在のレコード セットの行に対する変更を反映します。ODBC リンク テーブルについては、現在のレコード セットに対する変更をデータ ソースから取得します。
 
-2.  現在のレコード セットを更新し、変更を反映します。 レコードソースの行が削除されている場合は、[削除済み\#] と表示されます。
+2.  現在のレコード セットを更新し、変更を反映します。 レコード ソース内の行が削除されている場合は、[削除済み] を表示するために \# 変更されます。
 
-3.  アクティブまたはデータシートを更新して、現在の\#セットの変更されたレコードと削除されたレコードを表示します。
+3.  アクティブまたはデータシートを更新して、変更されたレコードと削除済みレコードを現在のセット \# に表示します。
 
 4.  アクティブ フォームまたはアクティブ データシートのサブフォームおよびサブレポートに再クエリを行います。
 
@@ -53,9 +53,9 @@ The **RefreshRecord** macro action does the following in a web database:
 
 1.  現在のレコード セットのベース テーブルに対する変更を、サーバーから取得します。ODBC リンク テーブルについては、現在のレコード セットに対する変更をデータ ソースから取得します。
 
-2.  現在のレコード セットを更新し、変更を反映します。 現在のセットの行が削除されている場合は、[削除\#済み] を表示するように変更されます。
+2.  現在のレコード セットを更新し、変更を反映します。 現在のセット内の行が削除されている場合は、[削除済み] を表示するために \# 変更されます。
 
-3.  アクティブなフォームまたはデータシートを更新して、現在\#のセットの変更されたレコードと削除されたレコードを表示します。
+3.  アクティブなフォームまたはデータシートを更新して、変更されたレコードと削除済みレコードを現在のセット \# に表示します。
 
 4.  アクティブ フォームまたはアクティブ データシートのサブフォームおよびサブレポートに再クエリを行います。
 

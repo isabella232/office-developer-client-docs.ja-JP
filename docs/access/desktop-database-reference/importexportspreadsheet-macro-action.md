@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm31446
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: f910393c6d7a64258e5afc7545641fc5c6778b03
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 06d633cac926015aab985420a618005d8c6774b3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612051"
 ---
 # <a name="importexportspreadsheet-macro-action"></a>ImportExportSpreadsheet マクロ アクション
 
@@ -49,7 +49,7 @@ ms.locfileid: "32291874"
 </tr>
 <tr class="even">
 <td><p><strong>Spreadsheet Type/ワークシートの種類</strong></p></td>
-<td><p>インポート元、エクスポート先、またはリンク先のワークシートの種類を指定します。このボックスでは、多数のワークシートの種類から 1 つを選択できます。既定値は [ <strong>Excel ブック</strong>] です。  </p><p><strong>注意</strong>: Lotus WK4 ファイルからインポートしたりリンク (読み取り専用) したりできますが、Access データをこのワークシート形式にエクスポートすることはできません。 また Access では、WKS または Excel バージョン 2.0 ワークシートのデータをこのアクションでインポート、エクスポート、リンクすることはサポートされなくなりました。 Excel バージョン 2.0 または Lotus .WKS 形式のワークシート データをインポートしたりリンクしたりする場合には、ワークシート データを Excel の新しいバージョンや Lotus 1-2-3 に変換してから、Access にデータをインポートまたはリンクします。</p>
+<td><p>インポート元、エクスポート先、またはリンク先のワークシートの種類を指定します。このボックスでは、多数のワークシートの種類から 1 つを選択できます。既定値は [ <strong>Excel ブック</strong>] です。  </p><p><strong>注意</strong>: Lotus WK4 ファイルからインポートしたりリンク (読み取り専用) したりできますが、Access データをこのワークシート形式にエクスポートすることはできません。また、Access では現在、このアクションでの Lotus .WKS や Excel バージョン 2.0 からのデータのインポート、エクスポート、リンクはサポートされていません。Excel バージョン 2.0 または Lotus .WKS 形式のワークシート データをインポートしたりリンクしたりする場合には、ワークシート データを Excel の新しいバージョンや Lotus 1-2-3 に変換してから、Access にデータをインポートまたはリンクします。</p>
 </td>
 </tr>
 <tr class="odd">
@@ -70,7 +70,7 @@ ms.locfileid: "32291874"
 
 
 
-</p><p><strong>注意</strong>: ワークシートにエクスポートする場合、この引数を空白のままにするにする必要があります。 範囲を入力すると、エクスポートは失敗します。</p></td>
+</p><p><strong>注意</strong>: スプレッドシートにエクスポートする場合は、この引数を空白のままにする必要があります。範囲を入力すると、エクスポートは失敗します。</p></td>
 </tr>
 </tbody>
 </table>

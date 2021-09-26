@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 16c5933f-1fa1-a180-d821-099fd6bf6e13
 description: ドキュメントのヘッダーの右側に表示されるテキスト文字列を格納します。
-ms.openlocfilehash: aeccf31b4fd3cc2d9e3c4bf5dad006cbf08f525e
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 6f3843a54bf50c358a63c8fc9c3de73b5922c292
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539069"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618876"
 ---
 # <a name="headerright-element-headerfooter_type-complextype-visio-xml"></a>HeaderRight 要素 (HeaderFooter_Type complexType) (Visio XML)
 

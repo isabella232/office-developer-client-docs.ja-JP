@@ -3,15 +3,15 @@ title: アップロード状態の読み取り
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4d45574e-df87-8c44-4aa7-d41b38406f0a
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: e8ad2acf019df3f07060c8e8c71a62afd3fca03c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1dc04a72c0eb904f97d18019aec41f5ed3d66e4b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431541"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619548"
 ---
 # <a name="upload-read-status-state"></a>アップロード状態の読み取り
 

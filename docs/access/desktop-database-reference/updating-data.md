@@ -1,23 +1,23 @@
 ---
-title: データを更新する (Access デスクトップデータベースリファレンス)
+title: データの更新 (Access デスクトップ データベースリファレンス)
 TOCTitle: Updating Data
 ms:assetid: 02e82066-77c8-cbb2-db28-98e2fc94404c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248794(v=office.15)
 ms:contentKeyID: 48542970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8e6989468e23fc1c9c611eb091172822a6ffe938
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7dca0407e500868eb21607eda996e474b0231438
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32313567"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611342"
 ---
 # <a name="updating-data"></a>データの更新
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 更新動作および更新機能は、更新モード (ロックの種類)、カーソルの種類、およびカーソル位置に大きく依存します。
 
@@ -31,5 +31,5 @@ ms.locfileid: "32313567"
 
 - [イミディエイト モード](immediate-mode.md)
 - [トランザクション処理](transaction-processing.md)
-- [バッチモード (ADO)](batch-mode.md)
+- [バッチ モード (ADO)](batch-mode.md)
 

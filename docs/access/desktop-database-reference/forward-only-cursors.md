@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249035(v=office.15)
 ms:contentKeyID: 48543834
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 65eaafe805eabbac1681aa6dcd08b6b99bb056fa
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 646be880b9e6dab22c8918603d2153f85d138ec7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292294"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612088"
 ---
 # <a name="forward-only-cursors"></a>順方向専用カーソル
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 一般的な既定のカーソルの種類は、前方のみ (またはスクロール不可) カーソルと呼ばれ、結果セットの前方だけに移動できます。前方のみカーソルは、スクロール (結果セット内を前後に移動できる機能) をサポートしておらず、結果セットの先頭から末尾の方向に行をフェッチする機能のみサポートしています。一部の前方のみカーソル (SQL Server カーソル ライブラリを使用する場合など) では、現在のユーザーが実行した (または他のユーザーがコミットした)、結果セットの行に影響する挿入、更新、および削除の各ステートメントが、行のフェッチと同時にすべて反映されます。しかし、カーソルが後方に移動できないため、行のフェッチ後にデータベースの行に加えられた変更は、カーソルを通じて反映されません。
 

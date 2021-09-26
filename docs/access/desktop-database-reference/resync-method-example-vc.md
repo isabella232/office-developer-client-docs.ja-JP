@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249229(v=office.15)
 ms:contentKeyID: 48544665
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c84619b1c4fe971eef65c00712bac1b94cbeea6e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 091d690083a8f6f9fe558579d75ae3e6f03dff9c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306560"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621921"
 ---
 # <a name="resync-method-example-vc"></a>Resync メソッドの使用例 (VC++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、[Resync](resync-method-ado.md) メソッドを使用して、静的レコードセット内のデータを更新する方法を示します。
 

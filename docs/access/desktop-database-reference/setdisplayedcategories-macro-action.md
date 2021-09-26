@@ -10,22 +10,22 @@ f1_keywords:
 - vbaac10.chm20026
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: f08b9a8980fc6f08a9f91366d38f65e4365a037e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 16467b8b471111a7210678526e3230726ce5447d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314625"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621858"
 ---
 # <a name="setdisplayedcategories-macro-action"></a>SetDisplayedCategories マクロ アクション
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 You can use the **SetDisplayedCategories** action to specify which categories are displayed under **Navigate to Category** in the title bar of the Navigation Pane. For example, if you want to prevent users from switching the Navigation Pane so that it displays objects sorted by **Created Date**, you can use this action to hide that option in the title bar's drop-down list.
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "SetDisplayedCategories/表示されるカテゴリの設定" アクションの引数は次のとおりです。
 
@@ -43,11 +43,11 @@ You can use the **SetDisplayedCategories** action to specify which categories ar
 <tbody>
 <tr class="odd">
 <td><p><strong>Show</strong></p></td>
-<td><p>カテゴリを表示する場合は [<strong>はい</strong>] を選択します。 カテゴリを非表示にする場合は [<strong>いいえ</strong>] を選択します。</p></td>
+<td><p>カテゴリを表示する場合は [<strong>はい</strong>] を選択します。カテゴリを非表示にする場合は [<strong>いいえ</strong>] を選択します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>カテゴリ</strong></p></td>
-<td><p>表示または非表示にするカテゴリの名前を入力または選択します。 すべてのカテゴリを表示または非表示にする場合は、この引数を指定しないでください。</p></td>
+<td><p><strong>分類</strong></p></td>
+<td><p>表示または非表示にするカテゴリの名前を入力または選択します。すべてのカテゴリを表示または非表示にする場合は、この引数を指定しないでください。</p></td>
 </tr>
 </tbody>
 </table>

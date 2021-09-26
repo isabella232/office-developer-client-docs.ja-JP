@@ -9,15 +9,15 @@ f1_keywords:
 - Excel4v
 keywords:
 - excel12v function [excel 2007],Excel4v function [Excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e3e96b98-c5a7-4625-95b6-a1e2d09c6d3d
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 11ab86a95dde2ad52840822b28ce4d74dd05d148
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3969fb3d9e8323b6857ea11bfed5989232287fdf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414992"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621459"
 ---
 # <a name="excel4vexcel12v"></a>Excel4v/Excel12v
 

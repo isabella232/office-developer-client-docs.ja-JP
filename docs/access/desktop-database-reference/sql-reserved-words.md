@@ -10,13 +10,13 @@ f1_keywords:
 - jetsql40.chm5277591
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 43fa81fa2f175c7b67c5de4cfda5158cc067bbac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 1ea19e7032dd1e67d8911bf7a66d51b2dc44077a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308562"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621767"
 ---
 # <a name="sql-reserved-words"></a>SQL 予約語
 

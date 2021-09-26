@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251433
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: db80f147-71a0-0b23-bc7e-fe1915dfdd21
 description: 指定された図形の回転に対するテキスト ブロックの正しい回転角度を計算して、テキストが逆さまに表示されるのを防ぐ。
-ms.openlocfilehash: 77c944d954292e231f8bacbe3c8a4433aad5d689
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f8a564160fae9fe85b531631215de536a8c28406
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429286"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612713"
 ---
 # <a name="gravity-function"></a>GRAVITY 関数
 
@@ -29,8 +29,8 @@ GRAVITY(** *angle* **,[ ** *limit1* ** ],[ ** *limit2* ** ])
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _angle_ <br/> |必須  <br/> |**String** <br/> | 図形の角度を指定します。  <br/> |
-| _limit1_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |回転の最初の制限角度を指定します。既定の制限角度は 90°です。  <br/> |
-| _limit2_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |回転の 2 番目の制限角度を指定します。既定の制限角度は 270°です。  <br/> |
+| _limit1_ <br/> |省略可能  <br/> |**String** <br/> |回転の最初の制限角度を指定します。既定の制限角度は 90°です。  <br/> |
+| _limit2_ <br/> |省略可能  <br/> |**String** <br/> |回転の 2 番目の制限角度を指定します。既定の制限角度は 270°です。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

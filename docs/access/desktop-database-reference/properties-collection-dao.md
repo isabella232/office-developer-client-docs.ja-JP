@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834455(v=office.15)
 ms:contentKeyID: 48547753
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 515d28f0d7d99359c36df79cf3b8769d8f71e06d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c7dd26ac4a150ca5daa2b0011ac9373e662f2dbb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301282"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622075"
 ---
 # <a name="properties-collection-dao"></a>Properties コレクション (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **Properties** コレクションには、オブジェクトの特定のインスタンスのすべての **[Property](property-object-dao.md)** オブジェクトが含まれます。
 
@@ -33,18 +33,18 @@ ms.locfileid: "32301282"
 
 コレクション内の組み込み **Property** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-- 対象.**プロパティ**.0
+- オブジェクト。**プロパティ**(0)
 
-- 対象.**プロパティ**("name")
+- オブジェクト。**プロパティ**("name")
 
-- 対象.**プロパティ**\! \[名前\]
+- オブジェクト。 \! プロパティ \[name\]
 
 組み込みプロパティの場合、次の構文を使用することもできます。
 
 - object.name
 
 > [!NOTE]
-> ユーザー定義のプロパティの場合は、オブジェクト全体を使用する必要があります。**プロパティ**("name") の構文を指定します。
+> ユーザー定義プロパティの場合は、完全なオブジェクトを使用する必要があります。**プロパティ**("name") 構文。
 
 同じ構文を使って、 **Property** オブジェクトの **Value** プロパティを参照することもできます。 **Property** オブジェクト自身と **Property** オブジェクトの **Value** プロパティのいずれを参照するかは、参照のコンテキストで決まります。
 

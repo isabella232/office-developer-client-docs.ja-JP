@@ -6,26 +6,26 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821731(v=office.15)
 ms:contentKeyID: 48547048
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 89ac6756ced96cf360c9d5920c48088e750383b4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4bbf52a577c0f55bbe68b7350ab29238b92c3036
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309388"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611743"
 ---
 # <a name="recordset2name-property-dao"></a>Recordset2.Name プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-指定したオブジェクトの名前を返します。 読み取り専用 **文字列** です。
+指定したオブジェクトの名前を返します。読み取り専用 **文字列** です。
 
 ## <a name="syntax"></a>構文
 
-*式*。拡張子
+*式* .名前
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 

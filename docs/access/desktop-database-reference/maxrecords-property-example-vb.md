@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250142(v=office.15)
 ms:contentKeyID: 48548241
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 41353af2f91d7177bfb6425b0e082da3fba2f679
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f0cdacebe9ac576d69fa07de764d6285bc2e4905
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289715"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617966"
 ---
 # <a name="maxrecords-property-example-vb"></a>MaxRecords プロパティの使用例 (VB)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 次の例では、[MaxRecords](maxrecords-property-ado.md) プロパティを使って、***Titles*** テーブル中の最も価格の高い 10 タイトルを含む [Recordset](recordset-object-ado.md) を開きます。
 

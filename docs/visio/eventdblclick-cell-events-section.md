@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251312
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ca949013-f998-1bce-39e5-ac6f68ab2392
 description: 図形をダブルクリックしたときに評価されるイベント セルです。
-ms.openlocfilehash: a50e88ecd8e432629e246f7038dfcc9626725cc5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7e3fc2568d4afbeb041057aa78790953a2357acc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438219"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619078"
 ---
 # <a name="eventdblclick-cell-events-section"></a>[EventDblClick] セル ([Events] セクション)
 

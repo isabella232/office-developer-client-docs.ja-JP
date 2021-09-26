@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249405(v=office.15)
 ms:contentKeyID: 48545376
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d79d060922c6e7f28209242ebe82821c2ba97bfd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5d68acfb2ef210ed4d7da6b36bf0940a43ee43d5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288989"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622194"
 ---
 # <a name="microsoft-cursor-service-for-ole-db-ado-service-component"></a>Microsoft Cursor Service for OLE DB (ADO サービス コンポーネント)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 Microsoft Cursor Service for OLE DB は、データ プロバイダーのカーソル サポート機能を補完します。その結果、すべてのデータ プロバイダーで機能の統一感が向上します。
 
@@ -99,7 +99,7 @@ Recordset1.Properties.Item("Command Time out") = 50
 </tr>
 <tr class="odd">
 <td><p><a href="reshape-name-property-dynamic-ado.md">Reshape Name</a></p></td>
-<td><p><strong>Recordset</strong> の名前を示します。 現在またはそれ以降のデータ シェイプ コマンドで参照される場合があります。</p></td>
+<td><p><strong>Recordset</strong> の名前を示します。現在またはそれ以降のデータ シェイプ コマンドで参照される場合があります。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="resync-command-property-dynamic-ado.md">Resync Command</a></p></td>
@@ -160,7 +160,7 @@ Cursor Service for OLE DB は、特定の組み込みプロパティの動作に
 </tr>
 <tr class="even">
 <td><p><a href="locktype-property-ado.md">LockType</a></p></td>
-<td><p><strong>Recordset</strong> で利用可能なロックの種類を補完します。 一括更新を可能にします。</p></td>
+<td><p><strong>Recordset</strong> で利用可能なロックの種類を補完します。一括更新を可能にします。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="sort-property-ado.md">Sort</a></p></td>

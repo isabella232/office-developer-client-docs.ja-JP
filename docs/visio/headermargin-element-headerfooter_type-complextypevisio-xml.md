@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2bb0f4c5-eacf-e09b-2fce-dcff2d927557
 description: ドキュメントのヘッダーの余白を指定します。
-ms.openlocfilehash: b7c055e818c490399df66e3e7ba626afc9645851
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: f7ea78ce1887375ed0af5b238ae33583301b8572
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539128"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612695"
 ---
 # <a name="headermargin-element-headerfooter_type-complextype-visio-xml"></a>HeaderMargin 要素 (HeaderFooter_Type complexType) (Visio XML)
 

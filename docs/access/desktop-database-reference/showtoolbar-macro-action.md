@@ -10,25 +10,25 @@ f1_keywords:
 - vbaac10.chm27417
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 01ba59ce0898068788adb9269b3203794d1f31d4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 17a88c2b05c6bb66ab0d5e10c38bf17f302f2da4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306476"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611505"
 ---
 # <a name="showtoolbar-macro-action"></a>ShowToolbar マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 You can use the **ShowToolbar** action to display or hide a group of commands on the **Add-Ins** tab.
 
 > [!NOTE]
 > - The **ShowToolbar** action does not affect shortcut menus.
-> - [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> - このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 "ShowToolbar/ツールバーの表示" アクションの引数は次のとおりです。
 
@@ -50,7 +50,7 @@ You can use the **ShowToolbar** action to display or hide a group of commands on
 </tr>
 <tr class="even">
 <td><p><strong>Show</strong></p></td>
-<td><p>グループを表示するかどうか、また、どのビューで表示または非表示にするかを指定します。 既定では、 <strong>[はい]</strong> (グループを常に表示) にします。 グループを常に表示する場合は [はい]、 <strong></strong>適切なフォームまたはレポートがアクティブな場合にのみグループを表示する場合は [いいえ<strong>]</strong>を選択し、常にグループを非表示にする場合は [<strong>いいえ</strong>] を選択します。</p></td>
+<td><p>グループを表示するかどうか、また、どのビューで表示または非表示にするかを指定します。 既定値は <strong>[はい]</strong> です (グループをすべての時間で表示します)。 [<strong>はい]</strong>を選択すると、グループをすべての<strong></strong>回で表示できます。適切なフォームまたはレポートがアクティブな場合にのみグループを表示するには[適切]、グループを非表示にする場合は<strong>[いいえ</strong>] を選択します。</p></td>
 </tr>
 </tbody>
 </table>

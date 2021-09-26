@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821452(v=office.15)
 ms:contentKeyID: 48546941
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: b9bdc243aae48bd928468362cb86ca077f4abe52
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 6c857c0723b4efdc14189192c7bdb9dc2b860fe6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307638"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611820"
 ---
 # <a name="recordsetrecordcount-property-dao"></a>Recordset.RecordCount プロパティ (DAO)
 
@@ -28,7 +28,7 @@ ms.locfileid: "32307638"
 
 ## <a name="remarks"></a>注釈
 
-**RecordCount** プロパティを使用して、**Recordset** オブジェクトまたは **TableDef** オブジェクトのアクセス済みのレコード数を調べます。 ダイナセット タイプ、スナップショット タイプ、または前方スクロール タイプの **Recordset** オブジェクトでは、すべてのレコードがアクセス済みになるまで、そのオブジェクトに含まれている合計レコード数は **RecordCount** プロパティに示されません。 最後のレコードにアクセスした後、**Recordset** オブジェクト内または **TableDef** オブジェクト内にある削除されていないレコードの合計数が **RecordCount** プロパティに示されます。 最後のレコードがアクセスされるように強制するには、**Recordset** オブジェクトに対して **[MoveLast](recordset-movelast-method-dao.md)** メソッドを使用します。 また、SQL **Count** 関数を使用して、クエリから返される概算のレコード数を調べることもできます。
+**RecordCount** プロパティを使用して、**Recordset** オブジェクトまたは **TableDef** オブジェクトのアクセス済みのレコード数を調べます。ダイナセット タイプ、スナップショット タイプ、または前方スクロール タイプの **Recordset** オブジェクトでは、すべてのレコードがアクセス済みになるまで、そのオブジェクトに含まれている合計レコード数は **RecordCount** プロパティに示されません。最後のレコードにアクセスした後、**Recordset** オブジェクト内または **TableDef** オブジェクト内にある削除されていないレコードの合計数が **RecordCount** プロパティに示されます。最後のレコードをアクセス済みにするには、**Recordset** オブジェクトに対して **[MoveLast](recordset-movelast-method-dao.md)** メソッドを使用します。また、SQL **Count** 関数を使用して、クエリから返される概算のレコード数を調べることもできます。
 
 > [!NOTE]
 > [!メモ] 新しく開いた **Recordset** オブジェクトに、 **MoveLast** メソッドを使用して値を設定するとパフォーマンスが低下します。 **Recordset** を開いた直後に正確な **RecordCount** プロパティの値が必要な場合を除き、コードの他の部分で **Recordset** オブジェクトに値が設定されるまで待機してから、 **RecordCount** プロパティを確認することをお勧めします。

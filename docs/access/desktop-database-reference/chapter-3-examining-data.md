@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249474(v=office.15)
 ms:contentKeyID: 48545648
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9fcf837a02c40d11fecfa56b8aa34ac80a848411
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 29e882685fe06d98984d15a4d5bd7e517f794a6c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296459"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618519"
 ---
 # <a name="chapter-3-examining-data"></a>第 3 章: データの検査
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 2 章では、データ ソースのデータを **Recordset** オブジェクトとして取得する方法について説明しました。この章では、 **Recordset** 間を移動してそのデータを表示する方法を含め、 **Recordset** の詳細について説明します。
 
@@ -67,27 +67,27 @@ End Sub
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>フィールド0<br />
+<th><p>フィールド 0<br />
 Name = ProductID</p></th>
-<th><p>フィールド1<br />
+<th><p>フィールド 1<br />
 Name = ProductName</p></th>
-<th><p>フィールド2<br />
+<th><p>フィールド 2<br />
 Name = UnitPrice</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>7</p></td>
+<td><p>7 </p></td>
 <td><p>Uncle Bob's Organic Dried Pears</p></td>
 <td><p>30.0000</p></td>
 </tr>
 <tr class="even">
-<td><p>第</p></td>
+<td><p>14 </p></td>
 <td><p>Tofu</p></td>
 <td><p>23.2500</p></td>
 </tr>
 <tr class="odd">
-<td><p>個</p></td>
+<td><p>28</p></td>
 <td><p>Rssle Sauerkraut</p></td>
 <td><p>45.6000</p></td>
 </tr>
@@ -105,10 +105,10 @@ Name = UnitPrice</p></th>
 </table>
 
 
-次のセクションでは、このサンプル**Recordset**でのカーソルの現在の位置を特定する方法について説明します。
+次のセクションでは、このサンプル Recordset でカーソルの現在の位置を見つける方法について **説明します**。
 
 この章では、次のトピックについて説明します。
 
-- [現在のレコードを検索する (ADO)](locating-the-current-record.md)
-- [データ間を移動する (ADO)](navigating-through-the-data.md)
+- [カレント レコードの検索 (ADO)](locating-the-current-record.md)
+- [データを移動する (ADO)](navigating-through-the-data.md)
 - [Recordset 構造について (ADO)](understanding-recordset-structure.md)

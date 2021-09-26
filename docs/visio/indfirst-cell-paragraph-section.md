@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251254
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0f2e362a-3ace-787d-6326-b5bf707f0727
 description: 図形のテキスト ブロック内にある各段落の先頭行について、段落の左インデントからインデントする距離を表します。この値は、図面の縮尺による影響を受けません。図面の縮尺を変更しても、先頭行のインデントは変わりません。
-ms.openlocfilehash: aa6d9fd14a40f4fe6b269d9750f603d8faf1d550
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 16b3d13afa81958d1b428b417c28683441703fd9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410323"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612604"
 ---
 # <a name="indfirst-cell-paragraph-section"></a>[IndFirst] セル ([Paragraph] セクション)
 

@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823095(v=office.15)
 ms:contentKeyID: 48547604
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: cf89b61a65c11f09d5a07e52caeee5ad416c118a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c45f71ed079badfaa6843b5a12734bb82a2e553a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288372"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611911"
 ---
 # <a name="openform-macro-action"></a>OpenForm マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 " **OpenForm/フォームを開く** " アクションを使用すると、フォーム ビュー、フォーム デザイン ビュー、印刷プレビュー、またはデータシート ビューのいずれかで、フォームを開くことができます。フォームを開くときのデータ入力モードやウィンドウ モードの設定を行ったり、フォームで表示するレコードを制限したりできます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 **OpenForm/フォームを開く** アクションの引数は次のとおりです。
 
@@ -41,8 +41,10 @@ ms.locfileid: "32288372"
 <td><p>開くフォームの名前を指定します。 [マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>フォーム名</strong>] ボックスには、カレント データベース内のフォームがすべて表示されます。 この引数は省略できません。 ライブラリ データベースで "<strong>OpenForm/フォームを開く</strong>" アクションが定義されているマクロを実行すると、この名前のフォームが、最初にライブラリ データベースで検索され、次にカレント データベースで検索されます。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>View</strong></p></td>
-<td><p>フォームを開くときのビューを指定します。 [<strong>ビュー</strong>] ボックスで、[<strong>フォーム ビュー</strong>]、[<strong>デザイン ビュー</strong>]、[<strong>印刷プレビュー</strong>]、[<strong>データシート ビュー</strong>]、[<strong>ピボットテーブル ビュー</strong>]、または [<strong>ピボットグラフ ビュー</strong>] をクリックします。 既定値は [<strong>フォーム ビュー</strong>] です。</p><p><strong>注</strong>: " <STRONG>View/ビュー</STRONG> " 引数の設定値は、フォームの<STRONG>DefaultView</STRONG>プロパティと<STRONG>ViewsAllowed</STRONG>プロパティの設定値より優先されます。 たとえば、フォームの "<STRONG>ViewsAllowed/ビュー設定</STRONG>" プロパティが [<STRONG>データシート</STRONG>] に設定されていても、"<STRONG>OpenForm/フォームを開く</STRONG>" アクションを使用すると、フォーム ビューでフォームを開くことができます。</p></td>
+<td><p><strong>表示</strong></p></td>
+<td><p>フォームを開くときのビューを指定します。[<strong>ビュー</strong>] ボックスで、[<strong>フォーム ビュー</strong>]、[<strong>デザイン ビュー</strong>]、[<strong>印刷プレビュー</strong>]、[<strong>データシート ビュー</strong>]、[<strong>ピボットテーブル ビュー</strong>]、または [<strong>ピボットグラフ ビュー</strong>] をクリックします。既定値は [<strong>フォーム ビュー</strong>] です。  
+ 
+</p><p><strong>メモ</strong>:<STRONG>引数 View は</STRONG>、フォームの DefaultView プロパティと<STRONG>ViewsAllowed</STRONG>プロパティの設定を上書きします。 <STRONG></STRONG> たとえば、フォームの "<STRONG>ViewsAllowed/ビュー設定</STRONG>" プロパティが [<STRONG>データシート</STRONG>] に設定されていても、"<STRONG>OpenForm/フォームを開く</STRONG>" アクションを使用すると、フォーム ビューでフォームを開くことができます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Filter Name/フィルター名</strong></p></td>
@@ -50,7 +52,7 @@ ms.locfileid: "32288372"
 </tr>
 <tr class="even">
 <td><p><strong>Where Condition</strong></p></td>
-<td><p>フォームの基になるテーブルまたはクエリからレコードを選択するために使用する、有効な SQL where 句 (where の単語を除く) または式を指定します。 " <strong>filter Name/フィルター名</strong>" 引数を使用してフィルターを選択すると、この where 句がフィルターの結果に適用されます。 フォームを開いて、そのレコードを別のフォームのコントロールの値で指定されているものに制限するには、次の式を使用します。 <strong>[</strong><em>fieldname</em><strong>] = Forms! [</strong><em>formname</em><strong>]![</strong><em>controlname on other form</em><strong>]</strong>フィールド<em></em>名を、開いているフォームの基になるテーブルまたはクエリのフィールドの名前に置き換えます。 他のフォームの<em>formname</em>と<em>controlname</em>を、その他のフォームの名前と、最初のフォームのレコードを一致させるために使用する値を含む他のフォームのコントロールに置き換えます。</p><p><strong>注</strong>: " <STRONG>Where Condition/Where 条件式</STRONG>" 引数の最大長は255文字です。 これより長くて複雑な SQL WHERE 句を入力する必要がある場合は、代わりに Visual Basic for Applications (VBA) モジュールで、<STRONG>DoCmd</STRONG> オブジェクトの <STRONG>OpenForm</STRONG> メソッドを使用します。 VBA では、最大 32,768 バイトの SQL WHERE 句のステートメントを入力できます。</p></td>
+<td><p>フォームのSQLテーブルまたはクエリからレコードを選択するために Access が使用する WHERE 句 (WHERE という単語を含む) または式を指定します。 引数 Filter <strong>Name</strong> でフィルターを選択した場合、Access はフィルターの結果にこの WHERE 句を適用します。 フォームを開き、そのレコードを別のフォームのコントロールの値で指定されたレコードに制限するには、次の式<strong>を</strong>使用します。 [<em>fieldname</em><strong>] = Forms![</strong><em>formname</em><strong>]![</strong><em>他のフォームの controlname</em><strong>]</strong> <em>フィールド</em>名を、開くフォームの基になるテーブルまたはクエリ内のフィールドの名前に置き換える。 他 <em>のフォームの formname</em> と <em>controlname</em> を他のフォームの名前と、最初のフォームのレコードに一致する値を含む他のフォームのコントロールを置き換える。</p><p><strong>注</strong>: 引数 <STRONG>Where Condition</STRONG> の最大長は 255 文字です。 これより長くて複雑な SQL WHERE 句を入力する必要がある場合は、代わりに Visual Basic for Applications (VBA) モジュールで、<STRONG>DoCmd</STRONG> オブジェクトの <STRONG>OpenForm</STRONG> メソッドを使用します。 VBA では、最大 32,768 バイトの SQL WHERE 句のステートメントを入力できます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Data Mode/データ モード</strong></p></td>
@@ -63,9 +65,9 @@ ms.locfileid: "32288372"
 </tr>
 <tr class="even">
 <td><p><strong>Window Mode/ウィンドウ モード</strong></p></td>
-<td><p>フォームを開くときのウィンドウ モードを指定します。フォームのプロパティで設定されたモードで開く場合は [<strong>標準</strong>]、フォームを非表示にする場合は [<strong>非表示</strong>]、画面の下部に小さなタイトル バーにフォームを最小化する場合は [<strong>アイコン</strong>]、フォームの "<strong>Modal/作業ウィンドウ固定</strong>" および "<strong>PopUp/ポップアップ</strong>" プロパティを [<strong>はい</strong>] に設定する場合は [<strong>ダイアログ</strong>] をクリックします。既定値は [<strong>標準</strong>] です。</p><p><strong>注</strong>: 一部の<STRONG>ウィンドウモード</STRONG>引数の設定は、タブ付きドキュメントを使用している場合は適用されません。 ウィンドウを重ねて表示するように切り替えるには、次の操作を行います。</p>
+<td><p>フォームを開くときのウィンドウ モードを指定します。フォームのプロパティで設定されたモードで開く場合は [<strong>標準</strong>]、フォームを非表示にする場合は [<strong>非表示</strong>]、画面の下部に小さなタイトル バーにフォームを最小化する場合は [<strong>アイコン</strong>]、フォームの "<strong>Modal/作業ウィンドウ固定</strong>" および "<strong>PopUp/ポップアップ</strong>" プロパティを [<strong>はい</strong>] に設定する場合は [<strong>ダイアログ</strong>] をクリックします。既定値は [<strong>標準</strong>] です。</p><p><strong>注</strong>: タブ <STRONG>付きドキュメントを</STRONG> 使用する場合、一部のウィンドウ モードの引数設定は適用されません。 ウィンドウを重ねて表示するように切り替えるには、次の操作を行います。</p>
 <ol>
-<li><p>[ファイル] タブをクリックし、[<strong>オプション</strong>] をクリックします。</p></li>
+<li><p>[ファイル] タブをクリックし、[オプション] <strong>をクリックします</strong>。</p></li>
 <li><p>[ <strong>Access のオプション</strong>] ダイアログ ボックスの [ <strong>カレント データベース</strong>] をクリックします。</p></li>
 <li><p>[<strong>アプリケーション オプション</strong>] の [<strong>ドキュメント ウィンドウ オプション</strong>] で [<strong>ウィンドウを重ねて表示する</strong>] をクリックします。</p></li>
 <li><p>[<strong>OK</strong>] をクリックして、データベースを閉じて再度開きます。</p></li>
@@ -104,24 +106,24 @@ ms.locfileid: "32288372"
 <tr class="header">
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>Comment</p></th>
+<th><p>コメント</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><strong>Echo</strong></p></td>
-<td><p><strong>Echo On/エコーの設定</strong>: <strong>No/いいえ</strong></p></td>
-<td><p>画面の更新は停止しますが、マクロは実行されています。</p></td>
+<td><p><strong>Echo On/エコーの設定</strong>: <strong>いいえ</strong></p></td>
+<td><p>マクロの実行中に画面の更新を停止します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CloseWindow</strong></p></td>
-<td><p><strong>オブジェクトの種類</strong>: <strong>formobject 名前</strong>: 製品リストの<strong>保存</strong>:<strong>いいえ</strong></p></td>
-<td><p>[製品リスト] フォームを閉じます。</p></td>
+<td><p><strong>オブジェクトの種類</strong>: <strong>フォームオブジェクト名</strong>: 製品リスト<strong>保存</strong>: <strong>いいえ</strong></p></td>
+<td><p>製品/サービス項目の一覧フォームを閉じます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>OpenForm</strong></p></td>
-<td><p><strong>フォーム名</strong>: Products<strong>ビュー</strong>: <strong>formdata mode</strong>: <strong>addwindow mode</strong>: <strong>Normal</strong></p></td>
-<td><p>[製品] フォームを開きます。</p></td>
+<td><p><strong>フォーム名</strong>: 製品<strong>ビュー</strong>: <strong>フォームデータ モード</strong>: <strong>追加ウィンドウ モード</strong>: <strong>標準</strong></p></td>
+<td><p>[商品] フォームを開きます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SetValue</strong></p></td>
@@ -130,7 +132,7 @@ ms.locfileid: "32288372"
 </tr>
 <tr class="odd">
 <td><p><strong>GoToControl</strong></p></td>
-<td><p><strong>Control Name/コントロール名</strong>: CategoryID</p></td>
+<td><p>"<strong>Control Name/コントロール名</strong>":商品コード</p></td>
 <td><p>[カテゴリ ID] コントロールに移動します。</p></td>
 </tr>
 </tbody>
@@ -153,20 +155,20 @@ ms.locfileid: "32288372"
 <th><p>条件</p></th>
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>Comment</p></th>
+<th><p>コメント</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>Echo</strong></p></td>
-<td><p><strong>Echo On/エコーの設定</strong>: <strong>No/いいえ</strong></p></td>
-<td><p>画面の更新は停止しますが、マクロは実行されています。</p></td>
+<td><p><strong>Echo On/エコーの設定</strong>: <strong>いいえ</strong></p></td>
+<td><p>マクロの実行中に画面の更新を停止します。</p></td>
 </tr>
 <tr class="even">
-<td><p>IsNull ([仕入先コード])</p></td>
+<td><p>IsNull([SupplierID])</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Message/メッセージ</strong>: 表示する商品を扱う仕入先のレコードに移動し、[商品の参照] ボタンを再度クリックします。 <strong>Beep</strong>: <strong>yestype</strong>: <strong>none title</strong>: 仕入先の選択</p></td>
+<td><p><strong>Message/メッセージ</strong>: 表示する商品を扱う仕入先のレコードに移動し、[商品の参照] ボタンを再度クリックします。 <strong>Beep</strong>: <strong>YesType</strong>: <strong>NoneTitle</strong>: サプライヤーの選択</p></td>
 <td><p>[仕入先] フォームに現在の仕入先が存在しない場合、メッセージを表示します。</p></td>
 </tr>
 <tr class="odd">
@@ -184,13 +186,13 @@ ms.locfileid: "32288372"
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>OpenForm</strong></p></td>
-<td><p><strong>フォーム名</strong>: 製品リスト<strong>ビュー</strong>: <strong>DatasheetFilter Name</strong>: <strong>Where Condition</strong>: [仕入先コード] = [Forms]![仕入先]!SupplierID<strong>データモード</strong>:<strong>読み取りのみウィンドウモード</strong>:<strong>標準</strong></p></td>
+<td><p><strong>フォーム名</strong>: 製品一 <strong>覧ビュー</strong>: <strong>データシートフィルター名</strong>: <strong>条件</strong>: [SupplierID] = [Forms]![サプライヤー]![SupplierID] <strong>データ モード</strong>: <strong>読み取り専用Window モード</strong>: <strong>標準</strong></p></td>
 <td><p>[製品リスト] フォームを開き、現在の仕入先の製品を表示します。</p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p><strong>MoveAndSizeWindow</strong></p></td>
-<td><p><strong>Right</strong>: 0.7799&quot; <strong>Down</strong>: 1.8&quot;</p></td>
+<td><p><strong>右</strong>: 0.7799 &quot; <strong>Down</strong>: 1.8&quot;</p></td>
 <td><p>[製品リスト] を [仕入先] フォームの右下に配置します。</p></td>
 </tr>
 </tbody>

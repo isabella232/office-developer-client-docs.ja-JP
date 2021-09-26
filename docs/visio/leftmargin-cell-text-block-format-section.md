@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251265
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 47d84d7d-08a0-1934-d156-702da848e01c
 description: テキスト ブロックの左枠からそのブロックに含まれるテキストまでの距離を指定します。既定値は 0.1 インチです。この値は、図面の縮尺による影響を受けません。図面の縮尺を変更しても、左余白の長さは変わりません。
-ms.openlocfilehash: fee8eca8b5730e40518babe0c76549e10bebd902
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 57dcc1a0b99a8fc3d2a205555ccbee5520b1dac7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411338"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618680"
 ---
 # <a name="leftmargin-cell-text-block-format-section"></a>[LeftMargin] セル ([Text Block Format] セクション)
 

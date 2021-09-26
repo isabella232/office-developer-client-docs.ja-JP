@@ -3,15 +3,15 @@ title: プロジェクト内のWCFベースコードサンプルの前提条件
 manager: soliver
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 60d2afc8-10b6-465d-8ce8-c073da6e5054
 description: Project Server Interface (PSI) リファレンス トピックに含まれる WCF ベースのコード サンプルを使用して、Visual Studio でプロジェクトを作成するのに役立つ情報について説明します。
-ms.openlocfilehash: 2222e1b3651044c41f45e57481f80093aac67bdb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e41b16f653776d57de4961f591782ef27bce5b9d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357167"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619247"
 ---
 # <a name="prerequisites-for-wcf-based-code-samples-in-project"></a>プロジェクト内のWCFベースコードサンプルの前提条件
 
@@ -75,7 +75,7 @@ Project Server 2007 用に開発されたサンプルから変更されていな
     
     **図 1. Visual Studio での WCF ベースのアプリケーションへの参照の追加**
 
-    ![WCF 参照の追加 WCF](media/pj15_PrerequisitesWCF_AddReference.gif "の参照の追加")
+    ![WCF への参照の追加](media/pj15_PrerequisitesWCF_AddReference.gif "WCF への参照の追加")
   
 3. **コードをコピーする。**
     
@@ -125,7 +125,7 @@ WCF ベースのプロキシ アセンブリを使用する利点は、次のと
     
 **図 2. Resource サービスのメソッドに対する IntelliSense の使用**
 
-![ReadResource メソッドに Intellisense を使用する ReadResource]メソッドに(media/pj15_PrerequisitesWCF_Intellisense.gif "Intellisense")を使用する
+![ReadResource メソッドへの Intellisense の使用](media/pj15_PrerequisitesWCF_Intellisense.gif "ReadResource メソッドへの Intellisense の使用")
   
 このプロキシ アセンブリを使用する場合の欠点は、ソリューションが大規模になることと、ソリューションと共にプロキシ アセンブリの配布とインストールが必要になることです。また、プロキシ アセンブリと Intellisense ファイルの中で同じ名前空間を使用する必要があります (ただし、スクリプトを修正して、独自のプロキシ アセンブリを作成し、別々の名前空間を使用するように ProjectServerServices.xml Intellisense ファイルを変更した場合は例外です)。
   
@@ -211,7 +211,7 @@ WCF ベースのプロキシ アセンブリを使用したり、PSI サービ�
     
     **図 3. WCF ベースの Resource サービス参照の追加**
 
-    ![WCF ベースのリソース サービス参照の追加](media/pj15_PrerequisitesWCF_AddSvcReference.gif "WCF ベースのリソース サービス参照の追加")
+    ![WCF ベースの Resource サービス参照の追加](media/pj15_PrerequisitesWCF_AddSvcReference.gif "WCF ベースの Resource サービス参照の追加")
   
 5. web.config Service ディレクトリProject一時ファイルを元のファイルに置き換え (web.config に変更)、再実行します `iisreset` 。
     
@@ -326,13 +326,13 @@ Visual Studio の **WCF サービス構成エディター** ([**ツール**] メ
   
 **図 4. WCF サービス構成エディターの使用**
 
-![WCF サービス構成エディターを使用した](media/pj15_PrerequisitesWCF_ServiceConfigurationEditor.gif "WCF サービス構成エディターの使用")
+![WCF サービス構成エディターの使用](media/pj15_PrerequisitesWCF_ServiceConfigurationEditor.gif "WCF サービス構成エディターの使用")
   
 ソリューションで wcfResource.cs などのサービス プロキシ ファイルを使用している場合は、アプリケーションをコンパイルし、ディレクトリで実行可能ファイルを開  `bin\debug` きます。 app.config ファイルの編集の詳細については、「[[ウォークスルー] WCF を使用して PSI アプリケーションを開発する](https://msdn.microsoft.com/library/65707234-c3da-44e4-8364-32a6be28f645%28Office.15%29.aspx)」を参照してください。
   
 **図 5. WCF サービス構成エディターでのコントラクト型ブラウザーの使用**
 
-![コントラクトの種類ブラウザーを使用](media/pj15_PrerequisitesWCF_ContractTypeBrowser.gif "したコントラクトの種類ブラウザーの使用")
+![コントラクト型ブラウザーの使用](media/pj15_PrerequisitesWCF_ContractTypeBrowser.gif "コントラクト型ブラウザーの使用")
   
 ## <a name="using-multiple-authentication"></a>複数の認証を使用する
 <a name="pj15_PrerequisitesWCF_ClaimsMultiAuth"> </a>
@@ -455,7 +455,7 @@ const string PROJECT_SERVER_URI = "https://ServerName/ProjectServerName/";
 - [プロジェクト内のASMXベースコードサンプルの前提条件](prerequisites-for-asmx-based-code-samples-in-project.md)   
 - [[ウォークスルー] WCF を使用して PSI アプリケーションを開発する](https://msdn.microsoft.com/library/65707234-c3da-44e4-8364-32a6be28f645%28Office.15%29.aspx)   
 - [WCF で偽装を使用する](https://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx)  
-- [Project PSI リファレンスの概要](project-psi-reference-overview.md) 
+- [Project PSI 参照の概要](project-psi-reference-overview.md) 
 - [SharePoint デベロッパー センター](https://msdn.microsoft.com/sharepoint/default.aspx)
     
 

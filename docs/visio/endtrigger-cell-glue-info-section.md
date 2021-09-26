@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251331
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8dc6515b-66ab-f1ac-18fd-820209f90991
 description: アプリケーションによって生成されたトリガー数式が格納されています。このトリガー数式によって、1 次元図形の終点を移動するときに別の図形に対する接続を維持するかどうかを指定します。
-ms.openlocfilehash: 9093cca782d9262b2511198ed73f512a75bb8994
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 395a53d792b8a9cad336c816be255d2ee4d15aca
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418583"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619093"
 ---
 # <a name="endtrigger-cell-glue-info-section"></a>[EndTrigger] セル ([Glue Info] セクション)
 

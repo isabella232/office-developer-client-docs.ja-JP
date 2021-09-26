@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249067(v=office.15)
 ms:contentKeyID: 48543949
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9316f9360ff7a08300ebb379a4ebf7b01e2fb5f8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4886f945895aabce8c27a365c7c633c7c8e40869
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308577"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621802"
 ---
 # <a name="source-property-example-vc"></a>Source プロパティの使用例 (VC++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、異なるデータ ソースに基づく 3 つの [Recordset](source-property-ado-recordset.md) オブジェクトを開くことによって、 [Source](recordset-object-ado.md) プロパティの機能を示します。
 

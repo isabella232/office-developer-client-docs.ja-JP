@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248786(v=office.15)
 ms:contentKeyID: 48542942
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ba27bfdf6cc1317b441e626c61784e2c50b589f1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7070fc6a7eeb9b2a41a15e2deaa24adb3bb7ba05
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288919"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611960"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-indexing-service"></a>Microsoft OLE DB Provider for Microsoft Indexing Service
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-microsoft OLE DB Provider for microsoft indexing service は、microsoft indexing service によってインデックス処理されたファイルシステムと web データに対して、プログラムによる読み取り専用アクセスを提供します。 ADO アプリケーションでは、SQL クエリを使用してコンテンツおよびファイルのプロパティ情報を取得できます。
+Microsoft OLE DB Provider for Microsoft Indexing Service は、Microsoft Indexing Service によってインデックス付けされたファイル システムおよび Web データへのプログラムによる読み取り専用アクセスを提供します。 ADO アプリケーションでは、SQL クエリを使用してコンテンツおよびファイルのプロパティ情報を取得できます。
 
 このプロバイダーはフリースレッドであり、Unicode に対応しています。
 
@@ -59,11 +59,11 @@ MSIDXS
 <tbody>
 <tr class="odd">
 <td><p><strong>Provider</strong></p></td>
-<td><p>OLE DB Provider for Microsoft Indexing Service を指定します。 通常、この接続文字列ではこのキーワードのみを指定します。</p></td>
+<td><p>OLE DB Provider for Microsoft Indexing Service を指定します。通常、この接続文字列ではこのキーワードのみを指定します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Data Source</strong></p></td>
-<td><p>インデックス サービスのカタログ名を指定します。 このキーワードを指定しない場合は、既定のシステム カタログが使用されます。</p></td>
+<td><p>インデックス サービスのカタログ名を指定します。このキーワードを指定しない場合は、既定のシステム カタログが使用されます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Locale Identifier</strong></p></td>
@@ -83,7 +83,7 @@ MSIDXS
 
 ## <a name="recordset-behavior"></a>Recordset の動作
 
-次の表は、このプロバイダーで開かれた **Recordset** オブジェクトで利用可能な機能の一覧です。 使用できるのは、静的カーソルの種類 (**adopenstatic**) だけです。
+次の表は、このプロバイダーで開かれた **Recordset** オブジェクトで利用可能な機能の一覧です。 静的カーソルの種類 (**adOpenStatic**) のみを使用できます。
 
 プロバイダーの構成による **Recordset** の動作の詳細については、 [Supports](supports-method-ado.md) メソッドを実行し、 [Recordset](properties-collection-ado.md) の **Properties** コレクションを列挙して、プロバイダー固有の動的プロパティが存在するかどうかを確認してください。
 
@@ -97,7 +97,7 @@ MSIDXS
 <thead>
 <tr class="header">
 <th><p>プロパティ</p></th>
-<th><p>Availability</p></th>
+<th><p>可用性</p></th>
 </tr>
 </thead>
 <tbody>
@@ -185,7 +185,7 @@ MSIDXS
 </table>
 
 
-\*この機能が**Recordset**に存在するためには、プロバイダーでブックマークが有効になっている必要があります。
+\*この機能を Recordset に存在するには、プロバイダーでブックマークを有効にする必要 **があります**。
 
 標準的な ADO **Recordset** のメソッドの利用可能性は、次のとおりです。
 
@@ -196,8 +196,8 @@ MSIDXS
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>メソッド</p></th>
-<th><p>できる?</p></th>
+<th><p>Method</p></th>
+<th><p>利用可能ですか?</p></th>
 </tr>
 </thead>
 <tbody>
@@ -207,59 +207,59 @@ MSIDXS
 </tr>
 <tr class="even">
 <td><p><a href="cancel-method-ado.md">Cancel</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="cancelbatch-method-ado.md">CancelBatch</a></p></td>
 <td><p>いいえ</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="cancelupdate-method-ado.md">CancelUpdate</a></p></td>
+<td><p><a href="cancelupdate-method-ado.md">CancelUpdate </a></p></td>
 <td><p>いいえ</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="clone-method-ado.md">Clone</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="close-method-ado.md">Close</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="delete-method-ado-recordset.md">Delete</a></p></td>
+<td><p><a href="delete-method-ado-recordset.md">削除</a></p></td>
 <td><p>いいえ</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="getrows-method-ado.md">GetRows</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="move-method-ado.md">Move</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="movefirst-movelast-movenext-and-moveprevious-methods-ado.md">MoveFirst</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="nextrecordset-method-ado.md">NextRecordset</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="open-method-ado-recordset.md">Open</a></p></td>
-<td><p>はい</p></td>
+<td><p><a href="open-method-ado-recordset.md">開く</a></p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="requery-method-ado.md">Requery</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="resync-method-ado.md">Resync</a></p></td>
-<td><p>はい</p></td>
+<td><p><a href="resync-method-ado.md">再同期</a></p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="supports-method-ado.md">機能</a></p></td>
-<td><p>はい</p></td>
+<td><p><a href="supports-method-ado.md">サポート</a></p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="update-method-ado.md">Update</a></p></td>

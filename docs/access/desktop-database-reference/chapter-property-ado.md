@@ -6,36 +6,36 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250085(v=office.15)
 ms:contentKeyID: 48548014
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b4f4efc2ffab9f7996b2d805658b985badbaf87e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1732e32e784f84ab6b21855f94c5b326420cfe41
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296396"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618512"
 ---
 # <a name="chapter-property-ado"></a>Chapter プロパティ (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
  
-Gets or sets an OLE DB **Chapter** object from/on an **ADORecordsetConstruction** object. **put\_チャプター**を使用して**チャプター**オブジェクトを設定すると、行のサブセットが ADO **Recordset**オブジェクトになります。 This sets the current chapter of the **Rowset** object. 値の取得と設定が可能です。
+Gets or sets an OLE DB **Chapter** object from/on an **ADORecordsetConstruction** object. Put Chapter を **使用して \_ Chapter** オブジェクトを設定すると、行のサブセットが ADO Recordset オブジェクトに **変換** されます。  This sets the current chapter of the **Rowset** object. 値の取得と設定が可能です。
 
 ## <a name="syntax"></a>構文
 
-HRESULT get\_チャプター (\[out, retval\] long\* plchapter);
+HRESULT get \_ Chapter( \[ out, retval \] long \* plChapter);
 
-HRESULT put\_チャプター (\[\]長い lchapter)。
+HRESULT は \_ Chapter( を長 \[ い \] lChapter に入れる);
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
-|*plchapter* |チャプターのハンドルへのポインターです。|
+|*plChapter* |チャプターのハンドルへのポインターです。|
 |*LChapter* |チャプターのハンドルです。|
 
 ## <a name="return-values"></a>戻り値
 
-このプロパティメソッドは、S\_OK および E\_FAIL を含む標準の HRESULT 値を返します。
+このプロパティ メソッドは、標準の HRESULT 値 (S \_ OK、E FAIL など) を返 \_ します。
 
 ## <a name="applies-to"></a>対象
 

@@ -1,22 +1,22 @@
 ---
-title: Stream のプロパティ、メソッド、およびイベント (ADO)
+title: ストリームのプロパティ、メソッド、およびイベント (ADO)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: 12542605-9520-f0a9-09e4-9eac6b37c35e
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248897(v=office.15)
 ms:contentKeyID: 48543339
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b995fab9247347c434a0ffc01aeecc7389802e24
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6843102e55b924aece5b748ede9c8272b2bfcf1b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314428"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611442"
 ---
-# <a name="stream-properties-methods-and-events-ado"></a>Stream のプロパティ、メソッド、およびイベント (ADO)
+# <a name="stream-properties-methods-and-events-ado"></a>ストリームのプロパティ、メソッド、およびイベント (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ## <a name="properties"></a>プロパティ
 
@@ -30,7 +30,7 @@ ms.locfileid: "32314428"
 - [Type プロパティ (ADO Stream)](type-property-ado-stream.md)
 
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>Methods
 
 - [Cancel メソッド](cancel-method-ado.md)
 - [Close メソッド](close-method-ado.md)

@@ -10,21 +10,21 @@ f1_keywords:
 - vbaac10.chm122943
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: ac1a2c8a603fb74b56d71f73605455ecdbc87035
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d21690a0444fcae2d45596935969d63ed69fff43
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308695"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611540"
 ---
 # <a name="setfilter-macro-action"></a>SetFilter マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 "SetFilter/フィルターの実行" アクションを使用すると、アクティブ データシート、アクティブ フォーム、アクティブ レポート、またはアクティブ テーブルのレコードに対してフィルターを適用できます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "SetFilter/フィルターの実行" アクションの引数は次のとおりです。
 
@@ -42,11 +42,11 @@ ms.locfileid: "32308695"
 <tbody>
 <tr class="odd">
 <td><p>Filter Name/フィルター名</p></td>
-<td><p>指定した場合は、クエリの名前、またはクエリとして保存されているフィルターの名前。 クライアントデータベースでは、この引数または WhereCondition 引数は必須です。 web データベースでは、この引数は使用できません。</p></td>
+<td><p>指定した場合は、クエリの名前、またはクエリとして保存されているフィルターの名前。 この引数または WhereCondition 引数は、クライアント データベースで必要です。 Web データベースでは、この引数は使用できません。</p></td>
 </tr>
 <tr class="even">
 <td><p>Where Condition/Where 条件式</p></td>
-<td><p>指定した場合は、データシート、フォーム、レポート、またはテーブルのレコードを制限する SQL WHERE 句。 web データベースでは、この引数は必須です。</p></td>
+<td><p>指定した場合は、データシート、フォーム、レポート、またはテーブルのレコードを制限する SQL WHERE 句。 Web データベースでは、この引数が必要です。</p></td>
 </tr>
 <tr class="odd">
 <td><p>コントロール名</p></td>
@@ -64,7 +64,7 @@ Web データベースでは、Where Condition 引数の先頭に (=) を付け�
 
 アクティブなオブジェクトの **Filter** プロパティを使用すると、"WhereCondition/Where 条件式" 引数を保存して、後で適用できます。フィルターは、それを作成したオブジェクトに保存されます。そのオブジェクトが開くと自動的に読み込まれますが、自動的に適用されることはありません。
 
-クライアントデータベースで、オブジェクトを開いたときにフィルターを自動的に適用するには、 **FilterOnLoad**プロパティを True に設定します。
+クライアント データベースで、オブジェクトを開いたときにフィルターを自動的に適用するには **、FilterOnLoad** プロパティを True に設定します。
 
 Web データベースで、オブジェクトを開いたときにフィルターを自動的に適用するには、マクロに "SetFilter/フィルターの実行" アクションを追加し、このマクロをオブジェクトの OnLoad イベントに追加します。
 

@@ -3,17 +3,17 @@ title: プロバイダー テーブルのOne-Offする
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 8b0dcbfe-6bed-4fb8-a906-009f1d009055
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 023686702b76b5b29acf4304fcfdb3377e8cfcff
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 060f69c28484b8fe3a805af22ebe631c746425de
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436294"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59620787"
 ---
 # <a name="implementing-a-provider-one-off-table"></a>プロバイダー テーブルのOne-Offする
 

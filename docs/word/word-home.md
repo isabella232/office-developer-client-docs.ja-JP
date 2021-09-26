@@ -5,13 +5,13 @@ ms.date: 12/13/2017
 ms.audience: Developer
 ms.assetid: 9eeb591e-b040-4a53-beef-f69913543fb4
 description: ソリューションの開発と Word のカスタマイズを行う方法を記載したコンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、技術記事をご覧ください。
-localization_priority: Priority
-ms.openlocfilehash: acd9fab9c09c88100ec473b0d456f90652643457
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 7a46e563bd458be92ce0fa15702e4a1ff483cb83
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360523"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612434"
 ---
 # <a name="word"></a>Word
 

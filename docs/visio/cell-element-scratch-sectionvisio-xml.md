@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: af17b1c5-51ee-f46f-79d0-4f33369b66f1
 description: 他のセルが参照する数式の入力およびテストを実行するための作業領域を指定します。
-ms.openlocfilehash: 32e7eb2cfe13221ced2a8096acde412625d3ad33
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: f856195c9fb697ac265f23a0348a83c47b4987ba
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542325"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613094"
 ---
 # <a name="cell-element-scratch-section-visio-xml"></a>Cell 要素 (Scratch セクション) (Visio XML)
 

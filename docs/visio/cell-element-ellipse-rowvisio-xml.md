@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 210e6731-7c94-90b1-c7c4-635df974fdb6
 description: 楕円の中心点および楕円上の 2 つの点に対する x 座標または y 座標を格納します。
-ms.openlocfilehash: a2dde9cdc731595bfc8df646ab984cfbfb9db379
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 51e5d3a83411780b2144919378fe823436f1f4e4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541870"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613108"
 ---
 # <a name="cell-element-ellipse-row-visio-xml"></a>Cell 要素 (楕円行) (Visio XML)
 

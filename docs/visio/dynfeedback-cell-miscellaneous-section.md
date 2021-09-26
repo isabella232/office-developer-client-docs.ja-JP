@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251317
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 44017319-7146-3431-e476-fbb1a40341ca
 description: コネクタをドラッグしたときにユーザーに対して表示されるフィードバックの種類を変更します。マウス ボタンを離した後に表示されるコネクタ図形は、この設定の影響を受けません。またこの設定は、経路指定が可能なコネクタには適用されません。
-ms.openlocfilehash: 823b8db4dc6afe94a5fdac1f62aaa48d7e1b0d80
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: cc4f9d66cf06150f749cef28a83d212f232d866d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404800"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619121"
 ---
 # <a name="dynfeedback-cell-miscellaneous-section"></a>[DynFeedback] セル ([Miscellaneous] セクション)
 

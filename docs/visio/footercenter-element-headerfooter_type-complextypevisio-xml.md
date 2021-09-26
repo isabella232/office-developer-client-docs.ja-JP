@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c2a720cc-544b-f923-5bec-67da31507444
 description: ドキュメントのフッターの中央部分に表示されるテキスト文字列を格納します。
-ms.openlocfilehash: b731f6986a20f84704822c15d70b15b769256bf2
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: ad6998477482b8c12b415e00abe23b1c7d9037f2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539580"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618960"
 ---
 # <a name="footercenter-element-headerfooter_type-complextype-visio-xml"></a>FooterCenter 要素 (HeaderFooter_Type complexType) (Visio XML)
 

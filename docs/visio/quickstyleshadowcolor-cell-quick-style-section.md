@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0a80959f-941f-451c-9049-dc661ff4930f
 description: 図形の影で使用するテーマの色を、0 ~ 7 の整数で指定します。
-ms.openlocfilehash: b623eee89d214bade2706b12fcb344eccd8814b8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5578a8da853020234338119f147dfc610610f7f2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414957"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618617"
 ---
 # <a name="quickstyleshadowcolor-cell-quick-style-section"></a>[QuickStyleShadowColor] セル ([クイック スタイル] セクション)
 
@@ -25,10 +25,10 @@ ms.locfileid: "33414957"
 |1  <br/> |図形の影の色を、[ライト] テーマの色から継承します。  <br/> |
 |2  <br/> |図形の影の色を、[アクセント 1] テーマの色から継承します。  <br/> |
 |3  <br/> |図形の影の色を、[アクセント 2] テーマの色から継承します。  <br/> |
-|4  <br/> |図形の影の色を、[アクセント 3] テーマの色から継承します。  <br/> |
+|4   <br/> |図形の影の色を、[アクセント 3] テーマの色から継承します。  <br/> |
 |5  <br/> |図形の影の色を、[アクセント 4] テーマの色から継承します。  <br/> |
-|6  <br/> |図形の影の色を、[アクセント 5] テーマの色から継承します。  <br/> |
-|7  <br/> |図形の影の色を、[アクセント 6] テーマの色から継承します。  <br/> |
+|6   <br/> |図形の影の色を、[アクセント 5] テーマの色から継承します。  <br/> |
+|7   <br/> |図形の影の色を、[アクセント 6] テーマの色から継承します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

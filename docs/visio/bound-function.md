@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm60099
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 36374d78-1028-bd7f-6282-66555ee31306
 description: 1 つの範囲または複数の範囲にセルの値を制約します。
-ms.openlocfilehash: 85fbe66d4e458ac4e42c9eb3c65b9a3a1d8211df
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0190ae3b3066ffc15232574c83719b732bedc2a7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425961"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613115"
 ---
 # <a name="bound-function"></a>BOUND 関数
 
@@ -28,11 +28,11 @@ BOUND (** *value* **, ** *type* **, ** ignore **, ** *value1* **, ** *value2* **
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _value_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |制約される現在の値を指定します。  <br/> |
+| _value_ <br/> |必須かどうか  <br/> |**数値型 (Numeric)** <br/> |制約される現在の値を指定します。  <br/> |
 | _type_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |制約が包括的 (0) であるか、排他的 (1) であるか、または無効 (2) であるかを指定します。  <br/> |
-| _ignore_ <br/> |必須  <br/> |**Boolean** <br/> | 範囲を無視する場合は TRUE。セルの値を範囲に制限するには、FALSE を指定します。  <br/> |
-| _value1_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |範囲内の最初の値を指定します。  <br/> |
-| _value2_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |範囲内の 2 番目の値を指定します。  <br/> |
+| _ignore_ <br/> |必須  <br/> |**ブール型 (Boolean)** <br/> | 範囲を無視する場合は TRUE。セルの値を範囲に制限するには、FALSE を指定します。  <br/> |
+| _value1_ <br/> |必須かどうか  <br/> |**数値型 (Numeric)** <br/> |範囲内の最初の値を指定します。  <br/> |
+| _value2_ <br/> |必須かどうか  <br/> |**数値型 (Numeric)** <br/> |範囲内の 2 番目の値を指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

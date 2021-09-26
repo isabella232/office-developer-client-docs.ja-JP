@@ -3,17 +3,17 @@ title: MAPI オブジェクトの使用
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: e342c1bd-8bee-4b02-a93f-e3941f4716c1
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: d732efe5276f4756f43b4aca46e1c33d6f103844
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6ffa5403121ba86d113647e4da47cdfd8b18eb71
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329679"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619492"
 ---
 # <a name="using-mapi-objects"></a>MAPI オブジェクトの使用
 
@@ -25,7 +25,7 @@ ms.locfileid: "32329679"
   
 **クライアントがフォルダー オブジェクトを使用**
   
-![フォルダー オブジェクトのクライアントの使用](media/amapi_40.gif "フォルダー オブジェクトのクライアントの使用")
+![クライアントがフォルダー オブジェクトを使用](media/amapi_40.gif "クライアントがフォルダー オブジェクトを使用")
   
 これらの呼び出しは、呼び出しを行うクライアントが C または C++ で記述されるかどうかによって異なるコードに変換されます。 メソッドを呼び出す前に、インターフェイス実装へのポインターを取得する必要があります。 インターフェイス ポインターは、次の方法で取得できます。
   

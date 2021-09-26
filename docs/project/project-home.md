@@ -5,13 +5,13 @@ ms.date: 12/13/2017
 ms.audience: Developer
 ms.assetid: 71d3ae83-3b5d-47c1-b618-4acf13470afb
 description: ソリューションの開発と Project のカスタマイズに関する HowTo コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および技術記事を検索できます。
-localization_priority: Priority
-ms.openlocfilehash: 723de79427c8507c4f849546e8a6b2d72ac5e18c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 7eea5faae07fdd0f2b564351cbd09ffae4b8940d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301506"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619219"
 ---
 # <a name="project"></a>Project 
 

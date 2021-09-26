@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248933(v=office.15)
 ms:contentKeyID: 48543473
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 55dc01afc874403bcdf52008e17daab7e6d98ae9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f6b363fc330eb197403e1e3d837715b1c3491693
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296305"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612324"
 ---
 # <a name="clone-method-example-vc"></a>Clone メソッドの使用例 (VC++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、[Clone](clone-method-ado.md) メソッドを使用して [Recordset](recordset-object-ado.md) のコピーを作成し、ユーザーが各コピーのレコード ポインターを個別に配置できるようにします。
 
@@ -252,7 +252,7 @@ void PrintComError(_com_error &e)
 // EndCloneCpp 
 ```
 
-**CloneX**
+**CloneX.h**
 
 ```cpp 
  

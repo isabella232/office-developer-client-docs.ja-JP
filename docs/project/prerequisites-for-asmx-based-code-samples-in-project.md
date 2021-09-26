@@ -11,15 +11,15 @@ f1_keywords:
 - PSI programming
 keywords:
 - コード サンプル、プロジェクト サーバー、Project Server、プログラミング、PSI、コンパイル コード サンプル、PSI、プログラミング
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: df584b25-4460-46c8-89a8-3b2c94d20bba
 description: Project Server Interface (PSI) リファレンス トピックに含まれる ASMX ベースのコード サンプルを使用して、Visual Studio でプロジェクトを作成するのに役立つ情報について説明します。
-ms.openlocfilehash: 26ad2e388b7e7f6f19e028b47c7f6d1a3fbd020c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c3a5787933bd7dfb3826422e276421844069a770
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357087"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619233"
 ---
 # <a name="prerequisites-for-asmx-based-code-samples-in-project"></a>プロジェクト内のASMXベースコードサンプルの前提条件
 
@@ -78,7 +78,7 @@ Project Server Interface (PSI) リファレンス トピックに含まれる AS
     
    **図 1. Visual Studio での参照の追加**
 
-   ![[参照の追加] Visual Studio](media/pj15_PrerequisitesASMX_AddReference.gif "に参照を追加Visual Studio")
+   ![Visual Studio での参照の追加](media/pj15_PrerequisitesASMX_AddReference.gif "Visual Studio での参照の追加")
   
 3. **コードをコピーする。**
     
@@ -170,11 +170,11 @@ ASMX Web サービスと WCF サービスの両方について、スクリプト
   
 コード サンプルで PSI Web サービス名前空間の異なる名前を使用する場合 (たとえば **ProjectWebSvc**)、IntelliSense が機能するためには、**SvcProject** を使用するようにサンプルを変更し、名前空間がプロキシ アセンブリと一致するようにします。 
   
-ASMX ベースのプロキシ アセンブリを使用する利点は、すべての PSI Web サービス名前空間が含まれるという利点があります。複数の Web 参照を作成する必要はない。 もう 1 つの利点は、ProjectServerServices.dll プロキシ アセンブリへの参照を設定する同じディレクトリに ProjectServerServices.xml ファイルを追加すると、PSI クラスとメンバーの IntelliSense の説明を取得できるという利点があります。 図 2 は、IntelliSenseのテキストを **Project。QueueCreateProject** メソッド。 詳細については、2013 SDK ダウンロードの IntelliSense Project フォルダーにある [ReadMe_IntelliSense] ファイルを参照してください。 
+ASMX ベースのプロキシ アセンブリを使用する利点は、すべての PSI Web サービス名前空間が含まれるという利点があります。複数の Web 参照を作成する必要はない。 もう 1 つの利点は、ProjectServerServices.xml ファイルを ProjectServerServices.dll プロキシ アセンブリへの参照を設定したのと同じディレクトリに追加すると、PSI クラスとメンバーの IntelliSense 説明を取得できるという利点があります。 図 2 は、IntelliSenseのテキストを **Project。QueueCreateProject** メソッド。 詳細については、2013 SDK ダウンロードの IntelliSense フォルダーにある [ReadMe_IntelliSense Project] ファイルを参照してください。 
   
 **図 2. Project Web サービスのメソッドでの IntelliSense の使用**
 
-![PSI サービス内のメソッドに Intellisense]を使用する PSI サービス内のメソッドに(media/pj15_PrerequisitesASMX_Intellisense.gif "Intellisense")を使用する
+![PSI サービスのメソッドに対する Intellisense の使用](media/pj15_PrerequisitesASMX_Intellisense.gif "PSI サービスのメソッドに対する Intellisense の使用")
   
 このプロキシ アセンブリを使用する場合の欠点は、ソリューションが大規模になることと、ソリューションと共にプロキシ アセンブリの配布とインストールが必要になることです。また、プロキシ アセンブリ内と IntelliSense ファイル内で同じ名前空間を使用する必要があります (ただし、スクリプトと ProjectServerServices.xml IntelliSense ファイルを変更して、別々の名前空間を使用するようにした場合は例外です)。
   
@@ -440,7 +440,7 @@ const string PROJECT_SERVER_URI = "https://ServerName/ProjectServerName/";
 
 - [プロジェクト内のWCFベースコードサンプルの前提条件](prerequisites-for-wcf-based-code-samples-in-project.md)
 - [WCF で偽装を使用する](https://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx)
-- [Project PSI リファレンスの概要](project-psi-reference-overview.md)
+- [Project PSI 参照の概要](project-psi-reference-overview.md)
 - [SharePoint デベロッパー センター](https://msdn.microsoft.com/sharepoint/default.aspx)
     
 

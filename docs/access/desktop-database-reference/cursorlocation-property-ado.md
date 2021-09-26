@@ -1,23 +1,23 @@
 ---
-title: カーソル位置プロパティ (ADO)
+title: CursorLocation プロパティ (ADO)
 TOCTitle: CursorLocation property (ADO)
 ms:assetid: 8a048bd4-ae25-a555-1c07-14364b7e6560
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249606(v=office.15)
 ms:contentKeyID: 48546182
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 25fd81acee3c541c8a3f315f96fa69241272a655
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ff45fa942e7fc7852272969c4727875a6f032e83
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295221"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618337"
 ---
-# <a name="cursorlocation-property-ado"></a>カーソル位置プロパティ (ADO)
+# <a name="cursorlocation-property-ado"></a>CursorLocation プロパティ (ADO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 カーソル サービスの場所を示します。
 
@@ -35,5 +35,5 @@ ms.locfileid: "32295221"
 
 このプロパティは、[Connection](connection-object-ado.md) または閉じている [Recordset](recordset-object-ado.md) 上では読み取り/書き込み可能ですが、開いている **Recordset** 上では読み取り専用になります。
 
-**リモートデータサービスの使用状況**クライアント側の**Recordset**オブジェクトまたは**Connection**オブジェクトで使用する場合、**カーソル位置**プロパティは**adUseClient**にのみ設定できます。
+**リモート データ サービスの使用状況** クライアント側の Recordset オブジェクトまたは **Connection** オブジェクト **で** 使用する場合 **、CursorLocation** プロパティは **adUseClient にのみ設定できます**。
 

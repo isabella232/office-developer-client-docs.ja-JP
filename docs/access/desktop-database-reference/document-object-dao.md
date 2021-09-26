@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822082(v=office.15)
 ms:contentKeyID: 48547247
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0f82ace31a991a6700417d4c0d66bf775fcb7b26
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e7e4592d589c5039ff834106614d9ea45a26f3c2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293778"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618190"
 ---
 # <a name="document-object-dao"></a>Document オブジェクト (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **Document** オブジェクトには、オブジェクトの 1 つのインスタンスの情報があります。オブジェクトは、データベース、保存されたテーブル、クエリ、またはリレーションシップのいずれかです (Microsoft Access データベース エンジン データベースのみ)。
 
@@ -33,7 +33,7 @@ ms.locfileid: "32293778"
 <thead>
 <tr class="header">
 <th><p>Document</p></th>
-<th><p>Container</p></th>
+<th><p>コンテナー</p></th>
 <th><p>格納されている情報</p></th>
 </tr>
 </thead>
@@ -75,9 +75,9 @@ ms.locfileid: "32293778"
 
 - **Documents**(0)
 
-- **ドキュメント**("*name*")
+- **ドキュメント**("*名*")
 
-- ****\!ドキュメント\[*名*\]
+-  \! ドキュメント \[*name*\]
 
 ## <a name="example"></a>例
 

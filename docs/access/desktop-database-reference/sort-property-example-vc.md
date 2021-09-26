@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248862(v=office.15)
 ms:contentKeyID: 48543259
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e23cf573d51e52c74f4bbf24801f4bd6f47ea22a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3fd868467adac008577e5547ddd6232e0c89ba45
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306924"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611491"
 ---
 # <a name="sort-property-example-vc"></a>Sort プロパティの使用例 (VC++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-この例では[、recordset](recordset-object-ado.md)オブジェクトの[Sort](sort-property-ado.md)プロパティを使用して、 **Pubs**データベースの***Authors***テーブルから派生した**recordset**の行を並べ替えます。 2 次ユーティリティ ルーチンで各行を出力します。
+この例では [、Recordset](recordset-object-ado.md)オブジェクトの [Sort](sort-property-ado.md)プロパティを使用して、_ Pubs データベースの Authors _ テーブルから派生した **Recordset** の行を **並べ替** えます。 2 次ユーティリティ ルーチンで各行を出力します。
 
 ```cpp 
  

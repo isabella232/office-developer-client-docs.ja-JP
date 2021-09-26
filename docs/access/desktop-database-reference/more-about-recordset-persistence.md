@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250232(v=office.15)
 ms:contentKeyID: 48548666
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 194dcf3826409c91f8d046b39b9009b43aee5477
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 97683167d90104d98076f642c5407b6b86a01863
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288849"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617959"
 ---
 # <a name="more-about-recordset-persistence"></a>レコードセットの永続化に関する詳細情報
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-ADO Recordset オブジェクトは、**Save** メソッドを使用して、ファイルへの [Recordset](save-method-ado.md) オブジェクトの内容の格納をサポートします。 永続的に保存されたファイルは、ローカルドライブ、ネットワークサーバー、または web サイト上の URL として存在する場合があります。 この永続化されたファイルは、 **Recordset** オブジェクトの [Open](open-method-ado-recordset.md) メソッドまたは [Connection](connection-object-ado.md) オブジェクトの [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection) メソッドのいずれかを使用して、後で復元できます。
+ADO Recordset オブジェクトは、**Save** メソッドを使用して、ファイルへの [Recordset](save-method-ado.md) オブジェクトの内容の格納をサポートします。 永続的に保存されたファイルは、ローカル ドライブ、ネットワーク サーバー、または Web サイト上の URL として存在する可能性があります。 この永続化されたファイルは、 **Recordset** オブジェクトの [Open](open-method-ado-recordset.md) メソッドまたは [Connection](connection-object-ado.md) オブジェクトの [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection) メソッドのいずれかを使用して、後で復元できます。
 
 さらに、[GetString](getstring-method-ado.md) メソッドは、 **Recordset** オブジェクトを、ユーザーが指定した文字で列と行を区切った形式に変換します。
 

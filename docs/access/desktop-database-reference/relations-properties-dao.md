@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn161298(v=office.15)
 ms:contentKeyID: 52074265
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2c5ac2ab7230df6042b2939558e687d8c49a2ab5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: bbf9f9256af13292f3176044081fa168d57a9a0c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306805"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611624"
 ---
 # <a name="relations-properties-dao"></a>Relations プロパティ (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-- [Count プロパティ (DAO)](relations-count-property-dao.md)
+- [Relations.Count プロパティ (DAO)](relations-count-property-dao.md)
 

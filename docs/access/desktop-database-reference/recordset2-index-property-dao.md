@@ -1,30 +1,30 @@
 ---
-title: Recordset2 プロパティ (DAO)
+title: Recordset2.Index プロパティ (DAO)
 TOCTitle: Index Property
 ms:assetid: 614bdf53-aca3-25ef-a23c-50095b345d20
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194872(v=office.15)
 ms:contentKeyID: 48545209
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 05a29ff9dbe720fe7c5539639b20e0abdc3c587b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a01adf65d4358d12983c7d0c2e90aa9de02f1937
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307302"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611736"
 ---
-# <a name="recordset2index-property-dao"></a>Recordset2 プロパティ (DAO)
+# <a name="recordset2index-property-dao"></a>Recordset2.Index プロパティ (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-テーブル タイプの **[Recordset](index-object-dao.md)** オブジェクト内にある現在の **[Index](recordset-object-dao.md)** オブジェクトの名前を示す値を設定または取得します (Microsoft Access ワークスペースのみ)。
+テーブル型の **[Recordset](recordset-object-dao.md)** オブジェクト内の現在の **[Index](index-object-dao.md)** オブジェクトの名前を示す値を設定または返します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*。順
+*式* .Index
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 
@@ -41,7 +41,7 @@ ms.locfileid: "32307302"
 > [!NOTE]
 > - テーブルにインデックスを作成するのは必須ではありません。大きなテーブルではインデックスを持たないと、特定のレコードへのアクセスまたは **Recordset** オブジェクトの作成に長い時間がかかる場合があります。一方、インデックスを多く作成しすぎると、すべてのインデックスが自動的に更新されるため、更新、追加、および削除を実行する速度が低下します。
 > - インデックスを持たないテーブルから返されるレコードの順序は特定できません。
-> - **index**オブジェクト内の各**[Field](field-object-dao.md)** オブジェクトの**[Attributes](field-attributes-property-dao.md)** プロパティによってレコードの順序が決まり、その結果、そのインデックスに使用するアクセス方法が決まります。
+> - **Index** オブジェクト内にある各 **[Field](field-object-dao.md)** オブジェクトの **[Attributes](field-attributes-property-dao.md)** プロパティによってレコードの順序が決まり、その結果、そのインデックスに対して使用するアクセス方法が決まります。
 > - 一意のインデックスを使用すると、最適な方法でレコードを検索できます。
 > - インデックスは、ベース テーブルの物理的な順序には影響を与えません。特定のインデックスを選択するか、 **Recordset** オブジェクトを開く際の、テーブル タイプの **Recordset** オブジェクトによるレコードへのアクセス方法にのみ影響を与えます。
 
@@ -91,7 +91,7 @@ ms.locfileid: "32307302"
 
 <br/>
 
-次の例では、 **Seek** メソッドを使用して、ユーザーが ID 番号に基づいて製品を検索できるようにする方法を示しています。
+この例では、 **Seek** メソッドを使用して、ユーザーが ID 番号に基づき製品を検索できるようにする方法を示します。
 
 ```vb
     Sub SeekX() 

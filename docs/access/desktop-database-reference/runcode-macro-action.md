@@ -10,21 +10,21 @@ f1_keywords:
 - vbaac10.chm98700
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 646c1393cc798c1f827e6ceaebf46bfe7c87bcbd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e028531d91e0c96f167b28dd6e69314a54d8bcab
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306833"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621886"
 ---
 # <a name="runcode-macro-action"></a>RunCode マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **RunCode** アクションを使用すると、Visual Basic for Applications (VBA) の Function プロシージャを呼び出すことができます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 **RunCode** アクションの引数は次のとおりです。
 
@@ -42,7 +42,7 @@ ms.locfileid: "32306833"
 <tbody>
 <tr class="odd">
 <td><p><strong>Function Name/関数名</strong></p></td>
-<td><p>呼び出す VBA の Function プロシージャの名前を指定します。関数の引数はかっこ ( ) で囲みます。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>関数名</strong>] ボックスに関数名を入力します。この引数は省略できません。  </p><p><strong>注</strong>: Access データベース (.mdb または .accdb) では、[<strong>ビルド</strong>] ボタンをクリックすると、式ビルダーを使用してこの引数の関数を選択できます。 式ビルダーに表示される一覧で目的の関数をクリックします。</p></td>
+<td><p>呼び出す VBA の Function プロシージャの名前を指定します。関数の引数はかっこ ( ) で囲みます。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>関数名</strong>] ボックスに関数名を入力します。この引数は省略できません。  </p><p><strong>注</strong>: Access データベース (.mdb または .accdb) で、[ビルド] ボタンをクリックして式ビルダーを使用して、この引数の関数を選択します。 <strong></strong> 式ビルダーに表示される一覧で目的の関数をクリックします。</p></td>
 </tr>
 </tbody>
 </table>
@@ -56,7 +56,7 @@ ms.locfileid: "32306833"
 
 `TestFunction()`
 
-イベントプロパティの設定に使用されるユーザー定義の関数名とは異なり、 **function name/関数名**引数の関数名の**=** 先頭には、等号 () は付けません。
+イベント プロパティの設定に使用されるユーザー定義関数名とは異なり **、Function Name** 引数の関数名は等号 ( ) で始まるわけではありません **=** 。
 
 関数の戻り値は無視されます。
 

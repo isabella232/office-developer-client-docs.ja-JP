@@ -10,21 +10,21 @@ f1_keywords:
 - vbaac10.chm139044
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: c5972ad630efe3afe27565924c7c6a8a2230a9f2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 15ad7954c7c6af3f500fad7075deb175905ae667
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314575"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621823"
 ---
 # <a name="setproperty-macro-action"></a>SetProperty マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 You can use the **SetProperty** action to set a property for a control on a form or a report.
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "SetProperty/プロパティの設定" アクションの引数は次のとおりです。
 
@@ -60,7 +60,7 @@ You can use the **SetProperty** action to set a property for a control on a form
 
 - "SetProperty/プロパティの設定" アクションを使用すると、コントロールの "Enabled/使用可能"、"Visible/可視"、"Locked/ロック"、"Left/左"、"Top/上"、"Width/幅"、"Height/高さ"、"Fore Color/前景色"、"Back Color/背景色"、または "Caption/標題" の各プロパティを設定できます。
 
-- " ***value/値***" 引数に無効な値を入力すると、エラーは発生しませんが、引数がどのように解釈されるかに応じて、プロパティは別の値に変更される可能性があります。
+- ***引数 Value*** に無効な値を入力した場合、エラーは発生しませんが、引数の解釈方法に応じて、Access によってプロパティが異なる値に変更される場合があります。
 
 - You can use the **SetProperty** action in a stand-alone macro only if you precede it with an action that selects the form or report containing the control for which you are setting the property. If the form or report is not open, you can use the **OpenForm** or **OpenReport** action to open and select it. If the form or report is already open, you can use the **SelectObject** action to select it. You can then use the **SetProperty** action to set the property. Selecting the object is not necessary if you use the **SetProperty** action in a macro which is embedded in a control on the same form or report as the control for which you are setting the property.
 
@@ -68,7 +68,7 @@ You can use the **SetProperty** action to set a property for a control on a form
 
 ## <a name="example"></a>例
 
-次の例は、"SetProperty/プロパティの設定" アクションを使用して、 **MyTextBox**テキストボックスの表示/非表示を切り替える方法を示しています。
+次の例は、SetProperty アクションを使用して **MyTextBox** テキスト ボックスの表示を切り替える方法を示しています。
 
 **サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 

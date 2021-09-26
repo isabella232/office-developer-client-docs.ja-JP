@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f72ced69-0d49-18cd-f1e6-d0b2cb39b4c0
 description: 図面内の作成者とコメントを識別するために使用するプロパティを指定します。
-ms.openlocfilehash: 93e75e47a203ee13385085c4b5e261fd3a724d4f
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 84d7371ff546286c7ca2ed924ed7ab0397106bb3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539221"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613031"
 ---
 # <a name="comments-element-comments_type-complextype-visio-xml"></a>Comments 要素 (Comments_Type complexType) (Visio XML)
 

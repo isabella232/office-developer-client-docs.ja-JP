@@ -9,15 +9,15 @@ f1_keywords:
 - TempActiveRef12
 keywords:
 - tempactiveref function [excel 2007],TempActiveRef12 function [Excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7c69d15a-294b-4545-983b-720409001e0e
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 58feee8f43e0f90f710c9e4387684dcb6d173a7b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7faec0ba405c8bb774cf33fc01edb2247fdbea5b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415545"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611267"
 ---
 # <a name="tempactivereftempactiveref12"></a>TempActiveRef/TempActiveRef12
 

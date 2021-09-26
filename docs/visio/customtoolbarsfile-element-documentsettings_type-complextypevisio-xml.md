@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c9789239-a919-97f6-8109-126bb1038be6
 description: ドキュメントのカスタム ツールバーとステータス バー Visio定義する Microsoft Visio ユーザー インターフェイス (.vsu) ファイルの名前を含んでいます。
-ms.openlocfilehash: c374bc571163936ccdd4812bcf58a8db19a81f1e
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 312da727f251e953de89221669b5fa73e25e12f9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539235"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613045"
 ---
 # <a name="customtoolbarsfile-element-documentsettings_type-complextype-visio-xml"></a>CustomToolbarsFile 要素 (DocumentSettings_Type complexType) (Visio XML)
 

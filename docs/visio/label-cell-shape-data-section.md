@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm510
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6d328b1c-8d92-eb1a-7317-7dd85c674ff9
 description: '[図形データ] ウィンドウに表示されるラベルを指定します。ラベルには、英数字とアンダースコア (_) 文字を使用できます。'
-ms.openlocfilehash: d341acfbd47446a5b6dbee51ed821d1e1f34e15d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 352e113e685a4952f31334947f81d16b0358f375
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420179"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618722"
 ---
 # <a name="label-cell-shape-data-section"></a>[Label] セル ([Shape Data] セクション)
 

@@ -1,31 +1,31 @@
 ---
-title: "\"ValidationRule/入力規則\" プロパティ (DAO)"
+title: Field.ValidationRule プロパティ (DAO)
 TOCTitle: ValidationRule Property
 ms:assetid: b07e644d-54d3-7199-6f99-178774e54398
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821784(v=office.15)
 ms:contentKeyID: 48547123
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1ef68db39b7dcad380eae16f789f4dd5b0eab75f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0a5ec1c25e8364253143ea3379f4888ee65bddea
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292945"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612170"
 ---
-# <a name="fieldvalidationrule-property-dao"></a>"ValidationRule/入力規則" プロパティ (DAO)
+# <a name="fieldvalidationrule-property-dao"></a>Field.ValidationRule プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 テーブルのフィールドを変更するかテーブルにフィールドを追加するときに、フィールド内のデータを検証する値を設定または取得します (Microsoft Access ワークスペースのみ)。値の取得および設定が可能です。文字列型 ( **String**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*。規則
+*式* .ValidationRule
 
-*式***Field**オブジェクトを返すオブジェクト式を指定します。
+*式* Field オブジェクトを返 **す式** 。
 
 ## <a name="remarks"></a>注釈
 
@@ -43,17 +43,17 @@ ms.locfileid: "32292945"
 <thead>
 <tr class="header">
 <th><p>オブジェクトの追加先</p></th>
-<th><p>使用方法</p></th>
+<th><p>使用法</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><strong>Index</strong></p></td>
-<td><p>サポートされていません</p></td>
+<td><p>サポートされません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong></p></td>
-<td><p>読み取り専用</p></td>
+<td><p>値の取得のみ可能です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong></p></td>
@@ -77,6 +77,6 @@ ms.locfileid: "32292945"
 
 
 > [!NOTE]
-> このプロパティに整数以外の値を連結した文字列を設定した場合、システムパラメーターでコンマ以外の小数点 (例: strrule = "PRICE &gt; " &amp; lngPrice, and lngPrice = 125, 50) を指定すると、エラーが発生します。コードがデータを検証しようとしています。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Acces データベース エンジンの SQL で小数点の記号として使用できるのはピリオドのみであるためです。
+> 整数以外の値で連結された文字列にプロパティを設定し、システム パラメーターで米国以外の値を指定する場合。コンマなどの 10 進文字 (strRule = "PRICE &gt; " &amp; lngPrice、lngPrice = 125,50 など) は、コードがデータを検証しようとするときにエラーが発生します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Acces データベース エンジンの SQL で小数点の記号として使用できるのはピリオドのみであるためです。
 
 

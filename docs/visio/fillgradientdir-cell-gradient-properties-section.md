@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e8156ff1-c540-44b8-8b69-ba4d54883260
 description: 塗りつぶしのグラデーションの方向を決定します。グラデーションは線形、放射状、角形、またはパスに沿う形を指定できます。
-ms.openlocfilehash: 53aad056c7fc1674e00e142fd72a10134103b390
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1b467798439383da9a18913ae2efc2e4ee5a08ea
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406718"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612835"
 ---
 # <a name="fillgradientdir-cell-gradient-properties-section"></a>[FillGradientDir] セル ([グラデーションのプロパティ] セクション)
 

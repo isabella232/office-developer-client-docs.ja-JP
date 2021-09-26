@@ -3,17 +3,17 @@ title: メッセージ ストアの検証と初期化
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 74f0a1fe-2a79-4b32-ab88-85a8839a2639
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 77b3f707fc36a868de5acd7c7ba4642a1da4e3c9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2c8bf46bd9328d1e9da975c9fd39dbdf75605e5a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433690"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619485"
 ---
 # <a name="validating-and-initializing-a-message-store"></a>メッセージ ストアの検証と初期化
 

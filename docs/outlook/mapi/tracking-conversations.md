@@ -7,13 +7,13 @@ api_type:
 - COM
 ms.assetid: 0500dee8-a39d-45ce-87b1-c515e92e083d
 description: '最終更新日: 2011 年 7 月 23 日'
-localization_priority: Priority
-ms.openlocfilehash: 3a59a7a15b4647832634adc4757544876b8841b1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 299951304f01532cc9f87e36bd58070524e55331
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349547"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619604"
 ---
 # <a name="tracking-conversations"></a>会話の追跡
 
@@ -29,9 +29,9 @@ ms.locfileid: "32349547"
     
 - **PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md))
     
-    ** PR_CONVERSATION_INDEX **は特定の会話内のメッセージの位置を示します。新しいメッセージ、転送されたメッセージ、返信のいずれであっても、各発信メッセージに** PR_CONVERSATION_INDEX **を設定することはクライアントの管轄です。クライアントはこのプロパティを手動で設定するか、MAPIが提供するユーティリティー機能である[ ScCreateConversationIndex ](sccreateconversationindex.md)を呼び出すことができます。 
+    **PR_CONVERSATION_INDEX** は特定の会話内のメッセージの位置を示します。新しいメッセージ、転送されたメッセージ、返信のいずれであっても、各発信メッセージに **PR_CONVERSATION_INDEX** を設定することはクライアントの管轄です。クライアントはこのプロパティを手動で設定するか、MAPIが提供するユーティリティー機能である [ ScCreateConversationIndex](sccreateconversationindex.md)を呼び出すことができます。 
     
- ** ScCreateConversationIndex **は、発信メッセージの会話インデックスの値を生成します。 ** ScCreateConversationIndex **は、インデックスを長さ22バイトのヘッダーブロックとして実装し、その後に長さが5バイトずつ、ゼロ個以上の子ブロックを続けます。 
+ **ScCreateConversationIndex** は、発信メッセージの会話インデックスの値を生成します。 **ScCreateConversationIndex** は、インデックスを長さ22バイトのヘッダーブロックとして実装し、その後に長さが5バイトずつ、ゼロ個以上の子ブロックを続けます。 
   
 ヘッダブロックは22バイトで構成され、3つの部分に分けられます。
   
@@ -45,7 +45,7 @@ ms.locfileid: "32349547"
   
 - 現在の時刻とヘッダーブロックに格納されている時刻との差を表すコードを含む1ビット。このビットは、差が0.02秒未満で2年以上の場合は0、差が1秒未満で56年以上の場合は1になります。
     
-- 現在の時刻と** FILETIME **単位で表されるヘッダブロックの時刻の差を含む31ビット。子ブロックのこの部分は、最初のビットの値に応じて、2つの方法のうちの1つを使用して生成されます。 このビットがゼロの場合、** ScCreateConversationIndex **は上位15ビットと下位18ビットを破棄します。このビットが1の場合、このコードは上位10ビットと下位23ビットを破棄します。 
+- 現在の時刻と **FILETIME** 単位で表されるヘッダブロックの時刻の差を含む31ビット。子ブロックのこの部分は、最初のビットの値に応じて、2つの方法のうちの1つを使用して生成されます。 このビットがゼロの場合、**ScCreateConversationIndex** は上位15ビットと下位18ビットを破棄します。このビットが1の場合、このコードは上位10ビットと下位23ビットを破棄します。 
     
 - Win32関数[ GetTickCount ](https://msdn.microsoft.com/library/ms724408%28VS.85%29.aspx)を呼び出して生成された乱数を含む4ビット。
     

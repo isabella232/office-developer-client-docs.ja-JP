@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251448
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 87508007-8ad2-3bcf-55dc-f0207c7c6fe3
 description: cellreference の値がエラーの種類である場合は TRUE を返します(#N/A を除く)。それ以外の場合は、FALSE を返します。 ISERR 関数は、別のセルを参照する数式で使用されます。
-ms.openlocfilehash: e2117c38d3cad2408295ed6894aefc78e107596e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bb724fdb753ada86baf6cb421a2fa758620317ac
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432108"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612611"
 ---
 # <a name="iserr-function"></a>ISERR 関数
 

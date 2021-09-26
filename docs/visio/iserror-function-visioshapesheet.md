@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251452
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4864ebc2-fee6-2415-7c59-e0af8611f8d6
 description: セル参照の値がエラーの種類の場合は TRUE を返します。それ以外の場合は、FALSE を返します。 ISERROR 関数は、別のセルを参照する数式で使用されます。
-ms.openlocfilehash: a07b2345858e36dc2e4514d7e4f0f0d653491b50
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b685f4fdc23e0935ddbf59b2082ad70db86ea9a2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421544"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618792"
 ---
 # <a name="iserror-function-visioshapesheet"></a>ISERROR 関数 (VisioShapeSheet)
 

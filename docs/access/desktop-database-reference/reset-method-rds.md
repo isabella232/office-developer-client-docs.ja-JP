@@ -1,28 +1,28 @@
 ---
-title: Reset メソッド (RDS-Access デスクトップデータベースリファレンス)
+title: Reset メソッド (RDS - Access デスクトップ データベース リファレンス)
 TOCTitle: Reset method (RDS)
 ms:assetid: 169ebd1e-6071-613e-c065-3af060167456
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248924(v=office.15)
 ms:contentKeyID: 48543435
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 898045bcfdd3fb2483954155319e6aab3d0ebc7f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c03d5d53468f8530d068c839a4cf07baf9cb2048
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306644"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611589"
 ---
 # <a name="reset-method-rds"></a>Reset メソッド (RDS)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 指定されたソートとフィルターのプロパティに基づいて、クライアント側の **Recordset** でソートまたはフィルターを実行します。
 
 ## <a name="syntax"></a>構文
 
-*DataControl*。Reset (*値*)
+*DataControl*.Reset(*value*)
 
 ## <a name="parameters"></a>パラメーター
 

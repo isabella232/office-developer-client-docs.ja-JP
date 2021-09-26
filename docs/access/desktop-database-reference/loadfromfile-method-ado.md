@@ -6,23 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249107(v=office.15)
 ms:contentKeyID: 48544123
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9316bc4302a559fa44082a0576595707157e9d64
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 63b8c2541714f432e92d310ce70ebe308db51685
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289886"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612037"
 ---
 # <a name="loadfromfile-method-ado"></a>LoadFromFile メソッド (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 既存のファイルの内容を [Stream](stream-object-ado.md) に読み込みます。
 
 ## <a name="syntax"></a>構文
 
-*ストリーム*。LoadFromFile *FileName*
+*Stream*.LoadFromFile *FileName*
 
 ## <a name="parameters"></a>パラメーター
 

@@ -3,15 +3,15 @@ title: Project Server ワークフロー開発の作業開始
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 735bbb04-a8c1-46c0-a346-42050f0ac9b1
 description: Project Server 2013 の需要管理プロセスには、プロジェクト提案とポートフォリオ分析の管理に役立つワークフローが含まれます。 ここでは、Project Server のワークフローを作成する方法について説明します。
-ms.openlocfilehash: 0a09022e63528f50ee4f0c8bd69bd6c34c5d8753
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7183969ec11cff06b3c3e16a7c0bd69ab89a3628
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344472"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613199"
 ---
 # <a name="getting-started-developing-project-server-workflows"></a>Project Server ワークフロー開発の作業開始
 

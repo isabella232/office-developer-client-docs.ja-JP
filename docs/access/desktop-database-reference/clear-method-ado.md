@@ -1,29 +1,29 @@
 ---
-title: Clear メソッド-ActiveX Data Objects (ADO)
+title: Clear メソッド - ActiveX データ オブジェクト (ADO)
 TOCTitle: Clear method (ADO)
 ms:assetid: 5d51f42c-147b-1fcf-d05b-123e5714ecb7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249329(v=office.15)
 ms:contentKeyID: 48545110
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b0d76480bdb5d5a3ab258e103a00707af303a4d3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 893b896df4b3655bb401f1e0446d371017ed0819
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296361"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612352"
 ---
 # <a name="clear-method-ado"></a>Clear メソッド (ADO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **Errors** コレクションからすべての **Error** オブジェクトを削除します。
 
 ## <a name="syntax"></a>構文
 
-*エラー*。空
+*エラー*。クリア
 
 ## <a name="remarks"></a>注釈
 
