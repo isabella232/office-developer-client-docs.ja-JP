@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fb394861-34d7-b7dd-1298-0c68a008528d
-ms.openlocfilehash: 0094bc9643cc1331e0b47bd11a59769a553e17f7
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: c0086a6c2f67e6f9da62d08c195f9abfca350e5c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542059"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627465"
 ---
 # <a name="shapesheet_type-complextype-visio-xml"></a>ShapeSheet_Type complexType (Visio XML)
 
@@ -136,7 +136,7 @@ ms.locfileid: "34542059"
 |名前  <br/> |xsd:string  <br/> |省略可能  <br/> ||xsd:string 型の値。  <br/> |
 |NameU  <br/> |xsd:string  <br/> |省略可能  <br/> ||xsd:string 型の値。  <br/> |
 |OriginalID  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> ||xsd:unsignedInt 型の値。  <br/> |
-|型  <br/> |xsd:token  <br/> |省略可能  <br/> ||xsd:token 型の値。  <br/> |
+|種類  <br/> |xsd:token  <br/> |省略可能  <br/> ||xsd:token 型の値。  <br/> |
 |UniqueID  <br/> |xsd:string  <br/> |省略可能  <br/> ||xsd:string 型の値。  <br/> |
    
 

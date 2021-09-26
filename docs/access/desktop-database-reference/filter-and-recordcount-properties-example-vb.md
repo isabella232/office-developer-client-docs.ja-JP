@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249167(v=office.15)
 ms:contentKeyID: 48544354
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f892349d2ddb9c8fc5063d3fbec37ca9ef0d469f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1d2262a3153d7168caa2e27a6eb0f0688e55ec10
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292483"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626590"
 ---
 # <a name="filter-and-recordcount-properties-example-vb"></a>Filter プロパティと RecordCount プロパティの使用例 (VB)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-この例では、**Pubs** データベースの Publishers テーブルにある ***Recordset*** を開きます。 次に、 [Filter](filter-property-ado.md) プロパティを使って、特定の国/領域のパブリッシャーに対して表示されるレコードの数を制限します。 **RecordCount** プロパティは、フィルターが適用されているレコードセットとフィルターが適用されていないレコードセットとの相違を示すために使います。
+次の使用例 **は、Pubs** _ データベースの Publishers テーブルで **_Recordset を_*開きます。次に [、Filter](filter-property-ado.md) プロパティを使用して、表示されるレコードの数を特定の国/地域の発行元に制限します。_* RecordCount** プロパティは、フィルター処理されたレコードセットとフィルター処理されていないレコードセットの違いを表示するために使用されます。
 
 ```vb 
  

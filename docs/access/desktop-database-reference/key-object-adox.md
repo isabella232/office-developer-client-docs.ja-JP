@@ -1,23 +1,23 @@
 ---
-title: Key オブジェクト (ADOX-Access デスクトップデータベースリファレンス)
+title: Key Object (ADOX - Access desktop database reference)
 TOCTitle: Key object (ADOX)
 ms:assetid: 727198ec-57d2-7766-790c-370beb931de6
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249461(v=office.15)
 ms:contentKeyID: 48545608
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f56a90b7accd1b64c9a52e0a7cf5385f83fd10d5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2c230b6ae88cbdfe1e39e4d2c19ad1a64a86283b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290753"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626359"
 ---
-# <a name="key-object-adox"></a>Key オブジェクト (ADOX)
+# <a name="key-object-adox"></a>キー オブジェクト (ADOX)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 データベース テーブルの主キー フィールド、外部キー フィールド、または一意なキー フィールドを表します。
 

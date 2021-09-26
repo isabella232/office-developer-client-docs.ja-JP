@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249128(v=office.15)
 ms:contentKeyID: 48544184
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c2ae4a44b11f3d92b4a1e44529e9e55ce3eb836f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: faa69e7c82dfaeb6f8d5b9e8f94e96a33ef3ddc8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292252"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626527"
 ---
 # <a name="getpermissions-and-setpermissions-methods-example-vc"></a>GetPermissions メソッドと SetPermissions メソッドの使用例 (VC++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、[GetPermissions](getpermissions-method-adox.md) メソッドと [SetPermissions](setpermissions-method-adox.md) メソッドの機能を示します。次のコードによって、Orders テーブルへのフル アクセス権が管理者ユーザーに与えられます。
 

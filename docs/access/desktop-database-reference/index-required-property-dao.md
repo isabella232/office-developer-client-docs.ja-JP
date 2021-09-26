@@ -1,5 +1,5 @@
 ---
-title: Index プロパティ (DAO)
+title: Index.Required プロパティ (DAO)
 TOCTitle: Required Property
 ms:assetid: ec8fafc4-8155-c48e-b3c8-2d9be425175a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836310(v=office.15)
@@ -10,25 +10,25 @@ f1_keywords:
 - dao360.chm1052963
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a2660a4cb422d91cf46b98a8d3870d2ab2db73fc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 02cf71cbd5c1692fb68829902191922536061e43
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291700"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626380"
 ---
-# <a name="indexrequired-property-dao"></a>Index プロパティ (DAO)
+# <a name="indexrequired-property-dao"></a>Index.Required プロパティ (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **[Field](field-object-dao.md)** オブジェクトに非 Null 値が必要かどうかを示す値を設定または取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*。必須
+*式* .必須
 
-*式***Index**オブジェクトを表す変数を取得します。
+*式* Index オブジェクトを表す **変数** 。
 
 ## <a name="remarks"></a>注釈
 
@@ -51,7 +51,7 @@ ms.locfileid: "32291700"
 <tbody>
 <tr class="odd">
 <td><p><strong>Index</strong> オブジェクト</p></td>
-<td><p>サポートされない</p></td>
+<td><p>サポートしません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong> オブジェクト</p></td>
@@ -59,15 +59,15 @@ ms.locfileid: "32291700"
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong> オブジェクト</p></td>
-<td><p>値の取得のみ可能です。</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Relation</strong> オブジェクト</p></td>
-<td><p>サポートしません。</p></td>
+<td><p>非サポート</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>TableDef</strong> オブジェクト</p></td>
-<td><p>値の取得および設定が可能です。</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 </tbody>
 </table>

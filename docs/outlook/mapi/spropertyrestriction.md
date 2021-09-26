@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SPropertyRestriction
 api_type:
 - COM
 ms.assetid: 2bbf13e9-05b3-4498-8e08-d9e07505190d
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 29d392eba530126e06a672c10044c5b4df0618c9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 66ee8e34cc8c42e2ac656284d91a2f2b64c669da
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406088"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629558"
 ---
 # <a name="spropertyrestriction"></a>SPropertyRestriction
 
@@ -39,7 +39,7 @@ typedef struct _SPropertyRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 **relop**
   

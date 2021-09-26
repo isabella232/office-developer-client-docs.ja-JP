@@ -1,29 +1,29 @@
 ---
-title: Flush メソッド-ActiveX データオブジェクト (ADO)
+title: Flush メソッド - ActiveX データ オブジェクト (ADO)
 TOCTitle: Flush method (ADO)
 ms:assetid: c167e3b1-c133-ce45-6cee-5a1280a1568f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249941(v=office.15)
 ms:contentKeyID: 48547529
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e2a55eb66c454d510d53083c495326548eda08af
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d6305b2e4e33dea1ed36cd9bcc4b9a47ffae3a4d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292343"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622222"
 ---
 # <a name="flush-method-ado"></a>Flush メソッド (ADO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ADO バッファーに残っている [Stream](stream-object-ado.md) の内容を、**Stream** に関連付けられた、基になるオブジェクトに反映します。
 
 ## <a name="syntax"></a>構文
 
-*ストリーム*。揃え
+*Stream*.フラッシュ
 
 ## <a name="remarks"></a>注釈
 

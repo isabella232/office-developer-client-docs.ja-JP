@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: da26de4b-3e5b-326b-de46-e8c542b74f02
 description: ドキュメントの StyleSheet 要素のコレクションを格納します。
-ms.openlocfilehash: 363cb102fb545ffd20601bf0125c22aeb06defa8
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 62b822663e698cf370cf3feac890de5de2a72f30
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541989"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627354"
 ---
 # <a name="stylesheets-element-visiodocument_type-complextype-visio-xml"></a>StyleSheets 要素 (VisioDocument_Type complexType) (Visio XML)
 

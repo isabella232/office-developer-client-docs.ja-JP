@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8ba40adb-420a-4e5f-8858-d706da6cb497
 description: 2 つの数を加算します。この加算演算子では、日付に数 (日数) を加算することもできます。
-ms.openlocfilehash: 93135f99832f517c3a0cdbd1e9c380fcce45a28e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9210305a3edc31e469377c3b9561c7f8c7e4f45d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416567"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631518"
 ---
 # <a name="-add-access-custom-web-app"></a>+ (追加) (Access カスタム Web アプリ)
 

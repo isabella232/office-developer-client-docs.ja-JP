@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249699(v=office.15)
 ms:contentKeyID: 48546547
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2229c7580acc6848551103d83b7bfcf981d37bef
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9384443fd8e048ebfd59a2a534ef1a99225abd25
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295318"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626919"
 ---
 # <a name="creating-and-executing-a-simple-command"></a>簡単なコマンドの作成と実行
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 **Command** オブジェクトの一般的な使用方法ではありませんが、次のコードに、 **Command** オブジェクトを使用してデータ ソースに対するコマンドを実行する基本的な方法を示します。この場合、行を返すコマンドなので、コマンドの実行結果を **Recordset** オブジェクトに返します。
 
@@ -83,7 +83,7 @@ ErrHandler:
 
 
 > [!NOTE]
-> このセクションのいくつかの例では、ユーティリティ関数**getnewconnection**を呼び出して、データプロバイダーとの接続を確立します。 冗長性を回避するために、次のように表示されます。
+> このセクションのいくつかの例では、ユーティリティ関数 **GetNewConnection** を呼び出して、データ プロバイダーとの接続を確立します。 冗長性を回避するには、次の 1 回のみ一覧表示されます。
 
 ```vb 
  

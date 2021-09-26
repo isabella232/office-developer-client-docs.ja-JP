@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c2d6a7dd-9f15-27bd-9623-2a047683ff98
 description: int パラメーターで指定した量で彩度を下げ、色を変更します。
-ms.openlocfilehash: c3352d4c15671244d0fc4701f2c26b4e0c2ea54d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2ea8e6af43fe199e9c7bff18d1120b1e24d08eca
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434376"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627276"
 ---
 # <a name="tone-function"></a>TONE 関数
 

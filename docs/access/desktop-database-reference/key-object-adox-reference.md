@@ -1,23 +1,23 @@
 ---
-title: Key オブジェクト (ADOX) リファレンス
+title: キー オブジェクト (ADOX) リファレンス
 TOCTitle: Key object (ADOX)
 ms:assetid: 7bb344df-182f-43fc-847e-1b40098bd1f7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249514(v=office.15)
 ms:contentKeyID: 48545818
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 93d5eebf5dde57159a74b8cee79e038da23afd57
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 539448beef1a929e1c8edb27e96f668a189d0380
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290780"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631917"
 ---
-# <a name="key-object-adox-reference"></a>Key オブジェクト (ADOX) リファレンス
+# <a name="key-object-adox-reference"></a>キー オブジェクト (ADOX) リファレンス
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-- [Key オブジェクト (ADOX)](key-object-adox.md)
+- [キー オブジェクト (ADOX)](key-object-adox.md)
 - [主要なプロパティ、メソッド、およびイベント (ADOX)](key-properties-methods-and-events-adox.md)
 

@@ -6,22 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823085(v=office.15)
 ms:contentKeyID: 48547598
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ac29cbdae8c162a992f2763530514150ca0240ea
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f08200d2037ab09c8c9aee4ebcc8a98ae228ca2d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296298"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622495"
 ---
 # <a name="closedatabase-macro-action"></a>CloseDatabase マクロ アクション
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 "CloseDatabase/データベースを閉じる" アクションを使用すると、カレント データベースを閉じることができます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "CloseDatabase/データベースを閉じる" アクションには、引数はありません。
 
@@ -29,7 +29,7 @@ ms.locfileid: "32296298"
 
   - マクロの中で "CloseDatabase/データベースを閉じる" アクションより後に設定されたアクションは実行されません。
 
-  - このアクションの動作は、[**ファイル**] タブをクリックし、[**データベースを閉じる**] をクリックした場合と同じです。 If there are any unsaved objects open when you run the **CloseDatabase** action, the dialog boxes that appear are the same as those displayed when you click **Close Database**.
+  - このアクションは、[ファイル] タブをクリックし、[データベースの閉じる] をクリックするのと **同じ効果があります**。 If there are any unsaved objects open when you run the **CloseDatabase** action, the dialog boxes that appear are the same as those displayed when you click **Close Database**.
 
   - To run the **CloseDatabase** action in a Visual Basic for Applications (VBA) module, use the **CloseDatabase** method of the **DoCmd** object.
 

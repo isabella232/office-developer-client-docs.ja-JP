@@ -1,5 +1,5 @@
 ---
-title: TableDef link メソッド (DAO)
+title: TableDef.RefreshLink メソッド (DAO)
 TOCTitle: RefreshLink Method
 ms:assetid: 9f0059c6-3b7b-57e3-7527-ef674ad9417d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198349(v=office.15)
@@ -10,29 +10,29 @@ f1_keywords:
 - dao360.chm1052980
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: ba9375da16cebd7db7a29fe20fca6f8b395a73a2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3092a623dc84726c4f2d217c0eaea40546b48627
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314281"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631696"
 ---
-# <a name="tabledefrefreshlink-method-dao"></a>TableDef link メソッド (DAO)
+# <a name="tabledefrefreshlink-method-dao"></a>TableDef.RefreshLink メソッド (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
  
 リンク テーブルの接続情報を更新します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*。RefreshLink
+*式* .RefreshLink
 
-*式***TableDef**オブジェクトを表す変数を取得します。
+*式***TableDef** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
-リンクテーブルの接続情報を変更するには、対応する**TableDef**オブジェクトの**[Connect](connection-connect-property-dao.md)** プロパティをリセットしてから、 **refreshlink**メソッドを使用して情報を更新します。 **refreshlink**メソッドを使用しても、リンクテーブルのプロパティと**[Relation](relation-object-dao.md)** オブジェクトは変更されません。
+リンク テーブルの接続情報を変更するには、対応する **[TableDef](connection-connect-property-dao.md)** オブジェクトの Connect プロパティをリセットしてから **、RefreshLink** メソッドを使用して情報を更新します。  **RefreshLink メソッドを** 使用しても、リンクテーブルのプロパティと Relation オブジェクトは **[変更](relation-object-dao.md)** されません。
 
 リンク テーブルを表す **TableDef** オブジェクトに関連付けられたすべてのコレクションにこの接続情報を反映するには、各コレクションで **[Refresh](tabledefs-refresh-method-dao.md)** メソッドを使用する必要があります。
 

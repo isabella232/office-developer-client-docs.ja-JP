@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d55b6676-125f-7cf1-509d-21dee548f5a1
 description: アクティブなウィンドウに対して、特定スナップの拡張情報の設定を有効または無効にするかどうかを指定します。
-ms.openlocfilehash: 86ff7f32d6e12b2f0d7a8387d8e5b7ae9870b5fa
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 4a705dc23ae9887c09b922b866cfabec0ddef806
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540379"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627409"
 ---
 # <a name="snapextensions-element-documentsettings_type-complextype-visio-xml"></a>SnapExtensions 要素 (DocumentSettings_Type complexType) (Visio XML)
 
@@ -59,18 +59,18 @@ ms.locfileid: "34540379"
 |**値**|**説明**|
 |:-----|:-----|
 |0  <br/> |何もスナップしません。  <br/> |
-|1  <br/> |スナップボックスの拡張子に変更します。  <br/> |
-|2  <br/> |スナップ軸の拡張子に移動します。  <br/> |
-|4  <br/> |スナップ接線の延長に移動します。  <br/> |
-|8  <br/> |スナップエンドポイント拡張機能にアクセスします。  <br/> |
-|16   <br/> |スナップ中点の拡張子に変更します。  <br/> |
-|32  <br/> |スナップの拡張を指定します。  <br/> |
-|64  <br/> |スナップに移動します。  <br/> |
-|128  <br/> |スナップ垂直な拡張子に移動します。  <br/> |
-|256  <br/> |スナップ垂直な拡張に移動します。  <br/> |
-|512  <br/> |スナップの拡張をエンドポイントに移動します。  <br/> |
-|1024  <br/> |スナップ垂直方向の拡張機能に移動します。  <br/> |
-|2048  <br/> |スナップ中心の拡張子に変換します。  <br/> |
-|4096  <br/> |スナップ等角角度の拡張を指定します。  <br/> |
+|1  <br/> |配置ボックスの拡張機能にスナップします。  <br/> |
+|2  <br/> |中心軸の拡張子にスナップします。  <br/> |
+|4   <br/> |曲線の接線の拡張子にスナップします。  <br/> |
+|8   <br/> |エンドポイント拡張機能にスナップします。  <br/> |
+|16   <br/> |中点の拡張機能にスナップします。  <br/> |
+|32  <br/> |線形拡張にスナップします。  <br/> |
+|64  <br/> |曲線の拡張子にスナップします。  <br/> |
+|128  <br/> |端点垂直拡張にスナップします。  <br/> |
+|256  <br/> |垂直な中点の内線にスナップします。  <br/> |
+|512  <br/> |端点の水平方向の拡張機能にスナップします。  <br/> |
+|1024  <br/> |端点垂直拡張にスナップします。  <br/> |
+|2048  <br/> |楕円の中心の拡張機能にスナップします。  <br/> |
+|4096  <br/> |等角角度の拡張にスナップします。  <br/> |
    
 

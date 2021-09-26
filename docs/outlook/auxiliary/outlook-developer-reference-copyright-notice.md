@@ -1,21 +1,19 @@
 ---
-title: Outlook 開発者向けリファレンスの著作権に関する通知
+title: Outlook参照著作権に関する通知
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3d692894-a0c1-b9dc-1196-07ecaa72afee
-description: このドキュメントは現状のまま提供されます。 このドキュメントに記載されている情報とビュー (URL や他のインターネット Web サイト参照を含む) は、予告なしに変更される場合があります。 使用に伴うリスクは、お客様が負うものとします。
-ms.openlocfilehash: 6f0adc48f95fe9a5d008dc3d0c6c4298f3ceed20
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a79db30973259d4dd935dc60151d0181a7c28034
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327777"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631218"
 ---
-# <a name="outlook-developer-reference-copyright-notice"></a>Outlook 開発者向けリファレンスの著作権に関する通知
+# <a name="outlook-2013-developer-reference-copyright-notice"></a>Outlook 2013 開発者向けリファレンス著作権に関する通知
 
 このドキュメントは "現状のまま" 提供されます。このドキュメントで説明されている情報およびビューは、URL および他のインターネット Web サイトの参照を含めて、予告なく変更されることがあります。このドキュメントの使用に伴うリスクはお客様が負うものとします。 
   
@@ -29,4 +27,3 @@ Microsoft、Access、ActiveX、ClearType、Excel、FrontPage、InfoPath、Intell
   
 その他すべての商標は各社が所有しています。
   
-

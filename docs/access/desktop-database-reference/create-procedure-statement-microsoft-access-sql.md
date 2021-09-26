@@ -8,13 +8,13 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 dev_langs:
 - sql
-localization_priority: Priority
-ms.openlocfilehash: f223e164bd36a6a1a76140a28dd57cd2005e4a20
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: b54d85a655bcb6ef60560583e8cbe1e2852c603e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295405"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569217"
 ---
 # <a name="create-procedure-statement-microsoft-access-sql"></a>CREATE PROCEDURE ステートメント (Microsoft Access SQL)
 
@@ -33,8 +33,8 @@ CREATE PROCEDURE ステートメントでは、次の引数を使用します。
 
 |パーツ|説明|
 |:---|:----------|
-|*procedure*|プロシージャの名前。 名前付け規則に従った名前を指定します。|
-|*param1*、*param2*|0 ～ 255 のフィールド名またはパラメーター。 例:<br/><br/>`CREATE PROCEDURE Sales_By_Country [Beginning Date] DateTime, [Ending Date] DateTime;`<br/><br/>パラメーターの詳細については、「[PARAMETERS](parameters-declaration-microsoft-access-sql.md)」を参照してください。|
+|*procedure*|プロシージャの名前。名前付け規則に従った名前を指定します。|
+|*param1*、*param2*|0 - 255 のフィールド名またはパラメーター。次に例を示します。<br/><br/>`CREATE PROCEDURE Sales_By_Country [Beginning Date] DateTime, [Ending Date] DateTime;`<br/><br/>パラメーターの詳細については、「[PARAMETERS](parameters-declaration-microsoft-access-sql.md)」を参照してください。|
 |*datatype*|
             [Microsoft Access SQL データ型](sql-data-types.md)の 1 つ、またはその別名のうちの 1 つを指定します。|
 |*sqlstatement*|SELECT、UPDATE、DELETE、INSERT、CREATE TABLE、DROP TABLE などの SQL ステートメント。|

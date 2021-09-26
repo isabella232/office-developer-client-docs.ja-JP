@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0ae21571-2299-6407-807c-428668bb6798
 description: 夏時間のすべての履歴、現在、および将来のタイム ゾーン シフト ルールを含む、タイム ゾーン全体を表します。
-ms.openlocfilehash: 5f7000ecc1fa602b330670c2ee1c39f673a11a65
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 845d2cb2195eb6736fe03f0b66e5110d692538ee
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429342"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631133"
 ---
 # <a name="tzdefinition"></a>TZDEFINITION
 

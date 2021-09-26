@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250270(v=office.15)
 ms:contentKeyID: 48548820
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5a9498a24b858de013aa717e9ce54963a81ab137
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e05988d4fe3b8d9d0bc6d387c03a8dde65bd6bbe
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308744"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631699"
 ---
 # <a name="seek-method-and-index-property-example-vc"></a>Seek メソッドと Index プロパティの使用例 (VC++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Seek](seek-method-ado.md) メソッドと [Index](index-property-ado.md) プロパティを、指定された ***Employee ID*** と組み合わせて使用し、Nwind.mdb データベースの ***Employees*** テーブルで社員の名前を検索します。
+この例では [、Recordset](recordset-object-ado.md)オブジェクトの [](seek-method-ado.md)Seek メソッドと [Index](index-property-ado.md)プロパティを指定した ***Employee ID** _と組み合わせて使用し、Nwind.mdb データベースの _ *_Employees_** テーブルで従業員の名前を検索します。
 
 ```cpp 
  
@@ -243,7 +243,7 @@ void PrintComError(_com_error &e)
 // EndSeekCpp 
 ```
 
-**seekx .h**
+**SeekX.h**
 
 ```cpp 
  

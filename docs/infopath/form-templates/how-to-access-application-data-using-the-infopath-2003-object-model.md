@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - フォーム テンプレート [infopath 2007],2003 オブジェクト モデルを使用してデータにアクセスする,InfoPath 2003 互換のフォーム テンプレート,アプリケーション データにアクセスする
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: da604c72-c760-4aa3-9574-d59c392753df
 description: InfoPath 2003 互換オブジェクト モデルには、InfoPath アプリケーションに関する情報 (フォームの基になる XML ドキュメント、フォーム定義ファイル (.xsf) などに関する情報) へのアクセスに使用できるオブジェクトとコレクションがあります。これらのデータには、InfoPath オブジェクト モデルの階層構造の最上位レベルにあるオブジェクトを通じてアクセスします。これらのオブジェクトは、Application インターフェイスを通じてインスタンス化されます。
-ms.openlocfilehash: 849882a97109d91a5807a6798d5a62457ab971fd
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 006ae3d7d00f7137fd0acd521ed66731a8d73417
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437442"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631354"
 ---
 # <a name="access-application-data-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してアプリケーション データにアクセスする
 

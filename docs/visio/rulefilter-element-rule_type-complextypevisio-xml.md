@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b05497e6-722f-9203-e03c-0f14a712cddb
 description: 検証ルールをターゲット オブジェクトに適用するかどうかを決定する論理式を指定します。
-ms.openlocfilehash: 3abcd7e2dd093fa8e2321052e73835db22c150db
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 261cd934d0350a9e045f4795c5b5ce58464eb742
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541681"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627577"
 ---
 # <a name="rulefilter-element-rule_type-complextype-visio-xml"></a>RuleFilter 要素 (Rule_Type complexType) (Visio XML)
 

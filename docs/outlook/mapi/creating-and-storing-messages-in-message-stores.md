@@ -1,19 +1,19 @@
 ---
-title: メッセージ ストアのメッセージの作成と保存
+title: �쐬�ƃ��b�Z�[�W �X�g�A�Ń��b�Z�[�W��ۑ����܂��B
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: cc74b31c-d7ed-4fcf-9535-a2f9222901b7
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 7c923a330c542dff8b1bbc476461ccd21680a5b7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.openlocfilehash: a43569352cdcf8c0a8eac533be7a3b6cb7793652
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332901"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631007"
 ---
 # <a name="creating-and-storing-messages-in-message-stores"></a>メッセージ ストアのメッセージの作成と保存
 
@@ -25,11 +25,11 @@ ms.locfileid: "32332901"
   
 メッセージ ストア プロバイダーが新しいメッセージを作成するときは、メッセージに必要なプロパティを付けてメッセージを作成する必要があります。これらのプロパティ一覧は、[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md) インターフェイスの文書に記載されています。その後、クライアント アプリケーションが、[IMAPIProp](imapipropiunknown.md) メソッドを使ってすべての追加プロパティを追加します。 
   
-メッセージ ストア プロバイダーが基盤となるストレージ メカニズムにメッセージを保存するときは、メッセージのプロパティを繰り返し処理して、基盤となるストレージ メカニズムに保存する必要があります。そうすることで、後で開いたときにメッセージが完全な形で復元されます。
+When the message store provider saves a message to the underlying storage mechanism, the provider needs to iterate over the message's properties, and save them to the underlying storage mechanism such that they can be fully recovered if the message is later opened.
   
-MAPI は [IMessage](imessageimapiprop.md) インターフェイス上のプロパティのトランザクションを要求します。つまり、プロパティに加えられた変更は、[IMAPIProp::SaveChanges](imapiprop-savechanges.md) メソッドがメッセージ オブジェクトに対して呼び出されるまでは永続的になりません。メッセージ ストア プロバイダーには、この動作を実装する責任があります。通常、これは難しくありません。つまり、プロパティが変更されている間、プロパティをメモリに保持し、**SaveChanges** が呼び出されたときに、基盤となるストレージ メカニズムにコミットすることを意味します。 
+MAPI requires that the properties on [IMessage](imessageimapiprop.md) interfaces are transacted, meaning that changes made to them do not become permanent until the [IMAPIProp::SaveChanges](imapiprop-savechanges.md) method is called on the message object. The message store provider is responsible for implementing this behavior. Usually this is not difficult; it simply means holding properties in memory while they are being modified and committing them to the underlying storage mechanism when **SaveChanges** is called. 
   
-メッセージ オブジェクトのプロパティの中には、次に示すとおり、**SaveChanges** メソッドに関して、クライアント アプリケーションに対する特別なセマンティクスを持つものがあります。 
+���b�Z�[�W�̃I�u�W�F�N�g�̈ꕔ�̃v���p�e�B�ł́A���̂悤�ɁA **SaveChanges**���\�b�h�Ɋ֘A����N���C�A���g �A�v���P�[�V�����ɓ��ʂȈӖ�������܂��B 
   
 - 一部のプロパティは、**SaveChanges** が呼び出される前に読み取り/書き込みが行われる必要がありますが、その後は読み取り専用になります。 たとえば、メッセージを作成する (つまり読み取り/書き込みである) クライアント アプリケーションによって、当初、**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) が設定されていても、いったん **SaveChanges** の呼び出しがあってからは変更できません。
     

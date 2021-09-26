@@ -3,17 +3,17 @@ title: プロパティ識別子の範囲
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: c01e95bb-be25-490d-880b-60674f890258
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: cdf1eae945cddf9eb76a2b7a2532d5dc6568beac
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a9e0509cfa0ab3bdeb6b7d285c6635b2a00f9c51
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422706"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629600"
 ---
 # <a name="property-identifier-ranges"></a>プロパティ識別子の範囲
 

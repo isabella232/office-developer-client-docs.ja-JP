@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb644320(v=office.15)
 ms:contentKeyID: 55119866
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 32c40e1fbda3f0f851b52d29c073d95a5d636620
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 87fc89d1d15f5fed0de7cd798c08ba2fda350016
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349561"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629418"
 ---
 # <a name="create-a-mail-item-attach-a-report-and-send-the-mail-item-to-the-users-manager"></a>メール アイテムを作成し、レポートを添付して、ユーザーの上司にメール アイテムを送信する
 
@@ -22,7 +22,7 @@ ms.locfileid: "32349561"
 
 この例は、Microsoft Exchange Server アカウントを対象とする場合に限り、適切に動作します。Active Directory ディレクトリ サービスでユーザーと上司の関係が設定されていることが必要です。この例では、[ExchangeUser](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) オブジェクトを使用して [GetExchangeUserManager](https://msdn.microsoft.com/library/bb646656\(v=office.15\)) メソッドを呼び出すことによって、現在のユーザーの上司を判別します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード サンプルをテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートする際に、最初に必ず Microsoft Outlook 15.0 Object Library コンポーネントへの参照を追加し、そして Outlook 変数を指定します。**Imports** または **using** ステートメントは、コード サンプル中の関数の前に直接置かれず、Public クラス宣言の前に追加する必要があります。次のプログラムは、Visual Basic および C\#でインポートおよび割り当てを行う方法を示しています。
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook

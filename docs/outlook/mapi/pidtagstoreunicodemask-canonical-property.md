@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagStoreUnicodeMask
 api_type:
 - COM
 ms.assetid: a6082162-2a74-4850-a0df-4bdbc67b41d8
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: e15c259003ed2cb425eb181f4383f3054967b993
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 438c770e9c004973e6635d575b7a8134891ee964
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437939"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629705"
 ---
 # <a name="pidtagstoreunicodemask-canonical-property"></a>PidTagStoreUnicodeMask 標準プロパティ
 
@@ -94,7 +94,7 @@ STORE_PUBLIC_FOLDERS
     
 STORE_PUSHER_OK
   
-> (8388608,0x00800000)MAPI プロトコル ハンドラーはストアをクロールしません。また、メッセージのインデックスを作成するためにインデクサーに通知を通じて変更をプッシュする責任があります。
+> (8388608、0x00800000)MAPI プロトコル ハンドラーはストアをクロールしません。また、メッセージのインデックスを作成するためにインデクサーに通知を通じて変更をプッシュする責任があります。
     
 STORE_READONLY 
   

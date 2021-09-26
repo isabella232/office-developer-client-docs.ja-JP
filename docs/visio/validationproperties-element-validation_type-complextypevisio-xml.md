@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a51a60c9-479b-7d7b-860f-bb46fc8b4d63
 description: ドキュメントの検証に関連するプロパティをカプセル化します。
-ms.openlocfilehash: 35e6f3f13eecef826fdef0d664bba35fceb0e069
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: c6608a723a689e958e4a4858753055480fb6d2f1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538523"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627192"
 ---
 # <a name="validationproperties-element-validation_type-complextype-visio-xml"></a>ValidationProperties 要素 (Validation_Type complexType) (Visio XML)
 
@@ -52,7 +52,7 @@ ms.locfileid: "34538523"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|LastValidated  <br/> |xsd:dateTime  <br/> |必須  <br/> |ドキュメントが最後に検証された日時。  <br/> |xsd:dateTime type 型の値。  <br/> |
+|LastValidated  <br/> |xsd:dateTime  <br/> |必須出席者  <br/> |ドキュメントが最後に検証された日時。  <br/> |xsd:dateTime type 型の値。  <br/> |
 |ShowIgnored  <br/> |xsd:boolean  <br/> |必須  <br/> |[問題] ウィンドウに無視された検証の問題を表示するかどうかを指定します。  <br/> |xsd:boolean 型の値。  <br/> |
    
 

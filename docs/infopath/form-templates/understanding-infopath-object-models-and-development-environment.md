@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - infopath 2007, object models,object models [InfoPath 2007],InfoPath 2007, development environments
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 29415c5b-9a42-46f4-a9e8-6a7d5bb7bdbf
 description: Microsoft InfoPath 2013 は、フォーム テンプレートでのビジネス ロジック開発用に 2 種類のプログラミング モデルをサポートしており、マネージ コードからの外部自動化もサポートしています。
-ms.openlocfilehash: c2ed1254acf86136ab7144c732aef91ac4c14c53
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 99a72dda5e50f856fbf94c88e891f8a2a7e39d1b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303459"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631287"
 ---
 # <a name="understanding-infopath-object-models-and-development-environment"></a>InfoPath のオブジェクト モデルと開発環境を理解する
 
@@ -100,7 +100,7 @@ InfoPath 2003 互換のマネージ コード オブジェクト モデルは、
   
 ### <a name="the-infopath-forms-services-object-model"></a>InfoPath Forms Services オブジェクト モデル
 
-InfoPath Forms Services の管理タスクを自動化するマネージ コード オブジェクト モデルは、Microsoft SharePoint Server 2013 インストールの \<ドライブ\>:\Program Files\Microsoft Office Server\15.0\Bin にある Microsoft.Office.InfoPath.Server.dll に実装されています。
+InfoPath Forms Services 管理タスクを自動化するマネージ コード オブジェクト モデルは、Microsoft.Office.InfoPath.Server.dll で実装され、Microsoft SharePoint Server \<drive\> 2013 インストールの :\Program Files\Microsoft Office Server\15.0\Bin にあります。
   
 |**アセンブリ**|**説明**|
 |:-----|:-----|

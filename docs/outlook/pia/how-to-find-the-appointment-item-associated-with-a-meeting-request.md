@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff184658(v=office.15)
 ms:contentKeyID: 55119875
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 43bc64dbbed14dae2e185ea89d15b6061858de42
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: aee73e3247c8f001d1b611e2437410a034893492
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320301"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629299"
 ---
 # <a name="find-the-appointment-item-associated-with-a-meeting-request"></a>会議出席依頼に関連付けられている予定アイテムを検索する
 

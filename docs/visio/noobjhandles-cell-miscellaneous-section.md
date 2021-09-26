@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm730
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8e1c8c8f-4ed0-0f53-f93f-3a264edc02bd
 description: 選択した図形の選択ハンドルの表示/非表示を切り替えます。
-ms.openlocfilehash: e46f19d77d1743fb7223b5f7d98f80a05d8f6b07
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fc0aa2f4104c09264b92805b81ddc8cbad03cc97
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428656"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627878"
 ---
 # <a name="noobjhandles-cell-miscellaneous-section"></a>[NoObjHandles] セル ([Miscellaneous] セクション)
 

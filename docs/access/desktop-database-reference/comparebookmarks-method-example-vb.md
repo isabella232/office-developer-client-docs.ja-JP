@@ -6,22 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248807(v=office.15)
 ms:contentKeyID: 48543012
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0f6678400ad575bcc46d4fe2a463281b3c075615
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4b2dcf09d38a0c094d836ebd97daf256c14e7b70
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296074"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59632099"
 ---
 # <a name="comparebookmarks-method-example-vb"></a>CompareBookmarks メソッドの使用例 (VB)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-この例では、[CompareBookmarks](comparebookmarks-method-ado.md) メソッドの使い方を示します。 通常、ブックマークの相対的な値は、特別なブックマークでない限り必要ありません。
+この例では、[CompareBookmarks](comparebookmarks-method-ado.md) メソッドの使い方を示します。通常、ブックマークの相対的な値は、特別なブックマークでない限り必要ありません。
 
-***Authors*** テーブルから取得した [Recordset](recordset-object-ado.md) のランダムな行を、検索の対象として指定します。 Then display the position of each row relative to that target.
+***Authors*** テーブルから取得した [Recordset](recordset-object-ado.md) のランダムな行を、検索の対象として指定します。次に、その検索対象に対する各行の相対的な位置を表示します。
 
 ```vb 
  

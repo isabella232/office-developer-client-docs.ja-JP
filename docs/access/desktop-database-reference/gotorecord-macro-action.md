@@ -10,22 +10,22 @@ f1_keywords:
 - vbaac10.chm58124
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 7534ae84b57d14450009865ea330a4c54d4cfb44
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9041b1e33010f3b80be82c0e80e4a0fe86a7cf80
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292140"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622229"
 ---
 # <a name="gotorecord-macro-action"></a>GoToRecord マクロ アクション
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 "GoToRecord/レコードの移動" アクションを使用すると、開いているテーブル、フォーム、またはクエリの結果セットで、指定したレコードをカレント レコードにすることができます。
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "**GoToRecord/レコードの移動**" アクションの引数は次のとおりです。
 
@@ -42,7 +42,7 @@ ms.locfileid: "32292140"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Object Type/オブジェクトの種類</strong></p></td>
+<td><p><strong>オブジェクトの種類</strong></p></td>
 <td><p>カレント レコードにするレコードが含まれているオブジェクトの種類を指定します。[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>オブジェクトの種類</strong>] ボックスで、[<strong>テーブル</strong>]、[<strong>クエリ</strong>]、[<strong>フォーム</strong>]、[<strong>サーバー ビュー</strong>]、[<strong>ストアド プロシージャ</strong>]、[<strong>関数</strong>] のいずれかをクリックします。この引数を指定しない場合は、アクティブ オブジェクトが選択されます。</p></td>
 </tr>
 <tr class="even">
@@ -55,13 +55,13 @@ ms.locfileid: "32292140"
 </tr>
 <tr class="even">
 <td><p><strong>Offset</strong></p></td>
-<td><p>整数値、または結果が整数値となる式を指定します。 式の前には等号 (<strong>=</strong>) を付ける必要があります。 この引数では、カレント レコードにするレコードを指定します。 この引数の使用方法は 2 とおりあります。</p>
+<td><p>整数値、または結果が整数値となる式を指定します。 式の前に等号 ( ) を付けます <strong>=</strong> 。 この引数では、カレント レコードにするレコードを指定します。 この引数の使用方法は 2 とおりあります。</p>
 <ul>
-<li><p><strong>Record</strong>引数が Previous また<strong></strong>は<strong>Previous</strong>に指定されている場合、Microsoft Office Access 2007 は、 <strong>Offset</strong>引数で指定したレコード数を前方または後方に移動します。</p></li>
-<li><p><strong>record</strong>引数に<strong>Go を</strong>指定すると、引数<strong>Offset</strong>と等しい数のレコードに移動します。 レコード番号は、ウィンドウの下部にあるレコード番号ボックスに表示されます。</p>
-<p><strong>注</strong>: <strong>Record</strong>引数の<strong>最初</strong>、<strong>最後</strong>、または<strong>新しい</strong>設定を使用すると、引数<strong>Offset</strong>は無視されます。 引数<strong>Offset</strong>に大きすぎる値を入力すると、エラーメッセージが表示されます。 <strong>Offset</strong>引数に負の数を入力することはできません。</p></li>
-<li><p><strong>Record</strong>引数が Previous また<strong></strong>は<strong>Previous</strong>に指定されている場合、Microsoft Office Access 2007 は、 <strong>Offset</strong>引数で指定したレコード数を前方または後方に移動します。</p></li>
-<li><p><strong>record</strong>引数に<strong>Go を</strong>指定すると、引数<strong>Offset</strong>と等しい数のレコードに移動します。 レコード番号は、ウィンドウの下部にあるレコード番号ボックスに表示されます。</p></li>
+<li><p>引数<strong>Record</strong>が<strong></strong>Next または<strong>Previous</strong>の場合、Microsoft Office Access 2007 は Offset 引数で指定されたレコードの数を前後に<strong>移動</strong>します。</p></li>
+<li><p>引数 <strong>Record が Go</strong> <strong>To の場合</strong>、Access は Offset 引数に等しい数値のレコードに <strong>移動</strong> します。 レコード番号は、ウィンドウの下部にあるレコード番号ボックスに表示されます。</p>
+<p><strong>メモ</strong>: 引数<strong>Record</strong>に<strong>最初、</strong><strong>最後</strong>、または<strong>新</strong>しい設定を使用する場合、引数 Offset は無視されます。 <strong></strong> 大きすぎる <strong>Offset</strong> 引数を入力すると、エラー メッセージが表示されます。 Offset 引数に負の数値を <strong>入力</strong> できない。</p></li>
+<li><p>引数<strong>Record</strong>が<strong></strong>Next または<strong>Previous</strong>の場合、Microsoft Office Access 2007 は Offset 引数で指定されたレコードの数を前後に<strong>移動</strong>します。</p></li>
+<li><p>引数 <strong>Record が Go</strong> <strong>To の場合</strong>、Access は Offset 引数に等しい数値のレコードに <strong>移動</strong> します。 レコード番号は、ウィンドウの下部にあるレコード番号ボックスに表示されます。</p></li>
 </ul>
 </td>
 </tr>

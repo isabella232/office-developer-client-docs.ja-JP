@@ -6,22 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249241(v=office.15)
 ms:contentKeyID: 48544715
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7d436ec9102c4c75688b6c6ac973ca85e8c280d0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 28769059f6a7ab2ab6edd0723ad81d1fc156e43c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291707"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626387"
 ---
 # <a name="index-property-ado"></a>Index プロパティ (ADO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 [Recordset](recordset-object-ado.md) オブジェクトに対して現在有効なインデックスの名前を示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
 インデックス名を表す文字列型 (**String**) の値を設定または取得します。
 
@@ -43,7 +43,7 @@ ms.locfileid: "32291707"
 
 インデックスの設定が可能で、[LockType](locktype-property-ado.md) プロパティが **adLockPessimistic** または **adLockOptimistic** の場合は、 [UpdateBatch](updatebatch-method-ado.md) 操作が暗黙的に実行されます。これによって、現在のグループと、影響下のグループが解放されます。既存のフィルターがすべて解放され、現在の行の位置は、並べ替えられた **Recordset** の最初の行に移動します。
 
-**Index** プロパティは、 [Seek](seek-method-ado.md) メソッドと一緒に使用します。 基になるプロバイダーが **Index** プロパティをサポートしていないために **Seek** メソッドがサポートされていない場合は、代わりに [Find](find-method-ado.md) メソッドを使用してください。 **Recordset**オブジェクトが、 [supports](supports-method-ado.md)メソッド **(adindex)** でのインデックスをサポートしているかどうかを判断します。
+**Index** プロパティは、 [Seek](seek-method-ado.md) メソッドと一緒に使用します。 基になるプロバイダーが **Index** プロパティをサポートしていないために **Seek** メソッドがサポートされていない場合は、代わりに [Find](find-method-ado.md) メソッドを使用してください。 Recordset オブジェクト [](supports-method-ado.md)が **サポート****(adIndex)** メソッドを使用してインデックスをサポートするかどうかを判断します。
 
 どちらもインデックスを扱いますが、組み込み **Index** プロパティは、動的な [Optimize](optimize-property-dynamic-ado.md) プロパティとは無関係です。
 

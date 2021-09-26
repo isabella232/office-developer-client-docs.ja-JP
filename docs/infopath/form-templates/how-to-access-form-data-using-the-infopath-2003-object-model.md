@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - xdocument インターフェイス [infopath 2007],InfoPath 2003 互換のフォーム テンプレート,フォームのデータにアクセスする,XDocumentsCollection インターフェイス [InfoPath 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e0731014-f454-4417-9f90-19f3387f5776
 description: InfoPath フォームの機能を拡張しようと思うと、多くの場合、フォームの基になる XML ドキュメントに関する情報へのアクセス、XML ドキュメントに記述されているデータへのアクセス、XML ドキュメントに対する何らかの操作の実行などの処理をプログラムで行う必要が出てきます。InfoPath オブジェクト モデルでは、XDocument インターフェイスと XDocumentsCollection インターフェイスを関連させて使用することにより、フォームの基になる XML ドキュメントにアクセスしたり、その XML ドキュメントを操作したりすることができます。
-ms.openlocfilehash: 803122c6c377686a85f11cf48b76876c056f2ec1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2d4e1affba8a2e42cf82f866905e674e2beeef03
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416476"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631364"
 ---
 # <a name="access-form-data-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム データにアクセスする
 

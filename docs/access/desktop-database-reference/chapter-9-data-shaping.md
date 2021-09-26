@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250253(v=office.15)
 ms:contentKeyID: 48548739
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 43ad9d5e989bc1c6f4a54fb4882cfe3c3e357fd1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 31016a76c68e6cddd58dd1e876f52ca298374890
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296424"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622516"
 ---
 # <a name="chapter-9-data-shaping"></a>第 9 章: データ シェイプ
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-*データシェイプ*では、データソースに対してクエリを実行し、2つ以上の論理エンティティ (階層) 間の親子関係を表す[Recordset](recordset-object-ado.md)を返すことができます。 
+*データ シェーピング* は、データ ソースを照会し、2 つ以上の論理エンティティ (階層) 間の親子関係を表す [Recordset](recordset-object-ado.md) を返す方法を提供します。 
 
 A classic example of a hierarchical relationship is customers and orders. For every customer in a database, there can be zero or more orders. Regular SQL provides a means of retrieving the data using JOIN syntax, but this can be inefficient and unwieldy because redundant parent data is repeated in each record returned for a given parent-child relationship. Data shaping can relate a single parent record in the parent **Recordset** to multiple child records in the child **Recordset**, avoiding the redundancy of a JOIN. Most people find the parent-child multiple **Recordset** programming model more natural and easier to work with than the single **Recordset** JOIN model.
 
@@ -33,6 +33,6 @@ A classic example of a hierarchical relationship is customers and orders. For ev
 - [正式な Shape 文法](formal-shape-grammar.md)
 - [Visual Basic for Applications の関数](visual-basic-for-applications-functions.md)
 - [Shape Append 句 (ADO)](shape-append-clause.md)
-- [データシェイプ (ADO)](data-shaping.md)
-- [一般的な Shape コマンド (ADO)](shape-commands-in-general.md)
+- [データ シェーピング (ADO)](data-shaping.md)
+- [Shape コマンド全般 (ADO)](shape-commands-in-general.md)
 

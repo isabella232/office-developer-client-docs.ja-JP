@@ -1,25 +1,25 @@
 ---
-title: ページを使用する (Access デスクトップデータベースリファレンス)
+title: ページの使用 (Access デスクトップ データベースリファレンス)
 TOCTitle: Using Pages
 ms:assetid: 516fb7c2-c7a2-385b-83e7-2091c7283ea2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249261(v=office.15)
 ms:contentKeyID: 48544817
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 92d6185c3234a58ea9a84310291d0c37e0272535
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5a2aab91f10341b6fbe2ccef74c6df3f2b9217ac
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32305874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631637"
 ---
 # <a name="using-pages"></a>ページの使用
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-Use the **PageCount** property to determine how many pages of data are in the **Recordset** object. *ページ*は、 **PageSize**プロパティの設定値に等しいサイズを持つレコードのグループです。 Even if the last page is incomplete because there are fewer records than the **PageSize** value, it counts as an additional page in the **PageCount** value. If the **Recordset** object does not support this property, **PageCount** will be -1 to indicate that the **PageCount** is indeterminable.
+Use the **PageCount** property to determine how many pages of data are in the **Recordset** object. *ページ* は、PageSize プロパティ設定と同じサイズの **レコードのグループ** です。 Even if the last page is incomplete because there are fewer records than the **PageSize** value, it counts as an additional page in the **PageCount** value. If the **Recordset** object does not support this property, **PageCount** will be -1 to indicate that the **PageCount** is indeterminable.
 
 データの論理ページを構成するレコードの数を調べるには、 **PageSize** プロパティを使用します。ページ サイズを設定すると、 **AbsolutePage** プロパティを使用して、特定のページの最初のレコードに移動できます。これは、Web サーバー上で、ユーザーが一度に一定の数のレコードを表示し、ページを移動できるようにする場合などに便利です。
 

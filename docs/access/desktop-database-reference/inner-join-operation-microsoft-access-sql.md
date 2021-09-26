@@ -12,13 +12,13 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: d865d005604ed7422c8e33ff8508551b720c30ba
-ms.sourcegitcommit: 0419850d5c1b3439d9da59070201fb4952ca5d07
+ms.localizationpriority: high
+ms.openlocfilehash: 098e7e1616407c1927f32db6cbedbb07b6df1283
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "49734218"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568909"
 ---
 # <a name="inner-join-operation-microsoft-access-sql"></a>INNER JOIN 操作 (Microsoft Access SQL)
 
@@ -80,7 +80,7 @@ FROM Categories INNER JOIN Products
 ON Categories.CategoryID = Products.CategoryID;
 ```
 
-上記の例では、CategoryID は結合フィールドですが、[SELECT](select-statement-microsoft-access-sql.md) ステートメントには含まれていないため、クエリ出力には含まれていません。 結合フィールドを含めるには、SELECT ステートメントにフィールド名 (この場合は Categories.CategoryID) を含めます。
+前の例では、結合されるフィールドは CategoryID フィールドですが、このフィールドは [SELECT](select-statement-microsoft-access-sql.md) ステートメントで指定していないため、クエリの出力には含まれません。結合に使用したフィールドを出力するには、そのフィールド名を SELECT ステートメントで指定してください。前の例では、フィールド名は Categories.CategoryID です。
 
 次の構文を使用して、複数の ON 句を JOIN ステートメントでリンクすることもできます。
 

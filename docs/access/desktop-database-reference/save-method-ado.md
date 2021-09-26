@@ -1,35 +1,35 @@
 ---
-title: Save メソッド-ActiveX データオブジェクト (ADO)
+title: Save メソッド - ActiveX オブジェクト (ADO)
 TOCTitle: Save method (ADO)
 ms:assetid: 02dab13b-f947-b96d-46ea-0def3ed8f28f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248793(v=office.15)
 ms:contentKeyID: 48542968
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0a3762c3d4fdb8cc833259b0435b225690d677ce
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: de794cac384b31fd2f81f8f2232c6119b862c927
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308919"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631721"
 ---
 # <a name="save-method-ado"></a>Save メソッド (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 [Recordset](recordset-object-ado.md) をファイルまたは [Stream](stream-object-ado.md) オブジェクトに保存します。
 
 ## <a name="syntax"></a>構文
 
-*recordset*。保存*先*、 *persistformat*
+*recordset*.Save *Destination*, *PersistFormat*
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
 |*Destination* |省略可能です。 **Recordset** の保存先であるファイルの完全なパス名を表すバリアント型 ( **Variant** ) の値、または **Stream** オブジェクトへの参照を指定します。|
-|*persistformat* |省略可能です。 [Recordset](persistformatenum.md) の保存形式 (XML または ADTG) を **PersistFormatEnum** 値で指定します。既定値は **adPersistADTG** です。|
+|*PersistFormat* |省略可能です。 [Recordset](persistformatenum.md) の保存形式 (XML または ADTG) を **PersistFormatEnum** 値で指定します。既定値は **adPersistADTG** です。|
 
 ## <a name="remarks"></a>注釈
 
@@ -56,7 +56,7 @@ ms.locfileid: "32308919"
 > [!NOTE]
 > [!メモ] ADO では、 **Fields** の種類が **adVariant** 、 **adIDispatch** 、または **adIUnknown** に設定された **Recordset** の保存はサポートされていないため、予期しない結果が生じることがあります。
 
-条件**** 文字列の形式 (たとえば、OrderDate \> ' 12/31/1999 ') のフィルターのみが、永続化された**Recordset**の内容に影響します。 **Bookmarks** の配列で作成されたフィルター、または **FilterGroupEnum** の値を使用して作成されたフィルターは、永続化された **Recordset** の内容に影響しません。 これらの規則は、クライアント側カーソルまたはサーバー側カーソルを使用して作成された **Recordsets** に当てはまります。
+Criteria **文字列** の形式のフィルター (OrderDate \> '12/31/1999' など) だけが、永続化された Recordset の内容に影響 **します**。 **Bookmarks** の配列で作成されたフィルター、または **FilterGroupEnum** の値を使用して作成されたフィルターは、永続化された **Recordset** の内容に影響しません。 これらの規則は、クライアント側カーソルまたはサーバー側カーソルを使用して作成された **Recordsets** に当てはまります。
 
 *Destination* パラメーターには、OLE DB IStream インターフェイスをサポートするすべてのオブジェクトを指定できるので、**Recordset** を ASP Response オブジェクトに直接保存することができます。詳細については、「[XML レコードセットを保存するシナリオ](xml-recordset-persistence-scenario.md)」を参照してください。
 

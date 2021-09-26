@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagToDoItemFlags
 api_type:
 - COM
 ms.assetid: bb7ccb45-ce08-4d22-9259-db15cd267e34
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6ddc7231afef0a224b92be7fe86216e56200ab70
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: dff7b95c0fe95b4f06eae8bf787ee5e8170bff71
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284484"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629698"
 ---
 # <a name="pidtagtodoitemflags-canonical-property"></a>PidTagToDoItemFlags 標準プロパティ
 
@@ -43,7 +43,7 @@ ms.locfileid: "32284484"
 |数値  <br/> |名前  <br/> |説明  <br/> |
 |存在しない  <br/> |該当なし  <br/> |フラグが設定されていない  <br/> |
 |1  <br/> |todoTimeFlagged  <br/> |オブジェクトに時間フラグが設定されている  <br/> |
-|8  <br/> |todoRecipientFlagged  <br/> |下書きメッセージ オブジェクトにのみ設定する必要があります。つまり、オブジェクトに受信者のフラグが設定されます。  <br/> |
+|8   <br/> |todoRecipientFlagged  <br/> |下書きメッセージ オブジェクトにのみ設定する必要があります。つまり、オブジェクトに受信者のフラグが設定されます。  <br/> |
    
 テーブルで指定されていないビットはすべて予約済みです。 これらは無視する必要がありますが、設定されている場合は保持する必要があります。
   

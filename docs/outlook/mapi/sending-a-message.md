@@ -3,17 +3,17 @@ title: メッセージを送信する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 4fa47824-b4ef-41e1-9096-c1b1cdacd7ac
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 01fd66033da0f24948913f47a752d555eca655fe
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 291d1b5595c8f0779b5d5644397a1ebfd2576a0f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423623"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629586"
 ---
 # <a name="sending-a-message"></a>メッセージを送信する
 

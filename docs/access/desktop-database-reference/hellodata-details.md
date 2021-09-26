@@ -1,35 +1,35 @@
 ---
-title: HelloData details (Access デスクトップデータベースリファレンス)
+title: HelloData の詳細 (Access デスクトップ データベースリファレンス)
 TOCTitle: HelloData details
 ms:assetid: db51e15c-1b5b-c64a-2f84-34dd0e78c6cf
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250105(v=office.15)
 ms:contentKeyID: 48548103
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 78b04b74d4e2b8d9c215235d6e7ccebed4fa2ef2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fddd2a8cb97e260c15f8ae5a5b5bb660bcc0647f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292000"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626485"
 ---
 # <a name="hellodata-details"></a>HelloData の詳細
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 The HelloData application steps through the basic operations of a typical ADO application: getting, examining, editing, and updating data. When you start the application, click the first button, **Get Data**. This will run the GetData() subroutine.
 
 ## <a name="getdata"></a>GetData
 
-GetData は、有効な接続文字列をモジュールレベルの変数*m\_sconnstr*に格納します。 接続文字列の詳細については、「 [接続文字列を作成する](creating-the-connection-string.md)」を参照してください。
+GetData は、有効な接続文字列をモジュール レベルの変数 *m \_ sConnStr に格納します*。 接続文字列の詳細については、「 [接続文字列を作成する](creating-the-connection-string.md)」を参照してください。
 
-Assign an error handler using a Visual Basic **OnError** statement. For more information about error handling in ADO, see [Chapter 6: Error Handling](chapter-6-error-handling.md). 新しい**Connection**オブジェクトが作成され、HelloData **** の例では切断された*Recordset*が作成されるので、このプロパティは**adUseClient**に設定されています。 This means that once the data has been fetched from the data source, the physical connection with the data source is broken, but you can still work with the data that is cached locally in your **Recordset** object.
+Assign an error handler using a Visual Basic **OnError** statement. For more information about error handling in ADO, see [Chapter 6: Error Handling](chapter-6-error-handling.md). 新しい **Connection** オブジェクトが作成され **、HelloData** の例では切断された Recordset が作成されるので、CursorLocation プロパティは **adUseClient** *に設定されます*。 This means that once the data has been fetched from the data source, the physical connection with the data source is broken, but you can still work with the data that is cached locally in your **Recordset** object.
 
-接続後、SQL 文字列を変数 (sSQL) に割り当てます。 その後、新しい**Recordset**オブジェクト m\_oRecordset1 をインスタンス化します。 次のコード行で、既存の**接続**を介して**Recordset**を開き、を渡します。 コードの次の行で、既存の**接続**を介して**recordset**を開き、 **recordset**のソースとして ssql を渡します。 You assist ADO in making the determination that the SQL string you have passed as the source for the **Recordset** is a textual definition of a command by passing **adCmdText** in the final argument to the **Recordset** **Open** method. This line also sets the **LockType** and **CursorType** associated with the **Recordset**.
+接続後、SQL 文字列を変数 (sSQL) に割り当てます。 次に、新しい **Recordset** オブジェクト m \_ oRecordset1 をインスタンス化します。 次のコード行で、既存の **接続を越** える Recordset を開き、を渡します。  次のコード行で **、Recordset** を既存の **接続** で開き、sSQL を Recordset のソースとして渡 **します**。 You assist ADO in making the determination that the SQL string you have passed as the source for the **Recordset** is a textual definition of a command by passing **adCmdText** in the final argument to the **Recordset** **Open** method. This line also sets the **LockType** and **CursorType** associated with the **Recordset**.
 
-次の行のコードでは、 **MarshalOptions** プロパティを **adMarshalModifiedOnly** に設定します。 **marshaloptions**は、中間層 (または web サーバー) にマーシャリングするレコードを示します。 マーシャリングの詳細については、COM のマニュアルを参照してください。 クライアント側カーソル ([cursor location](cursorlocation-property-ado.md) = **adUseClient**) で**adMarshalModifiedOnly**を使用する場合、クライアント上で変更されたレコードのみが中間層に書き戻されます。 **MarshalOptions** を **adMarshalModifiedOnly** に設定すると、マーシャリングされる行が少なくなり、パフォーマンスが向上する場合があります。
+次の行のコードでは、 **MarshalOptions** プロパティを **adMarshalModifiedOnly** に設定します。 **MarshalOptions は** 、中間層 (または Web サーバー) にマーシャリングする必要があるレコードを示します。 マーシャリングの詳細については、COM のマニュアルを参照してください。 クライアント側カーソル [(CursorLocation](cursorlocation-property-ado.md)adUseClient) で **adMarshalModifiedOnly** を使用する場合、クライアントで変更されたレコードだけがミドル 層に書き  =  戻されます。 **MarshalOptions** を **adMarshalModifiedOnly** に設定すると、マーシャリングされる行が少なくなり、パフォーマンスが向上する場合があります。
 
 次に、 **ActiveConnection** プロパティを **Nothing** に設定して **Recordset** を切断します。詳細については、「5 章: データを更新し、保存する」の「 [レコードセットを切断し、再接続する](disconnecting-and-reconnecting-the-recordset.md)」を参照してください。
 
@@ -61,7 +61,7 @@ The changes will not be made on the data source until you click the fourth butto
 
 ## <a name="updatedata"></a>UpdateData
 
-UpdateData は、まず **Recordset** に適用されたフィルターを削除します。 このコードは、フィルターを使用しない**Recordset**がグリッドに表示されるように、フォーム上の Microsoft Bound DataGrid の**DataSource**として削除およびリセットします。
+UpdateData は、まず **Recordset** に適用されたフィルターを削除します。 このコードは、フォーム上の Microsoft Bound DataGrid の **DataSource** として削除およびリセットされ、フィルター処理されていない **Recordset** がグリッドに表示されます。
 
 次に、 **adMovePrevious** 引数を持つ **Supports** メソッドを使用して、 **Recordset** 内で後方へ移動できるかどうかを確認します。
 
@@ -69,13 +69,13 @@ UpdateData は、まず **Recordset** に適用されたフィルターを削除
 
 次に、新しい **Connection** オブジェクトが作成され、このオブジェクトを使用してデータ ソースへの接続が再確立されます。 **Recordset** をデータ ソースに再接続するには、新しい **Connection** を **Recordset** の **ActiveConnection** として設定します。更新内容をサーバーに送信するために、 **Recordset** の **UpdateBatch** を呼び出します。
 
-バッチ更新が正常に終了すると、モジュールレベルのフラグ変数が True に設定されます。 これは、データベースに対して行ったすべての変更を後で取り消すための目印になります。
+バッチ更新が成功すると、モジュール レベルのフラグ変数 、 が True に設定されます。 これは、データベースに対して行ったすべての変更を後で取り消すための目印になります。
 
 最後に、 **Recordset** 内の最初のレコードに戻り、元の値と現在の値を表示します。値は、 **UpdateBatch** を呼び出した後と同じです。
 
 **Recordset** の切断中にサーバーのデータが変更された場合の対処など、データの更新の詳細については、「 [5 章: データを更新し、保存する](chapter-5-updating-and-persisting-data.md)」を参照してください。
 
-## <a name="formunload"></a>フォーム\_のアンロード
+## <a name="form_unload"></a>フォーム \_ のアンロード
 
-Form\_Unload サブルーチンは、いくつかの理由から重要です。 最初に、これはサンプルアプリケーションなので\_、フォームのアンロードでは、アプリケーションが終了する前にデータベースに加えられた変更がクリーンアップされます。 次に、開いている **Connection** オブジェクトから **Execute** メソッドを使用してコマンドを直接実行する方法を示していることです。 最後に、データ ソースに対して行を返さないクエリ (UPDATE クエリ) を実行する例を示していることです。
+Form \_ Unload サブルーチンは、いくつかの理由で重要です。 最初に、これはサンプル アプリケーションなので、Form Unload は、アプリケーションが終了する前にデータベースに加えた変更 \_ をクリーンアップします。 次に、開いている **Connection** オブジェクトから **Execute** メソッドを使用してコマンドを直接実行する方法を示していることです。 最後に、データ ソースに対して行を返さないクエリ (UPDATE クエリ) を実行する例を示していることです。
 

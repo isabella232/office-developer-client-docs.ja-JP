@@ -3,17 +3,17 @@ title: フォームと MAPI クライアント アプリケーション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 658ebb86-e9f4-44d8-a5f1-6f66eaf75dd6
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 36c137555a051dbc56d5023a7b2244126f4f8255
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 818c3dc288817438ed915062ff3bfd82bbabc040
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415447"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630867"
 ---
 # <a name="forms-and-mapi-client-applications"></a>フォームと MAPI クライアント アプリケーション
 

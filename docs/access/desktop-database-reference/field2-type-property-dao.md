@@ -1,20 +1,20 @@
 ---
-title: Field2 プロパティ (DAO)
+title: Field2.Type プロパティ (DAO)
 TOCTitle: Type Property
 ms:assetid: 057d6ec9-b72c-cee6-005a-6d916e3dda29
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844921(v=office.15)
 ms:contentKeyID: 48543032
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4da32f18a2b3e9dddbb0ae04e3257de34ba09761
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 744deba962bec5067a3de3a296bb4e611a573887
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292665"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626702"
 ---
-# <a name="field2type-property-dao"></a>Field2 プロパティ (DAO)
+# <a name="field2type-property-dao"></a>Field2.Type プロパティ (DAO)
 
 
 **適用先:** Access 2013、Office 2013
@@ -23,9 +23,9 @@ ms.locfileid: "32292665"
 
 ## <a name="syntax"></a>構文
 
-*式*。種類
+*expression* .Type
 
-*式***Field2**オブジェクトを表す変数を取得します。
+*式***Field2** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
@@ -46,87 +46,87 @@ ms.locfileid: "32292665"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>dbbigint</strong></p></td>
+<td><p><strong>dbBigInt</strong></p></td>
 <td><p>多倍長整数型 (Big Integer)</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbbinary</strong></p></td>
-<td><p>バイナリ型 (Binary)</p></td>
+<td><p><strong>dbBinary</strong></p></td>
+<td><p>Binary</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbboolean</strong></p></td>
-<td><p>ブール型 (Boolean)</p></td>
+<td><p><strong>dbBoolean</strong></p></td>
+<td><p>Boolean</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbbyte</strong></p></td>
+<td><p><strong>dbByte</strong></p></td>
 <td><p>バイト型 (Byte)</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbChar</strong></p></td>
-<td><p>文字型 (Char)</p></td>
+<td><p>Char</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbcurrency</strong></p></td>
-<td><p>通貨型 (Currency)</p></td>
+<td><p><strong>dbCurrency</strong></p></td>
+<td><p>通貨</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbdate</strong></p></td>
-<td><p>日付/時刻型 (Date/Time)</p></td>
+<td><p><strong>dbDate</strong></p></td>
+<td><p>日付/時刻</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbdecimal</strong></p></td>
-<td><p>10 進型 (Decimal)</p></td>
+<td><p><strong>dbDecimal</strong></p></td>
+<td><p>Decimal</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbdouble</strong></p></td>
-<td><p>倍精度浮動小数点型 (Double)</p></td>
+<td><p><strong>dbDouble</strong></p></td>
+<td><p>2 行分</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbfloat</strong></p></td>
-<td><p>浮動小数点型 (Float)</p></td>
+<td><p><strong>dbFloat</strong></p></td>
+<td><p>浮動小数点数</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbguid</strong></p></td>
-<td><p>GUID 型 (GUID)</p></td>
+<td><p><strong>dbGUID</strong></p></td>
+<td><p>GUID</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbInteger</strong></p></td>
-<td><p>整数型 (Integer)</p></td>
+<td><p>整数</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dblong</strong></p></td>
-<td><p>Long 型 (Long)</p></td>
+<td><p><strong>dbLong</strong></p></td>
+<td><p>Long</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbLongBinary</strong></p></td>
 <td><p>ロング バイナリ型 (Long Binary) - OLE オブジェクト型 (OLE Object)</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbmemo</strong></p></td>
-<td><p>メモ型 (Memo)</p></td>
+<td><p><strong>dbMemo</strong></p></td>
+<td><p>メモ</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbnumeric</strong></p></td>
-<td><p>数値型 (Numeric)</p></td>
+<td><p><strong>dbNumeric</strong></p></td>
+<td><p>数値</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbsingle</strong></p></td>
-<td><p>単精度浮動小数点型 (Single)</p></td>
+<td><p><strong>dbSingle</strong></p></td>
+<td><p>1 行</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbtext</strong></p></td>
-<td><p>テキスト型 (Text)</p></td>
+<td><p><strong>dbText</strong></p></td>
+<td><p>テキスト</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbTime</strong></p></td>
-<td><p>時刻型 (Time)</p></td>
+<td><p>Time</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbtimestamp</strong></p></td>
-<td><p>タイムスタンプ型 (TimeStamp)</p></td>
+<td><p><strong>dbTimeStamp</strong></p></td>
+<td><p>タイム スタンプ</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbvarbinary</strong></p></td>
+<td><p><strong>dbVarBinary</strong></p></td>
 <td><p>VarBinary</p></td>
 </tr>
 </tbody>

@@ -1,21 +1,20 @@
 ---
 title: Office 2013 ドキュメントの著作権情報
 author: umas
-manager: soliver
-ms.date: 11/16/2014
+manager: lindalu
+ms.date: 09/16/2021
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a9c2f3d9-cea2-49a3-b709-40dc614b9f86
-description: このドキュメントは、現在通り提供されています。 このドキュメントに記載されている情報とビュー (URL や他のインターネット Web サイト参照を含む) は、予告なしに変更される場合があります。 使用に伴うリスクは、お客様が負うものとします。
-ms.openlocfilehash: c131cd896b281bcf28f69d555e837577544e4f59
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4ec2fef7586cfd982d1750fc7765bf7727ca5468
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308107"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631567"
 ---
-# <a name="office-2013-documentation-copyright-notice"></a>Office 2013 ドキュメントの著作権情報
+# <a name="copyright-notice-for-office-2013-documentation"></a>2013 年 2013 Officeの著作権に関する通知 
 
 このドキュメントは "現状のまま" 提供されます。このドキュメントで説明されている情報およびビューは、URL および他のインターネット Web サイトの参照を含めて、予告なく変更されることがあります。このドキュメントの使用に伴うリスクはお客様が負うものとします。 
   
@@ -27,6 +26,4 @@ ms.locfileid: "32308107"
   
 Microsoft、Access、ActiveX、ClearType、Excel、FrontPage、InfoPath、IntelliSense、JScript、MSDN、MS-DOS、MSN、OneNote、Outlook、PowerPoint、SharePoint、Silverlight、SmartArt、SQL Server、Visio、Visual Basic、Visual C#、Visual C++、Visual Studio、Win32、Windows、Windows PowerShell、Windows Server、および Windows Vista は、Microsoft グループ企業の商標です。
   
-その他すべての商標は各社が所有しています。
-  
-
+その他すべての商標は各社が所有しています。 

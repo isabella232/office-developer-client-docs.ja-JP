@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm2110
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2c980903-4d41-a85f-7caa-52bd90b11f76
 description: 図形のテキストに対する、段落の書式属性を表示します。属性には、インデント、行間隔、箇条書き、および段落の水平方向の配置などがあります。
-ms.openlocfilehash: 8d4658305213380fd23dd5beece4fb72180ab562
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: feeae5e3d803eb95e8fa4e34fb2b3f7be176b77b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414313"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627738"
 ---
 # <a name="paragraph-section"></a>[Paragraph] セクション
 

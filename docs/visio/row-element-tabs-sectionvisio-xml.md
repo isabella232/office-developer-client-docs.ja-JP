@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a30d5701-4b56-c44c-fb62-d9daaee3b86e
 description: タブの停止位置や配置を制御する、図形およびスタイルのセルを格納します。
-ms.openlocfilehash: 530d2e564615f33292b52f9aa860c0cf2794bc67
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 11b0adeb62471c71fe21c112d28d712ca3ab741c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538180"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627598"
 ---
 # <a name="row-element-tabs-section-visio-xml"></a>Row 要素 ([タブ] セクション) (Visio XML)
 

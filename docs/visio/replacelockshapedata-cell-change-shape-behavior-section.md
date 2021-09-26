@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6a089266-7b19-4310-8cb5-4373ea3b2d64
 description: マスター シェイプ内の指定したセルの値が、図形の置換操作中に置換される値 (ローカル値を含む) に優先するかどうかを示します。ReplaceLockShapeData は、マスター シェイプの図形データが、置換される図形の図形データすべてに優先するかどうかを決定します。
-ms.openlocfilehash: d2349da96bde7d141aada9066d56a4379f425fee
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 98e6c5be4519a55f0207df53dc169604c0718cb4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627647"
 ---
 # <a name="replacelockshapedata-cell-change-shape-behavior-section"></a>[ReplaceLockShapeData] セル ([図形の動作の変更] セクション)
 

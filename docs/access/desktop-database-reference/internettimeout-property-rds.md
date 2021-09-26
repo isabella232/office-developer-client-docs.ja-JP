@@ -1,27 +1,27 @@
 ---
-title: internettimeout プロパティ (RDS)
+title: InternetTimeout プロパティ (RDS)
 TOCTitle: InternetTimeout property (RDS)
 ms:assetid: 66fc6e87-3d23-ce2c-18f5-0fc83ac43801
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249401(v=office.15)
 ms:contentKeyID: 48545353
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8c0650a287e2aebc13b89572db112b8f9b333dc6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fb247396b5e7e65c9fbfe86ab4f06b6a69037522
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291242"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631938"
 ---
-# <a name="internettimeout-property-rds"></a>internettimeout プロパティ (RDS)
+# <a name="internettimeout-property-rds"></a>InternetTimeout プロパティ (RDS)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 要求がタイムアウトするまでの待機時間をミリ秒単位で示します。
 
-## <a name="settings-and-return-values"></a>設定値と戻り値
+## <a name="settings-and-return-values"></a>設定および戻り値
 
 要求がタイムアウトするまでのミリ秒数単位の時間を表す長整数型 (**Long**) の値を設定または取得します。
 

@@ -1,32 +1,32 @@
 ---
-title: フィールドの DefaultValue プロパティ (DAO)
+title: Field.DefaultValue プロパティ (DAO)
 TOCTitle: DefaultValue Property
 ms:assetid: 8a1c558b-c8f6-757d-c595-4e50b9b6ae3f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197092(v=office.15)
 ms:contentKeyID: 48546185
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 18fb4d3a4427db2b407b6a20507339fe83665c97
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ec9469e2e3d10e9f24def7dbc15e3cecf545328d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293120"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626674"
 ---
-# <a name="fielddefaultvalue-property-dao"></a>フィールドの DefaultValue プロパティ (DAO)
+# <a name="fielddefaultvalue-property-dao"></a>Field.DefaultValue プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 
 **[Field](field-object-dao.md)** オブジェクトの既定値を設定または取得します。 [**Fields**](fields-collection-dao.md) コレクションにまだ追加されていない **Field** オブジェクトの場合、このプロパティは値の取得および設定が可能です (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*。DefaultValue
+*式* .DefaultValue
 
-*式***Field**オブジェクトを表す変数を取得します。
+*expression*: **Field** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
@@ -34,7 +34,7 @@ ms.locfileid: "32293120"
 
 
 > [!NOTE]
-> また、 [TableDef](tabledef-object-dao.md)オブジェクトの**Field**オブジェクトの**DefaultValue**プロパティを "genuniqueid ()" という特殊な値に設定することもできます。 これにより、新規レコードを追加または作成すると、このフィールドに乱数が割り当てられ、各レコードに一意の識別子が設定されます。 フィールドの [Type](field-type-property-dao.md) プロパティは長整数型 ( **Long**) である必要があります。
+> [TableDef](tabledef-object-dao.md)オブジェクトの Field オブジェクトの **DefaultValue** プロパティを"GenUniqueID( )" という特別な値に設定することもできます。 これにより、新規レコードを追加または作成すると、このフィールドに乱数が割り当てられ、各レコードに一意の識別子が設定されます。 フィールドの [Type](field-type-property-dao.md) プロパティは長整数型 ( **Long**) である必要があります。
 
 
 **DefaultValue** プロパティを使用できるかどうかは、次の表に示すように、 **Fields** コレクションを含むオブジェクトによって決まります。
@@ -53,7 +53,7 @@ ms.locfileid: "32293120"
 <tbody>
 <tr class="odd">
 <td><p>Index オブジェクト</p></td>
-<td><p>サポートされていません</p></td>
+<td><p>サポートしません。</p></td>
 </tr>
 <tr class="even">
 <td><p>QueryDef オブジェクト</p></td>

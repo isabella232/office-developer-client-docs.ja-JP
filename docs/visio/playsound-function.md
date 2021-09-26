@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251479
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 098d216f-e699-0e74-f702-ccfa7809c19b
 description: サウンド ファイルまたはシステム サウンドを再生します。
-ms.openlocfilehash: 752412aab6584d2b01235fe88644e3ec3fa5daee
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7dab11245389c02054b5f3d626334867dcbad437
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435840"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627717"
 ---
 # <a name="playsound-function"></a>PLAYSOUND 関数
 
@@ -30,9 +30,9 @@ PLAYSOUND(" ** *filename* ** "|" ** *alias* ** ", ** *isAlias* **, ** *beep* **,
 |:-----|:-----|:-----|:-----|
 | _filename_ <br/> |必須  <br/> |**String** <br/> |再生するサウンド ファイルの名前を指定します。  <br/> |
 | _alias_ <br/> |必須  <br/> |**String** <br/> | エイリアスが示すシステム サウンドを指定します。  <br/> |
-| _isAlias_ <br/> |必須  <br/> |**Boolean** <br/> | 直前の式 (引数) がエイリアスまたはファイル名のどちらであるかを指定します。エイリアスを指定するには、ゼロ以外の値を使用します。  <br/> |
-| _ビープ音_ <br/> |必須  <br/> |**Boolean** <br/> |サウンドを再生できない場合にビープ音を鳴らすかどうかを指定します。ビープ音を鳴らすには、ゼロ以外の数値を使用します。  <br/> |
-| _synch_ <br/> |必須  <br/> |**Boolean** <br/> |非同期 (0) または同期 (1) のどちらでサウンドを再生するかを指定します。  <br/> |
+| _isAlias_ <br/> |必須  <br/> |**ブール型 (Boolean)** <br/> | 直前の式 (引数) がエイリアスまたはファイル名のどちらであるかを指定します。エイリアスを指定するには、ゼロ以外の値を使用します。  <br/> |
+| _ビープ音_ <br/> |必須  <br/> |**ブール型 (Boolean)** <br/> |サウンドを再生できない場合にビープ音を鳴らすかどうかを指定します。ビープ音を鳴らすには、ゼロ以外の数値を使用します。  <br/> |
+| _synch_ <br/> |必須  <br/> |**ブール型 (Boolean)** <br/> |非同期 (0) または同期 (1) のどちらでサウンドを再生するかを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

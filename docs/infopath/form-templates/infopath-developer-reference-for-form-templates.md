@@ -9,15 +9,15 @@ ms.topic: overview
 keywords:
 - フォーム テンプレート [infopath 2007],マネージ コード フォーム テンプレート [InfoPath 2007],リファレンス [InfoPath 2007],マネージ コード [InfoPath 2007],InfoPath 2007,reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7610acc3-f705-4a38-968c-5b3a358efc90
 description: InfoPath 2013 フォーム テンプレートの開発者向けリファレンスへようこそ。このドキュメントには、Visual Basic または Visual C# で記述されたビジネス ロジックを含む InfoPath フォーム テンプレートの構築に役立つ、概要、プログラミング タスク、およびクラス ライブラリ リファレンス情報が記載されています。
-ms.openlocfilehash: 62ec8c9a8b56fe53933dec8235173a451a706f36
-ms.sourcegitcommit: 007aa2ceb4f569201c3f4372de5c83b6c61f8875
+ms.openlocfilehash: ffd9fe60eab96774b2abe5fe4e357809b7699d86
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43102941"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631273"
 ---
 # <a name="infopath-developer-reference-for-form-templates"></a>InfoPath フォーム テンプレートの開発者向けリファレンス
 

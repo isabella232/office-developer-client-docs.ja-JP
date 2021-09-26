@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm1060
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 69d64520-9a47-07ca-09c7-d1e5da620348
 description: テキスト フィールドの値に対してデータの種類を指定します。
-ms.openlocfilehash: 91a2d60133d9a39e152656558f168742a5409883
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1b03caaa36b6c2fbc06a6295599853ef27d7629e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407985"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627239"
 ---
 # <a name="type-cell-text-fields-section"></a>[Type] セル ([Text Fields] セクション)
 
@@ -25,8 +25,8 @@ ms.locfileid: "33407985"
 |0  <br/> |文字列。  <br/> |
 |2  <br/> |数値。日付、時刻、期間、通貨の値の他、スカラー、寸法、角度も含まれます。書式形式は [Format] セルで指定します。  <br/> |
 |5  <br/> |日付または時刻の値。日、月、年、および秒、分、時間、または日付と時刻の組み合わせを表示します。書式形式は [Format] セルで指定します。  <br/> |
-|6  <br/> |期間の値。経過時間を表示します。書式形式は [Format] セルで指定します。  <br/> |
-|7  <br/> |通貨の値。システムに適用されている現在の地域別設定を使用します。書式形式は [Format] セルで指定します。  <br/> |
+|6   <br/> |期間の値。経過時間を表示します。書式形式は [Format] セルで指定します。  <br/> |
+|7   <br/> |通貨の値。システムに適用されている現在の地域別設定を使用します。書式形式は [Format] セルで指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

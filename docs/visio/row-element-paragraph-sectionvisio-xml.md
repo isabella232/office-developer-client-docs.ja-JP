@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 00ecaa82-3b40-24cc-91c0-b2562e92161d
 description: 図形のテキストに対する、段落の書式属性を表示します。属性には、インデント、行間隔、箇条書き、および段落の水平方向の配置などがあります。
-ms.openlocfilehash: 48d32f3a0712e2ed3110ced545d5b946f147d755
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 93e9e4ce7eb8938accb32d11009e8a7fcf6cf7ce
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540820"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627619"
 ---
 # <a name="row-element-paragraph-section-visio-xml"></a>Row 要素 (Paragraph セクション) (Visio XML)
 

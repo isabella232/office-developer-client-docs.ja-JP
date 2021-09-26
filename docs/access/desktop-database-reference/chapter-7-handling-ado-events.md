@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249004(v=office.15)
 ms:contentKeyID: 48543709
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e7357cc60a3bddbf96c2abae39fecfb7107025e2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e5cd1d46441cb073d1b5a9b5361c8ea3bac15aa8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296403"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627087"
 ---
 # <a name="chapter-7-handling-ado-events"></a>第 7 章: ADO イベントの処理
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ADO イベント モデルでは、特定の同期および非同期の ADO 操作のうち、その操作の開始前または完了後に "イベント"、つまり通知を発行する操作をサポートしています。イベントの実体は、アプリケーション内に定義されたイベント ハンドラー ルーチンへの呼び出しです。
 
@@ -32,4 +32,4 @@ ADO イベント モデルを使用するとアプリケーションのオーバ
 - [イベントの種類](types-of-events.md)
 - [イベント パラメーター](event-parameters.md)
 - [イベント ハンドラーの共同作業の方法](how-event-handlers-work-together.md)
-- [ado イベントのインスタンス化 (言語別) (ado)](ado-event-instantiation-by-language-ado.md)
+- [言語による ADO イベントのインスタンス化 (ADO)](ado-event-instantiation-by-language-ado.md)

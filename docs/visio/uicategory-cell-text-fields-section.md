@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm1070
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 365f7005-ba34-2311-4c5c-16344962fc3f
 description: Visio 2000 よりも前のバージョンの Visio に挿入するフィールドのカテゴリを指定します。
-ms.openlocfilehash: c67ced9e4f731e66bce0589929ac90fb9bb8d67c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c7733b73338fabee3759169cce9374f8d56bbf1e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434026"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627222"
 ---
 # <a name="uicategory-cell-text-fields-section"></a>[UICategory] セル ([Text Fields] セクション)
 

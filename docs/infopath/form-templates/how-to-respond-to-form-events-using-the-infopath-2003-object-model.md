@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - フォーム テンプレート [infopath 2007],イベントに応答する,InfoPath 2003 互換のフォーム テンプレート,フォーム イベントに応答する
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 59e9c1ed-32a8-4bcd-bdfc-9aa568a34d2a
 description: ユーザーがフォームに入力する際に発生する各種イベントに応答するコードを書くことができます。InfoPath 内でイベントの作業を実行するには、InfoPath デザイン モードでイベント ハンドラーを作成します。
-ms.openlocfilehash: b7347f882df991e64bdf4e76c471b1220a84dc58
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bf3ad11e63cf975d40d0335d98767fa53876c61e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433494"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631308"
 ---
 # <a name="respond-to-form-events-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム イベントに応答する
 

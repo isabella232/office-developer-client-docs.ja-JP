@@ -1,23 +1,23 @@
 ---
-title: Property メンバー (DAO)
+title: プロパティ メンバー (DAO)
 TOCTitle: Property Members
 ms:assetid: 32658adb-f153-148d-a216-eb97b996579a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192303(v=office.15)
 ms:contentKeyID: 48544076
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: fe60c12a85eff0dd8f796f9affeef71979dac580
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 94aaaaecdf868f82394345586f6bf6508030c6b9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301212"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631833"
 ---
-# <a name="property-members-dao"></a>Property メンバー (DAO)
+# <a name="property-members-dao"></a>プロパティ メンバー (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 Property オブジェクトは、DAO オブジェクトの組み込みまたはユーザー定義の特性を表します。
 
@@ -49,7 +49,7 @@ Property オブジェクトは、DAO オブジェクトの組み込みまたは�
 </tr>
 <tr class="even">
 <td><p><strong><a href="property-type-property-dao.md">種類</a></strong></p></td>
-<td><p>オブジェクトの操作の種類またはデータ型を示す値を設定または取得します。 読み取り/書き込みの <strong>整数</strong> です。</p></td>
+<td><p>オブジェクトの操作の種類またはデータ型を示す値を設定または取得します。値の取得および設定が可能です。整数型 (<strong>Integer</strong>) の値を使用します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="property-value-property-dao.md">Value</a></strong></p></td>

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a166f39c-f10b-4e56-8b5d-e6a54ee08c8f
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: fd4b4ad5bf52f29384ef7e0ba738c350189f471e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6ac86bce80520c924fcc3d50ffd04f186a3d29e2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405283"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631413"
 ---
 # <a name="xlgetinstptr"></a>xlGetInstPtr
 

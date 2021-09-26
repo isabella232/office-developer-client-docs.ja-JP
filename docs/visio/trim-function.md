@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1027318
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6f2d84fd-27eb-4c2f-a2e1-43d20e0c78be
 description: 単語間の 1 つのスペースを除き、テキストからすべての領域を削除します。
-ms.openlocfilehash: b947c9500012d0ceefe3e8044be387f7b810dda9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e6d8263585754db88a1500a5fbe20a56ef4fe633
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435720"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627262"
 ---
 # <a name="trim-function"></a>TRIM 関数
 

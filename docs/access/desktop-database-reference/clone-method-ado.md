@@ -1,28 +1,28 @@
 ---
-title: Clone メソッド-ActiveX Data Objects (ADO)
+title: Clone メソッド - ActiveX データ オブジェクト (ADO)
 TOCTitle: Clone method (ADO)
 ms:assetid: ca9b2b76-90bf-9a60-2611-3cb4977d5591
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249984(v=office.15)
 ms:contentKeyID: 48547693
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 095191bbfe55f2c38529cb1c260979c48dd2d5f1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ec081c42a219e7073041998826b533a1b0fa6c81
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296347"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627080"
 ---
 # <a name="clone-method-ado"></a>Clone メソッド (ADO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
-既存の [Recordset](recordset-object-ado.md) オブジェクトから **Recordset** オブジェクトの複製を作成します。 必要に応じて、複製を読み取り専用に指定できます。
+既存の [Recordset](recordset-object-ado.md) オブジェクトから **Recordset** オブジェクトの複製を作成します。必要に応じて、複製を読み取り専用に指定できます。
 
 ## <a name="syntax"></a>構文
 
-**設定***rstduplicate* =  *rstOriginal*。Clone (*LockType*)
+ *rstDuplicate*  =  *rstOriginal を設定します*。Clone (*LockType*)
 
 ## <a name="return-value"></a>戻り値
 
@@ -32,7 +32,7 @@ ms.locfileid: "32296347"
 
 |パラメーター|説明|
 |:--------|:----------|
-|*rstduplicate* |作成する **Recordset** オブジェクトの複製を示すオブジェクト変数です。|
+|*rstDuplicate* |作成する **Recordset** オブジェクトの複製を示すオブジェクト変数です。|
 |*rstOriginal* |複製元の **Recordset** オブジェクトを示すオブジェクト変数です。|
 |*LockType* |省略可能です。複製元 [Recordset](locktypeenum.md) のロックの種類にするか、または読み取り専用 **Recordset** にするかを指定する、 **LockTypeEnum** の値です。有効な値は、 **adLockUnspecified** または **adLockReadOnly** です。|
 
@@ -82,7 +82,7 @@ ms.locfileid: "32296347"
 </tr>
 <tr class="even">
 <td><p><a href="willchangefield-and-fieldchangecomplete-events-ado.md">FieldChangeComplete</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="willmove-and-movecomplete-events-ado.md">MoveComplete</a></p></td>
@@ -90,7 +90,7 @@ ms.locfileid: "32296347"
 </tr>
 <tr class="even">
 <td><p><a href="willchangerecord-and-recordchangecomplete-events-ado.md">RecordChangeComplete</a></p></td>
-<td><p>はい</p></td>
+<td><p>必要</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="willchangerecordset-and-recordsetchangecomplete-events-ado.md">RecordsetChangeComplete</a></p></td>

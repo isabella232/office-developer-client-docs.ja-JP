@@ -10,24 +10,24 @@ f1_keywords:
 - vbaac10.chm50135
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 88bebab46cd6b76fb101c86c4fe33c5ab86a3e70
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: acb2420d4936350ed6816498cb54cc1a47cc8c5d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288302"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626254"
 ---
 # <a name="openview-macro-action"></a>OpenView マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 In an Access project, you can use the **OpenView** action to open a view in Datasheet view, Design view, or Print Preview. This action runs the named view when opened in Datasheet view. You can select data entry for the view and restrict the records that the view displays.
 
 > [!NOTE]
 > このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 "OpenView/ビューを開く" アクションの引数は次のとおりです。
 
@@ -45,10 +45,10 @@ In an Access project, you can use the **OpenView** action to open a view in Data
 <tbody>
 <tr class="odd">
 <td><p><strong>View Name/ビュー名</strong></p></td>
-<td><p>開くビューの名前を指定します。 [マクロビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>ビュー名</strong>] ボックスには、カレントデータベースのすべてのビューが表示されます。 この引数は省略できません。 ライブラリ データベースで "OpenView/ビューを開く" アクションが定義されているマクロを実行すると、この名前のビューが、最初にライブラリ データベースで検索され、次にカレント データベースで検索されます。</p></td>
+<td><p>開くビューの名前を指定します。 [ <strong>マクロ ビルダー] ウィンドウ</strong> の <strong>[アクション引数</strong> ] セクションの [ビュー名] ボックスには、現在のデータベース内のすべてのビューが表示されます。 この引数は省略できません。 ライブラリ データベースで "OpenView/ビューを開く" アクションが定義されているマクロを実行すると、この名前のビューが、最初にライブラリ データベースで検索され、次にカレント データベースで検索されます。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>View</strong></p></td>
+<td><p><strong>表示</strong></p></td>
 <td><p>ビューを開くときのビューを指定します。[<strong>ビュー</strong>] ボックスで、[<strong>データシート ビュー</strong>]、[<strong>デザイン ビュー</strong>]、[<strong>印刷プレビュー</strong>]、[<strong>ピボットテーブル ビュー</strong>]、または [<strong>ピボットグラフ ビュー</strong>] をクリックします。既定値は [<strong>データシート ビュー</strong>] です。</p></td>
 </tr>
 <tr class="odd">

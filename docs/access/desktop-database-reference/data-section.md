@@ -1,22 +1,22 @@
 ---
-title: データセクション (Access デスクトップデータベースリファレンス)
+title: '[データ] セクション (Access デスクトップ データベースリファレンス)'
 TOCTitle: Data section
 ms:assetid: fd8d31aa-af13-a52f-5e91-20225b8df175
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250303(v=office.15)
 ms:contentKeyID: 48548920
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1b8e3baf4d147edcc739e59933da4697c08cdef0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 236b6faf0913bdce857674581e8a7d066968a5b6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295045"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626891"
 ---
 # <a name="data-section"></a>データ セクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 データ セクションは、行セットのデータ、および保留中の更新、挿入、または削除を定義します。データ セクションには、行が含まれない場合と、1 つ以上の行が含まれる場合があります。スキーマによって行が定義されている単一の行セットからのデータだけを含む場合もあります。また、前述したとおり、データを含まない列は省略される場合があります。属性やサブ要素がデータ セクションで使用されており、その構成体がスキーマ セクションで定義されていない場合、その構成体は自動的に無視されます。
 
@@ -28,7 +28,7 @@ ms.locfileid: "32295045"
 <z:row CompanyName="Joe&apos;s Garage"/> 
 ```
 
-次の文字は XML で予約されており、文字エンティティに置き換える必要があります。 {\<'\>, ", &,,}。
+次の文字は XML で予約され、文字エンティティ {',",",&} に置き換える必要 \<,\> があります。
 
 ## <a name="binary"></a>Binary
 
@@ -36,10 +36,9 @@ ms.locfileid: "32295045"
 
 ## <a name="datetime"></a>DateTime
 
+バリアント VT \_ DATE 形式は、データ型によって直接XML-Dataされません。 日付と時間の両方のコンポーネントを含む日付の正しい形式は、yyyy-mm-dd **T** hh:mm:ss です。
 
-バリアント型 (\_variant) の日付形式は、XML データ型では直接サポートされていません。 日付と時間の両方のコンポーネントを含む日付の正しい形式は、yyyy-mm-dd**T**hh:mm:ss です。
-
-XML で指定される日付形式の詳細については、「 [W3C XMLData Note](https://www.w3.org/TR/1998/NOTE-XML-data-0105/)」を参照してください。
+XML で指定された日付形式の詳細については [、「W3C XMLData Note」を参照してください](https://www.w3.org/TR/1998/NOTE-XML-data-0105/)。
 
 XML-Data の仕様で 2 つの等価なデータ型が定義されている場合 (i4 == int など)、ADO ではフレンドリ名で記述されますが、読み取りは両方に対して行われます。
 

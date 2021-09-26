@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm820
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d03ae1b3-da6c-56d3-4f96-6e131c04e93e
 description: 図面にプレビューを含めるかどうかを指定します。図面にプレビューを含める場合は、プレビューに表示するページを指定します (最初のページのみ、または図面のすべてのページ)。
-ms.openlocfilehash: 34dbc9ac02032b2cb5cb6373c3c6361e3d822312
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 58b9ac70a853dbf7dccbdf723738b0aeb00608d2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426507"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627689"
 ---
 # <a name="previewscope-cell-document-properties-section"></a>[PreviewScope] セル ([Document Properties] セクション)
 

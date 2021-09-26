@@ -1,5 +1,5 @@
 ---
-title: DataUpdatable プロパティ (DAO)
+title: Field.DataUpdatable プロパティ (DAO)
 TOCTitle: DataUpdatable Property
 ms:assetid: 08ca57b6-2d7c-36b4-7d51-b76ac5467163
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845029(v=office.15)
@@ -10,31 +10,31 @@ f1_keywords:
 - dao360.chm1052988
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 8678b825f509f483bf70d3aa2f3d767dbf7b0e32
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: af9f67a418109415af0a212828da3db4288d8e69
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293134"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626709"
 ---
-# <a name="fielddataupdatable-property-dao"></a>DataUpdatable プロパティ (DAO)
+# <a name="fielddataupdatable-property-dao"></a>Field.DataUpdatable プロパティ (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 
 **[Field](field-object-dao.md)** オブジェクトで表されるフィールドのデータが更新可能かどうかを示す値を返します。
 
 ## <a name="syntax"></a>構文
 
-*式*。DataUpdatable
+*式* .DataUpdatable
 
-*式***Field**オブジェクトを表す変数を取得します。
+*expression*: **Field** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
-このプロパティを使用して、 **Field**オブジェクトの**[Value](field-value-property-dao.md)** プロパティの設定値を変更できるかどうかを判断します。 このプロパティは、**[Attributes](field-attributes-property-dao.md)** プロパティが **dbAutoIncrField** の **Field** オブジェクトでは常に **False** です。
+このプロパティを使用して **[、Field](field-value-property-dao.md)** オブジェクトの Value プロパティ設定を変更できるかどうか **を判断** します。 このプロパティは、**[Attributes](field-attributes-property-dao.md)** プロパティが **dbAutoIncrField** の **Field** オブジェクトでは常に **False** です。
 
 You can use the **DataUpdatable** property on **Field** objects that are appended to the **[Fields](fields-collection-dao.md)** collection of **[QueryDef](querydef-object-dao.md)**, **[Recordset](recordset-object-dao.md)**, and **[Relation](relation-object-dao.md)** objects, but not the **Fields** collection of **[Index](index-object-dao.md)** or **[TableDef](tabledef-object-dao.md)** objects.
 

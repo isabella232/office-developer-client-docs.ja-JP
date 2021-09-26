@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248853(v=office.15)
 ms:contentKeyID: 48543214
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f43207edec0c0acb58c66318e5dc7668a28ea595
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 8b8196d46b60600b54b3dc619279da7a995fa7d3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295328"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626905"
 ---
 # <a name="creating-the-connection-string"></a>接続文字列の作成
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ADO では、接続文字列内の 5 つの引数が直接サポートされています。その他の引数は、ADO によって処理されることなく、*Provider* 引数で指定されたプロバイダーに渡されます。
 
@@ -50,7 +50,7 @@ ADO では、接続文字列内の 5 つの引数が直接サポートされて�
 </tr>
 <tr class="odd">
 <td><p><em>Remote Server</em></p></td>
-<td><p>クライアント側の接続を開くときに使用するサーバーのパス名を指定します。 (リモートデータサービスのみ)</p></td>
+<td><p>クライアント側の接続を開くときに使用するサーバーのパス名を指定します (Remote Data Service のみ)。</p></td>
 </tr>
 </tbody>
 </table>
@@ -58,7 +58,7 @@ ADO では、接続文字列内の 5 つの引数が直接サポートされて�
 
 
 > [!NOTE]
-> 次の例および「ADO プログラマーズガイド」では、サーバーに対する認証に "123abc" というパスワードを持つユーザー id "MyId" を使用しています。 これらの値を、使用するサーバーの有効なログイン時の資格情報に置き換える必要があります。 また、"MySqlServer" は、使用するサーバーの名前に置き換えます。
+> 次の例では、ADO プログラマ ガイド全体で、"123aBc" のパスワードを持つユーザー ID "MyId" を使用して、サーバーに対する認証を行います。 これらの値を、使用するサーバーの有効なログイン時の資格情報に置き換える必要があります。 また、"MySqlServer" は、使用するサーバーの名前に置き換えます。
 
 1 章の HelloData アプリケーションでは、次の接続文字列が使用されていました。
 

@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - infopath 2007, security,code access security [InfoPath 2007],security [InfoPath 2007], security model for managed code,security [InfoPath 2007], levels,CAS [InfoPath 2007],InfoPath 2003-compatible form templates, security,permissions [InfoPath 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5e1c1c72-f98d-4871-9c57-82c315277aa1
 description: InfoPath マネージ コード フォーム テンプレートは、アンマネージ フォーム テンプレートで実行されるスクリプトと同じセキュリティ レベルをサポートしますが, .NET Framework の共通言語ランタイム (CLR) で実行されるマネージ コードに適用される追加のコード アクセス セキュリティ機能もサポートします。
-ms.openlocfilehash: 97f0239a5bd6699b539ddaebf4d1d2ed7d1394db
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 97735f0f707cc73d86b313b5aaac2758de71a5f3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436147"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631385"
 ---
 # <a name="about-the-security-model-for-form-templates-with-code"></a>コードを含むフォーム テンプレートのセキュリティ モデルについて
 

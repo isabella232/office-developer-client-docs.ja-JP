@@ -1,30 +1,30 @@
 ---
-title: Recordset2 メソッド (DAO)
+title: Recordset2.AddNew メソッド (DAO)
 TOCTitle: AddNew Method
 ms:assetid: 25c7d207-185c-943b-405e-b138ffb8b3e2
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191874(v=office.15)
 ms:contentKeyID: 48543792
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 49a69b5e8603e72faaba480ea9069d3668bd6de1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9a8368247e1a0dbaa524f3adab4d534c1c0cc7e7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307498"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631791"
 ---
-# <a name="recordset2addnew-method-dao"></a>Recordset2 メソッド (DAO)
+# <a name="recordset2addnew-method-dao"></a>Recordset2.AddNew メソッド (DAO)
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
  
 更新可能な **Recordset2** オブジェクトの新しいレコードを作成します。
 
 ## <a name="syntax"></a>構文
 
-*式*。AddNew
+*式* .AddNew
 
-*式***Recordset2**オブジェクトを表す変数を取得します。
+*式* Recordset2 オブジェクトを **表す変数** 。
 
 ## <a name="remarks"></a>注釈
 
@@ -36,7 +36,7 @@ ms.locfileid: "32307498"
 > [!メモ] **AddNew** の実行後、 **Update** を使用せずに他のレコードへ移動する操作を行った場合、変更は警告なしに取り消されます。さらに、 **Recordset2** を終了した場合や、 **Recordset2** またはその **[Database](database-object-dao.md)** オブジェクトが宣言されているプロシージャを終了した場合、新しいレコードは警告なしに破棄されます。
 
 > [!NOTE]
-> [!メモ] Microsoft Access ワークスペースで **AddNew** を使用する場合に、データベース エンジンでカレント レコードを保持するために新しいページを作成する必要がある場合は、ページのロック状態は排他的となります。一方、新しいレコードが既存のページに収まる場合は、ページのロック状態は共有的となります。
+> [!メモ] Microsoft Access ワークスペースで **AddNew** を使用し、データベース エンジンがカレント レコードを格納するために新しいページを作成する必要がある場合、ページのロック状態は排他的となります。一方、新しいレコードが既存のページに収まる場合は、ページのロック状態は共有的となります。
 
 **Recordset2** の最後のレコードに移動していない場合、他のプロセスによってベース テーブルに追加されたレコードがカレント レコードよりも後ろにある場合は、それらのレコードが含まれる場合があります。しかし、独自の **Recordset2** オブジェクトにレコードを追加する場合は、レコードはその **Recordset2** の他に基になるテーブルにも追加されるため、新しく作成される **Recordset2** オブジェクトにも含まれます。
 
@@ -46,7 +46,7 @@ ms.locfileid: "32307498"
 
 - [**Index**](recordset2-index-property-dao.md) プロパティが設定されているテーブル タイプの **Recordset2** オブジェクトでは、レコードは並べ替え順序の適切な位置に挿入されて返されます。 **Index** プロパティが設定されていない場合、新しいレコードは **Recordset** の末尾に挿入されて返されます。
 
-**AddNew** を使用する前にカレント レコードであったレコードは、そのままカレント レコードとなります。新しいレコードをカレント レコードにするには、 **[Bookmark](recordset2-bookmark-property-dao.md)** プロパティを **[LastModified](recordset2-lastmodified-property-dao.md)** プロパティの設定で指定されたブックマークに設定します。
+**AddNew** を使用する前のカレント レコードは、カレントのままになります。新しいレコードをカレントにするには、 **[Bookmark](recordset2-bookmark-property-dao.md)** プロパティを **[LastModified](recordset2-lastmodified-property-dao.md)** プロパティの設定によって識別されるブックマークに設定します。
 
 > [!NOTE]
 > [!メモ] レコードを追加、編集、削除するには、基になるデータ ソースのレコードに一意なインデックスが存在している必要があります。一意なインデックスが存在しない場合、Microsoft Access ワークスペースでは **AddNew**、 **Delete**、または **Edit** メソッドを呼び出したときに "アクセスが拒否されました。" のエラーが発生します。

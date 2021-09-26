@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1115
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 08165195-7e4e-f3ab-fa76-fbcacb0a9c9c
 description: 1-D 図形をあいまいな位置に移動したときに、その図形の端点が、動的接着によって接着先の図形にある水平方向の接続ポイントに移動するのか、または垂直方向の接続ポイントに移動するのかを指定します。既定では、1-D 図形の始点と終点の両方とも水平方向の接続ポイントに移動します。
-ms.openlocfilehash: 05f7ded3f7336dc2f8598e8d1e9edc501b511546
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bd3b582ca00c8c4f9ef9018f219b0fdd9dafe07d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408608"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627115"
 ---
 # <a name="walkpreference-cell-glue-info-section"></a>[WalkPreference] セル ([Glue Info] セクション)
 

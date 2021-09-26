@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm80004
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8491f459-9de2-8e75-5532-7d3bd0986734
 description: ユーザーが [Geometry] セクションで定義された塗りつぶされた領域をクリックすると、図形を選択またはドラッグできるかどうかを指定します。
-ms.openlocfilehash: d60268685d93ae88abb2840f62b093db1e688c2f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 052080f2334eb776e8a50d608724a6faa445d2ab
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417722"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627871"
 ---
 # <a name="noquickdrag-cell-geometry-section"></a>[NoQuickDrag] セル ([Geometry] セクション)
 

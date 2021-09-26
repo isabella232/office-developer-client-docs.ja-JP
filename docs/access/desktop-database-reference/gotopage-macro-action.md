@@ -10,21 +10,21 @@ f1_keywords:
 - vbaac10.chm129285
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 10d55b435a59594eaf3e8380b6690ebbda63a258
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9e4d7acd7c0f07f4d18a0a997c999cb877dbcb45
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292161"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626499"
 ---
 # <a name="gotopage-macro-action"></a>GoToPage マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 You can use the **GoToPage** action to move the focus in the active form to the first control on a specified page. You can use this action if you have created a form with page breaks that contains groups of related information. For example, you might have an Employees form with personal information on one page, office information on another page, and sales information on a third page. You can use the **GoToPage** action to move to the desired page. You can also present multiple pages of information on a single form by using tab controls.
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>設定
 
 "GoToPage/ページの移動" アクションの引数は次のとおりです。
 
@@ -42,7 +42,7 @@ You can use the **GoToPage** action to move the focus in the active form to the 
 <tbody>
 <tr class="odd">
 <td><p><strong>Page Number/ページ番号</strong></p></td>
-<td><p>フォーカスを移動するページの番号を指定します。 [マクロビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>ページ</strong>番号] ボックスにページ番号を入力します。 この引数を指定しないと、フォーカスはカレント ページにとどまります。 <strong>右</strong>および<strong>下</strong>の引数を使用して、表示するページの一部を表示できます。</p></td>
+<td><p>フォーカスを移動するページの数。 [マクロ ビルダー] ウィンドウの [<strong>アクション引数</strong>] セクションの [ページ番号] ボックスにページ番号を入力します。 <strong></strong> この引数を指定しないと、フォーカスはカレント ページにとどまります。 Right 引数と <strong>Down</strong> 引数 <strong>を</strong> 使用して、表示するページの一部を表示できます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Right</strong></p></td>
@@ -62,7 +62,7 @@ You can use the **GoToPage** action to move the focus in the active form to the 
 
 このアクションを使用すると、指定ページの最初のコントロール (フォームのタブ オーダーで定義されたコントロール) を選択できます。フォーム上の特定のコントロールに移動するには、"GoToControl/コントロールの移動" アクションを使用します。
 
-Access ウィンドウよりも大きいページを持つフォームの場合は、引数**Right**および**Down**を使用できます。 " **Page Number/ページ番号** " 引数を使用して目的のページに移動し、次に " **Right/右** " 引数と " **Down/下** " 引数を使ってページの必要な部分を表示します。 このとき、ウィンドウの左上隅から、引数で指定した間隔を置いた位置に、ページの左上隅が表示されます。
+Access ウィンドウより大 **きいページを** 持つフォームには **、Right** 引数と Down 引数を使用できます。 " **Page Number/ページ番号** " 引数を使用して目的のページに移動し、次に " **Right/右** " 引数と " **Down/下** " 引数を使ってページの必要な部分を表示します。 このとき、ウィンドウの左上隅から、引数で指定した間隔を置いた位置に、ページの左上隅が表示されます。
 
 You can't use the **GoToPage** action in the following cases:
 

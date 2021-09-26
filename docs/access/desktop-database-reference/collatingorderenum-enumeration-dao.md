@@ -1,23 +1,23 @@
 ---
-title: 同一/全/の順序列挙列挙 (DAO)
+title: CollatingOrderEnum 列挙 (DAO)
 TOCTitle: CollatingOrderEnum enumeration
 ms:assetid: 4a82ca02-172b-e796-58d8-f263287ef52a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193485(v=office.15)
 ms:contentKeyID: 48544667
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: eae8c2a4bead84f76f8aaf07412da7f70e086000
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ba00e459e62a2c87c43ee19dbd1958f42ee0cc0e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296263"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627031"
 ---
-# <a name="collatingorderenum-enumeration-dao"></a>同一/全/の順序列挙列挙 (DAO)
+# <a name="collatingorderenum-enumeration-dao"></a>CollatingOrderEnum 列挙 (DAO)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 文字列の比較または並べ替えのための、テキスト内の並べ替え順序を指定します。
 
@@ -36,42 +36,42 @@ ms.locfileid: "32296263"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>dbsortarabic</p></td>
+<td><p>dbSortArabic</p></td>
 <td><p>1025</p></td>
 <td><p>アラビア語版の照合順序</p></td>
 </tr>
 <tr class="even">
-<td><p>dbsortchinesesimplified</p></td>
+<td><p>dbSortChineseSimplified</p></td>
 <td><p>2052</p></td>
 <td><p>簡体字中国語版の照合順序</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbsortchinesetraditional</p></td>
+<td><p>dbSortChineseTraditional</p></td>
 <td><p>1028</p></td>
 <td><p>繁体字中国語版の照合順序</p></td>
 </tr>
 <tr class="even">
-<td><p>dbsortcyrillic</p></td>
+<td><p>dbSortCyrillic</p></td>
 <td><p>1049</p></td>
 <td><p>ロシア語版の照合順序</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbsortczech</p></td>
+<td><p>dbSortCzech</p></td>
 <td><p>1029</p></td>
 <td><p>チェコ語版の照合順序</p></td>
 </tr>
 <tr class="even">
-<td><p>dbsortdutch 語</p></td>
+<td><p>dbSortDutch</p></td>
 <td><p>1043</p></td>
 <td><p>オランダ語版の照合順序</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbsortgeneral</p></td>
+<td><p>dbSortGeneral</p></td>
 <td><p>1033</p></td>
 <td><p>英語版、ドイツ語版、フランス語版、およびポルトガル語版の照合順序</p></td>
 </tr>
 <tr class="even">
-<td><p>dbsortgreek 語</p></td>
+<td><p>dbSortGreek</p></td>
 <td><p>1032</p></td>
 <td><p>ギリシャ語版の照合順序</p></td>
 </tr>
@@ -86,77 +86,77 @@ ms.locfileid: "32296263"
 <td><p>ハンガリー語版の照合順序</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbsorticelandic</p></td>
+<td><p>dbSortIcelandic</p></td>
 <td><p>1039</p></td>
 <td><p>アイスランド語版の照合順序</p></td>
 </tr>
 <tr class="even">
-<td><p>dbsortjapanese</p></td>
+<td><p>dbSortJapanese</p></td>
 <td><p>1041</p></td>
 <td><p>日本語版の照合順序</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbsortkorean 語</p></td>
+<td><p>dbSortKorean</p></td>
 <td><p>1042</p></td>
 <td><p>韓国語版の照合順序</p></td>
 </tr>
 <tr class="even">
-<td><p>dbsortneutral</p></td>
+<td><p>dbSortNeutral</p></td>
 <td><p>1024</p></td>
 <td><p>ニュートラル言語版の照合順序</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbsortnorwdan</p></td>
+<td><p>dbSortNorwdan</p></td>
 <td><p>1030</p></td>
 <td><p>ノルウェー語版の照合順序</p></td>
 </tr>
 <tr class="even">
-<td><p>dbsortpdxintl</p></td>
+<td><p>dbSortPDXIntl</p></td>
 <td><p>1033</p></td>
 <td><p>Paradox インターナショナル版の照合順序</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbsortpdxnor は</p></td>
+<td><p>dbSortPDXNor</p></td>
 <td><p>1030</p></td>
 <td><p>Paradox ノルウェー語およびデンマーク語版の照合順序</p></td>
 </tr>
 <tr class="even">
-<td><p>dbsortpdxswe</p></td>
+<td><p>dbSortPDXSwe</p></td>
 <td><p>1053</p></td>
 <td><p>Paradox スウェーデン語およびフィンランド語版の照合順序</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbsortpolish</p></td>
+<td><p>dbSortPolish</p></td>
 <td><p>1045</p></td>
 <td><p>ポーランド語版の照合順序</p></td>
 </tr>
 <tr class="even">
-<td><p>dbsortsloベンダーの場合</p></td>
+<td><p>dbSortSlovenian</p></td>
 <td><p>1060</p></td>
 <td><p>スロベニア語版の照合順序</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbsortspanish 語</p></td>
+<td><p>dbSortSPanish</p></td>
 <td><p>1034</p></td>
 <td><p>スペイン語版の照合順序</p></td>
 </tr>
 <tr class="even">
-<td><p>dbsortswedfin</p></td>
+<td><p>dbSortSwedFin</p></td>
 <td><p>1053</p></td>
 <td><p>スウェーデン語版およびフィンランド語版の照合順序</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbsortthai 語</p></td>
+<td><p>dbSortThai</p></td>
 <td><p>1054</p></td>
 <td><p>タイ語版の照合順序</p></td>
 </tr>
 <tr class="even">
-<td><p>dbsortturkish</p></td>
+<td><p>dbSortTurkish</p></td>
 <td><p>1055</p></td>
 <td><p>トルコ語版の照合順序</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbsortundefined</p></td>
+<td><p>dbSortUndefined</p></td>
 <td><p>-1</p></td>
 <td><p>照合順序が未定義または不明</p></td>
 </tr>

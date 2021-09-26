@@ -3,15 +3,15 @@ title: オフライン状態アドインの切断
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6922cb38-a9e3-e4a9-d4a3-e11b81fc77e2
 description: '最終更新日: 2015 年 12 月 7 日'
-ms.openlocfilehash: c665bae57a72428df7acd92e080f7c31b131253b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.openlocfilehash: 87575d171d96a4c3083b2e9b0b03feb19ec42afe
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316654"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631000"
 ---
 # <a name="disconnecting-an-offline-state-add-in"></a>オフライン状態アドインの切断
 
@@ -19,7 +19,7 @@ ms.locfileid: "32316654"
   
 オフライン状態アドインが切断された場合は、アドインを適切に終了してクリーンアップするための関数を実装する必要があります。 接続状態変更の監視を行うためのオフライン状態アドインのセットアップとその使用の詳細については、[オフライン状態アドインのセットアップ](setting-up-an-offline-state-add-in.md)、[オフライン状態アドインを使用した接続状態変更の監視](monitoring-connection-state-changes-using-an-offline-state-add-in.md)を参照してください。
   
-このトピックでは、サンプルのオフライン状態アドインのコード例を使って、これらの切断、終了、クリーンアップ関数を説明します。 サンプルのオフライン状態アドインは、オフライン状態 API を使用して Outlook に**オフライン状態**メニューを追加する COM アドインです。 オフライン状態メニューを使うと、状態の監視を有効または無効にしたり、現在の状態を確認、変更したりすることができます。 サンプルのオフライン状態アドインのダウンロードやインストールの詳細については、[サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)を参照してください。 オフライン状態 API の詳細については、[オフライン状態 API について](about-the-offline-state-api.md)を参照してください。
+このトピックでは、サンプルのオフライン状態アドインのコード例を使って、これらの切断、終了、クリーンアップ関数を説明します。 サンプルのオフライン状態アドインは、オフライン状態 API を使用して Outlook に **オフライン状態** メニューを追加する COM アドインです。 オフライン状態メニューを使うと、状態の監視を有効または無効にしたり、現在の状態を確認、変更したりすることができます。 サンプルのオフライン状態アドインのダウンロードやインストールの詳細については、[サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)を参照してください。 オフライン状態 API の詳細については、[オフライン状態 API について](about-the-offline-state-api.md)を参照してください。
   
 ## <a name="on-disconnection-routine"></a>切断ルーチンについて
 
@@ -77,7 +77,7 @@ g_ulAdviseToken = NULL;
 
 ## <a name="remove-menu-items-routine"></a>メニュー アイテム ルーチンの削除
 
-`HrRemoveMenuItems` 関数が**オフライン状態**メニューにある各メニュー アイテムの `DispEventUnadvise` を呼び出した後、**オフライン状態**メニューを削除します。 
+`HrRemoveMenuItems` 関数が **オフライン状態** メニューにある各メニュー アイテムの `DispEventUnadvise` を呼び出した後、**オフライン状態** メニューを削除します。 
   
 ### <a name="cmyaddinhrremovemenuitems-example"></a>CMyAddin::HrRemoveMenuItems() の使用例
 

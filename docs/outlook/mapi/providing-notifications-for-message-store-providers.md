@@ -3,17 +3,17 @@ title: メッセージ ストア プロバイダーへの通知の提供
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: c0e1cdba-ceb6-4a3f-8449-79d1a0ad1adf
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: a28e6e6f008517a6b1c2c82dfa391b478963880f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: aaa51d12ee6959d4ec8f75c84ce0cf4124922300
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419934"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624377"
 ---
 # <a name="providing-notifications-for-message-store-providers"></a>メッセージ ストア プロバイダーへの通知の提供
 

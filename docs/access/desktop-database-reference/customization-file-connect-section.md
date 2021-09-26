@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248802(v=office.15)
 ms:contentKeyID: 48542985
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8652aa2c028350aab79cdf101cba189026b9a5ae
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9455867ec47354a38084a67360d5ee7f3f66e874
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295143"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622502"
 ---
 # <a name="customization-file-connect-section"></a>カスタマイズ ファイルの Connect セクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ハンドラーの既定の動作では、すべての接続が拒否されます。 **connect** セクションで、この動作の例外を指定します。たとえば、 **connect** セクションが 1 つもないか、あっても空の場合、既定では接続は行われません。
 
@@ -61,7 +61,7 @@ ms.locfileid: "32295143"
 <td><p>これがアクセス エントリであることを示すリテラル文字列。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><em>accessright</em></strong></p></td>
+<td><p><strong><em>accessRight</em></strong></p></td>
 <td><p>次のアクセス権のいずれかを指定します。</p>
 <p></p>
 <ul>
@@ -75,5 +75,5 @@ ms.locfileid: "32295143"
 </table>
 
 
-すべての接続を許可する (つまり、既定のハンドラー動作を無効にする) 場合は、[ **connect default** ] セクションの [access] エントリをに設定し、[他の**接続***識別子*を削除またはコメントアウトする] セクションを追加します。
+接続を許可する場合 (実際には、既定のハンドラー動作を無効にする) 場合は、[既定の接続] セクションのアクセス エントリをに設定し、他の接続識別子セクションを削除またはコメント *アウトします。*
 

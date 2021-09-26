@@ -1,22 +1,22 @@
 ---
-title: errorvalueenum (Access デスクトップデータベースリファレンス)
+title: ErrorValueEnum (Access desktop database reference)
 TOCTitle: ErrorValueEnum
 ms:assetid: 2af99f32-6004-1225-367c-45d693f447b8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249058(v=office.15)
 ms:contentKeyID: 48543921
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c2d4207f157d361f3b8aba2ff80f46d06b2f328e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 958cb01ebe84a7295df23dcdede346ce767cd0f9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293323"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626765"
 ---
 # <a name="errorvalueenum"></a>ErrorValueEnum
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 ADO 実行時エラーの種類を表します。
 
@@ -26,10 +26,10 @@ ADO 実行時エラーの種類を表します。
 
 - 負の 10 進値: 完全エラー番号を 10 進数に変換したもの。
 
-- 16 進値: 完全エラー番号の 16 進数表記。 Windows 機能コードは 4 桁目です。 ADO エラー番号のファシリティコードは *、* です。例: 0x800***A***0e7b。
+- 16 進値: 完全エラー番号の 16 進数表記。Windows 機能コードは 4 桁目です。ADO エラー番号の機能コードは、*A* です。たとえば、0x800 ***A*** 0E7B がその例です。
 
 > [!NOTE]
-> OLE DB エラーが ADO アプリケーションに渡される場合があります。 通常、これらは Windows ファシリティコード*4*で識別できます。 たとえば、0x800_**4**_....これらの番号の詳細については、「 *OLE DB プログラマリファレンス*」の「16章」を参照してください。
+> OLE DB エラーは、ADO アプリケーションに渡される可能性があります。 通常、これらは 4 のWindowsで *識別できます*。 たとえば **、4** _...0x800_を指定します。これらの番号の詳細については、「OLE DB プログラマ リファレンス」の第 16 章 *を参照してください。*
 
 <br/>
 
@@ -48,7 +48,7 @@ ADO 実行時エラーの種類を表します。
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>aderrboundtocommand</strong></p></td>
+<td><p><strong>adErrBoundToCommand</strong></p></td>
 <td><p>3707<br />
 -2146824581<br />
 0x800A0E7B</p></td>
@@ -66,38 +66,38 @@ ADO 実行時エラーの種類を表します。
 <td><p>3748<br />
 -2146824540<br />
 0x800A0EA4</p></td>
-<td><p>接続が拒否されました。 要求された新規接続の特性が現在使用中の特性と異なります。</p></td>
+<td><p>接続が拒否されました。要求された新規接続の特性が現在使用中の特性と異なります。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrcantchangeprovider</strong></p></td>
+<td><p><strong>adErrCantChangeProvider</strong></p></td>
 <td><p>3220<br />
 -2146825068<br />
-0x800a0c94</p></td>
+0X800A0C94</p></td>
 <td><p>指定されたプロバイダーが既に使用されているものと異なります。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>aderrcantconvertvalue</strong></p></td>
+<td><p><strong>adErrCantConvertvalue</strong></p></td>
 <td><p>3724<br />
 -2146824564<br />
 0x800A0E8C</p></td>
-<td><p>符号の不一致またはデータ オーバーフロー以外の理由により、データ値を変換できません。 たとえば、変換によりデータの一部が切り捨てられる場合などです。</p></td>
+<td><p>符号の不一致またはデータ オーバーフロー以外の理由により、データ値を変換できません。たとえば、変換によりデータの一部が切り捨てられる場合などです。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrcantcreate</strong></p></td>
+<td><p><strong>adErrCantCreate</strong></p></td>
 <td><p>3725<br />
 -2146824563<br />
 0x800A0E8D</p></td>
 <td><p>フィールドのデータ型が不明であったか、プロバイダーが操作を実行するのに十分なリソースを持っていなかったため、データ値を設定または取得できません。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>aderrcatalognotset</strong></p></td>
+<td><p><strong>adErrCatalogNotSet</strong></p></td>
 <td><p>3747<br />
 -2146824541<br />
 0x800A0EA3</p></td>
 <td><p>操作には有効な <strong>ParentCatalog</strong> が必要です。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrcolumnnotonこの行</strong></p></td>
+<td><p><strong>adErrColumnNotOnThisRow</strong></p></td>
 <td><p>3726<br />
 -2146824562<br />
 0x800A0E8E</p></td>
@@ -111,7 +111,7 @@ ADO 実行時エラーの種類を表します。
 <td><p>現在の操作に対して、間違った型の値を使用しています。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrdataoverflow</strong></p></td>
+<td><p><strong>adErrDataOverflow</strong></p></td>
 <td><p>3721<br />
 -2146824567<br />
 0x800A0E89</p></td>
@@ -132,7 +132,7 @@ ADO 実行時エラーの種類を表します。
 <td><p>プロバイダーが共有の制約をサポートしていません。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>aderrdenytypenotsupported がサポートされている</strong></p></td>
+<td><p><strong>adErrDenyTypeNotSupported</strong></p></td>
 <td><p>3751<br />
 -2146824537<br />
 0x800A0EA7</p></td>
@@ -150,13 +150,13 @@ ADO 実行時エラーの種類を表します。
 <td><p>3749<br />
 -2146824539<br />
 0x800A0EA5</p></td>
-<td><p>フィールドを更新できませんでした。 詳細については、各 Field オブジェクトの <strong>Status</strong> プロパティを参照してください。</p></td>
+<td><p>フィールドの更新に失敗しました。詳細については、各 Field オブジェクトの <strong>Status</strong> プロパティを参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adErrIllegalOperation</strong></p></td>
 <td><p>3219<br />
 -2146825069<br />
-0x800a0c93</p></td>
+0x800A0C93</p></td>
 <td><p>このコンテキストで操作は許可されていません。</p></td>
 </tr>
 <tr class="odd">
@@ -167,7 +167,7 @@ ADO 実行時エラーの種類を表します。
 <td><p>データの値がフィールドの整合性制約に反しています。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrintransaction</strong></p></td>
+<td><p><strong>adErrInTransaction</strong></p></td>
 <td><p>3246<br />
 -2146825042<br />
 0x800A0CAE</p></td>
@@ -181,32 +181,32 @@ ADO 実行時エラーの種類を表します。
 <td><p>間違った種類または許容範囲外の引数を使用しているか、使用している引数が競合しています。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrinvalidconnection</strong></p></td>
+<td><p><strong>adErrInvalidConnection</strong></p></td>
 <td><p>3709<br />
 -2146824579<br />
 0x800A0E7D</p></td>
-<td><p>この操作を実行するために接続を使用できません。 このコンテキストで閉じているかあるいは無効です。</p></td>
+<td><p>この操作を実行するために接続を使用できません。このコンテキストで閉じているかあるいは無効です。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>aderrinvalidparaminfo</strong></p></td>
+<td><p><strong>adErrInvalidParamInfo</strong></p></td>
 <td><p>3708<br />
 -2146824580<br />
 0x800A0E7C</p></td>
-<td><p><strong>Parameter</strong> オブジェクトが適切に定義されていません。 矛盾した、または不完全な情報が指定されました。</p></td>
+<td><p><strong>Parameter</strong> オブジェクトが適切に定義されていません。矛盾した、または不完全な情報が指定されました。  </p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrinvalidtransaction</strong></p></td>
+<td><p><strong>adErrInvalidTransaction</strong></p></td>
 <td><p>3714<br />
 -2146824574<br />
 0x800A0E82</p></td>
 <td><p>調整トランザクションが無効であるか、開始されていません。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>aderrinvalidurl</strong></p></td>
+<td><p><strong>adErrInvalidURL</strong></p></td>
 <td><p>3729<br />
 -2146824559<br />
 0x800A0E91</p></td>
-<td><p>URL に無効な文字が含まれています。 URL が正しく入力されているか確認してください。</p></td>
+<td><p>URL に無効な文字が含まれています。URL が正しく入力されているか確認してください。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adErrItemNotFound</strong></p></td>
@@ -220,17 +220,17 @@ ADO 実行時エラーの種類を表します。
 <td><p>3021<br />
 -2146825267<br />
 0x800A0BCD</p></td>
-<td><p><strong>BOF</strong> または <strong>EOF</strong> が True であるか、現在のレコードが削除されています。 要求された操作には現在のレコードが必要です。</p></td>
+<td><p><strong>BOF</strong> または <strong>EOF</strong> が True であるか、現在のレコードが削除されています。要求された操作には現在のレコードが必要です。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrnotexecuting</strong></p></td>
+<td><p><strong>adErrNotExecuting</strong></p></td>
 <td><p>3715<br />
 -2146824573<br />
 0x800A0E83</p></td>
 <td><p>実行していない間に操作を行うことはできません。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>aderrnotreentrant</strong></p></td>
+<td><p><strong>adErrNotReentrant</strong></p></td>
 <td><p>3710<br />
 -2146824578<br />
 0x800A0E7E</p></td>
@@ -248,7 +248,7 @@ ADO 実行時エラーの種類を表します。
 <td><p>3367<br />
 -2146824921<br />
 0x800A0D27</p></td>
-<td><p>オブジェクトは既にコレクションに存在します。 追加できません。</p></td>
+<td><p>オブジェクトは既にコレクションに存在します。追加できません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adErrObjectNotSet</strong></p></td>
@@ -283,17 +283,17 @@ ADO 実行時エラーの種類を表します。
 <td><p>3734<br />
 -2146824554<br />
 0x800A0E96</p></td>
-<td><p>操作を実行できません。 プロバイダーによって十分な記憶域が確保できません。</p></td>
+<td><p>操作を実行できません。プロバイダーによって十分な記憶域が確保できません。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>aderrpermissiondenied</strong></p></td>
+<td><p><strong>adErrPermissionDenied</strong></p></td>
 <td><p>3720<br />
 -2146824568<br />
 0x800A0E88</p></td>
 <td><p>権限不足のためフィールドの書き込みはできません。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrproviderfailed</strong></p></td>
+<td><p><strong>adErrProviderFailed</strong></p></td>
 <td><p>3000<br />
 -2146825288<br />
 0x800A0BB8</p></td>
@@ -304,24 +304,24 @@ ADO 実行時エラーの種類を表します。
 <td><p>3706<br />
 -2146824582<br />
 0x800A0E7A</p></td>
-<td><p>プロバイダーが見つかりません。 正しくインストールされていない可能性があります。</p></td>
+<td><p>プロバイダーが見つかりません。正しくインストールされていない可能性があります。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrreadfile</strong></p></td>
+<td><p><strong>adErrReadFile</strong></p></td>
 <td><p>3003<br />
 -2146825285<br />
 0x800A0BBB</p></td>
 <td><p>ファイルを読み込むことができませんでした。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>aderrresourceexists</strong></p></td>
+<td><p><strong>adErrResourceExists</strong></p></td>
 <td><p>3731<br />
 -2146824557<br />
 0x800A0E93</p></td>
-<td><p>コピー操作を実行できません。 宛先の URL で指定されたオブジェクトは既に存在します。 オブジェクトを置き換えるためには <strong>adCopyOverwrite</strong> を指定してください。</p></td>
+<td><p>コピー操作を実行できません。宛先の URL によって名前を指定されたオブジェクトが既に存在します。オブジェクトを置き換えるためには <strong>adCopyOverwrite</strong> を指定してください。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrresourcelocked</strong></p></td>
+<td><p><strong>adErrResourceLocked</strong></p></td>
 <td><p>3730<br />
 -2146824558<br />
 0x800A0E92</p></td>
@@ -335,14 +335,14 @@ ADO 実行時エラーの種類を表します。
 <td><p>ソースまたは宛先の URL が、現在のレコードの範囲外です。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrschemaviolation</strong></p></td>
+<td><p><strong>adErrSchemaViolation</strong></p></td>
 <td><p>3722<br />
 -2146824566<br />
 0x800A0E8A</p></td>
 <td><p>データ値がフィールドのデータ型と一致していないか、フィールドの制約に反しています。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>aderrsignmismatch</strong></p></td>
+<td><p><strong>adErrSignMismatch</strong></p></td>
 <td><p>3723<br />
 -2146824565<br />
 0x800A0E8B</p></td>
@@ -363,21 +363,21 @@ ADO 実行時エラーの種類を表します。
 <td><p>非同期実行中に操作を行うことはできません。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrtreepermissiondenied</strong></p></td>
+<td><p><strong>adErrTreePermissionDenied</strong></p></td>
 <td><p>3728<br />
 -2146824560<br />
 0x800A0E90</p></td>
 <td><p>権限が不十分なために、ツリーまたはサブツリーにアクセスできません。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>aderrunavailable 不可</strong></p></td>
+<td><p><strong>adErrUnavailable</strong></p></td>
 <td><p>3736<br />
 -2146824552<br />
 0x800A0E98</p></td>
-<td><p>操作の完了に失敗し、状態は利用できません。 フィールドが利用できないか、操作が実行されなかった可能性があります。</p></td>
+<td><p>操作の完了に失敗し、状態は利用できません。フィールドが利用できないか、操作が実行されなかった可能性があります。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrアン safeoperation</strong></p></td>
+<td><p><strong>adErrUnsafeOperation</strong></p></td>
 <td><p>3716<br />
 -2146824572<br />
 0x800A0E84</p></td>
@@ -398,32 +398,32 @@ ADO 実行時エラーの種類を表します。
 <td><p>この URL によって名前を付けられたレコードが存在しません。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>aderrvolumenotfound</strong></p></td>
+<td><p><strong>adErrVolumeNotFound</strong></p></td>
 <td><p>3733<br />
 -2146824555<br />
 0x800A0E95</p></td>
-<td><p>プロバイダーが、URL で示された記憶装置の場所を特定できません。 URL が正しく入力されているか確認してください。</p></td>
+<td><p>プロバイダーは URL によって指定された記憶装置を見つけられません。URL が正しく入力されているか確認してください。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>aderrwritefile</strong></p></td>
+<td><p><strong>adErrWriteFile</strong></p></td>
 <td><p>3004<br />
 -2146825284<br />
 0x800A0BBC</p></td>
 <td><p>ファイルへの書き込みに失敗しました。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adwrnsecuritydialog</strong></p></td>
+<td><p><strong>adWrnSecurityDialog</strong></p></td>
 <td><p>3717<br />
 -2146824571<br />
 0x800A0E85</p></td>
-<td><p>内部使用のために用意されています。 使用しないでください。</p></td>
+<td><p>内部使用のために用意されています。使用しないでください。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adwrnsecuritydialogheader</strong></p></td>
+<td><p><strong>adWrnSecurityDialogHeader</strong></p></td>
 <td><p>3718<br />
 -2146824570<br />
 0x800A0E86</p></td>
-<td><p>内部使用のために用意されています。 使用しないでください。</p></td>
+<td><p>内部使用のために用意されています。使用しないでください。</p></td>
 </tr>
 </tbody>
 </table>
@@ -446,67 +446,67 @@ ADO 実行時エラーの種類を表します。
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums tocommand を指定します。</p></td>
+<td><p>AdoEnums.ErrorValue.BOUNDTOCOMMAND</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums DATACONVERSION</p></td>
+<td><p>AdoEnums.ErrorValue.DATACONVERSION</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums FEATURENOTAVAILABLE</p></td>
+<td><p>AdoEnums.ErrorValue.FEATURENOTAVAILABLE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums ILLEGALOPERATION</p></td>
+<td><p>AdoEnums.ErrorValue.ILLEGALOPERATION</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums を指定します。 intransaction</p></td>
+<td><p>AdoEnums.ErrorValue.INTRANSACTION</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums INVALIDARGUMENT</p></td>
+<td><p>AdoEnums.ErrorValue.INVALIDARGUMENT</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums connection。 invalidconnection</p></td>
+<td><p>AdoEnums.ErrorValue.INVALIDCONNECTION</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums の値を取得します。 invalidparaminfo</p></td>
+<td><p>AdoEnums.ErrorValue.INVALIDPARAMINFO</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums ITEMNOTFOUND</p></td>
+<td><p>AdoEnums.ErrorValue.ITEMNOTFOUND</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums NOCURRENTRECORD</p></td>
+<td><p>AdoEnums.ErrorValue.NOCURRENTRECORD</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums の実行</p></td>
+<td><p>AdoEnums.ErrorValue.NOTEXECUTING</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums。 notreentrant</p></td>
+<td><p>AdoEnums.ErrorValue.NOTREENTRANT</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums closed。</p></td>
+<td><p>AdoEnums.ErrorValue.OBJECTCLOSED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums/オブジェクトのコレクション</p></td>
+<td><p>AdoEnums.ErrorValue.OBJECTINCOLLECTION</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums の値がありません。</p></td>
+<td><p>AdoEnums.ErrorValue.OBJECTNOTSET</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums ado</p></td>
+<td><p>AdoEnums.ErrorValue.OBJECTOPEN</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums が取り消されました</p></td>
+<td><p>AdoEnums.ErrorValue.OPERATIONCANCELLED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums PROVIDERNOTFOUND</p></td>
+<td><p>AdoEnums.ErrorValue.PROVIDERNOTFOUND</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums STILLCONNECTING</p></td>
+<td><p>AdoEnums.ErrorValue.STILLCONNECTING</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums STILLEXECUTING</p></td>
+<td><p>AdoEnums.ErrorValue.STILLEXECUTING</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums の取り消し操作</p></td>
+<td><p>AdoEnums.ErrorValue.UNSAFEOPERATION</p></td>
 </tr>
 </tbody>
 </table>

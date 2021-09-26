@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 47533e6e-0a48-af61-a0c2-b2cec140ae4b
 description: データ レコードセット内で 1 つ以上の主キー列を識別します。
-ms.openlocfilehash: bd77b1d18490695dc2b0cb43520f42bb845e91ab
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 3d537c0f8cf808da5ce8490fd584420b0a6e72b4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537711"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627682"
 ---
 # <a name="primarykey-element-datarecordset_type-complextype-visio-xml"></a>PrimaryKey 要素 (DataRecordSet_Type complexType) (Visio XML)
 

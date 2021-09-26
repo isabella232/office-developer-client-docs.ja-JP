@@ -3,15 +3,15 @@ title: InfoPath フォームの追加のセキュリティ概念
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 77425a61-bf33-b3d8-442a-caee48e54a48
 description: Microsoft InfoPath のセキュリティ モデルは、Internet Explorer に実装されているセキュリティ モデルに基づいています。Internet Explorer のセキュリティ モデルは、セキュリティ ゾーンとレベルの使用によって、安全でない操作からのコンピューターの保護を支援します。InfoPath では、Internet Explorer のセキュリティ モデルと連携して、このセキュリティ モデル内での InfoPath フォームの動作に影響を与える 2 種類のフォーム展開を行うことができます。
-ms.openlocfilehash: 00b0e306507db19f55059fba91277af1ad1714b9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7d3e06f279eace2e750904cfd741d7ffeff5ac9e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303774"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631371"
 ---
 # <a name="additional-infopath-form-security-concepts"></a>InfoPath フォームの追加のセキュリティ概念
 

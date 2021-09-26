@@ -10,24 +10,24 @@ f1_keywords:
 - vbaac10.chm50916
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 55af2ce884b26b4c3df219e7d1986e7dc2e4c8ce
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0474df0c026385731a13bf122c87bebab7af9e3c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288281"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626247"
 ---
 # <a name="openvisualbasicmodule-macro-action"></a>OpenVisualBasicModule マクロ アクション
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 You can use the **OpenVisualBasicModule** action to open a specified Visual Basic for Applications (VBA) module at a specified procedure. This can be a Sub procedure, a Function procedure, or an event procedure.
 
 > [!NOTE]
 > このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
 "OpenVisualBasicModule/VisualBasicモジュールを開く" アクションの引数は次のとおりです。
 
@@ -60,7 +60,7 @@ You can use the **OpenVisualBasicModule** action to open a specified Visual Basi
 
 ## <a name="remarks"></a>注釈
 
-You can use this action to open an event procedure by specifying the **Module Name** argument and the **Procedure Name** argument. たとえば、フォームの注文で **[** printinvoice] ボタンの click イベントプロシージャを開くには、" **Module name/名前**" 引数を [フォームに設定する] を指定し、 **"** **プロシージャ名**" 引数を**\_printinvoice クリック**に設定します。 To view the event procedure for a form or report, the form or report must be open.
+You can use this action to open an event procedure by specifying the **Module Name** argument and the **Procedure Name** argument. たとえば、Orders フォームの PrintInvoice ボタンの **Click** イベント プロシージャを開く場合は、Module **Name** 引数を **Form.Orders** に設定し、Procedure **Name** 引数を **PrintInvoice \_ Click** に設定します。 To view the event procedure for a form or report, the form or report must be open.
 
 同様に、クラス モジュールでプロシージャを開くには、モジュール名を指定する必要がありますが、そのクラス モジュールを開いておく必要はありません。
 

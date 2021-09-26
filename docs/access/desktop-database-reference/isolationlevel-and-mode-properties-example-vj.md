@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249989(v=office.15)
 ms:contentKeyID: 48547711
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 783897154347cebf997dd41e4ea2e0a4d6deb442
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7975ef2f0fada344e428e0164b668ea2e3cba9a0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291164"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631931"
 ---
 # <a name="isolationlevel-and-mode-properties-example-vj"></a>IsolationLevel プロパティと Mode プロパティの使用例 (VJ++)
 
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 この例では、[Mode](mode-property-ado.md) プロパティを使って排他的接続を開き、 [IsolationLevel](isolationlevel-property-ado.md) プロパティを使って他のトランザクションから独立したトランザクションを開きます。
 

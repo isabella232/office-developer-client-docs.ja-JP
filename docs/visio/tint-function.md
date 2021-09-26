@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c4f176d6-4af0-282d-5640-7d98e84dfb55
 description: int パラメーターで指定された量 (正または負) で明るさを増やして色を変更します。
-ms.openlocfilehash: 8924bc0662814e14d01b4bd5332f5fadeb0a1082
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2dbc354ee08ddfab1e9d1f24bad9612e4f20839b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406578"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627297"
 ---
 # <a name="tint-function"></a>TINT 関数
 
