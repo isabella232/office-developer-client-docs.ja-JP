@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194787(v=office.15)
 ms:contentKeyID: 48545170
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: b2e334dcad84d2a9c3441e76e6552c1cb04f8552
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: dd6930940cf33a361285ca6a727c7d1d3919e5a2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300533"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593734"
 ---
 # <a name="recordsetfindfirst-method-dao"></a>Recordset.FindFirst メソッド (DAO)
 
@@ -38,7 +38,7 @@ ms.locfileid: "32300533"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/省略可能</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -48,7 +48,7 @@ ms.locfileid: "32300533"
 <td><p><em>基準</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>String</strong></p></td>
-<td><p>レコードの検索に使用する文字列です。 SQL ステートメントの WHERE 句に似ていますが、WHERE という語は付けません。</p></td>
+<td><p>レコードの検索に使用する文字列です。SQL ステートメントの WHERE 句に似ていますが、WHERE という語は付けません。</p></td>
 </tr>
 </tbody>
 </table>
