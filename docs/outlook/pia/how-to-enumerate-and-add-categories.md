@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff424467(v=office.15)
 ms:contentKeyID: 55119829
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 488e00971adb1f2fa38555039478ac830d3c9f7a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6a7dd47d288980e11a9571a799fdcb6b19b90621
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320413"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609069"
 ---
 # <a name="enumerate-and-add-categories"></a>分類項目を列挙および追加する
 
@@ -41,7 +41,7 @@ Outlook オブジェクト モデルでは、分類項目の機能が利用で�
 
 これらのプロパティは **OLE\_COLOR** 値を返します。この値は、**Category** オブジェクトの **Color** プロパティに依存します。
 
-Outlook アイテムは分類項目名に基づいて表示されます。各アイテムのオブジェクトには、分類項目名を表すコンマ区切り文字列を格納した **Categories** プロパティがあります (たとえば、 [MailItem](https://msdn.microsoft.com/library/bb643865\(v=office.15\)) オブジェクトの場合は **MailItem** の  [Categories](https://msdn.microsoft.com/library/bb646442\(v=office.15\)) プロパティを使用します)。これにより、メイン分類項目リストに存在しない分類項目もアイテムに追加できます。
+Outlook アイテムは分類項目名に基づいて表示されます。 各項目のオブジェクトには、分類項目名を表すコンマ区切り文字列を格納した **Categories** プロパティが含まれます。 (たとえば、[MailItem](https://msdn.microsoft.com/library/bb643865\(v=office.15\)) オブジェクトでは、**MailItem** の [Categories](https://msdn.microsoft.com/library/bb646442\(v=office.15\)) プロパティを使用します)。 これにより、メインの分類項目リストにない分類項目もアイテムに追加することができます。
 
 
 > [!NOTE]
