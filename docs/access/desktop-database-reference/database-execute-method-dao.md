@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197654(v=office.15)
 ms:contentKeyID: 48546378
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 5a2ebbb549e309349695d93618f4522a2dbf7a7a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 5e3e0435b23ec1282d30c62a48fb3a36e08a81fb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294961"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597485"
 ---
 # <a name="databaseexecute-method-dao"></a>Database.Execute メソッド (DAO)
 
@@ -22,7 +22,7 @@ ms.locfileid: "32294961"
 
 ## <a name="syntax"></a>構文
 
-*式* .Execute (***クエリ***、***オプション***)
+*式* .Execute(***Query** _, _*_Options_**)
 
 *式* **Database** オブジェクトを表す変数です。
 

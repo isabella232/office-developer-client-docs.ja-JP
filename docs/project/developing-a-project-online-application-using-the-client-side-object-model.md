@@ -5,18 +5,18 @@ ms.date: 12/18/2019
 ms.audience: Developer
 ms.assetid: 5740d0b2-5d36-40e4-9e83-577cb186359f
 description: 'この記事では、.NET Framework 4.0 および CSOM を使用した Microsoft Project Online アプリケーションの開発について説明します。 '
-localization_priority: Priority
-ms.openlocfilehash: d48cf50b95ecea664cd9eae1b0e642fc2551d5be
-ms.sourcegitcommit: 007aa2ceb4f569201c3f4372de5c83b6c61f8875
+ms.localizationpriority: high
+ms.openlocfilehash: 87cac0b4cdc18c0496ade60ad2a90ded8f28f6ae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43102969"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619268"
 ---
 # <a name="developing-a-project-online-application-using-the-client-side-object-model-csom"></a>クライアント側オブジェクト モデル (CSOM) を使用した Project Online アプリケーションの開発
 
 >[!NOTE] 
->この記事では、CSOM を使用した Microsoft Project Online アプリケーションの開発について説明します。 [新しい Web 用 Project](https://developer.microsoft.com/ja-JP/office/blogs/developing-applications-and-reports-using-the-new-project/) を使用してアプリケーションを開発する方法の検討をお勧めします。
+>この記事では、CSOM を使用した Microsoft Project Online アプリケーションの開発について説明します。 [新しい Web 用 Project](https://developer.microsoft.com/en-us/office/blogs/developing-applications-and-reports-using-the-new-project/) を使用してアプリケーションを開発する方法の検討をお勧めします。
   
 ## <a name="background"></a>背景
 
@@ -69,7 +69,7 @@ SharePoint 向けデスクトップ アプリケーションの開発で推奨�
   
 ### <a name="set-up-the-visual-studio-project"></a>Visual Studio プロジェクトを設定する
 
-アプリケーションのセットアップは、新しいプロジェクトの作成、適切なアセンブリのリンク、必要な名前空間の宣言で構成されます。 Visual Studio では、複数の種類の開発プロジェクトが提供されています。 
+アプリケーションのセットアップは、新しいプロジェクトの作成、適切なアセンブリのリンク、必要な名前空間の宣言で構成されます。Visual Studio では、複数の種類の開発プロジェクトが提供されています。 
   
 #### <a name="select-a-visual-studio-project"></a>Visual Studio プロジェクトを選択する
 
@@ -113,13 +113,13 @@ NuGet パッケージ マネージャー コンソールを使用して、ShareP
   
 1. VS の [ツール] メニューから、**[ツール] =\> [NuGet パッケージ マネージャー] =\> [パッケージ マネージャー コンソール]** の順にクリックします。 
     
-2. パッケージ マネージャー コンソールで、次のコマンドを入力して \<Enter\> キーを押します。
+2. パッケージ マネージャー コンソールで、次のコマンドを入力して \<ENTER\> キーを押します。
     
    ```cs
     Install-Package Microsoft.SharePointOnline.CSOM
    ```
 
-   **パッケージ マネージャー コンソール**ではコマンドの結果の説明が提供され、VS ソリューション エクスプローラーではプロジェクト参照内の SharePoint アセンブリが表示されます。 
+   **パッケージ マネージャー コンソール** ではコマンドの結果の説明が提供され、VS ソリューション エクスプローラーではプロジェクト参照内の SharePoint アセンブリが表示されます。 
     
 3. .cs ファイルに名前空間を追加します。
     
@@ -368,7 +368,7 @@ Project counts:31
 
 ### <a name="retrieve-all-tasks-in-a-project"></a>プロジェクト内のすべてのタスクを取得する
 
-各プロジェクトには多くのタスクが含まれます。 そのため、1 つのプロジェクトのタスクを取得する手順は次のとおりです。
+各プロジェクトには多くのタスクが含まれます。そのため、1 つのプロジェクトのタスクを取得する手順は次のとおりです。
   
 1. プロジェクト コレクションのコンテキストを確立します。
     
@@ -411,7 +411,7 @@ Project counts:31
     projContext.ExecuteQuery();
    ```
 
-情報がローカルに格納されます。 次のコード フラグメントでは、コンソールに情報を出力することによって、発行済みタスクのコレクションを処理します。
+情報がローカルに格納されます。次のコード フラグメントでは、コンソールに情報を出力することによって、発行済みタスクのコレクションを処理します。
   
 ```cs
     Console.WriteLine("Task collection count: {0}", collTask.Count.ToString());
@@ -462,7 +462,7 @@ Task collection count: 5
     
 > [!NOTE] 
 > - Assignments コレクションは、Tasks コレクションの既定のプロパティではないため、サーバーからの情報で明示的に要求されます。 コレクションであるため、以降のクエリを実行し、サーバーからコレクションを取得します。 
-> - Resource はオブジェクトです。 割り当てのクエリには、割り当てに関連付けられているリソース名が含まれます。
+> - リソースはオブジェクトです。割り当てのクエリには、割り当てに関連付けられているリソース名が含まれます。
     
 ```cs
 PublishedTaskCollection collTask = pubProj.Tasks;

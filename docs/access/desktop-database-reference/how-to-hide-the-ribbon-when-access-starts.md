@@ -7,13 +7,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837012(v=office.15)
 ms:contentKeyID: 48548817
 ms.date: 10/16/2018
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 384a575ae5e15b75ba7b0b891529c695cc3de599
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: e09d7881b16b492fc7b82e350f142dd0482d0748
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537830"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552844"
 ---
 # <a name="hide-the-ribbon-when-access-starts"></a>Access の起動時にリボンを非表示にする
 

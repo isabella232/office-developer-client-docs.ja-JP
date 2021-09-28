@@ -10,13 +10,13 @@ f1_keywords:
 - jetsql40.chm5277562
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 46bc0a50e31555189c069e0ee09c4c84349c04c7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: a831ae35f91bae1cd81c3db5dfd723ed31389295
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295430"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618358"
 ---
 # <a name="create-index-statement-microsoft-access-sql"></a>CREATE INDEX ステートメント (Microsoft Access SQL)
 
@@ -65,7 +65,7 @@ CREATE INDEX ステートメントには、次の指定項目があります。
 
 異なるレコードのインデックス付きフィールドで値の重複を禁止するには、UNIQUE 予約語を使用します。
 
-オプションの WITH 句では、データ入力規則を強制できます。 次の操作を実行できます。
+WITH 句を併用すると、次の方法でデータの入力規則を設定できます。
 
 - DISALLOW NULL オプションを使用して、新しいレコードのインデックス付きフィールドの Null エントリを禁止します。
 
@@ -73,7 +73,7 @@ CREATE INDEX ステートメントには、次の指定項目があります。
 
 - 予約語 PRIMARY を使用すると、インデックス フィールドを主キーとして指定します。これによりキーが一意な値になるため、予約語 UNIQUE は省略できます。
 
-CREATE INDEX を使用して、まだインデックスのない Microsoft SQL Server など、ODBC データソースのリンク テーブルで擬似インデックスを作成できます。 擬似インデックスを作成するために、リモート サーバーへのアクセス許可は必要ありません。また、リモート データベースは認識されず、擬似インデックスの影響を受けません。 リンク テーブルとネイティブ テーブルの両方に同じ構文を使用します。 通常、読み取り専用になるテーブルに擬似インデックスを作成すると、特に便利な場合があります。
+CREATE INDEX ステートメントを使用すると、Microsoft SQL Server のような、インデックスを持たない ODBC データ ソースのリンク テーブルに、擬似インデックスを作成することができます。この場合は、リモート サーバーへの権限やアクセス権は必要ありません。また、擬似インデックスの作成はリモート データベースには通知されず、リモート データベースに影響を与えることもありません。リンク テーブルの場合でも、通常のテーブルの場合と同じ構文を使用します。したがって、通常は読み取り専用になっているテーブルに擬似インデックスを作成すると便利です。
 
 [ALTER TABLE](alter-table-statement-microsoft-access-sql.md) ステートメントを使用して、テーブルに単一フィールド インデックスまたは複数フィールド インデックスを追加することもできます。ALTER TABLE ステートメントや CREATE INDEX ステートメントで作成したインデックスは、ALTER TABLE ステートメントまたは [DROP](drop-statement-microsoft-access-sql.md) ステートメントを使用して削除できます。
 

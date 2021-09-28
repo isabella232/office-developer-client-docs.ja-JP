@@ -1,18 +1,18 @@
 ---
 title: プログラムを使用して Visio ファイル形式を操作する
 manager: lindalu
-ms.date: 04/17/2019
+ms.date: 09/17/2021
 ms.audience: Developer
 ms.topic: overview
 ms.assetid: 5f5e2288-7539-41b8-916d-410be028ed9b
 description: Visio 2013 での新しいファイル形式パッケージを読み取り、パッケージ内のパーツを選択しその中のデータを変更して、パッケージに新しいパーツを追加するソリューションをVisual Studio 2012で作成します。
-localization_priority: Priority
-ms.openlocfilehash: 7103e094f58ee26ea2335d6cccd822dced1e1375
-ms.sourcegitcommit: 939bd9686ba41a8f94b82e004ed84b9054d9c7cf
+ms.localizationpriority: high
+ms.openlocfilehash: 762522a972b7c51eb5daa98388cf26e736d12cde
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48293514"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618827"
 ---
 # <a name="manipulate-the-visio-file-format-programmatically"></a>プログラムを使用して Visio ファイル形式を操作する
 
@@ -28,14 +28,14 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
 この記事では、Microsoft .NET Framework 4.5 や C#、Visual Basic、 Visual Studio 2012 を使用して、Visio 2013 でファイル形式をプログラムによって操作する方法を検証します。 Visio 2013 ファイルを開き、ファイル内のドキュメント パーツを選択し、パーツ内のデータを変更し、新しいドキュメント パーツを作成する方法が記載されています。
   
 > [!NOTE]
-> この記事のコード サンプルは、読者が [System.Xml.Linq](https://docs.microsoft.com/dotnet/api/system.xml.linq?view=netframework-4.8) と [System.IO.Packaging](https://docs.microsoft.com/dotnet/api/system.io.packaging?view=netframework-4.8) の名前空間内のクラスに関する基本的な知識があることを想定しています。 > この記事では、読者が Open Packaging Conventions の概念と用語を理解していることも想定しています。 パッケージ、文書パーツまたはパッケージ パーツ、およびリレーションシップの概念を理解している必要があります。 詳しくは、[OPC: データのパッケージ化のための新しい標準](https://docs.microsoft.com/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data)をご覧ください。 > コードは、統合言語クエリ (LINQ: Language-Integrated Query) を作成して XML を選択する方法を示しています。 コード サンプルのほとんどでは、クエリ構文を使用して LINQ クエリを構築しています。 必要に応じて、LINQ メソッド構文を使用して、コード内にある LINQ クエリを書き換えることができます。 LINQ クエリの構文とメソッドの構文の詳細については、次を参照してください。[LINQ クエリ構文とメソッドの構文 (C#)](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq)> 表 1 は、この記事を読み進める前に精通しておく必要のある重要なトピックを示しています。 
+> この記事のコード サンプルは、読者が [System.Xml.Linq](https://docs.microsoft.com/dotnet/api/system.xml.linq?view=netframework-4.8) と [System.IO.Packaging](https://docs.microsoft.com/dotnet/api/system.io.packaging?view=netframework-4.8) の名前空間内のクラスに関する基本的な知識があることを想定しています。 > この記事では、読者が Open Packaging Conventions の概念と用語を理解していることも想定しています。 パッケージ、文書パーツまたはパッケージ パーツ、およびリレーションシップの概念を理解している必要があります。 詳しくは、[OPC: データのパッケージ化のための新しい標準](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data.md)をご覧ください。 > コードは、統合言語クエリ (LINQ: Language-Integrated Query) を作成して XML を選択する方法を示しています。 コード サンプルのほとんどでは、クエリ構文を使用して LINQ クエリを構築しています。 必要に応じて、LINQ メソッド構文を使用して、コード内にある LINQ クエリを書き換えることができます。 LINQ クエリの構文とメソッドの構文の詳細については、次を参照してください。[LINQ クエリ構文とメソッドの構文 (C#)](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md)> 表 1 は、この記事を読み進める前に精通しておく必要のある重要なトピックを示しています。 
   
 **表 1. Visio 2013 ファイル形式の操作に関する中心的概念**
 
 |**記事のタイトル**|**説明**|
 |:-----|:-----|
 |[Visio ファイル形式 (.vsdx) の概要](introduction-to-the-visio-file-formatvsdx.md) <br/> |この概説では、Visio 2013 ファイル形式の主な機能の一部を説明しています。 Visio 2013 ファイル形式に適用されている Open Packaging Conventions (OPC) について解説しています。 また、Visio 2013 ファイル形式と以前の Visio XML 図面ファイル形式 (.vdx) との違いを抜粋して一覧表示しています。  <br/> |
-|[OPC: データのパッケージ化のための新しい標準](https://docs.microsoft.com/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) <br/> |この MSDN マガジンの記事では、Open Packaging Conventions の概念について説明します。  <br/> |
+|[OPC: データのパッケージ化のための新しい標準](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data.md) <br/> |この MSDN マガジンの記事では、Open Packaging Conventions の概念について説明します。  <br/> |
 |[Open Packaging Conventions の基本](https://docs.microsoft.com/previous-versions/office/office-12/ee361919(v=office.12)) <br/> [Office (2007) Open XML ファイル形式の概要](https://docs.microsoft.com/previous-versions/office/developer/office-2007/aa338205(v=office.12)) <br/> |これら 2 つの記事では、Open Packaging Conventions を Microsoft Office ファイルに適用する方法について解説します。 パッケージ内でのリレーションシップの働きについて説明し、コード例もいくつか記述されています。  <br/> |
    
 ## <a name="create-a-vsdx-file-and-a-new-visual-studio-solution"></a>.vsdx ファイルと新しい Visual Studio ソリューションを作成する
@@ -67,7 +67,7 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
   
 8. **[ファイル]**、**[名前を付けて保存]**、**[コンピューター]**、**[デスクトップ]** を選択して、ファイルをデスクトップに .vsdx ファイルとして保存します。
     
-    **[名前を付けて保存]** ダイアログ ボックスで、**[ファイル名]** ボックスに「Visio パッケージ」と入力し、**[ファイルの種類]\*リストで **[Visio 図面 (**.vsdx)]** を選択してから、**[保存]** ボタンを選択します。 
+    **[名前を付けて保存]** ダイアログ ボックスで、**[ファイル名]** ボックスに「Visio パッケージ」と入力し、**[ファイルの種類]\*リストで**[Visio 図面 (**.vsdx)]** を選択してから、**[保存]** ボタンを選択します。 
     
 9. ファイルを閉じてから、Visio 2013 を閉じます。
     
@@ -88,7 +88,7 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
     
     **[参照マネージャー]** ダイアログ ボックスで、**[アセンブリ]** の下の **[フレームワーク]** を選択してから、参照を **[System.Xml]** コンポーネントと **[WindowsBase]** コンポーネントに追加します。 
     
-4. プロジェクトの Program.cs または Module1.vb ファイル内に、次の**使用している** ディレクティブ (Visual Basic の **Imports** ステートメント) を追加します。 
+4. プロジェクトの Program.cs または Module1.vb ファイル内に、次の **使用している** ディレクティブ (Visual Basic の **Imports** ステートメント) を追加します。 
     
     ```cs
     using System.Xml;
@@ -128,7 +128,7 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
 ## <a name="open-a-visio-2013-file-as-a-package"></a>Visio 2013 ファイルをパッケージとして開く
 <a name="vis15_ManipulateFF_OpenPackage"> </a>
 
-ファイル内のデータを操作するには、その前に [System.IO.Packaging](https://docs.microsoft.com/dotnet/api/system.io.packaging.package?view=netframework-4.8) 名前空間に含まれる [Package](https://docs.microsoft.com/dotnet/api/system.io.packaging?view=netframework-4.8) オブジェクト内のファイルを開く必要があります。 **Package** オブジェクトは Visio ファイルを全体として表します。 ファイル パッケージ内の個々の文書パーツの選択を許可しているメンバーが表示されます。 特に、**Package** クラスは、ファイルをパッケージとして開くのに使用する静的[Open(String, FileMode, FileAccess)](https://docs.microsoft.com/dotnet/api/system.io.packaging.package.open?view=netframework-4.8) メソッドを公開します。 また、作業が終了したらパッケージを閉じるための [Close()](https://docs.microsoft.com/dotnet/api/system.io.packaging.package.close?view=netframework-4.8) メソッドも公開します。 
+ファイル内のデータを操作するには、その前に [System.IO.Packaging](https://docs.microsoft.com/dotnet/api/system.io.packaging.package?view=netframework-4.8) 名前空間に含まれる [Package](https://docs.microsoft.com/dotnet/api/system.io.packaging?view=netframework-4.8) オブジェクト内のファイルを開く必要があります。 **Package** オブジェクトは Visio ファイルを全体として表します。 ファイル パッケージ内の個々の文書パーツの選択を許可しているメンバーが表示されます。 特に、**Package** クラスは、ファイルをパッケージとして開くのに使用する静的 [Open(String, FileMode, FileAccess)](https://docs.microsoft.com/dotnet/api/system.io.packaging.package.open?view=netframework-4.8) メソッドを公開します。 また、作業が終了したらパッケージを閉じるための [Close()](https://docs.microsoft.com/dotnet/api/system.io.packaging.package.close?view=netframework-4.8) メソッドも公開します。 
   
 > [!TIP]
 > 最善の方法としては、**using** ブロックを使用して **Package** オブジェクト内の Visio ファイルを開くと、作業終了時にファイル パッケージを明示的に閉じる必要がなくなります。 また、**try/catch/finally** 構造の **Finally** ブロックで **Package.Close** メソッドを明示的に呼び出すこともできます。 
@@ -216,7 +216,7 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
 ## <a name="select-and-read-package-parts-from-a-package"></a>パッケージからパッケージ パーツを選択して読み取る
 <a name="vis15_ManipulateFF_SelectPart"> </a>
 
-パッケージとして Visio 2013 のファイルを開いたら、**System.IO.Packaging**名前空間に含まれている[PackagePart](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePart.aspx)クラスを使用して、ファイルの中のドキュメント パーツにアクセスできます。 **PackagePart**オブジェクトは、個別またはコレクションとしてインスタンス化することができます。 **Package** クラスは、 [Package](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetParts.aspx) から [PackagePart](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetPart.aspx) オブジェクトを取得するための **GetParts()** メソッドと **GetPart(Uri)** メソッドを公開します。 **Package.GetParts** メソッドは[PackagePartCollection](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePartCollection.aspx) クラスのインスタンスを返します。それにより [IEnumerator\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1?redirectedfrom=MSDN&view=netframework-4.7.2)インターフェースを実行するほかのコレクションと同様に操作することができます。 
+パッケージとして Visio 2013 のファイルを開いたら、**System.IO.Packaging** 名前空間に含まれている [PackagePart](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePart.aspx)クラスを使用して、ファイルの中のドキュメント パーツにアクセスできます。 **PackagePart** オブジェクトは、個別またはコレクションとしてインスタンス化することができます。 **Package** クラスは、 [Package](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetParts.aspx) から [PackagePart](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetPart.aspx) オブジェクトを取得するための **GetParts()** メソッドと **GetPart(Uri)** メソッドを公開します。 **Package.GetParts** メソッドは [PackagePartCollection](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePartCollection.aspx) クラスのインスタンスを返します。それにより [IEnumerator\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1?redirectedfrom=MSDN&view=netframework-4.7.2)インターフェースを実行するほかのコレクションと同様に操作することができます。 
   
 **PackagePartCollection** オブジェクトを **Package** からコレクションとして取得し、コレクション内で **PackagePart** オブジェクトを反復処理し、各 **PackagePart** の URI とコンテンツ タイプをコンソールに書き込むには、次の手順のコードを使用してください。 
   
@@ -267,7 +267,7 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
     
     ```
 
-3. F5 キーを選択してソリューションをデバッグします。 プログラムの実行が完了したら、任意のキーを選択して終了します。
+3. F5 キーを選択してソリューションをデバッグします。プログラムの実行が完了したら、任意のキーを選択して終了します。
     
 コンソール アプリケーションは、次のような出力を生成します (簡潔にするため、出力の一部が省略されています)。
   
@@ -301,20 +301,20 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
   
  `Press any key to continue …`
   
-ほとんどの場合、**PackagePart**のいずれかを選択するだけでよく、それらすべてを反復処理する必要はありません。 **Package** または他の **PackagePart** とのリレーションシップを使用して、**Package**から**PackagePart** オブジェクトを取得することができます。 Visio 2013 ファイル形式のリレーションシップは、ドキュメント パーツとファイル パッケージの関係や 2 つのドキュメント パーツの相互の関係を記述した個別のエンティティです。 たとえば、Visio 2013 ファイル パッケージ自体には Visio ドキュメント パーツとのリレーションシップがあり、Visio ドキュメント パーツには Windows のパーツとのリレーションシップがあります。 これらのリレーションシップは、[PackageRelationship](https://docs.microsoft.com/dotnet/api/system.io.packaging.packagerelationship?view=netframework-4.8) または [PackageRelationshipCollection](https://docs.microsoft.com/dotnet/api/system.io.packaging.packagerelationshipcollection?view=netframework-4.8) クラスのインスタンスとして表されます。 
+ほとんどの場合、**PackagePart** のいずれかを選択するだけでよく、それらすべてを反復処理する必要はありません。 **Package** または他の **PackagePart** とのリレーションシップを使用して、**Package** から **PackagePart** オブジェクトを取得することができます。 Visio 2013 ファイル形式のリレーションシップは、ドキュメント パーツとファイル パッケージの関係や 2 つのドキュメント パーツの相互の関係を記述した個別のエンティティです。 たとえば、Visio 2013 ファイル パッケージ自体には Visio ドキュメント パーツとのリレーションシップがあり、Visio ドキュメント パーツには Windows のパーツとのリレーションシップがあります。 これらのリレーションシップは、[PackageRelationship](/dotnet/api/system.io.packaging.packagerelationship.md) または [PackageRelationshipCollection](/dotnet/api/system.io.packaging.packagerelationshipcollection.md) クラスのインスタンスとして表されます。 
 
-**Package**クラスは、**PackageRelationship**または**PackageRelationshipCollection**オブジェクトとして含まれているリレーションシップを取得するいくつかの方法を公開します。 [GetRelationshipsByType(String)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetRelationshipsByType.aspx) メソッドを使用して、1 つの特定の種類の **PackageRelationship** オブジェクトを含む **PackageRelationshipCollection** オブジェクトをインスタンス化できます。 もちろん、 **Package.GetRelationshipsByType**メソッドを使用するには、必要なリレーションシップの種類が既にわかっている必要があります。 リレーションシップの種類は、XML 名前空間の形式の文字列です。 たとえば、Visio の文書パーツのリレーションシップの種類はhttp://schemas.microsoft.com/visio/2010/relationships/documentです。 
+**Package** クラスは、**PackageRelationship** または **PackageRelationshipCollection** オブジェクトとして含まれているリレーションシップを取得するいくつかの方法を公開します。 [GetRelationshipsByType(String)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetRelationshipsByType.aspx) メソッドを使用して、1 つの特定の種類の **PackageRelationship** オブジェクトを含む **PackageRelationshipCollection** オブジェクトをインスタンス化できます。 もちろん、 **Package.GetRelationshipsByType** メソッドを使用するには、必要なリレーションシップの種類が既にわかっている必要があります。 リレーションシップの種類は、XML 名前空間の形式の文字列です。 たとえば、Visio の文書パーツのリレーションシップの種類はhttps://schemas.microsoft.com/visio/2010/relationships/documentです。 
   
-**PackagePart** と **Package** または別の **PackagePart** とのリレーションシップが分かったら (つまり、目的の **PackagePart** を参照する **PackageRelationship** オブジェクトがある場合)、このリレーションシップを使用して、その **PackagePart** の URI を取得できます。 **PackagePart**を返すための**Package.GetPart** メソッドにURIを渡します。
+**PackagePart** と **Package** または別の **PackagePart** とのリレーションシップが分かったら (つまり、目的の **PackagePart** を参照する **PackageRelationship** オブジェクトがある場合)、このリレーションシップを使用して、その **PackagePart** の URI を取得できます。それから、この URI を **Package.GetPart** メソッドに渡して、**PackagePart** を返します。
   
 > [!NOTE]
 > パッケージ パーツのリレーションシップを取得するステップを迂回し、**Package.GetPart** メソッドと **PackagePart** の URI のみを使用して特定の **PackagePart** への参照を取得することもできます。 しかし、Visio ファイル パッケージ内のパッケージ パーツの一部が、パッケージ内の既定以外の場所に保存されることがあります。 パッケージ パーツが常にすべてのファイルに対して同じ URI にあるとは限りません。 > その代わりに、リレーションシップを使用して個々 の **PackagePart** オブジェクトにアクセスする方法が最善です。 
   
-パーツを参照する**Package**から **PackageRelationship** を使用して**PackagePart** (Visio ドキュメント パーツ) を取得するには、次の手順を使用します。 
+パーツを参照する **Package** から **PackageRelationship** を使用して **PackagePart** (Visio ドキュメント パーツ) を取得するには、次の手順を使用します。 
   
 ### <a name="to-select-a-specific-package-part-in-the-package-by-relationship"></a>リレーションシップによりパッケージ内の特定のパッケージ パーツを選択するには
 
-1. `IteratePackageParts`Program** クラス (または Visual Basic の **Module1 **) 内の **メソッドの後に、次のメソッドを追加します。 
+1. `IteratePackageParts`Program **クラス (または Visual Basic の** Module1 **) 内の** メソッドの後に、次のメソッドを追加します。 
     
     ```cs
     private static PackagePart GetPackagePart(Package filePackage, 
@@ -377,15 +377,15 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
     
     ```
 
-前述のように、他の**PackagePart**オブジェクトとのリレーションシップを使って**PackagePart**オブジェクトを取得することもできます。 Visio ドキュメントの場合、複雑さにかかわらずほとんどの **PackagePart** オブジェクトは **Package** とのリレーションシップがないので、この点は重要です。 たとえば、ファイル パッケージ内の個々 のページ コンテンツ パーツ (つまり/visio/pages/page1.xml) には、ページ インデックス パーツ (つまり /visio/pages/pages.xml) とのリレーションシップはありますが、ファイル パッケージ自体とのリレーションシップはありません。 パッケージ内の個々 のページの正確な URI がわからない場合は、ページ インデックス パーツとのリレーションシップを使用してそのページへの参照を取得できます。
+前述のように、他の **PackagePart** オブジェクトとのリレーションシップを使って **PackagePart** オブジェクトを取得することもできます。 Visio ドキュメントの場合、複雑さにかかわらずほとんどの **PackagePart** オブジェクトは **Package** とのリレーションシップがないので、この点は重要です。 たとえば、ファイル パッケージ内の個々 のページ コンテンツ パーツ (つまり/visio/pages/page1.xml) には、ページ インデックス パーツ (つまり /visio/pages/pages.xml) とのリレーションシップはありますが、ファイル パッケージ自体とのリレーションシップはありません。 パッケージ内の個々 のページの正確な URI がわからない場合は、ページ インデックス パーツとのリレーションシップを使用してそのページへの参照を取得できます。
   
-**PackagePart** クラスは、1つの種類の[ PackageRelationship](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePart.GetRelationshipsByType.aspx)オブジェクトだけを含む **PackageRelationshipCollection** オブジェクトを返すために使用できる **GetRelationshipsByType(String)** メソッドを公開します。 **PackageRelationshipCollection** を取得したら、コレクションから必要な **PackageRelationship** を選び、**PackagePart** オブジェクトを参照できます。 
+**PackagePart** クラスは、1つの種類の [ PackageRelationship](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePart.GetRelationshipsByType.aspx)オブジェクトだけを含む **PackageRelationshipCollection** オブジェクトを返すために使用できる **GetRelationshipsByType(String)** メソッドを公開します。 **PackageRelationshipCollection** を取得したら、コレクションから必要な **PackageRelationship** を選び、**PackagePart** オブジェクトを参照できます。 
   
-別の **PackagePart** との（**PackageRelationship** オブジェクトから取得する）リレーションシップによって **Package** から ** PackagePart** を取得するには、次のコードを使用します。
+別の **PackagePart** との（**PackageRelationship** オブジェクトから取得する）リレーションシップによって **Package** から **PackagePart** を取得するには、次のコードを使用します。
   
 ### <a name="to-select-a-specific-package-part-through-its-relationship-to-another-package-part"></a>別のパッケージ パーツとのリレーションシップを利用して特定のパッケージ パーツを選択するには
 
-1. `GetPackagePart`Program** クラス (または Visual Basic の **Module1 **) 内の **メソッドの後に、次のオーバーロード メソッドを追加します。 
+1. `GetPackagePart`Program **クラス (または Visual Basic の** Module1 **) 内の** メソッドの後に、次のオーバーロード メソッドを追加します。 
     
     ```cs
     private static PackagePart GetPackagePart(Package filePackage, 
@@ -432,7 +432,7 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
     End Function
     ```
 
-2. **Program** クラスの **Main** メソッド内の **using**  ブロック (Visual Basic では **Module1** 内の **Main** メソッドの **Using** ブロック) の、前の手順のコードの下に、次のコードを追加します。 (前の手順で追加したコードを削除しないでください。) 
+2. **Program** クラスの **Main** メソッド内の **using** ブロック (Visual Basic では **Module1** 内の **Main** メソッドの **Using** ブロック) の、前の手順のコードの下に、次のコードを追加します (前の手順で追加したコードを削除しないでください)。 
     
     ```cs
     // Get a reference to the collection of pages in the document, 
@@ -455,7 +455,7 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
 
 ドキュメント パーツに含まれている XML に変更を加えるには、その前にまず [XDocument](https://msdn.microsoft.com/library/System.Xml.Linq.XDocument.aspx) クラスか [XmlDocument](https://msdn.microsoft.com/library/System.Xml.XmlDocument.aspx) クラスを使用して、その XML を閲覧できるようにするオブジェクト内に XML ドキュメントを読み込む必要があります。 両方のクラスとも、XML ドキュメント内に含まれる XML 要素の選択、属性の作成と読み書き、新しい XML 要素のドキュメント内への挿入などのタスクに関するメソッドを公開します。 
   
-2 つの**XDocument**クラスでは、LINQ を使用して XML をクエリすることができます。 LINQ を使用すると、コレクション内のすべての要素を反復処理して必要な要素をテストしたりしなくても、クエリを作成することにより個々の要素を XML ドキュメントから簡単に選択できます。 この理由で、この記事の次の手順では **XDocument** クラスと **System.Xml.Linq** 名前空間の他のクラスを使用して XML を処理します。 
+2 つのクラスのうち、**XDocument** クラスでは LINQ を使用して XML を照会できます。LINQ を使用すると、コレクション内のすべての要素を反復処理して必要な要素をテストしたりしなくても、クエリを作成することにより個々の要素を XML ドキュメントから簡単に選択できます。この理由で、この記事の次の手順では **XDocument** クラスと **System.Xml.Linq** 名前空間の他のクラスを使用して XML を処理します。 
   
 **XDocument** オブジェクト内の XML ドキュメントとして **PackagePart** を開くには、次の手順を使用します。 
   
@@ -501,7 +501,7 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
 ## <a name="select-and-change-xml-data-in-a-package-part"></a>パッケージ パーツ内の XML データを選択して変更する
 <a name="vis15_ManipulateFF_ChangeXML"> </a>
 
-**XDocument** オブジェクト内にドキュメント パーツを読み込み終えたら、LINQ を使用して、XML 要素を選択し、XML ドキュメントに変更を加えることができます。 XML データを変更、追加またはデータを削除することができます。その後、文書パーツに XML ドキュメントを保存できます。 
+**XDocument** オブジェクト内にドキュメント パーツを読み込み終えたら、LINQ を使用して、XML 要素を選択し、XML ドキュメントに変更を加えることができます。XML データの変更、追加、または削除を実行してから XML ドキュメントをドキュメント パーツに戻して保存できます。 
   
 Visio ファイル形式の操作に関する最も一般的なタスクは、ドキュメント内の特定の XML 要素か要素のコレクションを選択することです。 **System.Xml.Linq** 名前空間には、XML 要素を表す [XElement](https://msdn.microsoft.com/library/System.Xml.Linq.XElement.aspx) クラスが含まれています。 **XElement** クラスは、 Visio ファイルに含まれるデータにきめ細かいレベルで (たとえば、個々の **Shape** 要素から **ValidationRule** 要素に至るまで) アクセスできるようにします。 
   
@@ -509,7 +509,7 @@ Visio ファイル形式の操作に関する最も一般的なタスクは、�
   
 ### <a name="to-select-a-specific-element-in-a-package-part"></a>パッケージ パーツ内の特定の要素を選択するには
 
-1. `GetXMLFromPart`Program** クラス (または Visual Basic の **Module1 **) 内の **メソッドの後に、次のメソッドを追加します。 
+1. `GetXMLFromPart`Program **クラス (または Visual Basic の** Module1 **) 内の** メソッドの後に、次のメソッドを追加します。 
         
     ```cs
     private static IEnumerable<XElement> GetXElementsByName(
@@ -632,7 +632,7 @@ textElement.LastNode.ReplaceWith("Start process")
 ```
 
 > [!CAUTION]
-> 上記のコード例で、既存の図形のテキストと置き換える文字列の文字数は同じです。 また、LINQ クエリは、返される要素の最後の子ノード (この例ではテキスト ノード) の値を変更することにもご注意ください。 これは、**テキスト**要素の子である **cp** 要素の設定を変更しないようにするため行われます。 >**Text** 要素のすべての子を上書きする方法でプログラムによって図形のテキストを変更すると、ファイルが不安定になることがあります。 上記の例のように、テキストの書式はファイル内の **Text** 要素の下の **cp** 要素で表されます。 書式設定の定義は、親 **Section** 要素に格納されています。 これら 2 つの情報が整合していないと、ファイルは正常に動作しない可能性があります。 Visio は不整合の多くを修復しますが、プログラムによる変更が一貫しており、ファイルの最終的な動作が制御されているか確認することをお勧めします。 
+> 上記のコード例で、既存の図形のテキストと置き換える文字列の文字数は同じです。 また、LINQ クエリは、返される要素の最後の子ノード (この例ではテキスト ノード) の値を変更することにもご注意ください。 これは、**テキスト** 要素の子である **cp** 要素の設定を変更しないようにするため行われます。 >**Text** 要素のすべての子を上書きする方法でプログラムによって図形のテキストを変更すると、ファイルが不安定になることがあります。 上記の例のように、テキストの書式はファイル内の **Text** 要素の下の **cp** 要素で表されます。 書式設定の定義は、親 **Section** 要素に格納されています。 これら 2 つの情報が整合していないと、ファイルは正常に動作しない可能性があります。 Visio は不整合の多くを修復しますが、プログラムによる変更が一貫しており、ファイルの最終的な動作が制御されているか確認することをお勧めします。 
   
 ドキュメント パーツの XML に変更を加える場合、その変更内容はメモリ内のみに存在します。ファイル内に変更を保持するには、ドキュメント パーツに XML を戻して保存する必要があります。
   
@@ -695,14 +695,13 @@ XML を Visio ページからページ コンテンツ パーツに戻して保�
     
     ```
 
-3. F5 キーを選択してソリューションをデバッグします。 プログラムの実行が完了したら、任意のキーを選択して終了します。
+3. F5 キーを選択してソリューションをデバッグします。プログラムの実行が完了したら、任意のキーを選択して終了します。
     
 4. Visio 2013 で Visio Package.vsdx ファイルを開きます。 
     
 この時点で開始/終了図形にテキスト「Start process」が含まれているはずです。
   
 ## <a name="recalculate-data-in-the-file"></a>ファイル内のデータを再計算する
-<a name="vis15_ManipulateFF_Recalculate"> </a>
 
 ファイル内のデータの変更には、ファイルを開いたときに、Visio で文書を再計算する必要があります。 Visio はダイアグラム、特に、図形のリレーションシップ（つまり、ある図形が別の図形に依存する場合）や接続する図形などに多くのロジックを提供します。 カスタム ロジックで使用されるデータのいずれかを変更すると、Visio はファイル内で影響を受けるすべての集計データに変更を反映する 必要があります。 
   
@@ -710,7 +709,7 @@ Visio 2013 ファイル形式には、ファイル内のデータの再計算に
   
 - データへの変更は、ファイル形式におけるその他の値には影響しません。 ドキュメントを再計算する命令を Visio に追加する必要はありません。 既に示したように、ドキュメントの再計算を実行せずに、図形のテキストを頻繁に変更できます。
     
-- データへの変更が XML 内のシェイプシート セルの値の変更に限定されており、このデータに依存している他のシェイプシート値がある場合。 この場合、([XProcessingInstruction](https://msdn.microsoft.com/library/System.Xml.Linq.XProcessingInstruction.aspx) クラスを使用して) XML 処理命令を、変更された **Cell** 要素に追加する必要があります。 たとえば、図形の **ThemeIndex**セルは、図形に含まれるその他いくつかの ShapeSheet セルの値に影響します。 ファイル自体の **ThemeIndex** セル (たとえば、**N** 値が「ThemeIndex」の **Cell** 要素) を変更する場合、依存している値が更新されるように、**Cell** 要素に処理命令を追加する必要があります。 
+- データへの変更が XML 内のシェイプシート セルの値の変更に限定されており、このデータに依存している他のシェイプシート値がある場合。 この場合、([XProcessingInstruction](https://msdn.microsoft.com/library/System.Xml.Linq.XProcessingInstruction.aspx) クラスを使用して) XML 処理命令を、変更された **Cell** 要素に追加する必要があります。 たとえば、図形の **ThemeIndex** セルは、図形に含まれるその他いくつかの ShapeSheet セルの値に影響します。 ファイル自体の **ThemeIndex** セル (たとえば、**N** 値が「ThemeIndex」の **Cell** 要素) を変更する場合、依存している値が更新されるように、**Cell** 要素に処理命令を追加する必要があります。 
     
 - データへの変更がコネクタの位置つまり接続ポイントに影響する場合。 別の状況として、シェイプシートのデータに多数の変更があり、(変更ごとに個別に処理命令を追加するのではなく) 1 つの命令でドキュメント全体を再計算しようとする場合もあります。 この場合、ドキュメントを開くときにそのドキュメント全体を再計算するように Visio に命令できます。 そのためには、**RecalcDocument** プロパティを Visio パッケージのカスタム ファイル プロパティ パーツ (/docProps/custom.xml) に追加します。 この種のシナリオの例としては、接続された図の中の図形の位置やサイズを調整する場合があります。 
     
@@ -748,15 +747,15 @@ Visio 2013 ファイル形式には、ファイル内のデータの再計算に
     
     ```
 
-2. F5 キーを選択してソリューションをデバッグします。 プログラムの実行が完了したら、任意のキーを選択して終了します。
+2. F5 キーを選択してソリューションをデバッグします。プログラムの実行が完了したら、任意のキーを選択して終了します。
     
 3. Visio 2013 で Visio Package.vsdx ファイルを開きます。 開始/終了図形の塗りつぶしの色が変わっているはずです。
     
-図形の色は**ThemeIndex**セルの値により異なります。図形がどのアクティブなテーマを継承するかによって決まります。 前の例では、図形は別のテーマを継承する設定 (**ThemeIndex**セルが「25」の値に設定)になっています。 処理命令を使用しない場合は、図形のテキストの色（同様に **ThemeIndex**セルの影響を受けます）は再計算されません。 図形の塗りつぶしの色が白に変更されますが、テキストの色は白のままで、テキストは読み取り不可能な状態になります。 また、処理命令を使用しない場合、ファイルは図形の書式設定の値が予期せず更新される可能性のある不安定な状態のままで、Visio が図形を更新するのは後日になる可能性があります。 
+図形の色は **ThemeIndex** セルの値により異なります。図形がどのアクティブなテーマを継承するかによって決まります。 前の例では、図形は別のテーマを継承する設定 (**ThemeIndex** セルが「25」の値に設定)になっています。 処理命令を使用しない場合は、図形のテキストの色（同様に **ThemeIndex** セルの影響を受けます）は再計算されません。 図形の塗りつぶしの色が白に変更されますが、テキストの色は白のままで、テキストは読み取り不可能な状態になります。 また、処理命令を使用しない場合、ファイルは図形の書式設定の値が予期せず更新される可能性のある不安定な状態のままで、Visio が図形を更新するのは後日になる可能性があります。 
   
 Visio でドキュメントを再計算する必要があるファイル内のデータを変更する場合は (たとえば、接続されている図形の位置を変更するので、コネクタを再接続する必要がある場合)、Visio ファイルに再計算の命令を追加する必要があります。 この命令を作成するには、**name** 属性値が「RecalcDocument」の **property** 要素を Visio ファイル パッケージのカスタム ファイル プロパティ パーツの XML に追加します。 最善の方法として、カスタム ファイル プロパティ パーツをチェックして、ファイル内で「RecalcDocument」命令が既に登録されていないか確認する必要があります。 
   
-前の例から、開始/終了図形の**PinY** セルの値を変更するには、次のコードを使用します。 このコードは、**N** 属性の値を使用して、**XElement**  オブジェクトとして**PinY** セルのデータを含む **Cell** 要素 を選択します。 その後このコードは、再計算の命令を Visio ファイルのカスタム ファイル プロパティ パーツに追加します。 
+前の例から、開始/終了図形の **PinY** セルの値を変更するには、次のコードを使用します。 このコードは、**N** 属性の値を使用して、**XElement**  オブジェクトとして **PinY** セルのデータを含む **Cell** 要素 を選択します。 その後このコードは、再計算の命令を Visio ファイルのカスタム ファイル プロパティ パーツに追加します。 
   
 > [!NOTE]
 > このコードは、以前に作成した `GetPackagePart` メソッドと `SaveXDocumentToPart` メソッドに依存しています。 
@@ -972,11 +971,11 @@ Visio でドキュメントを再計算する必要があるファイル内の�
     
     ```
 
-4. F5 キーを選択してソリューションをデバッグします。 プログラムの実行が完了したら、任意のキーを選択して終了します。
+4. F5 キーを選択してソリューションをデバッグします。プログラムの実行が完了したら、任意のキーを選択して終了します。
     
 5. Visio 2013 で Visio Package.vsdx ファイルを開きます。 
     
-開始/終了図形は図面の下端から 2 インチの位置にあるはずです。 開始/終了図形と処理図形の間のコネクタは、レイアウトの変更に合わせて再接続されているはずです。 **RecalcDocument** プロパティがファイルに追加されていないと、図形の位置は変わりますが、コネクタは新しい図形の位置に再接続されません。 
+開始/終了図形は図面の下端から 2 インチの位置にあるはずです。開始/終了図形と処理図形の間のコネクタは、レイアウトの変更に合わせて再接続されているはずです。**RecalcDocument** プロパティがファイルに追加されていないと、図形の位置は変わりますが、コネクタは新しい図形の位置に再接続されません。 
   
 ## <a name="add-a-new-package-part-to-a-package"></a>新しいパッケージ パーツをパッケージに追加する
 <a name="vis15_ManipulateFF_AddNewPart"> </a>
@@ -985,11 +984,11 @@ Visio でドキュメントを再計算する必要があるファイル内の�
   
 次のように、パッケージに新しいパーツを追加するプロセスは簡単です。 
   
-1. **PackagePart** のためのデータを含む XML ドキュメントを作成します。 作成した特定の種類の XML ドキュメントのスキーマを制御する XML 名前空間に特別な注意を払う必要があります。
+1. **PackagePart** のデータを使用して XML ドキュメントを作成します。作成した特定の種類の XML ドキュメントのスキーマを制御する XML 名前空間に特別な注意を払う必要があります。
     
 2. この XML を含む新しいファイルを作成し、そのファイルを **Package** 内の場所に保存します。
     
-3. 新しい **PackagePart** と** Package**、または他の **PackagePart** オブジェクトの間に、必要なリレーションシップを作成します。 
+3. 新しい **PackagePart** と **Package**、または他の **PackagePart** オブジェクトの間に、必要なリレーションシップを作成します。 
     
 4. 新しいパーツを参照する必要がある既存のパーツを更新します。たとえば、新しいページ コンテンツ パーツ (新しいページ) をファイルに追加する場合は、ページ インデックス パーツ (/visio/pages/pages.xml ファイル) を更新し、新しいページに関する正しい情報を組み込む必要もあります。
     
@@ -1144,7 +1143,7 @@ Visio ファイル内に新しいリボン機能拡張パーツを作成する�
         "http://schemas.microsoft.com/office/2006/relationships/ui/extensibility")
     ```
 
-4. F5 キーを選択してソリューションをデバッグします。 プログラムの実行が完了したら、任意のキーを選択して終了します。
+4. F5 キーを選択してソリューションをデバッグします。プログラムの実行が完了したら、任意のキーを選択して終了します。
     
 5. Visio 2013 で Visio Package.vsdx ファイルを開いてから、**[カスタム]** タブを選択します。 
     
@@ -1173,14 +1172,12 @@ Visio 2013 でファイルを開くと、カスタム リボンは図 2 のよ�
 ```
 
 ## <a name="acknowledgements"></a>謝辞
-<a name="vis15_ManipulateFF_Ackn"> </a>
 
 この技術文書に含まれるコード例を作成した Visio MVP **Al Edlund** の貢献に感謝いたします。 Al は、Visio XML 図面形式 (.vdx) と新しい Visio ファイル形式 (.vsdx) の両方を含む、Visio ファイル形式の操作に関する定評のある専門家です。 Al は、プログラムによって Visio ファイル形式を調べるプロジェクトを作成しており、その内部構造を公開しています。 
   
 Al による Visio ファイル形式の処理の詳細については、下記の「その他の技術情報」セクションにあるリンクを参照してください。
   
 ## <a name="see-also"></a>関連項目
-<a name="vis15_ManipulateFF_Additional"> </a>
 
 - Al Edlund 提供:
     
@@ -1197,5 +1194,4 @@ Al による Visio ファイル形式の処理の詳細については、下記�
 - [名前空間を持つドキュメントを作成する (C#) (LINQ to XML)](https://docs.microsoft.com/previous-versions/bb387075(v=vs.140))
     
 - [Microsoft Office を起動せず、ドキュメントにカスタム XML パーツを追加する](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb608597(v=vs.90))
-    
-
+- 

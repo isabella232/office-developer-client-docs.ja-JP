@@ -10,13 +10,13 @@ f1_keywords:
 - jetsql40.chm5277590
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: fb72a0090550692e7cf5028a6a58a078fc5d9d32
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 0c3e12a1ff9f02f3b2ad85ed47ee496b998b73c9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308583"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617413"
 ---
 # <a name="sql-data-types"></a>SQL データ型
 
@@ -24,7 +24,7 @@ ms.locfileid: "32308583"
 
 Microsoft Access データベース エンジン SQL のデータ型は、Microsoft Jet データベース エンジンで定義される 13 種類の基本データ型と、それらのデータ型として認識されるいくつかの別名で構成されます。
 
-次の表に主要な SQL Server データ型を一覧表示します。 同義語については、「[SQL 予約語](sql-reserved-words.md)」を参照してください。
+次の表に主要な SQL Server データ型を一覧表示します。これらの基本データ型を次の表に示します。同義語については、「[Microsoft Access データベース エンジン SQL 予約語](sql-reserved-words.md)」を参照してください。
 
 <table>
 <colgroup>

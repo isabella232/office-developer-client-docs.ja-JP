@@ -1,26 +1,25 @@
 ---
 title: Field.Attributes プロパティ (DAO)
 TOCTitle: Attributes Property
+description: Attributes プロパティ
 ms:assetid: 8e6f6afb-1a89-7315-c129-cf7ff19e0ca9
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197380(v=office.15)
 ms:contentKeyID: 48546287
-ms.date: 09/18/2015
+ms.date: 09/14/2021
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 010c7a2aea777a93d1ced2d33d8743320dd05ada
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 77cae4e2d4c3a09d75afa3c9f2228f72bccfd5d3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293155"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626758"
 ---
 # <a name="fieldattributes-property-dao"></a>Field.Attributes プロパティ (DAO)
 
-
 **適用先**: Access 2013、Office 2013
 
-
-**[Field](field-object-dao.md)** オブジェクトの 1 つまたは複数の特性を示す値を設定または取得します。 読み取り/書き込みが可能な **Long** です。
+**[Field](field-object-dao.md)** オブジェクトの 1 つまたは複数の特性を示す値を設定または取得します。値の取得および設定が可能です。長整数型 **Long** の値を使用します。
 
 ## <a name="syntax"></a>構文
 
@@ -30,89 +29,28 @@ ms.locfileid: "32293155"
 
 ## <a name="remarks"></a>注釈
 
-この値は、**Field** オブジェクトで表されるフィールドの特性を指定するもので、以下の定数の組み合わせを指定できます。
+**Field** オブジェクトの **Attributes** プロパティでは、**Field** オブジェクトを表すフィールドの特性を指定します。 **Attributes** プロパティは単一の長整数型として格納され、次の long 型定数の合計です。
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>定数</p></th>
-<th><p>説明</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>dbAutoIncrField</strong></p></td>
-<td><p>新しいレコードのフィールド値は、一意の長整数型の値に自動的に増分され、変更はできません (Microsoft Access ワークスペースでは、Microsoft Office Access データベース エンジン データベース テーブルでのみサポート)。</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbDescending</strong></p></td>
-<td><p>フィールドを降順 (Z ～ A、100 ～ 0、ん～あ) で並べ替えるオプションで、これは、 <strong>Index</strong> オブジェクトの <strong>Fields</strong> コレクションの <strong>Field</strong> オブジェクトのみに適用されます。この定数を省略すると、フィールドは昇順 (A ～ Z、0 ～ 100、あ～ん) で並べ替えられます。これは、 <strong>Index</strong> フィールドおよび <strong>TableDef</strong> フィールドの既定値です (Microsoft Access ワークスペースのみ)。  </p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbFixedField</strong></p></td>
-<td><p>フィールド サイズは固定です (数値フィールドの既定)。</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbHyperlinkField</strong></p></td>
-<td><p>フィールドにはハイパーリンク情報が含まれます (メモ型フィールドのみ)。</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbSystemField</strong></p></td>
-<td><p>レプリカのレプリケーション情報が保存される、削除できないタイプのフィールドです (Microsoft Access ワークスペースのみ)。</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbUpdatableField</strong></p></td>
-<td><p>フィールド値を変更できます。</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbVariableField</strong></p></td>
-<td><p>フィールド サイズは可変です (テキスト フィールドのみ)。</p></td>
-</tr>
-</tbody>
-</table>
 
+|**定数**|**値**|**説明**|
+|:----------|:----------|:----------|
+|**dbAutoIncrField**|**16**|新しいレコードのフィールド値は、一意の長整数型の値に自動的に増分され、変更はできません (Microsoft Access ワークスペースでは、Microsoft Office Access データベース エンジン データベース テーブルでのみサポート)。|
+|**dbDescending**|**1**|フィールドを降順 (Z ～ A、100 ～ 0、ん～あ) で並べ替えるオプションで、これは、 <strong>Index</strong> オブジェクトの <strong>Fields</strong> コレクションの <strong>Field</strong> オブジェクトのみに適用されます。この定数を省略すると、フィールドは昇順 (A ～ Z、0 ～ 100、あ～ん) で並べ替えられます。これは、 <strong>Index</strong> フィールドおよび <strong>TableDef</strong> フィールドの既定値です (Microsoft Access ワークスペースのみ)。|
+|**dbFixedField**|**1**|フィールド サイズは固定です (数値フィールドの既定)。|
+|**dbHyperlinkField**|**32768**|フィールドにはハイパーリンク情報が含まれます (メモ型フィールドのみ)。|
+|**dbSystemField**|**8192**|レプリカのレプリケーション情報が保存される、削除できないタイプのフィールドです (Microsoft Access ワークスペースのみ)。|
+|**dbUpdatableField**|**32**|フィールド値を変更できます。|
+|**dbVariableField**|**2**|フィールド サイズは可変です (テキスト フィールドのみ)。
 
 コレクションに追加されていないオブジェクトの場合、このプロパティは値の取得および設定が可能です。追加された **Field** オブジェクトの場合、 **Attributes** プロパティを使用できるかどうかは、 **Fields** コレクションを含むオブジェクトによって異なります。
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Field オブジェクトの所属先</p></th>
-<th><p>Attributes プロパティの使用</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Index</strong> オブジェクト</p></td>
-<td><p><strong>Index</strong> オブジェクトが追加される <strong>TableDef</strong> オブジェクトが <strong>Database</strong> オブジェクトに追加されるまでは値の設定と取得が可能で、追加後は値の取得のみが可能です。</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>QueryDef</strong> オブジェクト</p></td>
-<td><p>読み取り専用</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Recordset</strong> オブジェクト</p></td>
-<td><p>読み取り専用</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Relation</strong> オブジェクト</p></td>
-<td><p>非サポート</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>TableDef</strong> オブジェクト</p></td>
-<td><p>読み取り/書き込み</p></td>
-</tr>
-</tbody>
-</table>
-
+|**Field オブジェクトの所属先**|**Attributes プロパティの使用**|
+|:----------|:----------|
+|**Index** オブジェクト|**Index** オブジェクトが追加される **TableDef** オブジェクトが **Database** オブジェクトに追加されるまでは値の設定と取得が可能で、追加後は値の取得のみが可能です。|
+|**QueryDef** オブジェクト|読み取り専用|
+|**Recordset** オブジェクト|読み取り専用|
+|**Relation** オブジェクト|サポートされていません|
+|**TableDef** オブジェクト|読み取り/書き込み|
 
 複数の属性を設定する場合は、該当する定数をまとめて組み合わせることができます。無効な値は、エラーを発生させずに無視されます。
 

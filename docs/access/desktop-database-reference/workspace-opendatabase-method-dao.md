@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835343(v=office.15)
 ms:contentKeyID: 48548108
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: ca2ccb4183a59c2b579fd4375f26aa4fd539532f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: f7edb66a036c986f1e1d7ed52dcb5985743f930c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302584"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621508"
 ---
 # <a name="workspaceopendatabase-method-dao"></a>Workspace.OpenDatabase メソッド (DAO)
 
@@ -22,7 +22,7 @@ ms.locfileid: "32302584"
 
 ## <a name="syntax"></a>構文
 
-*expression* .OpenDatabase(***Name***, ***Options***, ***ReadOnly***, ***Connect***)
+*expression* .OpenDatabase(***Name** _, _*_Options_*_, _*_ReadOnly_*_, _*_Connect_**)
 
 *expression*: **Workspace** オブジェクトを表す変数。
 

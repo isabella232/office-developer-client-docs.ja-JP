@@ -8,13 +8,13 @@ keywords:
 - DLL にアクセスする [Excel 2007]、DLL [Excel 2007]、Excel でアクセスする
 ms.assetid: e2bfd6ea-efa3-45c1-a5b8-2ccb8650c6ab
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: fac4ad30048aa1bf3879009bc97ea46a112a9ce5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: c91fe1720e3990d2d496f8b130d8b7464585f470
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304012"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625932"
 ---
 # <a name="access-dlls-in-excel"></a>Excel で DLL にアクセスする
 
@@ -77,7 +77,7 @@ C/C++ と VBA の引数の型の宣言を比較するときには、次の点に
     
 - VBA の **Currency** データ型は、**ByVal** 渡しの場合は Windows ヘッダー ファイル wtypes.h 内で定義されている **CY** 型の構造体として渡されます。**ByRef** 渡しの場合はそのポインターとして渡されます。
     
-VBA では、ユーザー定義データ型のデータ要素は 4 バイト境界にパッキングされます。Visual Studio では、このデータ要素が既定で 8 バイト境界にパッキングされます。 そのため、C/C++ 構造体の定義は `#pragma pack(4) … #pragma pack()` ブロックで囲んで要素の配置がずれないようにする必要があります。 
+VBA では、ユーザー定義データ型のデータ要素は 4 バイト境界にパッキングされます。Visual Studio では、このデータ要素が既定で 8 バイト境界にパッキングされます。そのため、C/C++ 構造体の定義は `#pragma pack(4) … #pragma pack()` ブロックで囲んで要素の配置がずれないようにする必要があります。  
   
 次に、同等のユーザー タイプ定義の例を示します。
   

@@ -10,26 +10,26 @@ f1_keywords:
 - dao360.chm1052936
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: b50cb0453df1fa357fbd0b089af2e74fdd4b4c1e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: d42cc4c2c136adbc9c3e07544752e16e93c94083
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294338"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589709"
 ---
 # <a name="dbenginecompactdatabase-method-dao"></a>DBEngine.CompactDatabaseメソッド（DAO）
 
-**適応対象**: Access 2013 | Access 2016
+**適用先**: Access 2013 | Access 2016
 
-閉じたデータベースをコピーして圧縮し、そのバージョン、照合順、および暗号化方式を変更することができます。 （Microsoft Access作業領域のみ）
+閉じているデータベースをコピーして最適化し、バージョン、照合順序、および暗号化を変更するオプションを提供します (Microsoft Access ワークスペースのみ)。
 
 > [!NOTE]
-> リンクされている暗号化されたテーブルを、アクション、更新、SQL クエリ [SQL UPDATE文 (CurrentDb.Execute "UPDATE...") など] に使用する場合、暗号化キーを指定する必要があります。 リンクされているテーブルに対する暗号化キーは 19 文字に制限されています。 このトピックの終わりにある「**暗号化されたリンク テーブル**」のセクションをご覧ください。
+> 暗号化されたリンク テーブルを、アクション、更新、SQL クエリ [SQL UPDATE ステートメント (CurrentDb.Execute "UPDATE...") など] に使用する場合、暗号化キーを指定する必要があります。リンクされているテーブルに対する暗号化キーは 19 文字に制限されています。このトピックの終わりにある「**暗号化されたリンク テーブル**」のセクションをご覧ください。
 
 ## <a name="syntax"></a>構文
 
-*式* .CompactDatabase（***SrcName***、***DstName***、***DstLocale***、***オプション***、***パスワード***）
+*式* .CompactDatabase(***SrcName** _, _*_DstName_*_, _*_DstLocale_*_, _*_Options_*_, _*_password_**)
 
 *式* **DBEngine** オブジェクトを返す式。
 
@@ -55,7 +55,7 @@ ms.locfileid: "32294338"
 <td><p><em>SrcName</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>String</strong></p></td>
-<td><p>既存の閉じているデータベースを識別します。 フルパスとファイル名（&quot;C:\db1.mdb&quot;など）でもかまいません。 ファイル名に拡張子が付いている場合は、それを指定する必要があります。 ネットワークでサポートされている場合は、&quot; \\server1\share1\dir1\ db1.mdb&quot;のようにネットワークパスも指定できます。</p></td>
+<td><p>既存の閉じているデータベースを識別します。&quot;C:\db1.mdb&quot; のように、完全なパスとファイル名を指定できます。ファイル名に拡張子が含まれる場合、それも指定する必要があります。使用しているネットワークがネットワーク パスをサポートする場合は、&quot;\\server1\share1\dir1\db1.mdb&quot; ように、ネットワーク パスを指定できます。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>DstName</em></p></td>
@@ -318,7 +318,7 @@ ms.locfileid: "32294338"
 
 <br/>
 
-次のコードサンプルは、パスワード（暗号化キー）を指定してCompactDatabaseを使用し、その圧縮データベース内のテーブルにリンクする方法を示しています。 パスワードを付与する必要があります。
+次のコードサンプルは、パスワード（暗号化キー）を指定してCompactDatabaseを使用し、その圧縮データベース内のテーブルにリンクする方法を示しています。パスワードを付与する必要があります。
 
 ```vb
     Private Sub CompactAndLink_Click() 

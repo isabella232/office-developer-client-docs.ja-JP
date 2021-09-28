@@ -1,5 +1,5 @@
 ---
-title: Excel XLL SDK API �֐����t�@�����X
+title: Excel XLL SDK API 関数リファレンス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -10,13 +10,13 @@ api_type:
 - COM
 ms.assetid: 2f6df879-7546-4ac0-a4e3-6b009aee9463
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: e116021a3dc24de7decbe0dad76cc762cd66d032
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 998d279258294657624d2ee9673947bd96bf8569
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304124"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621452"
 ---
 # <a name="excel-xll-sdk-api-function-reference"></a>Excel XLL SDK API 関数リファレンス
 
@@ -36,11 +36,11 @@ Microsoft Excel 2013 XLL SDK には、XLL の記述を高速化するために�
 
 Excel 2013 XLL SDK には、次のサンプル プロジェクトのソース ファイルと Microsoft Visual Studio のプロジェクト ファイルが含まれます。
   
-- **Framework** プロジェクト (`SAMPLES\FRAMEWRK\`) には、ライブラリ (FRAMEWRK.lib) にビルドできるプロジェクトが含まれており、他の XLL プロジェクトにリンクすることができます。 ライブラリには、XLL をより簡単に記述するための多くの関数とツールが含まれます。 このライブラリは、他の両方のプロジェクトで、ヘッダー ファイル FRAMEWRK.h と組み合わせて使われます。
+- **Framework** プロジェクト (`SAMPLES\FRAMEWRK\`) には、ライブラリ (FRAMEWRK.lib) にビルドできるプロジェクトが含まれており、他の XLL プロジェクトにリンクすることができます。ライブラリには、XLL をより簡単に記述するための多くの関数とツールが含まれます。このライブラリは、他の両方のプロジェクトで、ヘッダー ファイル FRAMEWRK.h と組み合わせて使われます。
     
-- **Example** プロジェクト (`SAMPLES\EXAMPLE\`) には、XLL (EXAMPLE.xll) にビルドできるプロジェクトが含まれます。 XLL には、フレームワーク ライブラリを使う多くの例や、**xlAutoOpen** などの XLL アドイン インターフェイスの実装例が含まれます。
+- **Example** プロジェクト (`SAMPLES\EXAMPLE\`) には、XLL (EXAMPLE.xll) にビルドできるプロジェクトが含まれます。XLL には、フレームワーク ライブラリを使う多くの例や、**xlAutoOpen** などの XLL アドイン インターフェイスの実装例が含まれます。
     
-- **Generic** プロジェクト (`SAMPLES\GENERIC\`) には、XLL (GENERIC.xll) にビルドできるプロジェクトが含まれます。 XLL は、関数とコマンドのいくつかの例を示します。また、独自の XLL を記述するための土台とするのに適しています。
+- **Generic** プロジェクト (`SAMPLES\GENERIC\`) には、XLL (GENERIC.xll) にビルドできるプロジェクトが含まれます。XLL、関数とコマンドのいくつかの例を示します。また、独自の XLL を記述するための土台とするのに適しています。
     
 ## <a name="in-this-section"></a>このセクションの内容
 

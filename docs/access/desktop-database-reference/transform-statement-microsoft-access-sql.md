@@ -10,13 +10,13 @@ f1_keywords:
 - jetsql40.chm5277581
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 9abe91d4ce6996a725e246da6922015d15a8bd39
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 7194b383f5275daf5501f31833ec0a3f68fa58bd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314043"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621732"
 ---
 # <a name="transform-statement-microsoft-access-sql"></a>TRANSFORM ステートメント (Microsoft Access SQL)
 
@@ -67,7 +67,7 @@ TRANSFORM ステートメントでは、次の引数を使用します。
 
 TRANSFORM ステートメントは省略可能ですが、指定する場合は SQL 文字列の先頭に記述します。行見出しとして使用するフィールドを指定する SELECT ステートメントや、行のグループ化を指定する [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) 句よりも前に記述します。抽出条件や並べ替えを指定する [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql) 句などの句を併用することもできます。さらに、クロス集計クエリの中でサブクエリを述語 (特に WHERE 句の中の述語) として使用することもできます。
 
-*pivotfield* に返される値は、クエリの結果セットの列見出しとして使用されます。 たとえば、クロス集計クエリで販売月別の売上高をピボットすることで 12 の列が作成されます。 *pivotfield* を制限して、オプションの IN 句でリストされた固定値 (*value1*、*value2*) から見出しを作成できます。 追加の列を作成するため、データが存在しない固定値を含めることもできます。
+*pivotfield* に返される値は、クエリの結果セットの列見出しとして使用されます。たとえば、クロス集計クエリで販売月別の売上高をピボットすることで 12 の列が作成されます。*pivotfield* を制限して、オプションの IN 句でリストされた固定値 (*value1*、*value2*) から見出しを作成できます。追加の列を作成するため、データが存在しない固定値を含めることもできます。
 
 ## <a name="example"></a>例
 

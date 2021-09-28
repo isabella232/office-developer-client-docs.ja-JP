@@ -12,13 +12,13 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 356620376658bb927c690056f4de9a01554aa47e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 590a83fef68680325cb9d0b039c996375751edc7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295647"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615740"
 ---
 # <a name="constraint-clause-microsoft-access-sql"></a>CONSTRAINT 句 (Microsoft Access SQL)
 
@@ -29,7 +29,7 @@ CONSTRAINT (制約) はインデックスに似ています。インデックス
 CONSTRAINT 句は、[ALTER TABLE](alter-table-statement-microsoft-access-sql.md) ステートメントおよび [CREATE TABLE](create-table-statement-microsoft-access-sql.md) ステートメントの中で制約を作成または削除する場合に使用します。CONSTRAINT 句には、単一フィールドの制約を作成するものと、複数フィールドの制約を作成するものの 2 種類があります。
 
 > [!NOTE]
-> [!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース エンジン以外のデータベースでは CONSTRAINT 句や DDL (データ定義言語) ステートメントを使用できません。 代わりに、DAO の **Create** メソッドを使用してください。
+> [!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース エンジン以外のデータベースでは CONSTRAINT 句や DDL (データ定義言語) ステートメントを使用できません。Microsoft Access データベース以外のデータベースでは代わりに DAO の **Create** 系メソッドを使用してください。
 
 ## <a name="syntax"></a>構文
 

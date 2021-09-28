@@ -6,13 +6,13 @@ ms.audience: Developer
 ms.topic: overview
 ms.assetid: 87926f7d-e1dc-41d5-8805-6ba91fc7b154
 description: Application インターフェイスには、OneNote の情報とコンテンツの取得、操作、および更新に役立つメソッドが含まれています。 こうしたメソッドは、次の 4 つの一般的なカテゴリに分けられます。
-localization_priority: Priority
-ms.openlocfilehash: 295db4fcb64541ccf461fbd8d48dc19b89e6b1f8
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.localizationpriority: high
+ms.openlocfilehash: ce17adddd93c0b57f57dbccaed4bb2149c855959
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537823"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625806"
 ---
 # <a name="application-interface-onenote"></a>Application インターフェイス (OneNote)
 
@@ -26,7 +26,7 @@ ms.locfileid: "34537823"
     
 - **機能性** &ndash; その他すべてのメソッド。OneNote の特定のアクションを実行したり、パラメーターを設定したりするメソッドです。 
     
-さらに、**Application** インターフェイスには、いくつかの*プロパティ*と*イベント*が含まれています。 
+さらに、**Application** インターフェイスには、いくつかの *プロパティ* と *イベント* が含まれています。 
   
 ## <a name="notebook-structure-methods"></a>ノートブック構造のメソッド
 <a name="ON14DevRef_Application_NotebookStructure"> </a>
@@ -66,7 +66,7 @@ static void GetEntireHierarchy()
 
 |||
 |:-----|:-----|
-|**説明**|ノートブックの階層を変更または更新します。 たとえば、ノートブックへのセクションまたはセクション グループの追加、新しいノートブックの追加、ノートブック内でのセクションの移動、セクション名の変更、セクションへのページの追加、セクション内でのページ順序の変更などが可能です。|
+|**説明**|ノートブックの階層を変更または更新します。たとえば、ノートブックへのセクションまたはセクション グループの追加、新しいノートブックの追加、ノートブック内でのセクションの移動、セクション名の変更、セクションへのページの追加、セクション内でのページ順序の変更などが可能です。|
 |**構文**| `HRESULT UpdateHierarchy(`<br/>`[in]BSTR bstrChangesXmlIn,`<br/>`[in,defaultvalue(xsCurrent)] XMLSchema xsSchema);`|
 |**パラメーター**| _bstrChangesXmlIn_ &ndash; 階層への変更を指定する OneNote XML コードが含まれている文字列。 たとえば、新しいセクションを挿入する場合は、この XML 文字列に **Section** 要素を追加して、新しいセクションの追加位置を指定します。 また、既存のセクションの名前を変更する場合は、XML コード内でセクション ID を変更せずに、そのセクションの **name** 属性を変更します。<br/><br/>_xsSchema_ &ndash; (省略可能) 文字列 _bstrChangesXmln_ の OneNote スキーマ バージョン。 この省略可能な値は、_bstrChangesXmlIn_ 文字列の OneNote XML スキーマ バージョンを指定するために使用します。 この値が指定されてないと、OneNote は XML のスキーマ バージョンが _xsCurrent_ であると仮定します。 <br/><br/>**注**: OneNote の将来のバージョンでもアドインが動作するように、**xsCurrent** を使用したり、空白のままにしたりするのではなく、OneNote のバージョン (**xs2013**) を指定するようにしてください。           |
    

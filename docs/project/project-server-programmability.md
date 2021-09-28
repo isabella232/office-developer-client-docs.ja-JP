@@ -24,13 +24,13 @@ keywords:
 - プロジェクト 2013、アーキテクチャとプログラミング、PSI、プロジェクト、バージョン、プログラミング、Project Server、PSI、制限、Project Server Interface、サポート対象外の機能、Project Server インターフェイス、PDS 互換性、Project Server Interface、汎用、Project Server、プロジェクトのバージョン、バージョン、プロジェクト、Project Server、データベース、Project 2013、プラットフォーム、Project Server Interface、シナリオの使用、Project Server、イベント、Project Server、Project Data Service、PSI との互換性、Project Server Interface
 ms.assetid: a93d2153-5132-4289-af51-69350471e248
 description: Project Server 2013 の主要なプログラミング機能について説明します。 この記事には、以前のバージョンの Project Server 用に構築されたアプリケーションの移植についての情報が含まれています。
-localization_priority: Priority
-ms.openlocfilehash: e6991712b87291e90c6b4f277db84686aab384e7
-ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
+ms.localizationpriority: high
+ms.openlocfilehash: a45624c98a2bbd04353daa31eb47655e2c963012
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41773730"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628998"
 ---
 # <a name="project-server-programmability"></a>Project Server のプログラミング
 
@@ -78,7 +78,7 @@ PSEntityProvision.xsd スキーマ ファイルは、Project 2013 SDK ダウン�
 
 ![Project Server エンティティ スキーマのビュー](media/pj15_Programmability_EntitySchema.gif "Project Server エンティティ スキーマのビュー")
   
-Project Server の機能をインストールする SharePoint パッケージには、**PSEntityProvision** スキーマに従った elements.xml ファイルを 1 つまたは複数含めることができます。 1 つの XML ファイル内の Project Server エンティティは、次の順序で出現する必要があります。 
+Project Server 用の機能をインストールする SharePoint パッケージには、**PSEntityProvision** スキーマに従った elements.xml ファイルを 1 つまたは複数含めることができます。1 つの XML ファイル内の Project Server エンティティは、次の順序で出現する必要があります。 
   
 1. ワークフロー フェーズ
     
@@ -99,7 +99,7 @@ Project Server エンティティを含む SharePoint パッケージを作成�
 ## <a name="upgrading-applications-with-the-project-server-apis"></a>Project Server API を使用してアプリケーションをアップグレードする
 <a name="pj15_Programmability_APIs"> </a>
 
-前のバージョンの Project Server 向けに開発されたアプリケーションをアップグレードする場合は、プロジェクト エンティティの作成、読み取り、更新、および削除のためのメソッド (CRUD 操作) を含むプログラム インターフェイスとして CSOM と PSI のどちらを使用するかを選択できます。 CSOM は内部で PSI を呼び出しますが、すべての PSI メソッドに完全に代わるものではありません。 PSI と CSOM のシナリオと制約については、「[What the PSI does and does not do](what-the-psi-does-and-does-not-do.md)」および「[What the CSOM does and does not do](what-the-csom-does-and-does-not-do.md)」を参照してください。
+前のバージョンの Project Server 向けに開発されたアプリケーションをアップグレードする場合は、プロジェクト エンティティの作成、読み取り、更新、および削除のためのメソッド (CRUD 操作) を含むプログラム インターフェイスとして CSOM と PSI のどちらを使用するかを選択できます。CSOM は内部で PSI を呼び出しますが、すべての PSI メソッドに完全に代わるものではありません。PSI と CSOM のシナリオと制約については、「[What the PSI does and does not do](what-the-psi-does-and-does-not-do.md)」および「[What the CSOM does and does not do](what-the-csom-does-and-does-not-do.md)」を参照してください。
   
 > [!NOTE]
 > CSOM に必要な機能が含まれている場合は、CSOM を使用するようにアプリケーションをアップグレードすることをお勧めします。 CSOM を使用すると、アプリケーションをオンプレミスとオンラインの両方の Project Server 2013 インストールで使用できるようになります。 
@@ -116,7 +116,7 @@ PSI には、WCF サービスまたは ASMX Web サービスを通じてアク�
 > [!NOTE]
 > PSI の ASMX Web サービスのインターフェイスは、Project Server 2013 で廃止されました。 ASMX インターフェイスは引き続き利用できますが、PSI を使用する新しいアプリケーションは WCF インターフェイスを使用する必要があります。可能であれば、新しいアプリケーションでは PSI の代わりに CSOM を使用してください。 Project Server の将来のバージョンでは、PSI の WCF インターフェイスを使用する場合や CSOM を使用する場合に、既存の ASMX ベースのアプリケーションをアップグレードする必要があります。 
   
-文書化されたパブリック PSI サービスは 22 個あり、これらは WCF インターフェイスおよび ASMX インターフェイスに複製されています。 また、PSI には文書化されていない 8 個のプライベート インターフェイスも含まれています。 Project Web App および Project Professional は、パブリック PSI サービスとプライベート PSI サービスを使用します。 PSI は通常、ビジネス オブジェクトと一致するように組み込まれます。 つまり、各 PSI メソッドは、**カレンダー**や**リソース**などのビジネス オブジェクトに関連付けられています。 PSI は、ビジネス オブジェクトへのプライマリ インターフェイスです。 ビジネス層によって再利用可能なビジネス ロジック コンポーネントが提供されるため、Project Server データを処理するさまざまなアプリケーションで同じビジネス ロジックが使用されます。
+文書化されたパブリック PSI サービスは 22 個あり、これらは WCF インターフェイスおよび ASMX インターフェイスに複製されています。 また、PSI には文書化されていない 8 個のプライベート インターフェイスも含まれています。 Project Web App および Project Professional は、パブリック PSI サービスとプライベート PSI サービスを使用します。 PSI は通常、ビジネス オブジェクトと一致するように組み込まれます。 つまり、各 PSI メソッドは、**カレンダー** や **リソース** などのビジネス オブジェクトに関連付けられています。 PSI は、ビジネス オブジェクトへのプライマリ インターフェイスです。 ビジネス層によって再利用可能なビジネス ロジック コンポーネントが提供されるため、Project Server データを処理するさまざまなアプリケーションで同じビジネス ロジックが使用されます。
   
 Project Server と非同期で対話する PSI メソッドは、**Queue** で始まる名前を持ちます。 各 PSI メソッドは、厳密に型指定されたデータを使用する独立したインターフェイスによって実装されます。 たとえば、**Project** サービスの **QueueCreateProject** メソッドは、**ProjectDataSet** 型の _dataset_ パラメーターを受け取ります。 **ProjectDataSet** クラスは **DataSet** 型から派生しています。 .NET Framework の型チェックと Visual Studio の IntelliSense の完了は、PSI を使用した開発のエラーを減らすために役立ちます。 PSI の名前空間、クラス、メソッド、プロパティ、イベント、および関連アセンブリの詳細な参照の概要については、「[Project PSI リファレンスの概要](project-psi-reference-overview.md)」を参照してください。
   
@@ -175,7 +175,7 @@ Project Server 2013 の PSI は、Office Project Server 2007 および Project S
   > [!NOTE]
   > Project Server 2013 の既定のオンプレミスのインストールでは、SharePoint のアクセス許可モードが使用されます。ここでは、PSI から Project Server のセキュリティ設定にアクセスできません。 Project のアクセス許可モードに変更するには、「[Project Server 2013 の IT 担当者向け新機能](https://docs.microsoft.com/project/what-s-new-for-it-pros-in-project-server-2016)」の「*SharePoint のアクセス許可モード*」セクションを参照してください。 
   
-- 多くのカスタム Project Server ワークフローでは、SharePoint Designer 2013 を使用して宣言型ワークフローを作成できます。 追加のプログラミングを必要とするカスタム ワークフローに対しては、**Microsoft.Office.Project.Server.Workflow** 名前空間内でクラスまたはメンバーを直接*使用しないでください*。 その代わりに、CSOM で [Microsoft.ProjectServer.Client.WorkflowActivities](https://docs.microsoft.com/previous-versions/office/mt780562(v=office.15)) クラスを使用します。 
+- 多くのカスタム Project Server ワークフローでは、SharePoint Designer 2013 を使用して宣言型ワークフローを作成できます。 追加のプログラミングを必要とするカスタム ワークフローに対しては、**Microsoft.Office.Project.Server.Workflow** 名前空間内でクラスまたはメンバーを直接 *使用しないでください*。 その代わりに、CSOM で [Microsoft.ProjectServer.Client.WorkflowActivities](https://docs.microsoft.com/previous-versions/office/mt780562(v=office.15)) クラスを使用します。 
     
 - 一般に、偽装を使用するアプリケーションは、PSI の WCF インターフェイスを使用するように書き直す必要があります。 他のユーザーの単純なステータス更新を行うアプリケーションでは、偽装は必要ありません。 CSOM の [StatusAssignment.SubmitStatusUpdates](https://docs.microsoft.com/previous-versions/office/project-class/jj235883(v=office.15)) メソッド、または PSI の [Statusing.SubmitStatusForResource](https://docs.microsoft.com/previous-versions/office/ee755393(v=office.14)) メソッドを使用できます。 
     
@@ -222,7 +222,7 @@ Project Server 2013 には 2 つのスケジューリング エンジンがあ�
   
 - **1 つのプロジェクトのスケジューリングのみ** スケジューリングは、変更が PSI、CSOM、または Project Web App を使用して、タスク状態の更新を通じて行われたときに、現在のプロジェクトにのみ影響します。 現在のプロジェクトに他のプロジェクト、サブプロジェクト、またはマスター プロジェクトへのリンクが存在する場合、リンクされたプロジェクトは変更されません。 
     
-- **サマリー タスク** 一般に、Project Server 上のサマリー タスクは読み取り専用です。 たとえば、サマリー タスクに対する割り当てを作成したり、達成率を変更したりすることはできません。 しかし、Project Server は手動でスケジュールされたサマリー タスクの日付や期間を編集することはサポートしています。 
+- **サマリー タスク** 一般に、Project Server 上のサマリー タスクは読み取り専用です。たとえば、サマリー タスクに対する割り当てを作成したり、達成率を変更したりすることはできません。しかし、Project Server は手動でスケジュールされたサマリー タスクの日付や期間を編集することはサポートしています。 
     
     Project Server の実績作業時間がサマリー タスクの割り当てに自動的に追加されることはありません。それは Project Server の承認プロセスをバイパスすることになるからです。Project Professional では、サブタスクに追加した実績作業時間はサマリー タスクの割り当てにも追加されます。この動作の違いがユーザーを混乱させることがあります。
     
@@ -237,7 +237,7 @@ Project Server 2013 には 2 つのスケジューリング エンジンがあ�
     
     非アクティブなタスクおよび古いスケジューリング エンジンの詳細については、ブログ記事の「[Project 2010 の非アクティブ タスクについて](https://blogs.msdn.com/b/project/archive/2010/06/10/introducing-inactive-tasks-in-project-2010.aspx)」および「[Project Server 2010: Web、Web、PSI および Project Professional でのスケジュール設定](https://blogs.msdn.com/b/brismith/archive/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional.aspx?wa=wsignin1.0)」を参照してください。 Project Professional 2010 と Project Web App の Project Server 2010 でのスケジューリングの比較については、「[Web ベースのスケジュール管理の比較](https://blogs.msdn.microsoft.com/brismith/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional/)」を参照してください。
     
-- **達成額が計算されていない** 古いスケジューリング エンジンは、達成額フィールド (ACWP、BAC、BCWP、BCWS、CPI、CV、CV%、EAC、SPI、SV、SV%、TCPI、VAC、期間差異、開始日の差異、終了日の差異、コスト差異、および作業時間の差異) を計算しません。 プロジェクトがこれらのフィールドに値を持ち、そのプロジェクトが **QueueUpdateProject** メソッドを使用して更新された場合、これらのフィールドの値は変更されません。 問題を回避するには、**QueueUpdateProject2** メソッドを使用します。 
+- **達成額は計算されない** 以前のスケジューリング エンジンは、達成額フィールド (ACWP、BAC、BCWP、BCWS、CPI、CV、CV%、EAC、SPI、SV、SV%、TCPI、VAC、期間差異、開始日の差異、終了日の差異、コスト差異、および作業時間の差異) を計算しません。プロジェクトがこれらのフィールドに値を持ち、そのプロジェクトが **QueueUpdateProject** メソッドを使用して更新された場合、これらのフィールドの値は変更されません。この問題を回避するには、**QueueUpdateProject2** メソッドを使用します。 
     
 PSI のスケジューリングの制限事項には、以下の方法で対処できます。
   
@@ -255,13 +255,13 @@ PSI のスケジューリングの制限事項には、以下の方法で対処�
     
 -  _ProjectEarnedValueIsStale_ &ndash; 達成額フィールドが古いことを示します。 
     
--  _ProjectRollupsAreStale_ &ndash; サブプロジェクトが下書きデータベースで更新されているのに、マスター プロジェクトが更新されていないことを示します。 サブプロジェクトからの重ね合わせた値が古くなっています。 
+-  _ProjectRollupsAreStale_ &ndash; サブプロジェクトが下書きデータベースで更新されているのに、マスター プロジェクトが更新されていないことを示します。サブプロジェクトからの重ね合わせた値が古くなっています。 
     
--  _ProjectHierarchyNotSynchronized_ &ndash; マスター プロジェクトがその子と同期されていません。 この状態は、子プロジェクトがマスター プロジェクトの発行の一部ではなく、明示的に発行されたときに発生します。 
+-  _ProjectHierarchyNotSynchronized_ &ndash; マスター プロジェクトがその子と同期されていません。この状態は、子プロジェクトがマスター プロジェクトの発行の一部ではなく、明示的に発行されたときに発生します。 
     
 -  _ProjectCalculationsAreStale_ &ndash; Project Professional がスケジュールを計算せずにプロジェクトを保存しました (つまり、**[Project のオプション]** ダイアログ ボックスの **[スケジュール]** タブで、計算モードが **[手動]** に設定されています)。 
     
--  _ProjectGhostTaskAreStale_ &ndash; _ProjectHierarchyNotSynchronized_ と似ていますが、プロジェクト間のリンクのデータについて警告します。 マスター プロジェクトが存在しないのに、リンクの一方のプロジェクト データが他方よりも新しい可能性があります。
+-  _ProjectGhostTaskAreStale_ &ndash; _ProjectHierarchyNotSynchronized_ に似ていますが、プロジェクト間のリンクのデータについて警告します。マスター プロジェクトが存在しないのに、リンクの一方のプロジェクト データが他方よりも新しい可能性があります。
     
 ## <a name="about-accessing-the-project-server-database"></a>Project Server データベースへのアクセスについて
 <a name="pj15_Programmability_Databases"> </a>
