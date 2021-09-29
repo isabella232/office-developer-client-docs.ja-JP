@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm3180
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: c84a737d08b791bfe560bfe6af6bcc59a14d2678
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 290708e19c7e24259678153df978a1cd089e95c5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297222"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607466"
 ---
 # <a name="after-insert-macro-event"></a>After Insert マクロ イベント
 
@@ -31,7 +31,7 @@ The **After Insert** event occurs after a record is added.
 
 After Insert イベントでは、テーブルにレコードを追加したときに特定のアクションを実行します。通常は、ビジネス ルールやワークフローの実行、総計の更新、通知の送信などを行います。
 
-**Updated("*フィールド名*")** 関数を使用すると、フィールドが変更されているかどうかを判断できます。 次のコード例では、PaidInFull フィールドが変更されているかどうかを If ステートメントで判断する方法を示します。
+**Updated("*フィールド名*")** 関数を使用すると、フィールドが変更されているかどうかを判断できます。次のコード例では、PaidInFull フィールドが変更されているかどうかを **If** ステートメントで判断する方法を示します。
 
 ```vb 
  

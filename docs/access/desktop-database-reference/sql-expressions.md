@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197629(v=office.15)
 ms:contentKeyID: 48546349
 ms.date: 06/13/2019
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: f38932ed4744e5479c523446f9ab77065f4eb203
-ms.sourcegitcommit: d0e1ce095a478d90411abb8c147eb9efe19ffa5f
+ms.localizationpriority: high
+ms.openlocfilehash: 003462c4a16ca9a9de809f9dd87f661a0242992a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34870865"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589100"
 ---
 # <a name="sql-expressions"></a>SQL 式
 
@@ -22,7 +22,7 @@ SQL 式は、SQL ステートメントの一部または全体を構成する文
 
 Microsoft Access データベース エンジンは、Microsoft Visual Basic for Applications (VBA) Expression Service を使用して、単純な算術と関数の評価を実行します。 Microsoft Access データベース エンジン SQL 式で使用されるすべての演算子 (**[Between](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/between-and-operator)**、**[In](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/in-operator-microsoft-access-sql)**、**[Like](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/like-operator-microsoft-access-sql)** を除く) は、VBA Expression Service によって定義されます。 
 
-さらに、VBA Expression Service には、SQL 式で使用できる 100 を超える VBA 関数が用意されています。 たとえば、Microsoft Access クエリのデザイン ビューでこれらの VBA 関数を使用して SQL クエリを作成することができます。また、Microsoft Visual C++、Microsoft Visual Basic、Microsoft Excel コードの DAO **OpenRecordset** メソッドの SQL クエリでこれらの関数を使用することもできます。
+さらに、VBA Expression Service には、SQL 式で使用できる 100 以上の VBA 関数が用意されています。たとえば、Microsoft Access クエリのデザイン ビューでこれらの VBA 関数を使用して SQL クエリを作成することができます。また、Microsoft Visual C++、Microsoft Visual Basic、Microsoft Excel コードの DAO **OpenRecordset** メソッドの SQL クエリでこれらの関数を使用することもできます。
 
 ## <a name="see-also"></a>関連項目
 

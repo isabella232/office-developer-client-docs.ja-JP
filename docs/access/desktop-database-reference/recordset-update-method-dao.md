@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821467(v=office.15)
 ms:contentKeyID: 48546961
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 9f73dfc49a6ec99b726a052c588c032783010081
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 33e613a1760281326873df264673101e8146e80f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307526"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597017"
 ---
 # <a name="recordsetupdate-method-dao"></a>Recordset.Update メソッド (DAO)
 
@@ -20,9 +20,9 @@ ms.locfileid: "32307526"
 
 ## <a name="syntax"></a>構文
 
-*式* .Update(***UpdateType***, ***Force***)
+*式* .Update(**UpdateType**, _Force_)
 
-*式* **Recordset** オブジェクトを表す変数。
+*expression*: **Recordset** オブジェクトを表す変数。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -36,7 +36,7 @@ ms.locfileid: "32307526"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/省略可能</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -74,7 +74,7 @@ ms.locfileid: "32307526"
 
 ODBCDirect ワークスペースでは、カーソル ライブラリが一括更新をサポートしており、 **Recordset** を開くときにオプションとして一括更新時の共有的ロックが指定されている場合に、一括更新を実行できます。
 
-Microsoft Access ワークスペースでは、マルチユーザー環境で **Recordset** オブジェクトの **LockEdits** プロパティが **True** に設定されている場合 (排他的ロック)、 **Edit** が使用された時点から、 **Update** メソッドが実行されるか、編集が取り消されるまで、レコードがロックされます。 **LockEdits** プロパティが **False** に設定されている場合 (共有的ロック)、レコードはロックされ、データベースに反映される直前に、編集前のレコードと比較されます。 
+Microsoft Access ワークスペースでは、マルチユーザー環境で **Recordset** オブジェクトの **LockEdits** プロパティが **True** に設定されている場合 (排他的ロック)、 **Edit** が使用された時点から、 **Update** メソッドが実行されるか、編集が取り消されるまで、レコードがロックされます。**LockEdits** プロパティ設定が **False** (共有的ロック) されている場合、レコードはロックされ、データベースで更新される直前に事前編集されたレコードと比較されます。 
 
 **Edit** メソッドを使用した時点からレコードが変更されている場合は、 **Update** 操作が失敗します。 Microsoft Office Access データベース エンジンに接続されている ODBC データベース、およびインストール可能な ISAM データベースでは、常に共有的ロックが使用されます。 変更による **Update** 操作を引き続き実行するには、 **Update** メソッドを再度使用します。 他のユーザーがレコードを変更した後にレコードを戻すには、Move 0 を使用して現在のレコードを更新します。
 

@@ -7,13 +7,13 @@ api_type:
 - COM
 ms.assetid: 29fb4c44-1a59-457e-813b-a982bd72891c
 description: '最終更新日: 2015 年 3 月 9 日'
-localization_priority: Priority
-ms.openlocfilehash: 112a683f5967f8740c2d21285eb4ebbc0f455c48
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 56aac9386076974cb0bb532af349c7b4243cbdcb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309640"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630510"
 ---
 # <a name="installing-the-mapi-subsystem"></a>MAPI サブシステムのインストール
 
@@ -21,7 +21,7 @@ ms.locfileid: "32309640"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-サポートされているバージョンの Windows で、_\<ドライブ\>_ \Windows\System32 フォルダーに MAPI スタブ ライブラリ、Mapi32.dll をインストールします。 
+サポートされているバージョンの Windows で、_\<drive\>_ \Windows\System32 フォルダーに MAPI スタブ ライブラリ、Mapi32.dll をインストールします。 
   
 サポートされているバージョンの Windows を次に示します。
   

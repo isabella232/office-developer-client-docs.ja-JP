@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193967(v=office.15)
 ms:contentKeyID: 48544862
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 09f60cb8dde407aacbb19e6b2124151dbbf9b3c5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 564502f04e88d6ac6eba7f7a77c3ddae8dafe8c6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287896"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593864"
 ---
 # <a name="parameters-collection-dao"></a>パラメーター コレクション (DAO)
 
@@ -94,7 +94,7 @@ ms.locfileid: "32287896"
 
 <br/>
 
-次の例は、パラメーター クエリを作成する方法を示しています。 Param1 および Param2 という名前の 2 つのパラメーターを使用して**myQuery**という名前のクエリを作成します。 これを行うには、クエリの SQL プロパティは、パラメーターを定義する、構造化照会言語 (SQL) ステートメントに設定されます。
+次の例は、パラメーター クエリを作成する方法を示します。Param1 および Param2 という名前の 2 つのパラメーターを使用して **myQuery** という名前のクエリを作成します。これを行うには、クエリの SQL プロパティを、パラメーターを定義する構造化照会言語 (SQL) ステートメントに設定します。
 
 **サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
@@ -123,7 +123,7 @@ ms.locfileid: "32287896"
 
 <br/>
 
-次の例は、パラメーター クエリを実行する方法を示しています。 パラメーターのコレクションを使用して、クエリを実行する前に、 myActionQuery クエリの組織のパラメーターを設定します。
+次の例は、パラメーター クエリを実行する方法を示します。クエリを実行する前に Parameters コレクションを使用して myActionQuery クエリの Organization パラメーターを設定します。
 
 ```vb
     Public Sub ExecParameterQuery()
@@ -150,7 +150,7 @@ ms.locfileid: "32287896"
 
 <br/>
 
-次の例は、パラメーター クエリに基づいた Recordset を開く方法を示しています。
+次の例は、パラメーター クエリに基づく Recordset を開く方法を示しています。
 
 ```vb
     Dim dbs As DAO.Database

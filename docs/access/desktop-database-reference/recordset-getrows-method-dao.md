@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1053362
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 35afc836bf2fb2a728453ac1ed240fd50a9673da
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 37714f7581631a1cb095c3d2c8564d9a4f8afa6c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300505"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606283"
 ---
 # <a name="recordsetgetrows-method-dao"></a>Recordset.GetRows メソッド (DAO)
 
@@ -42,7 +42,7 @@ ms.locfileid: "32300505"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/省略可能</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -64,7 +64,7 @@ ms.locfileid: "32300505"
 
 ## <a name="remarks"></a>注釈
 
-**GetRows** メソッドは、 **Recordset** からレコードをコピーするために使用します。 **GetRows** は 2 次元配列を返します。 1 番目の添え字でフィールドを指定し、2 番目の添え字で行番号を指定します。 たとえば次の例では、  `intField` はフィールドを表し、`intRecord` は行番号を表します。
+**GetRows** メソッドは、**Recordset** からレコードをコピーするために使用します。**GetRows** は 2 次元配列を返します。最初の添え字ではフィールドを指定し、2 番目の添え字では行番号を指定します。たとえば `intField` はフィールドを表し、`intRecord` では行番号を表します。
 
 `avarRecords(intField, intRecord)`
 
@@ -78,15 +78,15 @@ ms.locfileid: "32300505"
 
 **GetRows** がデータを返すと、avarRecords 変数は自動的に 2 次元配列になります。
 
-取得できる行数よりも多くの行を要求すると、**GetRows** は取得できる行数だけを返します。 配列のサイズは返された行数に応じて決まるため、Visual Basic for Applications の **UBound** 関数を使用すると、**GetRows** によって実際に取得された行数を確認できます。 たとえば、結果を varA という **Variant** に返した場合は、次のコードを使って実際に返された行数を判断できます。
+取得できる行数よりも多くの行を要求すると、**GetRows** は取得できる行数だけを返します。配列のサイズは返された行数に応じて決まるため、Visual Basic for Applications の **UBound** 関数を使用すると、**GetRows** によって実際に取得された行数を確認できます。たとえば、取得した結果を varA という **バリアント型 (Variant)** の変数に代入した場合は、次のコードを使用して、実際に取得した行数を確認できます。
 
 `numReturned = UBound(varA,2) + 1`
 
-返される最初の行は配列の 0 要素にあるため、 「+ 1」を使用する必要があります。 取得できる行数は、使用できるメモリの容量によって制限されます。 テーブルのサイズが大きい場合は、 **GetRows** を使用してテーブル全体を配列として取得しないでください。
+返された最初の行は配列の 0 番目の要素となるため、"+ 1" を付ける必要があります。取得できる行数は、使用できるメモリの容量によって制限されます。テーブルのサイズが大きい場合は、**GetRows** を使用してテーブル全体を配列として取得しないでください。
 
 **GetRows** では、メモやロング バイナリを含む **Recordset** のすべてのフィールドが配列として返されるため、取得するフィールドを制限するクエリを使用すると有効な場合があります。
 
-**GetRows** の呼び出し後は、カレント レコードが次の読み込まれていない行に設定されます。 つまり、**GetRows** を使用した場合のカレント レコードへの影響は、**Move** numrows の場合と同じです。
+**GetRows** の呼び出し後、まだ読み込まれていない次の行がカレント レコードになります。つまり、**GetRows** を使用した場合のカレント レコードへの影響は、**Move** numrows の場合と同じです。
 
 すべての行を取得するために **GetRows** を複数回呼び出す場合は、 **[EOF](recordset-eof-property-dao.md)** プロパティを使用して、 **Recordset** の末尾まで確実に読み込まれるようにします。 **GetRows** は、 **Recordset** の末尾まで到達した場合や、要求された範囲内の行を読み込むことができない場合は、要求された数よりも少ないレコードを返します。たとえば、10 個のレコードを取得しようとしているが、5 番目のレコードを取得できない場合、 **GetRows** は 4 個のレコードを返し、5 番目のレコードをカレント レコードにします。この場合、実行時エラーは発生しません。このような現象は、ダイナセット タイプの **Recordset** で、他のユーザーがレコードを削除した場合などに発生します。このような場合の処理方法については、使用例を参照してください。
 

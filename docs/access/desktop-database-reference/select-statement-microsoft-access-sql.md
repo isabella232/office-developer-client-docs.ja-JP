@@ -8,13 +8,13 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 dev_langs:
 - sql
-localization_priority: Priority
-ms.openlocfilehash: 962e425c2c69511b6d7770fb03e954588249cf2a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 0a407c6b164f2558be46ab2804693121ba07a5c1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314638"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593636"
 ---
 # <a name="select-statement-microsoft-access-sql"></a>SELECT ステートメント (Microsoft Access SQL)
 
@@ -116,7 +116,7 @@ AS HeadCount FROM Employees;
 
 SELECT ステートメントではこの他にも、返されるデータを制限して整理する句を使用できます。 詳しくは、使用する句のヘルプ トピックをご覧ください。
 
-[UtterAccess](https://www.utteraccess.com) コミュニティで**提供されるリンク**。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
+[UtterAccess](https://www.utteraccess.com) コミュニティで **提供されるリンク**。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
 
 - [SQL to VBA Formatter](https://www.utteraccess.com/forum/sql-vba-formatter-t1165308.html)
 

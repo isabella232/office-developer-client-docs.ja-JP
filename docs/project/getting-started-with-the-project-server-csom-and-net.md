@@ -5,13 +5,13 @@ ms.date: 08/10/2016
 ms.audience: Developer
 ms.assetid: 5ce73baa-dfb6-41d0-918d-b0c3a498815f
 description: Project Server 2013 のクライアント側オブジェクト モデル (CSOM) を使用して、.NET Framework 4 を使用した Project Online およびオンプレミスのソリューションを開発することができます。 この記事では、CSOM を使用するコンソール アプリケーションを作成して、プロジェクトを作成および発行する方法について説明します。 プロジェクトの発行後、このアプリケーションは Project Server Queue Service による発行操作の終了を待機してから、発行されたプロジェクトのリストを示します。
-localization_priority: Priority
-ms.openlocfilehash: b53587ca1959faefdc1b40f08c4adfda4ee11d70
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 19714f004ae39d830be5be9aa319e4692b860f3a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360577"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613185"
 ---
 # <a name="getting-started-with-the-project-server-csom-and-net"></a>Project Server CSOM と .NET の使用を開始する
 
@@ -390,7 +390,7 @@ Project Web App の [プロジェクト センター] ページ (`https://Server
 
 **Project Web App で発行済みのプロジェクトを確認する**
 
-![Project Web App で発行済みのプロジェクトを確認する](media/pj15_GetStartedCSOMNET_pwa.gif "Project Web App で発行済みのプロジェクトを確認する")
+![Project Web App で発行済みのプロジェクトを確認する](media/pj15_GetStartedCSOMNET_pwa.gif "Project Web App で発行済みプロジェクトを確認する")
   
 **QueueCreateProject** サンプル アプリケーションは、**ProjectCreationInformation** クラスを使用して CSOM でプロジェクト エンティティを作成する方法、発行済みコレクションにプロジェクトを追加する方法、**WaitForQueue** メソッドを使用してキュー ジョブを待機する方法、発行済みプロジェクトのコレクションを列挙する方法の一般的な例を示しています。 
   

@@ -7,13 +7,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff198313(v=office.15)
 ms:contentKeyID: 48546659
 ms.date: 10/16/2018
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 0acd99a498a74f098b08814e9f11d49b28bae097
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: b52d3b261a3655eedd6a6f911d0d1eade31712aa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291958"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602389"
 ---
 # <a name="apply-a-custom-ribbon-when-starting-access"></a>Access の起動時にカスタム リボンを適用する
 
@@ -27,7 +27,7 @@ ms.locfileid: "32291958"
 
 リボンのカスタマイズを使用できるようにするための 1 つの方法は、リボンのカスタマイズをテーブルに保管することです。カスタマイズを " **USysRibbons** " という名前のテーブルに保管した場合、マクロまたは VBA コードを使用せずにカスタマイズを実装できます。
 
-**USysRibbons** はユーザーが作成したシステム テーブルです。 リボンのカスタマイズを実装するには、特定の列名を使用してテーブルを作成する必要があります。 
+**USysRibbons** はユーザーが作成したシステム テーブルです。テーブルを作成するには特定の列名を使用して、リボンのカスタマイズを実装できるようにする必要があります。 
 
 次のテーブルは、**USysRibbons** テーブルを作成するときに使用する設定を示しています。
 
@@ -65,7 +65,7 @@ ms.locfileid: "32291958"
 
 XML マークアップには、テーブルから作成される **Recordset** オブジェクト、データベース外部のソース (文字列に解析する XML ファイルなど)、またはプロシージャの内部に直接埋め込まれた XML マークアップを指定できます。各リボンの名前およびリボンを構成するタブの **id** 属性が一意である限り、 **LoadCustomUI** メソッドへの呼び出しを複数回使用し、それぞれに異なる XML マークアップを渡すことで、異なるリボンを作成することができます。
 
-プロシージャが完了したら、RunCode アクションを使用して、プロシージャを呼び出す AutoExec マクロを次に作成します。 これにより、アプリケーションが開始されたときに **LoadCustomUI** メソッドが自動的に実行され、すべてのカスタム リボンをアプリケーションで使用できるようになります。
+プロシージャが完了したら、"RunCode/プロシージャの実行" アクションを使用してプロシージャを呼び出す AutoExec マクロを作成します。これにより、アプリケーションが開始されたときに **LoadCustomUI** メソッドが自動的に実行され、すべてのカスタム リボンをアプリケーションで使用できるようになります。
 
 ## <a name="apply-customized-ribbons-when-access-starts"></a>Access の起動時にカスタマイズされたリボンを適用する
 
@@ -75,7 +75,7 @@ XML マークアップには、テーブルから作成される **Recordset** �
 
 2.  アプリケーションを閉じて、再起動します。
 
-3.  [**Microsoft Office Button**![O12FileMenuButton\_ZA10077102](media/access-file-menu-button.gif "O12FileMenuButton_ZA10077102")] を選択し、[**ACCESS のオプション**] を選択します。
+3.  [**Microsoft Office ボタン**![O12FileMenuButton\_ZA10077102](media/access-file-menu-button.gif "O12FileMenuButton_ZA10077102")] を選択し、[**Access のオプション**] を選択します。
 
 4.  [**カレント データベース**] オプションを選択し、[**リボンとツール バーのオプション**] セクションで [**リボン名**]  一覧を選択して、リボンを選択します。
 

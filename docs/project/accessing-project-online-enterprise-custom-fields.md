@@ -5,13 +5,13 @@ ms.date: 11/08/2016
 ms.audience: Developer
 ms.assetid: 25509631-fa14-49d8-b594-cfacf5355c38
 description: Project Online は、企業がビジネス ニーズを満たすように拡張できる Office 365 サービスの 1 つです。 1 つの拡張領域は、エンタープライズ ユーザー設定フィールド (ECF) です。 ECF は、プロジェクト、リソース、およびタスクに追加できる型指定された値フィールドです。 次の表に、プロジェクト、リソース、およびタスクに関連付けられた ECF のリストと、その ECF のインスタンスに対応する値の例を示します。
-localization_priority: Priority
-ms.openlocfilehash: 9f754f1446890ae021bf6f7000ffba11e2a2df33
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: a445d15adb82c5cb770bf81403ef53a6eb33e012
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355084"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613206"
 ---
 # <a name="accessing-project-online-enterprise-custom-fields"></a>Project Online エンタープライズ ユーザー設定フィールドへのアクセス
 
@@ -70,7 +70,7 @@ pwaECF ディクショナリには、PWA レベルで定義したプロジェク
 
 ## <a name="main-method"></a>Main メソッド
 
-Main メソッドでは、アプリケーション フローを管理します。 Project Online CSOM を使用する他のアプリケーションと同様に、Main でプロジェクト コンテキストを初期化します。 
+Main メソッドでは、アプリケーション フローを管理します。Project Online CSOM を使用する他のアプリケーションと同様に、Main でプロジェクト コンテキストを初期化します。 
   
 1. Project Online PWA の ECF を取得してリスト表示します。
     
@@ -117,7 +117,7 @@ Main メソッドでは、アプリケーション フローを管理します�
     
    ECF のプロパティ (フィールド値以外) は、プロジェクトごとに 1 つの CustomField オブジェクトに保存されます。 CustomFields コレクションを使用して、それぞれ個別のプロジェクトに関連付けられた ECF にアクセスします。 
     
-5. それぞれのプロジェクトは、それに関連付けられた ECF をコレクションに保存します。このコレクションの各 ECF エントリは、ECF の内部名であるキーと ECF の値を保持するオブジェクトで構成されています。 このコレクションは、それぞれのエントリにアクセスするためのディクショナリに転送します。 宣言は次のとおりです。
+5. それぞれのプロジェクトは、それに関連付けられた ECF をコレクションに保存します。このコレクションの各 ECF エントリは、ECF の内部名であるキーと ECF の値を保持するオブジェクトで構成されています。このコレクションは、それぞれのエントリにアクセスするためのディクショナリに転送します。
     
    ```cs
     Dictionary<string, object> projDict = pubProj.IncludeCustomFields.FieldValues;
@@ -205,7 +205,7 @@ ListPWACustomFields メソッドでは、プロジェクトに関連付けられ
   
 ## <a name="see-also"></a>関連項目
 
-- [Project 開発ポータル](https://developer.microsoft.com/ja-JP/project)
+- [Project 開発ポータル](https://developer.microsoft.com/en-us/project)
 - [概要: エンタープライズ ユーザー設定フィールドと参照テーブル](https://support.office.com/en-us/article/overview-enterprise-custom-fields-and-lookup-tables-f99db553-0b33-4648-93c0-f6a74637d790?ui=en-us&rs=en-us&ad=us)
 - [ローカル ユーザー設定フィールドとエンタープライズ ユーザー設定フィールド](https://msdn.microsoft.com/library/office/ms447495(v=office.14).aspx)
 - [Project Server 2013 でエンタープライズ ユーザー設定フィールドを追加または編集する](https://docs.microsoft.com/project/add-or-edit-enterprise-custom-fields-in-project-server)

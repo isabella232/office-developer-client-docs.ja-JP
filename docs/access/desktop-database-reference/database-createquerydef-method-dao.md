@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195966(v=office.15)
 ms:contentKeyID: 48545686
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: c19ef8ab8ef2e937ba7467b3695f9aa5780c21c0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 6ae1b84a3f1d99483c3ea1d7f54458ed53e8c4fe
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294982"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558521"
 ---
 # <a name="databasecreatequerydef-method-dao"></a>Database.CreateQueryDef メソッド (DAO)
 
@@ -22,7 +22,7 @@ ms.locfileid: "32294982"
 
 ## <a name="syntax"></a>構文
 
-*式* .CreateQueryDef (***Name***、***SQLText***)
+*expression* .CreateQueryDef(***Name** _, _*_SQLText_**)
 
 *式* **Database** オブジェクトを表す変数です。
 
@@ -38,7 +38,7 @@ ms.locfileid: "32294982"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/省略可能</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -54,7 +54,7 @@ ms.locfileid: "32294982"
 <td><p><em>SQLText</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p><strong>QueryDef</strong> を定義する SQL ステートメントである <strong>Variant</strong> (<strong>String</strong> サブタイプ)。 この引数を省略した場合、コレクションへの追加前または追加後に、 <a href="querydef-sql-property-dao.md"><strong>SQL</strong></a> プロパティを設定して、 <strong>QueryDef</strong> を定義できます。</p></td>
+<td><p><strong>QueryDef</strong> を定義する SQL ステートメントを表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。この引数を省略した場合、コレクションへの追加前または追加後に、<strong><a href="querydef-sql-property-dao.md">SQL</a></strong> プロパティを設定して、<strong>QueryDef</strong> を定義できます。</p></td>
 </tr>
 </tbody>
 </table>
@@ -81,7 +81,7 @@ Microsoft Access データベース エンジンのデータベースで **Query
 
 ## <a name="example"></a>例
 
-この例では、**CreateQueryDef** メソッドを使用して、一時的と永続的な **QueryDef** の両方を作成して実行します。 この手順を実行するには、GetrstTemp 関数が必要です。
+この例では、 **CreateQueryDef** メソッドを使用して、一時的および永続的な **QueryDef** オブジェクトを両方作成して実行します。このプロシージャを実行するには、 GetrstTemp 関数が必要です。
 
 ```vb
     Sub CreateQueryDefX() 
@@ -204,7 +204,7 @@ End Sub
 
 <br/>
 
-次の例は、パラメーター クエリを作成する方法を示しています。 Param1 および Param2 という名前の 2 つのパラメーターを使用して **myQuery** という名前のクエリを作成します。 これを行うために、クエリの SQL プロパティは、パラメータを定義する Structured Query Language (SQL) ステートメントに設定されます。
+次の例は、パラメーター クエリを作成する方法を示します。Param1 および Param2 という名前の 2 つのパラメーターを使用して **myQuery** という名前のクエリを作成します。これを行うには、クエリの SQL プロパティを、パラメーターを定義する構造化照会言語 (SQL) ステートメントに設定します。
 
 **サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 

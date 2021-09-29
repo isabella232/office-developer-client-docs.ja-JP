@@ -6,13 +6,13 @@ ms.audience: Developer
 ms.topic: overview
 ms.assetid: 69736f40-8f67-46c2-abf6-82dffecb2274
 description: Visio 2013 の新しいファイル形式について説明し、プログラムを使用して Visio 2013 ファイル形式で作業するための上位レベルの概念を確認し、Visio 2013 ファイルを検証する簡単なコンソール アプリケーションを作成します。
-localization_priority: Priority
-ms.openlocfilehash: 74c0f05a1db280386f3dc9dfd23da73a9b2daaf5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: f4109d831840466d560d3464b809995c8cf31b24
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357275"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628060"
 ---
 # <a name="introduction-to-the-visio-file-format-vsdx"></a>Visio ファイル形式 (.vsdx) の概要
 
@@ -22,7 +22,7 @@ Visio 2013 の新しいファイル形式について説明し、プログラム
 |:-----|:-----|
 |**この記事の内容**         [概要](#vis15_IntroVSDX_Intro)          [Visio 2013 ファイル形式の "中身" について](#vis15_IntroVSDX_What)          [開発者が Visio 2013 ファイル形式で作業するためのシナリオ](#vis15_IntroVSDX_Scenarios)          [プログラムを使用した Visio 2013 ファイル形式の参照](#vis15_IntroVSDX_Explore)          [その他のリソース](#vis15_IntroVSDX_Resources)||
    
-## <a name="introduction"></a>概要
+## <a name="introduction"></a>はじめに
 <a name="vis15_IntroVSDX_Intro"> </a>
 
 Visio 2013 では、Visio の新しいファイル形式 (.vsdx) が導入されています。これは、Visio のバイナリ ファイル形式 (.vsd) と Visio XML 図面ファイル形式 (.vdx) に代わるものです。 Visio 2013 のファイル形式は Open Packaging Conventions と XML に基づいているため、これらのテクノロジについて詳しい知識のある開発者であれば、プログラムを使用して Visio 2013 のファイル形式で作業する方法にすぐ慣れていただくことができます。 Visio の以前のバージョンの Visio XML 図面ファイル形式 (.vdx) について詳しい知識のある開発者の方は、.vsdx ファイル形式の一部に同じ XML 構造が数多く使用されていることに気づかれることでしょう。 サード パーティ製のソフトウェアでは、Visio ファイルをファイル形式レベルで操作できるため、Visio ファイルとの相互運用性が大幅に向上します。 Visio 2013 のファイル形式は、Microsoft SharePoint Server 2013 の Visio Services でサポートされています。SharePoint Server に発行するための "中間" ファイル形式は不要です。
@@ -73,7 +73,7 @@ Visio 2013 のファイル形式では、Open Packaging Conventions (OPC) が使
   
 XML 図面形式と Visio 2013 のファイル形式の最大の相違点は、パッケージです。 XML 図面形式は、通常のスタンドアロン XML と同じように操作することができます。Visio 2013 のファイル形式は、パッケージとして操作する必要があります。 Visio 2013 では、使いやすくするために XML がパーツに分割されています。 もう 1 つの大きな変更点として、Visio 2013 のファイル形式では、すべてのドキュメント プロパティが、OPC 標準に記述された文書パーツに格納されます (app.xml、core.xml、custom.xml)。
   
-さらに、すべての Visio 開発者が認識する必要がある重大な変更点が 1 つあります。それは、**セル**、**行**、および**セクション**要素の導入です。 XML 図面ファイル形式スキーマでは、ShapeSheet 内の各行と各セルは名前付き要素で表されます。 たとえば、あるドキュメントにページが 1 つ存在し、そのページには **PinX** 値が "2" (図形の回転ピンが図面の左端から 2 インチの場所にあることを意味します) である図形が含まれているとします。 次のコードは、XML 図面ファイル形式でのその設定に関連するマークアップを示します。 
+さらに、すべての Visio 開発者が認識する必要がある重大な変更点が 1 つあります。それは、**セル**、**行**、および **セクション** 要素の導入です。 XML 図面ファイル形式スキーマでは、ShapeSheet 内の各行と各セルは名前付き要素で表されます。 たとえば、あるドキュメントにページが 1 つ存在し、そのページには **PinX** 値が "2" (図形の回転ピンが図面の左端から 2 インチの場所にあることを意味します) である図形が含まれているとします。 次のコードは、XML 図面ファイル形式でのその設定に関連するマークアップを示します。 
   
 ```XML
 <Shape ID="1" TextStyle="3" FillStyle="3" LineStyle="3" Type="Shape">
@@ -97,7 +97,7 @@ Visio 2013 のファイル形式では、ShapeSheet 内のすべてのセル (**
 </Shape>
 ```
 
-**PinX** の **Cell** 要素 (同様に、**LinePattern** や **LockSelect**などの "シングルトン セル" と呼ばれるその他の名前付きの各セル) は、**Shape** 要素の直接の子です。 **PinX** セルを含む行を表すための一意の要素は必要ありません。**PinX** 要素は各図形に 1 つしか存在しないためです。
+**PinX** の **Cell** 要素 (同様に **LinePattern** や **LockSelect** などの “単一のセル” と呼ばれる名前付きのセルといった他の個別の要素) は、**Shape** 要素の直接の子です。図形ごとに1 つのみ **PinX** を持つことができるため、**PinX** セルを含む行を表すために固有の要素は必要ありません。
   
 次に、**Geometry** セクションなど、表形式データが含まれるセクションについて説明します。 このようなセクション内のセルの場合、Visio 2013 のファイル形式スキーマではデータの格納に **Section** と **Row** 要素が使用されます (これらの要素は以下に示すように **N** 属性や **T** 属性で識別されます)。 たとえば、前述の例で使用した図形で、**Geometry 1** セクションにデータが格納される場合、XML 図面スキーマでは次のコードのようになります。 
   
@@ -165,7 +165,7 @@ Visio 2013 ファイル形式で作業する開発者にとって最も基本的
     
 5. [**Visual C#**] または [**Visual Basic**] の下で [**Windows**] を展開し、[**コンソール アプリケーション**] を選択します。
     
-6. [**名前**] ボックスに、「VisioFileExplorer」と入力します。 コンソール アプリケーション プロジェクトが開きます。 
+6. [**名前**] ボックスに「VisioFileExplorer」と入力します。コンソール アプリケーション プロジェクトが開きます。 
     
 7. [**ソリューション エクスプローラー**] で [**VisioFileExplorer**] を右クリックし、[**参照の追加**] をクリックします。 
     

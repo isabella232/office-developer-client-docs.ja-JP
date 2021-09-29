@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1052979
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 1cd4188931999284a6454064a0906b64cf1f519a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 4c639f14a414c5bd32d1790631a6c1e6baaf1288
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294254"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597451"
 ---
 # <a name="dbengineopendatabase-method-dao"></a>DBEngine.OpenDatabase メソッド (DAO)
 
@@ -26,7 +26,7 @@ ms.locfileid: "32294254"
 
 ## <a name="syntax"></a>構文
 
-*式* .OpenDatabase(***Name***、***Options***、***ReadOnly***、***Connect***)
+*式* .OpenDatabase(***Name** _, _*_Options_*_, _*_ReadOnly_*_, _*_Connect_**)
 
 *式* **DBEngine** オブジェクトを表す変数です。
 
@@ -42,7 +42,7 @@ ms.locfileid: "32294254"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/省略可能</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -78,7 +78,7 @@ ms.locfileid: "32294254"
 
 ## <a name="return-value"></a>戻り値
 
-データベース
+Database
 
 ## <a name="remarks"></a>注釈
 

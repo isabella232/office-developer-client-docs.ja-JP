@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1052941
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 1f10b5b779141189f114e420b3f7d4827e701161
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 462a6f898770db280356d341590469d5e56cb727
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284800"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606248"
 ---
 # <a name="recordsetmove-method-dao"></a>Recordset.Move メソッド (DAO)
 
@@ -26,9 +26,9 @@ ms.locfileid: "32284800"
 
 ## <a name="syntax"></a>構文
 
-*式* .Move(***Rows***, ***StartBookmark***)
+*式* .Move(**Rows**, _StartBookmark_)
 
-*式* **Recordset** オブジェクトを表す変数です。
+*expression*: **Recordset** オブジェクトを表す変数。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -42,7 +42,7 @@ ms.locfileid: "32284800"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/省略可能</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>

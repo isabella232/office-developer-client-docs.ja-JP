@@ -10,13 +10,13 @@ f1_keywords:
 - jetsql40.chm5277563
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: dfcbbd55f2d20589849f63f260d40b507c8639f1
-ms.sourcegitcommit: b27eedbc4538f78ee15134bf19abbc319605c3bc
+ms.localizationpriority: high
+ms.openlocfilehash: 5aea8694c450764f686c226554041da13179aead
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2019
-ms.locfileid: "36706174"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615726"
 ---
 # <a name="create-table-statement-microsoft-access-sql"></a>CREATE TABLE ステートメント (Microsoft Access SQL)
 
@@ -25,7 +25,7 @@ ms.locfileid: "36706174"
 新しいテーブルを作成します。
 
 > [!NOTE]
-> Microsoft Access データベース エンジンでは、Microsoft Access データベース エンジン以外のデータベースで CREATE TABLE やその他の DDL ステートメントを使用することはできません。 代わりに、DAO の **Create** メソッドを使用してください。
+> Microsoft Access データベース エンジンは、Microsoft Access データベース エンジン以外のデータベースでは CREATE TABLE 句や DDL (データ定義言語) ステートメントを使用できません。Microsoft Access データベース エンジン以外のデータベースでは代わりに DAO の **Create** 系メソッドを使用してください。
 
 ## <a name="syntax"></a>構文
 
@@ -81,11 +81,11 @@ CONSTRAINT 句はフィールドに対してさまざまな制約を設定する
 
 NOT NULL を 1 つのフィールドまたは名前付きの CONSTRAINT 句内で使用し、CONSTRAINT という名前の 1 つのフィールドまたは複数のフィールドに適用することができます。ただし、フィールドに NOT NULL 制限を 1 回だけ適用することができます。この制限を複数回実行しようすると、実行時エラーになります。
 
-TEMPORARY テーブルが作成される場合、作成されたセッションの中でのみ見ることができます。 セッションの終了時に自動的に削除されます。 一時テーブルは、複数のユーザーによってアクセスできます。
+一時テーブルが作成される場合、作成されたセッションの中でのみ見ることができます。セッションが終了すると、自動的に削除されます。一時テーブルは、複数のユーザーからアクセスすることができます。
 
 WITH COMPRESSION 属性は、CHARACTER および MEMO (TEXT とも呼ばれます) データ型およびそれらの類義語でのみ使用できます。
 
-Unicode 文字表現形式の変更のために、WITH COMPRESSION 属性が、CHARACTER 列に追加されました。 Unicode 文字では、各文字を格納するのにそれぞれ 2 バイトが必要です。 これは、主に文字データを含む既存の Microsoft Jet データベースを Microsoft Access データベース エンジンの形式に変換すると、ファイル サイズが約 2 倍になることを意味します。 しかし、Unicode 表示形式の文字セットの多くは、以前 1 バイトの文字セット (SBCS) であり、簡単に 1 バイトに圧縮することが可能です。 この属性を使用して CHARACTER 型の列を定義すると、列への格納時のデータ圧縮と列からの取得時のデータ圧縮解除が自動的に実行されます。
+Unicode 文字の表示形式に変更するために、WITH COMPRESSION 属性が CHARACTER 列に追加されました。Unicode 文字には、各文字一律に 2 バイトを必要とします。これは、主に文字データを含む既存の Microsoft Jet データベースを Microsoft Access データベース エンジンの形式に変換すると、ファイル サイズが約 2 倍になることを意味します。しかし、Unicode 表示形式の文字セットの多くは、以前 1 バイトの文字セット (SBCS) であり、簡単に 1 バイトに圧縮することが可能です。CHARACTER 列をこの属性で定義すると、データが格納時には自動的に圧縮され、取得時には圧縮解除されるようになります。
 
 MEMO 型の列を定義すると、圧縮形式でデータを格納することもできます。ただし、これには制限があります。MEMO 型の列のインスタンスが、圧縮されるときには、4096 バイト以内のみが圧縮されます。MEMO 型の列の他のすべてのインスタンスは圧縮されません。これは、特定のテーブル内の MEMO 型の列で、データの一部が圧縮され、一部のデータが圧縮されていないことを意味します。
 
